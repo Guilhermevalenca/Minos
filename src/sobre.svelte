@@ -1,3 +1,6 @@
+<head>
+    <link rel="stylesheet" href="/sobre.css">
+</head>
 <h1>Sobre o MINOS:</h1>
 
 <p>
@@ -14,25 +17,16 @@
 hora de finalmente desvender o mistério que o "Minos Labyrinth" tinha a lhe ofercer.
 </p>
 
-<style>
-p{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 100;
-    font-size: 187%;
-    color: whitesmoke
 
-}
-h1{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 520%;
-    border-style:hidden;
-    border-radius: 250%;
-   text-align: center;
-   color: rgb(86, 253, 198);
-}
+<h2>OS DEUSES</h2>
 
-</style>
+<ul>
+    <button>Alice dos santos</button>
+    <button>Assíria Renara</button>
+    <button>Claudiane Rodrigues</button>
+    <button>Emmily Kathylen</button>
+    <button>Guilherme Valença</button>
 
-<head>
-    <link rel="stylesheet" href="/sobre.css">
-</head>    
+
+
+</ul>
