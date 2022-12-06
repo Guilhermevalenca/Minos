@@ -1,4 +1,24 @@
-body{
-    background-image: url('https://i.pinimg.com/originals/ea/c3/e6/eac3e6130bc2d50f87becd5399b2a6ff.jpg');
-    background-size: 40%;
+
+p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-size: 187%;
+    color: whitesmoke
+
 }
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 520%;
+    border-style:hidden;
+    border-radius: 250%;
+   text-align: center;
+   color: rgb(86, 253, 198);
+}
+
+ul{
+    text-align: center;
+}
+
+
+
+
