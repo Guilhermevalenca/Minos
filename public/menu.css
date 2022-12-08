@@ -3,4 +3,11 @@ body{
 }
 .h1menu{
     text-align: center;
+    font-size: 440%;
+    background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+    font-family: "Felix Titling";
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 0%;
 }

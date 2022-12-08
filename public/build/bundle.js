@@ -3711,7 +3711,7 @@ var app = (function () {
     			link = element("link");
     			t0 = space();
     			h1 = element("h1");
-    			h1.textContent = "Bem vindo, ao labirinto";
+    			h1.textContent = "Minos Labyrinth";
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "/menu.css");
     			add_location(link, file$3, 1, 4, 12);
