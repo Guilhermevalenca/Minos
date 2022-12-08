@@ -1,4 +1,3 @@
-<ul><button class='ulapp'><a href="/">return</a></button></ul>
 <head>
     <link rel="stylesheet" href="/sobre.css">
 </head>
@@ -21,13 +20,18 @@ hora de finalmente desvender o mistério que o "Minos Labyrinth" tinha a lhe ofe
 
 <h2>OS DEUSES</h2>
 
-<ul>
-    <button>Alice dos santos</button>
+<p>
+    <button>Alice Manguinho</button>
+</p>
+<p>
     <button>Assíria Renara</button>
+</p>
+<p>
     <button>Claudiane Rodrigues</button>
+</p>
+<p>
     <button>Emmily Kathylen</button>
+</p>
+<p>
     <button>Guilherme Valença</button>
-
-
-
-</ul>
+</p>

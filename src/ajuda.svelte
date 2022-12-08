@@ -1,8 +1,7 @@
-<ul class='ajudaul'><button class='ulapp'><a href="/">return</a></button></ul>
-<head>
-    <link rel="stylesheet" href="/ajuda.css">
-</head>
+<script>
+    import { bubble } from "svelte/internal";
 
+</script>
 <h1>AJUDA</h1>
 
 <h2>Como jogar?</h2>
@@ -14,9 +13,9 @@
 </ul>
 
 
-<ul><button class="botao">↟</button></ul>
-<ul><button> ↞ </button><button>↠</button></ul>
-<ul><button class="botao"> ↡</button></ul>
+<ul><button>^</button></ul>
+<ul><button>-</button> <button>></button></ul>
+<ul><button>v</button></ul>
 
 <h3>Olá, querido humano.</h3>
 <p>Se você chegou aqui, temo que já esteja em um território perigoso.</p>
