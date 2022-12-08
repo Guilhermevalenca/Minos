@@ -5,14 +5,16 @@
 	import Sobre from './sobre.svelte'
 	import Jogar from './jogo.svelte'
 </script>
-
+<head>
+	<link rel="stylesheet" href="appsvelte.css">
+</head>
 <Router>
 	<nav>
 		<div>
-			<ul><Link to='/'>Menu</Link></ul>
-			<ul><Link to='/jogo'>Jogo</Link></ul>
-			<ul><Link to='/sobre'>Sobre</Link></ul>
-			<ul><Link to='/ajuda'>ajuda</Link></ul>
+			<ul class='ulapp'><Link to='/'>Menu</Link></ul>
+			<ul class='ulapp'><Link to='/jogo'>Jogo</Link></ul>
+			<ul class='ulapp'><Link to='/sobre'>Sobre</Link></ul>
+			<ul class='ulapp'><Link to='/ajuda'>ajuda</Link></ul>
 		</div>
 	</nav>
 	<main>

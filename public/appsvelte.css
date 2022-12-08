@@ -1,0 +1,22 @@
+div{
+    text-align: center;
+}
+body{
+    background-image: url('/imagens/fundos.gif');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.ulapp{
+    font-size: 200%;
+    text-decoration-color:#996600;
+    position: relative;
+    background-image: url(https://st3.depositphotos.com/3036337/17845/v/450/depositphotos_178452596-stock-illustration-forest-pixel-art-background.jpg);
+    background-size: cover;
+    font-size: 25px;
+    font-family: "Goudy Old Style";
+    border-style: solid;
+    border-radius: 10px;
+    border-image: linear-gradient(to bottom, #cc9900 0%, #ffff00 100%) space;
+    border-image-slice:10;
+    border-width: 1px;
+}
