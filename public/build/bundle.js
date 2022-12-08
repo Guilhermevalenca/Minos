@@ -3856,24 +3856,25 @@ var app = (function () {
     			attr_dev(link, "href", "/sobre.css");
     			add_location(link, file$2, 2, 4, 93);
     			add_location(head, file$2, 1, 0, 81);
+    			attr_dev(h1, "class", "sobreh1");
     			add_location(h1, file$2, 4, 0, 145);
-    			add_location(p0, file$2, 6, 0, 172);
-    			add_location(h2, file$2, 21, 0, 1781);
+    			add_location(p0, file$2, 6, 0, 188);
+    			add_location(h2, file$2, 21, 0, 1797);
     			attr_dev(button1, "class", "emmibutton");
-    			add_location(button1, file$2, 24, 4, 1812);
-    			add_location(p1, file$2, 23, 0, 1803);
+    			add_location(button1, file$2, 24, 4, 1828);
+    			add_location(p1, file$2, 23, 0, 1819);
     			attr_dev(button2, "class", "emmibutton");
-    			add_location(button2, file$2, 27, 4, 1880);
-    			add_location(p2, file$2, 26, 0, 1871);
+    			add_location(button2, file$2, 27, 4, 1896);
+    			add_location(p2, file$2, 26, 0, 1887);
     			attr_dev(button3, "class", "emmibutton");
-    			add_location(button3, file$2, 30, 4, 1947);
-    			add_location(p3, file$2, 29, 0, 1938);
+    			add_location(button3, file$2, 30, 4, 1963);
+    			add_location(p3, file$2, 29, 0, 1954);
     			attr_dev(button4, "class", "emmibutton");
-    			add_location(button4, file$2, 33, 4, 2019);
-    			add_location(p4, file$2, 32, 0, 2010);
+    			add_location(button4, file$2, 33, 4, 2035);
+    			add_location(p4, file$2, 32, 0, 2026);
     			attr_dev(button5, "class", "emmibutton");
-    			add_location(button5, file$2, 36, 4, 2087);
-    			add_location(p5, file$2, 35, 0, 2078);
+    			add_location(button5, file$2, 36, 4, 2103);
+    			add_location(p5, file$2, 35, 0, 2094);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3993,14 +3994,14 @@ var app = (function () {
     			a.textContent = "return";
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "jogo.css");
-    			add_location(link, file$1, 43, 4, 935);
-    			add_location(head, file$1, 42, 0, 923);
+    			add_location(link, file$1, 43, 4, 946);
+    			add_location(head, file$1, 42, 0, 934);
     			attr_dev(a, "href", "/");
-    			add_location(a, file$1, 45, 43, 1028);
+    			add_location(a, file$1, 45, 43, 1039);
     			attr_dev(button, "class", "ulapp");
-    			add_location(button, file$1, 45, 21, 1006);
+    			add_location(button, file$1, 45, 21, 1017);
     			attr_dev(ul, "class", "ajudaul");
-    			add_location(ul, file$1, 45, 0, 985);
+    			add_location(ul, file$1, 45, 0, 996);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -4034,24 +4035,29 @@ var app = (function () {
     	return block;
     }
 
-    function movimentacao() {
-    	
-    } //função chamada sempre quando o usuario fizer um movimento
-
     function instance$1($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('Jogo', slots, []);
     	let mapa = [[1, 0, 1], [0, 0, 1], [0, 1, 1], [0, 0, 1], [1, 0, 1]];
 
-    	function posicao() {
-    		if (mapa[i][j] == 0) ; //devera andar
-    		//nao podera passar
+    	function testarposicao() {
+    		if (mapa[i][j] == 0) {
+    			//devera andar
+    			jogador.position = mapa[i][j];
+    		} //nao podera passar
+    	}
+
+    	function movimentacao() {
+    		//função chamada sempre quando o usuario fizer um movimento
+    		testarposicao();
     	}
 
     	function posicaoinicial() {
     		for (let i in mapa[0]) {
-    			if (mapa[0][i] == 0) ; //posição inicial do jogador
-    			// jogador.position = mapa[0][i]
+    			if (mapa[0][i] == 0) {
+    				//posição inicial do jogador
+    				jogador.position = mapa[0][i];
+    			}
     		}
     	}
 
@@ -4071,7 +4077,7 @@ var app = (function () {
 
     	$$self.$capture_state = () => ({
     		mapa,
-    		posicao,
+    		testarposicao,
     		movimentacao,
     		posicaoinicial,
     		personagem,

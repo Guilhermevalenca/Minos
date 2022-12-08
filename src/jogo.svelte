@@ -7,25 +7,25 @@
         [1,0,1]
     ];
 
-    function posicao(){
+    function testarposicao(){
         if(mapa[i][j] == 0){
             //devera andar
-            // jogador.position = mapa[i][j]
+            jogador.position = mapa[i][j]
         }else{
             //nao podera passar
-            
         }
     }
 
     function movimentacao(){
         //função chamada sempre quando o usuario fizer um movimento
+        testarposicao()
     }
 
     function posicaoinicial(){
         for(let i in mapa[0]){
             if(mapa[0][i] == 0){
                 //posição inicial do jogador
-               // jogador.position = mapa[0][i]
+               jogador.position = mapa[0][i]
             }
         }
     }

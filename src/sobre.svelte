@@ -2,7 +2,7 @@
 <head>
     <link rel="stylesheet" href="/sobre.css">
 </head>
-<h1>Sobre o MINOS:</h1>
+<h1 class='sobreh1'>Sobre o MINOS:</h1>
 
 <p>
  A história do MINOS LABYRINTH se dá ínicio quando Dante, nosso protagonista e aspirante a historiador, se vê de frente a grande oportunidade de sua vida
