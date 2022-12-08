@@ -3975,50 +3975,51 @@ var app = (function () {
     const file$1 = "src\\jogo.svelte";
 
     function create_fragment$1(ctx) {
+    	let head;
+    	let link;
+    	let t0;
     	let ul;
     	let button;
     	let a;
-    	let t1;
-    	let div;
-    	let t2;
 
     	const block = {
     		c: function create() {
+    			head = element("head");
+    			link = element("link");
+    			t0 = space();
     			ul = element("ul");
     			button = element("button");
     			a = element("a");
     			a.textContent = "return";
-    			t1 = space();
-    			div = element("div");
-    			t2 = text(/*jogador*/ ctx[0]);
+    			attr_dev(link, "rel", "stylesheet");
+    			attr_dev(link, "href", "jogo.css");
+    			add_location(link, file$1, 43, 4, 935);
+    			add_location(head, file$1, 42, 0, 923);
     			attr_dev(a, "href", "/");
-    			add_location(a, file$1, 42, 43, 961);
+    			add_location(a, file$1, 45, 43, 1028);
     			attr_dev(button, "class", "ulapp");
-    			add_location(button, file$1, 42, 21, 939);
+    			add_location(button, file$1, 45, 21, 1006);
     			attr_dev(ul, "class", "ajudaul");
-    			add_location(ul, file$1, 42, 0, 918);
-    			add_location(div, file$1, 44, 0, 1001);
+    			add_location(ul, file$1, 45, 0, 985);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
+    			insert_dev(target, head, anchor);
+    			append_dev(head, link);
+    			insert_dev(target, t0, anchor);
     			insert_dev(target, ul, anchor);
     			append_dev(ul, button);
     			append_dev(button, a);
-    			insert_dev(target, t1, anchor);
-    			insert_dev(target, div, anchor);
-    			append_dev(div, t2);
     		},
-    		p: function update(ctx, [dirty]) {
-    			if (dirty & /*jogador*/ 1) set_data_dev(t2, /*jogador*/ ctx[0]);
-    		},
+    		p: noop,
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
+    			if (detaching) detach_dev(head);
+    			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(ul);
-    			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(div);
     		}
     	};
 
@@ -4043,18 +4044,14 @@ var app = (function () {
     	let mapa = [[1, 0, 1], [0, 0, 1], [0, 1, 1], [0, 0, 1], [1, 0, 1]];
 
     	function posicao() {
-    		if (mapa[i][j] == 0) {
-    			//devera andar
-    			$$invalidate(0, jogador.position = mapa[i][j], jogador);
-    		} //nao podera passar
+    		if (mapa[i][j] == 0) ; //devera andar
+    		//nao podera passar
     	}
 
     	function posicaoinicial() {
     		for (let i in mapa[0]) {
-    			if (mapa[0][i] == 0) {
-    				//posição inicial do jogador
-    				$$invalidate(0, jogador.position = mapa[0][i], jogador);
-    			}
+    			if (mapa[0][i] == 0) ; //posição inicial do jogador
+    			// jogador.position = mapa[0][i]
     		}
     	}
 
@@ -4083,14 +4080,14 @@ var app = (function () {
 
     	$$self.$inject_state = $$props => {
     		if ('mapa' in $$props) mapa = $$props.mapa;
-    		if ('jogador' in $$props) $$invalidate(0, jogador = $$props.jogador);
+    		if ('jogador' in $$props) jogador = $$props.jogador;
     	};
 
     	if ($$props && "$$inject" in $$props) {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [jogador];
+    	return [];
     }
 
     class Jogo extends SvelteComponentDev {

@@ -10,7 +10,7 @@
     function posicao(){
         if(mapa[i][j] == 0){
             //devera andar
-            jogador.position = mapa[i][j]
+            // jogador.position = mapa[i][j]
         }else{
             //nao podera passar
             
@@ -25,7 +25,7 @@
         for(let i in mapa[0]){
             if(mapa[0][i] == 0){
                 //posição inicial do jogador
-                jogador.position = mapa[0][i]
+               // jogador.position = mapa[0][i]
             }
         }
     }
@@ -40,6 +40,7 @@
     let jogador = new personagem(posicaoinicial(), movimentacao());
     
 </script>
+<head>
+    <link rel="stylesheet" href="jogo.css">
+</head>
 <ul class ='ajudaul'><button class='ulapp'><a href="/">return</a></button></ul>
-
-<div>{jogador}</div>
