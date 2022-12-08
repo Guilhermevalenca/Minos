@@ -1,13 +1,28 @@
+@import url('https://fonts.cdnfonts.com/css/felix-titling');
+@import url('https://fonts.cdnfonts.com/css/goudy-old-style');
 body{
     color: white;
 }
+
 .h1menu{
     text-align: center;
-    font-size: 440%;
+    font-size: 540%;
     background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
-    font-family: "Felix Titling";
+    font-family: 'Felix Titling';
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    margin: 0%;
+}
+    
+.pmenu{
+    font-family: 'Goudy Old Style';
+    font-size: 200%;
+    text-align: center;
+    background: linear-gradient(to bottom, #cc9900 0%, #ffff00 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
     margin: 0%;
 }

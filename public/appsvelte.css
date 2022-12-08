@@ -2,7 +2,7 @@ div{
     text-align: center;
 }
 body{
-    background-image: url('/imagens/fundos.gif');
+    background-image: url('./imagens/teste2.3-fundos.gif');
     background-size: 100%;
 }
 .ulapp{

@@ -3704,6 +3704,8 @@ var app = (function () {
     	let link;
     	let t0;
     	let h1;
+    	let t2;
+    	let p;
 
     	const block = {
     		c: function create() {
@@ -3711,13 +3713,18 @@ var app = (function () {
     			link = element("link");
     			t0 = space();
     			h1 = element("h1");
-    			h1.textContent = "Minos Labyrinth";
+    			h1.textContent = "Minos";
+    			t2 = space();
+    			p = element("p");
+    			p.textContent = "Labyrinth";
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "/menu.css");
     			add_location(link, file$3, 1, 4, 12);
     			add_location(head, file$3, 0, 0, 0);
     			attr_dev(h1, "class", "h1menu");
     			add_location(h1, file$3, 4, 0, 65);
+    			attr_dev(p, "class", "pmenu");
+    			add_location(p, file$3, 5, 0, 96);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3727,6 +3734,8 @@ var app = (function () {
     			append_dev(head, link);
     			insert_dev(target, t0, anchor);
     			insert_dev(target, h1, anchor);
+    			insert_dev(target, t2, anchor);
+    			insert_dev(target, p, anchor);
     		},
     		p: noop,
     		i: noop,
@@ -3735,6 +3744,8 @@ var app = (function () {
     			if (detaching) detach_dev(head);
     			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(h1);
+    			if (detaching) detach_dev(t2);
+    			if (detaching) detach_dev(p);
     		}
     	};
 
