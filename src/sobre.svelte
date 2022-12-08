@@ -1,3 +1,4 @@
+<ul class ='ajudaul'><button class='ulapp'><a href="/">return</a></button></ul>
 <head>
     <link rel="stylesheet" href="/sobre.css">
 </head>
@@ -21,17 +22,17 @@ hora de finalmente desvender o mistério que o "Minos Labyrinth" tinha a lhe ofe
 <h2>OS DEUSES</h2>
 
 <p>
-    <button>Alice Manguinho</button>
+    <button class='emmibutton'>Alice Manguinho</button>
 </p>
 <p>
-    <button>Assíria Renara</button>
+    <button class='emmibutton'>Assíria Renara</button>
 </p>
 <p>
-    <button>Claudiane Rodrigues</button>
+    <button class='emmibutton'>Claudiane Rodrigues</button>
 </p>
 <p>
-    <button>Emmily Kathylen</button>
+    <button class='emmibutton'>Emmily Kathylen</button>
 </p>
 <p>
-    <button>Guilherme Valença</button>
+    <button class='emmibutton'>Guilherme Valença</button>
 </p>

@@ -40,6 +40,7 @@
     let jogador = new personagem(posicaoinicial(), movimentacao());
     
 </script>
+<ul class ='ajudaul'><button class='ulapp'><a href="/">return</a></button></ul>
 
 {#each mapa as areas}
     <div>

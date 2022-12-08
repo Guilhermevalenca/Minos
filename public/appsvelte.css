@@ -3,7 +3,6 @@ div{
 }
 body{
     background-image: url('/imagens/fundos.gif');
-    background-repeat: no-repeat;
     background-size: 100%;
 }
 .ulapp{
@@ -19,4 +18,7 @@ body{
     border-image: linear-gradient(to bottom, #cc9900 0%, #ffff00 100%) space;
     border-image-slice:10;
     border-width: 1px;
+}
+.ajudaul{
+    text-align: center;
 }

@@ -23,7 +23,7 @@ h2{
 p{
     text-align: center;
 }
-button{
+.emmibutton{
     color: black;
     background-color: whitesmoke;
     padding: 14px 40px;
@@ -34,11 +34,11 @@ button{
     box-shadow: 0 9px rgb(48, 173, 131);
 
 }
-button:hover {
+.emmibutton:hover {
     background-color: rgb(86, 253, 198);
    
 }
-button:active {
+.emmibutton:active {
     box-shadow: 0 5px;
     transform: translateY(80px);
   }
