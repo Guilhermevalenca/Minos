@@ -2,19 +2,25 @@
     let mapa = [
         [1,0,1],
         [0,0,1],
-        [0,1,1]
+        [0,1,1],
+        [0,0,1],
+        [1,0,1]
     ];
+
     function posicao(){
         if(mapa[i][j] == 0){
             //devera andar
             jogador.position = mapa[i][j]
         }else{
             //nao podera passar
-            jogador.position = mapa[i][j]
+            
         }
-    }function movimentacao(){
+    }
+
+    function movimentacao(){
         //função chamada sempre quando o usuario fizer um movimento
     }
+
     function posicaoinicial(){
         for(let i in mapa[0]){
             if(mapa[0][i] == 0){
@@ -23,6 +29,7 @@
             }
         }
     }
+    
     class personagem{
         constructor(position, moves){
             this.position = position;
@@ -31,4 +38,14 @@
     }
     
     let jogador = new personagem(posicaoinicial(), movimentacao());
+    
 </script>
+
+{#each mapa as areas}
+    <div>
+        {#each areas as objetos}
+            <ul>{objetos}</ul>
+        {/each}
+    </div>
+{/each}
+
