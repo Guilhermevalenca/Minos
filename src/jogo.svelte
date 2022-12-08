@@ -42,11 +42,4 @@
 </script>
 <ul class ='ajudaul'><button class='ulapp'><a href="/">return</a></button></ul>
 
-{#each mapa as areas}
-    <div>
-        {#each areas as objetos}
-            <ul>{objetos}</ul>
-        {/each}
-    </div>
-{/each}
-
+<div>{jogador}</div>

@@ -22,3 +22,11 @@ body{
 .ajudaul{
     text-align: center;
 }
+.ulapp :link{
+    background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+    font-family: "Felix Titling";
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-decoration: none;
+}

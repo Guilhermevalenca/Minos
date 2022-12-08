@@ -125,12 +125,6 @@ var app = (function () {
             node.parentNode.removeChild(node);
         }
     }
-    function destroy_each(iterations, detaching) {
-        for (let i = 0; i < iterations.length; i += 1) {
-            if (iterations[i])
-                iterations[i].d(detaching);
-        }
-    }
     function element(name) {
         return document.createElement(name);
     }
@@ -614,15 +608,6 @@ var app = (function () {
             return;
         dispatch_dev('SvelteDOMSetData', { node: text, data });
         text.data = data;
-    }
-    function validate_each_argument(arg) {
-        if (typeof arg !== 'string' && !(arg && typeof arg === 'object' && 'length' in arg)) {
-            let msg = '{#each} only iterates over array-like objects.';
-            if (typeof Symbol === 'function' && arg && Symbol.iterator in arg) {
-                msg += ' You can use a spread to convert this iterable into an array.';
-            }
-            throw new Error(msg);
-        }
     }
     function validate_slots(name, slot, keys) {
         for (const slot_key of Object.keys(slot)) {
@@ -3731,6 +3716,7 @@ var app = (function () {
     			attr_dev(link, "href", "/menu.css");
     			add_location(link, file$3, 1, 4, 12);
     			add_location(head, file$3, 0, 0, 0);
+    			attr_dev(h1, "class", "h1menu");
     			add_location(h1, file$3, 4, 0, 65);
     		},
     		l: function claim(nodes) {
@@ -3988,138 +3974,13 @@ var app = (function () {
 
     const file$1 = "src\\jogo.svelte";
 
-    function get_each_context(ctx, list, i) {
-    	const child_ctx = ctx.slice();
-    	child_ctx[5] = list[i];
-    	return child_ctx;
-    }
-
-    function get_each_context_1(ctx, list, i) {
-    	const child_ctx = ctx.slice();
-    	child_ctx[8] = list[i];
-    	return child_ctx;
-    }
-
-    // (47:8) {#each areas as objetos}
-    function create_each_block_1(ctx) {
-    	let ul;
-    	let t_value = /*objetos*/ ctx[8] + "";
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			ul = element("ul");
-    			t = text(t_value);
-    			add_location(ul, file$1, 47, 12, 1081);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, ul, anchor);
-    			append_dev(ul, t);
-    		},
-    		p: noop,
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(ul);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_each_block_1.name,
-    		type: "each",
-    		source: "(47:8) {#each areas as objetos}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (45:0) {#each mapa as areas}
-    function create_each_block(ctx) {
-    	let div;
-    	let t;
-    	let each_value_1 = /*areas*/ ctx[5];
-    	validate_each_argument(each_value_1);
-    	let each_blocks = [];
-
-    	for (let i = 0; i < each_value_1.length; i += 1) {
-    		each_blocks[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
-    	}
-
-    	const block = {
-    		c: function create() {
-    			div = element("div");
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].c();
-    			}
-
-    			t = space();
-    			add_location(div, file$1, 45, 4, 1028);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, div, anchor);
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(div, null);
-    			}
-
-    			append_dev(div, t);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (dirty & /*mapa*/ 1) {
-    				each_value_1 = /*areas*/ ctx[5];
-    				validate_each_argument(each_value_1);
-    				let i;
-
-    				for (i = 0; i < each_value_1.length; i += 1) {
-    					const child_ctx = get_each_context_1(ctx, each_value_1, i);
-
-    					if (each_blocks[i]) {
-    						each_blocks[i].p(child_ctx, dirty);
-    					} else {
-    						each_blocks[i] = create_each_block_1(child_ctx);
-    						each_blocks[i].c();
-    						each_blocks[i].m(div, t);
-    					}
-    				}
-
-    				for (; i < each_blocks.length; i += 1) {
-    					each_blocks[i].d(1);
-    				}
-
-    				each_blocks.length = each_value_1.length;
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div);
-    			destroy_each(each_blocks, detaching);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_each_block.name,
-    		type: "each",
-    		source: "(45:0) {#each mapa as areas}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
     function create_fragment$1(ctx) {
     	let ul;
     	let button;
     	let a;
     	let t1;
-    	let each_1_anchor;
-    	let each_value = /*mapa*/ ctx[0];
-    	validate_each_argument(each_value);
-    	let each_blocks = [];
-
-    	for (let i = 0; i < each_value.length; i += 1) {
-    		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
-    	}
+    	let div;
+    	let t2;
 
     	const block = {
     		c: function create() {
@@ -4128,18 +3989,15 @@ var app = (function () {
     			a = element("a");
     			a.textContent = "return";
     			t1 = space();
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].c();
-    			}
-
-    			each_1_anchor = empty();
+    			div = element("div");
+    			t2 = text(/*jogador*/ ctx[0]);
     			attr_dev(a, "href", "/");
     			add_location(a, file$1, 42, 43, 961);
     			attr_dev(button, "class", "ulapp");
     			add_location(button, file$1, 42, 21, 939);
     			attr_dev(ul, "class", "ajudaul");
     			add_location(ul, file$1, 42, 0, 918);
+    			add_location(div, file$1, 44, 0, 1001);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -4149,45 +4007,18 @@ var app = (function () {
     			append_dev(ul, button);
     			append_dev(button, a);
     			insert_dev(target, t1, anchor);
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(target, anchor);
-    			}
-
-    			insert_dev(target, each_1_anchor, anchor);
+    			insert_dev(target, div, anchor);
+    			append_dev(div, t2);
     		},
     		p: function update(ctx, [dirty]) {
-    			if (dirty & /*mapa*/ 1) {
-    				each_value = /*mapa*/ ctx[0];
-    				validate_each_argument(each_value);
-    				let i;
-
-    				for (i = 0; i < each_value.length; i += 1) {
-    					const child_ctx = get_each_context(ctx, each_value, i);
-
-    					if (each_blocks[i]) {
-    						each_blocks[i].p(child_ctx, dirty);
-    					} else {
-    						each_blocks[i] = create_each_block(child_ctx);
-    						each_blocks[i].c();
-    						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
-    					}
-    				}
-
-    				for (; i < each_blocks.length; i += 1) {
-    					each_blocks[i].d(1);
-    				}
-
-    				each_blocks.length = each_value.length;
-    			}
+    			if (dirty & /*jogador*/ 1) set_data_dev(t2, /*jogador*/ ctx[0]);
     		},
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(ul);
     			if (detaching) detach_dev(t1);
-    			destroy_each(each_blocks, detaching);
-    			if (detaching) detach_dev(each_1_anchor);
+    			if (detaching) detach_dev(div);
     		}
     	};
 
@@ -4214,7 +4045,7 @@ var app = (function () {
     	function posicao() {
     		if (mapa[i][j] == 0) {
     			//devera andar
-    			jogador.position = mapa[i][j];
+    			$$invalidate(0, jogador.position = mapa[i][j], jogador);
     		} //nao podera passar
     	}
 
@@ -4222,7 +4053,7 @@ var app = (function () {
     		for (let i in mapa[0]) {
     			if (mapa[0][i] == 0) {
     				//posição inicial do jogador
-    				jogador.position = mapa[0][i];
+    				$$invalidate(0, jogador.position = mapa[0][i], jogador);
     			}
     		}
     	}
@@ -4251,15 +4082,15 @@ var app = (function () {
     	});
 
     	$$self.$inject_state = $$props => {
-    		if ('mapa' in $$props) $$invalidate(0, mapa = $$props.mapa);
-    		if ('jogador' in $$props) jogador = $$props.jogador;
+    		if ('mapa' in $$props) mapa = $$props.mapa;
+    		if ('jogador' in $$props) $$invalidate(0, jogador = $$props.jogador);
     	};
 
     	if ($$props && "$$inject" in $$props) {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [mapa];
+    	return [jogador];
     }
 
     class Jogo extends SvelteComponentDev {
@@ -4279,7 +4110,7 @@ var app = (function () {
     /* src\App.svelte generated by Svelte v3.53.1 */
     const file = "src\\App.svelte";
 
-    // (14:29) <Link to='/jogo'>
+    // (15:29) <Link to='/jogo'>
     function create_default_slot_6(ctx) {
     	let t;
 
@@ -4299,14 +4130,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_6.name,
     		type: "slot",
-    		source: "(14:29) <Link to='/jogo'>",
+    		source: "(15:29) <Link to='/jogo'>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (15:29) <Link to='/sobre'>
+    // (16:29) <Link to='/sobre'>
     function create_default_slot_5(ctx) {
     	let t;
 
@@ -4326,14 +4157,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_5.name,
     		type: "slot",
-    		source: "(15:29) <Link to='/sobre'>",
+    		source: "(16:29) <Link to='/sobre'>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (16:29) <Link to='/ajuda'>
+    // (17:29) <Link to='/ajuda'>
     function create_default_slot_4(ctx) {
     	let t;
 
@@ -4353,14 +4184,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4.name,
     		type: "slot",
-    		source: "(16:29) <Link to='/ajuda'>",
+    		source: "(17:29) <Link to='/ajuda'>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (20:2) <Route path='/jogar'>
+    // (21:2) <Route path='/jogar'>
     function create_default_slot_3(ctx) {
     	let jogar;
     	let current;
@@ -4392,14 +4223,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3.name,
     		type: "slot",
-    		source: "(20:2) <Route path='/jogar'>",
+    		source: "(21:2) <Route path='/jogar'>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (21:2) <Route path='/sobre'>
+    // (22:2) <Route path='/sobre'>
     function create_default_slot_2(ctx) {
     	let sobre;
     	let current;
@@ -4431,14 +4262,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2.name,
     		type: "slot",
-    		source: "(21:2) <Route path='/sobre'>",
+    		source: "(22:2) <Route path='/sobre'>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (22:2) <Route path='/ajuda'>
+    // (23:2) <Route path='/ajuda'>
     function create_default_slot_1(ctx) {
     	let ajuda;
     	let current;
@@ -4470,14 +4301,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(22:2) <Route path='/ajuda'>",
+    		source: "(23:2) <Route path='/ajuda'>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (11:0) <Router>
+    // (12:0) <Router>
     function create_default_slot(ctx) {
     	let nav;
     	let div;
@@ -4578,17 +4409,17 @@ var app = (function () {
     			t4 = space();
     			create_component(route2.$$.fragment);
     			attr_dev(button0, "class", "ulapp");
-    			add_location(button0, file, 13, 7, 320);
-    			add_location(ul0, file, 13, 3, 316);
+    			add_location(button0, file, 14, 7, 329);
+    			add_location(ul0, file, 14, 3, 325);
     			attr_dev(button1, "class", "ulapp");
-    			add_location(button1, file, 14, 7, 393);
-    			add_location(ul1, file, 14, 3, 389);
+    			add_location(button1, file, 15, 7, 402);
+    			add_location(ul1, file, 15, 3, 398);
     			attr_dev(button2, "class", "ulapp");
-    			add_location(button2, file, 15, 7, 468);
-    			add_location(ul2, file, 15, 3, 464);
-    			add_location(div, file, 12, 2, 306);
-    			add_location(nav, file, 11, 1, 297);
-    			add_location(main, file, 18, 1, 556);
+    			add_location(button2, file, 16, 7, 477);
+    			add_location(ul2, file, 16, 3, 473);
+    			add_location(div, file, 13, 2, 315);
+    			add_location(nav, file, 12, 1, 306);
+    			add_location(main, file, 19, 1, 565);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, nav, anchor);
@@ -4693,7 +4524,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(11:0) <Router>",
+    		source: "(12:0) <Router>",
     		ctx
     	});
 
@@ -4704,10 +4535,11 @@ var app = (function () {
     	let head;
     	let link;
     	let t0;
-    	let router;
-    	let t1;
     	let menu;
+    	let t1;
+    	let router;
     	let current;
+    	menu = new Menu({ $$inline: true });
 
     	router = new Router$1({
     			props: {
@@ -4717,16 +4549,14 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	menu = new Menu({ $$inline: true });
-
     	const block = {
     		c: function create() {
     			head = element("head");
     			link = element("link");
     			t0 = space();
-    			create_component(router.$$.fragment);
-    			t1 = space();
     			create_component(menu.$$.fragment);
+    			t1 = space();
+    			create_component(router.$$.fragment);
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "/appsvelte.css");
     			add_location(link, file, 8, 1, 230);
@@ -4739,9 +4569,9 @@ var app = (function () {
     			insert_dev(target, head, anchor);
     			append_dev(head, link);
     			insert_dev(target, t0, anchor);
-    			mount_component(router, target, anchor);
-    			insert_dev(target, t1, anchor);
     			mount_component(menu, target, anchor);
+    			insert_dev(target, t1, anchor);
+    			mount_component(router, target, anchor);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
@@ -4755,21 +4585,21 @@ var app = (function () {
     		},
     		i: function intro(local) {
     			if (current) return;
-    			transition_in(router.$$.fragment, local);
     			transition_in(menu.$$.fragment, local);
+    			transition_in(router.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
-    			transition_out(router.$$.fragment, local);
     			transition_out(menu.$$.fragment, local);
+    			transition_out(router.$$.fragment, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(head);
     			if (detaching) detach_dev(t0);
-    			destroy_component(router, detaching);
-    			if (detaching) detach_dev(t1);
     			destroy_component(menu, detaching);
+    			if (detaching) detach_dev(t1);
+    			destroy_component(router, detaching);
     		}
     	};
 

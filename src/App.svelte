@@ -8,6 +8,7 @@
 <head>
 	<link rel="stylesheet" href="/appsvelte.css">
 </head>
+<Menu/>
 <Router>
 	<nav>
 		<div>
@@ -22,4 +23,3 @@
 		<Route path='/ajuda'><Ajuda/></Route>
 	</main>
 </Router>
-<Menu/>
