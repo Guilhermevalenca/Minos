@@ -4130,7 +4130,7 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			t = text("Jogo");
+    			t = text("Jogar");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -4423,17 +4423,18 @@ var app = (function () {
     			t4 = space();
     			create_component(route2.$$.fragment);
     			attr_dev(button0, "class", "ulapp");
-    			add_location(button0, file, 14, 7, 329);
-    			add_location(ul0, file, 14, 3, 325);
+    			add_location(button0, file, 14, 7, 350);
+    			add_location(ul0, file, 14, 3, 346);
     			attr_dev(button1, "class", "ulapp");
-    			add_location(button1, file, 15, 7, 402);
-    			add_location(ul1, file, 15, 3, 398);
+    			add_location(button1, file, 15, 7, 424);
+    			add_location(ul1, file, 15, 3, 420);
     			attr_dev(button2, "class", "ulapp");
-    			add_location(button2, file, 16, 7, 477);
-    			add_location(ul2, file, 16, 3, 473);
+    			add_location(button2, file, 16, 7, 499);
+    			add_location(ul2, file, 16, 3, 495);
+    			attr_dev(div, "class", "allbuttonapp");
     			add_location(div, file, 13, 2, 315);
     			add_location(nav, file, 12, 1, 306);
-    			add_location(main, file, 19, 1, 565);
+    			add_location(main, file, 19, 1, 587);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, nav, anchor);
