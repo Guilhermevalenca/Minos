@@ -43,4 +43,4 @@
 <head>
     <link rel="stylesheet" href="jogo.css">
 </head>
-<ul class ='ajudaul'><button class='ulapp'><a href="/">return</a></button></ul>
+<ul class ='ajudaul'><button class='ulapp'><a href="/">Voltar</a></button></ul>

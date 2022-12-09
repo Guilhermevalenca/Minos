@@ -1,7 +1,10 @@
 /* imports: */
 @import url('https://fonts.cdnfonts.com/css/felix-titling');
 @import url('https://fonts.cdnfonts.com/css/goudy-old-style');
-
+@import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
+@import url('https://fonts.cdnfonts.com/css/turkish-times-new-roman');
+@import url('https://fonts.cdnfonts.com/css/georgia-2');
+/* /import */
 div{
     text-align: center;
 }

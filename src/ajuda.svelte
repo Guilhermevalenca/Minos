@@ -2,7 +2,7 @@
     import { bubble } from "svelte/internal";
 
 </script>
-<ul class ='ajudaul'><button class='ulapp'><a href="/">return</a></button></ul>
+<ul class ='ajudaul'><button class='ulapp'><a href="/">Voltar</a></button></ul>
 <head>
     <link rel="stylesheet" href="/ajuda.css">
 </head>

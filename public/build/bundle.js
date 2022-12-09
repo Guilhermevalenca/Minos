@@ -3463,7 +3463,7 @@ var app = (function () {
     			ul0 = element("ul");
     			button0 = element("button");
     			a = element("a");
-    			a.textContent = "return";
+    			a.textContent = "Voltar";
     			t1 = space();
     			head = element("head");
     			link = element("link");
@@ -3818,13 +3818,16 @@ var app = (function () {
     	let t16;
     	let p5;
     	let button5;
+    	let t18;
+    	let p6;
+    	let button6;
 
     	const block = {
     		c: function create() {
     			ul = element("ul");
     			button0 = element("button");
     			a = element("a");
-    			a.textContent = "return";
+    			a.textContent = "Voltar";
     			t1 = space();
     			head = element("head");
     			link = element("link");
@@ -3844,19 +3847,23 @@ var app = (function () {
     			t10 = space();
     			p2 = element("p");
     			button2 = element("button");
-    			button2.textContent = "Assíria Renara";
+    			button2.textContent = "Allan lima";
     			t12 = space();
     			p3 = element("p");
     			button3 = element("button");
-    			button3.textContent = "Claudiane Rodrigues";
+    			button3.textContent = "Assíria Renara";
     			t14 = space();
     			p4 = element("p");
     			button4 = element("button");
-    			button4.textContent = "Emmily Kathylen";
+    			button4.textContent = "Claudiane Rodrigues";
     			t16 = space();
     			p5 = element("p");
     			button5 = element("button");
-    			button5.textContent = "Guilherme Valença";
+    			button5.textContent = "Emmily Kathylen";
+    			t18 = space();
+    			p6 = element("p");
+    			button6 = element("button");
+    			button6.textContent = "Guilherme Valença";
     			attr_dev(a, "href", "/");
     			add_location(a, file$2, 0, 43, 43);
     			attr_dev(button0, "class", "ulapp");
@@ -3874,18 +3881,22 @@ var app = (function () {
     			attr_dev(button1, "class", "emmibutton");
     			add_location(button1, file$2, 24, 4, 1828);
     			add_location(p1, file$2, 23, 0, 1819);
+    			attr_dev(button2, "id", "especialbutton");
     			attr_dev(button2, "class", "emmibutton");
     			add_location(button2, file$2, 27, 4, 1896);
     			add_location(p2, file$2, 26, 0, 1887);
     			attr_dev(button3, "class", "emmibutton");
-    			add_location(button3, file$2, 30, 4, 1963);
-    			add_location(p3, file$2, 29, 0, 1954);
+    			add_location(button3, file$2, 30, 4, 1979);
+    			add_location(p3, file$2, 29, 0, 1970);
     			attr_dev(button4, "class", "emmibutton");
-    			add_location(button4, file$2, 33, 4, 2035);
-    			add_location(p4, file$2, 32, 0, 2026);
+    			add_location(button4, file$2, 33, 4, 2046);
+    			add_location(p4, file$2, 32, 0, 2037);
     			attr_dev(button5, "class", "emmibutton");
-    			add_location(button5, file$2, 36, 4, 2103);
-    			add_location(p5, file$2, 35, 0, 2094);
+    			add_location(button5, file$2, 36, 4, 2118);
+    			add_location(p5, file$2, 35, 0, 2109);
+    			attr_dev(button6, "class", "emmibutton");
+    			add_location(button6, file$2, 39, 4, 2186);
+    			add_location(p6, file$2, 38, 0, 2177);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3918,6 +3929,9 @@ var app = (function () {
     			insert_dev(target, t16, anchor);
     			insert_dev(target, p5, anchor);
     			append_dev(p5, button5);
+    			insert_dev(target, t18, anchor);
+    			insert_dev(target, p6, anchor);
+    			append_dev(p6, button6);
     		},
     		p: noop,
     		i: noop,
@@ -3942,6 +3956,8 @@ var app = (function () {
     			if (detaching) detach_dev(p4);
     			if (detaching) detach_dev(t16);
     			if (detaching) detach_dev(p5);
+    			if (detaching) detach_dev(t18);
+    			if (detaching) detach_dev(p6);
     		}
     	};
 
@@ -4002,7 +4018,7 @@ var app = (function () {
     			ul = element("ul");
     			button = element("button");
     			a = element("a");
-    			a.textContent = "return";
+    			a.textContent = "Voltar";
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "jogo.css");
     			add_location(link, file$1, 43, 4, 946);
@@ -4423,18 +4439,18 @@ var app = (function () {
     			t4 = space();
     			create_component(route2.$$.fragment);
     			attr_dev(button0, "class", "ulapp");
-    			add_location(button0, file, 14, 7, 350);
-    			add_location(ul0, file, 14, 3, 346);
+    			add_location(button0, file, 14, 7, 344);
+    			add_location(ul0, file, 14, 3, 340);
     			attr_dev(button1, "class", "ulapp");
-    			add_location(button1, file, 15, 7, 424);
-    			add_location(ul1, file, 15, 3, 420);
+    			add_location(button1, file, 15, 7, 418);
+    			add_location(ul1, file, 15, 3, 414);
     			attr_dev(button2, "class", "ulapp");
-    			add_location(button2, file, 16, 7, 499);
-    			add_location(ul2, file, 16, 3, 495);
-    			attr_dev(div, "class", "allbuttonapp");
+    			add_location(button2, file, 16, 7, 493);
+    			add_location(ul2, file, 16, 3, 489);
+    			attr_dev(div, "class", "divapp");
     			add_location(div, file, 13, 2, 315);
     			add_location(nav, file, 12, 1, 306);
-    			add_location(main, file, 19, 1, 587);
+    			add_location(main, file, 19, 1, 581);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, nav, anchor);

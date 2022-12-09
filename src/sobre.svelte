@@ -1,4 +1,4 @@
-<ul class ='ajudaul'><button class='ulapp'><a href="/">return</a></button></ul>
+<ul class ='ajudaul'><button class='ulapp'><a href="/">Voltar</a></button></ul>
 <head>
     <link rel="stylesheet" href="/sobre.css">
 </head>
@@ -23,6 +23,9 @@ hora de finalmente desvender o mistério que o "Minos Labyrinth" tinha a lhe ofe
 
 <p>
     <button class='emmibutton'>Alice Manguinho</button>
+</p>
+<p>
+    <button id='especialbutton' class='emmibutton'>Allan lima</button>
 </p>
 <p>
     <button class='emmibutton'>Assíria Renara</button>
