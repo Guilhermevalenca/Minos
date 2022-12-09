@@ -125,6 +125,12 @@ var app = (function () {
             node.parentNode.removeChild(node);
         }
     }
+    function destroy_each(iterations, detaching) {
+        for (let i = 0; i < iterations.length; i += 1) {
+            if (iterations[i])
+                iterations[i].d(detaching);
+        }
+    }
     function element(name) {
         return document.createElement(name);
     }
@@ -608,6 +614,15 @@ var app = (function () {
             return;
         dispatch_dev('SvelteDOMSetData', { node: text, data });
         text.data = data;
+    }
+    function validate_each_argument(arg) {
+        if (typeof arg !== 'string' && !(arg && typeof arg === 'object' && 'length' in arg)) {
+            let msg = '{#each} only iterates over array-like objects.';
+            if (typeof Symbol === 'function' && arg && Symbol.iterator in arg) {
+                msg += ' You can use a spread to convert this iterable into an array.';
+            }
+            throw new Error(msg);
+        }
     }
     function validate_slots(name, slot, keys) {
         for (const slot_key of Object.keys(slot)) {
@@ -4002,6 +4017,126 @@ var app = (function () {
 
     const file$1 = "src\\jogo.svelte";
 
+    function get_each_context(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[6] = list[i];
+    	return child_ctx;
+    }
+
+    function get_each_context_1(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[9] = list[i];
+    	return child_ctx;
+    }
+
+    // (57:12) {#each regiao as estrada}
+    function create_each_block_1(ctx) {
+    	let th;
+    	let t_value = /*estrada*/ ctx[9] + "";
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			t = text(t_value);
+    			attr_dev(th, "class", "tabela");
+    			add_location(th, file$1, 57, 16, 1764);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, t);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_1.name,
+    		type: "each",
+    		source: "(57:12) {#each regiao as estrada}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (55:4) {#each mapa as regiao}
+    function create_each_block(ctx) {
+    	let tr;
+    	let t;
+    	let each_value_1 = /*regiao*/ ctx[6];
+    	validate_each_argument(each_value_1);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_1.length; i += 1) {
+    		each_blocks[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			tr = element("tr");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			t = space();
+    			add_location(tr, file$1, 55, 8, 1703);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, tr, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(tr, null);
+    			}
+
+    			append_dev(tr, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*mapa*/ 1) {
+    				each_value_1 = /*regiao*/ ctx[6];
+    				validate_each_argument(each_value_1);
+    				let i;
+
+    				for (i = 0; i < each_value_1.length; i += 1) {
+    					const child_ctx = get_each_context_1(ctx, each_value_1, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_1(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(tr, t);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_1.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(tr);
+    			destroy_each(each_blocks, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block.name,
+    		type: "each",
+    		source: "(55:4) {#each mapa as regiao}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
     function create_fragment$1(ctx) {
     	let head;
     	let link;
@@ -4009,6 +4144,15 @@ var app = (function () {
     	let ul;
     	let button;
     	let a;
+    	let t2;
+    	let table;
+    	let each_value = /*mapa*/ ctx[0];
+    	validate_each_argument(each_value);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value.length; i += 1) {
+    		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+    	}
 
     	const block = {
     		c: function create() {
@@ -4019,16 +4163,25 @@ var app = (function () {
     			button = element("button");
     			a = element("a");
     			a.textContent = "Voltar";
+    			t2 = space();
+    			table = element("table");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "jogo.css");
-    			add_location(link, file$1, 43, 4, 946);
-    			add_location(head, file$1, 42, 0, 934);
+    			add_location(link, file$1, 49, 4, 1512);
+    			add_location(head, file$1, 48, 0, 1500);
     			attr_dev(a, "href", "/");
-    			add_location(a, file$1, 45, 43, 1039);
+    			add_location(a, file$1, 51, 43, 1605);
     			attr_dev(button, "class", "ulapp");
-    			add_location(button, file$1, 45, 21, 1017);
+    			add_location(button, file$1, 51, 21, 1583);
     			attr_dev(ul, "class", "ajudaul");
-    			add_location(ul, file$1, 45, 0, 996);
+    			add_location(ul, file$1, 51, 0, 1562);
+    			attr_dev(table, "class", "mapa");
+    			add_location(table, file$1, 53, 0, 1645);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -4040,14 +4193,47 @@ var app = (function () {
     			insert_dev(target, ul, anchor);
     			append_dev(ul, button);
     			append_dev(button, a);
+    			insert_dev(target, t2, anchor);
+    			insert_dev(target, table, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(table, null);
+    			}
     		},
-    		p: noop,
+    		p: function update(ctx, [dirty]) {
+    			if (dirty & /*mapa*/ 1) {
+    				each_value = /*mapa*/ ctx[0];
+    				validate_each_argument(each_value);
+    				let i;
+
+    				for (i = 0; i < each_value.length; i += 1) {
+    					const child_ctx = get_each_context(ctx, each_value, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(table, null);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value.length;
+    			}
+    		},
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(head);
     			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(ul);
+    			if (detaching) detach_dev(t2);
+    			if (detaching) detach_dev(table);
+    			destroy_each(each_blocks, detaching);
     		}
     	};
 
@@ -4065,7 +4251,30 @@ var app = (function () {
     function instance$1($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('Jogo', slots, []);
-    	let mapa = [[1, 0, 1], [0, 0, 1], [0, 1, 1], [0, 0, 1], [1, 0, 1]];
+
+    	let mapa = [
+    		[1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    		[0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    		[0, 1, 0, 3, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    		[0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    		[0, 0, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    		[1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    		[1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    		[1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    		[1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    		[1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    		[1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    	]; //1
+    	//2
+    	//3
+    	//4
+    	//5
+    	//6
+    	//7
+    	//8
+    	//9
+    	//10
+    	//11
 
     	function testarposicao() {
     		if (mapa[i][j] == 0) {
@@ -4083,7 +4292,7 @@ var app = (function () {
     		for (let i in mapa[0]) {
     			if (mapa[0][i] == 0) {
     				//posição inicial do jogador
-    				jogador.position = mapa[0][i];
+    				return jogador.position = mapa[0][i];
     			}
     		}
     	}
@@ -4095,7 +4304,7 @@ var app = (function () {
     		}
     	}
 
-    	let jogador = new personagem(posicaoinicial(), movimentacao());
+    	let jogador = new personagem();
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
@@ -4112,7 +4321,7 @@ var app = (function () {
     	});
 
     	$$self.$inject_state = $$props => {
-    		if ('mapa' in $$props) mapa = $$props.mapa;
+    		if ('mapa' in $$props) $$invalidate(0, mapa = $$props.mapa);
     		if ('jogador' in $$props) jogador = $$props.jogador;
     	};
 
@@ -4120,7 +4329,7 @@ var app = (function () {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [];
+    	return [mapa];
     }
 
     class Jogo extends SvelteComponentDev {
@@ -4140,7 +4349,7 @@ var app = (function () {
     /* src\App.svelte generated by Svelte v3.53.1 */
     const file = "src\\App.svelte";
 
-    // (15:29) <Link to='/jogo'>
+    // (15:29) <Link to='/jogar'>
     function create_default_slot_6(ctx) {
     	let t;
 
@@ -4160,7 +4369,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_6.name,
     		type: "slot",
-    		source: "(15:29) <Link to='/jogo'>",
+    		source: "(15:29) <Link to='/jogar'>",
     		ctx
     	});
 
@@ -4364,7 +4573,7 @@ var app = (function () {
 
     	link0 = new Link$1({
     			props: {
-    				to: "/jogo",
+    				to: "/jogar",
     				$$slots: { default: [create_default_slot_6] },
     				$$scope: { ctx }
     			},
@@ -4442,15 +4651,15 @@ var app = (function () {
     			add_location(button0, file, 14, 7, 344);
     			add_location(ul0, file, 14, 3, 340);
     			attr_dev(button1, "class", "ulapp");
-    			add_location(button1, file, 15, 7, 418);
-    			add_location(ul1, file, 15, 3, 414);
+    			add_location(button1, file, 15, 7, 419);
+    			add_location(ul1, file, 15, 3, 415);
     			attr_dev(button2, "class", "ulapp");
-    			add_location(button2, file, 16, 7, 493);
-    			add_location(ul2, file, 16, 3, 489);
+    			add_location(button2, file, 16, 7, 494);
+    			add_location(ul2, file, 16, 3, 490);
     			attr_dev(div, "class", "divapp");
     			add_location(div, file, 13, 2, 315);
     			add_location(nav, file, 12, 1, 306);
-    			add_location(main, file, 19, 1, 581);
+    			add_location(main, file, 19, 1, 582);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, nav, anchor);

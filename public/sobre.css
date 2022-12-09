@@ -42,5 +42,6 @@ p{
     transform: translateY(80px);
   }
 #especialbutton{
-    background-image: url('./imagens/dourado.gif');
+    background-image: url('./imagens/videoplayback.gif');
+    background-size: 300%;
 }
