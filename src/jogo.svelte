@@ -1,5 +1,4 @@
 <script>
-
     let mapa = [
         [1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1], //1
         [0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1], //2
@@ -53,9 +52,9 @@
 
 <table class='mapa'>
     {#each mapa as regiao}
-        <tr>
+        <tr class='linhasdatabela'>
             {#each regiao as estrada}
-                <th class='tabela'>{estrada}</th>
+                <th><img class='tabela' src="https://conexaoplaneta.com.br/wp-content/uploads/2018/03/mato.png" alt="imagem"></th>
             {/each}
         </tr>
     {/each}

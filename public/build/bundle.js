@@ -30,6 +30,14 @@ var app = (function () {
     function safe_not_equal(a, b) {
         return a != a ? b == b : a !== b || ((a && typeof a === 'object') || typeof a === 'function');
     }
+    let src_url_equal_anchor;
+    function src_url_equal(element_src, url) {
+        if (!src_url_equal_anchor) {
+            src_url_equal_anchor = document.createElement('a');
+        }
+        src_url_equal_anchor.href = url;
+        return element_src === src_url_equal_anchor.href;
+    }
     function is_empty(obj) {
         return Object.keys(obj).length === 0;
     }
@@ -4029,22 +4037,25 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (57:12) {#each regiao as estrada}
+    // (56:12) {#each regiao as estrada}
     function create_each_block_1(ctx) {
     	let th;
-    	let t_value = /*estrada*/ ctx[9] + "";
-    	let t;
+    	let img;
+    	let img_src_value;
 
     	const block = {
     		c: function create() {
     			th = element("th");
-    			t = text(t_value);
-    			attr_dev(th, "class", "tabela");
-    			add_location(th, file$1, 57, 16, 1764);
+    			img = element("img");
+    			attr_dev(img, "class", "tabela");
+    			if (!src_url_equal(img.src, img_src_value = "https://conexaoplaneta.com.br/wp-content/uploads/2018/03/mato.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "imagem");
+    			add_location(img, file$1, 56, 20, 1789);
+    			add_location(th, file$1, 56, 16, 1785);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
-    			append_dev(th, t);
+    			append_dev(th, img);
     		},
     		p: noop,
     		d: function destroy(detaching) {
@@ -4056,14 +4067,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(57:12) {#each regiao as estrada}",
+    		source: "(56:12) {#each regiao as estrada}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (55:4) {#each mapa as regiao}
+    // (54:4) {#each mapa as regiao}
     function create_each_block(ctx) {
     	let tr;
     	let t;
@@ -4084,7 +4095,8 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file$1, 55, 8, 1703);
+    			attr_dev(tr, "class", "linhasdatabela");
+    			add_location(tr, file$1, 54, 8, 1701);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -4095,31 +4107,7 @@ var app = (function () {
 
     			append_dev(tr, t);
     		},
-    		p: function update(ctx, dirty) {
-    			if (dirty & /*mapa*/ 1) {
-    				each_value_1 = /*regiao*/ ctx[6];
-    				validate_each_argument(each_value_1);
-    				let i;
-
-    				for (i = 0; i < each_value_1.length; i += 1) {
-    					const child_ctx = get_each_context_1(ctx, each_value_1, i);
-
-    					if (each_blocks[i]) {
-    						each_blocks[i].p(child_ctx, dirty);
-    					} else {
-    						each_blocks[i] = create_each_block_1(child_ctx);
-    						each_blocks[i].c();
-    						each_blocks[i].m(tr, t);
-    					}
-    				}
-
-    				for (; i < each_blocks.length; i += 1) {
-    					each_blocks[i].d(1);
-    				}
-
-    				each_blocks.length = each_value_1.length;
-    			}
-    		},
+    		p: noop,
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(tr);
     			destroy_each(each_blocks, detaching);
@@ -4130,7 +4118,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(55:4) {#each mapa as regiao}",
+    		source: "(54:4) {#each mapa as regiao}",
     		ctx
     	});
 
@@ -4172,16 +4160,16 @@ var app = (function () {
 
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "jogo.css");
-    			add_location(link, file$1, 49, 4, 1512);
-    			add_location(head, file$1, 48, 0, 1500);
+    			add_location(link, file$1, 48, 4, 1510);
+    			add_location(head, file$1, 47, 0, 1498);
     			attr_dev(a, "href", "/");
-    			add_location(a, file$1, 51, 43, 1605);
+    			add_location(a, file$1, 50, 43, 1603);
     			attr_dev(button, "class", "ulapp");
-    			add_location(button, file$1, 51, 21, 1583);
+    			add_location(button, file$1, 50, 21, 1581);
     			attr_dev(ul, "class", "ajudaul");
-    			add_location(ul, file$1, 51, 0, 1562);
+    			add_location(ul, file$1, 50, 0, 1560);
     			attr_dev(table, "class", "mapa");
-    			add_location(table, file$1, 53, 0, 1645);
+    			add_location(table, file$1, 52, 0, 1643);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
