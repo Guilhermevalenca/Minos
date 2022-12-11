@@ -1,6 +1,6 @@
 <ul class ='ajudaul'><button class='ulapp'><a href="/">Voltar</a></button></ul>
 <head>
-    <link rel="stylesheet" href="/sobre.css">
+    <link rel="stylesheet" href="/css/sobre.css">
 </head>
 <h1 class='sobreh1'>Sobre o MINOS:</h1>
 

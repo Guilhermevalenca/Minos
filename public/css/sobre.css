@@ -1,0 +1,47 @@
+p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-size: 187%;
+    color: whitesmoke
+
+}
+.sobreh1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 520%;
+    border-style:hidden;
+    border-radius: 250%;
+   text-align: center;
+   color: rgb(86, 253, 198);
+}
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-size: 520%;
+    text-align: center;
+    color: rgb(86, 253, 198);
+}
+p{
+    text-align: center;
+}
+.emmibutton{
+    color: black;
+    background-color: whitesmoke;
+    padding: 14px 40px;
+    transition-duration: 0.4s;
+    width: 25%;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(48, 173, 131);
+
+}
+.emmibutton:hover {
+    background-color: rgb(86, 253, 198);
+   
+}
+.emmibutton:active {
+    box-shadow: 0 5px;
+    transform: translateY(80px);
+  }
+#especialbutton{
+    background-image: url('./imagens/videoplayback.gif');
+    background-size: 300%;
+}

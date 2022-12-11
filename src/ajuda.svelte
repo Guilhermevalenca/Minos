@@ -4,7 +4,7 @@
 </script>
 <ul class ='ajudaul'><button class='ulapp'><a href="/">Voltar</a></button></ul>
 <head>
-    <link rel="stylesheet" href="/ajuda.css">
+    <link rel="stylesheet" href="/css/ajuda.css">
 </head>
 <h1>AJUDA</h1>
 

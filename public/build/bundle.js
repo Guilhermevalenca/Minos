@@ -1700,7 +1700,7 @@ var app = (function () {
     const file$7 = "node_modules\\svelte-navigator\\src\\Router.svelte";
 
     // (204:0) {#if isTopLevelRouter && manageFocus && a11yConfig.announcements}
-    function create_if_block$1(ctx) {
+    function create_if_block$2(ctx) {
     	let div;
     	let t;
 
@@ -1747,7 +1747,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block$1.name,
+    		id: create_if_block$2.name,
     		type: "if",
     		source: "(204:0) {#if isTopLevelRouter && manageFocus && a11yConfig.announcements}",
     		ctx
@@ -1776,7 +1776,7 @@ var app = (function () {
 
     	const default_slot_template = /*#slots*/ ctx[22].default;
     	const default_slot = create_slot(default_slot_template, ctx, /*$$scope*/ ctx[21], null);
-    	let if_block = /*isTopLevelRouter*/ ctx[2] && /*manageFocus*/ ctx[4] && /*a11yConfig*/ ctx[1].announcements && create_if_block$1(ctx);
+    	let if_block = /*isTopLevelRouter*/ ctx[2] && /*manageFocus*/ ctx[4] && /*a11yConfig*/ ctx[1].announcements && create_if_block$2(ctx);
 
     	const block = {
     		c: function create() {
@@ -2471,7 +2471,7 @@ var app = (function () {
     });
 
     // (98:0) {#if isActive}
-    function create_if_block(ctx) {
+    function create_if_block$1(ctx) {
     	let router;
     	let current;
 
@@ -2518,7 +2518,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block.name,
+    		id: create_if_block$1.name,
     		type: "if",
     		source: "(98:0) {#if isActive}",
     		ctx
@@ -2528,7 +2528,7 @@ var app = (function () {
     }
 
     // (114:2) {:else}
-    function create_else_block(ctx) {
+    function create_else_block$1(ctx) {
     	let current;
     	const default_slot_template = /*#slots*/ ctx[18].default;
     	const default_slot = create_slot(default_slot_template, ctx, /*$$scope*/ ctx[19], get_default_slot_context);
@@ -2576,7 +2576,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block.name,
+    		id: create_else_block$1.name,
     		type: "else",
     		source: "(114:2) {:else}",
     		ctx
@@ -2586,7 +2586,7 @@ var app = (function () {
     }
 
     // (106:2) {#if component !== null}
-    function create_if_block_1(ctx) {
+    function create_if_block_1$1(ctx) {
     	let switch_instance;
     	let switch_instance_anchor;
     	let current;
@@ -2678,7 +2678,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_1.name,
+    		id: create_if_block_1$1.name,
     		type: "if",
     		source: "(106:2) {#if component !== null}",
     		ctx
@@ -2693,7 +2693,7 @@ var app = (function () {
     	let if_block;
     	let if_block_anchor;
     	let current;
-    	const if_block_creators = [create_if_block_1, create_else_block];
+    	const if_block_creators = [create_if_block_1$1, create_else_block$1];
     	const if_blocks = [];
 
     	function select_block_type(ctx, dirty) {
@@ -2785,7 +2785,7 @@ var app = (function () {
     		div0_data = assign(div0_data, div0_levels[i]);
     	}
 
-    	let if_block = /*isActive*/ ctx[2] && create_if_block(ctx);
+    	let if_block = /*isActive*/ ctx[2] && create_if_block$1(ctx);
 
     	let div1_levels = [
     		createMarkerProps(/*disableInlineStyles*/ ctx[7]),
@@ -2835,7 +2835,7 @@ var app = (function () {
     						transition_in(if_block, 1);
     					}
     				} else {
-    					if_block = create_if_block(ctx);
+    					if_block = create_if_block$1(ctx);
     					if_block.c();
     					transition_in(if_block, 1);
     					if_block.m(t1.parentNode, t1);
@@ -3558,34 +3558,34 @@ var app = (function () {
     			attr_dev(ul0, "class", "ajudaul");
     			add_location(ul0, file$4, 4, 0, 70);
     			attr_dev(link, "rel", "stylesheet");
-    			attr_dev(link, "href", "/ajuda.css");
+    			attr_dev(link, "href", "/css/ajuda.css");
     			add_location(link, file$4, 6, 4, 163);
     			add_location(head, file$4, 5, 0, 151);
-    			add_location(h1, file$4, 8, 0, 215);
-    			add_location(h2, file$4, 10, 0, 233);
-    			add_location(li0, file$4, 12, 4, 265);
-    			add_location(li1, file$4, 13, 4, 294);
-    			add_location(li2, file$4, 14, 4, 321);
-    			add_location(li3, file$4, 15, 4, 353);
-    			add_location(ul1, file$4, 11, 0, 255);
+    			add_location(h1, file$4, 8, 0, 219);
+    			add_location(h2, file$4, 10, 0, 237);
+    			add_location(li0, file$4, 12, 4, 269);
+    			add_location(li1, file$4, 13, 4, 298);
+    			add_location(li2, file$4, 14, 4, 325);
+    			add_location(li3, file$4, 15, 4, 357);
+    			add_location(ul1, file$4, 11, 0, 259);
     			attr_dev(button1, "class", "botao");
-    			add_location(button1, file$4, 19, 4, 397);
-    			add_location(ul2, file$4, 19, 0, 393);
-    			add_location(button2, file$4, 20, 4, 440);
-    			add_location(button3, file$4, 20, 23, 459);
-    			add_location(ul3, file$4, 20, 0, 436);
+    			add_location(button1, file$4, 19, 4, 401);
+    			add_location(ul2, file$4, 19, 0, 397);
+    			add_location(button2, file$4, 20, 4, 444);
+    			add_location(button3, file$4, 20, 23, 463);
+    			add_location(ul3, file$4, 20, 0, 440);
     			attr_dev(button4, "class", "botao");
-    			add_location(button4, file$4, 21, 4, 488);
-    			add_location(ul4, file$4, 21, 0, 484);
-    			add_location(h3, file$4, 23, 0, 529);
-    			add_location(p0, file$4, 24, 0, 560);
-    			add_location(p1, file$4, 25, 0, 635);
-    			add_location(p2, file$4, 26, 0, 734);
-    			add_location(p3, file$4, 27, 0, 762);
-    			add_location(p4, file$4, 28, 0, 804);
-    			add_location(p5, file$4, 29, 0, 837);
-    			add_location(p6, file$4, 30, 0, 881);
-    			add_location(h4, file$4, 32, 0, 933);
+    			add_location(button4, file$4, 21, 4, 492);
+    			add_location(ul4, file$4, 21, 0, 488);
+    			add_location(h3, file$4, 23, 0, 533);
+    			add_location(p0, file$4, 24, 0, 564);
+    			add_location(p1, file$4, 25, 0, 639);
+    			add_location(p2, file$4, 26, 0, 738);
+    			add_location(p3, file$4, 27, 0, 766);
+    			add_location(p4, file$4, 28, 0, 808);
+    			add_location(p5, file$4, 29, 0, 841);
+    			add_location(p6, file$4, 30, 0, 885);
+    			add_location(h4, file$4, 32, 0, 937);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3741,13 +3741,13 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "Labyrinth";
     			attr_dev(link, "rel", "stylesheet");
-    			attr_dev(link, "href", "/menu.css");
+    			attr_dev(link, "href", "/css/menu.css");
     			add_location(link, file$3, 1, 4, 12);
     			add_location(head, file$3, 0, 0, 0);
     			attr_dev(h1, "class", "h1menu");
-    			add_location(h1, file$3, 4, 0, 65);
+    			add_location(h1, file$3, 4, 0, 69);
     			attr_dev(p, "class", "pmenu");
-    			add_location(p, file$3, 5, 0, 96);
+    			add_location(p, file$3, 5, 0, 100);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3894,32 +3894,32 @@ var app = (function () {
     			attr_dev(ul, "class", "ajudaul");
     			add_location(ul, file$2, 0, 0, 0);
     			attr_dev(link, "rel", "stylesheet");
-    			attr_dev(link, "href", "/sobre.css");
+    			attr_dev(link, "href", "/css/sobre.css");
     			add_location(link, file$2, 2, 4, 93);
     			add_location(head, file$2, 1, 0, 81);
     			attr_dev(h1, "class", "sobreh1");
-    			add_location(h1, file$2, 4, 0, 145);
-    			add_location(p0, file$2, 6, 0, 188);
-    			add_location(h2, file$2, 21, 0, 1797);
+    			add_location(h1, file$2, 4, 0, 149);
+    			add_location(p0, file$2, 6, 0, 192);
+    			add_location(h2, file$2, 21, 0, 1801);
     			attr_dev(button1, "class", "emmibutton");
-    			add_location(button1, file$2, 24, 4, 1828);
-    			add_location(p1, file$2, 23, 0, 1819);
+    			add_location(button1, file$2, 24, 4, 1832);
+    			add_location(p1, file$2, 23, 0, 1823);
     			attr_dev(button2, "id", "especialbutton");
     			attr_dev(button2, "class", "emmibutton");
-    			add_location(button2, file$2, 27, 4, 1896);
-    			add_location(p2, file$2, 26, 0, 1887);
+    			add_location(button2, file$2, 27, 4, 1900);
+    			add_location(p2, file$2, 26, 0, 1891);
     			attr_dev(button3, "class", "emmibutton");
-    			add_location(button3, file$2, 30, 4, 1979);
-    			add_location(p3, file$2, 29, 0, 1970);
+    			add_location(button3, file$2, 30, 4, 1983);
+    			add_location(p3, file$2, 29, 0, 1974);
     			attr_dev(button4, "class", "emmibutton");
-    			add_location(button4, file$2, 33, 4, 2046);
-    			add_location(p4, file$2, 32, 0, 2037);
+    			add_location(button4, file$2, 33, 4, 2050);
+    			add_location(p4, file$2, 32, 0, 2041);
     			attr_dev(button5, "class", "emmibutton");
-    			add_location(button5, file$2, 36, 4, 2118);
-    			add_location(p5, file$2, 35, 0, 2109);
+    			add_location(button5, file$2, 36, 4, 2122);
+    			add_location(p5, file$2, 35, 0, 2113);
     			attr_dev(button6, "class", "emmibutton");
-    			add_location(button6, file$2, 39, 4, 2186);
-    			add_location(p6, file$2, 38, 0, 2177);
+    			add_location(button6, file$2, 39, 4, 2190);
+    			add_location(p6, file$2, 38, 0, 2181);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -4037,8 +4037,8 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (56:12) {#each regiao as estrada}
-    function create_each_block_1(ctx) {
+    // (74:16) {:else}
+    function create_else_block(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -4049,15 +4049,14 @@ var app = (function () {
     			img = element("img");
     			attr_dev(img, "class", "tabela");
     			if (!src_url_equal(img.src, img_src_value = "https://conexaoplaneta.com.br/wp-content/uploads/2018/03/mato.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "imagem");
-    			add_location(img, file$1, 56, 20, 1789);
-    			add_location(th, file$1, 56, 16, 1785);
+    			attr_dev(img, "alt", "parede");
+    			add_location(img, file$1, 74, 20, 3181);
+    			add_location(th, file$1, 74, 16, 3177);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
     			append_dev(th, img);
     		},
-    		p: noop,
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(th);
     		}
@@ -4065,16 +4064,130 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block_1.name,
-    		type: "each",
-    		source: "(56:12) {#each regiao as estrada}",
+    		id: create_else_block.name,
+    		type: "else",
+    		source: "(74:16) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (54:4) {#each mapa as regiao}
+    // (72:41) 
+    function create_if_block_1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "tabela");
+    			if (!src_url_equal(img.src, img_src_value = "https://img.elo7.com.br/product/600x380/14B5578/papel-de-parede-tijolinho-barro-crie-decore.jpg")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "parede");
+    			attr_dev(img, "width", "36px");
+    			add_location(img, file$1, 72, 20, 2981);
+    			add_location(th, file$1, 72, 16, 2977);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_1.name,
+    		type: "if",
+    		source: "(72:41) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (70:16) {#if (estrada == 0)}
+    function create_if_block(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "tabela");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/estrada-jogo.jpg")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "estrada");
+    			attr_dev(img, "width", "36px");
+    			add_location(img, file$1, 70, 20, 2823);
+    			add_location(th, file$1, 70, 16, 2819);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block.name,
+    		type: "if",
+    		source: "(70:16) {#if (estrada == 0)}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (69:12) {#each regiao as estrada}
+    function create_each_block_1(ctx) {
+    	let if_block_anchor;
+
+    	function select_block_type(ctx, dirty) {
+    		if (/*estrada*/ ctx[9] == 0) return create_if_block;
+    		if (/*estrada*/ ctx[9] == 2) return create_if_block_1;
+    		return create_else_block;
+    	}
+
+    	let current_block_type = select_block_type(ctx);
+    	let if_block = current_block_type(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_1.name,
+    		type: "each",
+    		source: "(69:12) {#each regiao as estrada}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (67:4) {#each mapa as regiao}
     function create_each_block(ctx) {
     	let tr;
     	let t;
@@ -4096,7 +4209,7 @@ var app = (function () {
 
     			t = space();
     			attr_dev(tr, "class", "linhasdatabela");
-    			add_location(tr, file$1, 54, 8, 1701);
+    			add_location(tr, file$1, 67, 8, 2697);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -4107,7 +4220,31 @@ var app = (function () {
 
     			append_dev(tr, t);
     		},
-    		p: noop,
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*mapa*/ 1) {
+    				each_value_1 = /*regiao*/ ctx[6];
+    				validate_each_argument(each_value_1);
+    				let i;
+
+    				for (i = 0; i < each_value_1.length; i += 1) {
+    					const child_ctx = get_each_context_1(ctx, each_value_1, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_1(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(tr, t);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_1.length;
+    			}
+    		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(tr);
     			destroy_each(each_blocks, detaching);
@@ -4118,7 +4255,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(54:4) {#each mapa as regiao}",
+    		source: "(67:4) {#each mapa as regiao}",
     		ctx
     	});
 
@@ -4159,17 +4296,17 @@ var app = (function () {
     			}
 
     			attr_dev(link, "rel", "stylesheet");
-    			attr_dev(link, "href", "jogo.css");
-    			add_location(link, file$1, 48, 4, 1510);
-    			add_location(head, file$1, 47, 0, 1498);
+    			attr_dev(link, "href", "/css/jogo.css");
+    			add_location(link, file$1, 61, 4, 2501);
+    			add_location(head, file$1, 60, 0, 2489);
     			attr_dev(a, "href", "/");
-    			add_location(a, file$1, 50, 43, 1603);
+    			add_location(a, file$1, 63, 43, 2599);
     			attr_dev(button, "class", "ulapp");
-    			add_location(button, file$1, 50, 21, 1581);
+    			add_location(button, file$1, 63, 21, 2577);
     			attr_dev(ul, "class", "ajudaul");
-    			add_location(ul, file$1, 50, 0, 1560);
+    			add_location(ul, file$1, 63, 0, 2556);
     			attr_dev(table, "class", "mapa");
-    			add_location(table, file$1, 52, 0, 1643);
+    			add_location(table, file$1, 65, 0, 2639);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -4241,17 +4378,606 @@ var app = (function () {
     	validate_slots('Jogo', slots, []);
 
     	let mapa = [
-    		[1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-    		[0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-    		[0, 1, 0, 3, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-    		[0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-    		[0, 0, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-    		[1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-    		[1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-    		[1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-    		[1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-    		[1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-    		[1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    		[2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+    		[2, 1, 0, 1, 1, 1, 1, 1, 1, 2],
+    		[2, 0, 0, 0, 0, 1, 0, 0, 0, 2],
+    		[2, 0, 1, 1, 0, 0, 0, 1, 0, 2],
+    		[2, 0, 1, 1, 0, 1, 1, 1, 1, 2],
+    		[2, 0, 0, 1, 0, 1, 0, 0, 1, 2],
+    		[2, 1, 0, 1, 0, 1, 0, 1, 1, 2],
+    		[2, 1, 0, 1, 0, 0, 0, 1, 1, 2],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			3,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2
+    		]
     	]; //1
     	//2
     	//3
@@ -4263,9 +4989,19 @@ var app = (function () {
     	//9
     	//10
     	//11
+    	//1
+    	//2
+    	//3
+    	//4
+    	//5
+    	//6
+    	//7
+    	//8
+    	//9
+    	//10
 
     	function testarposicao() {
-    		if (mapa[i][j] == 0) {
+    		if (mapa[i][j] == 0 || mapa[i][j] == 1) {
     			//devera andar
     			jogador.position = mapa[i][j];
     		} //nao podera passar
@@ -4636,18 +5372,18 @@ var app = (function () {
     			t4 = space();
     			create_component(route2.$$.fragment);
     			attr_dev(button0, "class", "ulapp");
-    			add_location(button0, file, 14, 7, 344);
-    			add_location(ul0, file, 14, 3, 340);
+    			add_location(button0, file, 14, 7, 348);
+    			add_location(ul0, file, 14, 3, 344);
     			attr_dev(button1, "class", "ulapp");
-    			add_location(button1, file, 15, 7, 419);
-    			add_location(ul1, file, 15, 3, 415);
+    			add_location(button1, file, 15, 7, 423);
+    			add_location(ul1, file, 15, 3, 419);
     			attr_dev(button2, "class", "ulapp");
-    			add_location(button2, file, 16, 7, 494);
-    			add_location(ul2, file, 16, 3, 490);
+    			add_location(button2, file, 16, 7, 498);
+    			add_location(ul2, file, 16, 3, 494);
     			attr_dev(div, "class", "divapp");
-    			add_location(div, file, 13, 2, 315);
-    			add_location(nav, file, 12, 1, 306);
-    			add_location(main, file, 19, 1, 582);
+    			add_location(div, file, 13, 2, 319);
+    			add_location(nav, file, 12, 1, 310);
+    			add_location(main, file, 19, 1, 586);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, nav, anchor);
@@ -4786,7 +5522,7 @@ var app = (function () {
     			t1 = space();
     			create_component(router.$$.fragment);
     			attr_dev(link, "rel", "stylesheet");
-    			attr_dev(link, "href", "/appsvelte.css");
+    			attr_dev(link, "href", "/css/appsvelte.css");
     			add_location(link, file, 8, 1, 230);
     			add_location(head, file, 7, 0, 221);
     		},
