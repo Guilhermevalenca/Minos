@@ -4050,8 +4050,8 @@ var app = (function () {
     			attr_dev(img, "class", "tabela");
     			if (!src_url_equal(img.src, img_src_value = "https://conexaoplaneta.com.br/wp-content/uploads/2018/03/mato.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 74, 20, 3181);
-    			add_location(th, file$1, 74, 16, 3177);
+    			add_location(img, file$1, 74, 20, 3110);
+    			add_location(th, file$1, 74, 16, 3106);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -4084,7 +4084,7 @@ var app = (function () {
     			th = element("th");
     			img = element("img");
     			attr_dev(img, "class", "tabela");
-    			if (!src_url_equal(img.src, img_src_value = "https://img.elo7.com.br/product/600x380/14B5578/papel-de-parede-tijolinho-barro-crie-decore.jpg")) attr_dev(img, "src", img_src_value);
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens//parede.jpg")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
     			attr_dev(img, "width", "36px");
     			add_location(img, file$1, 72, 20, 2981);

@@ -70,7 +70,7 @@
                 {#if (estrada == 0)}
                 <th><img class='tabela' src="/css/imagens/estrada-jogo.jpg" alt="estrada" width="36px"></th>     
                 {:else if (estrada == 2)}
-                <th><img class='tabela' src="https://img.elo7.com.br/product/600x380/14B5578/papel-de-parede-tijolinho-barro-crie-decore.jpg" alt="parede" width="36px"></th>
+                <th><img class='tabela' src="/css/imagens//parede.jpg" alt="parede" width="36px"></th>
                 {:else}
                 <th><img class="tabela" src="https://conexaoplaneta.com.br/wp-content/uploads/2018/03/mato.png" alt="parede"></th>
                 {/if}
