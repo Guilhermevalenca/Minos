@@ -6,7 +6,7 @@
 <head>
     <link rel="stylesheet" href="/css/ajuda.css">
 </head>
-<h1>AJUDA</h1>
+<h1 class='h1ajuda'>AJUDA</h1>
 
 <h2>Como jogar?</h2>
 <ul>

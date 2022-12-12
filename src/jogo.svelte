@@ -66,9 +66,8 @@
     {#each mapa as regiao,i}
         <tr class='linhasdatabela'>
             {#each regiao as estrada,j}
-                {#if (estrada == "jogador")}
+                {#if (estrada == jogador)}
                 <th><img class='tabela' id='jogador' src="/css/imagens/personagem.webp" alt="personagem"></th>
-                {mapa[i][j] = 0}
                 {:else if (estrada == 0)}
                 <th><img class='tabela' src="/css/imagens/estrada-jogo.jpg" alt="estrada"></th>     
                 {:else if (estrada == 2)}
