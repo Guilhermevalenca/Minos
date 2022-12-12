@@ -4037,7 +4037,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (74:16) {:else}
+    // (75:16) {:else}
     function create_else_block(ctx) {
     	let th;
     	let img;
@@ -4049,9 +4049,9 @@ var app = (function () {
     			img = element("img");
     			attr_dev(img, "class", "tabela");
     			if (!src_url_equal(img.src, img_src_value = "https://conexaoplaneta.com.br/wp-content/uploads/2018/03/mato.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "algo");
-    			add_location(img, file$1, 74, 20, 3110);
-    			add_location(th, file$1, 74, 16, 3106);
+    			attr_dev(img, "alt", "mato");
+    			add_location(img, file$1, 75, 20, 3336);
+    			add_location(th, file$1, 75, 16, 3332);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -4066,15 +4066,15 @@ var app = (function () {
     		block,
     		id: create_else_block.name,
     		type: "else",
-    		source: "(74:16) {:else}",
+    		source: "(75:16) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (72:41) 
-    function create_if_block_1(ctx) {
+    // (73:41) 
+    function create_if_block_2(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -4086,9 +4086,44 @@ var app = (function () {
     			attr_dev(img, "class", "tabela");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens//parede.jpg")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			attr_dev(img, "width", "36px");
-    			add_location(img, file$1, 72, 20, 2981);
-    			add_location(th, file$1, 72, 16, 2977);
+    			add_location(img, file$1, 73, 20, 3220);
+    			add_location(th, file$1, 73, 16, 3216);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_2.name,
+    		type: "if",
+    		source: "(73:41) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (71:41) 
+    function create_if_block_1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "tabela");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/estrada-jogo.jpg")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "estrada");
+    			add_location(img, file$1, 71, 20, 3075);
+    			add_location(th, file$1, 71, 16, 3071);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -4103,14 +4138,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(72:41) ",
+    		source: "(71:41) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (70:16) {#if (estrada == 0)}
+    // (69:16) {#if (estrada == jogador)}
     function create_if_block(ctx) {
     	let th;
     	let img;
@@ -4121,11 +4156,11 @@ var app = (function () {
     			th = element("th");
     			img = element("img");
     			attr_dev(img, "class", "tabela");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/estrada-jogo.jpg")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "estrada");
-    			attr_dev(img, "width", "36px");
-    			add_location(img, file$1, 70, 20, 2823);
-    			add_location(th, file$1, 70, 16, 2819);
+    			attr_dev(img, "id", "jogador");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/personagem.webp")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "personagem");
+    			add_location(img, file$1, 69, 20, 2920);
+    			add_location(th, file$1, 69, 16, 2916);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -4140,20 +4175,21 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(70:16) {#if (estrada == 0)}",
+    		source: "(69:16) {#if (estrada == jogador)}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (69:12) {#each regiao as estrada}
+    // (68:12) {#each regiao as estrada}
     function create_each_block_1(ctx) {
     	let if_block_anchor;
 
     	function select_block_type(ctx, dirty) {
-    		if (/*estrada*/ ctx[9] == 0) return create_if_block;
-    		if (/*estrada*/ ctx[9] == 2) return create_if_block_1;
+    		if (/*estrada*/ ctx[9] == /*jogador*/ ctx[2]) return create_if_block;
+    		if (/*estrada*/ ctx[9] == 0) return create_if_block_1;
+    		if (/*estrada*/ ctx[9] == 2) return create_if_block_2;
     		return create_else_block;
     	}
 
@@ -4169,7 +4205,17 @@ var app = (function () {
     			if_block.m(target, anchor);
     			insert_dev(target, if_block_anchor, anchor);
     		},
-    		p: noop,
+    		p: function update(ctx, dirty) {
+    			if (current_block_type !== (current_block_type = select_block_type(ctx))) {
+    				if_block.d(1);
+    				if_block = current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			}
+    		},
     		d: function destroy(detaching) {
     			if_block.d(detaching);
     			if (detaching) detach_dev(if_block_anchor);
@@ -4180,14 +4226,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(69:12) {#each regiao as estrada}",
+    		source: "(68:12) {#each regiao as estrada}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (67:4) {#each mapa as regiao}
+    // (66:4) {#each mapa as regiao}
     function create_each_block(ctx) {
     	let tr;
     	let t;
@@ -4209,7 +4255,7 @@ var app = (function () {
 
     			t = space();
     			attr_dev(tr, "class", "linhasdatabela");
-    			add_location(tr, file$1, 67, 8, 2697);
+    			add_location(tr, file$1, 66, 8, 2788);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -4221,7 +4267,7 @@ var app = (function () {
     			append_dev(tr, t);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*mapa*/ 1) {
+    			if (dirty & /*mapa, jogador*/ 5) {
     				each_value_1 = /*regiao*/ ctx[6];
     				validate_each_argument(each_value_1);
     				let i;
@@ -4255,7 +4301,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(67:4) {#each mapa as regiao}",
+    		source: "(66:4) {#each mapa as regiao}",
     		ctx
     	});
 
@@ -4271,6 +4317,9 @@ var app = (function () {
     	let a;
     	let t2;
     	let table;
+    	let t3_value = /*posicaoinicial*/ ctx[1]() + "";
+    	let t3;
+    	let t4;
     	let each_value = /*mapa*/ ctx[0];
     	validate_each_argument(each_value);
     	let each_blocks = [];
@@ -4290,6 +4339,8 @@ var app = (function () {
     			a.textContent = "Voltar";
     			t2 = space();
     			table = element("table");
+    			t3 = text(t3_value);
+    			t4 = space();
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
@@ -4297,16 +4348,16 @@ var app = (function () {
 
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "/css/jogo.css");
-    			add_location(link, file$1, 61, 4, 2501);
-    			add_location(head, file$1, 60, 0, 2489);
+    			add_location(link, file$1, 59, 4, 2568);
+    			add_location(head, file$1, 58, 0, 2556);
     			attr_dev(a, "href", "/");
-    			add_location(a, file$1, 63, 43, 2599);
+    			add_location(a, file$1, 61, 43, 2666);
     			attr_dev(button, "class", "ulapp");
-    			add_location(button, file$1, 63, 21, 2577);
+    			add_location(button, file$1, 61, 21, 2644);
     			attr_dev(ul, "class", "ajudaul");
-    			add_location(ul, file$1, 63, 0, 2556);
+    			add_location(ul, file$1, 61, 0, 2623);
     			attr_dev(table, "class", "mapa");
-    			add_location(table, file$1, 65, 0, 2639);
+    			add_location(table, file$1, 63, 0, 2706);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -4320,13 +4371,15 @@ var app = (function () {
     			append_dev(button, a);
     			insert_dev(target, t2, anchor);
     			insert_dev(target, table, anchor);
+    			append_dev(table, t3);
+    			append_dev(table, t4);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].m(table, null);
     			}
     		},
     		p: function update(ctx, [dirty]) {
-    			if (dirty & /*mapa*/ 1) {
+    			if (dirty & /*mapa, jogador*/ 5) {
     				each_value = /*mapa*/ ctx[0];
     				validate_each_argument(each_value);
     				let i;
@@ -4378,24 +4431,11 @@ var app = (function () {
     	validate_slots('Jogo', slots, []);
 
     	let mapa = [
-    		[2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-    		[2, 1, 0, 1, 1, 1, 1, 1, 1, 2],
-    		[2, 0, 0, 0, 0, 1, 0, 0, 0, 2],
-    		[2, 0, 1, 1, 0, 0, 0, 1, 0, 2],
-    		[2, 0, 1, 1, 0, 1, 1, 1, 1, 2],
-    		[2, 0, 0, 1, 0, 1, 0, 0, 1, 2],
-    		[2, 1, 0, 1, 0, 1, 0, 1, 1, 2],
-    		[2, 1, 0, 1, 0, 0, 0, 1, 1, 2],
     		[
     			2,
-    			1,
+    			2,
     			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
+    			2,
     			2,
     			2,
     			2,
@@ -4436,6 +4476,262 @@ var app = (function () {
     			1,
     			1,
     			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			2
+    		],
+    		[
+    			2,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			2
+    		],
+    		[
+    			2,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			0,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1,
     			2,
     			1,
@@ -4448,12 +4744,7 @@ var app = (function () {
     			1,
     			1,
     			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
+    			0,
     			1,
     			1,
     			1,
@@ -4490,8 +4781,35 @@ var app = (function () {
     			1,
     			1,
     			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
     			1,
     			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
     			1,
     			1,
     			1,
@@ -4522,50 +4840,8 @@ var app = (function () {
     			1,
     			1,
     			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			2
-    		],
-    		[
-    			2,
     			1,
     			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			2,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
     			1,
     			1,
     			1,
@@ -4600,11 +4876,6 @@ var app = (function () {
     			0,
     			0,
     			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
     			1,
     			2
     		],
@@ -4638,11 +4909,6 @@ var app = (function () {
     			3,
     			0,
     			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
     			2
     		],
     		[
@@ -4674,11 +4940,6 @@ var app = (function () {
     			1,
     			0,
     			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
     			1,
     			2
     		],
@@ -4712,11 +4973,6 @@ var app = (function () {
     			1,
     			0,
     			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
     			2
     		],
     		[
@@ -4749,6 +5005,65 @@ var app = (function () {
     			1,
     			0,
     			1,
+    			2
+    		],
+    		[
+    			2,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			2
+    		],
+    		[
+    			2,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			0,
     			1,
     			1,
@@ -4781,48 +5096,6 @@ var app = (function () {
     			1,
     			1,
     			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			2,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
     			1,
     			1,
     			1,
@@ -4833,11 +5106,11 @@ var app = (function () {
     		[
     			2,
     			0,
+    			0,
     			1,
     			1,
     			1,
-    			1,
-    			1,
+    			0,
     			1,
     			1,
     			1,
@@ -4845,11 +5118,6 @@ var app = (function () {
     			1,
     			1,
     			2,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
     			1,
     			1,
     			1,
@@ -4869,6 +5137,11 @@ var app = (function () {
     		],
     		[
     			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
     			0,
     			1,
     			1,
@@ -4876,17 +5149,7 @@ var app = (function () {
     			1,
     			1,
     			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
     			2,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
     			1,
     			1,
     			1,
@@ -4905,48 +5168,6 @@ var app = (function () {
     			2
     		],
     		[
-    			2,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			2,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			2,
-    			2,
-    			2,
-    			2,
     			2,
     			2,
     			2,
@@ -5000,11 +5221,11 @@ var app = (function () {
     	//9
     	//10
 
-    	function testarposicao() {
+    	function testarposicao(i, j) {
     		if (mapa[i][j] == 0 || mapa[i][j] == 1) {
     			//devera andar
-    			jogador.position = mapa[i][j];
-    		} //nao podera passar
+    			$$invalidate(0, mapa[i][j] = jogador, mapa);
+    		}
     	}
 
     	function movimentacao() {
@@ -5016,19 +5237,19 @@ var app = (function () {
     		for (let i in mapa[0]) {
     			if (mapa[0][i] == 0) {
     				//posição inicial do jogador
-    				return jogador.position = mapa[0][i];
+    				$$invalidate(0, mapa[0][i] = jogador, mapa);
     			}
     		}
     	}
 
     	class personagem {
-    		constructor(position, moves) {
-    			this.position = position;
+    		constructor(body, moves) {
+    			this.body = body;
     			this.moves = moves;
     		}
     	}
 
-    	let jogador = new personagem();
+    	let jogador = "jogador";
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
@@ -5046,14 +5267,14 @@ var app = (function () {
 
     	$$self.$inject_state = $$props => {
     		if ('mapa' in $$props) $$invalidate(0, mapa = $$props.mapa);
-    		if ('jogador' in $$props) jogador = $$props.jogador;
+    		if ('jogador' in $$props) $$invalidate(2, jogador = $$props.jogador);
     	};
 
     	if ($$props && "$$inject" in $$props) {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [mapa];
+    	return [mapa, posicaoinicial, jogador];
     }
 
     class Jogo extends SvelteComponentDev {
