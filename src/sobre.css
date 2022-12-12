@@ -1,0 +1,60 @@
+p{
+    font-family:url('https://fonts.cdnfonts.com/css/aref-ruqaa');
+    font-weight: 100;
+    font-size: 240%;
+    color: whitesmoke
+
+
+}
+.sobreh1{
+    font-family:'Felix Titling';
+    font-size: 520%;
+    border-style:hidden;
+    border-radius: 250%;
+   text-align: center;
+   color: rgb(184, 184, 6);
+   background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+   margin: 0%;
+   margin-top: 100px;
+}
+h2{
+    font-family: 'Felix Titling';
+    font-size: 520%;
+    text-align: center;
+    color: rgb(184, 184, 51);
+    background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 0%;
+}
+p{
+    text-align: center;
+}
+.emmibutton{
+    font-family:'Felix Titling' ;
+    font-size: 100%;
+    color:rgb(184, 184, 51);
+    background-color: white;
+    padding: 14px 15px;
+    transition-duration: 0.4s;
+    width: 25%;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #996600;
+} 
+.emmibutton:hover {
+    background-color: white ;
+   
+}
+.emmibutton:active {
+    box-shadow: 0 5px;
+    transform: translateY(25px);
+  }
+#especialbutton{
+    background-image: url('./imagens/videoplayback.gif');
+    background-size: 300%;
+}
