@@ -72,10 +72,9 @@
                 {:else if (estrada == 2)}
                 <th><img class='tabela' src="/css/imagens//parede.jpg" alt="parede" width="36px"></th>
                 {:else}
-                <th><img class="tabela" src="https://conexaoplaneta.com.br/wp-content/uploads/2018/03/mato.png" alt="parede"></th>
+                <th><img class="tabela" src="https://conexaoplaneta.com.br/wp-content/uploads/2018/03/mato.png" alt="algo"></th>
                 {/if}
             {/each}
         </tr>
     {/each}
 </table>
-
