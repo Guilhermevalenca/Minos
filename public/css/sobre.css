@@ -1,25 +1,35 @@
 p{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:url('https://fonts.cdnfonts.com/css/aref-ruqaa');
     font-weight: 100;
-    font-size: 187%;
+    font-size: 240%;
     color: whitesmoke
 
 
 }
 .sobreh1{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Felix Titling';
     font-size: 520%;
     border-style:hidden;
     border-radius: 250%;
    text-align: center;
-   color: rgb(86, 253, 198);
+   color: rgb(184, 184, 6);
+   background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+   margin: 0%;
    margin-top: 100px;
 }
 h2{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-family: 'Felix Titling';
     font-size: 520%;
     text-align: center;
-    color: rgb(86, 253, 198);
+    color: rgb(184, 184, 51);
+    background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 0%;
 }
 p{
     text-align: center;
