@@ -21,21 +21,21 @@ hora de finalmente desvender o mistério que o "Minos Labyrinth" tinha a lhe ofe
 
 <h2>OS DEUSES</h2>
 
-<p>
+<p class="Pajuda">
     <button class='emmibutton'>Alice Manguinho</button>
 </p>
-<p>
+<p class="Pajuda">
     <button id='especialbutton' class='emmibutton'>Allan lima</button>
 </p>
-<p>
+<p class="Pajuda">
     <button class='emmibutton'>Assíria Renara</button>
 </p>
-<p>
+<p class="Pajuda">
     <button class='emmibutton'>Claudiane Rodrigues</button>
 </p>
-<p>
+<p class="Pajuda">
     <button class='emmibutton'>Emmily Kathylen</button>
 </p>
-<p>
+<p class="Pajuda">
     <button class='emmibutton'>Guilherme Valença</button>
 </p>
