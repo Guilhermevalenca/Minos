@@ -5,3 +5,33 @@
 .ajudaul{
     text-align: center;
 }
+.h1ajuda{
+    margin-top: 100px;
+}
+.h1ajuda {
+    font-size: 50px;
+font-family: 'Felix Titling';
+background-clip: text;
+-webkit-background-clip: text;
+color: rgb(184, 184, 32);
+margin: 0%;
+}
+h2{
+    font-size: 40px;
+}
+li{
+    font-size: 30px;
+}
+.botao{
+    font-size: 40px;
+}
+#button{
+    left: 30px;
+}
+.h3ajuda{
+    margin-top: 100px;
+    font-size: 40px;
+}
+p{
+    font-size: 30px;
+}
