@@ -5,7 +5,6 @@
 @import url('https://fonts.cdnfonts.com/css/turkish-times-new-roman');
 @import url('https://fonts.cdnfonts.com/css/georgia-2');
 @import url('https://fonts.cdnfonts.com/css/arial-mt');
-@import url('https://fonts.cdnfonts.com/css/aref-ruqaa');
 /* </import> */
 div{
     text-align: center;
@@ -19,6 +18,7 @@ p{
 body{
     background-image: url('./imagens/teste2.3-fundos.gif');
     background-size: 100%;
+    background-attachment: fixed;
 }
 .ulapp{
     font-size: 200%;
