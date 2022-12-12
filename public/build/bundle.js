@@ -4028,16 +4028,18 @@ var app = (function () {
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
     	child_ctx[6] = list[i];
+    	child_ctx[8] = i;
     	return child_ctx;
     }
 
     function get_each_context_1(ctx, list, i) {
     	const child_ctx = ctx.slice();
     	child_ctx[9] = list[i];
+    	child_ctx[11] = i;
     	return child_ctx;
     }
 
-    // (75:16) {:else}
+    // (76:16) {:else}
     function create_else_block(ctx) {
     	let th;
     	let img;
@@ -4050,13 +4052,14 @@ var app = (function () {
     			attr_dev(img, "class", "tabela");
     			if (!src_url_equal(img.src, img_src_value = "https://conexaoplaneta.com.br/wp-content/uploads/2018/03/mato.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "mato");
-    			add_location(img, file$1, 75, 20, 3336);
-    			add_location(th, file$1, 75, 16, 3332);
+    			add_location(img, file$1, 76, 21, 3428);
+    			add_location(th, file$1, 76, 16, 3423);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
     			append_dev(th, img);
     		},
+    		p: noop,
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(th);
     		}
@@ -4066,14 +4069,14 @@ var app = (function () {
     		block,
     		id: create_else_block.name,
     		type: "else",
-    		source: "(75:16) {:else}",
+    		source: "(76:16) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (73:41) 
+    // (74:41) 
     function create_if_block_2(ctx) {
     	let th;
     	let img;
@@ -4086,13 +4089,15 @@ var app = (function () {
     			attr_dev(img, "class", "tabela");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens//parede.jpg")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 73, 20, 3220);
-    			add_location(th, file$1, 73, 16, 3216);
+    			add_location(img, file$1, 74, 58, 3311);
+    			attr_dev(th, "onclick", "alert('vc nao pode passar')");
+    			add_location(th, file$1, 74, 16, 3269);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
     			append_dev(th, img);
     		},
+    		p: noop,
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(th);
     		}
@@ -4102,14 +4107,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2.name,
     		type: "if",
-    		source: "(73:41) ",
+    		source: "(74:41) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (71:41) 
+    // (72:41) 
     function create_if_block_1(ctx) {
     	let th;
     	let img;
@@ -4122,13 +4127,14 @@ var app = (function () {
     			attr_dev(img, "class", "tabela");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/estrada-jogo.jpg")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "estrada");
-    			add_location(img, file$1, 71, 20, 3075);
-    			add_location(th, file$1, 71, 16, 3071);
+    			add_location(img, file$1, 72, 20, 3128);
+    			add_location(th, file$1, 72, 16, 3124);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
     			append_dev(th, img);
     		},
+    		p: noop,
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(th);
     		}
@@ -4138,36 +4144,48 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(71:41) ",
+    		source: "(72:41) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (69:16) {#if (estrada == jogador)}
+    // (69:16) {#if (estrada == "jogador")}
     function create_if_block(ctx) {
     	let th;
     	let img;
     	let img_src_value;
+    	let t0;
+    	let t1_value = (/*mapa*/ ctx[0][/*i*/ ctx[8]][/*j*/ ctx[11]] = 0) + "";
+    	let t1;
 
     	const block = {
     		c: function create() {
     			th = element("th");
     			img = element("img");
+    			t0 = space();
+    			t1 = text(t1_value);
     			attr_dev(img, "class", "tabela");
     			attr_dev(img, "id", "jogador");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/personagem.webp")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
-    			add_location(img, file$1, 69, 20, 2920);
-    			add_location(th, file$1, 69, 16, 2916);
+    			add_location(img, file$1, 69, 20, 2939);
+    			add_location(th, file$1, 69, 16, 2935);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
     			append_dev(th, img);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, t1, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*mapa*/ 1 && t1_value !== (t1_value = (/*mapa*/ ctx[0][/*i*/ ctx[8]][/*j*/ ctx[11]] = 0) + "")) set_data_dev(t1, t1_value);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(th);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(t1);
     		}
     	};
 
@@ -4175,19 +4193,19 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(69:16) {#if (estrada == jogador)}",
+    		source: "(69:16) {#if (estrada == \\\"jogador\\\")}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (68:12) {#each regiao as estrada}
+    // (68:12) {#each regiao as estrada,j}
     function create_each_block_1(ctx) {
     	let if_block_anchor;
 
     	function select_block_type(ctx, dirty) {
-    		if (/*estrada*/ ctx[9] == /*jogador*/ ctx[2]) return create_if_block;
+    		if (/*estrada*/ ctx[9] == "jogador") return create_if_block;
     		if (/*estrada*/ ctx[9] == 0) return create_if_block_1;
     		if (/*estrada*/ ctx[9] == 2) return create_if_block_2;
     		return create_else_block;
@@ -4206,7 +4224,9 @@ var app = (function () {
     			insert_dev(target, if_block_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (current_block_type !== (current_block_type = select_block_type(ctx))) {
+    			if (current_block_type === (current_block_type = select_block_type(ctx)) && if_block) {
+    				if_block.p(ctx, dirty);
+    			} else {
     				if_block.d(1);
     				if_block = current_block_type(ctx);
 
@@ -4226,14 +4246,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(68:12) {#each regiao as estrada}",
+    		source: "(68:12) {#each regiao as estrada,j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (66:4) {#each mapa as regiao}
+    // (66:4) {#each mapa as regiao,i}
     function create_each_block(ctx) {
     	let tr;
     	let t;
@@ -4255,7 +4275,7 @@ var app = (function () {
 
     			t = space();
     			attr_dev(tr, "class", "linhasdatabela");
-    			add_location(tr, file$1, 66, 8, 2788);
+    			add_location(tr, file$1, 66, 8, 2803);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -4267,7 +4287,7 @@ var app = (function () {
     			append_dev(tr, t);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*mapa, jogador*/ 5) {
+    			if (dirty & /*mapa*/ 1) {
     				each_value_1 = /*regiao*/ ctx[6];
     				validate_each_argument(each_value_1);
     				let i;
@@ -4301,7 +4321,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(66:4) {#each mapa as regiao}",
+    		source: "(66:4) {#each mapa as regiao,i}",
     		ctx
     	});
 
@@ -4348,16 +4368,16 @@ var app = (function () {
 
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "/css/jogo.css");
-    			add_location(link, file$1, 59, 4, 2568);
-    			add_location(head, file$1, 58, 0, 2556);
+    			add_location(link, file$1, 59, 4, 2581);
+    			add_location(head, file$1, 58, 0, 2569);
     			attr_dev(a, "href", "/");
-    			add_location(a, file$1, 61, 43, 2666);
+    			add_location(a, file$1, 61, 43, 2679);
     			attr_dev(button, "class", "ulapp");
-    			add_location(button, file$1, 61, 21, 2644);
+    			add_location(button, file$1, 61, 21, 2657);
     			attr_dev(ul, "class", "ajudaul");
-    			add_location(ul, file$1, 61, 0, 2623);
+    			add_location(ul, file$1, 61, 0, 2636);
     			attr_dev(table, "class", "mapa");
-    			add_location(table, file$1, 63, 0, 2706);
+    			add_location(table, file$1, 63, 0, 2719);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -4379,7 +4399,7 @@ var app = (function () {
     			}
     		},
     		p: function update(ctx, [dirty]) {
-    			if (dirty & /*mapa, jogador*/ 5) {
+    			if (dirty & /*mapa*/ 1) {
     				each_value = /*mapa*/ ctx[0];
     				validate_each_argument(each_value);
     				let i;
@@ -5224,7 +5244,7 @@ var app = (function () {
     	function testarposicao(i, j) {
     		if (mapa[i][j] == 0 || mapa[i][j] == 1) {
     			//devera andar
-    			$$invalidate(0, mapa[i][j] = jogador, mapa);
+    			return $$invalidate(0, mapa[i][j] = jogador, mapa);
     		}
     	}
 
@@ -5237,7 +5257,7 @@ var app = (function () {
     		for (let i in mapa[0]) {
     			if (mapa[0][i] == 0) {
     				//posição inicial do jogador
-    				$$invalidate(0, mapa[0][i] = jogador, mapa);
+    				return $$invalidate(0, mapa[0][i] = jogador, mapa);
     			}
     		}
     	}
@@ -5267,14 +5287,14 @@ var app = (function () {
 
     	$$self.$inject_state = $$props => {
     		if ('mapa' in $$props) $$invalidate(0, mapa = $$props.mapa);
-    		if ('jogador' in $$props) $$invalidate(2, jogador = $$props.jogador);
+    		if ('jogador' in $$props) jogador = $$props.jogador;
     	};
 
     	if ($$props && "$$inject" in $$props) {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [mapa, posicaoinicial, jogador];
+    	return [mapa, posicaoinicial];
     }
 
     class Jogo extends SvelteComponentDev {
