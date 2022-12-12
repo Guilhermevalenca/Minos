@@ -17,7 +17,7 @@
 		<div class='divapp'>
 			<ul><button class='ulapp'><Link to='/jogar'>Jogar</Link></button></ul>
 			<ul><button class='ulapp'><Link to='/sobre'>Sobre</Link></button></ul>
-			<ul><button class='ulapp'><Link to='/ajuda'>ajuda</Link></button></ul>
+			<ul><button class='ulapp'><Link to='/ajuda'>Ajuda</Link></button></ul>
 		</div>
 	</nav>
 	<main>
