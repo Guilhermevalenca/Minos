@@ -6,7 +6,7 @@
 <head>
     <link rel="stylesheet" href="/css/ajuda.css">
 </head>
-<h1 class='h1ajuda'>AJUDA</h1>
+<h1 class="h1ajuda">AJUDA</h1>
 
 <h2>Como jogar?</h2>
 <ul>
@@ -17,11 +17,11 @@
 </ul>
 
 
-<ul><button class='botao'>↟</button></ul>
-<ul><button>↞</button> <button>↠</button></ul>
-<ul><button class='botao'>↡</button></ul>
+<ul><button id='button' class='botao'>↟</button></ul>
+<ul><button class='botao'>↞</button> <button class='botao'>↠</button></ul>
+<ul><button id='button' class='botao'>↡</button></ul>
 
-<h3>Olá, querido humano.</h3>
+<h3 class="h3ajuda">Olá, querido humano.</h3>
 <p>Se você chegou aqui, temo que já esteja em um território perigoso.</p>
 <p>Humanos não deveriam arriscar tanto suas vidas, será que sua curiosidade vale tanto assim?</p>
 <p>Deseja um conselho?</p>
