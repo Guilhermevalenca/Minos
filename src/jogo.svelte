@@ -32,15 +32,9 @@
         }return false
     }
 
-    function movimentacao(i,j,posicaodesejada){
-        //função chamada sempre quando o usuario fizer um movimento
-        if(testarposicao(posicaodesejada)){
-            //posição atual sera atualizada para a imagem da estrada
-
-            //atualização da posição do jogador
-        }else{
-            alert('Personagem não atravessa paredes')
-        }
+    function movimentacao(){
+        //
+        testarposicao()
     }
 
     function posicaoinicial(){
@@ -60,10 +54,6 @@
     }
     
     let jogador = "jogador";
-
-    for(let i in mapa){
-        res.write(`<p>bom dia</p>`)
-    }
 
 </script>
 <head>
