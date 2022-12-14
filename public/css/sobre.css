@@ -56,4 +56,5 @@ p{
 #especialbutton{
     background-image: url('./imagens/videoplayback.gif');
     background-size: 300%;
+    color: white;
 }

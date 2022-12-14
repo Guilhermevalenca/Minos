@@ -1,6 +1,7 @@
 .botao{
     position: relative;
     width: 60px;
+    font-size: 40px;
 }
 .ajudaul{
     text-align: center;
@@ -22,16 +23,16 @@ h2{
 li{
     font-size: 30px;
 }
-.botao{
-    font-size: 40px;
-}
 #button{
     left: 30px;
 }
 .h3ajuda{
-    margin-top: 100px;
+    margin-top: 70px;
     font-size: 40px;
 }
 p{
     font-size: 30px;
+}
+.ulbutton{
+    margin-top: 70px;
 }

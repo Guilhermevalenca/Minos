@@ -1,6 +1,6 @@
 .mapa{
     font-size: 0px;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .tabela{
@@ -10,6 +10,18 @@
     padding: 0px;
 }
 
-#jogador{
-    background-image: url(/css/imagens/estrada-jogo.jpg);
+#estrada{
+    background-image: url("./imagens/estrada-jogo.jpg");
+
+}
+#parede{
+    background-image: url('./imagens/parede.jpg');
+}
+#buttonjogo{
+    left: 30px;
+}
+.botao{
+    font-size: 40px;
+    position: relative;
+    width: 60px;
 }

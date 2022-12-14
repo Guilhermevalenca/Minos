@@ -17,7 +17,7 @@
 </ul>
 
 
-<ul><button id='button' class='botao'>↟</button></ul>
+<ul class="ulbutton"><button id='button' class='botao'>↟</button></ul>
 <ul><button class='botao'>↞</button> <button class='botao'>↠</button></ul>
 <ul><button id='button' class='botao'>↡</button></ul>
 
