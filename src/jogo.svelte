@@ -65,9 +65,9 @@
 </head>
 <ul class ='ajudaul'><button class='ulapp'><a href="/">Voltar</a></button></ul>
 
-<ul><button id="buttonjogo" class='botao' on:click={() => {y = eixoY; eixoY--}}>↟</button></ul>
-<ul><button class='botao' on:click={() => {x = eixoX;eixoX--}}>↞</button> <button class="botao" on:click={() => {x = eixoX;eixoX++}}>↠</button></ul>
-<ul><button id="buttonjogo" class='botao' on:click={() =>{y = eixoY;eixoY++}}>↡</button></ul>
+<ul><button id="buttonjogo" class='botao' on:click={() => {y = eixoY;x = eixox; eixoY--}}>↟</button></ul>
+<ul><button class='botao' on:click={() => {x = eixoX;y = eixoY;eixoX--}}>↞</button> <button class="botao" on:click={() => {x = eixoX;y = eixoY;eixoX++}}>↠</button></ul>
+<ul><button id="buttonjogo" class='botao' on:click={() =>{y = eixoY;x = eixoX;eixoY++}}>↡</button></ul>
 <table class='mapa'>
     {#each mapa as regiao,i}
         <tr class='linhasdatabela'>
