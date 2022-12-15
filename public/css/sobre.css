@@ -35,18 +35,19 @@ p{
     text-align: center;
 }
 .emmibutton{
-    font-size: 70%;
-    color: black;
+    font-family:'Felix Titling' ;
+    font-size: 100%;
+    color:rgb(184, 184, 51);
     background-color: white;
-    padding: 14px 40px;
+    padding: 14px 15px;
     transition-duration: 0.4s;
-    width: 15%;
+    width: 25%;
     border: none;
     border-radius: 15px;
-    box-shadow: 0 9px rgb(86, 253, 198);
+    box-shadow: 0 9px #996600;
 } 
 .emmibutton:hover {
-    background-color: whitesmoke ;
+    background-color: white ;
    
 }
 .emmibutton:active {
@@ -56,5 +57,4 @@ p{
 #especialbutton{
     background-image: url('./imagens/videoplayback.gif');
     background-size: 300%;
-    color: white;
 }
