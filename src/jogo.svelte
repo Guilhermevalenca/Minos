@@ -9,7 +9,6 @@
     //utilizando função para controle do teclado:
     let key;
 	let code;
-
 	function handleKeydown(event) {
 		key = event.key;
 		code = event.code;
@@ -121,6 +120,9 @@
     }
     posicaoinicial()
     let contador = 0;
+    function proximafase(){
+        contador++
+    }
 </script>
 
 <head>
@@ -149,20 +151,24 @@
 
 <table class='mapa'>
     {#each mapa as regiao,i}
-        <tr class='linhasdatabela'>
-            {#each regiao as estrada,j}
-                {#if (mapa[eixoY][eixoX] != 0)}
-                {ResertarPosicao()}
-                {:else if (estrada == 0)}
-                <th id="estrada"><img class="tabela" src="{IMGmovimentacao(i,j,eixoX,eixoY)}" alt="estrada"></th>
-                {:else if (estrada == 2)}
-                <th id="vazio" alt="vazio"></th>
-                {:else if (estrada == 1)}
-                <th id="parede"><img class="tabela" src="/css/imagens/parede.jpg" alt="parede"></th>
-                {/if}
-            {/each}
-        </tr>
+<tr class='linhasdatabela'>
+    {#each regiao as estrada,j}
+        {#if (mapa[eixoY][eixoX] == "V")}
+        {proximafase()}
+        {:else if (mapa[eixoY][eixoX] != 0)}
+        {ResertarPosicao()}
+        {:else if (estrada == 0)}
+        <th id="estrada"><img class="tabela" src="{IMGmovimentacao(i,j,eixoX,eixoY)}" alt="estrada"></th>
+        {:else if (estrada == 2)}
+        <th id="vazio" alt="vazio"></th>
+        {:else if (estrada == 1)}
+        <th id="parede"><img class="tabela" src="/css/imagens/paredemeio.png" alt="parede"></th>
+        {:else if (estrada == 3)}
+        <th id='parede'><img  class='tabela' src="/css/imagens/parademeiodireita" alt="parede"></th>
+        {/if}
     {/each}
+</tr>
+{/each}
 </table>
 {:else if (contador == 1)}
 <button on:click={() => contador = 0}>resetar</button>
@@ -173,4 +179,3 @@
 {:else if (contador == 3)}
 <button on:click={() => contador = 0}>Resetar</button>
 {/if}
-
