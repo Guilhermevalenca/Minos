@@ -56,7 +56,7 @@
         [1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
         [1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
         [1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
-        [1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
+        [1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],  
         [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
     ]
     //variaveis de movimentação:
@@ -108,6 +108,7 @@
                 //posição inicial do jogador
                 eixoX = i
                 eixoY = 1
+                return 
             }
         }
     }
@@ -131,17 +132,17 @@
 
 {#if (key)}
             {#if (code == "ArrowUp")}
-            {decrementarY()}
+            {decrementarY()} <!--para cima-->
             {:else if (code == "ArrowDown")}
-            {incremetarY()}
+            {incremetarY()} <!--para baixo-->
             {:else if (code == "ArrowLeft")}
-            {decrementarX()}
+            {decrementarX()}    <!--para esquerda-->
             {:else if (code == "ArrowRight")}
-            {incremetarX()}
+            {incremetarX()} <!--para direita-->
         {/if}
     {/if}
 
-<input bind:value={contador}>
+<input bind:value={contador} type="text" placeholder="Apenas letras maiusculas">
 
 {#if (contador == 0)}
     
@@ -163,9 +164,13 @@
         </tr>
     {/each}
 </table>
-{:else}
+{:else if (contador == 1)}
 <button on:click={() => contador = 0}>resetar</button>
 <Fase1/>
-
+{:else if (contador == 2)}
+<button on:click={() => contador = 0}>resetar</button>
+<Fase2/>
+{:else if (contador == 3)}
+<button on:click={() => contador = 0}>Resetar</button>
 {/if}
 
