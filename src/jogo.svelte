@@ -1,4 +1,11 @@
 <script>
+    //imports fases do jogo:
+    import Fase1 from './fases-do-jogo/nivel1.svelte'
+    import Fase2 from './fases-do-jogo/nivel2.svelte'
+    import Fase3 from './fases-do-jogo/nivel3.svelte'
+    import {estado} from './Estado.js'
+    import { trocarEstadoDoJogo } from './Estado.js'
+    import VoltarMenu from './VoltarMenu.svelte'
     //utilizando função para controle do teclado:
     let key;
 	let code;
@@ -112,17 +119,17 @@
         }
     }
     posicaoinicial()
+    let contador = 0;
 </script>
+
 <head>
     <link rel="stylesheet" href="/css/jogo.css">
 </head>
-<ul class ='ajudaul'><button class='ulapp'><a href="/">Voltar</a></button></ul>
 
 <svelte:window on:keydown={handleKeydown}/>
-<ul><button id="buttonjogo" class='botao' on:click={() => {y = eixoY;x = eixoX; eixoY--}}>↟</button></ul>
-<ul><button class='botao' on:click={() => {x = eixoX;y = eixoY;eixoX--}}>↞</button> <button class="botao" on:click={() => {x = eixoX;y = eixoY;eixoX++}}>↠</button></ul>
-<ul><button id="buttonjogo" class='botao' on:click={() =>{y = eixoY;x = eixoX;eixoY++}}>↡</button></ul>
-    {#if (key)}
+<VoltarMenu/>
+
+{#if (key)}
             {#if (code == "ArrowUp")}
             {decrementarY()}
             {:else if (code == "ArrowDown")}
@@ -133,6 +140,12 @@
             {incremetarX()}
         {/if}
     {/if}
+
+<input bind:value={contador}>
+
+{#if (contador == 0)}
+    
+
 <table class='mapa'>
     {#each mapa as regiao,i}
         <tr class='linhasdatabela'>
@@ -150,3 +163,9 @@
         </tr>
     {/each}
 </table>
+{:else}
+<button on:click={() => contador = 0}>resetar</button>
+<Fase1/>
+
+{/if}
+

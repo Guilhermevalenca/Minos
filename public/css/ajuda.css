@@ -11,11 +11,12 @@
 }
 .h1ajuda {
     font-size: 50px;
-font-family: 'Felix Titling';
-background-clip: text;
--webkit-background-clip: text;
-color: rgb(184, 184, 32);
-margin: 0%;
+    font-family: 'Felix Titling';
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgb(184, 184, 32);
+    margin: 0%;
+    margin-top: 150px;
 }
 h2{
     font-size: 40px;

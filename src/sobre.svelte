@@ -1,7 +1,11 @@
-<ul class ='ajudaul'><button class='ulapp'><a href="/">Voltar</a></button></ul>
+<script>
+    import VoltarMenu from './VoltarMenu.svelte'
+</script>
+
 <head>
     <link rel="stylesheet" href="/css/sobre.css">
 </head>
+<VoltarMenu/>
 <h1 class='sobreh1'>Sobre o MINOS:</h1>
 
 <p>

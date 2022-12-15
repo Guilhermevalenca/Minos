@@ -4,25 +4,20 @@
 	import Menu from './menu.svelte'
 	import Sobre from './sobre.svelte'
 	import Jogar from './jogo.svelte'
+	import {estado} from './Estado.js'
 </script>
 
 <head>
 	<link rel="stylesheet" href="/css/appsvelte.css">
 </head>
 
-<Menu/>
+{#if $estado === 'menu'}
+	<Menu/>
+{:else if $estado === 'jogar'}
+	<Jogar/>
+{:else if $estado === 'sobre'}
+	<Sobre/>
+{:else if $estado ==='ajuda'}
+	<Ajuda/>
+{/if}
 
-<Router>
-	<nav>
-		<div class='divapp'>
-			<ul><button class='ulapp'><Link to='/jogar'>Jogar</Link></button></ul>
-			<ul><button class='ulapp'><Link to='/sobre'>Sobre</Link></button></ul>
-			<ul><button class='ulapp'><Link to='/ajuda'>ajuda</Link></button></ul>
-		</div>
-	</nav>
-	<main>
-		<Route path='/jogar'><Jogar/></Route>
-		<Route path='/sobre'><Sobre/></Route>
-		<Route path='/ajuda'><Ajuda/></Route>
-	</main>
-</Router>

@@ -1,11 +1,11 @@
 <script>
-    import { bubble } from "svelte/internal";
-
+    import VoltarMenu from './VoltarMenu.svelte'
 </script>
-<ul class ='ajudaul'><button class='ulapp'><a href="/">Voltar</a></button></ul>
+
 <head>
     <link rel="stylesheet" href="/css/ajuda.css">
 </head>
+<VoltarMenu/>
 <h1 class="h1ajuda">AJUDA</h1>
 
 <h2>Como jogar?</h2>
@@ -32,3 +32,5 @@
 
 <h4>Sua curiosidade pode ser sua maior perdição, 
     preste atenção nas entrelinhas e proteja sua retaguarda.</h4>
+
+

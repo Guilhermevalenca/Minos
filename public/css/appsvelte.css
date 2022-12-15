@@ -6,7 +6,7 @@
 @import url('https://fonts.cdnfonts.com/css/georgia-2');
 @import url('https://fonts.cdnfonts.com/css/arial-mt');
 /* </import> */
-div{
+.divapp{
     text-align: center;
 }
 h1{
@@ -20,13 +20,13 @@ body{
     background-size: 100%;
     background-attachment: fixed;
 }
-.ulapp{
+.buttonapp{
     font-size: 200%;
     text-decoration-color:#996600;
     position: relative;
     background-image: url(./imagens/button2.0.jpg);
     background-size: cover;
-    font-size: 25px;
+    font-size: 15px;
     border-style: solid;
     border-radius: 10px;
     border-image: linear-gradient(to bottom, #cc9900 0%, #ffff00 100%) space;
@@ -36,15 +36,14 @@ body{
     position: relative;
     right: 18px;
     top: 70px;
+    
 }
 
-.ajudaul{
-    text-align: center;
-}
-.ulapp :link{
+.pmenu{
     background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     text-decoration: none;
 }
+
