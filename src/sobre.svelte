@@ -1,11 +1,7 @@
-<script>
-    import VoltarMenu from './VoltarMenu.svelte'
-</script>
-
+<ul class ='ajudaul'><button class='ulapp'><a href="/">Voltar</a></button></ul>
 <head>
     <link rel="stylesheet" href="/css/sobre.css">
 </head>
-<VoltarMenu/>
 <h1 class='sobreh1'>Sobre o MINOS:</h1>
 
 <p>
@@ -29,7 +25,7 @@ hora de finalmente desvender o mistério que o "Minos Labyrinth" tinha a lhe ofe
     <button class='emmibutton'>Alice Manguinho</button>
 </p>
 <p>
-    <button id='especialbutton' class='emmibutton'>Allan lima</button>
+    <button id='especialbutton' class='emmibutton'>Allan Lima</button>
 </p>
 <p>
     <button class='emmibutton'>Assíria Renara</button>
