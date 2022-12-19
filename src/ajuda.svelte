@@ -30,7 +30,7 @@
 <p>Não olhe para trás ou tente voltar.</p>
 <p>Fique atento e ouça bem o que lhe rodeia.</p>
 
-<h4>Sua curiosidade pode ser sua maior perdição, 
+<h4 >Sua curiosidade pode ser sua maior perdição, 
     preste atenção nas entrelinhas e proteja sua retaguarda.</h4>
 
 

@@ -1,4 +1,7 @@
-<ul class ='ajudaul'><button class='ulapp'><a href="/">Voltar</a></button></ul>
+<script>
+   import VoltarMenu from './VoltarMenu.svelte'
+</script>
+<VoltarMenu/>
 <head>
     <link rel="stylesheet" href="/css/sobre.css">
 </head>
