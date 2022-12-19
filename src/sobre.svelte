@@ -25,22 +25,22 @@ hora de finalmente desvender o mistério que o "Minos Labyrinth" tinha a lhe ofe
 <h1 class='sobreh1'>Os Deuses</h1>
 
 <h2>Alice Manguinho</h2>
-    <p> 17 anos <br> 1° periodo de IPI <br>  </p>
+    <p> 17 anos <br> 1° período de IPI <br> asms1@discente.ifpe.edu.br </p>
 
  <h2>Allan Lima</h2>
-    <p>Professor Responsável</p>
+    <p>Professor Responsável <br> allan.lima@igarassu.ifpe.edu.br </p>
 
  <h2>Assíria Renara</h2>
-    <p>Estudante de IPI</p>
+    <p>22 anos <br> 1° período de IPI <br> aross@discente.ifpe.edu.br </p>
     
  <h2>Claudiane Rodrigues</h2>
-    <p>Estudante de IPI</p>
+    <p> 21 anos <br> 1° período de IPI <br> cra@discente.ifpe.edu.br </p>
 
  <h2>Emmily Kathylen</h2>
-    <p>Estudante de IPI</p>
+    <p>20 anos <br> 1° período de IPI <br> eksb1@discente.ifpe.edu.br </p>
 
  <h2>Guilherme Valença</h2>
-    <p>Estudante de IPI</p>
+    <p>21 anos <br> 1° período de IPI <br> gvrp@discente.ifpe.edu.br </p>
 
 
   
