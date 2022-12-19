@@ -19,25 +19,25 @@ hora de finalmente desvender o mistério que o "Minos Labyrinth" tinha a lhe ofe
 </p>
 
 
-<h2>OS DEUSES</h2>
+<h1 class='sobreh1'>Os Deuses</h1>
 
-<p>
-    <button class='emmibutton'>Alice Manguinho</button>
-</p>
-<p>
-    <button id='especialbutton' class='emmibutton'>Allan Lima</button>
-</p>
-<p>
-    <button class='emmibutton'>Assíria Renara</button>
-</p>
-<p>
-    <button class='emmibutton'>Claudiane Rodrigues</button>
-</p>
-<p>
-    <button class='emmibutton'>Emmily Kathylen</button>
-</p>
-<p>
-    <button class='emmibutton'>Guilherme Valença</button>
-</p>
+<h2>Alice Manguinho</h2>
+    <p> 17 anos <br> 1° periodo de IPI <br>  </p>
+
+ <h2>Allan Lima</h2>
+    <p>Professor Responsável</p>
+
+ <h2>Assíria Renara</h2>
+    <p>Estudante de IPI</p>
+    
+ <h2>Claudiane Rodrigues</h2>
+    <p>Estudante de IPI</p>
+
+ <h2>Emmily Kathylen</h2>
+    <p>Estudante de IPI</p>
+
+ <h2>Guilherme Valença</h2>
+    <p>Estudante de IPI</p>
 
 
+  
