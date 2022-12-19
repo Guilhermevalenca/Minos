@@ -20,9 +20,11 @@
 }
 h2{
     font-size: 40px;
+    color: aliceblue;
 }
 li{
     font-size: 30px;
+    color: aliceblue;
 }
 #button{
     left: 30px;
@@ -30,10 +32,15 @@ li{
 .h3ajuda{
     margin-top: 70px;
     font-size: 40px;
+    color:aliceblue;
 }
 p{
     font-size: 30px;
+    color: aliceblue;
 }
 .ulbutton{
     margin-top: 70px;
+}
+h4{
+    color: aliceblue;
 }
