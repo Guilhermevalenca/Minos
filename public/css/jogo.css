@@ -11,7 +11,8 @@
 }
 
 #estrada{
-    background-image: url("./imagens/estrada-jogo.jpg");
+    background-image: url("./imagens/chao1.png");
+    background-size: 100%;
 
 }
 #parede{
