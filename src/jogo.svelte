@@ -162,9 +162,9 @@
         {:else if (estrada == 2)}
         <th id="vazio" alt="vazio"></th>
         {:else if (estrada == 1)}
-        <th id="parede"><img class="tabela" src="/css/imagens/parededeamarela.png" alt="parede"></th>
+        <th id="parede"><img class="tabela" src="/css/imagens/paredeamalera1.png" alt="parede"></th>
         {:else if (estrada == 3)}
-        <th id='parede'><img  class='tabela' src="/css/imagens/paradedeamarela.png" alt="parede"></th>
+        <th id='parede'><img  class='tabela' src="/css/imagens/paradeamalera1.png" alt="parede"></th>
         {/if}
     {/each}
 </tr>
