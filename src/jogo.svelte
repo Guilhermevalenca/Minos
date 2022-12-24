@@ -3,6 +3,7 @@
     import Fase1 from './fases-do-jogo/nivel1.svelte'
     import Fase2 from './fases-do-jogo/nivel2.svelte'
     import Fase3 from './fases-do-jogo/nivel3.svelte'
+    import Vitoria from './Vitoria.svelte'
     import {estado} from './Estado.js'
     import { trocarEstadoDoJogo } from './Estado.js'
     import VoltarMenu from './VoltarMenu.svelte'
@@ -121,7 +122,9 @@
     posicaoinicial()
     let contador = 0;
     function proximafase(){
-        contador++
+        if(mapa[eixoY][eixoX] == "V"){
+            contador = 4;
+        }
     }
 </script>
 
@@ -170,7 +173,7 @@
 </tr>
 {/each}
 </table>
-{:else if (contador == 800)}
+{:else if (contador == 1)}
 <button on:click={() => contador = 0}>resetar</button>
 <Fase1/>
 {:else if (contador == 2)}
@@ -178,4 +181,6 @@
 <Fase2/>
 {:else if (contador == 3)}
 <button on:click={() => contador = 0}>Resetar</button>
+{:else if (contador == 4)}
+<Vitoria/>
 {/if}
