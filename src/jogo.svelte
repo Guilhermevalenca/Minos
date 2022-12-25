@@ -7,6 +7,8 @@
     import {estado} from './Estado.js'
     import { trocarEstadoDoJogo } from './Estado.js'
     import VoltarMenu from './VoltarMenu.svelte'
+    import {contador} from './logica-jogo.js'
+    import {proximafase } from './logica-jogo.js'
     //utilizando função para controle do teclado:
     let key;
 	let code;
@@ -120,12 +122,7 @@
         }
     }
     posicaoinicial()
-    let contador = 0;
-    function proximafase(){
-        if(mapa[eixoY][eixoX] == "V"){
-            contador = 4;
-        }
-    }
+    
 </script>
 
 <head>
@@ -147,7 +144,6 @@
         {/if}
     {/if}
 
-<input bind:value={contador} type="text" placeholder="Apenas letras maiusculas">
 
 {#if (contador == 0)}
     
@@ -157,7 +153,7 @@
 <tr class='linhasdatabela'>
     {#each regiao as estrada,j}
         {#if (mapa[eixoY][eixoX] == "V")}
-        {proximafase()}
+        {proximafase(mapa[eixoY][eixoX])}
         {:else if (mapa[eixoY][eixoX] != 0)}
         {ResertarPosicao()}
         {:else if (estrada == 0)}
@@ -174,13 +170,11 @@
 {/each}
 </table>
 {:else if (contador == 1)}
-<button on:click={() => contador = 0}>resetar</button>
 <Fase1/>
 {:else if (contador == 2)}
-<button on:click={() => contador = 0}>resetar</button>
 <Fase2/>
 {:else if (contador == 3)}
-<button on:click={() => contador = 0}>Resetar</button>
+<Fase3/>
 {:else if (contador == 4)}
 <Vitoria/>
 {/if}
