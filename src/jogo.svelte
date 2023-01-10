@@ -4,8 +4,6 @@
     import {estado} from './Estado.js'
     import { trocarEstadoDoJogo } from './Estado.js'
     import VoltarMenu from './VoltarMenu.svelte'
-    import {contador} from './logica-jogo.js'
-    import {proximafase } from './logica-jogo.js'
     //utilizando função para controle do teclado:
     let key;
 	let code;
@@ -30,6 +28,21 @@
             }
         }
     }*/
+    let contador = 0;
+    function proximafase(teste){
+        if (teste == "V") {
+            contador = 4;
+        }else if (teste == "X") {
+            contador = 1;
+        }else if (teste == "Y") {
+            contador = 2;
+        }else if (teste == "Z") {
+            contador = 3;
+        }return contador;
+    }
+    function resertar(){
+        contador = 0;
+    }
     //mapa:
     let mapa = [
         [2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
