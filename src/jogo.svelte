@@ -127,11 +127,7 @@
     ]
     let mapa3 = [
         [2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
-        [2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"V"],
-        [2,1,0,1,1,1,1,1,0,1,1,0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1],
-        [2,1,0,1,0,0,0,1,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1],
-        [2,1,0,1,0,1,0,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,0,1],
-        [2,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1],
+        [2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1],
         [2,1,0,1,1,1,0,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,0,1,0,1,1,1,1,1],
         [2,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,1,0,1,0,1,0,0,0,0,0,1],
         [2,1,0,1,1,1,1,1,0,1,1,1,1,1,1,0,0,0,1,0,1,1,0,1,0,1,0,1,1,1,1,1],
@@ -150,7 +146,11 @@
         [2,1,0,1,1,0,1,1,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,1,0,1],
         [2,1,0,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,1,0,1,0,1],
         [2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],  
-        [2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+        [2,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"V"],
+        [2,1,0,1,1,1,1,1,0,1,1,0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1],
+        [2,1,0,1,0,0,0,1,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1],
+        [2,1,0,1,0,1,0,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,0,1],
+        [2,1,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
     ]
     //variaveis de movimentação:
     let eixoX = 0;
@@ -187,10 +187,18 @@
         eixoY = y;
     }
     //carregando a imagem do jogador ou da estrada
-    function IMGmovimentacao(i,j,x,y){
-            if(y == i && x == j){
-                return '/css/imagens/Dante.png'
-            }else{
+    function IMGmovimentacao(i,j,x,y,mapa){
+            if (y == i && x == j) {
+                return '/css/imagens/soacabecinha.png'
+            }
+            //Chao do mapa:
+            if (mapa == 0) {
+                return "/css/imagens/chaum.png"
+            }else if (mapa == 1) {
+                return "/css/imagens/chaum.png"
+            }else if (mapa == 2) {
+                return "/css/imagens/chaum.png"
+            }else if (mapa == 3) {
                 return "/css/imagens/chaum.png"
             }
     }
@@ -249,7 +257,7 @@
         {:else if (mapa[eixoY][eixoX] != 0)}
         {ResertarPosicao()}
         {:else if (estrada == 0)}
-        <th id="estrada"><img class="tabela" src="{IMGmovimentacao(i,j,eixoX,eixoY)}" alt="estrada"></th>
+        <th id="estrada"><img class="tabela" src="{IMGmovimentacao(i,j,eixoX,eixoY,contador)}" alt="estrada"></th>
         {:else if (estrada == 2)}
         <th id="vazio" alt="vazio"></th>
         {:else if (estrada == 1)}
@@ -274,7 +282,7 @@
         {:else if (mapa1[eixoY][eixoX] != 0)}
         {ResertarPosicao()}
         {:else if (estrada == 0)}
-        <th id="estrada"><img class="tabela" src="{IMGmovimentacao(i,j,eixoX,eixoY)}" alt="estrada"></th>
+        <th id="estrada"><img class="tabela" src="{IMGmovimentacao(i,j,eixoX,eixoY,contador)}" alt="estrada"></th>
         {:else if (estrada == 2)}
         <th id="vazio" alt="vazio"></th>
         {:else if (estrada == 1)}
@@ -299,7 +307,7 @@
         {:else if (mapa2[eixoY][eixoX] != 0)}
         {ResertarPosicao()}
         {:else if (estrada == 0)}
-        <th id="estrada"><img class="tabela" src="{IMGmovimentacao(i,j,eixoX,eixoY)}" alt="estrada"></th>
+        <th id="estrada"><img class="tabela" src="{IMGmovimentacao(i,j,eixoX,eixoY,contador)}" alt="estrada"></th>
         {:else if (estrada == 2)}
         <th id="vazio" alt="vazio"></th>
         {:else if (estrada == 1)}
@@ -324,7 +332,7 @@
         {:else if (mapa3[eixoY][eixoX] != 0)}
         {ResertarPosicao()}
         {:else if (estrada == 0)}
-        <th id="estrada"><img class="tabela" src="{IMGmovimentacao(i,j,eixoX,eixoY)}" alt="estrada"></th>
+        <th id="estrada"><img class="tabela" src="{IMGmovimentacao(i,j,eixoX,eixoY,contador)}" alt="estrada"></th>
         {:else if (estrada == 2)}
         <th id="vazio" alt="vazio"></th>
         {:else if (estrada == 1)}
