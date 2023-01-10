@@ -37,7 +37,7 @@ hora de finalmente desvender o mistério que o "Minos Labyrinth" tinha a lhe ofe
     <p> 21 anos <br> 1° período de IPI <br> cra@discente.ifpe.edu.br </p>
 
  <h2>Emmily Kathylen</h2>
-    <p>20 anos <br> 1° período de IPI <br> eksb1@discente.ifpe.edu.br </p>
+    <p>20 anos <br> 1° período de IPI <br> emmilysouzakathylen@gmail.com </p>
 
  <h2>Guilherme Valença</h2>
     <p>21 anos <br> 1° período de IPI <br> gvrp@discente.ifpe.edu.br </p>
