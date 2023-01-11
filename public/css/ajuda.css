@@ -10,21 +10,35 @@
     margin-top: 100px;
 }
 .h1ajuda {
-    font-size: 50px;
-    font-family: 'Felix Titling';
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: rgb(184, 184, 32);
-    margin: 0%;
-    margin-top: 150px;
+    font-family:'Felix Titling';
+    font-size: 250%;
+    border-style:hidden;
+   text-align: left;
+   color: rgb(184, 184, 6);
+   background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+   margin: 0%;
+   margin-top: 200px;
 }
 h2{
-    font-size: 40px;
-    color: aliceblue;
+    font-family:'Felix Titling';
+    font-size: 200%;
+    border-style:hidden;
+   text-align: left;
+   color: rgb(184, 184, 6);
+   background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+   margin: 0%;
+   margin-top: 100px;
 }
 li{
     font-size: 30px;
-    color: aliceblue;
+    color: #ffff00;
+
 }
 #button{
     left: 30px;
@@ -32,15 +46,30 @@ li{
 .h3ajuda{
     margin-top: 70px;
     font-size: 40px;
-    color:aliceblue;
+    color: rgb(184, 184, 6);
+    background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 0%;
+   margin-top: 100px;
 }
 p{
     font-size: 30px;
-    color: aliceblue;
+    color: #ffff00;
+    margin: 0%;
+   margin-top: 10px;
 }
 .ulbutton{
     margin-top: 70px;
 }
 h4{
     color: aliceblue;
+    color: rgb(184, 184, 6);
+    background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 0%;
+   margin-top: 1px;
 }
