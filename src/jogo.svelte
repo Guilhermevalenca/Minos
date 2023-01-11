@@ -28,34 +28,31 @@
             }
         }
     }*/
-    var temporizador;
+
+    let temporizador;
     function time(nivel){
     temporizador = setInterval( () => {
         alert('Seu tempo acabou')
         if(nivel == 1){
-            MudançaDeFase = 0;
+            alterandoNivel = 0;
         }else{
-            MudançaDeFase = 1;
+            alterandoNivel = 1;
         }
-    }, 30000);
+    }, 3000);
    }
-
-     let MudançaDeFase = 0;
+    alterandoNivel = 0;
+    export let alterandoNivel;
     function proximafase(teste){
         clearInterval(temporizador)
-        
         if (teste == "V") {
-            MudançaDeFase = 4;
+            alterandoNivel = 4;
         }else if (teste == "X") {
-            MudançaDeFase = 1;
+            alterandoNivel = 1;
         }else if (teste == "Y") {
-            MudançaDeFase = 2;
+            alterandoNivel = 2;
         }else if (teste == "Z") {
-            MudançaDeFase = 3;
+            alterandoNivel = 3;
         }return
-    }
-    function resertar(){
-        MudançaDeFase = 0;
     }
     //mapa:
     let mapa = [
@@ -289,9 +286,9 @@
     {/if}
 
 
-{#if (MudançaDeFase == 0)}
+{#if (alterandoNivel == 0)}
 
-
+{clearInterval(temporizador)}
     <p class='FasesDoJogo'>Tutorial</p>
 
 {posicaoinicial(mapa)}
@@ -305,7 +302,7 @@
         {:else if (mapa[eixoY][eixoX] != 0)}
         {ResertarPosicao()}
         {:else if (estrada == 0)}
-        <th id="estrada"><img class="tabela" src="{IMGmovimentacao(i,j,eixoX,eixoY,MudançaDeFase)}" alt="estrada"></th>
+        <th id="estrada"><img class="tabela" src="{IMGmovimentacao(i,j,eixoX,eixoY,alterandoNivel)}" alt="estrada"></th>
         {:else if (estrada == 2)}
         <th id="vazio" alt="vazio"></th>
         {:else if (estrada == 1)}
@@ -319,10 +316,10 @@
 </tr>
 {/each}
 </table>
-{:else if (MudançaDeFase == 1)}
+{:else if (alterandoNivel == 1)}
 
-{time(MudançaDeFase)}
-
+{time(alterandoNivel)}
+<div class='temporizador'></div>
 <p class='FasesDoJogo'>Nivel 1</p>
 
 {posicaoinicial(mapa1)}
@@ -336,7 +333,7 @@
         {:else if (mapa1[eixoY][eixoX] != 0)}
         {ResertarPosicao()}
         {:else if (estrada == 0)}
-        <th id="estrada"><img class="tabela" src="{IMGmovimentacao(i,j,eixoX,eixoY,MudançaDeFase)}" alt="estrada"></th>
+        <th id="estrada"><img class="tabela" src="{IMGmovimentacao(i,j,eixoX,eixoY,alterandoNivel)}" alt="estrada"></th>
         {:else if (estrada == 2)}
         <th id="vazio" alt="vazio"></th>
         {:else if (estrada == 1)}
@@ -350,11 +347,12 @@
 </tr>
 {/each}
 </table>
-{:else if (MudançaDeFase == 2)}
+{:else if (alterandoNivel == 2)}
 
 <p class='FasesDoJogo'>Nivel 2</p>
 
-{time(MudançaDeFase)}
+
+{time(alterandoNivel)}
 
 {posicaoinicial(mapa2)}
 
@@ -367,7 +365,7 @@
         {:else if (mapa2[eixoY][eixoX] != 0)}
         {ResertarPosicao()}
         {:else if (estrada == 0)}
-        <th id="estrada"><img class="tabela" src="{IMGmovimentacao(i,j,eixoX,eixoY,MudançaDeFase)}" alt="estrada"></th>
+        <th id="estrada"><img class="tabela" src="{IMGmovimentacao(i,j,eixoX,eixoY,alterandoNivel)}" alt="estrada"></th>
         {:else if (estrada == 2)}
         <th id="vazio" alt="vazio"></th>
         {:else if (estrada == 1)}
@@ -381,9 +379,8 @@
 </tr>
 {/each}
 </table>
-{:else if (MudançaDeFase == 3)}
-
-{time(MudançaDeFase)}
+{:else if (alterandoNivel == 3)}
+{time(alterandoNivel)}
 
 <p class='FasesDoJogo'>Nivel 3</p>
 
@@ -394,11 +391,11 @@
 <tr class='linhasdatabela'>
     {#each regiao as estrada,j}
         {#if (mapa3[eixoY][eixoX] == "V")}
-        {proximafase(mapa3[eixoY][eixoX])}
+        {proximafase(mapa3[eixoY][eixoX], () => clearInterval(temporizador))}
         {:else if (mapa3[eixoY][eixoX] != 0)}
         {ResertarPosicao()}
         {:else if (estrada == 0)}
-        <th id="estrada"><img class="tabela" src="{IMGmovimentacao(i,j,eixoX,eixoY,MudançaDeFase)}" alt="estrada"></th>
+        <th id="estrada"><img class="tabela" src="{IMGmovimentacao(i,j,eixoX,eixoY,alterandoNivel)}" alt="estrada"></th>
         {:else if (estrada == 2)}
         <th id="vazio" alt="vazio"></th>
         {:else if (estrada == 1)}
@@ -412,6 +409,6 @@
 </tr>
 {/each}
 </table>
-{:else if (MudançaDeFase == 4)}
+{:else if (alterandoNivel == 4)}
 <Vitoria/>
 {/if}
