@@ -28,31 +28,20 @@
             }
         }
     }*/
-
-    let temporizador;
-    function time(nivel){
-    temporizador = setInterval( () => {
-        alert('Seu tempo acabou')
-        if(nivel == 1){
-            alterandoNivel = 0;
-        }else{
-            alterandoNivel = 1;
-        }
-    }, 3000);
-   }
-    alterandoNivel = 0;
-    export let alterandoNivel;
+    let contador = 0;
     function proximafase(teste){
-        clearInterval(temporizador)
         if (teste == "V") {
-            alterandoNivel = 4;
+            contador = 4;
         }else if (teste == "X") {
-            alterandoNivel = 1;
+            contador = 1;
         }else if (teste == "Y") {
-            alterandoNivel = 2;
+            contador = 2;
         }else if (teste == "Z") {
-            alterandoNivel = 3;
-        }return
+            contador = 3;
+        }return contador;
+    }
+    function resertar(){
+        contador = 0;
     }
     //mapa:
     let mapa = [
@@ -137,7 +126,7 @@
         [2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],  
         [2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
     ]
-     let mapa3 = [
+    let mapa3 = [
         [2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
         [2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1],
         [2,1,0,1,1,1,0,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,0,1,0,1,1,1,1,0,0,1,1,0,1,0,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,1,0,1],
@@ -255,14 +244,8 @@
             this.body = body;
             this.moves = moves;
         }
-    }/*
-    function FimTime(){
-        alert('vc perdeu')
-        return
     }
-    let Time = setTimout(FimTime,120000)
-    */
-   
+    
 </script>
 
 <head>
@@ -285,9 +268,8 @@
     {/if}
 
 
-{#if (alterandoNivel == 0)}
+{#if (contador == 99)}
 
-{clearInterval(temporizador)}
     <p class='FasesDoJogo'>Tutorial</p>
 
 {posicaoinicial(mapa)}
@@ -301,7 +283,7 @@
         {:else if (mapa[eixoY][eixoX] != 0)}
         {ResertarPosicao()}
         {:else if (estrada == 0)}
-        <th id="estrada"><img class="tabela" src="{IMGmovimentacao(i,j,eixoX,eixoY,alterandoNivel)}" alt="estrada"></th>
+        <th id="estrada"><img class="tabela" src="{IMGmovimentacao(i,j,eixoX,eixoY,contador)}" alt="estrada"></th>
         {:else if (estrada == 2)}
         <th id="vazio" alt="vazio"></th>
         {:else if (estrada == 1)}
@@ -315,10 +297,8 @@
 </tr>
 {/each}
 </table>
-{:else if (alterandoNivel == 1)}
+{:else if (contador == 1)}
 
-{time(alterandoNivel)}
-<div class='temporizador'></div>
 <p class='FasesDoJogo'>Nivel 1</p>
 
 {posicaoinicial(mapa1)}
@@ -332,7 +312,7 @@
         {:else if (mapa1[eixoY][eixoX] != 0)}
         {ResertarPosicao()}
         {:else if (estrada == 0)}
-        <th id="estrada"><img class="tabela" src="{IMGmovimentacao(i,j,eixoX,eixoY,alterandoNivel)}" alt="estrada"></th>
+        <th id="estrada"><img class="tabela" src="{IMGmovimentacao(i,j,eixoX,eixoY,contador)}" alt="estrada"></th>
         {:else if (estrada == 2)}
         <th id="vazio" alt="vazio"></th>
         {:else if (estrada == 1)}
@@ -346,12 +326,9 @@
 </tr>
 {/each}
 </table>
-{:else if (alterandoNivel == 2)}
+{:else if (contador == 2)}
 
 <p class='FasesDoJogo'>Nivel 2</p>
-
-
-{time(alterandoNivel)}
 
 {posicaoinicial(mapa2)}
 
@@ -364,7 +341,7 @@
         {:else if (mapa2[eixoY][eixoX] != 0)}
         {ResertarPosicao()}
         {:else if (estrada == 0)}
-        <th id="estrada"><img class="tabela" src="{IMGmovimentacao(i,j,eixoX,eixoY,alterandoNivel)}" alt="estrada"></th>
+        <th id="estrada"><img class="tabela" src="{IMGmovimentacao(i,j,eixoX,eixoY,contador)}" alt="estrada"></th>
         {:else if (estrada == 2)}
         <th id="vazio" alt="vazio"></th>
         {:else if (estrada == 1)}
@@ -378,8 +355,7 @@
 </tr>
 {/each}
 </table>
-{:else if (alterandoNivel == 3)}
-{time(alterandoNivel)}
+{:else if (contador == 0)}
 
 <p class='FasesDoJogo'>Nivel 3</p>
 
@@ -390,11 +366,11 @@
 <tr class='linhasdatabela'>
     {#each regiao as estrada,j}
         {#if (mapa3[eixoY][eixoX] == "V")}
-        {proximafase(mapa3[eixoY][eixoX], () => clearInterval(temporizador))}
+        {proximafase(mapa3[eixoY][eixoX])}
         {:else if (mapa3[eixoY][eixoX] != 0)}
         {ResertarPosicao()}
         {:else if (estrada == 0)}
-        <th id="estrada"><img class="tabela" src="{IMGmovimentacao(i,j,eixoX,eixoY,alterandoNivel)}" alt="estrada"></th>
+        <th id="estrada"><img class="tabela" src="{IMGmovimentacao(i,j,eixoX,eixoY,contador)}" alt="estrada"></th>
         {:else if (estrada == 2)}
         <th id="vazio" alt="vazio"></th>
         {:else if (estrada == 1)}
@@ -408,6 +384,6 @@
 </tr>
 {/each}
 </table>
-{:else if (alterandoNivel == 4)}
+{:else if (contador == 4)}
 <Vitoria/>
 {/if}
