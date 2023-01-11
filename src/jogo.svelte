@@ -73,7 +73,7 @@
     ]
     let mapa1 = [
         [2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
-        [2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+        [2,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
         [2,1,0,1,1,1,1,1,0,1,1,0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1],
         [2,1,0,1,0,0,0,1,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1],
         [2,1,0,1,0,1,0,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,0,1],
@@ -95,12 +95,13 @@
         [2,1,0,1,0,0,0,0,0,0,1,0,1,1,1,0,1,0,1,0,1,1,1,1,1,1,0,0,0,0,0,1],
         [2,1,0,1,1,0,1,1,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,1,0,1],
         [2,1,0,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,1,0,1,0,1],
-        [2,1,"Y",0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],  
-        [2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+        [2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],  
+        [2,1,"Y",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
+        [2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]
     ]
     let mapa2 = [
         [2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
-        [2,0,0,0,0,0,0,0,0,0,0,0,0,0,"Z",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+        [2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Z"],
         [2,1,0,1,1,1,1,1,0,1,1,0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1],
         [2,1,0,1,0,0,0,1,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1],
         [2,1,0,1,0,1,0,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,0,1],
@@ -146,11 +147,11 @@
         [2,1,0,1,1,0,1,1,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,1,0,1],
         [2,1,0,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,1,0,1,0,1],
         [2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],  
-        [2,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"V"],
+        [2,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"V"],
         [2,1,0,1,1,1,1,1,0,1,1,0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1],
         [2,1,0,1,0,0,0,1,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1],
         [2,1,0,1,0,1,0,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,0,1],
-        [2,1,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+        [2,1,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
     ]
     //variaveis de movimentação:
     let eixoX = 0;
@@ -245,8 +246,10 @@
 
 
 {#if (contador == 0)}
-    
-    {posicaoinicial(mapa)}
+
+    <p class='FasesDoJogo'>Tutorial</p>
+
+{posicaoinicial(mapa)}
 
 <table class='mapa'>
     {#each mapa as regiao,i}
@@ -264,12 +267,16 @@
         <th id="parede"><img class="tabela" src="/css/imagens/paredeamalera1.png" alt="parede"></th>
         {:else if (estrada == 3)}
         <th id='parede'><img  class='tabela' src="/css/imagens/paradeamalera1.png" alt="parede"></th>
+        {:else}
+        <th id='parede'><img class="tabela" src="/css/imagens/chaum.png" alt='parede'></th>
         {/if}
     {/each}
 </tr>
 {/each}
 </table>
 {:else if (contador == 1)}
+
+<p class='FasesDoJogo'>Nivel 1</p>
 
 {posicaoinicial(mapa1)}
 
@@ -289,12 +296,16 @@
         <th id="parede"><img class="tabela" src="/css/imagens/paredeamalera1.png" alt="parede"></th>
         {:else if (estrada == 3)}
         <th id='parede'><img  class='tabela' src="/css/imagens/paradeamalera1.png" alt="parede"></th>
+        {:else}
+        <th id='parede'><img class="tabela" src="/css/imagens/chaum.png" alt='parede'></th>
         {/if}
     {/each}
 </tr>
 {/each}
 </table>
 {:else if (contador == 2)}
+
+<p class='FasesDoJogo'>Nivel 2</p>
 
 {posicaoinicial(mapa2)}
 
@@ -314,12 +325,16 @@
         <th id="parede"><img class="tabela" src="/css/imagens/paredeamalera1.png" alt="parede"></th>
         {:else if (estrada == 3)}
         <th id='parede'><img  class='tabela' src="/css/imagens/paradeamalera1.png" alt="parede"></th>
+        {:else}
+        <th id='parede'><img class="tabela" src="/css/imagens/chaum.png" alt='parede'></th>
         {/if}
     {/each}
 </tr>
 {/each}
 </table>
 {:else if (contador == 3)}
+
+<p class='FasesDoJogo'>Nivel 3</p>
 
 {posicaoinicial(mapa3)}
 
@@ -339,6 +354,8 @@
         <th id="parede"><img class="tabela" src="/css/imagens/paredeamalera1.png" alt="parede"></th>
         {:else if (estrada == 3)}
         <th id='parede'><img  class='tabela' src="/css/imagens/paradeamalera1.png" alt="parede"></th>
+        {:else}
+        <th id='parede'><img class="tabela" src="/css/imagens/chaum.png" alt='parede'></th>
         {/if}
     {/each}
 </tr>
