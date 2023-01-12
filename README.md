@@ -8,4 +8,4 @@ Caso aja erro nos comandos tente: 'npx yarn dev' para instalar as dependencias e
 
 Sobre o nosso jogo tal tal tal 
 
-<img src='/css/imagens/chao1.png' alt='qualquercoisa'>
+<img src='/public/css/imagens/chao1.png' alt='qualquercoisa'>
