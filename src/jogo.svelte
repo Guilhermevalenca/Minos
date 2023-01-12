@@ -400,7 +400,7 @@
     {/if}
 
 
-{#if (MudançaDeFase == 9)}
+{#if (MudançaDeFase == 0)}
 
 
     <p class='FasesDoJogo'>Tutorial</p>
@@ -477,7 +477,7 @@
 {/each}
 </table>
 {/if}
-{:else if (MudançaDeFase == 0)}
+{:else if (MudançaDeFase == 2)}
 
 <p class='FasesDoJogo'>Nivel 2</p>
 
