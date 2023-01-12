@@ -33,3 +33,11 @@ Foi muito interessante participar da criação do minos. Por nunca ter tido cont
 <h2> Guilherme Valença </h2>
 
 <img src='/public/css/imagens/chao1.png' alt='qualquercoisa'>
+
+<style> 
+
+h1{
+    font-size: 30px:
+}
+
+</style>
