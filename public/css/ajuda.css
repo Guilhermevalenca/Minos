@@ -21,6 +21,7 @@
    color: transparent;
    margin: 0%;
    margin-top: 200px;
+   margin-left: 1%;
 }
 h2{
     font-family:'Felix Titling';
@@ -34,10 +35,12 @@ h2{
    color: transparent;
    margin: 0%;
    margin-top: 100px;
+   margin-left: 1%;
 }
 li{
     font-size: 30px;
     color: #ffff00;
+    margin-left: 1%;
 
 }
 #button{
@@ -53,12 +56,14 @@ li{
     color: transparent;
     margin: 0%;
    margin-top: 100px;
+   margin-left: 1%;
 }
 p{
     font-size: 30px;
     color: #ffff00;
-    margin: 0%;
-   margin-top: 10px;
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 1%;
 }
 .ulbutton{
     margin-top: 70px;
@@ -72,4 +77,5 @@ h4{
     color: transparent;
     margin: 0%;
    margin-top: 1px;
+   margin-left: 1%;
 }
