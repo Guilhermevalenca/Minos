@@ -4889,7 +4889,7 @@ var app = (function () {
     			if_block.c();
     			if_block_anchor = empty();
     			attr_dev(p, "class", "FasesDoJogo");
-    			add_location(p, file$1, 411, 0, 22231);
+    			add_location(p, file$1, 411, 0, 22238);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
@@ -4964,7 +4964,7 @@ var app = (function () {
     			if_block.c();
     			if_block_anchor = empty();
     			attr_dev(p, "class", "FasesDoJogo");
-    			add_location(p, file$1, 368, 0, 20866);
+    			add_location(p, file$1, 368, 0, 20873);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -5210,7 +5210,7 @@ var app = (function () {
     			}
 
     			attr_dev(table, "class", "mapa");
-    			add_location(table, file$1, 423, 0, 22533);
+    			add_location(table, file$1, 423, 0, 22540);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
@@ -5291,10 +5291,10 @@ var app = (function () {
     			t2 = space();
     			t3 = text(t3_value);
     			attr_dev(p, "class", "Enigma");
-    			add_location(p, file$1, 414, 4, 22288);
+    			add_location(p, file$1, 414, 4, 22295);
     			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
     			attr_dev(input, "class", "RespostaEnigma");
-    			add_location(input, file$1, 415, 0, 22333);
+    			add_location(input, file$1, 415, 0, 22340);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -5351,9 +5351,9 @@ var app = (function () {
     			attr_dev(img, "class", "tabela");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaum.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 440, 24, 23361);
+    			add_location(img, file$1, 440, 24, 23368);
     			attr_dev(th, "id", "parede");
-    			add_location(th, file$1, 440, 8, 23345);
+    			add_location(th, file$1, 440, 8, 23352);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -5389,9 +5389,9 @@ var app = (function () {
     			attr_dev(img, "class", "tabela");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paradeamalera1.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 438, 24, 23241);
+    			add_location(img, file$1, 438, 24, 23248);
     			attr_dev(th, "id", "parede");
-    			add_location(th, file$1, 438, 8, 23225);
+    			add_location(th, file$1, 438, 8, 23232);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -5427,9 +5427,9 @@ var app = (function () {
     			attr_dev(img, "class", "tabela");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredeamalera1.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 436, 24, 23104);
+    			add_location(img, file$1, 436, 24, 23111);
     			attr_dev(th, "id", "parede");
-    			add_location(th, file$1, 436, 8, 23088);
+    			add_location(th, file$1, 436, 8, 23095);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -5461,7 +5461,7 @@ var app = (function () {
     			th = element("th");
     			attr_dev(th, "id", "vazio");
     			attr_dev(th, "alt", "vazio");
-    			add_location(th, file$1, 434, 8, 23011);
+    			add_location(th, file$1, 434, 8, 23018);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -5496,9 +5496,9 @@ var app = (function () {
     			attr_dev(img, "class", "tabela");
     			if (!src_url_equal(img.src, img_src_value = IMGmovimentacao(/*i*/ ctx[31], /*j*/ ctx[34], /*eixoX*/ ctx[4], /*eixoY*/ ctx[5], /*MudançaDeFase*/ ctx[3]))) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "estrada");
-    			add_location(img, file$1, 432, 25, 22872);
+    			add_location(img, file$1, 432, 25, 22879);
     			attr_dev(th, "id", "estrada");
-    			add_location(th, file$1, 432, 8, 22855);
+    			add_location(th, file$1, 432, 8, 22862);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -5663,7 +5663,7 @@ var app = (function () {
 
     			t = space();
     			attr_dev(tr, "class", "linhasdatabela");
-    			add_location(tr, file$1, 425, 0, 22586);
+    			add_location(tr, file$1, 425, 0, 22593);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -5746,7 +5746,7 @@ var app = (function () {
     			}
 
     			attr_dev(table, "class", "mapa");
-    			add_location(table, file$1, 382, 0, 21202);
+    			add_location(table, file$1, 382, 0, 21209);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
@@ -5827,10 +5827,10 @@ var app = (function () {
     			t2 = space();
     			t3 = text(t3_value);
     			attr_dev(p, "class", "Enigma");
-    			add_location(p, file$1, 373, 4, 20956);
+    			add_location(p, file$1, 373, 4, 20963);
     			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
     			attr_dev(input, "class", "RespostaEnigma");
-    			add_location(input, file$1, 374, 0, 21001);
+    			add_location(input, file$1, 374, 0, 21008);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -5887,9 +5887,9 @@ var app = (function () {
     			attr_dev(img, "class", "tabela");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel4.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 399, 24, 22026);
+    			add_location(img, file$1, 399, 24, 22033);
     			attr_dev(th, "id", "parede");
-    			add_location(th, file$1, 399, 8, 22010);
+    			add_location(th, file$1, 399, 8, 22017);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -5925,9 +5925,9 @@ var app = (function () {
     			attr_dev(img, "class", "tabela");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredelevel4.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 397, 24, 21908);
+    			add_location(img, file$1, 397, 24, 21915);
     			attr_dev(th, "id", "parede");
-    			add_location(th, file$1, 397, 8, 21892);
+    			add_location(th, file$1, 397, 8, 21899);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -5963,9 +5963,9 @@ var app = (function () {
     			attr_dev(img, "class", "tabela");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredelevel4.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 395, 24, 21773);
+    			add_location(img, file$1, 395, 24, 21780);
     			attr_dev(th, "id", "parede");
-    			add_location(th, file$1, 395, 8, 21757);
+    			add_location(th, file$1, 395, 8, 21764);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -5997,7 +5997,7 @@ var app = (function () {
     			th = element("th");
     			attr_dev(th, "id", "vazio");
     			attr_dev(th, "alt", "vazio");
-    			add_location(th, file$1, 393, 8, 21680);
+    			add_location(th, file$1, 393, 8, 21687);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -6032,9 +6032,9 @@ var app = (function () {
     			attr_dev(img, "class", "tabela");
     			if (!src_url_equal(img.src, img_src_value = IMGmovimentacao(/*i*/ ctx[31], /*j*/ ctx[34], /*eixoX*/ ctx[4], /*eixoY*/ ctx[5], /*MudançaDeFase*/ ctx[3]))) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "estrada");
-    			add_location(img, file$1, 391, 25, 21541);
+    			add_location(img, file$1, 391, 25, 21548);
     			attr_dev(th, "id", "estrada");
-    			add_location(th, file$1, 391, 8, 21524);
+    			add_location(th, file$1, 391, 8, 21531);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -6199,7 +6199,7 @@ var app = (function () {
 
     			t = space();
     			attr_dev(tr, "class", "linhasdatabela");
-    			add_location(tr, file$1, 384, 0, 21255);
+    			add_location(tr, file$1, 384, 0, 21262);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -6282,7 +6282,7 @@ var app = (function () {
     			}
 
     			attr_dev(table, "class", "mapa");
-    			add_location(table, file$1, 342, 0, 19873);
+    			add_location(table, file$1, 342, 0, 19880);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
@@ -6357,7 +6357,7 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			p = element("p");
-    			p.textContent = "Resposta é OLA";
+    			p.textContent = "Escreva aqui o enigma";
     			t1 = space();
     			input = element("input");
     			t2 = space();
@@ -6366,7 +6366,7 @@ var app = (function () {
     			add_location(p, file$1, 333, 4, 19635);
     			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
     			attr_dev(input, "class", "RespostaEnigma");
-    			add_location(input, file$1, 334, 0, 19673);
+    			add_location(input, file$1, 334, 0, 19680);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -6423,9 +6423,9 @@ var app = (function () {
     			attr_dev(img, "class", "tabela");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaum.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 359, 24, 20701);
+    			add_location(img, file$1, 359, 24, 20708);
     			attr_dev(th, "id", "parede");
-    			add_location(th, file$1, 359, 8, 20685);
+    			add_location(th, file$1, 359, 8, 20692);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -6461,9 +6461,9 @@ var app = (function () {
     			attr_dev(img, "class", "tabela");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paradeamalera1.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 357, 24, 20581);
+    			add_location(img, file$1, 357, 24, 20588);
     			attr_dev(th, "id", "parede");
-    			add_location(th, file$1, 357, 8, 20565);
+    			add_location(th, file$1, 357, 8, 20572);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -6499,9 +6499,9 @@ var app = (function () {
     			attr_dev(img, "class", "tabela");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredeamalera1.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 355, 24, 20444);
+    			add_location(img, file$1, 355, 24, 20451);
     			attr_dev(th, "id", "parede");
-    			add_location(th, file$1, 355, 8, 20428);
+    			add_location(th, file$1, 355, 8, 20435);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -6533,7 +6533,7 @@ var app = (function () {
     			th = element("th");
     			attr_dev(th, "id", "vazio");
     			attr_dev(th, "alt", "vazio");
-    			add_location(th, file$1, 353, 8, 20351);
+    			add_location(th, file$1, 353, 8, 20358);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -6568,9 +6568,9 @@ var app = (function () {
     			attr_dev(img, "class", "tabela");
     			if (!src_url_equal(img.src, img_src_value = IMGmovimentacao(/*i*/ ctx[31], /*j*/ ctx[34], /*eixoX*/ ctx[4], /*eixoY*/ ctx[5], /*MudançaDeFase*/ ctx[3]))) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "estrada");
-    			add_location(img, file$1, 351, 25, 20212);
+    			add_location(img, file$1, 351, 25, 20219);
     			attr_dev(th, "id", "estrada");
-    			add_location(th, file$1, 351, 8, 20195);
+    			add_location(th, file$1, 351, 8, 20202);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -6735,7 +6735,7 @@ var app = (function () {
 
     			t = space();
     			attr_dev(tr, "class", "linhasdatabela");
-    			add_location(tr, file$1, 344, 0, 19926);
+    			add_location(tr, file$1, 344, 0, 19933);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);

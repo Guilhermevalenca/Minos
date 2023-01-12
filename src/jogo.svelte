@@ -331,7 +331,7 @@
 <p class='FasesDoJogo'>Nivel 1</p>
 
 {#if !enigma}
-    <p class='Enigma'>Resposta é OLA</p>
+    <p class='Enigma'>Escreva aqui o enigma</p>
 <input bind:value={PalavraChave} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
     {Alterando(PalavraChave == "OLA")}
 
