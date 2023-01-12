@@ -268,7 +268,7 @@
             enigma = teste;
         }else {
             enigma = teste;
-        }
+        }return enigma
     }
    
 </script>
@@ -325,6 +325,9 @@
 </table>
 {:else if (MudançaDeFase == 1)}
 
+{clearInterval(temporizador)}
+{() => { enigma = Alterando(false)}}
+
 <p class='FasesDoJogo'>Nivel 1</p>
 
 {#if !enigma}
@@ -334,7 +337,7 @@
 
 {:else}
 
-{clearInterval(temporizador)}
+{time(MudançaDeFase)}
 {posicaoinicial(mapa1)}
 
 <table class='mapa'>
@@ -342,7 +345,7 @@
 <tr class='linhasdatabela'>
     {#each regiao as estrada,j}
         {#if (mapa1[eixoY][eixoX] == "Y")}
-        {proximafase(mapa1[eixoY][eixoX]), () => {enigma = false}}
+        {proximafase(mapa1[eixoY][eixoX])}
         {:else if (mapa1[eixoY][eixoX] != 0)}
         {ResertarPosicao()}
         {:else if (estrada == 0)}
@@ -365,7 +368,17 @@
 
 <p class='FasesDoJogo'>Nivel 2</p>
 
+{() => { enigma = Alterando(false)}}
 {clearInterval(temporizador)}
+
+{#if !enigma}
+    <p class='Enigma'>digitar o enigma aqui</p>
+<input bind:value={PalavraChave} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
+    {Alterando(PalavraChave == "TUDO")}
+
+{:else}
+
+{time(MudançaDeFase)}
 {posicaoinicial(mapa2)}
 
 <table class='mapa'>
@@ -391,12 +404,22 @@
 </tr>
 {/each}
 </table>
+{/if}
 {:else if (MudançaDeFase == 3)}
 
 {clearInterval(temporizador)}
+{() => { enigma = Alterando(false)}}
 
 <p class='FasesDoJogo'>Nivel 3</p>
 
+{#if !enigma}
+    <p class='Enigma'>digitar o enigma aqui</p>
+<input bind:value={PalavraChave} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
+    {Alterando(PalavraChave == "OPA")}
+
+{:else}
+
+{time(MudançaDeFase)}
 {posicaoinicial(mapa3)}
 
 <table class='mapa'>
@@ -422,6 +445,7 @@
 </tr>
 {/each}
 </table>
+{/if}
 {:else if (MudançaDeFase == 4)}
 {clearInterval(temporizador)}
 <Vitoria/>
