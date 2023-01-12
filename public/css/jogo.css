@@ -38,8 +38,16 @@
     margin: 0%;
 }
 .RespostaEnigma{
-    margin-left: 50%;
-    margin-top: 25%;
+    margin-left: 45%;
+    margin-top: 5%;
     height: 50px;
     width: 200px;
+}
+.Contador{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin: 0%;
+    margin-left: 70%;
+    position: fixed;
 }

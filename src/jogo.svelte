@@ -298,6 +298,10 @@
             },1000)
         }
     }
+    function ResertarContadores(){
+        ContadorDoEnigma = 60;
+        ContadorDoLabirinto = 90;
+    }
 </script>
 
 <head>
@@ -368,7 +372,9 @@
     
 
 {:else}
-<div class="Enigma">{ContadorDoLabirinto} Segundos</div>
+{ResertarContadores()}
+{contar(ContadorDoLabirinto)}
+<div class="Contador">{ContadorDoLabirinto} Segundos</div>
 {time(MudançaDeFase)}
 {posicaoinicial(mapa1)}
 
@@ -410,6 +416,9 @@
 
 {:else}
 {clearInterval(NewTempo)}
+{ResertarContadores()}
+{contar(ContadorDoLabirinto)}
+<div class="Enigma">{ContadorDoLabirinto} Segundos</div>
 {time(MudançaDeFase)}
 {posicaoinicial(mapa2)}
 
@@ -441,6 +450,10 @@
 
 
 {clearInterval(NewTempo)}
+{ResertarContadores()}
+{contar(ContadorDoLabirinto)}
+<div class="Enigma">{ContadorDoLabirinto} Segundos</div>
+
 
 <p class='FasesDoJogo'>Nivel 3</p>
 
