@@ -277,7 +277,7 @@
             }else if (mapa == 2) {
                 return '/css/imagens/chaonivel4.png'
             }else if (mapa == 3) {
-                return '/css/imagens/chaonivell4.png'
+                return '/css/imagens/chaonivel4.png'
             }
     }
     function ClassDante(i,j,x,y,mapa){
@@ -351,6 +351,7 @@
         clearInterval(contador)
         ContadorDoEnigma = 60;
         ContadorDoLabirinto = 90;
+        return
     }
 </script>
 
