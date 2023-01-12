@@ -33,7 +33,6 @@
     function time(nivel){
     temporizador = setInterval( () => {
         alert('Seu tempo acabou')
-        clearInterval(NewTempo)
         if(nivel == 1){
             MudançaDeFase = 0;
         }else{
@@ -281,6 +280,7 @@
     function Alterando(teste){
         if (teste) {
             enigma = teste;
+            PalavraChave = '';
         }else {
             enigma = teste;
         }return enigma
@@ -328,9 +328,9 @@
         {:else if (estrada == 2)}
         <th id="vazio" alt="vazio"></th>
         {:else if (estrada == 1)}
-        <th id="parede"><img class="tabela" src="/css/imagens/paredelevel4.png" alt="parede"></th>
+        <th id="parede"><img class="tabela" src="/css/imagens/paredetutorial.png" alt="parede"></th>
         {:else if (estrada == 3)}
-        <th id='parede'><img  class='tabela' src="/css/imagens/paredelevel4.png" alt="parede"></th>
+        <th id='parede'><img  class='tabela' src="/css/imagens/paredetutorial.png" alt="parede"></th>
         {:else}
         <th id='parede'><img class="tabela" src="/css/imagens/chaonivel4.png" alt='parede'></th>
         {/if}
@@ -384,7 +384,7 @@
 {:else if (MudançaDeFase == 2)}
 
 <p class='FasesDoJogo'>Nivel 2</p>
-{clearInterval(NewTempo)}
+
 
 
 {#if !enigma}
