@@ -299,6 +299,7 @@
         }
     }
     function ResertarContadores(){
+        clearInterval(contador)
         ContadorDoEnigma = 60;
         ContadorDoLabirinto = 90;
     }
@@ -359,7 +360,7 @@
 
 {clearInterval(NewTempo)}
 
-<p class='FasesDoJogo'>Nivel 1</p>
+<p class='FasesDoJogo'>Nível 1</p>
 
 {#if !enigma}
 
@@ -375,7 +376,9 @@
 {:else}
 {ResertarContadores()}
 {contar(ContadorDoLabirinto)}
-<div class="Contador">{ContadorDoLabirinto} Segundos</div>
+<div class="Contador">{ContadorDoLabirinto}s</div>
+
+
 {time(MudançaDeFase)}
 {posicaoinicial(mapa1)}
 
@@ -412,14 +415,13 @@
 {#if !enigma}
     {EnigmaTime(MudançaDeFase)}
     <p class='Enigma'>Fui levado para um quarto escuro e incendiado. Eu chorei e então minha cabeça foi cortada. Quem sou eu?</p>
-    <p class="Enigma">{contar(ContadorDoEnigma)}</p>
 <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "VELA")} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
 
 {:else}
 {clearInterval(NewTempo)}
 {ResertarContadores()}
 {contar(ContadorDoLabirinto)}
-<div class="Enigma">{ContadorDoLabirinto} Segundos</div>
+<div class="Contador">{ContadorDoLabirinto}s</div>
 {time(MudançaDeFase)}
 {posicaoinicial(mapa2)}
 
@@ -451,9 +453,8 @@
 
 
 {clearInterval(NewTempo)}
-{ResertarContadores()}
-{contar(ContadorDoLabirinto)}
-<div class="Enigma">{ContadorDoLabirinto} Segundos</div>
+
+<div class="Contador">{ContadorDoLabirinto}s</div>
 
 
 <p class='FasesDoJogo'>Nivel 3</p>
@@ -464,6 +465,8 @@
 <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "GELO")} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
 
 {:else}
+{ResertarContadores()}
+{contar(ContadorDoLabirinto)}
 {clearInterval(NewTempo)}
 {time(MudançaDeFase)}
 {posicaoinicial(mapa3)}
