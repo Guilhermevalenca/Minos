@@ -25,3 +25,21 @@
     position: relative;
     width: 80px;
 }
+.FasesDoJogo{
+    text-align: center;
+    color: white;
+    font-size: 75px;
+    margin: 0%;
+}
+.Enigma{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin: 0%;
+}
+.RespostaEnigma{
+    margin-left: 50%;
+    margin-top: 25%;
+    height: 50px;
+    width: 200px;
+}

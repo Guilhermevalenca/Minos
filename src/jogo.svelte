@@ -28,7 +28,7 @@
             }
         }
     }*/
-    /*
+    
     var temporizador;
     function time(nivel){
     temporizador = setInterval( () => {
@@ -40,7 +40,7 @@
         }
     }, 30000);
    }
-*/
+
      let MudançaDeFase = 0;
     function proximafase(teste){
         clearInterval(temporizador)
@@ -133,7 +133,7 @@
         [2,1,0,1,1,1,0,1,1,0,1,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,1,0,1,1,1,0,0,1,1,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,1,0,1,0,1],
         [2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,1,1,1,1,1,1,1,0,1,0,1,0,1,0,1,0,1,1,0,0,0,0,1,1,0,1,0,1,0,1,1,0,1,0,1,0,0,0,0,0,1,0,1],
         [2,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,0,1,0,0,0,0,0,0,0,0,1,0,1,0,1,0,1,0,1,0,1,1,0,0,0,0,1,1,0,1,0,1,0,0,1,0,1,0,1,1,1,1,1,1,1,1,1],
-        [2,1,0,0,0,1,0,0,0,0,0,0,1,1,1,0,1,0,1,0,1,1,1,1,1,1,0,1,0,1,0,1,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,1,1,0,1,0,1,0,0,0,0,0,0,0,"Y"],
+        [2,1,0,0,0,1,0,0,0,0,0,0,1,1,1,0,1,0,1,0,1,1,1,1,1,1,0,1,0,1,0,1,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,0,1,1,1,1,0,1,0,1,0,0,0,0,0,0,0,"Z"],
         [2,1,0,1,0,1,0,1,1,0,1,1,0,0,0,0,1,0,1,0,1,1,0,0,1,1,0,1,0,1,0,1,0,1,0,1,0,1,1,1,1,1,1,1,1,0,1,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1],
         [2,1,0,1,0,0,0,0,0,0,1,0,1,1,1,0,1,0,1,0,1,1,1,1,1,1,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,1,1,1,0,1],
         [2,1,0,1,1,0,1,1,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,1],
@@ -259,13 +259,17 @@
             this.body = body;
             this.moves = moves;
         }
-    }/*
-    function FimTime(){
-        alert('vc perdeu')
-        return
     }
-    let Time = setTimout(FimTime,120000)
-    */
+    let enigma = false;
+    let PalavraChave = '';
+
+    function Alterando(teste){
+        if (teste) {
+            enigma = teste;
+        }else {
+            enigma = teste;
+        }
+    }
    
 </script>
 
@@ -289,7 +293,7 @@
     {/if}
 
 
-{#if (MudançaDeFase == 99)}
+{#if (MudançaDeFase == 0)}
 
 
     <p class='FasesDoJogo'>Tutorial</p>
@@ -321,10 +325,16 @@
 </table>
 {:else if (MudançaDeFase == 1)}
 
-<!-- {time(MudançaDeFase)} -->
-
 <p class='FasesDoJogo'>Nivel 1</p>
 
+{#if !enigma}
+    <p class='Enigma'>digitar o enigma aqui</p>
+<input bind:value={PalavraChave} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
+    {Alterando(PalavraChave == "OLA")}
+
+{:else}
+
+{clearInterval(temporizador)}
 {posicaoinicial(mapa1)}
 
 <table class='mapa'>
@@ -332,7 +342,7 @@
 <tr class='linhasdatabela'>
     {#each regiao as estrada,j}
         {#if (mapa1[eixoY][eixoX] == "Y")}
-        {proximafase(mapa1[eixoY][eixoX])}
+        {proximafase(mapa1[eixoY][eixoX]), () => {enigma = false}}
         {:else if (mapa1[eixoY][eixoX] != 0)}
         {ResertarPosicao()}
         {:else if (estrada == 0)}
@@ -350,12 +360,12 @@
 </tr>
 {/each}
 </table>
-{:else if (MudançaDeFase == 0)}
+{/if}
+{:else if (MudançaDeFase == 2)}
 
 <p class='FasesDoJogo'>Nivel 2</p>
 
-<!-- {time(MudançaDeFase)} -->
-
+{clearInterval(temporizador)}
 {posicaoinicial(mapa2)}
 
 <table class='mapa'>
@@ -383,7 +393,7 @@
 </table>
 {:else if (MudançaDeFase == 3)}
 
-<!-- {time(MudançaDeFase)} -->
+{clearInterval(temporizador)}
 
 <p class='FasesDoJogo'>Nivel 3</p>
 
@@ -413,5 +423,6 @@
 {/each}
 </table>
 {:else if (MudançaDeFase == 4)}
+{clearInterval(temporizador)}
 <Vitoria/>
 {/if}
