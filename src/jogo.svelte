@@ -371,9 +371,9 @@
 {clearInterval(temporizador)}
 
 {#if !enigma}
-    <p class='Enigma'>digitar o enigma aqui</p>
+    <p class='Enigma'>Fui levado para um quarto escuro e incendiado. Eu chorei e então minha cabeça foi cortada. Quem sou eu?</p>
 <input bind:value={PalavraChave} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
-    {Alterando(PalavraChave == "TUDO")}
+    {Alterando(PalavraChave == "VELA")}
 
 {:else}
 
