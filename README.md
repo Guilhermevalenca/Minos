@@ -1,13 +1,6 @@
-<style> 
-
-h1{
-    font-size: 30px:
-}
-
-p{
-    font-weight: bolder;
-}
-</style>
+<head>
+    <link rel="stylesheet" href="/css/README.css">
+</head>
 
 <h1> Bem-vindo ao Minos Labyrinth. </h1>
 
@@ -20,22 +13,19 @@ p{
 <h3> Caso aja erro nos comandos tente: 'npx yarn dev' para instalar as dependências e depois 'npx yarn dev' para executar. Caso nenhuma das opções funcione, recomendo atualizar ou baixar o nodejs.
 
 <h1> Sobre o jogo: </h1>
-<p> Minos tem o intuito de fazer o jogador tomar decisões sob a pressão de um tempo limite, você deve ajudar Dante a passar cada etapa para conseguir sair do labirinto. Mas lembre-se, os monstros estão a sua espreita. </p>
+<p> Minos tem o intuito deo jogador tomar decisões sob a pressão de um tempo limite, você deve ajudar Dante a passar cada etapa para conseguir sair do labirinto. Mas lembre-se, os monstros estão a sua espreita. </p>
 <p> Enigmas e cháradas em cada fase serão essenciais para sua sobrevivência. </p>
 
 <h2> Alice Manguinho </h2>
 
-<p> Foi muito interessante participar da criação do minos. Por nunca ter tido contato com programação, tive dificuldades com CSS e com a lógica da página do jogo, mas com o apoio e auxílio da equipe conseguimos finalizar o projeto do jeito que tanto idealizamos durante os meses. </p>
+<p> Foi muito int;ressante participar da criação do minos. Por nunca ter tido contato com programação, tive dificuldades com CSS e com a lógica da página do jogo, mas com o apoio e auxílio da equipe conseguimos finalizar o projeto do jeito que tanto idealizamos durante os meses. </p>
 <p> A persistêcia leva a realizaçâo de objetivos. </p>
 
 <h2> Assíria Renara </h2> 
 
 
 
-<h2> Claudiane Rodrigues </h2>
-
-
-
+<h2> Claudiane Rodrigues <
 <h2> Emmily Kathylen </h2>
 
 
