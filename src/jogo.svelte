@@ -270,7 +270,7 @@
             }
             //Chao do mapa:
             if (mapa == 0) {
-                return '/css/imagens/chaonivel4.png'
+                return '/css/imagens/paredetutorial.png'
             }else if (mapa == 1) {
                 return '/css/imagens/chaonivel4.png'
             }else if (mapa == 2) {
@@ -370,11 +370,9 @@
         {:else if (estrada == 2)}
         <th id="vazio" alt="vazio"></th>
         {:else if (estrada == 1)}
-        <th id="parede"><img class="tabela" src="/css/imagens/paredebonita.png" alt="parede"></th>
-        {:else if (estrada == 3)}
-        <th id='parede'><img  class='tabela' src="/css/imagens/paredebonita.png" alt="parede"></th>
+        <th id="parede"><img class="tabela" src="/css/imagens/tutorials.png" alt="parede"></th>
         {:else}
-        <th id='parede'><img class="tabela" src="/css/imagens/chaonivel4.png" alt='parede'></th>
+        <th id='parede'><img class="tabela" src="/css/imagens/chaotutorial.png" alt='parede'></th>
         {/if}
     {/each}
 </tr>
@@ -421,8 +419,6 @@
         <th id="vazio" alt="vazio"></th>
         {:else if (estrada == 1)}
         <th id="parede"><img class="tabela" src="/css/imagens/paredeamalera1.png" alt="parede"></th>
-        {:else if (estrada == 3)}
-        <th id='parede'><img  class='tabela' src="/css/imagens/paradeamalera1.png" alt="parede"></th>
         {:else}
         <th id='parede'><img class="tabela" src="/css/imagens/chaum.png" alt='parede'></th>
         {/if}
@@ -467,8 +463,6 @@
         <th id="vazio" alt="vazio"></th>
         {:else if (estrada == 1)}
         <th id="parede"><img class="tabela" src="/css/imagens/paredelevel4.png" alt="parede"></th>
-        {:else if (estrada == 3)}
-        <th id='parede'><img  class='tabela' src="/css/imagens/paredelevel4.png" alt="parede"></th>
         {:else}
         <th id='parede'><img class="tabela" src="/css/imagens/chaonivel4.png" alt='parede'></th>
         {/if}
@@ -516,8 +510,6 @@
         <th id="vazio" alt="vazio"></th>
         {:else if (estrada == 1)}
         <th id="parede"><img class="tabela" src="/css/imagens/paredeamalera1.png" alt="parede"></th>
-        {:else if (estrada == 3)}
-        <th id='parede'><img  class='tabela' src="/css/imagens/paradeamalera1.png" alt="parede"></th>
         {:else}
         <th id='parede'><img class="tabela" src="/css/imagens/chaum.png" alt='parede'></th>
         {/if}
