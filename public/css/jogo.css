@@ -8,7 +8,12 @@
     width: 45px;
     margin: -2px;
     padding: 0px;
-    
+}
+#ChaoNoGeral{
+    height: 45px;
+    width: 45px;
+    margin: -2px;
+    padding: 0px;
 }
 #estrada{
     background-image: url("./imagens/chao1.png");
@@ -67,7 +72,7 @@
     -webkit-background-clip: text;
     color: transparent;
 }
-
-#vazio{
-    
+.Dante0{
+    height: 100px;
+    width: 100px;
 }
