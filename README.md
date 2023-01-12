@@ -1,4 +1,4 @@
-Bem vindo tal tal tal
+Bem-vindo ao Minos Labyrinth, 
 
 
 Para baixar do projeto use o comando : npm install
