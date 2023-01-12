@@ -447,5 +447,14 @@
 {/if}
 {:else if (MudançaDeFase == 4)}
 {clearInterval(temporizador)}
+{#if !enigma}
+
+    <p class='Enigma'>Escrever o enigma aqui</p>
+<input bind:value={PalavraChave} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
+    {Alterando(PalavraChave == "OLA")}
+
+{:else}
+
 <Vitoria/>
+{/if}
 {/if}
