@@ -51,3 +51,19 @@
     margin-left: 70%;
     position: fixed;
 }
+.Enigma{
+    color: rgb(184, 184, 6);
+    background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 0;
+    font-weight: bolder;
+}
+.FasesDoJogo{
+    color: rgb(184, 184, 51);
+    background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
