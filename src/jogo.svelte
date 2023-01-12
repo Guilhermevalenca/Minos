@@ -38,7 +38,7 @@
         }else{
             MudançaDeFase = 1;
         }
-    }, 30000);
+    }, 300000);
    }
 
      let MudançaDeFase = 0;
