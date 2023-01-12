@@ -4,10 +4,15 @@ h1{
     font-size: 30px;
 }
 
-p{
+h5{
     font-weight: bolder;
     margin: 0%;
     margin-top: 10px;
 
 }
 
+h2{
+
+    border: 30px solid black;
+
+}

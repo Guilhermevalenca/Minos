@@ -38,13 +38,12 @@
         }else{
             MudançaDeFase = 1;
         }
-    }, 30000);
+    }, 90000);
    }
    var NewTempo;
     function EnigmaTime(nivel){
      NewTempo = setInterval( () => {
          alert('seu tempo acabou')
-         clearInterval(temporizador)
          if(nivel == 2){
             MudançaDeFase = 1;
          }else if(nivel == 3){
@@ -52,7 +51,7 @@
          }else if(nivel == 4){
             MudançaDeFase = 3;
          }
-     }, 60000)
+     }, 120000)
     }
 
      let MudançaDeFase = 0;
@@ -348,8 +347,10 @@
 {#if !enigma}
 
 
-    <p class='Enigma'>Primeiro enigma: Poder suficiente para esmagar navios e quebrar telhados mas mesmo assim tenho medo do sol, quem eu sou?</p>
-<input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "GELO")} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
+    <p class='Enigma'>Sempre que vc conseguir passar de uma fase, havera um enigma para ser solucionado, lembre-se: a um limite de tempo, tanto para resolver os enigmas como para sair de cada labirinto, toda vez que vc perder, voltará para o primeiro nivel.</p>
+    <p class="Enigma">OBS: lembre-se tambem que so serão aceitas letras maiusculas nas respostas de todo e qualquer enigma. Nenhuma das palavras chave contera qualquer acento.</p>
+    <p class="Enigma">Apos compreender o funcionamento do Minos Labyrinth, digite: "OK" e poderá prosseguir para a primeira fase.</p>
+<input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "OK")} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
     
 
 {:else}
@@ -430,8 +431,8 @@
 
 {#if !enigma}
     {EnigmaTime(MudançaDeFase)}
-    <p class='Enigma'>Escrever o enigma aqui</p>
-<input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "QUALQUER")} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
+    <p class='Enigma'>Poder suficiente para esmagar navios e quebrar telhados mas mesmo assim tenho medo do sol, quem eu sou?</p>
+<input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "GELO")} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
 
 {:else}
 {clearInterval(NewTempo)}
