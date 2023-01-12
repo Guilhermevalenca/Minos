@@ -331,9 +331,9 @@
 <p class='FasesDoJogo'>Nivel 1</p>
 
 {#if !enigma}
-    <p class='Enigma'>Escreva aqui o enigma</p>
+    <p class='Enigma'>Primeiro enigma: Poder suficiente para esmagar navios e quebrar telhados mas mesmo assim tenho medo do sol, quem eu sou?</p>
 <input bind:value={PalavraChave} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
-    {Alterando(PalavraChave == "OLA")}
+    {Alterando(PalavraChave == "GELO")}
 
 {:else}
 
