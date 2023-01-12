@@ -360,9 +360,10 @@
 {#if !enigma}
 
 
-    <p class='Enigma'>Sempre que vc conseguir passar de uma fase, havera um enigma para ser solucionado, lembre-se: a um limite de tempo, tanto para resolver os enigmas como para sair de cada labirinto, toda vez que vc perder, voltará para o primeiro nivel.</p>
-    <p class="Enigma">OBS: lembre-se tambem que so serão aceitas letras maiusculas nas respostas de todo e qualquer enigma. Nenhuma das palavras chave contera qualquer acento.</p>
-    <p class="Enigma">Apos compreender o funcionamento do Minos Labyrinth, digite: "OK" e poderá prosseguir para a primeira fase.</p>
+    <p class='Enigma'>Sempre que passar de fase, haverá um enigma há ser solucionado. </p>
+    <p class='Enigma'>Lembre-se: existe um limite de tempo, tanto para resolver os enigmas, como para sair de cada labirinto. Ao perder em qualquer nível, voltará para o primeiro nivel.</p>
+    <p class="Enigma">OBS: Só serão aceitas letras maiúsculas nas respostas de todos os enigmas. Nenhuma das palavras-chave contém qualquer acento.</p>
+    <p class="Enigma">Após compreender o funcionamento do Minos Labyrinth, digite: "OK" e poderá prosseguir para a primeira fase.</p>
     
 <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "OK")} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
     
