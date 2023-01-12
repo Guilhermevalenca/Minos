@@ -18,8 +18,8 @@
 
 <h2> Alice Manguinho </h2>
 
-<h5> Foi muito int;ressante participar da criação do minos. Por nunca ter tido contato com programação, tive dificuldades com CSS e com a lógica da página do jogo, mas com o apoio e auxílio da equipe conseguimos finalizar o projeto do jeito que tanto idealizamos durante os meses. </>
-<> A persistêcia leva a realizaçâo de objetivos. </h5>
+<h5> Foi muito interessante participar da criação do minos. Por nunca ter tido contato com programação, tive dificuldades com CSS e com a lógica da página do jogo, mas com o apoio e auxílio da equipe conseguimos finalizar o projeto do jeito que tanto idealizamos durante os meses. </h5>
+<h5> A persistêcia leva a realizaçâo de objetivos. </h5>
 
 <h2> Assíria Renara </h2> 
 
