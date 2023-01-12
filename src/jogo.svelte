@@ -338,7 +338,7 @@
 </table>
 {:else if (MudançaDeFase == 1)}
 
-{clearInterval(temporizador)}
+
 {clearInterval(NewTempo)}
 
 <p class='FasesDoJogo'>Nivel 1</p>
@@ -347,8 +347,8 @@
 
 
     <p class='Enigma'>Primeiro enigma: Poder suficiente para esmagar navios e quebrar telhados mas mesmo assim tenho medo do sol, quem eu sou?</p>
-<input bind:value={PalavraChave} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
-    {Alterando(PalavraChave == "GELO")}
+<input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "GELO")} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
+    
 
 {:else}
 
@@ -383,13 +383,12 @@
 
 <p class='FasesDoJogo'>Nivel 2</p>
 {clearInterval(NewTempo)}
-{clearInterval(temporizador)}
+
 
 {#if !enigma}
     {EnigmaTime(MudançaDeFase)}
     <p class='Enigma'>Fui levado para um quarto escuro e incendiado. Eu chorei e então minha cabeça foi cortada. Quem sou eu?</p>
-<input bind:value={PalavraChave} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
-    {Alterando(PalavraChave == "VELA")}
+<input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "VELA")} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
 
 {:else}
 {clearInterval(NewTempo)}
@@ -422,7 +421,7 @@
 {/if}
 {:else if (MudançaDeFase == 3)}
 
-{clearInterval(temporizador)}
+
 {clearInterval(NewTempo)}
 
 <p class='FasesDoJogo'>Nivel 3</p>
@@ -430,8 +429,7 @@
 {#if !enigma}
     {EnigmaTime(MudançaDeFase)}
     <p class='Enigma'>Escrever o enigma aqui</p>
-<input bind:value={PalavraChave} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
-    {Alterando(PalavraChave == "QUALQUER")}
+<input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "QUALQUER")} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
 
 {:else}
 {clearInterval(NewTempo)}
@@ -463,13 +461,12 @@
 </table>
 {/if}
 {:else if (MudançaDeFase == 4)}
-{clearInterval(temporizador)}
+
 {clearInterval(NewTempo)}
 {#if !enigma}
     {EnigmaTime(MudançaDeFase)}
     <p class='Enigma'>Escrever o enigma aqui</p>
-<input bind:value={PalavraChave} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
-    {Alterando(PalavraChave == "OLA")}
+<input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "OLA")} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
 
 {:else}
 {clearInterval(NewTempo)}
