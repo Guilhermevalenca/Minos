@@ -44,7 +44,7 @@
      let MudançaDeFase = 0;
     function proximafase(teste){
         clearInterval(temporizador)
-        
+        enigma = false;
         if (teste == "V") {
             MudançaDeFase = 4;
         }else if (teste == "X") {
@@ -326,12 +326,12 @@
 {:else if (MudançaDeFase == 1)}
 
 {clearInterval(temporizador)}
-{() => { enigma = Alterando(false)}}
+
 
 <p class='FasesDoJogo'>Nivel 1</p>
 
 {#if !enigma}
-    <p class='Enigma'>digitar o enigma aqui</p>
+    <p class='Enigma'>Resposta é OLA</p>
 <input bind:value={PalavraChave} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
     {Alterando(PalavraChave == "OLA")}
 
@@ -368,7 +368,6 @@
 
 <p class='FasesDoJogo'>Nivel 2</p>
 
-{() => { enigma = Alterando(false)}}
 {clearInterval(temporizador)}
 
 {#if !enigma}
@@ -408,7 +407,7 @@
 {:else if (MudançaDeFase == 3)}
 
 {clearInterval(temporizador)}
-{() => { enigma = Alterando(false)}}
+
 
 <p class='FasesDoJogo'>Nivel 3</p>
 
