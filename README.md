@@ -1,4 +1,4 @@
-Bem-vindo ao Minos Labyrinth, 
+Bem-vindo ao Minos Labyrinth, um jogo de labirinto com intuito de divertir e exercitar a mente
 
 
 Para baixar do projeto use o comando : npm install
