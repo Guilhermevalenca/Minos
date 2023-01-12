@@ -33,7 +33,6 @@
     function time(nivel){
     temporizador = setInterval( () => {
         alert('Seu tempo acabou')
-        clearInterval(NewTempo)
         if(nivel == 1){
             MudançaDeFase = 0;
         }else{
