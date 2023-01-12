@@ -40,6 +40,19 @@
         }
     }, 300000);
    }
+   var NewTempo;
+    function EnigmaTime(nivel){
+     NewTempo = setInterval( () => {
+         alert('seu tempo acabou')
+         if(nivel == 2){
+            MudançaDeFase = 1;
+         }else if(nivel == 3){
+            MudançaDeFase = 2;
+         }else if(nivel == 4){
+            MudançaDeFase = 3;
+         }
+     }, 60000)
+    }
 
      let MudançaDeFase = 0;
     function proximafase(teste){
@@ -326,11 +339,13 @@
 {:else if (MudançaDeFase == 1)}
 
 {clearInterval(temporizador)}
-
+{clearInterval(NewTempo)}
 
 <p class='FasesDoJogo'>Nivel 1</p>
 
 {#if !enigma}
+
+
     <p class='Enigma'>Primeiro enigma: Poder suficiente para esmagar navios e quebrar telhados mas mesmo assim tenho medo do sol, quem eu sou?</p>
 <input bind:value={PalavraChave} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
     {Alterando(PalavraChave == "GELO")}
@@ -367,16 +382,17 @@
 {:else if (MudançaDeFase == 2)}
 
 <p class='FasesDoJogo'>Nivel 2</p>
-
+{clearInterval(NewTempo)}
 {clearInterval(temporizador)}
 
 {#if !enigma}
+    {EnigmaTime(MudançaDeFase)}
     <p class='Enigma'>Fui levado para um quarto escuro e incendiado. Eu chorei e então minha cabeça foi cortada. Quem sou eu?</p>
 <input bind:value={PalavraChave} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
     {Alterando(PalavraChave == "VELA")}
 
 {:else}
-
+{clearInterval(NewTempo)}
 {time(MudançaDeFase)}
 {posicaoinicial(mapa2)}
 
@@ -407,17 +423,18 @@
 {:else if (MudançaDeFase == 3)}
 
 {clearInterval(temporizador)}
-
+{clearInterval(NewTempo)}
 
 <p class='FasesDoJogo'>Nivel 3</p>
 
 {#if !enigma}
+    {EnigmaTime(MudançaDeFase)}
     <p class='Enigma'>Escrever o enigma aqui</p>
 <input bind:value={PalavraChave} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
     {Alterando(PalavraChave == "QUALQUER")}
 
 {:else}
-
+{clearInterval(NewTempo)}
 {time(MudançaDeFase)}
 {posicaoinicial(mapa3)}
 
@@ -447,14 +464,15 @@
 {/if}
 {:else if (MudançaDeFase == 4)}
 {clearInterval(temporizador)}
+{clearInterval(NewTempo)}
 {#if !enigma}
-
+    {EnigmaTime(MudançaDeFase)}
     <p class='Enigma'>Escrever o enigma aqui</p>
 <input bind:value={PalavraChave} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
     {Alterando(PalavraChave == "OLA")}
 
 {:else}
-
+{clearInterval(NewTempo)}
 <Vitoria/>
 {/if}
 {/if}
