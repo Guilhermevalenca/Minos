@@ -8,14 +8,12 @@
     width: 45px;
     margin: -2px;
     padding: 0px;
-    
 }
-#estrada{
-    background-image: url("./imagens/chao1.png");
-    background-size: 100%;
-}
-#parede{
-    background-image: url('./imagens/parede.jpg');
+#ChaoNoGeral{
+    height: 45px;
+    width: 45px;
+    margin: -2px;
+    padding: 0px;
 }
 #buttonjogo{
     left: 30px;
@@ -66,4 +64,9 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+}
+.Dante0{
+    background-image: url('/css/imagens/paredetutorial.png');
+    background-size: 100%;
+    
 }
