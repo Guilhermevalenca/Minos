@@ -280,6 +280,7 @@
     function Alterando(teste){
         if (teste) {
             enigma = teste;
+            PalavraChave = '';
         }else {
             enigma = teste;
         }return enigma
@@ -383,7 +384,7 @@
 {:else if (MudançaDeFase == 2)}
 
 <p class='FasesDoJogo'>Nivel 2</p>
-{clearInterval(NewTempo)}
+
 
 
 {#if !enigma}
