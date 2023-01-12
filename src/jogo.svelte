@@ -33,17 +33,19 @@
     function time(nivel){
     temporizador = setInterval( () => {
         alert('Seu tempo acabou')
+        clearInterval(NewTempo)
         if(nivel == 1){
             MudançaDeFase = 0;
         }else{
             MudançaDeFase = 1;
         }
-    }, 300000);
+    }, 30000);
    }
    var NewTempo;
     function EnigmaTime(nivel){
      NewTempo = setInterval( () => {
          alert('seu tempo acabou')
+         clearInterval(temporizador)
          if(nivel == 2){
             MudançaDeFase = 1;
          }else if(nivel == 3){
