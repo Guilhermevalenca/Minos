@@ -276,7 +276,7 @@
             }else if (mapa == 2) {
                 return '/css/imagens/chaonivel4.png'
             }else if (mapa == 3) {
-                return '/css/imagens/chaonivell4.png'
+                return '/css/imagens/chaonivel4.png'
             }
     }
     function ClassDante(i,j,x,y,mapa){
@@ -350,6 +350,7 @@
         clearInterval(contador)
         ContadorDoEnigma = 60;
         ContadorDoLabirinto = 90;
+        return
     }
 </script>
 
@@ -389,13 +390,13 @@
         {:else if (mapa[eixoY][eixoX] != 0)}
         {ResertarPosicao()}
         {:else if (estrada == 0)}
-        <th id="estrada"><img id='ChaoNoGeral' class="{ClassDante(i,j,eixoX,eixoY,MudançaDeFase)}" src="{IMGmovimentacao(i,j,eixoX,eixoY,MudançaDeFase)}" alt="estrada"></th>
+        <th id="MapaGeral"><img id='ChaoNoGeral' class="{ClassDante(i,j,eixoX,eixoY,MudançaDeFase)}" src="{IMGmovimentacao(i,j,eixoX,eixoY,MudançaDeFase)}" alt="estrada"></th>
         {:else if (estrada == 2)}
-        <th class="vazio"></th>
+        <th class="MapaGeral"></th>
         {:else if (estrada == 1)}
-        <th id="parede"><img class="tabela" src="/css/imagens/tutorials.png" alt="parede"></th>
+        <th id="MapaGeral"><img class="parede" src="/css/imagens/tutorials.png" alt="parede"></th>
         {:else}
-        <th id='parede'><img class="tabela" src="/css/imagens/chaotutorial.png" alt='parede'></th>
+        <th id='MapaGeral'><img class="saida" src="/css/imagens/chaotutorial.png" alt='parede'></th>
         {/if}
     {/each}
 </tr>
@@ -437,13 +438,13 @@
         {:else if (mapa1[eixoY][eixoX] != 0)}
         {ResertarPosicao()}
         {:else if (estrada == 0)}
-        <th id="estrada"><img id='ChaoNoGeral' class="{ClassDante(i,j,eixoX,eixoY,MudançaDeFase)}" src="{IMGmovimentacao(i,j,eixoX,eixoY,MudançaDeFase)}" alt="estrada"></th>
+        <th id="MapaGeral"><img id='ChaoNoGeral' class="{ClassDante(i,j,eixoX,eixoY,MudançaDeFase)}" src="{IMGmovimentacao(i,j,eixoX,eixoY,MudançaDeFase)}" alt="estrada"></th>
         {:else if (estrada == 2)}
-        <th class="vazio"></th>
+        <th class="MapaGeral"></th>
         {:else if (estrada == 1)}
-        <th id="parede"><img class="tabela" src="/css/imagens/paredeamalera1.png" alt="parede"></th>
+        <th id="MapaGeral"><img class="tabela" src="/css/imagens/paredeamalera1.png" alt="parede"></th>
         {:else}
-        <th id='parede'><img class="tabela" src="/css/imagens/chaum.png" alt='parede'></th>
+        <th id='MapaGeral'><img class="tabela" src="/css/imagens/chaum.png" alt='parede'></th>
         {/if}
     {/each}
 </tr>
@@ -481,13 +482,13 @@
         {:else if (mapa2[eixoY][eixoX] != 0)}
         {ResertarPosicao()}
         {:else if (estrada == 0)}
-        <th id="estrada"><img id='ChaoNoGeral' class="{ClassDante(i,j,eixoX,eixoY,MudançaDeFase)}" src="{IMGmovimentacao(i,j,eixoX,eixoY,MudançaDeFase)}" alt="estrada"></th>
+        <th id="MapaGeral"><img id='ChaoNoGeral' class="{ClassDante(i,j,eixoX,eixoY,MudançaDeFase)}" src="{IMGmovimentacao(i,j,eixoX,eixoY,MudançaDeFase)}" alt="estrada"></th>
         {:else if (estrada == 2)}
-        <th class="vazio"></th>
+        <th class="MapaGeral"></th>
         {:else if (estrada == 1)}
-        <th id="parede"><img class="tabela" src="/css/imagens/paredelevel4.png" alt="parede"></th>
+        <th id="MapaGeral"><img class="tabela" src="/css/imagens/paredelevel4.png" alt="parede"></th>
         {:else}
-        <th id='parede'><img class="tabela" src="/css/imagens/chaonivel4.png" alt='parede'></th>
+        <th id='MapaGeral'><img class="tabela" src="/css/imagens/chaonivel4.png" alt='parede'></th>
         {/if}
     {/each}
 </tr>
@@ -515,6 +516,7 @@
 {:else}
 {ResertarContadores()}
 {contar(ContadorDoLabirinto)}
+<div class="Contador">{ContadorDoLabirinto}s</div>
 {clearInterval(NewTempo)}
 {time(MudançaDeFase)}
 {posicaoinicial(mapa3)}
@@ -528,13 +530,13 @@
         {:else if (mapa3[eixoY][eixoX] != 0)}
         {ResertarPosicao()}
         {:else if (estrada == 0)}
-        <th id="estrada"><img id='ChaoNoGeral' class="{ClassDante(i,j,eixoX,eixoY,MudançaDeFase)}" src="{IMGmovimentacao(i,j,eixoX,eixoY,MudançaDeFase)}" alt="estrada"></th>
+        <th id="MapaGeral"><img id='ChaoNoGeral' class="{ClassDante(i,j,eixoX,eixoY,MudançaDeFase)}" src="{IMGmovimentacao(i,j,eixoX,eixoY,MudançaDeFase)}" alt="estrada"></th>
         {:else if (estrada == 2)}
-        <th class="vazio"></th>
+        <th class="MapaGeral"></th>
         {:else if (estrada == 1)}
-        <th id="parede"><img class="tabela" src="/css/imagens/paredeamalera1.png" alt="parede"></th>
+        <th id="MapaGeral"><img class="tabela" src="/css/imagens/paredeamalera1.png" alt="parede"></th>
         {:else}
-        <th id='parede'><img class="tabela" src="/css/imagens/chaum.png" alt='parede'></th>
+        <th id='MapaGeral'><img class="tabela" src="/css/imagens/chaum.png" alt='parede'></th>
         {/if}
     {/each}
 </tr>

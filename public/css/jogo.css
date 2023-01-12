@@ -15,13 +15,6 @@
     margin: -2px;
     padding: 0px;
 }
-#estrada{
-    background-image: url("./imagens/chao1.png");
-    background-size: 100%;
-}
-#parede{
-    background-image: url('./imagens/parede.jpg');
-}
 #buttonjogo{
     left: 30px;
 }
@@ -73,6 +66,7 @@
     color: transparent;
 }
 .Dante0{
-    height: 100px;
-    width: 100px;
+    background-image: url('/css/imagens/paredetutorial.png');
+    background-size: 100%;
+    
 }
