@@ -1,14 +1,6 @@
-<style> 
-
-h1{
-    font-size: 30px;
-}
-
-p{
-    font-weight: bolder;
-}
-
-</style>
+<head>
+    <link rel="stylesheet" href="/css/README.css">
+</head>
 
 <h1> Bem-vindo ao Minos Labyrinth. </h1>
 
