@@ -412,9 +412,9 @@
 <p class='FasesDoJogo'>Nivel 3</p>
 
 {#if !enigma}
-    <p class='Enigma'>digitar o enigma aqui</p>
+    <p class='Enigma'>Escrever o enigma aqui</p>
 <input bind:value={PalavraChave} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
-    {Alterando(PalavraChave == "OPA")}
+    {Alterando(PalavraChave == "QUALQUER")}
 
 {:else}
 
