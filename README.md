@@ -16,10 +16,10 @@
 <h5> Minos tem o intuito deo jogador tomar decisões sob a pressão de um tempo limite, você deve ajudar Dante a passar cada etapa para conseguir sair do labirinto. Mas lembre-se, os monstros estão a sua espreita. </h5>
 <h5> Enigmas e cháradas em cada fase serão essenciais para sua sobrevivência. </h5>
 
-<h2> Alice Manguinho </h2>
+<<blockquote> Alice Manguinho
 
-<h5> Foi muito int;ressante participar da criação do minos. Por nunca ter tido contato com programação, tive dificuldades com CSS e com a lógica da página do jogo, mas com o apoio e auxílio da equipe conseguimos finalizar o projeto do jeito que tanto idealizamos durante os meses. </>
-<> A persistêcia leva a realizaçâo de objetivos. </h5>
+ Foi muito int;ressante participar da criação do minos. Por nunca ter tido contato com programação, tive dificuldades com CSS e com a lógica da página do jogo, mas com o apoio e auxílio da equipe conseguimos finalizar o projeto do jeito que tanto idealizamos durante os meses. </>
+<> A persistêcia leva a realizaçâo de objetivos. </blockquote>
 
 <h2> Assíria Renara </h2> 
 
