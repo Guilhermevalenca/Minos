@@ -38,8 +38,32 @@
     margin: 0%;
 }
 .RespostaEnigma{
-    margin-left: 50%;
-    margin-top: 25%;
+    margin-left: 45%;
+    margin-top: 5%;
     height: 50px;
     width: 200px;
+}
+.Contador{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin: 0%;
+    margin-left: 80%;
+    position: fixed;
+}
+.Enigma{
+    color: rgb(184, 184, 6);
+    background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 0;
+    font-weight: bolder;
+}
+.FasesDoJogo{
+    color: rgb(184, 184, 51);
+    background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
