@@ -1,3 +1,4 @@
+<head>
 <style> 
 
 h1{
@@ -7,8 +8,9 @@ h1{
 p{
     font-weight: bolder;
 }
-</style>
 
+</style>
+</head>
 <h1> Bem-vindo ao Minos Labyrinth. </h1>
 
 <p> Este é um jogo de labirinto com intuito de divertir e exercitar seu raciocínio lógico. </p>
