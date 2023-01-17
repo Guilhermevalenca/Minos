@@ -65,6 +65,24 @@
     margin: -2px;
     padding: 0px;
 }
+.passagem1{
+    height: 45px;
+    width: 45px;
+    margin: -2px;
+    padding: 0px;
+}
+.passagem2{
+    height: 45px;
+    width: 45px;
+    margin: -2px;
+    padding: 0px;
+}
+.passagem3{
+    height: 45px;
+    width: 45px;
+    margin: -2px;
+    padding: 0px;
+}
 img.parede {
     margin: -2px;
     padding: 0px;
@@ -81,6 +99,30 @@ table{
     margin: 0%;
 }
 img.Dante0{
+    background-image: url('/css/imagens/paredetutorial.png');
+    background-size: 100%;
+    margin: -2px;
+    padding: 0px;
+    height: 45px;
+    width: 45px;
+}
+img.Dante1{
+    background-image: url('/css/imagens/paredetutorial.png');
+    background-size: 100%;
+    margin: -2px;
+    padding: 0px;
+    height: 45px;
+    width: 45px;
+}
+img.Dante2{
+    background-image: url('/css/imagens/paredetutorial.png');
+    background-size: 100%;
+    margin: -2px;
+    padding: 0px;
+    height: 45px;
+    width: 45px;
+}
+img.Dante3{
     background-image: url('/css/imagens/paredetutorial.png');
     background-size: 100%;
     margin: -2px;
