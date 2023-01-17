@@ -302,9 +302,9 @@
     }
     //gerando posição inicial do jogador
     function posicaoinicial(mapa){
-        for(let i in mapa){
-            for(let j in mapa[i]){
-                if(mapa[i][j] == 0){
+        for (let i in mapa) {
+            for (let j in mapa[i]) {
+                if (mapa[i][j] == 0) {
                     eixoX = j;
                     eixoY = i;
                     return
