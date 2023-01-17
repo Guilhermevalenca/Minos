@@ -4585,69 +4585,69 @@ var app = (function () {
 
     function get_each_context_6(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[29] = list[i];
-    	child_ctx[31] = i;
+    	child_ctx[37] = list[i];
+    	child_ctx[39] = i;
     	return child_ctx;
     }
 
     function get_each_context_7(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[32] = list[i];
-    	child_ctx[34] = i;
+    	child_ctx[40] = list[i];
+    	child_ctx[42] = i;
     	return child_ctx;
     }
 
     function get_each_context_4(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[29] = list[i];
-    	child_ctx[31] = i;
+    	child_ctx[37] = list[i];
+    	child_ctx[39] = i;
     	return child_ctx;
     }
 
     function get_each_context_5(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[32] = list[i];
-    	child_ctx[34] = i;
+    	child_ctx[40] = list[i];
+    	child_ctx[42] = i;
     	return child_ctx;
     }
 
     function get_each_context_2(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[29] = list[i];
-    	child_ctx[31] = i;
+    	child_ctx[37] = list[i];
+    	child_ctx[39] = i;
     	return child_ctx;
     }
 
     function get_each_context_3(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[32] = list[i];
-    	child_ctx[34] = i;
+    	child_ctx[40] = list[i];
+    	child_ctx[42] = i;
     	return child_ctx;
     }
 
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[29] = list[i];
-    	child_ctx[31] = i;
+    	child_ctx[37] = list[i];
+    	child_ctx[39] = i;
     	return child_ctx;
     }
 
     function get_each_context_1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[32] = list[i];
-    	child_ctx[34] = i;
+    	child_ctx[40] = list[i];
+    	child_ctx[42] = i;
     	return child_ctx;
     }
 
-    // (283:0) {#if (key)}
-    function create_if_block_32(ctx) {
+    // (364:0) {#if (key)}
+    function create_if_block_29(ctx) {
     	let if_block_anchor;
 
     	function select_block_type(ctx, dirty) {
-    		if (/*code*/ ctx[1] == "ArrowUp") return create_if_block_33;
-    		if (/*code*/ ctx[1] == "ArrowDown") return create_if_block_34;
-    		if (/*code*/ ctx[1] == "ArrowLeft") return create_if_block_35;
-    		if (/*code*/ ctx[1] == "ArrowRight") return create_if_block_36;
+    		if (/*code*/ ctx[1] == "ArrowUp") return create_if_block_30;
+    		if (/*code*/ ctx[1] == "ArrowDown") return create_if_block_31;
+    		if (/*code*/ ctx[1] == "ArrowLeft") return create_if_block_32;
+    		if (/*code*/ ctx[1] == "ArrowRight") return create_if_block_33;
     	}
 
     	let current_block_type = select_block_type(ctx);
@@ -4686,105 +4686,18 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_32.name,
+    		id: create_if_block_29.name,
     		type: "if",
-    		source: "(283:0) {#if (key)}",
+    		source: "(364:0) {#if (key)}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (290:45) 
-    function create_if_block_36(ctx) {
-    	let t_value = /*incremetarX*/ ctx[15]() + "";
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			t = text(t_value);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
-    		},
-    		p: noop,
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_36.name,
-    		type: "if",
-    		source: "(290:45) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (288:44) 
-    function create_if_block_35(ctx) {
-    	let t_value = /*decrementarX*/ ctx[17]() + "";
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			t = text(t_value);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
-    		},
-    		p: noop,
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_35.name,
-    		type: "if",
-    		source: "(288:44) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (286:44) 
-    function create_if_block_34(ctx) {
-    	let t_value = /*incremetarY*/ ctx[16]() + "";
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			t = text(t_value);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
-    		},
-    		p: noop,
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_34.name,
-    		type: "if",
-    		source: "(286:44) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (284:12) {#if (code == "ArrowUp")}
+    // (371:45) 
     function create_if_block_33(ctx) {
-    	let t_value = /*decrementarY*/ ctx[18]() + "";
+    	let t_value = /*incremetarX*/ ctx[18]() + "";
     	let t;
 
     	const block = {
@@ -4804,50 +4717,57 @@ var app = (function () {
     		block,
     		id: create_if_block_33.name,
     		type: "if",
-    		source: "(284:12) {#if (code == \\\"ArrowUp\\\")}",
+    		source: "(371:45) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (448:31) 
-    function create_if_block_31(ctx) {
-    	let t0_value = clearInterval(/*temporizador*/ ctx[2]) + "";
-    	let t0;
-    	let t1;
-    	let vitoria;
-    	let current;
-    	vitoria = new Vitoria({ $$inline: true });
+    // (369:44) 
+    function create_if_block_32(ctx) {
+    	let t_value = /*decrementarX*/ ctx[20]() + "";
+    	let t;
 
     	const block = {
     		c: function create() {
-    			t0 = text(t0_value);
-    			t1 = space();
-    			create_component(vitoria.$$.fragment);
+    			t = text(t_value);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, t0, anchor);
-    			insert_dev(target, t1, anchor);
-    			mount_component(vitoria, target, anchor);
-    			current = true;
+    			insert_dev(target, t, anchor);
     		},
-    		p: function update(ctx, dirty) {
-    			if ((!current || dirty[0] & /*temporizador*/ 4) && t0_value !== (t0_value = clearInterval(/*temporizador*/ ctx[2]) + "")) set_data_dev(t0, t0_value);
-    		},
-    		i: function intro(local) {
-    			if (current) return;
-    			transition_in(vitoria.$$.fragment, local);
-    			current = true;
-    		},
-    		o: function outro(local) {
-    			transition_out(vitoria.$$.fragment, local);
-    			current = false;
-    		},
+    		p: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t0);
-    			if (detaching) detach_dev(t1);
-    			destroy_component(vitoria, detaching);
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_32.name,
+    		type: "if",
+    		source: "(369:44) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (367:44) 
+    function create_if_block_31(ctx) {
+    	let t_value = /*incremetarY*/ ctx[19]() + "";
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text(t_value);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
     		}
     	};
 
@@ -4855,24 +4775,147 @@ var app = (function () {
     		block,
     		id: create_if_block_31.name,
     		type: "if",
-    		source: "(448:31) ",
+    		source: "(367:44) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (407:31) 
-    function create_if_block_23(ctx) {
-    	let t0_value = clearInterval(/*temporizador*/ ctx[2]) + "";
+    // (365:12) {#if (code == "ArrowUp")}
+    function create_if_block_30(ctx) {
+    	let t_value = /*decrementarY*/ ctx[21]() + "";
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text(t_value);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_30.name,
+    		type: "if",
+    		source: "(365:12) {#if (code == \\\"ArrowUp\\\")}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (546:31) 
+    function create_if_block_27(ctx) {
+    	let t0_value = clearInterval(/*NewTempo*/ ctx[2]) + "";
     	let t0;
     	let t1;
-    	let p;
+    	let current_block_type_index;
+    	let if_block;
+    	let if_block_anchor;
+    	let current;
+    	const if_block_creators = [create_if_block_28, create_else_block_7];
+    	const if_blocks = [];
+
+    	function select_block_type_9(ctx, dirty) {
+    		if (!/*enigma*/ ctx[6]) return 0;
+    		return 1;
+    	}
+
+    	current_block_type_index = select_block_type_9(ctx);
+    	if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+
+    	const block = {
+    		c: function create() {
+    			t0 = text(t0_value);
+    			t1 = space();
+    			if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, t1, anchor);
+    			if_blocks[current_block_type_index].m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    			current = true;
+    		},
+    		p: function update(ctx, dirty) {
+    			if ((!current || dirty[0] & /*NewTempo*/ 4) && t0_value !== (t0_value = clearInterval(/*NewTempo*/ ctx[2]) + "")) set_data_dev(t0, t0_value);
+    			let previous_block_index = current_block_type_index;
+    			current_block_type_index = select_block_type_9(ctx);
+
+    			if (current_block_type_index === previous_block_index) {
+    				if_blocks[current_block_type_index].p(ctx, dirty);
+    			} else {
+    				group_outros();
+
+    				transition_out(if_blocks[previous_block_index], 1, 1, () => {
+    					if_blocks[previous_block_index] = null;
+    				});
+
+    				check_outros();
+    				if_block = if_blocks[current_block_type_index];
+
+    				if (!if_block) {
+    					if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+    					if_block.c();
+    				} else {
+    					if_block.p(ctx, dirty);
+    				}
+
+    				transition_in(if_block, 1);
+    				if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    			}
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(if_block);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(if_block);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(t1);
+    			if_blocks[current_block_type_index].d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_27.name,
+    		type: "if",
+    		source: "(546:31) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (498:31) 
+    function create_if_block_20(ctx) {
+    	let t0_value = clearInterval(/*NewTempo*/ ctx[2]) + "";
+    	let t0;
+    	let t1;
+    	let div;
+    	let t2;
     	let t3;
+    	let t4;
+    	let p;
+    	let t6;
     	let if_block_anchor;
 
     	function select_block_type_7(ctx, dirty) {
-    		if (!/*enigma*/ ctx[6]) return create_if_block_24;
+    		if (!/*enigma*/ ctx[6]) return create_if_block_21;
     		return create_else_block_5;
     	}
 
@@ -4883,24 +4926,35 @@ var app = (function () {
     		c: function create() {
     			t0 = text(t0_value);
     			t1 = space();
+    			div = element("div");
+    			t2 = text(/*ContadorDoLabirinto*/ ctx[8]);
+    			t3 = text("s");
+    			t4 = space();
     			p = element("p");
     			p.textContent = "Nivel 3";
-    			t3 = space();
+    			t6 = space();
     			if_block.c();
     			if_block_anchor = empty();
+    			attr_dev(div, "class", "Contador");
+    			add_location(div, file$1, 502, 0, 36649);
     			attr_dev(p, "class", "FasesDoJogo");
-    			add_location(p, file$1, 411, 0, 22238);
+    			add_location(p, file$1, 505, 0, 36705);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
     			insert_dev(target, t1, anchor);
+    			insert_dev(target, div, anchor);
+    			append_dev(div, t2);
+    			append_dev(div, t3);
+    			insert_dev(target, t4, anchor);
     			insert_dev(target, p, anchor);
-    			insert_dev(target, t3, anchor);
+    			insert_dev(target, t6, anchor);
     			if_block.m(target, anchor);
     			insert_dev(target, if_block_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*temporizador*/ 4 && t0_value !== (t0_value = clearInterval(/*temporizador*/ ctx[2]) + "")) set_data_dev(t0, t0_value);
+    			if (dirty[0] & /*NewTempo*/ 4 && t0_value !== (t0_value = clearInterval(/*NewTempo*/ ctx[2]) + "")) set_data_dev(t0, t0_value);
+    			if (dirty[0] & /*ContadorDoLabirinto*/ 256) set_data_dev(t2, /*ContadorDoLabirinto*/ ctx[8]);
 
     			if (current_block_type === (current_block_type = select_block_type_7(ctx)) && if_block) {
     				if_block.p(ctx, dirty);
@@ -4919,8 +4973,10 @@ var app = (function () {
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(div);
+    			if (detaching) detach_dev(t4);
     			if (detaching) detach_dev(p);
-    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(t6);
     			if_block.d(detaching);
     			if (detaching) detach_dev(if_block_anchor);
     		}
@@ -4928,26 +4984,23 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_23.name,
+    		id: create_if_block_20.name,
     		type: "if",
-    		source: "(407:31) ",
+    		source: "(498:31) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (367:31) 
-    function create_if_block_15(ctx) {
+    // (454:31) 
+    function create_if_block_13(ctx) {
     	let p;
     	let t1;
-    	let t2_value = clearInterval(/*temporizador*/ ctx[2]) + "";
-    	let t2;
-    	let t3;
     	let if_block_anchor;
 
     	function select_block_type_5(ctx, dirty) {
-    		if (!/*enigma*/ ctx[6]) return create_if_block_16;
+    		if (!/*enigma*/ ctx[6]) return create_if_block_14;
     		return create_else_block_3;
     	}
 
@@ -4959,24 +5012,18 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "Nivel 2";
     			t1 = space();
-    			t2 = text(t2_value);
-    			t3 = space();
     			if_block.c();
     			if_block_anchor = empty();
     			attr_dev(p, "class", "FasesDoJogo");
-    			add_location(p, file$1, 368, 0, 20873);
+    			add_location(p, file$1, 455, 0, 35042);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
     			insert_dev(target, t1, anchor);
-    			insert_dev(target, t2, anchor);
-    			insert_dev(target, t3, anchor);
     			if_block.m(target, anchor);
     			insert_dev(target, if_block_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*temporizador*/ 4 && t2_value !== (t2_value = clearInterval(/*temporizador*/ ctx[2]) + "")) set_data_dev(t2, t2_value);
-
     			if (current_block_type === (current_block_type = select_block_type_5(ctx)) && if_block) {
     				if_block.p(ctx, dirty);
     			} else {
@@ -4994,8 +5041,6 @@ var app = (function () {
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(p);
     			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(t3);
     			if_block.d(detaching);
     			if (detaching) detach_dev(if_block_anchor);
     		}
@@ -5003,18 +5048,18 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_15.name,
+    		id: create_if_block_13.name,
     		type: "if",
-    		source: "(367:31) ",
+    		source: "(454:31) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (326:31) 
-    function create_if_block_7(ctx) {
-    	let t0_value = clearInterval(/*temporizador*/ ctx[2]) + "";
+    // (405:31) 
+    function create_if_block_6(ctx) {
+    	let t0_value = clearInterval(/*NewTempo*/ ctx[2]) + "";
     	let t0;
     	let t1;
     	let p;
@@ -5022,7 +5067,7 @@ var app = (function () {
     	let if_block_anchor;
 
     	function select_block_type_3(ctx, dirty) {
-    		if (!/*enigma*/ ctx[6]) return create_if_block_8;
+    		if (!/*enigma*/ ctx[6]) return create_if_block_7;
     		return create_else_block_1;
     	}
 
@@ -5034,12 +5079,12 @@ var app = (function () {
     			t0 = text(t0_value);
     			t1 = space();
     			p = element("p");
-    			p.textContent = "Nivel 1";
+    			p.textContent = "Nível 1";
     			t3 = space();
     			if_block.c();
     			if_block_anchor = empty();
     			attr_dev(p, "class", "FasesDoJogo");
-    			add_location(p, file$1, 330, 0, 19578);
+    			add_location(p, file$1, 409, 0, 33186);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
@@ -5050,7 +5095,7 @@ var app = (function () {
     			insert_dev(target, if_block_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*temporizador*/ 4 && t0_value !== (t0_value = clearInterval(/*temporizador*/ ctx[2]) + "")) set_data_dev(t0, t0_value);
+    			if (dirty[0] & /*NewTempo*/ 4 && t0_value !== (t0_value = clearInterval(/*NewTempo*/ ctx[2]) + "")) set_data_dev(t0, t0_value);
 
     			if (current_block_type === (current_block_type = select_block_type_3(ctx)) && if_block) {
     				if_block.p(ctx, dirty);
@@ -5078,24 +5123,24 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_7.name,
+    		id: create_if_block_6.name,
     		type: "if",
-    		source: "(326:31) ",
+    		source: "(405:31) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (296:0) {#if (MudançaDeFase == 0)}
+    // (377:0) {#if (MudançaDeFase == 0)}
     function create_if_block$1(ctx) {
     	let p;
     	let t1;
-    	let t2_value = /*posicaoinicial*/ ctx[20](/*mapa*/ ctx[11]) + "";
+    	let t2_value = /*posicaoinicial*/ ctx[23](/*mapa*/ ctx[14]) + "";
     	let t2;
     	let t3;
     	let table;
-    	let each_value = /*mapa*/ ctx[11];
+    	let each_value = /*mapa*/ ctx[14];
     	validate_each_argument(each_value);
     	let each_blocks = [];
 
@@ -5117,9 +5162,9 @@ var app = (function () {
     			}
 
     			attr_dev(p, "class", "FasesDoJogo");
-    			add_location(p, file$1, 298, 4, 18495);
+    			add_location(p, file$1, 379, 4, 32188);
     			attr_dev(table, "class", "mapa");
-    			add_location(table, file$1, 302, 0, 18560);
+    			add_location(table, file$1, 383, 0, 32253);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -5133,8 +5178,8 @@ var app = (function () {
     			}
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*mapa, proximafase, eixoY, eixoX, ResertarPosicao, MudançaDeFase*/ 527416) {
-    				each_value = /*mapa*/ ctx[11];
+    			if (dirty[0] & /*mapa, proximafase, eixoY, eixoX, ResertarPosicao, MudançaDeFase*/ 4218936) {
+    				each_value = /*mapa*/ ctx[14];
     				validate_each_argument(each_value);
     				let i;
 
@@ -5173,23 +5218,206 @@ var app = (function () {
     		block,
     		id: create_if_block$1.name,
     		type: "if",
-    		source: "(296:0) {#if (MudançaDeFase == 0)}",
+    		source: "(377:0) {#if (MudançaDeFase == 0)}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (419:0) {:else}
-    function create_else_block_5(ctx) {
-    	let t0_value = /*time*/ ctx[9](/*MudançaDeFase*/ ctx[3]) + "";
+    // (557:0) {:else}
+    function create_else_block_7(ctx) {
+    	let t0_value = clearInterval(/*NewTempo*/ ctx[2]) + "";
     	let t0;
     	let t1;
-    	let t2_value = /*posicaoinicial*/ ctx[20](/*mapa3*/ ctx[14]) + "";
+    	let vitoria;
+    	let current;
+    	vitoria = new Vitoria({ $$inline: true });
+
+    	const block = {
+    		c: function create() {
+    			t0 = text(t0_value);
+    			t1 = space();
+    			create_component(vitoria.$$.fragment);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, t1, anchor);
+    			mount_component(vitoria, target, anchor);
+    			current = true;
+    		},
+    		p: function update(ctx, dirty) {
+    			if ((!current || dirty[0] & /*NewTempo*/ 4) && t0_value !== (t0_value = clearInterval(/*NewTempo*/ ctx[2]) + "")) set_data_dev(t0, t0_value);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(vitoria.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(vitoria.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(t1);
+    			destroy_component(vitoria, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block_7.name,
+    		type: "else",
+    		source: "(557:0) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (549:0) {#if !enigma}
+    function create_if_block_28(ctx) {
+    	let t0_value = /*ResertarContadores*/ ctx[26]() + "";
+    	let t0;
+    	let t1;
+    	let t2_value = /*contar*/ ctx[25](/*ContadorDoEnigma*/ ctx[9]) + "";
     	let t2;
     	let t3;
+    	let div;
+    	let t4;
+    	let t5;
+    	let t6;
+    	let t7_value = /*EnigmaTime*/ ctx[12](/*MudançaDeFase*/ ctx[3]) + "";
+    	let t7;
+    	let t8;
+    	let p;
+    	let t10;
+    	let input;
+    	let mounted;
+    	let dispose;
+
+    	const block = {
+    		c: function create() {
+    			t0 = text(t0_value);
+    			t1 = space();
+    			t2 = text(t2_value);
+    			t3 = space();
+    			div = element("div");
+    			t4 = text(/*ContadorDoEnigma*/ ctx[9]);
+    			t5 = text("s");
+    			t6 = space();
+    			t7 = text(t7_value);
+    			t8 = space();
+    			p = element("p");
+    			p.textContent = "Escrever o enigma aqui";
+    			t10 = space();
+    			input = element("input");
+    			attr_dev(div, "class", "Contador");
+    			add_location(div, file$1, 551, 0, 38368);
+    			attr_dev(p, "class", "Enigma");
+    			add_location(p, file$1, 553, 4, 38454);
+    			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
+    			attr_dev(input, "class", "RespostaEnigma");
+    			add_location(input, file$1, 554, 0, 38500);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, t2, anchor);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, div, anchor);
+    			append_dev(div, t4);
+    			append_dev(div, t5);
+    			insert_dev(target, t6, anchor);
+    			insert_dev(target, t7, anchor);
+    			insert_dev(target, t8, anchor);
+    			insert_dev(target, p, anchor);
+    			insert_dev(target, t10, anchor);
+    			insert_dev(target, input, anchor);
+    			set_input_value(input, /*PalavraChave*/ ctx[7]);
+
+    			if (!mounted) {
+    				dispose = [
+    					listen_dev(input, "input", /*input_input_handler_3*/ ctx[30]),
+    					listen_dev(
+    						input,
+    						"keydown",
+    						function () {
+    							if (is_function(/*Alterando*/ ctx[24](/*PalavraChave*/ ctx[7] == "OLA"))) /*Alterando*/ ctx[24](/*PalavraChave*/ ctx[7] == "OLA").apply(this, arguments);
+    						},
+    						false,
+    						false,
+    						false
+    					)
+    				];
+
+    				mounted = true;
+    			}
+    		},
+    		p: function update(new_ctx, dirty) {
+    			ctx = new_ctx;
+    			if (dirty[0] & /*ContadorDoEnigma*/ 512 && t2_value !== (t2_value = /*contar*/ ctx[25](/*ContadorDoEnigma*/ ctx[9]) + "")) set_data_dev(t2, t2_value);
+    			if (dirty[0] & /*ContadorDoEnigma*/ 512) set_data_dev(t4, /*ContadorDoEnigma*/ ctx[9]);
+    			if (dirty[0] & /*MudançaDeFase*/ 8 && t7_value !== (t7_value = /*EnigmaTime*/ ctx[12](/*MudançaDeFase*/ ctx[3]) + "")) set_data_dev(t7, t7_value);
+
+    			if (dirty[0] & /*PalavraChave*/ 128 && input.value !== /*PalavraChave*/ ctx[7]) {
+    				set_input_value(input, /*PalavraChave*/ ctx[7]);
+    			}
+    		},
+    		i: noop,
+    		o: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(t2);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(div);
+    			if (detaching) detach_dev(t6);
+    			if (detaching) detach_dev(t7);
+    			if (detaching) detach_dev(t8);
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t10);
+    			if (detaching) detach_dev(input);
+    			mounted = false;
+    			run_all(dispose);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_28.name,
+    		type: "if",
+    		source: "(549:0) {#if !enigma}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (516:0) {:else}
+    function create_else_block_5(ctx) {
+    	let t0_value = /*ResertarContadores*/ ctx[26]() + "";
+    	let t0;
+    	let t1;
+    	let t2_value = /*contar*/ ctx[25](/*ContadorDoLabirinto*/ ctx[8]) + "";
+    	let t2;
+    	let t3;
+    	let div;
+    	let t4;
+    	let t5;
+    	let t6;
+    	let t7_value = clearInterval(/*NewTempo*/ ctx[2]) + "";
+    	let t7;
+    	let t8;
+    	let t9_value = /*time*/ ctx[11](/*MudançaDeFase*/ ctx[3]) + "";
+    	let t9;
+    	let t10;
+    	let t11_value = /*posicaoinicial*/ ctx[23](/*mapa3*/ ctx[17]) + "";
+    	let t11;
+    	let t12;
     	let table;
-    	let each_value_6 = /*mapa3*/ ctx[14];
+    	let each_value_6 = /*mapa3*/ ctx[17];
     	validate_each_argument(each_value_6);
     	let each_blocks = [];
 
@@ -5203,20 +5431,42 @@ var app = (function () {
     			t1 = space();
     			t2 = text(t2_value);
     			t3 = space();
+    			div = element("div");
+    			t4 = text(/*ContadorDoLabirinto*/ ctx[8]);
+    			t5 = text("s");
+    			t6 = space();
+    			t7 = text(t7_value);
+    			t8 = space();
+    			t9 = text(t9_value);
+    			t10 = space();
+    			t11 = text(t11_value);
+    			t12 = space();
     			table = element("table");
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
+    			attr_dev(div, "class", "Contador");
+    			add_location(div, file$1, 518, 0, 37233);
     			attr_dev(table, "class", "mapa");
-    			add_location(table, file$1, 423, 0, 22540);
+    			add_location(table, file$1, 523, 0, 37362);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
     			insert_dev(target, t1, anchor);
     			insert_dev(target, t2, anchor);
     			insert_dev(target, t3, anchor);
+    			insert_dev(target, div, anchor);
+    			append_dev(div, t4);
+    			append_dev(div, t5);
+    			insert_dev(target, t6, anchor);
+    			insert_dev(target, t7, anchor);
+    			insert_dev(target, t8, anchor);
+    			insert_dev(target, t9, anchor);
+    			insert_dev(target, t10, anchor);
+    			insert_dev(target, t11, anchor);
+    			insert_dev(target, t12, anchor);
     			insert_dev(target, table, anchor);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -5224,10 +5474,13 @@ var app = (function () {
     			}
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*MudançaDeFase*/ 8 && t0_value !== (t0_value = /*time*/ ctx[9](/*MudançaDeFase*/ ctx[3]) + "")) set_data_dev(t0, t0_value);
+    			if (dirty[0] & /*ContadorDoLabirinto*/ 256 && t2_value !== (t2_value = /*contar*/ ctx[25](/*ContadorDoLabirinto*/ ctx[8]) + "")) set_data_dev(t2, t2_value);
+    			if (dirty[0] & /*ContadorDoLabirinto*/ 256) set_data_dev(t4, /*ContadorDoLabirinto*/ ctx[8]);
+    			if (dirty[0] & /*NewTempo*/ 4 && t7_value !== (t7_value = clearInterval(/*NewTempo*/ ctx[2]) + "")) set_data_dev(t7, t7_value);
+    			if (dirty[0] & /*MudançaDeFase*/ 8 && t9_value !== (t9_value = /*time*/ ctx[11](/*MudançaDeFase*/ ctx[3]) + "")) set_data_dev(t9, t9_value);
 
-    			if (dirty[0] & /*mapa3, proximafase, eixoY, eixoX, ResertarPosicao, MudançaDeFase*/ 541752) {
-    				each_value_6 = /*mapa3*/ ctx[14];
+    			if (dirty[0] & /*mapa3, proximafase, eixoY, eixoX, ResertarPosicao, MudançaDeFase*/ 4333624) {
+    				each_value_6 = /*mapa3*/ ctx[17];
     				validate_each_argument(each_value_6);
     				let i;
 
@@ -5255,6 +5508,14 @@ var app = (function () {
     			if (detaching) detach_dev(t1);
     			if (detaching) detach_dev(t2);
     			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(div);
+    			if (detaching) detach_dev(t6);
+    			if (detaching) detach_dev(t7);
+    			if (detaching) detach_dev(t8);
+    			if (detaching) detach_dev(t9);
+    			if (detaching) detach_dev(t10);
+    			if (detaching) detach_dev(t11);
+    			if (detaching) detach_dev(t12);
     			if (detaching) detach_dev(table);
     			destroy_each(each_blocks, detaching);
     		}
@@ -5264,81 +5525,131 @@ var app = (function () {
     		block,
     		id: create_else_block_5.name,
     		type: "else",
-    		source: "(419:0) {:else}",
+    		source: "(516:0) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (414:0) {#if !enigma}
-    function create_if_block_24(ctx) {
-    	let p;
+    // (508:0) {#if !enigma}
+    function create_if_block_21(ctx) {
+    	let t0_value = /*ResertarContadores*/ ctx[26]() + "";
+    	let t0;
     	let t1;
-    	let input;
+    	let t2_value = /*contar*/ ctx[25](/*ContadorDoEnigma*/ ctx[9]) + "";
     	let t2;
-    	let t3_value = /*Alterando*/ ctx[21](/*PalavraChave*/ ctx[7] == "OPA") + "";
     	let t3;
+    	let div;
+    	let t4;
+    	let t5;
+    	let t6;
+    	let t7_value = /*EnigmaTime*/ ctx[12](/*MudançaDeFase*/ ctx[3]) + "";
+    	let t7;
+    	let t8;
+    	let p;
+    	let t10;
+    	let input;
     	let mounted;
     	let dispose;
 
     	const block = {
     		c: function create() {
-    			p = element("p");
-    			p.textContent = "digitar o enigma aqui";
+    			t0 = text(t0_value);
     			t1 = space();
+    			t2 = text(t2_value);
+    			t3 = space();
+    			div = element("div");
+    			t4 = text(/*ContadorDoEnigma*/ ctx[9]);
+    			t5 = text("s");
+    			t6 = space();
+    			t7 = text(t7_value);
+    			t8 = space();
+    			p = element("p");
+    			p.textContent = "Poder suficiente para esmagar navios e quebrar telhados mas mesmo assim tenho medo do sol, quem eu sou?";
+    			t10 = space();
     			input = element("input");
-    			t2 = space();
-    			t3 = text(t3_value);
+    			attr_dev(div, "class", "Contador");
+    			add_location(div, file$1, 510, 0, 36810);
     			attr_dev(p, "class", "Enigma");
-    			add_location(p, file$1, 414, 4, 22295);
+    			add_location(p, file$1, 512, 4, 36896);
     			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
     			attr_dev(input, "class", "RespostaEnigma");
-    			add_location(input, file$1, 415, 0, 22340);
+    			add_location(input, file$1, 513, 0, 37023);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, p, anchor);
+    			insert_dev(target, t0, anchor);
     			insert_dev(target, t1, anchor);
-    			insert_dev(target, input, anchor);
-    			set_input_value(input, /*PalavraChave*/ ctx[7]);
     			insert_dev(target, t2, anchor);
     			insert_dev(target, t3, anchor);
+    			insert_dev(target, div, anchor);
+    			append_dev(div, t4);
+    			append_dev(div, t5);
+    			insert_dev(target, t6, anchor);
+    			insert_dev(target, t7, anchor);
+    			insert_dev(target, t8, anchor);
+    			insert_dev(target, p, anchor);
+    			insert_dev(target, t10, anchor);
+    			insert_dev(target, input, anchor);
+    			set_input_value(input, /*PalavraChave*/ ctx[7]);
 
     			if (!mounted) {
-    				dispose = listen_dev(input, "input", /*input_input_handler_2*/ ctx[24]);
+    				dispose = [
+    					listen_dev(input, "input", /*input_input_handler_2*/ ctx[29]),
+    					listen_dev(
+    						input,
+    						"keydown",
+    						function () {
+    							if (is_function(/*Alterando*/ ctx[24](/*PalavraChave*/ ctx[7] == "GELO"))) /*Alterando*/ ctx[24](/*PalavraChave*/ ctx[7] == "GELO").apply(this, arguments);
+    						},
+    						false,
+    						false,
+    						false
+    					)
+    				];
+
     				mounted = true;
     			}
     		},
-    		p: function update(ctx, dirty) {
+    		p: function update(new_ctx, dirty) {
+    			ctx = new_ctx;
+    			if (dirty[0] & /*ContadorDoEnigma*/ 512 && t2_value !== (t2_value = /*contar*/ ctx[25](/*ContadorDoEnigma*/ ctx[9]) + "")) set_data_dev(t2, t2_value);
+    			if (dirty[0] & /*ContadorDoEnigma*/ 512) set_data_dev(t4, /*ContadorDoEnigma*/ ctx[9]);
+    			if (dirty[0] & /*MudançaDeFase*/ 8 && t7_value !== (t7_value = /*EnigmaTime*/ ctx[12](/*MudançaDeFase*/ ctx[3]) + "")) set_data_dev(t7, t7_value);
+
     			if (dirty[0] & /*PalavraChave*/ 128 && input.value !== /*PalavraChave*/ ctx[7]) {
     				set_input_value(input, /*PalavraChave*/ ctx[7]);
     			}
-
-    			if (dirty[0] & /*PalavraChave*/ 128 && t3_value !== (t3_value = /*Alterando*/ ctx[21](/*PalavraChave*/ ctx[7] == "OPA") + "")) set_data_dev(t3, t3_value);
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(input);
     			if (detaching) detach_dev(t2);
     			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(div);
+    			if (detaching) detach_dev(t6);
+    			if (detaching) detach_dev(t7);
+    			if (detaching) detach_dev(t8);
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t10);
+    			if (detaching) detach_dev(input);
     			mounted = false;
-    			dispose();
+    			run_all(dispose);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_24.name,
+    		id: create_if_block_21.name,
     		type: "if",
-    		source: "(414:0) {#if !enigma}",
+    		source: "(508:0) {#if !enigma}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (440:8) {:else}
+    // (538:8) {:else}
     function create_else_block_6(ctx) {
     	let th;
     	let img;
@@ -5351,9 +5662,9 @@ var app = (function () {
     			attr_dev(img, "class", "tabela");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaum.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 440, 24, 23368);
-    			attr_dev(th, "id", "parede");
-    			add_location(th, file$1, 440, 8, 23352);
+    			add_location(img, file$1, 538, 27, 38109);
+    			attr_dev(th, "id", "MapaGeral");
+    			add_location(th, file$1, 538, 8, 38090);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -5369,53 +5680,15 @@ var app = (function () {
     		block,
     		id: create_else_block_6.name,
     		type: "else",
-    		source: "(440:8) {:else}",
+    		source: "(538:8) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (438:33) 
-    function create_if_block_30(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			attr_dev(img, "class", "tabela");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paradeamalera1.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 438, 24, 23248);
-    			attr_dev(th, "id", "parede");
-    			add_location(th, file$1, 438, 8, 23232);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		p: noop,
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_30.name,
-    		type: "if",
-    		source: "(438:33) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (436:33) 
-    function create_if_block_29(ctx) {
+    // (536:33) 
+    function create_if_block_26(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -5427,9 +5700,9 @@ var app = (function () {
     			attr_dev(img, "class", "tabela");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredeamalera1.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 436, 24, 23111);
-    			attr_dev(th, "id", "parede");
-    			add_location(th, file$1, 436, 8, 23095);
+    			add_location(img, file$1, 536, 27, 37987);
+    			attr_dev(th, "id", "MapaGeral");
+    			add_location(th, file$1, 536, 8, 37968);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -5443,25 +5716,24 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_29.name,
+    		id: create_if_block_26.name,
     		type: "if",
-    		source: "(436:33) ",
+    		source: "(536:33) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (434:33) 
-    function create_if_block_28(ctx) {
+    // (534:33) 
+    function create_if_block_25(ctx) {
     	let th;
 
     	const block = {
     		c: function create() {
     			th = element("th");
-    			attr_dev(th, "id", "vazio");
-    			attr_dev(th, "alt", "vazio");
-    			add_location(th, file$1, 434, 8, 23018);
+    			attr_dev(th, "class", "MapaGeral");
+    			add_location(th, file$1, 534, 8, 37896);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -5474,38 +5746,44 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_28.name,
+    		id: create_if_block_25.name,
     		type: "if",
-    		source: "(434:33) ",
+    		source: "(534:33) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (432:33) 
-    function create_if_block_27(ctx) {
+    // (532:33) 
+    function create_if_block_24(ctx) {
     	let th;
     	let img;
+    	let img_class_value;
     	let img_src_value;
 
     	const block = {
     		c: function create() {
     			th = element("th");
     			img = element("img");
-    			attr_dev(img, "class", "tabela");
-    			if (!src_url_equal(img.src, img_src_value = IMGmovimentacao(/*i*/ ctx[31], /*j*/ ctx[34], /*eixoX*/ ctx[4], /*eixoY*/ ctx[5], /*MudançaDeFase*/ ctx[3]))) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "id", "ChaoNoGeral");
+    			attr_dev(img, "class", img_class_value = ClassDante(/*i*/ ctx[39], /*j*/ ctx[42], /*eixoX*/ ctx[4], /*eixoY*/ ctx[5], /*MudançaDeFase*/ ctx[3]));
+    			if (!src_url_equal(img.src, img_src_value = IMGmovimentacao(/*i*/ ctx[39], /*j*/ ctx[42], /*eixoX*/ ctx[4], /*eixoY*/ ctx[5], /*MudançaDeFase*/ ctx[3]))) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "estrada");
-    			add_location(img, file$1, 432, 25, 22879);
-    			attr_dev(th, "id", "estrada");
-    			add_location(th, file$1, 432, 8, 22862);
+    			add_location(img, file$1, 532, 27, 37703);
+    			attr_dev(th, "id", "MapaGeral");
+    			add_location(th, file$1, 532, 8, 37684);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
     			append_dev(th, img);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*eixoX, eixoY, MudançaDeFase*/ 56 && !src_url_equal(img.src, img_src_value = IMGmovimentacao(/*i*/ ctx[31], /*j*/ ctx[34], /*eixoX*/ ctx[4], /*eixoY*/ ctx[5], /*MudançaDeFase*/ ctx[3]))) {
+    			if (dirty[0] & /*eixoX, eixoY, MudançaDeFase*/ 56 && img_class_value !== (img_class_value = ClassDante(/*i*/ ctx[39], /*j*/ ctx[42], /*eixoX*/ ctx[4], /*eixoY*/ ctx[5], /*MudançaDeFase*/ ctx[3]))) {
+    				attr_dev(img, "class", img_class_value);
+    			}
+
+    			if (dirty[0] & /*eixoX, eixoY, MudançaDeFase*/ 56 && !src_url_equal(img.src, img_src_value = IMGmovimentacao(/*i*/ ctx[39], /*j*/ ctx[42], /*eixoX*/ ctx[4], /*eixoY*/ ctx[5], /*MudançaDeFase*/ ctx[3]))) {
     				attr_dev(img, "src", img_src_value);
     			}
     		},
@@ -5516,18 +5794,18 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_27.name,
+    		id: create_if_block_24.name,
     		type: "if",
-    		source: "(432:33) ",
+    		source: "(532:33) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (430:45) 
-    function create_if_block_26(ctx) {
-    	let t_value = /*ResertarPosicao*/ ctx[19]() + "";
+    // (530:45) 
+    function create_if_block_23(ctx) {
+    	let t_value = /*ResertarPosicao*/ ctx[22]() + "";
     	let t;
 
     	const block = {
@@ -5545,18 +5823,18 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_26.name,
+    		id: create_if_block_23.name,
     		type: "if",
-    		source: "(430:45) ",
+    		source: "(530:45) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (428:8) {#if (mapa3[eixoY][eixoX] == "V")}
-    function create_if_block_25(ctx) {
-    	let t_value = /*proximafase*/ ctx[10](/*mapa3*/ ctx[14][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]]) + "";
+    // (528:8) {#if (mapa3[eixoY][eixoX] == "V")}
+    function create_if_block_22(ctx) {
+    	let t_value = /*proximafase*/ ctx[13](/*mapa3*/ ctx[17][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]]) + "";
     	let t;
 
     	const block = {
@@ -5567,7 +5845,7 @@ var app = (function () {
     			insert_dev(target, t, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*eixoY, eixoX*/ 48 && t_value !== (t_value = /*proximafase*/ ctx[10](/*mapa3*/ ctx[14][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]]) + "")) set_data_dev(t, t_value);
+    			if (dirty[0] & /*eixoY, eixoX*/ 48 && t_value !== (t_value = /*proximafase*/ ctx[13](/*mapa3*/ ctx[17][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]]) + "")) set_data_dev(t, t_value);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(t);
@@ -5576,26 +5854,25 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_25.name,
+    		id: create_if_block_22.name,
     		type: "if",
-    		source: "(428:8) {#if (mapa3[eixoY][eixoX] == \\\"V\\\")}",
+    		source: "(528:8) {#if (mapa3[eixoY][eixoX] == \\\"V\\\")}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (427:4) {#each regiao as estrada,j}
+    // (527:4) {#each regiao as estrada,j}
     function create_each_block_7(ctx) {
     	let if_block_anchor;
 
     	function select_block_type_8(ctx, dirty) {
-    		if (/*mapa3*/ ctx[14][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]] == "V") return create_if_block_25;
-    		if (/*mapa3*/ ctx[14][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]] != 0) return create_if_block_26;
-    		if (/*estrada*/ ctx[32] == 0) return create_if_block_27;
-    		if (/*estrada*/ ctx[32] == 2) return create_if_block_28;
-    		if (/*estrada*/ ctx[32] == 1) return create_if_block_29;
-    		if (/*estrada*/ ctx[32] == 3) return create_if_block_30;
+    		if (/*mapa3*/ ctx[17][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]] == "V") return create_if_block_22;
+    		if (/*mapa3*/ ctx[17][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]] != 0) return create_if_block_23;
+    		if (/*estrada*/ ctx[40] == 0) return create_if_block_24;
+    		if (/*estrada*/ ctx[40] == 2) return create_if_block_25;
+    		if (/*estrada*/ ctx[40] == 1) return create_if_block_26;
     		return create_else_block_6;
     	}
 
@@ -5634,18 +5911,18 @@ var app = (function () {
     		block,
     		id: create_each_block_7.name,
     		type: "each",
-    		source: "(427:4) {#each regiao as estrada,j}",
+    		source: "(527:4) {#each regiao as estrada,j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (425:4) {#each mapa3 as regiao,i}
+    // (525:4) {#each mapa3 as regiao,i}
     function create_each_block_6(ctx) {
     	let tr;
     	let t;
-    	let each_value_7 = /*regiao*/ ctx[29];
+    	let each_value_7 = /*regiao*/ ctx[37];
     	validate_each_argument(each_value_7);
     	let each_blocks = [];
 
@@ -5663,7 +5940,7 @@ var app = (function () {
 
     			t = space();
     			attr_dev(tr, "class", "linhasdatabela");
-    			add_location(tr, file$1, 425, 0, 22593);
+    			add_location(tr, file$1, 525, 0, 37415);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -5675,8 +5952,8 @@ var app = (function () {
     			append_dev(tr, t);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*proximafase, mapa3, eixoY, eixoX, ResertarPosicao, MudançaDeFase*/ 541752) {
-    				each_value_7 = /*regiao*/ ctx[29];
+    			if (dirty[0] & /*proximafase, mapa3, eixoY, eixoX, ResertarPosicao, MudançaDeFase*/ 4333624) {
+    				each_value_7 = /*regiao*/ ctx[37];
     				validate_each_argument(each_value_7);
     				let i;
 
@@ -5709,23 +5986,36 @@ var app = (function () {
     		block,
     		id: create_each_block_6.name,
     		type: "each",
-    		source: "(425:4) {#each mapa3 as regiao,i}",
+    		source: "(525:4) {#each mapa3 as regiao,i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (378:0) {:else}
+    // (468:0) {:else}
     function create_else_block_3(ctx) {
-    	let t0_value = /*time*/ ctx[9](/*MudançaDeFase*/ ctx[3]) + "";
+    	let t0_value = clearInterval(/*NewTempo*/ ctx[2]) + "";
     	let t0;
     	let t1;
-    	let t2_value = /*posicaoinicial*/ ctx[20](/*mapa2*/ ctx[13]) + "";
+    	let t2_value = /*ResertarContadores*/ ctx[26]() + "";
     	let t2;
     	let t3;
+    	let t4_value = /*contar*/ ctx[25](/*ContadorDoLabirinto*/ ctx[8]) + "";
+    	let t4;
+    	let t5;
+    	let div;
+    	let t6;
+    	let t7;
+    	let t8;
+    	let t9_value = /*time*/ ctx[11](/*MudançaDeFase*/ ctx[3]) + "";
+    	let t9;
+    	let t10;
+    	let t11_value = /*posicaoinicial*/ ctx[23](/*mapa2*/ ctx[16]) + "";
+    	let t11;
+    	let t12;
     	let table;
-    	let each_value_4 = /*mapa2*/ ctx[13];
+    	let each_value_4 = /*mapa2*/ ctx[16];
     	validate_each_argument(each_value_4);
     	let each_blocks = [];
 
@@ -5739,20 +6029,42 @@ var app = (function () {
     			t1 = space();
     			t2 = text(t2_value);
     			t3 = space();
+    			t4 = text(t4_value);
+    			t5 = space();
+    			div = element("div");
+    			t6 = text(/*ContadorDoLabirinto*/ ctx[8]);
+    			t7 = text("s");
+    			t8 = space();
+    			t9 = text(t9_value);
+    			t10 = space();
+    			t11 = text(t11_value);
+    			t12 = space();
     			table = element("table");
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
+    			attr_dev(div, "class", "Contador");
+    			add_location(div, file$1, 471, 0, 35601);
     			attr_dev(table, "class", "mapa");
-    			add_location(table, file$1, 382, 0, 21209);
+    			add_location(table, file$1, 475, 0, 35703);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
     			insert_dev(target, t1, anchor);
     			insert_dev(target, t2, anchor);
     			insert_dev(target, t3, anchor);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, div, anchor);
+    			append_dev(div, t6);
+    			append_dev(div, t7);
+    			insert_dev(target, t8, anchor);
+    			insert_dev(target, t9, anchor);
+    			insert_dev(target, t10, anchor);
+    			insert_dev(target, t11, anchor);
+    			insert_dev(target, t12, anchor);
     			insert_dev(target, table, anchor);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -5760,10 +6072,13 @@ var app = (function () {
     			}
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*MudançaDeFase*/ 8 && t0_value !== (t0_value = /*time*/ ctx[9](/*MudançaDeFase*/ ctx[3]) + "")) set_data_dev(t0, t0_value);
+    			if (dirty[0] & /*NewTempo*/ 4 && t0_value !== (t0_value = clearInterval(/*NewTempo*/ ctx[2]) + "")) set_data_dev(t0, t0_value);
+    			if (dirty[0] & /*ContadorDoLabirinto*/ 256 && t4_value !== (t4_value = /*contar*/ ctx[25](/*ContadorDoLabirinto*/ ctx[8]) + "")) set_data_dev(t4, t4_value);
+    			if (dirty[0] & /*ContadorDoLabirinto*/ 256) set_data_dev(t6, /*ContadorDoLabirinto*/ ctx[8]);
+    			if (dirty[0] & /*MudançaDeFase*/ 8 && t9_value !== (t9_value = /*time*/ ctx[11](/*MudançaDeFase*/ ctx[3]) + "")) set_data_dev(t9, t9_value);
 
-    			if (dirty[0] & /*mapa2, proximafase, eixoY, eixoX, ResertarPosicao, MudançaDeFase*/ 533560) {
-    				each_value_4 = /*mapa2*/ ctx[13];
+    			if (dirty[0] & /*mapa2, proximafase, eixoY, eixoX, ResertarPosicao, MudançaDeFase*/ 4268088) {
+    				each_value_4 = /*mapa2*/ ctx[16];
     				validate_each_argument(each_value_4);
     				let i;
 
@@ -5791,6 +6106,14 @@ var app = (function () {
     			if (detaching) detach_dev(t1);
     			if (detaching) detach_dev(t2);
     			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(div);
+    			if (detaching) detach_dev(t8);
+    			if (detaching) detach_dev(t9);
+    			if (detaching) detach_dev(t10);
+    			if (detaching) detach_dev(t11);
+    			if (detaching) detach_dev(t12);
     			if (detaching) detach_dev(table);
     			destroy_each(each_blocks, detaching);
     		}
@@ -5800,81 +6123,131 @@ var app = (function () {
     		block,
     		id: create_else_block_3.name,
     		type: "else",
-    		source: "(378:0) {:else}",
+    		source: "(468:0) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (373:0) {#if !enigma}
-    function create_if_block_16(ctx) {
-    	let p;
+    // (460:0) {#if !enigma}
+    function create_if_block_14(ctx) {
+    	let t0_value = /*ResertarContadores*/ ctx[26]() + "";
+    	let t0;
     	let t1;
-    	let input;
+    	let t2_value = /*contar*/ ctx[25](/*ContadorDoEnigma*/ ctx[9]) + "";
     	let t2;
-    	let t3_value = /*Alterando*/ ctx[21](/*PalavraChave*/ ctx[7] == "TUDO") + "";
     	let t3;
+    	let div;
+    	let t4;
+    	let t5;
+    	let t6;
+    	let t7_value = /*EnigmaTime*/ ctx[12](/*MudançaDeFase*/ ctx[3]) + "";
+    	let t7;
+    	let t8;
+    	let p;
+    	let t10;
+    	let input;
     	let mounted;
     	let dispose;
 
     	const block = {
     		c: function create() {
-    			p = element("p");
-    			p.textContent = "digitar o enigma aqui";
+    			t0 = text(t0_value);
     			t1 = space();
+    			t2 = text(t2_value);
+    			t3 = space();
+    			div = element("div");
+    			t4 = text(/*ContadorDoEnigma*/ ctx[9]);
+    			t5 = text("s");
+    			t6 = space();
+    			t7 = text(t7_value);
+    			t8 = space();
+    			p = element("p");
+    			p.textContent = "Fui levado para um quarto escuro e incendiado. Eu chorei e então minha cabeça foi cortada. Quem sou eu?";
+    			t10 = space();
     			input = element("input");
-    			t2 = space();
-    			t3 = text(t3_value);
+    			attr_dev(div, "class", "Contador");
+    			add_location(div, file$1, 462, 0, 35151);
     			attr_dev(p, "class", "Enigma");
-    			add_location(p, file$1, 373, 4, 20963);
+    			add_location(p, file$1, 464, 4, 35237);
     			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
     			attr_dev(input, "class", "RespostaEnigma");
-    			add_location(input, file$1, 374, 0, 21008);
+    			add_location(input, file$1, 465, 0, 35364);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, p, anchor);
+    			insert_dev(target, t0, anchor);
     			insert_dev(target, t1, anchor);
-    			insert_dev(target, input, anchor);
-    			set_input_value(input, /*PalavraChave*/ ctx[7]);
     			insert_dev(target, t2, anchor);
     			insert_dev(target, t3, anchor);
+    			insert_dev(target, div, anchor);
+    			append_dev(div, t4);
+    			append_dev(div, t5);
+    			insert_dev(target, t6, anchor);
+    			insert_dev(target, t7, anchor);
+    			insert_dev(target, t8, anchor);
+    			insert_dev(target, p, anchor);
+    			insert_dev(target, t10, anchor);
+    			insert_dev(target, input, anchor);
+    			set_input_value(input, /*PalavraChave*/ ctx[7]);
 
     			if (!mounted) {
-    				dispose = listen_dev(input, "input", /*input_input_handler_1*/ ctx[23]);
+    				dispose = [
+    					listen_dev(input, "input", /*input_input_handler_1*/ ctx[28]),
+    					listen_dev(
+    						input,
+    						"keydown",
+    						function () {
+    							if (is_function(/*Alterando*/ ctx[24](/*PalavraChave*/ ctx[7] == "VELA"))) /*Alterando*/ ctx[24](/*PalavraChave*/ ctx[7] == "VELA").apply(this, arguments);
+    						},
+    						false,
+    						false,
+    						false
+    					)
+    				];
+
     				mounted = true;
     			}
     		},
-    		p: function update(ctx, dirty) {
+    		p: function update(new_ctx, dirty) {
+    			ctx = new_ctx;
+    			if (dirty[0] & /*ContadorDoEnigma*/ 512 && t2_value !== (t2_value = /*contar*/ ctx[25](/*ContadorDoEnigma*/ ctx[9]) + "")) set_data_dev(t2, t2_value);
+    			if (dirty[0] & /*ContadorDoEnigma*/ 512) set_data_dev(t4, /*ContadorDoEnigma*/ ctx[9]);
+    			if (dirty[0] & /*MudançaDeFase*/ 8 && t7_value !== (t7_value = /*EnigmaTime*/ ctx[12](/*MudançaDeFase*/ ctx[3]) + "")) set_data_dev(t7, t7_value);
+
     			if (dirty[0] & /*PalavraChave*/ 128 && input.value !== /*PalavraChave*/ ctx[7]) {
     				set_input_value(input, /*PalavraChave*/ ctx[7]);
     			}
-
-    			if (dirty[0] & /*PalavraChave*/ 128 && t3_value !== (t3_value = /*Alterando*/ ctx[21](/*PalavraChave*/ ctx[7] == "TUDO") + "")) set_data_dev(t3, t3_value);
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(input);
     			if (detaching) detach_dev(t2);
     			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(div);
+    			if (detaching) detach_dev(t6);
+    			if (detaching) detach_dev(t7);
+    			if (detaching) detach_dev(t8);
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t10);
+    			if (detaching) detach_dev(input);
     			mounted = false;
-    			dispose();
+    			run_all(dispose);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_16.name,
+    		id: create_if_block_14.name,
     		type: "if",
-    		source: "(373:0) {#if !enigma}",
+    		source: "(460:0) {#if !enigma}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (399:8) {:else}
+    // (490:8) {:else}
     function create_else_block_4(ctx) {
     	let th;
     	let img;
@@ -5887,9 +6260,9 @@ var app = (function () {
     			attr_dev(img, "class", "tabela");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel4.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 399, 24, 22033);
-    			attr_dev(th, "id", "parede");
-    			add_location(th, file$1, 399, 8, 22017);
+    			add_location(img, file$1, 490, 27, 36448);
+    			attr_dev(th, "id", "MapaGeral");
+    			add_location(th, file$1, 490, 8, 36429);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -5905,121 +6278,14 @@ var app = (function () {
     		block,
     		id: create_else_block_4.name,
     		type: "else",
-    		source: "(399:8) {:else}",
+    		source: "(490:8) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (397:33) 
-    function create_if_block_22(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			attr_dev(img, "class", "tabela");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredelevel4.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 397, 24, 21915);
-    			attr_dev(th, "id", "parede");
-    			add_location(th, file$1, 397, 8, 21899);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		p: noop,
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_22.name,
-    		type: "if",
-    		source: "(397:33) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (395:33) 
-    function create_if_block_21(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			attr_dev(img, "class", "tabela");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredelevel4.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 395, 24, 21780);
-    			attr_dev(th, "id", "parede");
-    			add_location(th, file$1, 395, 8, 21764);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		p: noop,
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_21.name,
-    		type: "if",
-    		source: "(395:33) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (393:33) 
-    function create_if_block_20(ctx) {
-    	let th;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			attr_dev(th, "id", "vazio");
-    			attr_dev(th, "alt", "vazio");
-    			add_location(th, file$1, 393, 8, 21687);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    		},
-    		p: noop,
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_20.name,
-    		type: "if",
-    		source: "(393:33) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (391:33) 
+    // (488:33) 
     function create_if_block_19(ctx) {
     	let th;
     	let img;
@@ -6030,18 +6296,92 @@ var app = (function () {
     			th = element("th");
     			img = element("img");
     			attr_dev(img, "class", "tabela");
-    			if (!src_url_equal(img.src, img_src_value = IMGmovimentacao(/*i*/ ctx[31], /*j*/ ctx[34], /*eixoX*/ ctx[4], /*eixoY*/ ctx[5], /*MudançaDeFase*/ ctx[3]))) attr_dev(img, "src", img_src_value);
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredelevel4.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "parede");
+    			add_location(img, file$1, 488, 27, 36328);
+    			attr_dev(th, "id", "MapaGeral");
+    			add_location(th, file$1, 488, 8, 36309);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_19.name,
+    		type: "if",
+    		source: "(488:33) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (486:33) 
+    function create_if_block_18(ctx) {
+    	let th;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			attr_dev(th, "class", "MapaGeral");
+    			add_location(th, file$1, 486, 8, 36237);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_18.name,
+    		type: "if",
+    		source: "(486:33) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (484:33) 
+    function create_if_block_17(ctx) {
+    	let th;
+    	let img;
+    	let img_class_value;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "id", "ChaoNoGeral");
+    			attr_dev(img, "class", img_class_value = ClassDante(/*i*/ ctx[39], /*j*/ ctx[42], /*eixoX*/ ctx[4], /*eixoY*/ ctx[5], /*MudançaDeFase*/ ctx[3]));
+    			if (!src_url_equal(img.src, img_src_value = IMGmovimentacao(/*i*/ ctx[39], /*j*/ ctx[42], /*eixoX*/ ctx[4], /*eixoY*/ ctx[5], /*MudançaDeFase*/ ctx[3]))) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "estrada");
-    			add_location(img, file$1, 391, 25, 21548);
-    			attr_dev(th, "id", "estrada");
-    			add_location(th, file$1, 391, 8, 21531);
+    			add_location(img, file$1, 484, 27, 36044);
+    			attr_dev(th, "id", "MapaGeral");
+    			add_location(th, file$1, 484, 8, 36025);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
     			append_dev(th, img);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*eixoX, eixoY, MudançaDeFase*/ 56 && !src_url_equal(img.src, img_src_value = IMGmovimentacao(/*i*/ ctx[31], /*j*/ ctx[34], /*eixoX*/ ctx[4], /*eixoY*/ ctx[5], /*MudançaDeFase*/ ctx[3]))) {
+    			if (dirty[0] & /*eixoX, eixoY, MudançaDeFase*/ 56 && img_class_value !== (img_class_value = ClassDante(/*i*/ ctx[39], /*j*/ ctx[42], /*eixoX*/ ctx[4], /*eixoY*/ ctx[5], /*MudançaDeFase*/ ctx[3]))) {
+    				attr_dev(img, "class", img_class_value);
+    			}
+
+    			if (dirty[0] & /*eixoX, eixoY, MudançaDeFase*/ 56 && !src_url_equal(img.src, img_src_value = IMGmovimentacao(/*i*/ ctx[39], /*j*/ ctx[42], /*eixoX*/ ctx[4], /*eixoY*/ ctx[5], /*MudançaDeFase*/ ctx[3]))) {
     				attr_dev(img, "src", img_src_value);
     			}
     		},
@@ -6052,18 +6392,18 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_19.name,
+    		id: create_if_block_17.name,
     		type: "if",
-    		source: "(391:33) ",
+    		source: "(484:33) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (389:45) 
-    function create_if_block_18(ctx) {
-    	let t_value = /*ResertarPosicao*/ ctx[19]() + "";
+    // (482:45) 
+    function create_if_block_16(ctx) {
+    	let t_value = /*ResertarPosicao*/ ctx[22]() + "";
     	let t;
 
     	const block = {
@@ -6081,18 +6421,18 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_18.name,
+    		id: create_if_block_16.name,
     		type: "if",
-    		source: "(389:45) ",
+    		source: "(482:45) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (387:8) {#if (mapa2[eixoY][eixoX] == "Z")}
-    function create_if_block_17(ctx) {
-    	let t_value = /*proximafase*/ ctx[10](/*mapa2*/ ctx[13][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]]) + "";
+    // (480:8) {#if (mapa2[eixoY][eixoX] == "Z")}
+    function create_if_block_15(ctx) {
+    	let t_value = /*proximafase*/ ctx[13](/*mapa2*/ ctx[16][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]]) + "";
     	let t;
 
     	const block = {
@@ -6103,7 +6443,7 @@ var app = (function () {
     			insert_dev(target, t, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*eixoY, eixoX*/ 48 && t_value !== (t_value = /*proximafase*/ ctx[10](/*mapa2*/ ctx[13][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]]) + "")) set_data_dev(t, t_value);
+    			if (dirty[0] & /*eixoY, eixoX*/ 48 && t_value !== (t_value = /*proximafase*/ ctx[13](/*mapa2*/ ctx[16][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]]) + "")) set_data_dev(t, t_value);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(t);
@@ -6112,26 +6452,25 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_17.name,
+    		id: create_if_block_15.name,
     		type: "if",
-    		source: "(387:8) {#if (mapa2[eixoY][eixoX] == \\\"Z\\\")}",
+    		source: "(480:8) {#if (mapa2[eixoY][eixoX] == \\\"Z\\\")}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (386:4) {#each regiao as estrada,j}
+    // (479:4) {#each regiao as estrada,j}
     function create_each_block_5(ctx) {
     	let if_block_anchor;
 
     	function select_block_type_6(ctx, dirty) {
-    		if (/*mapa2*/ ctx[13][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]] == "Z") return create_if_block_17;
-    		if (/*mapa2*/ ctx[13][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]] != 0) return create_if_block_18;
-    		if (/*estrada*/ ctx[32] == 0) return create_if_block_19;
-    		if (/*estrada*/ ctx[32] == 2) return create_if_block_20;
-    		if (/*estrada*/ ctx[32] == 1) return create_if_block_21;
-    		if (/*estrada*/ ctx[32] == 3) return create_if_block_22;
+    		if (/*mapa2*/ ctx[16][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]] == "Z") return create_if_block_15;
+    		if (/*mapa2*/ ctx[16][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]] != 0) return create_if_block_16;
+    		if (/*estrada*/ ctx[40] == 0) return create_if_block_17;
+    		if (/*estrada*/ ctx[40] == 2) return create_if_block_18;
+    		if (/*estrada*/ ctx[40] == 1) return create_if_block_19;
     		return create_else_block_4;
     	}
 
@@ -6170,18 +6509,18 @@ var app = (function () {
     		block,
     		id: create_each_block_5.name,
     		type: "each",
-    		source: "(386:4) {#each regiao as estrada,j}",
+    		source: "(479:4) {#each regiao as estrada,j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (384:4) {#each mapa2 as regiao,i}
+    // (477:4) {#each mapa2 as regiao,i}
     function create_each_block_4(ctx) {
     	let tr;
     	let t;
-    	let each_value_5 = /*regiao*/ ctx[29];
+    	let each_value_5 = /*regiao*/ ctx[37];
     	validate_each_argument(each_value_5);
     	let each_blocks = [];
 
@@ -6199,7 +6538,7 @@ var app = (function () {
 
     			t = space();
     			attr_dev(tr, "class", "linhasdatabela");
-    			add_location(tr, file$1, 384, 0, 21262);
+    			add_location(tr, file$1, 477, 0, 35756);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -6211,8 +6550,8 @@ var app = (function () {
     			append_dev(tr, t);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*proximafase, mapa2, eixoY, eixoX, ResertarPosicao, MudançaDeFase*/ 533560) {
-    				each_value_5 = /*regiao*/ ctx[29];
+    			if (dirty[0] & /*proximafase, mapa2, eixoY, eixoX, ResertarPosicao, MudançaDeFase*/ 4268088) {
+    				each_value_5 = /*regiao*/ ctx[37];
     				validate_each_argument(each_value_5);
     				let i;
 
@@ -6245,23 +6584,33 @@ var app = (function () {
     		block,
     		id: create_each_block_4.name,
     		type: "each",
-    		source: "(384:4) {#each mapa2 as regiao,i}",
+    		source: "(477:4) {#each mapa2 as regiao,i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (338:0) {:else}
+    // (423:0) {:else}
     function create_else_block_1(ctx) {
-    	let t0_value = /*time*/ ctx[9](/*MudançaDeFase*/ ctx[3]) + "";
+    	let t0_value = /*ResertarContadores*/ ctx[26]() + "";
     	let t0;
     	let t1;
-    	let t2_value = /*posicaoinicial*/ ctx[20](/*mapa1*/ ctx[12]) + "";
+    	let t2_value = /*contar*/ ctx[25](/*ContadorDoLabirinto*/ ctx[8]) + "";
     	let t2;
     	let t3;
+    	let div;
+    	let t4;
+    	let t5;
+    	let t6;
+    	let t7_value = /*time*/ ctx[11](/*MudançaDeFase*/ ctx[3]) + "";
+    	let t7;
+    	let t8;
+    	let t9_value = /*posicaoinicial*/ ctx[23](/*mapa1*/ ctx[15]) + "";
+    	let t9;
+    	let t10;
     	let table;
-    	let each_value_2 = /*mapa1*/ ctx[12];
+    	let each_value_2 = /*mapa1*/ ctx[15];
     	validate_each_argument(each_value_2);
     	let each_blocks = [];
 
@@ -6275,20 +6624,38 @@ var app = (function () {
     			t1 = space();
     			t2 = text(t2_value);
     			t3 = space();
+    			div = element("div");
+    			t4 = text(/*ContadorDoLabirinto*/ ctx[8]);
+    			t5 = text("s");
+    			t6 = space();
+    			t7 = text(t7_value);
+    			t8 = space();
+    			t9 = text(t9_value);
+    			t10 = space();
     			table = element("table");
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
+    			attr_dev(div, "class", "Contador");
+    			add_location(div, file$1, 425, 0, 34024);
     			attr_dev(table, "class", "mapa");
-    			add_location(table, file$1, 342, 0, 19880);
+    			add_location(table, file$1, 431, 0, 34130);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
     			insert_dev(target, t1, anchor);
     			insert_dev(target, t2, anchor);
     			insert_dev(target, t3, anchor);
+    			insert_dev(target, div, anchor);
+    			append_dev(div, t4);
+    			append_dev(div, t5);
+    			insert_dev(target, t6, anchor);
+    			insert_dev(target, t7, anchor);
+    			insert_dev(target, t8, anchor);
+    			insert_dev(target, t9, anchor);
+    			insert_dev(target, t10, anchor);
     			insert_dev(target, table, anchor);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -6296,10 +6663,12 @@ var app = (function () {
     			}
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*MudançaDeFase*/ 8 && t0_value !== (t0_value = /*time*/ ctx[9](/*MudançaDeFase*/ ctx[3]) + "")) set_data_dev(t0, t0_value);
+    			if (dirty[0] & /*ContadorDoLabirinto*/ 256 && t2_value !== (t2_value = /*contar*/ ctx[25](/*ContadorDoLabirinto*/ ctx[8]) + "")) set_data_dev(t2, t2_value);
+    			if (dirty[0] & /*ContadorDoLabirinto*/ 256) set_data_dev(t4, /*ContadorDoLabirinto*/ ctx[8]);
+    			if (dirty[0] & /*MudançaDeFase*/ 8 && t7_value !== (t7_value = /*time*/ ctx[11](/*MudançaDeFase*/ ctx[3]) + "")) set_data_dev(t7, t7_value);
 
-    			if (dirty[0] & /*mapa1, proximafase, eixoY, eixoX, ResertarPosicao, MudançaDeFase*/ 529464) {
-    				each_value_2 = /*mapa1*/ ctx[12];
+    			if (dirty[0] & /*mapa1, proximafase, eixoY, eixoX, ResertarPosicao, MudançaDeFase*/ 4235320) {
+    				each_value_2 = /*mapa1*/ ctx[15];
     				validate_each_argument(each_value_2);
     				let i;
 
@@ -6327,6 +6696,12 @@ var app = (function () {
     			if (detaching) detach_dev(t1);
     			if (detaching) detach_dev(t2);
     			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(div);
+    			if (detaching) detach_dev(t6);
+    			if (detaching) detach_dev(t7);
+    			if (detaching) detach_dev(t8);
+    			if (detaching) detach_dev(t9);
+    			if (detaching) detach_dev(t10);
     			if (detaching) detach_dev(table);
     			destroy_each(each_blocks, detaching);
     		}
@@ -6336,81 +6711,118 @@ var app = (function () {
     		block,
     		id: create_else_block_1.name,
     		type: "else",
-    		source: "(338:0) {:else}",
+    		source: "(423:0) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (333:0) {#if !enigma}
-    function create_if_block_8(ctx) {
-    	let p;
+    // (412:0) {#if !enigma}
+    function create_if_block_7(ctx) {
+    	let p0;
     	let t1;
-    	let input;
-    	let t2;
-    	let t3_value = /*Alterando*/ ctx[21](/*PalavraChave*/ ctx[7] == "OLA") + "";
+    	let p1;
     	let t3;
+    	let p2;
+    	let t5;
+    	let p3;
+    	let t7;
+    	let input;
     	let mounted;
     	let dispose;
 
     	const block = {
     		c: function create() {
-    			p = element("p");
-    			p.textContent = "Escreva aqui o enigma";
+    			p0 = element("p");
+    			p0.textContent = "Sempre que passar de fase, haverá um enigma a ser solucionado.";
     			t1 = space();
+    			p1 = element("p");
+    			p1.textContent = "Lembre-se: existe um limite de tempo, tanto para resolver os enigmas, como para sair de cada labirinto. Ao perder uma fase, você voltará para o primeira.";
+    			t3 = space();
+    			p2 = element("p");
+    			p2.textContent = "OBS: Só serão aceitas letras maiúsculas nas respostas de todos os enigmas e nenhuma das palavras-chave contém qualquer acento.";
+    			t5 = space();
+    			p3 = element("p");
+    			p3.textContent = "Após compreender o funcionamento do Minos Labyrinth, digite: \"OK\" e poderá prosseguir para a primeira fase.";
+    			t7 = space();
     			input = element("input");
-    			t2 = space();
-    			t3 = text(t3_value);
-    			attr_dev(p, "class", "Enigma");
-    			add_location(p, file$1, 333, 4, 19635);
+    			attr_dev(p0, "class", "Enigma");
+    			add_location(p0, file$1, 414, 4, 33247);
+    			attr_dev(p1, "class", "Enigma");
+    			add_location(p1, file$1, 415, 4, 33338);
+    			attr_dev(p2, "class", "Enigma");
+    			add_location(p2, file$1, 416, 4, 33519);
+    			attr_dev(p3, "class", "Enigma");
+    			add_location(p3, file$1, 417, 4, 33673);
     			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
     			attr_dev(input, "class", "RespostaEnigma");
-    			add_location(input, file$1, 334, 0, 19680);
+    			add_location(input, file$1, 419, 0, 33810);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, p, anchor);
+    			insert_dev(target, p0, anchor);
     			insert_dev(target, t1, anchor);
+    			insert_dev(target, p1, anchor);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, p2, anchor);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, p3, anchor);
+    			insert_dev(target, t7, anchor);
     			insert_dev(target, input, anchor);
     			set_input_value(input, /*PalavraChave*/ ctx[7]);
-    			insert_dev(target, t2, anchor);
-    			insert_dev(target, t3, anchor);
 
     			if (!mounted) {
-    				dispose = listen_dev(input, "input", /*input_input_handler*/ ctx[22]);
+    				dispose = [
+    					listen_dev(input, "input", /*input_input_handler*/ ctx[27]),
+    					listen_dev(
+    						input,
+    						"keydown",
+    						function () {
+    							if (is_function(/*Alterando*/ ctx[24](/*PalavraChave*/ ctx[7] == "OK"))) /*Alterando*/ ctx[24](/*PalavraChave*/ ctx[7] == "OK").apply(this, arguments);
+    						},
+    						false,
+    						false,
+    						false
+    					)
+    				];
+
     				mounted = true;
     			}
     		},
-    		p: function update(ctx, dirty) {
+    		p: function update(new_ctx, dirty) {
+    			ctx = new_ctx;
+
     			if (dirty[0] & /*PalavraChave*/ 128 && input.value !== /*PalavraChave*/ ctx[7]) {
     				set_input_value(input, /*PalavraChave*/ ctx[7]);
     			}
-
-    			if (dirty[0] & /*PalavraChave*/ 128 && t3_value !== (t3_value = /*Alterando*/ ctx[21](/*PalavraChave*/ ctx[7] == "OLA") + "")) set_data_dev(t3, t3_value);
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(p0);
     			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(input);
-    			if (detaching) detach_dev(t2);
+    			if (detaching) detach_dev(p1);
     			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(p2);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(p3);
+    			if (detaching) detach_dev(t7);
+    			if (detaching) detach_dev(input);
     			mounted = false;
-    			dispose();
+    			run_all(dispose);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_8.name,
+    		id: create_if_block_7.name,
     		type: "if",
-    		source: "(333:0) {#if !enigma}",
+    		source: "(412:0) {#if !enigma}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (359:8) {:else}
+    // (446:8) {:else}
     function create_else_block_2(ctx) {
     	let th;
     	let img;
@@ -6423,9 +6835,9 @@ var app = (function () {
     			attr_dev(img, "class", "tabela");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaum.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 359, 24, 20708);
-    			attr_dev(th, "id", "parede");
-    			add_location(th, file$1, 359, 8, 20692);
+    			add_location(img, file$1, 446, 27, 34877);
+    			attr_dev(th, "id", "MapaGeral");
+    			add_location(th, file$1, 446, 8, 34858);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -6441,53 +6853,15 @@ var app = (function () {
     		block,
     		id: create_else_block_2.name,
     		type: "else",
-    		source: "(359:8) {:else}",
+    		source: "(446:8) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (357:33) 
-    function create_if_block_14(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			attr_dev(img, "class", "tabela");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paradeamalera1.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 357, 24, 20588);
-    			attr_dev(th, "id", "parede");
-    			add_location(th, file$1, 357, 8, 20572);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		p: noop,
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_14.name,
-    		type: "if",
-    		source: "(357:33) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (355:33) 
-    function create_if_block_13(ctx) {
+    // (444:33) 
+    function create_if_block_12(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -6499,44 +6873,13 @@ var app = (function () {
     			attr_dev(img, "class", "tabela");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredeamalera1.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 355, 24, 20451);
-    			attr_dev(th, "id", "parede");
-    			add_location(th, file$1, 355, 8, 20435);
+    			add_location(img, file$1, 444, 27, 34755);
+    			attr_dev(th, "id", "MapaGeral");
+    			add_location(th, file$1, 444, 8, 34736);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
     			append_dev(th, img);
-    		},
-    		p: noop,
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_13.name,
-    		type: "if",
-    		source: "(355:33) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (353:33) 
-    function create_if_block_12(ctx) {
-    	let th;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			attr_dev(th, "id", "vazio");
-    			attr_dev(th, "alt", "vazio");
-    			add_location(th, file$1, 353, 8, 20358);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
     		},
     		p: noop,
     		d: function destroy(detaching) {
@@ -6548,36 +6891,72 @@ var app = (function () {
     		block,
     		id: create_if_block_12.name,
     		type: "if",
-    		source: "(353:33) ",
+    		source: "(444:33) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (351:33) 
+    // (442:33) 
     function create_if_block_11(ctx) {
     	let th;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			attr_dev(th, "class", "MapaGeral");
+    			add_location(th, file$1, 442, 8, 34664);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_11.name,
+    		type: "if",
+    		source: "(442:33) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (440:33) 
+    function create_if_block_10(ctx) {
+    	let th;
     	let img;
+    	let img_class_value;
     	let img_src_value;
 
     	const block = {
     		c: function create() {
     			th = element("th");
     			img = element("img");
-    			attr_dev(img, "class", "tabela");
-    			if (!src_url_equal(img.src, img_src_value = IMGmovimentacao(/*i*/ ctx[31], /*j*/ ctx[34], /*eixoX*/ ctx[4], /*eixoY*/ ctx[5], /*MudançaDeFase*/ ctx[3]))) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "id", "ChaoNoGeral");
+    			attr_dev(img, "class", img_class_value = ClassDante(/*i*/ ctx[39], /*j*/ ctx[42], /*eixoX*/ ctx[4], /*eixoY*/ ctx[5], /*MudançaDeFase*/ ctx[3]));
+    			if (!src_url_equal(img.src, img_src_value = IMGmovimentacao(/*i*/ ctx[39], /*j*/ ctx[42], /*eixoX*/ ctx[4], /*eixoY*/ ctx[5], /*MudançaDeFase*/ ctx[3]))) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "estrada");
-    			add_location(img, file$1, 351, 25, 20219);
-    			attr_dev(th, "id", "estrada");
-    			add_location(th, file$1, 351, 8, 20202);
+    			add_location(img, file$1, 440, 27, 34471);
+    			attr_dev(th, "id", "MapaGeral");
+    			add_location(th, file$1, 440, 8, 34452);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
     			append_dev(th, img);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*eixoX, eixoY, MudançaDeFase*/ 56 && !src_url_equal(img.src, img_src_value = IMGmovimentacao(/*i*/ ctx[31], /*j*/ ctx[34], /*eixoX*/ ctx[4], /*eixoY*/ ctx[5], /*MudançaDeFase*/ ctx[3]))) {
+    			if (dirty[0] & /*eixoX, eixoY, MudançaDeFase*/ 56 && img_class_value !== (img_class_value = ClassDante(/*i*/ ctx[39], /*j*/ ctx[42], /*eixoX*/ ctx[4], /*eixoY*/ ctx[5], /*MudançaDeFase*/ ctx[3]))) {
+    				attr_dev(img, "class", img_class_value);
+    			}
+
+    			if (dirty[0] & /*eixoX, eixoY, MudançaDeFase*/ 56 && !src_url_equal(img.src, img_src_value = IMGmovimentacao(/*i*/ ctx[39], /*j*/ ctx[42], /*eixoX*/ ctx[4], /*eixoY*/ ctx[5], /*MudançaDeFase*/ ctx[3]))) {
     				attr_dev(img, "src", img_src_value);
     			}
     		},
@@ -6588,18 +6967,18 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_11.name,
+    		id: create_if_block_10.name,
     		type: "if",
-    		source: "(351:33) ",
+    		source: "(440:33) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (349:45) 
-    function create_if_block_10(ctx) {
-    	let t_value = /*ResertarPosicao*/ ctx[19]() + "";
+    // (438:45) 
+    function create_if_block_9(ctx) {
+    	let t_value = /*ResertarPosicao*/ ctx[22]() + "";
     	let t;
 
     	const block = {
@@ -6617,18 +6996,18 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_10.name,
+    		id: create_if_block_9.name,
     		type: "if",
-    		source: "(349:45) ",
+    		source: "(438:45) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (347:8) {#if (mapa1[eixoY][eixoX] == "Y")}
-    function create_if_block_9(ctx) {
-    	let t_value = /*proximafase*/ ctx[10](/*mapa1*/ ctx[12][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]]) + "";
+    // (436:8) {#if (mapa1[eixoY][eixoX] == "Y")}
+    function create_if_block_8(ctx) {
+    	let t_value = /*proximafase*/ ctx[13](/*mapa1*/ ctx[15][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]]) + "";
     	let t;
 
     	const block = {
@@ -6639,7 +7018,7 @@ var app = (function () {
     			insert_dev(target, t, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*eixoY, eixoX*/ 48 && t_value !== (t_value = /*proximafase*/ ctx[10](/*mapa1*/ ctx[12][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]]) + "")) set_data_dev(t, t_value);
+    			if (dirty[0] & /*eixoY, eixoX*/ 48 && t_value !== (t_value = /*proximafase*/ ctx[13](/*mapa1*/ ctx[15][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]]) + "")) set_data_dev(t, t_value);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(t);
@@ -6648,26 +7027,25 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_9.name,
+    		id: create_if_block_8.name,
     		type: "if",
-    		source: "(347:8) {#if (mapa1[eixoY][eixoX] == \\\"Y\\\")}",
+    		source: "(436:8) {#if (mapa1[eixoY][eixoX] == \\\"Y\\\")}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (346:4) {#each regiao as estrada,j}
+    // (435:4) {#each regiao as estrada,j}
     function create_each_block_3(ctx) {
     	let if_block_anchor;
 
     	function select_block_type_4(ctx, dirty) {
-    		if (/*mapa1*/ ctx[12][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]] == "Y") return create_if_block_9;
-    		if (/*mapa1*/ ctx[12][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]] != 0) return create_if_block_10;
-    		if (/*estrada*/ ctx[32] == 0) return create_if_block_11;
-    		if (/*estrada*/ ctx[32] == 2) return create_if_block_12;
-    		if (/*estrada*/ ctx[32] == 1) return create_if_block_13;
-    		if (/*estrada*/ ctx[32] == 3) return create_if_block_14;
+    		if (/*mapa1*/ ctx[15][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]] == "Y") return create_if_block_8;
+    		if (/*mapa1*/ ctx[15][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]] != 0) return create_if_block_9;
+    		if (/*estrada*/ ctx[40] == 0) return create_if_block_10;
+    		if (/*estrada*/ ctx[40] == 2) return create_if_block_11;
+    		if (/*estrada*/ ctx[40] == 1) return create_if_block_12;
     		return create_else_block_2;
     	}
 
@@ -6706,18 +7084,18 @@ var app = (function () {
     		block,
     		id: create_each_block_3.name,
     		type: "each",
-    		source: "(346:4) {#each regiao as estrada,j}",
+    		source: "(435:4) {#each regiao as estrada,j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (344:4) {#each mapa1 as regiao,i}
+    // (433:4) {#each mapa1 as regiao,i}
     function create_each_block_2(ctx) {
     	let tr;
     	let t;
-    	let each_value_3 = /*regiao*/ ctx[29];
+    	let each_value_3 = /*regiao*/ ctx[37];
     	validate_each_argument(each_value_3);
     	let each_blocks = [];
 
@@ -6735,7 +7113,7 @@ var app = (function () {
 
     			t = space();
     			attr_dev(tr, "class", "linhasdatabela");
-    			add_location(tr, file$1, 344, 0, 19933);
+    			add_location(tr, file$1, 433, 0, 34183);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -6747,8 +7125,8 @@ var app = (function () {
     			append_dev(tr, t);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*proximafase, mapa1, eixoY, eixoX, ResertarPosicao, MudançaDeFase*/ 529464) {
-    				each_value_3 = /*regiao*/ ctx[29];
+    			if (dirty[0] & /*proximafase, mapa1, eixoY, eixoX, ResertarPosicao, MudançaDeFase*/ 4235320) {
+    				each_value_3 = /*regiao*/ ctx[37];
     				validate_each_argument(each_value_3);
     				let i;
 
@@ -6781,14 +7159,14 @@ var app = (function () {
     		block,
     		id: create_each_block_2.name,
     		type: "each",
-    		source: "(344:4) {#each mapa1 as regiao,i}",
+    		source: "(433:4) {#each mapa1 as regiao,i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (319:8) {:else}
+    // (398:8) {:else}
     function create_else_block(ctx) {
     	let th;
     	let img;
@@ -6798,12 +7176,12 @@ var app = (function () {
     		c: function create() {
     			th = element("th");
     			img = element("img");
-    			attr_dev(img, "class", "tabela");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel4.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "class", "saida");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaotutorial.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 319, 24, 19380);
-    			attr_dev(th, "id", "parede");
-    			add_location(th, file$1, 319, 8, 19364);
+    			add_location(img, file$1, 398, 27, 32991);
+    			attr_dev(th, "id", "MapaGeral");
+    			add_location(th, file$1, 398, 8, 32972);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -6819,52 +7197,14 @@ var app = (function () {
     		block,
     		id: create_else_block.name,
     		type: "else",
-    		source: "(319:8) {:else}",
+    		source: "(398:8) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (317:33) 
-    function create_if_block_6(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			attr_dev(img, "class", "tabela");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredelevel4.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 317, 24, 19262);
-    			attr_dev(th, "id", "parede");
-    			add_location(th, file$1, 317, 8, 19246);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		p: noop,
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_6.name,
-    		type: "if",
-    		source: "(317:33) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (315:33) 
+    // (396:33) 
     function create_if_block_5(ctx) {
     	let th;
     	let img;
@@ -6874,12 +7214,12 @@ var app = (function () {
     		c: function create() {
     			th = element("th");
     			img = element("img");
-    			attr_dev(img, "class", "tabela");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredelevel4.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "class", "parede");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/tutorials.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 315, 24, 19127);
-    			attr_dev(th, "id", "parede");
-    			add_location(th, file$1, 315, 8, 19111);
+    			add_location(img, file$1, 396, 27, 32874);
+    			attr_dev(th, "id", "MapaGeral");
+    			add_location(th, file$1, 396, 8, 32855);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -6895,23 +7235,22 @@ var app = (function () {
     		block,
     		id: create_if_block_5.name,
     		type: "if",
-    		source: "(315:33) ",
+    		source: "(396:33) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (313:33) 
+    // (394:33) 
     function create_if_block_4(ctx) {
     	let th;
 
     	const block = {
     		c: function create() {
     			th = element("th");
-    			attr_dev(th, "id", "vazio");
-    			attr_dev(th, "alt", "vazio");
-    			add_location(th, file$1, 313, 8, 19034);
+    			attr_dev(th, "class", "MapaGeral");
+    			add_location(th, file$1, 394, 8, 32783);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -6926,36 +7265,42 @@ var app = (function () {
     		block,
     		id: create_if_block_4.name,
     		type: "if",
-    		source: "(313:33) ",
+    		source: "(394:33) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (311:33) 
+    // (392:33) 
     function create_if_block_3$1(ctx) {
     	let th;
     	let img;
+    	let img_class_value;
     	let img_src_value;
 
     	const block = {
     		c: function create() {
     			th = element("th");
     			img = element("img");
-    			attr_dev(img, "class", "tabela");
-    			if (!src_url_equal(img.src, img_src_value = IMGmovimentacao(/*i*/ ctx[31], /*j*/ ctx[34], /*eixoX*/ ctx[4], /*eixoY*/ ctx[5], /*MudançaDeFase*/ ctx[3]))) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "id", "ChaoNoGeral");
+    			attr_dev(img, "class", img_class_value = ClassDante(/*i*/ ctx[39], /*j*/ ctx[42], /*eixoX*/ ctx[4], /*eixoY*/ ctx[5], /*MudançaDeFase*/ ctx[3]));
+    			if (!src_url_equal(img.src, img_src_value = IMGmovimentacao(/*i*/ ctx[39], /*j*/ ctx[42], /*eixoX*/ ctx[4], /*eixoY*/ ctx[5], /*MudançaDeFase*/ ctx[3]))) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "estrada");
-    			add_location(img, file$1, 311, 25, 18895);
-    			attr_dev(th, "id", "estrada");
-    			add_location(th, file$1, 311, 8, 18878);
+    			add_location(img, file$1, 392, 27, 32590);
+    			attr_dev(th, "id", "MapaGeral");
+    			add_location(th, file$1, 392, 8, 32571);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
     			append_dev(th, img);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*eixoX, eixoY, MudançaDeFase*/ 56 && !src_url_equal(img.src, img_src_value = IMGmovimentacao(/*i*/ ctx[31], /*j*/ ctx[34], /*eixoX*/ ctx[4], /*eixoY*/ ctx[5], /*MudançaDeFase*/ ctx[3]))) {
+    			if (dirty[0] & /*eixoX, eixoY, MudançaDeFase*/ 56 && img_class_value !== (img_class_value = ClassDante(/*i*/ ctx[39], /*j*/ ctx[42], /*eixoX*/ ctx[4], /*eixoY*/ ctx[5], /*MudançaDeFase*/ ctx[3]))) {
+    				attr_dev(img, "class", img_class_value);
+    			}
+
+    			if (dirty[0] & /*eixoX, eixoY, MudançaDeFase*/ 56 && !src_url_equal(img.src, img_src_value = IMGmovimentacao(/*i*/ ctx[39], /*j*/ ctx[42], /*eixoX*/ ctx[4], /*eixoY*/ ctx[5], /*MudançaDeFase*/ ctx[3]))) {
     				attr_dev(img, "src", img_src_value);
     			}
     		},
@@ -6968,16 +7313,16 @@ var app = (function () {
     		block,
     		id: create_if_block_3$1.name,
     		type: "if",
-    		source: "(311:33) ",
+    		source: "(392:33) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (309:44) 
+    // (390:44) 
     function create_if_block_2$1(ctx) {
-    	let t_value = /*ResertarPosicao*/ ctx[19]() + "";
+    	let t_value = /*ResertarPosicao*/ ctx[22]() + "";
     	let t;
 
     	const block = {
@@ -6997,16 +7342,16 @@ var app = (function () {
     		block,
     		id: create_if_block_2$1.name,
     		type: "if",
-    		source: "(309:44) ",
+    		source: "(390:44) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (307:8) {#if (mapa[eixoY][eixoX] == "X")}
+    // (388:8) {#if (mapa[eixoY][eixoX] == "X")}
     function create_if_block_1$1(ctx) {
-    	let t_value = /*proximafase*/ ctx[10](/*mapa*/ ctx[11][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]]) + "";
+    	let t_value = /*proximafase*/ ctx[13](/*mapa*/ ctx[14][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]]) + "";
     	let t;
 
     	const block = {
@@ -7017,7 +7362,7 @@ var app = (function () {
     			insert_dev(target, t, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*eixoY, eixoX*/ 48 && t_value !== (t_value = /*proximafase*/ ctx[10](/*mapa*/ ctx[11][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]]) + "")) set_data_dev(t, t_value);
+    			if (dirty[0] & /*eixoY, eixoX*/ 48 && t_value !== (t_value = /*proximafase*/ ctx[13](/*mapa*/ ctx[14][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]]) + "")) set_data_dev(t, t_value);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(t);
@@ -7028,24 +7373,23 @@ var app = (function () {
     		block,
     		id: create_if_block_1$1.name,
     		type: "if",
-    		source: "(307:8) {#if (mapa[eixoY][eixoX] == \\\"X\\\")}",
+    		source: "(388:8) {#if (mapa[eixoY][eixoX] == \\\"X\\\")}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (306:4) {#each regiao as estrada,j}
+    // (387:4) {#each regiao as estrada,j}
     function create_each_block_1(ctx) {
     	let if_block_anchor;
 
     	function select_block_type_2(ctx, dirty) {
-    		if (/*mapa*/ ctx[11][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]] == "X") return create_if_block_1$1;
-    		if (/*mapa*/ ctx[11][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]] != 0) return create_if_block_2$1;
-    		if (/*estrada*/ ctx[32] == 0) return create_if_block_3$1;
-    		if (/*estrada*/ ctx[32] == 2) return create_if_block_4;
-    		if (/*estrada*/ ctx[32] == 1) return create_if_block_5;
-    		if (/*estrada*/ ctx[32] == 3) return create_if_block_6;
+    		if (/*mapa*/ ctx[14][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]] == "X") return create_if_block_1$1;
+    		if (/*mapa*/ ctx[14][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]] != 0) return create_if_block_2$1;
+    		if (/*estrada*/ ctx[40] == 0) return create_if_block_3$1;
+    		if (/*estrada*/ ctx[40] == 2) return create_if_block_4;
+    		if (/*estrada*/ ctx[40] == 1) return create_if_block_5;
     		return create_else_block;
     	}
 
@@ -7084,18 +7428,18 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(306:4) {#each regiao as estrada,j}",
+    		source: "(387:4) {#each regiao as estrada,j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (304:4) {#each mapa as regiao,i}
+    // (385:4) {#each mapa as regiao,i}
     function create_each_block(ctx) {
     	let tr;
     	let t;
-    	let each_value_1 = /*regiao*/ ctx[29];
+    	let each_value_1 = /*regiao*/ ctx[37];
     	validate_each_argument(each_value_1);
     	let each_blocks = [];
 
@@ -7113,7 +7457,7 @@ var app = (function () {
 
     			t = space();
     			attr_dev(tr, "class", "linhasdatabela");
-    			add_location(tr, file$1, 304, 0, 18612);
+    			add_location(tr, file$1, 385, 0, 32305);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -7125,8 +7469,8 @@ var app = (function () {
     			append_dev(tr, t);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*proximafase, mapa, eixoY, eixoX, ResertarPosicao, MudançaDeFase*/ 527416) {
-    				each_value_1 = /*regiao*/ ctx[29];
+    			if (dirty[0] & /*proximafase, mapa, eixoY, eixoX, ResertarPosicao, MudançaDeFase*/ 4218936) {
+    				each_value_1 = /*regiao*/ ctx[37];
     				validate_each_argument(each_value_1);
     				let i;
 
@@ -7159,7 +7503,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(304:4) {#each mapa as regiao,i}",
+    		source: "(385:4) {#each mapa as regiao,i}",
     		ctx
     	});
 
@@ -7175,19 +7519,19 @@ var app = (function () {
     	let t2;
     	let current_block_type_index;
     	let if_block1;
-    	let if_block1_anchor;
+    	let t3;
     	let current;
     	let mounted;
     	let dispose;
     	voltarmenu = new VoltarMenu({ $$inline: true });
-    	let if_block0 = /*key*/ ctx[0] && create_if_block_32(ctx);
+    	let if_block0 = /*key*/ ctx[0] && create_if_block_29(ctx);
 
     	const if_block_creators = [
     		create_if_block$1,
-    		create_if_block_7,
-    		create_if_block_15,
-    		create_if_block_23,
-    		create_if_block_31
+    		create_if_block_6,
+    		create_if_block_13,
+    		create_if_block_20,
+    		create_if_block_27
     	];
 
     	const if_blocks = [];
@@ -7215,11 +7559,11 @@ var app = (function () {
     			if (if_block0) if_block0.c();
     			t2 = space();
     			if (if_block1) if_block1.c();
-    			if_block1_anchor = empty();
+    			t3 = text("\r\n\r\n\r\njhj");
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "/css/jogo.css");
-    			add_location(link, file$1, 276, 4, 17922);
-    			add_location(head, file$1, 275, 0, 17910);
+    			add_location(link, file$1, 357, 4, 31615);
+    			add_location(head, file$1, 356, 0, 31603);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -7237,11 +7581,11 @@ var app = (function () {
     				if_blocks[current_block_type_index].m(target, anchor);
     			}
 
-    			insert_dev(target, if_block1_anchor, anchor);
+    			insert_dev(target, t3, anchor);
     			current = true;
 
     			if (!mounted) {
-    				dispose = listen_dev(window, "keydown", /*handleKeydown*/ ctx[8], false, false, false);
+    				dispose = listen_dev(window, "keydown", /*handleKeydown*/ ctx[10], false, false, false);
     				mounted = true;
     			}
     		},
@@ -7250,7 +7594,7 @@ var app = (function () {
     				if (if_block0) {
     					if_block0.p(ctx, dirty);
     				} else {
-    					if_block0 = create_if_block_32(ctx);
+    					if_block0 = create_if_block_29(ctx);
     					if_block0.c();
     					if_block0.m(t2.parentNode, t2);
     				}
@@ -7288,7 +7632,7 @@ var app = (function () {
     					}
 
     					transition_in(if_block1, 1);
-    					if_block1.m(if_block1_anchor.parentNode, if_block1_anchor);
+    					if_block1.m(t3.parentNode, t3);
     				} else {
     					if_block1 = null;
     				}
@@ -7317,7 +7661,7 @@ var app = (function () {
     				if_blocks[current_block_type_index].d(detaching);
     			}
 
-    			if (detaching) detach_dev(if_block1_anchor);
+    			if (detaching) detach_dev(t3);
     			mounted = false;
     			dispose();
     		}
@@ -7341,13 +7685,37 @@ var app = (function () {
 
     	//Chao do mapa:
     	if (mapa == 0) {
-    		return '/css/imagens/chaonivel4.png';
+    		return '/css/imagens/paredetutorial.png';
     	} else if (mapa == 1) {
     		return '/css/imagens/chaonivel4.png';
     	} else if (mapa == 2) {
     		return '/css/imagens/chaonivel4.png';
     	} else if (mapa == 3) {
-    		return '/css/imagens/chaonivell4.png';
+    		return '/css/imagens/chaonivel4.png';
+    	}
+    }
+
+    function ClassDante(i, j, x, y, mapa) {
+    	if (x == j && y == i) {
+    		if (mapa == 0) {
+    			return 'Dante0';
+    		} else if (mapa == 1) {
+    			return 'Dante1';
+    		} else if (mapa == 2) {
+    			return 'Dante2';
+    		} else if (mapa == 3) {
+    			return 'dante3';
+    		}
+    	} else {
+    		if (mapa == 0) {
+    			return 'passagem0';
+    		} else if (mapa == 1) {
+    			return 'passagem1';
+    		} else if (mapa == 2) {
+    			return 'passagem2';
+    		} else if (mapa == 3) {
+    			return 'passagem3';
+    		}
     	}
     }
 
@@ -7382,7 +7750,7 @@ var app = (function () {
     	var temporizador;
 
     	function time(nivel) {
-    		$$invalidate(2, temporizador = setInterval(
+    		temporizador = setInterval(
     			() => {
     				alert('Seu tempo acabou');
 
@@ -7392,7 +7760,26 @@ var app = (function () {
     					$$invalidate(3, MudançaDeFase = 1);
     				}
     			},
-    			300000
+    			90000
+    		);
+    	}
+
+    	var NewTempo;
+
+    	function EnigmaTime(nivel) {
+    		$$invalidate(2, NewTempo = setInterval(
+    			() => {
+    				alert('seu tempo acabou');
+
+    				if (nivel == 2) {
+    					$$invalidate(3, MudançaDeFase = 1);
+    				} else if (nivel == 3) {
+    					$$invalidate(3, MudançaDeFase = 2);
+    				} else if (nivel == 4) {
+    					$$invalidate(3, MudançaDeFase = 3);
+    				}
+    			},
+    			120000
     		));
     	}
 
@@ -7423,6 +7810,7 @@ var app = (function () {
     	let mapa = [
     		[
     			2,
+    			2,
     			1,
     			1,
     			1,
@@ -7456,6 +7844,7 @@ var app = (function () {
     			1
     		],
     		[
+    			2,
     			2,
     			0,
     			0,
@@ -7491,6 +7880,7 @@ var app = (function () {
     		],
     		[
     			2,
+    			2,
     			1,
     			0,
     			1,
@@ -7524,6 +7914,7 @@ var app = (function () {
     			1
     		],
     		[
+    			2,
     			2,
     			1,
     			0,
@@ -7559,6 +7950,7 @@ var app = (function () {
     		],
     		[
     			2,
+    			2,
     			1,
     			0,
     			1,
@@ -7592,6 +7984,7 @@ var app = (function () {
     			1
     		],
     		[
+    			2,
     			2,
     			1,
     			0,
@@ -7627,6 +8020,7 @@ var app = (function () {
     		],
     		[
     			2,
+    			2,
     			1,
     			0,
     			1,
@@ -7660,6 +8054,7 @@ var app = (function () {
     			1
     		],
     		[
+    			2,
     			2,
     			1,
     			0,
@@ -7695,6 +8090,7 @@ var app = (function () {
     		],
     		[
     			2,
+    			2,
     			1,
     			0,
     			1,
@@ -7728,6 +8124,7 @@ var app = (function () {
     			1
     		],
     		[
+    			2,
     			2,
     			1,
     			0,
@@ -7763,6 +8160,7 @@ var app = (function () {
     		],
     		[
     			2,
+    			2,
     			1,
     			0,
     			1,
@@ -7796,6 +8194,7 @@ var app = (function () {
     			1
     		],
     		[
+    			2,
     			2,
     			1,
     			0,
@@ -7831,6 +8230,7 @@ var app = (function () {
     		],
     		[
     			2,
+    			2,
     			1,
     			0,
     			1,
@@ -7864,6 +8264,7 @@ var app = (function () {
     			1
     		],
     		[
+    			2,
     			2,
     			1,
     			0,
@@ -7899,6 +8300,7 @@ var app = (function () {
     		],
     		[
     			2,
+    			2,
     			1,
     			0,
     			1,
@@ -7932,6 +8334,7 @@ var app = (function () {
     			1
     		],
     		[
+    			2,
     			2,
     			1,
     			0,
@@ -7967,6 +8370,7 @@ var app = (function () {
     		],
     		[
     			2,
+    			2,
     			1,
     			0,
     			0,
@@ -8000,6 +8404,7 @@ var app = (function () {
     			1
     		],
     		[
+    			2,
     			2,
     			1,
     			0,
@@ -8035,6 +8440,7 @@ var app = (function () {
     		],
     		[
     			2,
+    			2,
     			1,
     			0,
     			0,
@@ -8068,6 +8474,7 @@ var app = (function () {
     			1
     		],
     		[
+    			2,
     			2,
     			1,
     			0,
@@ -8103,6 +8510,7 @@ var app = (function () {
     		],
     		[
     			2,
+    			2,
     			1,
     			0,
     			1,
@@ -8136,6 +8544,7 @@ var app = (function () {
     			1
     		],
     		[
+    			2,
     			2,
     			1,
     			0,
@@ -8171,6 +8580,7 @@ var app = (function () {
     		],
     		[
     			2,
+    			2,
     			1,
     			0,
     			1,
@@ -8205,6 +8615,7 @@ var app = (function () {
     		],
     		[
     			2,
+    			2,
     			1,
     			0,
     			0,
@@ -8238,6 +8649,7 @@ var app = (function () {
     			1
     		],
     		[
+    			2,
     			2,
     			1,
     			1,
@@ -8306,6 +8718,27 @@ var app = (function () {
     			1,
     			1,
     			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -8340,6 +8773,27 @@ var app = (function () {
     			0,
     			0,
     			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
     			1
     		],
     		[
@@ -8374,6 +8828,27 @@ var app = (function () {
     			1,
     			1,
     			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
     			1
     		],
     		[
@@ -8408,6 +8883,27 @@ var app = (function () {
     			1,
     			1,
     			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
     			1
     		],
     		[
@@ -8442,6 +8938,27 @@ var app = (function () {
     			1,
     			1,
     			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
     			1
     		],
     		[
@@ -8476,13 +8993,6 @@ var app = (function () {
     			1,
     			1,
     			0,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
     			1,
     			1,
     			0,
@@ -8492,53 +9002,13 @@ var app = (function () {
     			1,
     			1,
     			1,
-    			0,
     			1,
     			1,
     			1,
     			1,
     			1,
     			1,
-    			1,
-    			1,
     			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
     			0,
     			0,
     			0,
@@ -8553,69 +9023,12 @@ var app = (function () {
     			1,
     			1,
     			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
     			0,
     			1,
     			0,
     			1,
     			1,
     			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1
-    		],
-    		[
-    			2,
     			1,
     			0,
     			1,
@@ -8624,8 +9037,6 @@ var app = (function () {
     			1,
     			1,
     			1,
-    			1,
-    			0,
     			1,
     			1,
     			0,
@@ -8637,12 +9048,24 @@ var app = (function () {
     			1,
     			1,
     			0,
+    			1,
+    			1,
     			0,
     			1,
     			0,
     			1,
     			1,
     			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
     			1,
     			1,
     			0,
@@ -8656,74 +9079,10 @@ var app = (function () {
     			0,
     			0,
     			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
     			1,
     			0,
     			1,
     			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
     			0,
     			0,
     			0,
@@ -8734,51 +9093,34 @@ var app = (function () {
     			0,
     			0,
     			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1
-    		],
-    		[
-    			2,
     			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
     			0,
     			1,
     			1,
     			0,
     			0,
     			0,
-    			1,
     			0,
-    			1,
     			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
     			0,
     			1,
     			1,
     			1,
     			1,
+    			0,
     			1,
     			1,
     			0,
@@ -8791,12 +9133,10 @@ var app = (function () {
     			1,
     			1,
     			1,
-    			0,
     			1,
     			1,
     			0,
     			1,
-    			0,
     			1,
     			1,
     			1,
@@ -8805,15 +9145,38 @@ var app = (function () {
     			0,
     			0,
     			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
     			0,
     			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
+    			1,
     			1,
     			0,
     			1
@@ -8833,41 +9196,14 @@ var app = (function () {
     			0,
     			0,
     			0,
-    			0,
-    			0,
     			1,
     			0,
     			1,
     			0,
     			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
     			0,
     			1,
     			0,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
     			0,
     			1,
     			0,
@@ -8877,11 +9213,25 @@ var app = (function () {
     			0,
     			0,
     			0,
-    			0,
-    			0,
+    			1,
+    			1,
     			0,
     			1,
     			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
     			1,
     			0,
     			1
@@ -8893,13 +9243,11 @@ var app = (function () {
     			1,
     			1,
     			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
     			1,
+    			1,
+    			1,
+    			1,
+    			0,
     			1,
     			1,
     			0,
@@ -8909,47 +9257,36 @@ var app = (function () {
     			0,
     			1,
     			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			0,
     			1,
     			1,
     			1,
     			0,
     			1,
-    			0,
-    			1,
-    			0,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
     			1,
     			1,
     			1,
     			0,
     			1,
     			1,
-    			0,
     			1,
-    			1,
-    			0,
     			0,
     			0,
     			0,
     			1,
     			0,
     			1,
-    			0,
     			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
     			1,
     			0,
     			1
@@ -8965,40 +9302,19 @@ var app = (function () {
     			0,
     			0,
     			0,
-    			1,
     			0,
     			1,
-    			1,
-    			1,
-    			0,
     			1,
     			0,
     			1,
     			0,
     			1,
+    			0,
     			1,
-    			1,
-    			1,
+    			0,
     			1,
     			1,
     			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
     			1,
     			0,
     			0,
@@ -9008,14 +9324,22 @@ var app = (function () {
     			1,
     			0,
     			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
     			0,
     			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
+    			1,
     			1,
     			0,
     			1,
@@ -9025,7 +9349,35 @@ var app = (function () {
     		[
     			2,
     			1,
+    			0,
     			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
     			1,
     			1,
     			1,
@@ -9040,6 +9392,156 @@ var app = (function () {
     			1,
     			0,
     			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
     			0,
     			1,
     			1,
@@ -9052,6 +9554,14 @@ var app = (function () {
     			1,
     			1,
     			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
     			1,
     			0,
     			1
@@ -9073,6 +9583,412 @@ var app = (function () {
     			0,
     			0,
     			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
     			0,
     			0,
     			0,
@@ -9092,6 +10008,28 @@ var app = (function () {
     		],
     		[
     			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1,
     			"Y",
     			1,
@@ -9121,10 +10059,30 @@ var app = (function () {
     			1,
     			1,
     			1,
-    			1,
     			1
     		],
     		[
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
     			2,
     			2,
     			2,
@@ -10810,6 +11768,930 @@ var app = (function () {
     			1,
     			1,
     			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			"Z"
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1
     		]
     	];
 
@@ -10878,6 +12760,69 @@ var app = (function () {
     			1,
     			1,
     			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -10944,6 +12889,69 @@ var app = (function () {
     			1,
     			0,
     			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
     			1
     		],
     		[
@@ -11010,6 +13018,69 @@ var app = (function () {
     			0,
     			1,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -11076,6 +13147,69 @@ var app = (function () {
     			0,
     			0,
     			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -11142,6 +13276,69 @@ var app = (function () {
     			0,
     			1,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -11208,6 +13405,69 @@ var app = (function () {
     			0,
     			0,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -11274,6 +13534,69 @@ var app = (function () {
     			1,
     			0,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -11340,6 +13663,69 @@ var app = (function () {
     			0,
     			1,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -11406,6 +13792,69 @@ var app = (function () {
     			1,
     			0,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -11472,6 +13921,69 @@ var app = (function () {
     			0,
     			1,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -11538,6 +14050,69 @@ var app = (function () {
     			1,
     			0,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -11604,6 +14179,69 @@ var app = (function () {
     			0,
     			0,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -11670,6 +14308,69 @@ var app = (function () {
     			1,
     			1,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -11736,6 +14437,69 @@ var app = (function () {
     			0,
     			1,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -11802,6 +14566,69 @@ var app = (function () {
     			0,
     			1,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -11868,6 +14695,69 @@ var app = (function () {
     			0,
     			1,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -11934,6 +14824,69 @@ var app = (function () {
     			0,
     			1,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -12000,6 +14953,69 @@ var app = (function () {
     			0,
     			1,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -12066,6 +15082,69 @@ var app = (function () {
     			0,
     			1,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -12132,6 +15211,69 @@ var app = (function () {
     			0,
     			1,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -12198,6 +15340,69 @@ var app = (function () {
     			1,
     			1,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -12264,25 +15469,6 @@ var app = (function () {
     			0,
     			0,
     			0,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
     			1,
     			1,
     			1,
@@ -12294,13 +15480,16 @@ var app = (function () {
     			1,
     			1,
     			1,
-    			0,
-    			0,
     			1,
     			1,
     			1,
-    			0,
-    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1,
     			1,
     			1,
@@ -12317,7 +15506,20 @@ var app = (function () {
     			1,
     			0,
     			0,
-    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1,
     			1,
     			1,
@@ -12336,31 +15538,14 @@ var app = (function () {
     			2,
     			1,
     			0,
-    			0,
+    			1,
     			0,
     			1,
     			0,
-    			0,
+    			1,
     			0,
     			1,
     			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
     			1,
     			1,
     			1,
@@ -12375,6 +15560,152 @@ var app = (function () {
     			1,
     			1,
     			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			0,
     			0,
     			0,
@@ -12396,6 +15727,69 @@ var app = (function () {
     			0,
     			0,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -12462,113 +15856,8 @@ var app = (function () {
     			0,
     			1,
     			0,
-    			1
-    		],
-    		[
-    			2,
     			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
     			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
     			1,
     			1,
     			1,
@@ -12576,156 +15865,60 @@ var app = (function () {
     			1,
     			1,
     			1,
-    			0,
-    			1,
-    			0,
     			1,
     			1,
-    			0,
     			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
     			1,
     			1,
     			1,
     			1,
     			1,
-    			0,
-    			1
-    		],
-    		[
-    			2,
     			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
     			1,
-    			0,
     			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
     			1,
-    			0,
-    			0,
-    			0,
-    			0,
     			1,
-    			0,
     			1,
-    			0,
     			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
     			1,
-    			0,
     			1,
-    			0,
-    			0,
-    			0,
     			1,
     			1,
     			1,
-    			0,
-    			0,
-    			0,
-    			0,
     			1,
-    			0,
     			1,
     			1,
     			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
     			0,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			1,
-    			1,
     			1,
     			1,
     			1,
     			1,
-    			0,
     			1,
     			1,
     			1,
     			1,
     			1,
     			1,
-    			0,
-    			0,
-    			0,
     			1,
-    			0,
     			1,
     			1,
-    			0,
     			1,
-    			0,
     			1,
-    			0,
     			1,
     			1,
     			1,
     			1,
-    			0,
     			1,
-    			0,
-    			0,
-    			0,
-    			0,
     			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
     			1,
     			1,
     			1,
     			1,
-    			0,
     			1,
     			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
     			1,
     			1,
-    			0,
     			1
     		],
     		[
@@ -12745,16 +15938,7 @@ var app = (function () {
     			0,
     			1,
     			0,
-    			1,
     			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
     			0,
     			0,
     			0,
@@ -12762,24 +15946,17 @@ var app = (function () {
     			0,
     			0,
     			1,
-    			1,
     			0,
     			1,
-    			1,
-    			1,
+    			0,
     			1,
     			1,
     			1,
     			1,
     			0,
     			0,
-    			0,
     			1,
     			0,
-    			0,
-    			1,
-    			1,
-    			1,
     			1,
     			1,
     			1,
@@ -12789,9 +15966,604 @@ var app = (function () {
     			1,
     			1,
     			0,
+    			0,
+    			0,
+    			1,
+    			0,
     			1,
     			1,
     			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -12858,6 +16630,69 @@ var app = (function () {
     			1,
     			1,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -12924,6 +16759,69 @@ var app = (function () {
     			1,
     			1,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -12990,6 +16888,69 @@ var app = (function () {
     			1,
     			1,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -13056,6 +17017,69 @@ var app = (function () {
     			1,
     			1,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -13122,6 +17146,69 @@ var app = (function () {
     			1,
     			1,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -13188,6 +17275,69 @@ var app = (function () {
     			1,
     			1,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -13254,6 +17404,69 @@ var app = (function () {
     			1,
     			1,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -13320,6 +17533,69 @@ var app = (function () {
     			1,
     			1,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -13386,6 +17662,69 @@ var app = (function () {
     			1,
     			1,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -13452,6 +17791,69 @@ var app = (function () {
     			0,
     			0,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -13518,6 +17920,69 @@ var app = (function () {
     			0,
     			1,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -13584,6 +18049,69 @@ var app = (function () {
     			0,
     			1,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -13650,6 +18178,69 @@ var app = (function () {
     			0,
     			1,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -13673,14 +18264,6 @@ var app = (function () {
     			0,
     			0,
     			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
     			0,
     			1,
     			0,
@@ -13688,9 +18271,10 @@ var app = (function () {
     			0,
     			1,
     			1,
-    			0,
+    			1,
     			0,
     			1,
+    			0,
     			0,
     			0,
     			1,
@@ -13699,6 +18283,13 @@ var app = (function () {
     			0,
     			1,
     			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
     			1,
     			1,
     			1,
@@ -13716,6 +18307,69 @@ var app = (function () {
     			1,
     			1,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -13738,6 +18392,44 @@ var app = (function () {
     			1,
     			0,
     			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
     			1,
     			1,
     			1,
@@ -13747,17 +18439,9 @@ var app = (function () {
     			1,
     			1,
     			1,
-    			0,
-    			0,
-    			0,
-    			0,
     			1,
     			1,
-    			0,
-    			0,
     			1,
-    			1,
-    			0,
     			1,
     			1,
     			1,
@@ -13766,22 +18450,55 @@ var app = (function () {
     			1,
     			0,
     			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
     			1,
     			1,
     			1,
-    			0,
     			1,
     			1,
     			1,
-    			0,
-    			0,
-    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1
     		],
     		[
@@ -13803,6 +18520,391 @@ var app = (function () {
     			0,
     			0,
     			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
     			1,
     			1,
     			1,
@@ -13814,31 +18916,9 @@ var app = (function () {
     			1,
     			1,
     			0,
-    			1,
     			0,
     			0,
     			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
     			0,
     			0,
     			0,
@@ -13846,6 +18926,1125 @@ var app = (function () {
     			1,
     			1,
     			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1,
     			1,
     			1
@@ -13914,10 +20113,136 @@ var app = (function () {
     			0,
     			0,
     			0,
-    			"V"
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
     		],
     		[
     			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1,
     			1,
     			1,
@@ -14053,11 +20378,41 @@ var app = (function () {
     	function Alterando(teste) {
     		if (teste) {
     			$$invalidate(6, enigma = teste);
+    			$$invalidate(7, PalavraChave = '');
     		} else {
     			$$invalidate(6, enigma = teste);
     		}
 
     		return enigma;
+    	}
+
+    	let ContadorDoLabirinto = 90;
+    	let ContadorDoEnigma = 60;
+    	let contador;
+
+    	function contar(tempo) {
+    		if (tempo == 90) {
+    			contador = setInterval(
+    				() => {
+    					return $$invalidate(8, ContadorDoLabirinto -= 1);
+    				},
+    				1000
+    			);
+    		} else {
+    			contador = setInterval(
+    				() => {
+    					return $$invalidate(9, ContadorDoEnigma -= 1);
+    				},
+    				1000
+    			);
+    		}
+    	}
+
+    	function ResertarContadores() {
+    		clearInterval(contador);
+    		$$invalidate(9, ContadorDoEnigma = 60);
+    		$$invalidate(8, ContadorDoLabirinto = 90);
+    		return;
     	}
 
     	const writable_props = [];
@@ -14081,6 +20436,11 @@ var app = (function () {
     		$$invalidate(7, PalavraChave);
     	}
 
+    	function input_input_handler_3() {
+    		PalavraChave = this.value;
+    		$$invalidate(7, PalavraChave);
+    	}
+
     	$$self.$capture_state = () => ({
     		Vitoria,
     		estado,
@@ -14091,6 +20451,8 @@ var app = (function () {
     		handleKeydown,
     		temporizador,
     		time,
+    		NewTempo,
+    		EnigmaTime,
     		MudançaDeFase,
     		proximafase,
     		resertar,
@@ -14108,28 +20470,38 @@ var app = (function () {
     		decrementarY,
     		ResertarPosicao,
     		IMGmovimentacao,
+    		ClassDante,
     		posicaoinicial,
     		personagem,
     		enigma,
     		PalavraChave,
-    		Alterando
+    		Alterando,
+    		ContadorDoLabirinto,
+    		ContadorDoEnigma,
+    		contador,
+    		contar,
+    		ResertarContadores
     	});
 
     	$$self.$inject_state = $$props => {
     		if ('key' in $$props) $$invalidate(0, key = $$props.key);
     		if ('code' in $$props) $$invalidate(1, code = $$props.code);
-    		if ('temporizador' in $$props) $$invalidate(2, temporizador = $$props.temporizador);
+    		if ('temporizador' in $$props) temporizador = $$props.temporizador;
+    		if ('NewTempo' in $$props) $$invalidate(2, NewTempo = $$props.NewTempo);
     		if ('MudançaDeFase' in $$props) $$invalidate(3, MudançaDeFase = $$props.MudançaDeFase);
-    		if ('mapa' in $$props) $$invalidate(11, mapa = $$props.mapa);
-    		if ('mapa1' in $$props) $$invalidate(12, mapa1 = $$props.mapa1);
-    		if ('mapa2' in $$props) $$invalidate(13, mapa2 = $$props.mapa2);
-    		if ('mapa3' in $$props) $$invalidate(14, mapa3 = $$props.mapa3);
+    		if ('mapa' in $$props) $$invalidate(14, mapa = $$props.mapa);
+    		if ('mapa1' in $$props) $$invalidate(15, mapa1 = $$props.mapa1);
+    		if ('mapa2' in $$props) $$invalidate(16, mapa2 = $$props.mapa2);
+    		if ('mapa3' in $$props) $$invalidate(17, mapa3 = $$props.mapa3);
     		if ('eixoX' in $$props) $$invalidate(4, eixoX = $$props.eixoX);
     		if ('eixoY' in $$props) $$invalidate(5, eixoY = $$props.eixoY);
     		if ('x' in $$props) x = $$props.x;
     		if ('y' in $$props) y = $$props.y;
     		if ('enigma' in $$props) $$invalidate(6, enigma = $$props.enigma);
     		if ('PalavraChave' in $$props) $$invalidate(7, PalavraChave = $$props.PalavraChave);
+    		if ('ContadorDoLabirinto' in $$props) $$invalidate(8, ContadorDoLabirinto = $$props.ContadorDoLabirinto);
+    		if ('ContadorDoEnigma' in $$props) $$invalidate(9, ContadorDoEnigma = $$props.ContadorDoEnigma);
+    		if ('contador' in $$props) contador = $$props.contador;
     	};
 
     	if ($$props && "$$inject" in $$props) {
@@ -14139,14 +20511,17 @@ var app = (function () {
     	return [
     		key,
     		code,
-    		temporizador,
+    		NewTempo,
     		MudançaDeFase,
     		eixoX,
     		eixoY,
     		enigma,
     		PalavraChave,
+    		ContadorDoLabirinto,
+    		ContadorDoEnigma,
     		handleKeydown,
     		time,
+    		EnigmaTime,
     		proximafase,
     		mapa,
     		mapa1,
@@ -14159,9 +20534,12 @@ var app = (function () {
     		ResertarPosicao,
     		posicaoinicial,
     		Alterando,
+    		contar,
+    		ResertarContadores,
     		input_input_handler,
     		input_input_handler_1,
-    		input_input_handler_2
+    		input_input_handler_2,
+    		input_input_handler_3
     	];
     }
 
