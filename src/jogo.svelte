@@ -27,8 +27,7 @@
                     break
             }
         }
-    }ola
-    */
+    }*/
     
     var temporizador;
     function time(nivel){
