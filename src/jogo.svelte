@@ -436,9 +436,9 @@
         {:else if (estrada == 2)}
         <th class="MapaGeral"></th>
         {:else if (estrada == 1)}
-        <th id="MapaGeral"><img class="parede" src="/css/imagens/paredefeia1.png" alt="parede"></th>
+        <th id="MapaGeral"><img class="parede" src="/css/imagens/paredenivel1.png" alt="parede"></th>
         {:else}
-        <th id='MapaGeral'><img class="saida" src="/css/imagens/chaofeio.png" alt='parede'></th>
+        <th id='MapaGeral'><img class="saida" src="/css/imagens/chaonivel1.png" alt='parede'></th>
 
         {/if}
     {/each}
@@ -475,9 +475,9 @@
         {:else if (estrada == 2)}
         <th class="MapaGeral"></th>
         {:else if (estrada == 1)}
-        <th id="MapaGeral"><img class="parede" src="/css/imagens/paredelevel4.png" alt="parede"></th>
+        <th id="MapaGeral"><img class="parede" src="/css/imagens/paredenivel2.png" alt="parede"></th>
         {:else}
-        <th id='MapaGeral'><img class="saida" src="/css/imagens/chaonivel4.png" alt='parede'></th>
+        <th id='MapaGeral'><img class="saida" src="/css/imagens/chaonivel2.png" alt='parede'></th>
         {/if}
     {/each}
 </tr>
@@ -518,9 +518,9 @@
         {:else if (estrada == 2)}
         <th class="MapaGeral"></th>
         {:else if (estrada == 1)}
-        <th id="MapaGeral"><img class="tabela" src="/css/imagens/paredelevel4.png" alt="parede"></th>
+        <th id="MapaGeral"><img class="tabela" src="/css/imagens/paredenivel3.png" alt="parede"></th>
         {:else}
-        <th id='MapaGeral'><img class="saida" src="/css/imagens/chaum.png" alt='parede'></th>
+        <th id='MapaGeral'><img class="saida" src="/css/imagens/chaonivel3.png" alt='parede'></th>
         {/if}
     {/each}
 </tr>
