@@ -345,6 +345,7 @@
             },1000)
         }
     }
+    let olatudobom = 0;
     function ResertarContadores(){
         clearInterval(contador)
         ContadorDoEnigma = 61;
