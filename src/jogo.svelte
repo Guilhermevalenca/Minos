@@ -272,9 +272,9 @@
             }else if (mapa == 1) {
                 return '/css/imagens/chaofeio.png'
             }else if (mapa == 2) {
-                return '/css/imagens/chaonivel4.png'
+                return '/css/imagens/chao2.png'
             }else if (mapa == 3) {
-                return '/css/imagens/chaonivel4.png'
+                return '/css/imagens/chaonivel3.png'
             }
     }
     function ClassDante(i,j,x,y,mapa){
@@ -475,9 +475,9 @@
         {:else if (estrada == 2)}
         <th class="MapaGeral"></th>
         {:else if (estrada == 1)}
-        <th id="MapaGeral"><img class="tabela" src="/css/imagens/paredelevel4.png" alt="parede"></th>
+        <th id="MapaGeral"><img class="parede" src="/css/imagens/paredelevel4.png" alt="parede"></th>
         {:else}
-        <th id='MapaGeral'><img class="tabela" src="/css/imagens/chaonivel4.png" alt='parede'></th>
+        <th id='MapaGeral'><img class="saida" src="/css/imagens/chaonivel4.png" alt='parede'></th>
         {/if}
     {/each}
 </tr>
@@ -518,9 +518,9 @@
         {:else if (estrada == 2)}
         <th class="MapaGeral"></th>
         {:else if (estrada == 1)}
-        <th id="MapaGeral"><img class="tabela" src="/css/imagens/paredeamalera1.png" alt="parede"></th>
+        <th id="MapaGeral"><img class="parede" src="/css/imagens/paredeamalera1.png" alt="parede"></th>
         {:else}
-        <th id='MapaGeral'><img class="tabela" src="/css/imagens/chaum.png" alt='parede'></th>
+        <th id='MapaGeral'><img class="saida" src="/css/imagens/chaum.png" alt='parede'></th>
         {/if}
     {/each}
 </tr>
