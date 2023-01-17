@@ -9,7 +9,7 @@
 <h1 class="h1ajuda">AJUDA</h1>
 
 <h2>Como jogar?</h2>
-<ul>
+<ul class="aimds">
     <li>Ir para frente</li>
     <li>Ir para trás</li>
     <li>Ir para a direita</li>
@@ -17,7 +17,7 @@
 </ul>
 
 
-<ul class="ulbutton"><button id='button' class='botao'>↟</button></ul>
+<ul class="button"><button id='button' class='botao'>↟</button></ul>
 <ul><button class='botao'>↞</button> <button class='botao'>↠</button></ul>
 <ul><button id='button' class='botao'>↡</button></ul>
 

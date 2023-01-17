@@ -286,7 +286,7 @@
             }else if(mapa == 2){
                 return 'Dante2'
             }else if(mapa == 3){
-                return 'dante3'
+                return 'Dante3'
             }
         }else{
             if(mapa == 0){

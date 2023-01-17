@@ -2,9 +2,12 @@
     position: relative;
     width: 60px;
     font-size: 40px;
+    margin-left:20px;
+    margin-right:40px;
+    background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
 }
 .ajudaul{
-    text-align: center;
+    text-align: justify;
 }
 .h1ajuda{
     margin-top: 100px;
@@ -21,7 +24,7 @@
    color: transparent;
    margin: 0%;
    margin-top: 200px;
-   margin-left: 1%;
+   margin-left: 60px;
 }
 h2{
     font-family:'Felix Titling';
@@ -44,7 +47,9 @@ li{
 
 }
 #button{
-    left: 30px;
+    left: 60px;
+    background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+    
 }
 .h3ajuda{
     margin-top: 70px;
@@ -54,9 +59,8 @@ li{
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    margin: 0%;
-   margin-top: 100px;
-   margin-left: 1%;
+    margin-top: 100px;
+    margin-left: 10px;
 }
 p{
     font-size: 30px;
@@ -78,4 +82,8 @@ h4{
     margin: 0%;
    margin-top: 1px;
    margin-left: 1%;
+ margin-bottom: 50px;
+}
+.aimds{
+    margin-bottom: 100px;
 }
