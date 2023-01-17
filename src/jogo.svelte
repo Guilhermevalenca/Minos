@@ -345,10 +345,9 @@
             },1000)
         }
     }
-    let olatudobom = 0;
     function ResertarContadores(){
         clearInterval(contador)
-        ContadorDoEnigma = 61;
+        ContadorDoEnigma = 60;
         ContadorDoLabirinto = 90;
         return
     }
