@@ -268,7 +268,7 @@
             }
             //Chao do mapa:
             if (mapa == 0) {
-                return '/css/imagens/paredetutorial.png'
+                return '/css/imagens/chaotutorial.png'
             }else if (mapa == 1) {
                 return '/css/imagens/chaonivel1.png'
             }else if (mapa == 2) {
@@ -394,7 +394,7 @@
         {:else if (estrada == 2)}
         <th class="MapaGeral"></th>
         {:else if (estrada == 1)}
-        <th id="MapaGeral"><img class="parede" src="/css/imagens/tutorials.png" alt="parede"></th>
+        <th id="MapaGeral"><img class="parede" src="/css/imagens/paredetutorial.png" alt="parede"></th>
         {:else}
         <th id='MapaGeral'><img class="saida" src="/css/imagens/chaotutorial.png" alt='parede'></th>
         {/if}
