@@ -207,7 +207,7 @@
 							{#if elementos == 0}
 								<th><img src="/css/imagens/chaonivel3.png" alt="opa"></th>
 								{:else if elementos == 1}
-								<th><img src="/css/imagens/paredelevel4.png" alt="ola"></th>
+								<th><img src="/css/imagens/paredenivel3.png" alt="ola"></th>
 								{:else if elementos == "P"}
 								<th><img src="/css/imagens/soacabecinha.png" alt="jow"></th>
 							{/if}
