@@ -5,7 +5,10 @@
 	import Sobre from './sobre.svelte'
 	import Jogar from './jogo.svelte'
 	import {estado} from './Estado.js'
+	import Teste from './teste.svelte'
 </script>
+
+
 
 <head>
 	<link rel="stylesheet" href="/css/appsvelte.css">
