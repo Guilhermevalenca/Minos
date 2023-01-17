@@ -9,12 +9,6 @@
     margin: -2px;
     padding: 0px;
 }
-#ChaoNoGeral{
-    height: 45px;
-    width: 45px;
-    margin: -2px;
-    padding: 0px;
-}
 #buttonjogo{
     left: 30px;
 }
@@ -68,5 +62,12 @@
 .Dante0{
     background-image: url('/css/imagens/paredetutorial.png');
     background-size: 100%;
-    
+    height: 45px;
+    width: 45px;
+}
+.passagem0{
+    height: 45px;
+    width: 45px;
+    margin: -2px;
+    padding: 0px;
 }
