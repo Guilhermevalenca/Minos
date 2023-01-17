@@ -27,6 +27,6 @@
 
 <h1>Parabéns, você venceu!!!</h1>
 
-<p>Obrigado por jogar</p>
+<p>Obrigado por jogar nosso jogo, espero que tenha gostado</p>
 
 
