@@ -270,9 +270,9 @@
             if (mapa == 0) {
                 return '/css/imagens/paredetutorial.png'
             }else if (mapa == 1) {
-                return '/css/imagens/chaofeio.png'
+                return '/css/imagens/chaonivel1.png'
             }else if (mapa == 2) {
-                return '/css/imagens/chao2.png'
+                return '/css/imagens/chaonivel2.png'
             }else if (mapa == 3) {
                 return '/css/imagens/chaonivel3.png'
             }
@@ -518,7 +518,7 @@
         {:else if (estrada == 2)}
         <th class="MapaGeral"></th>
         {:else if (estrada == 1)}
-        <th id="MapaGeral"><img class="parede" src="/css/imagens/paredeamalera1.png" alt="parede"></th>
+        <th id="MapaGeral"><img class="tabela" src="/css/imagens/paredelevel4.png" alt="parede"></th>
         {:else}
         <th id='MapaGeral'><img class="saida" src="/css/imagens/chaum.png" alt='parede'></th>
         {/if}
