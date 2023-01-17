@@ -348,7 +348,7 @@
     function ResertarContadores(){
         clearInterval(contador)
         ContadorDoEnigma = 60;
-        ContadorDoLabirinto = 91;
+        ContadorDoLabirinto = 90;
         return
     }
 
