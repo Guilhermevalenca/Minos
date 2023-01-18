@@ -1,9 +1,5 @@
 <script>
     import Vitoria from "./Vitoria.svelte";
-    import {estado} from './Estado.js';
-    import {trocarEstadoDoJogo} from './Estado;js';
-    import VoltarMenu from "./VoltarMenu.svelte";
-  import { link } from "svelte-navigator";
 
     let key;
     let code;
@@ -199,7 +195,7 @@
     ]
     let eixoX = 0;
     let eixoY = 0;
-    let SaveX = 0;
+    let x = 0;
     let y = 0;
     let LimiteX = 0;
     let LimiteY = 0;
@@ -221,33 +217,80 @@
     posicaoinicial(mapa1); 
     posicaoinicial(mapa2); 
     posicaoinicial(mapa3);
-    function RenderizaçãoDoMapa(){
-        for(let i in mapa){
-            for(let j in mapa[i]){
-                if(mapa[i][j]  == "DANTE"){
-                    LimiteX = j - Dimensionamento;
-                    LimiteY = i - Dimensionamento;
-                    return
+    function RenderizaçãoDoMapa(fase){
+        if(fase == 0){
+            for(let i in mapa0){
+                for(let j in mapa0[i]){
+                    if(mapa0[i][j]  == "DANTE"){
+                        LimiteX = j - Dimensionamento;
+                        LimiteY = i - Dimensionamento;
+                        return
+                    }
+                }
+            }
+        }else if(fase == 1){
+            for(let i in mapa1){
+                for(let j in mapa1[i]){
+                    if(mapa1[i][j]  == "DANTE"){
+                        LimiteX = j - Dimensionamento;
+                        LimiteY = i - Dimensionamento;
+                        return
+                    }
+                }
+            }
+        }else if(fase == 2){
+            for(let i in mapa2){
+                for(let j in mapa2[i]){
+                    if(mapa2[i][j]  == "DANTE"){
+                        LimiteX = j - Dimensionamento;
+                        LimiteY = i - Dimensionamento;
+                        return
+                    }
+                }
+            }
+        }else if(fase == 3){
+            for(let i in mapa3){
+                for(let j in mapa3[i]){
+                    if(mapa3[i][j]  == "DANTE"){
+                        LimiteX = j - Dimensionamento;
+                        LimiteY = i - Dimensionamento;
+                        return
+                    }
                 }
             }
         }
     }
-    function ResertarPosicao(){
+    function ResertarPosicao(fase){
+        if(fase == 0){
+            mapa0[eixoY][eixoX] = 1;
+        }else if(fase == 1){
+            mapa1[eixoY][eixoX] = 1;
+        }else if(fase == 2){
+            mapa2[eixoY][eixoX] = 1;
+        }else if(fase == 3){
+            mapa3[eixoY][eixoX] = 1;
+        }
         eixoX = x;
         eixoY = y;
-        mapa[eixoY][eixoX] = "DANTE";
-        RenderizaçãoDoMapa()
+        RenderizaçãoDoMapa(fase)
     }
+    RenderizaçãoDoMapa(MudancaDeFase) 
     function movimentacao(posiçãoDesejada,fase){
-        x = eixoX;
-        y = eixoY;
         if(posiçãoDesejada == "ArrowUp"){
+            x = eixoX
+            y = eixoY
             eixoY--
         }else if(posiçãoDesejada == "ArrowDown"){
+            x = eixoX
+            y = eixoY
             eixoY++
         }else if(posiçãoDesejada == "ArrowLeft"){
+            x = eixoX
+            y = eixoY
             eixoX--
         }else if(posiçãoDesejada == "ArrowRight"){
+            x = eixoX
+            y = eixoY
             eixoX++
         }
         if(fase == 0){
@@ -279,8 +322,8 @@
         mapa3[eixoY][eixoX] = "DANTE";
         mapa3[y][x] = 0;
         }
-        RenderizaçãoDoMapa()
-        code = 'ResetButton/nota:evitandobugs';   
+        RenderizaçãoDoMapa(fase)
+        code = 'a';   
     }
     let enigma = false;
     let PalavraChave = '';
@@ -296,6 +339,14 @@
 <head>
     <link rel="stylesheet" href="/css/jogo.css">
 </head>
+<style>
+    img{
+        height: 45px;
+        width: 45px;
+        padding: 0px;
+        margin: -2px;
+    }
+</style>
 <svelte:window on:keydown={handleKeydown}/>
 
 {#if key}
@@ -303,14 +354,15 @@
         {movimentacao(code,MudancaDeFase)}
     {/if}
 {/if}
-
+<p>{eixoX}, {eixoY}</p>
+<p>{x}, {y}</p>
 {#if (MudancaDeFase == 0)}
 
 <p class="FasesDoJogo">Tutorial</p>
 
     {#if !enigma}
         <table class="mapa">
-            {#each mapa as linhas,i}
+            {#each mapa0 as linhas,i}
                 {#if  (LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i)}
                     <tr>
                         {#each linhas as elementos,j}
@@ -345,13 +397,23 @@
                         <tr>
                             {#each linhas as elementos,j}
                                 {#if (LimiteX <= j && LimiteX + (Dimensionamento * 2) >= i)}
-                                    
+                                    {#if elementos == 0}
+                                        <th><img src="/css/imagens/chaonivel1.png" alt="chao"></th>
+                                        {:else if elementos == 1}
+                                        <th><img src="/css/imagens/paredenivel1.png" alt="parede"></th>
+                                        {:else if elementos == "Y"}
+                                        <th><img src="/css/imagens/button.jpg" alt="saida"></th>
+                                        {:else if elementos == "DANTE"}
+                                        <th><img src="/css/imagens/soacabecinha.png" alt="personagem"></th>
+                                    {/if}
                                 {/if}
                             {/each}
                         </tr>
                     {/if}
                 {/each}
             </table>
+            {:else}
+    <p class='Enigma'>Fui levado para um quarto escuro e incendiado. Eu chorei e então minha cabeça foi cortada. Quem sou eu?</p>
+    <input bind:value={PalavraChave} on:keydown={RespondendoEnigma(PalavraChave == "VELA")} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
         {/if}
-
 {/if}
