@@ -520,7 +520,7 @@
         {:else if (estrada == 1)}
         <th id="MapaGeral"><img class="tabela" src="/css/imagens/paredenivel3.png" alt="parede"></th>
         {:else}
-        <th id='MapaGeral'><img class="saida" src="/css/imagens/chaonivel3.png" alt='parede'></th>
+        <th id='MapaGeral'><img class="saida" src="/css/imagens/saidanivel3.png" alt='parede'></th>
         {/if}
     {/each}
 </tr>

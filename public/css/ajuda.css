@@ -1,11 +1,4 @@
-.botao{
-    position: relative;
-    width: 60px;
-    font-size: 40px;
-    margin-left:20px;
-    margin-right:40px;
-    background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
-}
+
 .ajudaul{
     text-align: justify;
 }
@@ -37,7 +30,7 @@ h2{
    -webkit-background-clip: text;
    color: transparent;
    margin: 0%;
-   margin-top: 100px;
+   margin-top: 200px;
    margin-left: 1%;
 }
 li{
@@ -48,7 +41,9 @@ li{
 }
 #button{
     left: 60px;
+    top: -70px;
     background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+    margin-bottom: 0px;
     
 }
 .h3ajuda{
@@ -59,7 +54,7 @@ li{
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 10px;
 }
 p{
@@ -86,4 +81,40 @@ h4{
 }
 .aimds{
     margin-bottom: 100px;
+}
+.botaum{
+    width: 60px;
+    font-size: 40px;
+    margin-left:80px;
+    margin-bottom: 10px;
+    background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+}
+.buteum{
+    position:relative;
+    top:-2px;
+    right:10px;
+    width: 60px;
+    font-size: 40px;
+    margin-left:20px;
+    margin-right:10px;
+}
+.botao3{
+    position:relative;
+    top:-1px;
+    right:5px;
+    width: 60px;
+    font-size: 40px;
+    margin-left:60px;
+    margin-right:10px;
+    background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+}
+.botao2{
+    position:relative;
+    top:-1px;
+    right:10px;
+    width: 60px;
+    font-size: 40px;
+    margin-left:20px;
+    margin-right:10px;
+    background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
 }
