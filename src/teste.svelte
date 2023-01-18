@@ -74,18 +74,15 @@
 	let eixoY = 0;
 	let y = 0;
 	let x = 0;
-	let LimiteyI = 0;
-	let LimiteyF = 0;
-	let LimitexI = 0;
-	let LimitexF = 0;
+	let LimiteY = 0;
+	let LimiteX = 0;
+	let Dimensionamento = 8;
 	function RenderizaçãoDoMapa(){
 		for (let i in mapa){
 			for (let j in mapa[i]){
 				if(mapa[i][j] == "P"){
-					LimiteyI = i - 8;
-					LimiteyF = i + 5;
-					LimitexI = j - 8;
-					LimitexF = j + 5;
+					LimiteY = i - Dimensionamento;
+					LimiteX = j - Dimensionamento;
 					return
 				}
 			}
@@ -200,10 +197,10 @@
 {posicaoinicial()}
 <p>{eixoX}, {eixoY}</p>
 {#each mapa as linhas,i}
-	{#if (LimiteyI <= i && LimiteyI + 16 >= i)}
+	{#if (LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i)}
 			<tr>
 				{#each linhas as elementos,j}
-					{#if (LimitexI <= j && LimitexI + 16 >= j)}
+					{#if (LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j)}
 							{#if elementos == 0}
 								<th><img src="/css/imagens/chaonivel3.png" alt="opa"></th>
 								{:else if elementos == 1}

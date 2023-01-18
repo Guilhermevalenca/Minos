@@ -38,7 +38,7 @@
         }else{
             MudançaDeFase = 1;
         }
-    }, 9999999999999999);
+    }, 99999999999999);
    }
    var NewTempo;
     function EnigmaTime(nivel){
