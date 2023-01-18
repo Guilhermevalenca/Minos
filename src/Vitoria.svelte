@@ -7,17 +7,17 @@
         color:  rgb(184, 184, 51);
         text-align: center;
         font-family: 'Felix Titling';
-        font-size: 500%;
+        font-size: 300%;
         background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
     }
-    p{
+    h3{
         color:  rgb(184, 184, 51);
         text-align: center;
         font-family: 'Felix Titling';
-        font-size: 400%;
+        font-size: 200%;
         background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
         background-clip: text;
         -webkit-background-clip: text;
@@ -25,9 +25,12 @@
     }
 </style>
 
-<h1>Parabéns, você conseguiu sair do labirinto!!!</h1>
+<h1>Olá, caro humano.</h1>
 
-<p>Obrigado por jogar nosso jogo, espero que tenha gostado dessa experiência</p>
-<p>Nos veremos em breve, certamente...</p>
-
-
+<h3>Então nos encontramos novamente,</h3>
+<h3>Parece que realmente conseguiu se livrar de seus instintos e enfrentar os mistérios que rodeiam o Minos Labyrinth.</h3>
+<h3>Devo parabenizá-lo por ainda estar com vida, mas me questiono se por muito tempo. </h3>
+<h3>Humanos sempre cedendo a seus desejos e vontades sem se importar com as consequências de seus atos,</h3>
+<h3>acha mesmo que ficará impune por invadir o lar dos seres que encontrou ao longo do caminho?</h3>
+<h3>Talvez tenha dado muita sorte hoje, jovem Dante.</h3>
+<h3>Seria realmente cômico se acreditasse que ela vai durar para sempre.</h3>

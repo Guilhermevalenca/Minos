@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="/css/ajuda.css">
 </head>
 <VoltarMenu/>
-<h1 class="h1ajuda">AJUDA</h1>
 
 <h2>Como jogar?</h2>
 <ul class="aimds">
@@ -17,9 +16,9 @@
 </ul>
 
 
-<ul class="button"><button id='button' class='botao'>↟</button></ul>
-<ul><button class='botao'>↞</button> <button class='botao'>↠</button></ul>
-<ul><button id='button' class='botao'>↡</button></ul>
+<ul><button id='button' class='botaum'>↟</button></ul>
+<ul><button class='botao2'>↞</button> <button class='botao3'>↠</button></ul>
+<ul><button id='button' class='buteum'>↡</button></ul>
 
 <h3 class="h3ajuda">Olá, querido humano.</h3>
 <p>Se você chegou aqui, temo que já esteja em um território perigoso.</p>
