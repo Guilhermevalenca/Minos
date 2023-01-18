@@ -217,6 +217,7 @@
     posicaoinicial(mapa1); 
     posicaoinicial(mapa2); 
     posicaoinicial(mapa3);
+    console.log(mapa0)
     function RenderizaçãoDoMapa(fase){
         if(fase == 0){
             for(let i in mapa0){
