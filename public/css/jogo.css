@@ -135,3 +135,20 @@ img#ChaoNoGeral {
     width: 45px;
     margin: -2px;
 }
+.RespostaEnigma{
+    font-size: 100%;
+    font-family: "Goudy Old Style";
+    color:#ffff00;
+    text-align: center;
+    position: relative;
+    background-image: url(./imagens/button.jpg);
+    background-size: cover;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #cc9900 0%, #ffff00 100%) space;
+    border-image-slice: 10;
+    border-width: 2px;
+    width: 15%;
+    position: relative;
+    right: 18px;
+    top: 70px;
+}
