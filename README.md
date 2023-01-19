@@ -27,6 +27,9 @@
 
 
 <h2> Claudiane Rodrigues </h2>
+
+<h5>Adorei a experiência de estar programando um jogo (apesar de todo o estresse com coisas dando errado e de trabalhar com front) e sinceramente nunca imaginei que gostaria disso...eu diria que eu descobri uma parte de mim que eu não conhecia ainda,aprendi coisas que não sabia,coloquei em prática coisas que sabia mas ainda não havia colocado em prática,testei minhas habilidades. Enfim... Espero que gostem do nosso jogo :)
+
 <h2> Emmily Kathylen </h2>
 
 
