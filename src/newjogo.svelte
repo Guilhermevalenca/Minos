@@ -301,6 +301,7 @@
                 return
             }
             mapa3[EixoY][EixoX] = "DANTE"
+
             mapa3[SaveY][SaveX] = 0;
         } RenderizandoMapa()
         code = 'd'
@@ -442,6 +443,18 @@
         
         }
     }
+    //Referente aos enigmas:
+    let enigma = false;
+    let PalavraChave = '';
+    function Alterando(teste){
+        if(teste){
+            enigma = teste;
+            PalavraChave = '';
+        }else{
+            enigma = teste;
+            PalavraChave = '';
+        }return enigma
+    }
 </script>
 
 <style>
@@ -465,27 +478,42 @@
         {/if}
 {/if}
 {#if MudandoDeFase == "tutorial"}
-{RenderizandoMapa()}
-{DeterminandoEixos(MudandoDeFase)}
-    {#each mapa0 as linhas,i}
-    {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
-        <tr>
-            {#each linhas as elementos,j}
-            {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
-                {#if elementos == 0}
-                    <th><img src="/css/imagens/chaotutorial.png" alt="chao"></th>
-                {:else if elementos == 1}
-                    <th><img src="/css/imagens/paredetutorial.png" alt="parede"></th>
-                {:else if elementos == "X"}
-                    <th><img src="/css/imagens/saidanivel3.png" alt="saida"></th>
-                {:else if elementos == "DANTE"}
-                    <th><img src="/css/imagens/soacabecinha.png" alt="personagem"></th>
+    {#if !enigma}
+        
+    
+    {RenderizandoMapa()}
+    {DeterminandoEixos(MudandoDeFase)}
+        {#each mapa0 as linhas,i}
+        {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+            <tr>
+                {#each linhas as elementos,j}
+                {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+                    {#if elementos == 0}
+                        <th><img src="/css/imagens/chaotutorial.png" alt="chao"></th>
+                    {:else if elementos == 1}
+                        <th><img src="/css/imagens/paredetutorial.png" alt="parede"></th>
+                    {:else if elementos == "X"}
+                        <th><img src="/css/imagens/saidanivel3.png" alt="saida"></th>
+                    {:else if elementos == "DANTE"}
+                        <th><img src="/css/imagens/soacabecinha.png" alt="personagem"></th>
+                    {/if}
                 {/if}
-            {/if}
-            {/each}
-        </tr>
+                {/each}
+            </tr>
+        {/if}
+        {/each}
+        {:else}
+
+        <p class='Enigma'>Sempre que passar de fase, haverá um enigma a ser solucionado. </p>
+        <p class='Enigma'>Lembre-se: Existe um limite de tempo tanto para resolver os enigmas, como para sair de cada labirinto. </p>
+        <p class='Enigma'>Ao perder em qualquer nível, voltará para o primeiro.</p>
+        <p class="Enigma">OBS: Só serão aceitas letras maiúsculas nas respostas de todos os enigmas.</p>
+        <p class='Enigma'>Nenhuma das palavras-chave contém qualquer acento.</p>
+        <p class="Enigma">Após compreender o funcionamento do Minos Labyrinth, digite: "OK" e poderá prosseguir para a primeira fase.</p>
+        <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "OK")} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
+        
+
     {/if}
-    {/each}
     {:else if MudandoDeFase == "nivel1"}
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
@@ -533,7 +561,8 @@
     {:else if MudandoDeFase == "nivel3"}
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
-        {#each mapa2 as linhas,i}
+    <p>{EixoX},{EixoY}</p>
+        {#each mapa3 as linhas,i}
         {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
             <tr>
                 {#each linhas as elementos,j}
