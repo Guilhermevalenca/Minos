@@ -4,7 +4,7 @@
     import {estado} from './Estado.js'
     import { trocarEstadoDoJogo } from './Estado.js'
     import VoltarMenu from './VoltarMenu.svelte'
-    import { element } from 'svelte/internal';
+    import { each, element } from 'svelte/internal';
     //utilizando função para controle do teclado:
     let key;
 	let code;
@@ -562,18 +562,16 @@ let mapa4 =[
 <table class='mapa'>
     {#each mapa4 as elementos,i}
     <tr class='linhas da tabela'> 
-        {#each reagiao as estrada,j}
+        {#each elementos as estrada,j}
         
-        {#if elementos == 0}
-       
-
-        <th id="MapaGeral"><img id='ChaoNoGeral' class="{ClassDante(i,j,eixoX,eixoY,MudançaDeFase)}" src="{IMGmovimentacao(i,j,eixoX,eixoY,MudançaDeFase)}" alt="estrada"></th>
-            <td id="MapaGeral"><img id="ChaoNoGeral" class="passagem3" src="/css/imagens/chaonivel3.PNG" alt="chao"></td>
-            {:else if elementos == "C"}
-            <td id="MapaGeral"><img class='parede' src="/css/imagens/paredetutorial1.png" alt="parede"></td>
+        {#if estrada == 0}
+            <th id="MapaGeral"><img id='ChaoNoGeral' class="{ClassDante(i,j,eixoX,eixoY,MudançaDeFase)}" src="{IMGmovimentacao(i,j,eixoX,eixoY,MudançaDeFase)}" alt="estrada"></th>
+            {:else if estrada == "C"}
+            <th id="MapaGeral"><img class='parede' src="/css/imagens/paredetutorial1.png" alt="parede"></th>
         {/if}
     {/each}
 </tr>
+{/each}
 </table>
 {/if}
 {/if}

@@ -6,6 +6,7 @@
 	import Jogar from './jogo.svelte'
 	import {estado} from './Estado.js'
 	import Teste from './teste.svelte'
+  import Newjogo from './newjogo.svelte';
 </script>
 
 
@@ -23,4 +24,3 @@
 {:else if $estado ==='ajuda'}
 	<Ajuda/>
 {/if}
-
