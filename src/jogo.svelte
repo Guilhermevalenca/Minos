@@ -274,7 +274,7 @@ let mapa4 =[
     //carregando a imagem do jogador ou da estrada
     function IMGmovimentacao(i,j,x,y,mapa){
             if (y == i && x == j) {
-                return '/css/imagens/soacabecinha.png'
+                return '/css/imagens/Dante.png'
             }
             //Chao do mapa:
             if (mapa == 0) {
