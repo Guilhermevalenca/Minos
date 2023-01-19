@@ -1,4 +1,4 @@
-<script>
+ <script>
     import VoltarMenu from './VoltarMenu.svelte'
 </script>
 

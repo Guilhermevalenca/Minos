@@ -1,4 +1,4 @@
-<script>
+ <script>
     import { estado } from "./Estado.js"
 	import { trocarEstadoDoJogo } from './Estado.js'
 </script>
@@ -33,4 +33,4 @@
 <h3>Humanos sempre cedendo a seus desejos e vontades sem se importar com as consequências de seus atos,</h3>
 <h3>acha mesmo que ficará impune por invadir o lar dos seres que encontrou ao longo do caminho?</h3>
 <h3>Talvez tenha dado muita sorte hoje, jovem Dante.</h3>
-<h3>Seria realmente cômico se acreditasse que ela vai durar para sempre.</h3>
+<h3>Seria realmente cômico se acreditasse que ela vai durar para sempre.</h3> 

@@ -1,4 +1,4 @@
-<script>
+ <script>
 	import { trocarEstadoDoJogo } from './Estado.js'
     let estadoAtual = 0;
 </script>
@@ -25,4 +25,4 @@
     <ul class="ulapp"><button  class="buttonapp" on:click={() => trocarEstadoDoJogo('ajuda')}><p class="pmenu">Ajuda</p></button></ul>
 </div>
 
-{/if}
+{/if} 
