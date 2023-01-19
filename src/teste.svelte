@@ -171,16 +171,16 @@
 <svelte:window on:keydown={handleKeydown}/>
 {#if (key)}
             {#if (code == "ArrowUp")}
-            {decrementarY()} <!--para cima-->
+            {decrementarY()} para cima
             {:else if (code == "ArrowDown")}
-            {incremetarY()} <!--para baixo-->
+            {incremetarY()} para baixo
             {:else if (code == "ArrowLeft")}
-            {decrementarX()}    <!--para esquerda-->
+            {decrementarX()}    para esquerda
             {:else if (code == "ArrowRight")}
-            {incremetarX()} <!--para direita-->
+            {incremetarX()} para direita
         {/if}
     {/if}
-<!--
+
 <div style="text-align: center">
 	{#if key}
 		<kbd>{key === ' ' ? 'Space' : key}</kbd>
@@ -193,7 +193,7 @@
 		<p>Focus this window and press any key</p>
 	{/if}
 </div>
--->
+
 {posicaoinicial()}
 <p>{eixoX}, {eixoY}</p>
 {#each mapa as linhas,i}
@@ -212,4 +212,4 @@
 				{/each}
 			</tr>
 	{/if}
-{/each}
+{/each} 

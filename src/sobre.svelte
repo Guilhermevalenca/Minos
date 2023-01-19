@@ -1,4 +1,4 @@
-<script>
+ <script>
    import VoltarMenu from './VoltarMenu.svelte'
 </script>
 <VoltarMenu/>
@@ -43,4 +43,4 @@ hora de finalmente desvender o mistério que o "Minos Labyrinth" tinha a lhe ofe
     <p>21 anos <br> 1° período de IPI <br> gvrp@discente.ifpe.edu.br </p>
 
 
-  
+   

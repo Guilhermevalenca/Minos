@@ -1,4 +1,4 @@
-<script>
+ <script>
 	import {Router, Route, Link} from 'svelte-navigator'
 	import Ajuda from './ajuda.svelte'
 	import Menu from './menu.svelte'
@@ -6,8 +6,8 @@
 	import Jogar from './jogo.svelte'
 	import {estado} from './Estado.js'
 	import Teste from './teste.svelte'
+  	import Newjogo from './newjogo.svelte';
 </script>
-
 
 
 <head>
@@ -22,5 +22,15 @@
 	<Sobre/>
 {:else if $estado ==='ajuda'}
 	<Ajuda/>
-{/if}
+{/if} 
+
+
+<audio src="/css/audio.mp3" autoplay preload="auto"></audio>
+
+<div>
+	<audio id="audio" autoplay loop>
+		<source src="/css/audio3.wav" type="audio/wav">
+		<source src="/css/audio2.ogg" type="audio/ogg">
+	</audio>
+</div>
 
