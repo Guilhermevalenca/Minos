@@ -29318,7 +29318,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (469:0) {#if (key)}
+    // (470:0) {#if (key)}
     function create_if_block_30(ctx) {
     	let if_block_anchor;
 
@@ -29367,14 +29367,14 @@ var app = (function () {
     		block,
     		id: create_if_block_30.name,
     		type: "if",
-    		source: "(469:0) {#if (key)}",
+    		source: "(470:0) {#if (key)}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (476:41) 
+    // (477:41) 
     function create_if_block_34(ctx) {
     	let t_value = /*IncremetarX*/ ctx[17]() + "";
     	let t;
@@ -29396,14 +29396,14 @@ var app = (function () {
     		block,
     		id: create_if_block_34.name,
     		type: "if",
-    		source: "(476:41) ",
+    		source: "(477:41) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (474:40) 
+    // (475:40) 
     function create_if_block_33(ctx) {
     	let t_value = /*DecrementarX*/ ctx[18]() + "";
     	let t;
@@ -29425,14 +29425,14 @@ var app = (function () {
     		block,
     		id: create_if_block_33.name,
     		type: "if",
-    		source: "(474:40) ",
+    		source: "(475:40) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (472:40) 
+    // (473:40) 
     function create_if_block_32(ctx) {
     	let t_value = /*IncremetarY*/ ctx[19]() + "";
     	let t;
@@ -29454,14 +29454,14 @@ var app = (function () {
     		block,
     		id: create_if_block_32.name,
     		type: "if",
-    		source: "(472:40) ",
+    		source: "(473:40) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (470:8) {#if (code == "ArrowUp")}
+    // (471:8) {#if (code == "ArrowUp")}
     function create_if_block_31(ctx) {
     	let t_value = /*DecrementarY*/ ctx[20]() + "";
     	let t;
@@ -29483,14 +29483,14 @@ var app = (function () {
     		block,
     		id: create_if_block_31.name,
     		type: "if",
-    		source: "(470:8) {#if (code == \\\"ArrowUp\\\")}",
+    		source: "(471:8) {#if (code == \\\"ArrowUp\\\")}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (584:41) 
+    // (585:41) 
     function create_if_block_29(ctx) {
     	let h1;
 
@@ -29498,7 +29498,7 @@ var app = (function () {
     		c: function create() {
     			h1 = element("h1");
     			h1.textContent = "vc venceu";
-    			add_location(h1, file, 584, 4, 41352);
+    			add_location(h1, file, 585, 4, 41372);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -29513,14 +29513,14 @@ var app = (function () {
     		block,
     		id: create_if_block_29.name,
     		type: "if",
-    		source: "(584:41) ",
+    		source: "(585:41) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (561:40) 
+    // (562:40) 
     function create_if_block_22(ctx) {
     	let t0_value = /*RenderizandoMapa*/ ctx[15]() + "";
     	let t0;
@@ -29559,7 +29559,7 @@ var app = (function () {
     			}
 
     			each_1_anchor = empty();
-    			add_location(p, file, 563, 4, 40358);
+    			add_location(p, file, 564, 4, 40378);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
@@ -29623,14 +29623,14 @@ var app = (function () {
     		block,
     		id: create_if_block_22.name,
     		type: "if",
-    		source: "(561:40) ",
+    		source: "(562:40) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (539:40) 
+    // (540:40) 
     function create_if_block_15(ctx) {
     	let t0_value = /*RenderizandoMapa*/ ctx[15]() + "";
     	let t0;
@@ -29713,14 +29713,14 @@ var app = (function () {
     		block,
     		id: create_if_block_15.name,
     		type: "if",
-    		source: "(539:40) ",
+    		source: "(540:40) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (517:40) 
+    // (518:40) 
     function create_if_block_8(ctx) {
     	let t0_value = /*RenderizandoMapa*/ ctx[15]() + "";
     	let t0;
@@ -29803,14 +29803,14 @@ var app = (function () {
     		block,
     		id: create_if_block_8.name,
     		type: "if",
-    		source: "(517:40) ",
+    		source: "(518:40) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (480:0) {#if MudandoDeFase == "tutorial"}
+    // (481:0) {#if MudandoDeFase == "tutorial"}
     function create_if_block(ctx) {
     	let if_block_anchor;
 
@@ -29854,14 +29854,14 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(480:0) {#if MudandoDeFase == \\\"tutorial\\\"}",
+    		source: "(481:0) {#if MudandoDeFase == \\\"tutorial\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (566:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+    // (567:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
     function create_if_block_23(ctx) {
     	let tr;
     	let t;
@@ -29882,7 +29882,7 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file, 566, 12, 40497);
+    			add_location(tr, file, 567, 12, 40517);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -29928,14 +29928,14 @@ var app = (function () {
     		block,
     		id: create_if_block_23.name,
     		type: "if",
-    		source: "(566:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		source: "(567:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (569:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+    // (570:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
     function create_if_block_24(ctx) {
     	let if_block_anchor;
 
@@ -29982,14 +29982,14 @@ var app = (function () {
     		block,
     		id: create_if_block_24.name,
     		type: "if",
-    		source: "(569:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
+    		source: "(570:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (576:51) 
+    // (577:51) 
     function create_if_block_28(ctx) {
     	let th;
     	let img;
@@ -30001,9 +30001,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/soacabecinha.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
-    			attr_dev(img, "class", "svelte-c1bvkv");
-    			add_location(img, file, 576, 28, 41106);
-    			add_location(th, file, 576, 24, 41102);
+    			attr_dev(img, "class", "svelte-133fi3v");
+    			add_location(img, file, 577, 28, 41126);
+    			add_location(th, file, 577, 24, 41122);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30018,14 +30018,14 @@ var app = (function () {
     		block,
     		id: create_if_block_28.name,
     		type: "if",
-    		source: "(576:51) ",
+    		source: "(577:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (574:47) 
+    // (575:47) 
     function create_if_block_27(ctx) {
     	let th;
     	let img;
@@ -30037,9 +30037,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saidanivel3.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
-    			attr_dev(img, "class", "svelte-c1bvkv");
-    			add_location(img, file, 574, 28, 40966);
-    			add_location(th, file, 574, 24, 40962);
+    			attr_dev(img, "class", "svelte-133fi3v");
+    			add_location(img, file, 575, 28, 40986);
+    			add_location(th, file, 575, 24, 40982);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30054,14 +30054,14 @@ var app = (function () {
     		block,
     		id: create_if_block_27.name,
     		type: "if",
-    		source: "(574:47) ",
+    		source: "(575:47) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (572:45) 
+    // (573:45) 
     function create_if_block_26(ctx) {
     	let th;
     	let img;
@@ -30073,9 +30073,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel3.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			attr_dev(img, "class", "svelte-c1bvkv");
-    			add_location(img, file, 572, 28, 40828);
-    			add_location(th, file, 572, 24, 40824);
+    			attr_dev(img, "class", "svelte-133fi3v");
+    			add_location(img, file, 573, 28, 40848);
+    			add_location(th, file, 573, 24, 40844);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30090,14 +30090,14 @@ var app = (function () {
     		block,
     		id: create_if_block_26.name,
     		type: "if",
-    		source: "(572:45) ",
+    		source: "(573:45) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (570:20) {#if elementos == 0}
+    // (571:20) {#if elementos == 0}
     function create_if_block_25(ctx) {
     	let th;
     	let img;
@@ -30109,9 +30109,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel3.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
-    			attr_dev(img, "class", "svelte-c1bvkv");
-    			add_location(img, file, 570, 28, 40696);
-    			add_location(th, file, 570, 24, 40692);
+    			attr_dev(img, "class", "svelte-133fi3v");
+    			add_location(img, file, 571, 28, 40716);
+    			add_location(th, file, 571, 24, 40712);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30126,14 +30126,14 @@ var app = (function () {
     		block,
     		id: create_if_block_25.name,
     		type: "if",
-    		source: "(570:20) {#if elementos == 0}",
+    		source: "(571:20) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (568:16) {#each linhas as elementos,j}
+    // (569:16) {#each linhas as elementos,j}
     function create_each_block_7(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteX*/ ctx[6] <= /*j*/ ctx[33] && /*LimiteX*/ ctx[6] + /*Dimensionamento*/ ctx[14] * 2 >= /*j*/ ctx[33] && create_if_block_24(ctx);
@@ -30171,14 +30171,14 @@ var app = (function () {
     		block,
     		id: create_each_block_7.name,
     		type: "each",
-    		source: "(568:16) {#each linhas as elementos,j}",
+    		source: "(569:16) {#each linhas as elementos,j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (565:8) {#each mapa3 as linhas,i}
+    // (566:8) {#each mapa3 as linhas,i}
     function create_each_block_6(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteY*/ ctx[7] <= /*i*/ ctx[30] && /*LimiteY*/ ctx[7] + /*Dimensionamento*/ ctx[14] * 2 >= /*i*/ ctx[30] && create_if_block_23(ctx);
@@ -30216,14 +30216,14 @@ var app = (function () {
     		block,
     		id: create_each_block_6.name,
     		type: "each",
-    		source: "(565:8) {#each mapa3 as linhas,i}",
+    		source: "(566:8) {#each mapa3 as linhas,i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (543:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+    // (544:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
     function create_if_block_16(ctx) {
     	let tr;
     	let t;
@@ -30244,7 +30244,7 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file, 543, 12, 39442);
+    			add_location(tr, file, 544, 12, 39462);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -30290,14 +30290,14 @@ var app = (function () {
     		block,
     		id: create_if_block_16.name,
     		type: "if",
-    		source: "(543:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		source: "(544:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (546:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+    // (547:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
     function create_if_block_17(ctx) {
     	let if_block_anchor;
 
@@ -30344,14 +30344,14 @@ var app = (function () {
     		block,
     		id: create_if_block_17.name,
     		type: "if",
-    		source: "(546:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
+    		source: "(547:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (553:51) 
+    // (554:51) 
     function create_if_block_21(ctx) {
     	let th;
     	let img;
@@ -30363,9 +30363,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/soacabecinha.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
-    			attr_dev(img, "class", "svelte-c1bvkv");
-    			add_location(img, file, 553, 28, 40051);
-    			add_location(th, file, 553, 24, 40047);
+    			attr_dev(img, "class", "svelte-133fi3v");
+    			add_location(img, file, 554, 28, 40071);
+    			add_location(th, file, 554, 24, 40067);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30380,14 +30380,14 @@ var app = (function () {
     		block,
     		id: create_if_block_21.name,
     		type: "if",
-    		source: "(553:51) ",
+    		source: "(554:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (551:47) 
+    // (552:47) 
     function create_if_block_20(ctx) {
     	let th;
     	let img;
@@ -30399,9 +30399,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saidanivel3.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
-    			attr_dev(img, "class", "svelte-c1bvkv");
-    			add_location(img, file, 551, 28, 39911);
-    			add_location(th, file, 551, 24, 39907);
+    			attr_dev(img, "class", "svelte-133fi3v");
+    			add_location(img, file, 552, 28, 39931);
+    			add_location(th, file, 552, 24, 39927);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30416,14 +30416,14 @@ var app = (function () {
     		block,
     		id: create_if_block_20.name,
     		type: "if",
-    		source: "(551:47) ",
+    		source: "(552:47) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (549:45) 
+    // (550:45) 
     function create_if_block_19(ctx) {
     	let th;
     	let img;
@@ -30435,9 +30435,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel2.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			attr_dev(img, "class", "svelte-c1bvkv");
-    			add_location(img, file, 549, 28, 39773);
-    			add_location(th, file, 549, 24, 39769);
+    			attr_dev(img, "class", "svelte-133fi3v");
+    			add_location(img, file, 550, 28, 39793);
+    			add_location(th, file, 550, 24, 39789);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30452,14 +30452,14 @@ var app = (function () {
     		block,
     		id: create_if_block_19.name,
     		type: "if",
-    		source: "(549:45) ",
+    		source: "(550:45) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (547:20) {#if elementos == 0}
+    // (548:20) {#if elementos == 0}
     function create_if_block_18(ctx) {
     	let th;
     	let img;
@@ -30471,9 +30471,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel2.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
-    			attr_dev(img, "class", "svelte-c1bvkv");
-    			add_location(img, file, 547, 28, 39641);
-    			add_location(th, file, 547, 24, 39637);
+    			attr_dev(img, "class", "svelte-133fi3v");
+    			add_location(img, file, 548, 28, 39661);
+    			add_location(th, file, 548, 24, 39657);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30488,14 +30488,14 @@ var app = (function () {
     		block,
     		id: create_if_block_18.name,
     		type: "if",
-    		source: "(547:20) {#if elementos == 0}",
+    		source: "(548:20) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (545:16) {#each linhas as elementos,j}
+    // (546:16) {#each linhas as elementos,j}
     function create_each_block_5(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteX*/ ctx[6] <= /*j*/ ctx[33] && /*LimiteX*/ ctx[6] + /*Dimensionamento*/ ctx[14] * 2 >= /*j*/ ctx[33] && create_if_block_17(ctx);
@@ -30533,14 +30533,14 @@ var app = (function () {
     		block,
     		id: create_each_block_5.name,
     		type: "each",
-    		source: "(545:16) {#each linhas as elementos,j}",
+    		source: "(546:16) {#each linhas as elementos,j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (542:8) {#each mapa2 as linhas,i}
+    // (543:8) {#each mapa2 as linhas,i}
     function create_each_block_4(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteY*/ ctx[7] <= /*i*/ ctx[30] && /*LimiteY*/ ctx[7] + /*Dimensionamento*/ ctx[14] * 2 >= /*i*/ ctx[30] && create_if_block_16(ctx);
@@ -30578,14 +30578,14 @@ var app = (function () {
     		block,
     		id: create_each_block_4.name,
     		type: "each",
-    		source: "(542:8) {#each mapa2 as linhas,i}",
+    		source: "(543:8) {#each mapa2 as linhas,i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (521:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+    // (522:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
     function create_if_block_9(ctx) {
     	let tr;
     	let t;
@@ -30606,7 +30606,7 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file, 521, 12, 38411);
+    			add_location(tr, file, 522, 12, 38431);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -30652,14 +30652,14 @@ var app = (function () {
     		block,
     		id: create_if_block_9.name,
     		type: "if",
-    		source: "(521:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		source: "(522:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (524:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+    // (525:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
     function create_if_block_10(ctx) {
     	let if_block_anchor;
 
@@ -30706,14 +30706,14 @@ var app = (function () {
     		block,
     		id: create_if_block_10.name,
     		type: "if",
-    		source: "(524:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
+    		source: "(525:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (531:51) 
+    // (532:51) 
     function create_if_block_14(ctx) {
     	let th;
     	let img;
@@ -30725,9 +30725,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/soacabecinha.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
-    			attr_dev(img, "class", "svelte-c1bvkv");
-    			add_location(img, file, 531, 28, 39020);
-    			add_location(th, file, 531, 24, 39016);
+    			attr_dev(img, "class", "svelte-133fi3v");
+    			add_location(img, file, 532, 28, 39040);
+    			add_location(th, file, 532, 24, 39036);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30742,14 +30742,14 @@ var app = (function () {
     		block,
     		id: create_if_block_14.name,
     		type: "if",
-    		source: "(531:51) ",
+    		source: "(532:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (529:47) 
+    // (530:47) 
     function create_if_block_13(ctx) {
     	let th;
     	let img;
@@ -30761,9 +30761,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saidanivel3.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
-    			attr_dev(img, "class", "svelte-c1bvkv");
-    			add_location(img, file, 529, 28, 38880);
-    			add_location(th, file, 529, 24, 38876);
+    			attr_dev(img, "class", "svelte-133fi3v");
+    			add_location(img, file, 530, 28, 38900);
+    			add_location(th, file, 530, 24, 38896);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30778,14 +30778,14 @@ var app = (function () {
     		block,
     		id: create_if_block_13.name,
     		type: "if",
-    		source: "(529:47) ",
+    		source: "(530:47) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (527:45) 
+    // (528:45) 
     function create_if_block_12(ctx) {
     	let th;
     	let img;
@@ -30797,9 +30797,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel1.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			attr_dev(img, "class", "svelte-c1bvkv");
-    			add_location(img, file, 527, 28, 38742);
-    			add_location(th, file, 527, 24, 38738);
+    			attr_dev(img, "class", "svelte-133fi3v");
+    			add_location(img, file, 528, 28, 38762);
+    			add_location(th, file, 528, 24, 38758);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30814,14 +30814,14 @@ var app = (function () {
     		block,
     		id: create_if_block_12.name,
     		type: "if",
-    		source: "(527:45) ",
+    		source: "(528:45) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (525:20) {#if elementos == 0}
+    // (526:20) {#if elementos == 0}
     function create_if_block_11(ctx) {
     	let th;
     	let img;
@@ -30833,9 +30833,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel1.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
-    			attr_dev(img, "class", "svelte-c1bvkv");
-    			add_location(img, file, 525, 28, 38610);
-    			add_location(th, file, 525, 24, 38606);
+    			attr_dev(img, "class", "svelte-133fi3v");
+    			add_location(img, file, 526, 28, 38630);
+    			add_location(th, file, 526, 24, 38626);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30850,14 +30850,14 @@ var app = (function () {
     		block,
     		id: create_if_block_11.name,
     		type: "if",
-    		source: "(525:20) {#if elementos == 0}",
+    		source: "(526:20) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (523:16) {#each linhas as elementos,j}
+    // (524:16) {#each linhas as elementos,j}
     function create_each_block_3(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteX*/ ctx[6] <= /*j*/ ctx[33] && /*LimiteX*/ ctx[6] + /*Dimensionamento*/ ctx[14] * 2 >= /*j*/ ctx[33] && create_if_block_10(ctx);
@@ -30895,14 +30895,14 @@ var app = (function () {
     		block,
     		id: create_each_block_3.name,
     		type: "each",
-    		source: "(523:16) {#each linhas as elementos,j}",
+    		source: "(524:16) {#each linhas as elementos,j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (520:8) {#each mapa1 as linhas,i}
+    // (521:8) {#each mapa1 as linhas,i}
     function create_each_block_2(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteY*/ ctx[7] <= /*i*/ ctx[30] && /*LimiteY*/ ctx[7] + /*Dimensionamento*/ ctx[14] * 2 >= /*i*/ ctx[30] && create_if_block_9(ctx);
@@ -30940,14 +30940,14 @@ var app = (function () {
     		block,
     		id: create_each_block_2.name,
     		type: "each",
-    		source: "(520:8) {#each mapa1 as linhas,i}",
+    		source: "(521:8) {#each mapa1 as linhas,i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (505:8) {:else}
+    // (506:8) {:else}
     function create_else_block(ctx) {
     	let p0;
     	let t1;
@@ -30987,20 +30987,20 @@ var app = (function () {
     			t11 = space();
     			input = element("input");
     			attr_dev(p0, "class", "Enigma");
-    			add_location(p0, file, 506, 8, 37381);
+    			add_location(p0, file, 507, 8, 37401);
     			attr_dev(p1, "class", "Enigma");
-    			add_location(p1, file, 507, 8, 37476);
+    			add_location(p1, file, 508, 8, 37496);
     			attr_dev(p2, "class", "Enigma");
-    			add_location(p2, file, 508, 8, 37611);
+    			add_location(p2, file, 509, 8, 37631);
     			attr_dev(p3, "class", "Enigma");
-    			add_location(p3, file, 509, 8, 37696);
+    			add_location(p3, file, 510, 8, 37716);
     			attr_dev(p4, "class", "Enigma");
-    			add_location(p4, file, 510, 8, 37802);
+    			add_location(p4, file, 511, 8, 37822);
     			attr_dev(p5, "class", "Enigma");
-    			add_location(p5, file, 511, 8, 37884);
+    			add_location(p5, file, 512, 8, 37904);
     			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
     			attr_dev(input, "class", "RespostaEnigma");
-    			add_location(input, file, 512, 8, 38023);
+    			add_location(input, file, 513, 8, 38043);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p0, anchor);
@@ -31066,14 +31066,14 @@ var app = (function () {
     		block,
     		id: create_else_block.name,
     		type: "else",
-    		source: "(505:8) {:else}",
+    		source: "(506:8) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (481:4) {#if !enigma}
+    // (482:4) {#if !enigma}
     function create_if_block_1(ctx) {
     	let t0_value = /*RenderizandoMapa*/ ctx[15]() + "";
     	let t0;
@@ -31156,14 +31156,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(481:4) {#if !enigma}",
+    		source: "(482:4) {#if !enigma}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (487:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+    // (488:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
     function create_if_block_2(ctx) {
     	let tr;
     	let t;
@@ -31184,7 +31184,7 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file, 487, 12, 36550);
+    			add_location(tr, file, 488, 12, 36556);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -31230,14 +31230,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2.name,
     		type: "if",
-    		source: "(487:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		source: "(488:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (490:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+    // (491:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
     function create_if_block_3(ctx) {
     	let if_block_anchor;
 
@@ -31284,14 +31284,14 @@ var app = (function () {
     		block,
     		id: create_if_block_3.name,
     		type: "if",
-    		source: "(490:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
+    		source: "(491:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (497:51) 
+    // (498:51) 
     function create_if_block_7(ctx) {
     	let th;
     	let img;
@@ -31301,11 +31301,11 @@ var app = (function () {
     		c: function create() {
     			th = element("th");
     			img = element("img");
+    			attr_dev(img, "class", "dante svelte-133fi3v");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/soacabecinha.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
-    			attr_dev(img, "class", "svelte-c1bvkv");
-    			add_location(img, file, 497, 28, 37163);
-    			add_location(th, file, 497, 24, 37159);
+    			add_location(img, file, 498, 28, 37169);
+    			add_location(th, file, 498, 24, 37165);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31320,14 +31320,14 @@ var app = (function () {
     		block,
     		id: create_if_block_7.name,
     		type: "if",
-    		source: "(497:51) ",
+    		source: "(498:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (495:47) 
+    // (496:47) 
     function create_if_block_6(ctx) {
     	let th;
     	let img;
@@ -31339,9 +31339,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saidanivel3.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
-    			attr_dev(img, "class", "svelte-c1bvkv");
-    			add_location(img, file, 495, 28, 37023);
-    			add_location(th, file, 495, 24, 37019);
+    			attr_dev(img, "class", "svelte-133fi3v");
+    			add_location(img, file, 496, 28, 37029);
+    			add_location(th, file, 496, 24, 37025);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31356,14 +31356,14 @@ var app = (function () {
     		block,
     		id: create_if_block_6.name,
     		type: "if",
-    		source: "(495:47) ",
+    		source: "(496:47) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (493:45) 
+    // (494:45) 
     function create_if_block_5(ctx) {
     	let th;
     	let img;
@@ -31375,9 +31375,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredetutorial.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			attr_dev(img, "class", "svelte-c1bvkv");
-    			add_location(img, file, 493, 28, 36883);
-    			add_location(th, file, 493, 24, 36879);
+    			attr_dev(img, "class", "svelte-133fi3v");
+    			add_location(img, file, 494, 28, 36889);
+    			add_location(th, file, 494, 24, 36885);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31392,14 +31392,14 @@ var app = (function () {
     		block,
     		id: create_if_block_5.name,
     		type: "if",
-    		source: "(493:45) ",
+    		source: "(494:45) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (491:20) {#if elementos == 0}
+    // (492:20) {#if elementos == 0}
     function create_if_block_4(ctx) {
     	let th;
     	let img;
@@ -31411,9 +31411,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaotutorial.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
-    			attr_dev(img, "class", "svelte-c1bvkv");
-    			add_location(img, file, 491, 28, 36749);
-    			add_location(th, file, 491, 24, 36745);
+    			attr_dev(img, "class", "svelte-133fi3v");
+    			add_location(img, file, 492, 28, 36755);
+    			add_location(th, file, 492, 24, 36751);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31428,14 +31428,14 @@ var app = (function () {
     		block,
     		id: create_if_block_4.name,
     		type: "if",
-    		source: "(491:20) {#if elementos == 0}",
+    		source: "(492:20) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (489:16) {#each linhas as elementos,j}
+    // (490:16) {#each linhas as elementos,j}
     function create_each_block_1(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteX*/ ctx[6] <= /*j*/ ctx[33] && /*LimiteX*/ ctx[6] + /*Dimensionamento*/ ctx[14] * 2 >= /*j*/ ctx[33] && create_if_block_3(ctx);
@@ -31473,14 +31473,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(489:16) {#each linhas as elementos,j}",
+    		source: "(490:16) {#each linhas as elementos,j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (486:8) {#each mapa0 as linhas,i}
+    // (487:8) {#each mapa0 as linhas,i}
     function create_each_block(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteY*/ ctx[7] <= /*i*/ ctx[30] && /*LimiteY*/ ctx[7] + /*Dimensionamento*/ ctx[14] * 2 >= /*i*/ ctx[30] && create_if_block_2(ctx);
@@ -31518,7 +31518,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(486:8) {#each mapa0 as linhas,i}",
+    		source: "(487:8) {#each mapa0 as linhas,i}",
     		ctx
     	});
 

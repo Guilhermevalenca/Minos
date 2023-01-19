@@ -464,6 +464,7 @@
         padding: 0px;
         margin: -2px;
     }
+    
 </style>
 <svelte:window on:keydown={handleKeydown}/>
 {#if (key)}
@@ -495,7 +496,7 @@
                     {:else if elementos == "X"}
                         <th><img src="/css/imagens/saidanivel3.png" alt="saida"></th>
                     {:else if elementos == "DANTE"}
-                        <th><img src="/css/imagens/soacabecinha.png" alt="personagem"></th>
+                        <th><img class="dante" src="/css/imagens/soacabecinha.png" alt="personagem"></th>
                     {/if}
                 {/if}
                 {/each}
