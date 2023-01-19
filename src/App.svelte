@@ -9,7 +9,7 @@
   	import Newjogo from './newjogo.svelte';
 </script>
 
-
+<!--
 <head>
 	<link rel="stylesheet" href="/css/appsvelte.css">
 </head>
@@ -34,3 +34,5 @@
 	</audio>
 </div>
 
+-->
+<Newjogo/>

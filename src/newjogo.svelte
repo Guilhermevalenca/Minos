@@ -167,7 +167,7 @@
         [2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
     ]
     //limite de renderização:
-    let Dimensionamento = 8;
+    let Dimensionamento = 7;
     let LimiteX = 0;
     let LimiteY = 0;
     function RenderizandoMapa(){
@@ -446,8 +446,8 @@
 
 <style>
     img{
-        height: 70px;
-        width: 70px;
+        height: 45px;
+        width: 45px;
         padding: 0px;
         margin: -2px;
     }
