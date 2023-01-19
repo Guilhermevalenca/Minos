@@ -24,3 +24,11 @@
 	<Ajuda/>
 {/if}
 
+
+
+<div>
+	<audio id="audio" autoplay loop>
+		<source src="/css/audio3.wav" type="audio/wav">
+		<source src="/css/audio2.ogg" type="audio/ogg">
+	</audio>
+</div>
