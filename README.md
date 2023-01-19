@@ -23,7 +23,7 @@
 
 <h2> Assíria Renara </h2> 
 
-<h5> Foi muito divertido o processo de criação dos personagens, frases, história e tudo mais; poém a programação foi o que mais me deu dor de cabeça por ter sido o meu primeiro contato com essa área. Ainda assim, gostei. A experiência se tornou melhor porque tive a ajuda do meu grupo, creio eu que o resultado ficou ótimo e conseguimos fazer um excelente jogo. </h5>
+<h5> Foi muito divertido o processo de criação dos personagens, frases, história e tudo mais; porém a programação foi o que mais me deu dor de cabeça por ter sido o meu primeiro contato com essa área. Ainda assim, gostei. A experiência se tornou melhor porque tive a ajuda do meu grupo, creio eu que o resultado ficou ótimo e conseguimos fazer um excelente jogo. </h5>
 
 
 <h2> Claudiane Rodrigues </h2>
