@@ -4,6 +4,7 @@
     import {estado} from './Estado.js'
     import { trocarEstadoDoJogo } from './Estado.js'
     import VoltarMenu from './VoltarMenu.svelte'
+    import { element } from 'svelte/internal';
     //utilizando função para controle do teclado:
     let key;
 	let code;
@@ -66,7 +67,9 @@
             MudançaDeFase = 2;
         }else if (teste == "Z") {
             MudançaDeFase = 3;
-        }return
+        }else if (teste == "C"){
+            MudançaDeFase = 5;
+        }
     }
     function resertar(){
         MudançaDeFase = 0;
@@ -180,7 +183,7 @@
         [2,1,0,1,1,0,0,0,1,0,1,0,1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,0,1,1,0,1,0,1,0,0,1,0,0,1,0,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,1,0,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,1,0,1],
         [2,1,0,1,1,1,0,1,1,0,1,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,0,1,0,0,0,1,0,0,1,0,0,1,1,1,1,0,0,0,0,0,0,0,0,1,0,1,1,0,1,0,1,0,1,0,0,1,1,0,1,1,1,1,1,1,1,1,0,1,0,1,0,1,0,1,0,1,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,0,0,1,1,1,1,1,1,1,1,1,1,0,1,0,1],
         [2,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,1,1,1,1,1,1,1,0,1,1,0,1,1,1,0,1,0,1,1,0,0,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,0,1,0,1,0,1,0,1,1,1,0,1,0,0,0,0,0,0,1,0,1,0,1,0,1,0,1,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1],
-        [2,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,0,1,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,1,0,1,1,1,0,0,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,0,1,0,1,1,1,0,1,0,1,1,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1],
+        [2,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,0,1,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,1,0,1,1,1,0,0,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,0,1,0,1,1,1,0,1,0,1,1,1,1,0,1,0,1,0,1,0,1,0,1,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1],
         [2,1,0,0,1,1,0,0,0,0,0,0,1,1,1,0,1,0,1,0,1,1,1,1,1,1,0,1,0,1,1,0,1,1,0,0,1,1,0,0,1,0,0,1,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,1,0,0,1,1,0,1,0,1,"V",0,0,0,1,0,1,0,1,0,1,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
         [2,1,1,0,0,1,0,1,1,0,1,1,0,0,0,0,1,0,1,0,1,1,1,1,1,1,0,1,0,1,1,0,1,1,0,1,1,0,0,1,0,0,1,1,1,0,1,1,1,0,1,0,1,1,1,1,1,1,1,1,0,1,0,1,0,1,0,1,1,0,0,1,0,1,0,1,1,1,1,1,1,0,1,0,1,0,1,0,0,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1],
         [2,1,1,1,0,1,0,0,0,0,1,0,1,1,1,0,1,0,1,0,1,1,1,1,1,1,0,0,0,0,0,0,1,1,0,1,0,0,1,0,0,1,1,1,1,1,0,0,1,1,1,0,1,0,0,0,0,0,0,1,0,1,0,1,0,1,0,1,1,1,0,1,0,1,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1],
@@ -227,6 +230,13 @@
         [2,1,1,1,0,0,1,1,0,1,1,0,1,0,0,0,0,0,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
         [2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 ]
+
+let mapa4 =[
+    [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"C"],
+    [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+]
+
     //variaveis de movimentação:
     let eixoX = 0;
     let eixoY = 0;
@@ -275,6 +285,8 @@
                 return '/css/imagens/chaonivel2.png'
             }else if (mapa == 3) {
                 return '/css/imagens/chaonivel3.png'
+            }else{
+                return '/csss/imagens/chaonivel3.png'
             }
     }
     function ClassDante(i,j,x,y,mapa){
@@ -287,6 +299,8 @@
                 return 'Dante2'
             }else if(mapa == 3){
                 return 'Dante3'
+            }else{
+                return 'Dante3'
             }
         }else{
             if(mapa == 0){
@@ -296,6 +310,8 @@
             }else if(mapa == 2){
                 return 'passagem2'
             }else if(mapa == 3){
+                return 'passagem3'
+            }else{
                 return 'passagem3'
             }      
         }
@@ -374,7 +390,7 @@
     {/if}
 
 
-{#if (MudançaDeFase == 0)}
+{#if (MudançaDeFase == 4)}
 
 
     <p class='FasesDoJogo'>Tutorial</p>
@@ -412,9 +428,12 @@
 {#if !enigma}
 
 
-    <p class='Enigma'>Sempre que você conseguir passar de uma fase, haverá um enigma para ser solucionado, lembre-se: a um limite de tempo, tanto para resolver os enigmas como para sair de cada labirinto, toda vez que você perder, voltará para o primeiro nivel.</p>
-    <p class="Enigma">OBS: lembre-se também que so serão aceitas letras maiusculas nas respostas de todo e qualquer enigma. Nenhuma das palavras chave conterá qualquer acento.</p>
-    <p class="Enigma">Após compreender o funcionamento do Minos Labyrinth, digite: "OK" e poderá prosseguir para a primeira fase.</p>
+<p class='Enigma'>Sempre que passar de fase, haverá um enigma a ser solucionado. </p>
+<p class='Enigma'>Lembre-se: Existe um limite de tempo tanto para resolver os enigmas, como para sair de cada labirinto. </p>
+<p class='Enigma'>Ao perder em qualquer nível, voltará para o primeiro.</p>
+<p class="Enigma">OBS: Só serão aceitas letras maiúsculas nas respostas de todos os enigmas.</p>
+<p class='Enigma'>Nenhuma das palavras-chave contém qualquer acento.</p>
+<p class="Enigma">Após compreender o funcionamento do Minos Labyrinth, digite: "OK" e poderá prosseguir para a primeira fase.</p>
 <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "OK")} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
     
 
@@ -518,7 +537,7 @@
         {:else if (estrada == 2)}
         <th class="MapaGeral"></th>
         {:else if (estrada == 1)}
-        <th id="MapaGeral"><img class="tabela" src="/css/imagens/paredenivel3.png" alt="parede"></th>
+        <th id="MapaGeral"><img class="parede" src="/css/imagens/paredenivel3.png" alt="parede"></th>
         {:else}
         <th id='MapaGeral'><img class="saida" src="/css/imagens/saidanivel3.png" alt='parede'></th>
         {/if}
@@ -527,17 +546,34 @@
 {/each}
 </table>
 {/if}
-{:else if (MudançaDeFase == 4)}
+{:else if (MudançaDeFase == 0)}
+
+<p class='FasesDoJogo'>Nivel 3</p>
 
 {clearInterval(NewTempo)}
 {#if !enigma}
     {EnigmaTime(MudançaDeFase)}
-    <p class='Enigma'>Escrever o enigma aqui</p>
-<input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "OLA")} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
+    <p class='Enigma'>Se você me tem, quer me compartilhar; se você não me compartilha, você me manteve. O que eu sou?</p>
+<input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "SEGREDO")} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
 
 {:else}
 {clearInterval(NewTempo)}
 <Vitoria/>
-{/if}
-{/if}
+<table class='mapa'>
+    {#each mapa4 as elementos,i}
+    <tr class='linhas da tabela'> 
+        {#each reagiao as estrada,j}
+        
+        {#if elementos == 0}
+       
 
+        <th id="MapaGeral"><img id='ChaoNoGeral' class="{ClassDante(i,j,eixoX,eixoY,MudançaDeFase)}" src="{IMGmovimentacao(i,j,eixoX,eixoY,MudançaDeFase)}" alt="estrada"></th>
+            <td id="MapaGeral"><img id="ChaoNoGeral" class="passagem3" src="/css/imagens/chaonivel3.PNG" alt="chao"></td>
+            {:else if elementos == "C"}
+            <td id="MapaGeral"><img class='parede' src="/css/imagens/paredetutorial1.png" alt="parede"></td>
+        {/if}
+    {/each}
+</tr>
+</table>
+{/if}
+{/if}
