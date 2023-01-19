@@ -455,13 +455,13 @@
 <svelte:window on:keydown={handleKeydown}/>
 {#if (key)}
         {#if (code == "ArrowUp")}
-            {DecrementarY()}<!--para cima-->
+            {DecrementarY()}para cima
         {:else if (code == "ArrowDown")}
-            {IncremetarY()}<!--para baixo-->
+            {IncremetarY()}para baixo
         {:else if (code == "ArrowLeft")}
-            {DecrementarX()}<!--para esquerda-->
+            {DecrementarX()}para esquerda
         {:else if (code == "ArrowRight")}
-            {IncremetarX()} <!--para direita-->
+            {IncremetarX()} para direita
         {/if}
 {/if}
 {RenderizandoMapa()}
