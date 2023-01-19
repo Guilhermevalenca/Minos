@@ -274,7 +274,7 @@ let mapa4 =[
     //carregando a imagem do jogador ou da estrada
     function IMGmovimentacao(i,j,x,y,mapa){
             if (y == i && x == j) {
-                return '/css/imagens/soacabecinha.png'
+                return '/css/imagens/Dante.png'
             }
             //Chao do mapa:
             if (mapa == 0) {
@@ -390,7 +390,7 @@ let mapa4 =[
     {/if}
 
 
-{#if (MudançaDeFase == 4)}
+{#if (MudançaDeFase == 0)}
 
 
     <p class='FasesDoJogo'>Tutorial</p>
@@ -546,7 +546,8 @@ let mapa4 =[
 {/each}
 </table>
 {/if}
-{:else if (MudançaDeFase == 0)}
+
+{:else if (MudançaDeFase == 4)}
 
 <p class='FasesDoJogo'>Nivel 3</p>
 
@@ -574,4 +575,5 @@ let mapa4 =[
 {/each}
 </table>
 {/if}
+
 {/if}
