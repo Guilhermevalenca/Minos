@@ -377,18 +377,17 @@ let mapa4 =[
 <svelte:window on:keydown={handleKeydown}/>
 <VoltarMenu/>
 
-
- {#if (key)}
+{#if (key)}
             {#if (code == "ArrowUp")}
-            {decrementarY()} para cima
+            {decrementarY()} <!--para cima-->
             {:else if (code == "ArrowDown")}
-            {incremetarY()} para baixo
+            {incremetarY()} <!--para baixo-->
             {:else if (code == "ArrowLeft")}
-            {decrementarX()}    para esquerda
+            {decrementarX()}    <!--para esquerda-->
             {:else if (code == "ArrowRight")}
-            {incremetarX()} para direita
+            {incremetarX()} <!--para direita-->
         {/if}
-    {/if} 
+    {/if}
 
 
 {#if (MudançaDeFase == 0)}
@@ -547,5 +546,34 @@ let mapa4 =[
 {/each}
 </table>
 {/if}
+
+{:else if (MudançaDeFase == 4)}
+
+<p class='FasesDoJogo'>Nivel 3</p>
+
+{clearInterval(NewTempo)}
+{#if !enigma}
+    {EnigmaTime(MudançaDeFase)}
+    <p class='Enigma'>Se você me tem, quer me compartilhar; se você não me compartilha, você me manteve. O que eu sou?</p>
+<input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "SEGREDO")} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
+
+{:else}
+{clearInterval(NewTempo)}
+<Vitoria/>
+<table class='mapa'>
+    {#each mapa4 as elementos,i}
+    <tr class='linhas da tabela'> 
+        {#each elementos as estrada,j}
+        
+        {#if estrada == 0}
+            <th id="MapaGeral"><img id='ChaoNoGeral' class="{ClassDante(i,j,eixoX,eixoY,MudançaDeFase)}" src="{IMGmovimentacao(i,j,eixoX,eixoY,MudançaDeFase)}" alt="estrada"></th>
+            {:else if estrada == "C"}
+            <th id="MapaGeral"><img class='parede' src="/css/imagens/paredetutorial1.png" alt="parede"></th>
+        {/if}
+    {/each}
+</tr>
+{/each}
+</table>
 {/if}
 
+{/if}

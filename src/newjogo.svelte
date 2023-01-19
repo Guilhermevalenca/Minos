@@ -184,7 +184,7 @@
         }else if(MudandoDeFase == "nivel1"){
             for(let i in mapa1){
                 for(let j in mapa1[i]){
-                    if(mapa1[i][j]){
+                    if(mapa1[i][j] == "DANTE"){
                         LimiteX = j - Dimensionamento;
                         LimiteY = i - Dimensionamento;
                         return
@@ -194,7 +194,7 @@
         }else if(MudandoDeFase == "nivel2"){
             for(let i in mapa2){
                 for(let j in mapa2[i]){
-                    if(mapa2[i][j]){
+                    if(mapa2[i][j] == "DANTE"){
                         LimiteX = j - Dimensionamento;
                         LimiteY = i - Dimensionamento;
                         return
@@ -204,7 +204,7 @@
         }else if(MudandoDeFase == "nivel3"){
             for(let i in mapa3){
                 for(let j in mapa3[i]){
-                    if(mapa3[i][j]){
+                    if(mapa3[i][j] == "DANTE"){
                         LimiteX = j - Dimensionamento;
                         LimiteY = i - Dimensionamento;
                         return
@@ -455,21 +455,20 @@
 <svelte:window on:keydown={handleKeydown}/>
 {#if (key)}
         {#if (code == "ArrowUp")}
-            {DecrementarY()}para cima
+            {DecrementarY()} <!--para cima -->
         {:else if (code == "ArrowDown")}
-            {IncremetarY()}para baixo
+            {IncremetarY()} <!--para baixo-->
         {:else if (code == "ArrowLeft")}
-            {DecrementarX()}para esquerda
+            {DecrementarX()} <!--para esquerda-->
         {:else if (code == "ArrowRight")}
-            {IncremetarX()} para direita
+            {IncremetarX()} <!--para direita-->
         {/if}
 {/if}
-{RenderizandoMapa()}
 {#if MudandoDeFase == "tutorial"}
+{RenderizandoMapa()}
 {DeterminandoEixos(MudandoDeFase)}
     {#each mapa0 as linhas,i}
     {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
-        
         <tr>
             {#each linhas as elementos,j}
             {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
@@ -488,9 +487,13 @@
     {/if}
     {/each}
     {:else if MudandoDeFase == "nivel1"}
+    {RenderizandoMapa()}
+    {DeterminandoEixos(MudandoDeFase)}
         {#each mapa1 as linhas,i}
+        {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
             <tr>
                 {#each linhas as elementos,j}
+                {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
                     {#if elementos == 0}
                         <th><img src="/css/imagens/chaonivel1.png" alt="chao"></th>
                     {:else if elementos == 1}
@@ -500,13 +503,19 @@
                     {:else if elementos == "DANTE"}
                         <th><img src="/css/imagens/soacabecinha.png" alt="personagem"></th>
                     {/if}
+                    {/if}
                 {/each}
             </tr>
+            {/if}
         {/each}
     {:else if MudandoDeFase == "nivel2"}
+    {RenderizandoMapa()}
+    {DeterminandoEixos(MudandoDeFase)}
         {#each mapa2 as linhas,i}
+        {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
             <tr>
                 {#each linhas as elementos,j}
+                {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
                     {#if elementos == 0}
                         <th><img src="/css/imagens/chaonivel2.png" alt="chao"></th>
                     {:else if elementos == 1}
@@ -516,13 +525,19 @@
                     {:else if elementos == "DANTE"}
                         <th><img src="/css/imagens/soacabecinha.png" alt="personagem"></th>
                     {/if}
+                    {/if}
                 {/each}
             </tr>
+        {/if}
         {/each}
     {:else if MudandoDeFase == "nivel3"}
+    {RenderizandoMapa()}
+    {DeterminandoEixos(MudandoDeFase)}
         {#each mapa2 as linhas,i}
+        {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
             <tr>
                 {#each linhas as elementos,j}
+                {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
                     {#if elementos == 0}
                         <th><img src="/css/imagens/chaonivel3.png" alt="chao"></th>
                     {:else if elementos == 1}
@@ -532,8 +547,10 @@
                     {:else if elementos == "DANTE"}
                         <th><img src="/css/imagens/soacabecinha.png" alt="personagem"></th>
                     {/if}
+                    {/if}
                 {/each}
             </tr>
+            {/if}
         {/each}
     {:else if MudandoDeFase == "vitoria"}
     <h1>vc venceu</h1>
