@@ -25,9 +25,6 @@
 	<Ajuda/>
 {/if}
 
-
-
-
 <div>
 	<audio id="audio" autoplay loop>
 		<source src="/css/audio3.wav" type="audio/wav">
