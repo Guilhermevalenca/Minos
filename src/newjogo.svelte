@@ -218,6 +218,7 @@
     let EixoY = 0;
     let SaveX = 0;
     let SaveY = 0;
+    let PontoDeSave = [0,0];
     function DeterminandoEixos(fase){
         if(fase == "tutorial"){
             for(let i in mapa0){
@@ -235,6 +236,8 @@
                     if(mapa1[i][j] == "DANTE"){
                         EixoX = j;
                         EixoY = i;
+                        PontoDeSave[0] = EixoX;
+                        PontoDeSave[1] = EixoY;
                         return
                     }
                 }
@@ -260,6 +263,13 @@
                 }
             }
         }
+    }
+    function RetornaAoSave(){
+        mapa1[EixoY][EixoX] = 0;
+        EixoX = PontoDeSave[0];
+        EixoY = PontoDeSave[1];
+        mapa1[EixoY][EixoX] = "DANTE"
+        return
     }
     function ResertarPosicao(){
         EixoX = SaveX;
@@ -427,33 +437,63 @@
     function MudarDeFase(FaseAtual){
         if(FaseAtual == "X"){
             
-            MudandoDeFase = "nivel1";
+            enigma = true;
         
         }else if(FaseAtual == "Y"){
             
-            MudandoDeFase = "nivel2";
+            enigma = true;
         
         }else if(FaseAtual == "Z"){
             
-            MudandoDeFase = "nivel3";
+            enigma = true;
         
         }else if(FaseAtual == "V"){
             
-            MudandoDeFase = "Vitoria"
+            enigma = true;
         
         }
     }
     //Referente aos enigmas:
     let enigma = false;
     let PalavraChave = '';
-    function Alterando(teste){
+    function Alterando(teste, fase){
         if(teste){
             enigma = teste;
             PalavraChave = '';
-        }else{
-            enigma = teste;
-            PalavraChave = '';
+            if(fase == "tutorial"){
+
+                MudandoDeFase = "nivel1";
+            
+            }else if(fase == "nivel1"){
+                
+                MudandoDeFase = "nivel2"; 
+            
+            }else if(fase == "nivel2"){
+                
+                MudandoDeFase = "nivel3";
+            
+            }else if(fase == "nivel3"){
+                
+                MudandoDeFase = "vitoria";
+            
+            }enigma = false;
         }return enigma
+    }
+    let Tempo;
+    let contador = 60
+    function TempoEnigma(){
+        Tempo = setInterval( () => {
+            contador--
+            if(contador == 0){
+                alert('vc perdeu')
+                RetornaAoSave()
+                MudandoDeFase = "nivel1"
+                enigma = false;
+                clearInterval(Tempo)
+                contador = 60;
+                return
+        }
+        },1000)
     }
 </script>
 
@@ -511,11 +551,15 @@
         <p class="Enigma">OBS: Só serão aceitas letras maiúsculas nas respostas de todos os enigmas.</p>
         <p class='Enigma'>Nenhuma das palavras-chave contém qualquer acento.</p>
         <p class="Enigma">Após compreender o funcionamento do Minos Labyrinth, digite: "OK" e poderá prosseguir para a primeira fase.</p>
-        <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "OK")} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
+        <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "OK",MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
         
 
     {/if}
     {:else if MudandoDeFase == "nivel1"}
+
+    {#if !enigma}
+        
+    
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
         {#each mapa1 as linhas,i}
@@ -537,7 +581,17 @@
             </tr>
             {/if}
         {/each}
+        {:else}
+        {TempoEnigma()}
+        <p>{contador}</p>
+        <p class='Enigma'>Fui levado para um quarto escuro e incendiado. Eu chorei e então minha cabeça foi cortada. Quem sou eu?</p>
+    <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "VELA",MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
+
+        {/if}
     {:else if MudandoDeFase == "nivel2"}
+    {#if !enigma}
+        
+    
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
         {#each mapa2 as linhas,i}
@@ -559,7 +613,15 @@
             </tr>
         {/if}
         {/each}
+        {:else}
+        <p class='Enigma'>Poder suficiente para esmagar navios e quebrar telhados mas mesmo assim tenho medo do sol, quem eu sou?</p>
+        <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "GELO",MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
+
+        {/if}
     {:else if MudandoDeFase == "nivel3"}
+    {#if !enigma}
+        
+    
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
     <p>{EixoX},{EixoY}</p>
@@ -582,7 +644,10 @@
             </tr>
             {/if}
         {/each}
+        {:else}
+        <p class='Enigma'>Se você me tem, quer me compartilhar; se você não me compartilha, você me manteve. O que eu sou?</p>
+        <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "SEGREDO",MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>        
+        {/if}
     {:else if MudandoDeFase == "vitoria"}
-    <h1>vc venceu</h1>
+    <h1>vc venceu!</h1>
 {/if}
-
