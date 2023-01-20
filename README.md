@@ -36,5 +36,4 @@
 
 <h2> Guilherme Valença </h2>
 
-<img src='/public/css/imagens/chao1.png' alt='qualquercoisa'>
 
