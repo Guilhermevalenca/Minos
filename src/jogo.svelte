@@ -390,8 +390,7 @@ let mapa4 =[
         {/if}
     {/if}
 
-{#if (MudançaDeFase == 2)}
-
+{#if (MudançaDeFase == 0)}
 
 
     <p class='FasesDoJogo'>Tutorial</p>
@@ -466,7 +465,7 @@ let mapa4 =[
 {/each}
 </table>
 {/if}
-{:else if (MudançaDeFase == 0)}
+{:else if (MudançaDeFase == 2)}
 
 <p class='FasesDoJogo'>Nivel 2</p>
 
@@ -504,7 +503,7 @@ let mapa4 =[
 {/each}
 </table>
 {/if}
-{:else if (MudançaDeFase == 0)}
+{:else if (MudançaDeFase == 3)}
 
 
 {clearInterval(NewTempo)}

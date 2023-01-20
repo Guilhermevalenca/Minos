@@ -1,0 +1,82 @@
+h1{
+    font-family:'Felix Titling';
+    font-size: 200%;
+    border-style:hidden;
+   text-align: center;
+   color: rgb(184, 184, 6);
+   background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+   margin: 0%;
+   margin-top: 100px;
+}
+
+h2{
+    font-family:'Felix Titling';
+    font-size: 200%;
+    border-style:hidden;
+   text-align: center;
+   color: rgb(184, 184, 6);
+   background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+   margin: 0%;
+   margin-top: 8px;
+   margin-left: 1%;
+}
+
+h3{
+    font-family:'Felix Titling';
+    font-size: 180%;
+    border-style:hidden;
+   text-align: center;
+   color: rgb(184, 184, 6);
+   background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+   margin: 0%;
+   margin-top: 100px;
+   margin-left: 1%;
+}
+
+p{
+    font-size: 25px;
+    text-align: center; 
+    color: #ffff00;
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 1%;
+}
+
+h4{
+    font-family:'Felix Titling';
+    font-size: 180%;
+    border-style:hidden;
+   text-align: center;
+   color: rgb(184, 184, 6);
+   background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+   margin: 0%;
+   margin-top: 30px;
+   margin-left: 1%;
+}
+
+h5{
+    font-family:'Felix Titling';
+    font-size: 180%;
+    border-style:hidden;
+   text-align: center;
+   color: rgb(184, 184, 6);
+   background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+   margin: 0%;
+   margin-top: 100px;
+   margin-left: 1%;
+}

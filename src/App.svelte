@@ -7,9 +7,10 @@
 	import {estado} from './Estado.js'
 	import Teste from './teste.svelte'
   	import Newjogo from './newjogo.svelte';
+    import Creditos from './creditos.svelte';
 </script>
 
-
+ 
 <head>
 	<link rel="stylesheet" href="/css/appsvelte.css">
 </head>
@@ -34,3 +35,6 @@
 	</audio>
 </div> 
 	
+
+<Creditos/>
+
