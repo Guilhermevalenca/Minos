@@ -29942,7 +29942,7 @@ var app = (function () {
     	function select_block_type_6(ctx, dirty) {
     		if (/*elementos*/ ctx[31] == 0) return create_if_block_25;
     		if (/*elementos*/ ctx[31] == 1) return create_if_block_26;
-    		if (/*elementos*/ ctx[31] == "Z") return create_if_block_27;
+    		if (/*elementos*/ ctx[31] == "V") return create_if_block_27;
     		if (/*elementos*/ ctx[31] == "DANTE") return create_if_block_28;
     	}
 

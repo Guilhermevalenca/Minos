@@ -572,7 +572,7 @@
                         <th><img src="/css/imagens/chaonivel3.png" alt="chao"></th>
                     {:else if elementos == 1}
                         <th><img src="/css/imagens/paredenivel3.png" alt="parede"></th>
-                    {:else if elementos == "Z"}
+                    {:else if elementos == "V"}
                         <th><img src="/css/imagens/saidanivel3.png" alt="saida"></th>
                     {:else if elementos == "DANTE"}
                         <th><img src="/css/imagens/soacabecinha.png" alt="personagem"></th>
