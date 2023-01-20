@@ -390,12 +390,8 @@ let mapa4 =[
         {/if}
     {/if}
 
-
-<<<<<<< HEAD
 {#if (MudançaDeFase == 2)}
-=======
-{#if (MudançaDeFase == 9)}
->>>>>>> b7b2c65867287bbc890ab3c360845db63d1cd776
+
 
 
     <p class='FasesDoJogo'>Tutorial</p>
