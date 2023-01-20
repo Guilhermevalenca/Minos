@@ -4743,7 +4743,7 @@ var app = (function () {
     		if (/*code*/ ctx[1] == "ArrowUp") return create_if_block_32$1;
     		if (/*code*/ ctx[1] == "ArrowDown") return create_if_block_33$1;
     		if (/*code*/ ctx[1] == "ArrowLeft") return create_if_block_34$1;
-    		if (/*code*/ ctx[1] == "ArrowRight") return create_if_block_35;
+    		if (/*code*/ ctx[1] == "ArrowRight") return create_if_block_35$1;
     	}
 
     	let current_block_type = select_block_type(ctx);
@@ -4792,7 +4792,7 @@ var app = (function () {
     }
 
     // (388:45) 
-    function create_if_block_35(ctx) {
+    function create_if_block_35$1(ctx) {
     	let t_value = /*incremetarX*/ ctx[18]() + "";
     	let t;
 
@@ -4811,7 +4811,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_35.name,
+    		id: create_if_block_35$1.name,
     		type: "if",
     		source: "(388:45) ",
     		ctx
@@ -5091,7 +5091,7 @@ var app = (function () {
 
     	function select_block_type_5(ctx, dirty) {
     		if (!/*enigma*/ ctx[6]) return create_if_block_14$1;
-    		return create_else_block_3;
+    		return create_else_block_3$1;
     	}
 
     	let current_block_type = select_block_type_5(ctx);
@@ -5158,7 +5158,7 @@ var app = (function () {
 
     	function select_block_type_3(ctx, dirty) {
     		if (!/*enigma*/ ctx[6]) return create_if_block_7$2;
-    		return create_else_block_1$1;
+    		return create_else_block_1$2;
     	}
 
     	let current_block_type = select_block_type_3(ctx);
@@ -6269,7 +6269,7 @@ var app = (function () {
     }
 
     // (480:0) {:else}
-    function create_else_block_3(ctx) {
+    function create_else_block_3$1(ctx) {
     	let t0_value = clearInterval(/*NewTempo*/ ctx[2]) + "";
     	let t0;
     	let t1;
@@ -6360,7 +6360,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block_3.name,
+    		id: create_else_block_3$1.name,
     		type: "else",
     		source: "(480:0) {:else}",
     		ctx
@@ -6795,7 +6795,7 @@ var app = (function () {
     }
 
     // (441:0) {:else}
-    function create_else_block_1$1(ctx) {
+    function create_else_block_1$2(ctx) {
     	let t0_value = /*time*/ ctx[10](/*MudançaDeFase*/ ctx[3]) + "";
     	let t0;
     	let t1;
@@ -6876,7 +6876,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block_1$1.name,
+    		id: create_else_block_1$2.name,
     		type: "else",
     		source: "(441:0) {:else}",
     		ctx
@@ -7012,7 +7012,7 @@ var app = (function () {
     }
 
     // (460:8) {:else}
-    function create_else_block_2(ctx) {
+    function create_else_block_2$1(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -7040,7 +7040,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block_2.name,
+    		id: create_else_block_2$1.name,
     		type: "else",
     		source: "(460:8) {:else}",
     		ctx
@@ -7235,7 +7235,7 @@ var app = (function () {
     		if (/*estrada*/ ctx[41] == 0) return create_if_block_10$2;
     		if (/*estrada*/ ctx[41] == 2) return create_if_block_11$2;
     		if (/*estrada*/ ctx[41] == 1) return create_if_block_12$1;
-    		return create_else_block_2;
+    		return create_else_block_2$1;
     	}
 
     	let current_block_type = select_block_type_4(ctx);
@@ -20928,7 +20928,7 @@ var app = (function () {
     }
 
     // (192:1) {:else}
-    function create_else_block_1(ctx) {
+    function create_else_block_1$1(ctx) {
     	let p;
 
     	const block = {
@@ -20948,7 +20948,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block_1.name,
+    		id: create_else_block_1$1.name,
     		type: "else",
     		source: "(192:1) {:else}",
     		ctx
@@ -21431,7 +21431,7 @@ var app = (function () {
 
     	function select_block_type_1(ctx, dirty) {
     		if (/*key*/ ctx[0]) return create_if_block_5$1;
-    		return create_else_block_1;
+    		return create_else_block_1$1;
     	}
 
     	let current_block_type = select_block_type_1(ctx);
@@ -29264,69 +29264,69 @@ var app = (function () {
 
     function get_each_context_6(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[28] = list[i];
-    	child_ctx[30] = i;
+    	child_ctx[36] = list[i];
+    	child_ctx[38] = i;
     	return child_ctx;
     }
 
     function get_each_context_7(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[31] = list[i];
-    	child_ctx[33] = i;
+    	child_ctx[39] = list[i];
+    	child_ctx[41] = i;
     	return child_ctx;
     }
 
     function get_each_context_4(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[28] = list[i];
-    	child_ctx[30] = i;
+    	child_ctx[36] = list[i];
+    	child_ctx[38] = i;
     	return child_ctx;
     }
 
     function get_each_context_5(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[31] = list[i];
-    	child_ctx[33] = i;
+    	child_ctx[39] = list[i];
+    	child_ctx[41] = i;
     	return child_ctx;
     }
 
     function get_each_context_2(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[28] = list[i];
-    	child_ctx[30] = i;
+    	child_ctx[36] = list[i];
+    	child_ctx[38] = i;
     	return child_ctx;
     }
 
     function get_each_context_3(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[31] = list[i];
-    	child_ctx[33] = i;
+    	child_ctx[39] = list[i];
+    	child_ctx[41] = i;
     	return child_ctx;
     }
 
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[28] = list[i];
-    	child_ctx[30] = i;
+    	child_ctx[36] = list[i];
+    	child_ctx[38] = i;
     	return child_ctx;
     }
 
     function get_each_context_1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[31] = list[i];
-    	child_ctx[33] = i;
+    	child_ctx[39] = list[i];
+    	child_ctx[41] = i;
     	return child_ctx;
     }
 
-    // (470:0) {#if (key)}
-    function create_if_block_30(ctx) {
+    // (510:0) {#if (key)}
+    function create_if_block_33(ctx) {
     	let if_block_anchor;
 
     	function select_block_type(ctx, dirty) {
-    		if (/*code*/ ctx[1] == "ArrowUp") return create_if_block_31;
-    		if (/*code*/ ctx[1] == "ArrowDown") return create_if_block_32;
-    		if (/*code*/ ctx[1] == "ArrowLeft") return create_if_block_33;
-    		if (/*code*/ ctx[1] == "ArrowRight") return create_if_block_34;
+    		if (/*code*/ ctx[1] == "ArrowUp") return create_if_block_34;
+    		if (/*code*/ ctx[1] == "ArrowDown") return create_if_block_35;
+    		if (/*code*/ ctx[1] == "ArrowLeft") return create_if_block_36;
+    		if (/*code*/ ctx[1] == "ArrowRight") return create_if_block_37;
     	}
 
     	let current_block_type = select_block_type(ctx);
@@ -29365,18 +29365,105 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_30.name,
+    		id: create_if_block_33.name,
     		type: "if",
-    		source: "(470:0) {#if (key)}",
+    		source: "(510:0) {#if (key)}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (477:41) 
+    // (517:41) 
+    function create_if_block_37(ctx) {
+    	let t_value = /*IncremetarX*/ ctx[18]() + "";
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text(t_value);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_37.name,
+    		type: "if",
+    		source: "(517:41) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (515:40) 
+    function create_if_block_36(ctx) {
+    	let t_value = /*DecrementarX*/ ctx[19]() + "";
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text(t_value);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_36.name,
+    		type: "if",
+    		source: "(515:40) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (513:40) 
+    function create_if_block_35(ctx) {
+    	let t_value = /*IncremetarY*/ ctx[20]() + "";
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text(t_value);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_35.name,
+    		type: "if",
+    		source: "(513:40) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (511:8) {#if (code == "ArrowUp")}
     function create_if_block_34(ctx) {
-    	let t_value = /*IncremetarX*/ ctx[17]() + "";
+    	let t_value = /*DecrementarY*/ ctx[21]() + "";
     	let t;
 
     	const block = {
@@ -29396,109 +29483,22 @@ var app = (function () {
     		block,
     		id: create_if_block_34.name,
     		type: "if",
-    		source: "(477:41) ",
+    		source: "(511:8) {#if (code == \\\"ArrowUp\\\")}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (475:40) 
-    function create_if_block_33(ctx) {
-    	let t_value = /*DecrementarX*/ ctx[18]() + "";
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			t = text(t_value);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
-    		},
-    		p: noop,
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_33.name,
-    		type: "if",
-    		source: "(475:40) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (473:40) 
+    // (651:41) 
     function create_if_block_32(ctx) {
-    	let t_value = /*IncremetarY*/ ctx[19]() + "";
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			t = text(t_value);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
-    		},
-    		p: noop,
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_32.name,
-    		type: "if",
-    		source: "(473:40) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (471:8) {#if (code == "ArrowUp")}
-    function create_if_block_31(ctx) {
-    	let t_value = /*DecrementarY*/ ctx[20]() + "";
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			t = text(t_value);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
-    		},
-    		p: noop,
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_31.name,
-    		type: "if",
-    		source: "(471:8) {#if (code == \\\"ArrowUp\\\")}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (585:41) 
-    function create_if_block_29(ctx) {
     	let h1;
 
     	const block = {
     		c: function create() {
     			h1 = element("h1");
-    			h1.textContent = "vc venceu";
-    			add_location(h1, file, 585, 4, 41372);
+    			h1.textContent = "vc venceu!";
+    			add_location(h1, file, 651, 4, 43665);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -29511,291 +29511,154 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_29.name,
+    		id: create_if_block_32.name,
     		type: "if",
-    		source: "(585:41) ",
+    		source: "(651:41) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (562:40) 
-    function create_if_block_22(ctx) {
-    	let t0_value = /*RenderizandoMapa*/ ctx[15]() + "";
-    	let t0;
-    	let t1;
-    	let t2_value = /*DeterminandoEixos*/ ctx[16](/*MudandoDeFase*/ ctx[10]) + "";
-    	let t2;
-    	let t3;
-    	let p;
-    	let t4;
-    	let t5;
-    	let t6;
-    	let t7;
-    	let each_1_anchor;
-    	let each_value_6 = /*mapa3*/ ctx[5];
-    	validate_each_argument(each_value_6);
-    	let each_blocks = [];
+    // (621:40) 
+    function create_if_block_24(ctx) {
+    	let if_block_anchor;
 
-    	for (let i = 0; i < each_value_6.length; i += 1) {
-    		each_blocks[i] = create_each_block_6(get_each_context_6(ctx, each_value_6, i));
+    	function select_block_type_8(ctx, dirty) {
+    		if (!/*enigma*/ ctx[11]) return create_if_block_25;
+    		return create_else_block_3;
     	}
+
+    	let current_block_type = select_block_type_8(ctx);
+    	let if_block = current_block_type(ctx);
 
     	const block = {
     		c: function create() {
-    			t0 = text(t0_value);
-    			t1 = space();
-    			t2 = text(t2_value);
-    			t3 = space();
-    			p = element("p");
-    			t4 = text(/*EixoX*/ ctx[8]);
-    			t5 = text(",");
-    			t6 = text(/*EixoY*/ ctx[9]);
-    			t7 = space();
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].c();
-    			}
-
-    			each_1_anchor = empty();
-    			add_location(p, file, 564, 4, 40378);
+    			if_block.c();
+    			if_block_anchor = empty();
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, t0, anchor);
-    			insert_dev(target, t1, anchor);
-    			insert_dev(target, t2, anchor);
-    			insert_dev(target, t3, anchor);
-    			insert_dev(target, p, anchor);
-    			append_dev(p, t4);
-    			append_dev(p, t5);
-    			append_dev(p, t6);
-    			insert_dev(target, t7, anchor);
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(target, anchor);
-    			}
-
-    			insert_dev(target, each_1_anchor, anchor);
+    			if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*MudandoDeFase*/ 1024 && t2_value !== (t2_value = /*DeterminandoEixos*/ ctx[16](/*MudandoDeFase*/ ctx[10]) + "")) set_data_dev(t2, t2_value);
-    			if (dirty[0] & /*EixoX*/ 256) set_data_dev(t4, /*EixoX*/ ctx[8]);
-    			if (dirty[0] & /*EixoY*/ 512) set_data_dev(t6, /*EixoY*/ ctx[9]);
+    			if (current_block_type === (current_block_type = select_block_type_8(ctx)) && if_block) {
+    				if_block.p(ctx, dirty);
+    			} else {
+    				if_block.d(1);
+    				if_block = current_block_type(ctx);
 
-    			if (dirty[0] & /*mapa3, LimiteX, Dimensionamento, LimiteY*/ 16608) {
-    				each_value_6 = /*mapa3*/ ctx[5];
-    				validate_each_argument(each_value_6);
-    				let i;
-
-    				for (i = 0; i < each_value_6.length; i += 1) {
-    					const child_ctx = get_each_context_6(ctx, each_value_6, i);
-
-    					if (each_blocks[i]) {
-    						each_blocks[i].p(child_ctx, dirty);
-    					} else {
-    						each_blocks[i] = create_each_block_6(child_ctx);
-    						each_blocks[i].c();
-    						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
-    					}
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
     				}
-
-    				for (; i < each_blocks.length; i += 1) {
-    					each_blocks[i].d(1);
-    				}
-
-    				each_blocks.length = each_value_6.length;
     			}
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t0);
-    			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(t3);
-    			if (detaching) detach_dev(p);
-    			if (detaching) detach_dev(t7);
-    			destroy_each(each_blocks, detaching);
-    			if (detaching) detach_dev(each_1_anchor);
+    			if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_22.name,
+    		id: create_if_block_24.name,
     		type: "if",
-    		source: "(562:40) ",
+    		source: "(621:40) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (540:40) 
-    function create_if_block_15(ctx) {
-    	let t0_value = /*RenderizandoMapa*/ ctx[15]() + "";
-    	let t0;
-    	let t1;
-    	let t2_value = /*DeterminandoEixos*/ ctx[16](/*MudandoDeFase*/ ctx[10]) + "";
-    	let t2;
-    	let t3;
-    	let each_1_anchor;
-    	let each_value_4 = /*mapa2*/ ctx[4];
-    	validate_each_argument(each_value_4);
-    	let each_blocks = [];
+    // (591:40) 
+    function create_if_block_16(ctx) {
+    	let if_block_anchor;
 
-    	for (let i = 0; i < each_value_4.length; i += 1) {
-    		each_blocks[i] = create_each_block_4(get_each_context_4(ctx, each_value_4, i));
+    	function select_block_type_6(ctx, dirty) {
+    		if (!/*enigma*/ ctx[11]) return create_if_block_17;
+    		return create_else_block_2;
     	}
+
+    	let current_block_type = select_block_type_6(ctx);
+    	let if_block = current_block_type(ctx);
 
     	const block = {
     		c: function create() {
-    			t0 = text(t0_value);
-    			t1 = space();
-    			t2 = text(t2_value);
-    			t3 = space();
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].c();
-    			}
-
-    			each_1_anchor = empty();
+    			if_block.c();
+    			if_block_anchor = empty();
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, t0, anchor);
-    			insert_dev(target, t1, anchor);
-    			insert_dev(target, t2, anchor);
-    			insert_dev(target, t3, anchor);
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(target, anchor);
-    			}
-
-    			insert_dev(target, each_1_anchor, anchor);
+    			if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*MudandoDeFase*/ 1024 && t2_value !== (t2_value = /*DeterminandoEixos*/ ctx[16](/*MudandoDeFase*/ ctx[10]) + "")) set_data_dev(t2, t2_value);
+    			if (current_block_type === (current_block_type = select_block_type_6(ctx)) && if_block) {
+    				if_block.p(ctx, dirty);
+    			} else {
+    				if_block.d(1);
+    				if_block = current_block_type(ctx);
 
-    			if (dirty[0] & /*mapa2, LimiteX, Dimensionamento, LimiteY*/ 16592) {
-    				each_value_4 = /*mapa2*/ ctx[4];
-    				validate_each_argument(each_value_4);
-    				let i;
-
-    				for (i = 0; i < each_value_4.length; i += 1) {
-    					const child_ctx = get_each_context_4(ctx, each_value_4, i);
-
-    					if (each_blocks[i]) {
-    						each_blocks[i].p(child_ctx, dirty);
-    					} else {
-    						each_blocks[i] = create_each_block_4(child_ctx);
-    						each_blocks[i].c();
-    						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
-    					}
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
     				}
-
-    				for (; i < each_blocks.length; i += 1) {
-    					each_blocks[i].d(1);
-    				}
-
-    				each_blocks.length = each_value_4.length;
     			}
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t0);
-    			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(t3);
-    			destroy_each(each_blocks, detaching);
-    			if (detaching) detach_dev(each_1_anchor);
+    			if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_15.name,
+    		id: create_if_block_16.name,
     		type: "if",
-    		source: "(540:40) ",
+    		source: "(591:40) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (518:40) 
+    // (558:40) 
     function create_if_block_8(ctx) {
-    	let t0_value = /*RenderizandoMapa*/ ctx[15]() + "";
-    	let t0;
-    	let t1;
-    	let t2_value = /*DeterminandoEixos*/ ctx[16](/*MudandoDeFase*/ ctx[10]) + "";
-    	let t2;
-    	let t3;
-    	let each_1_anchor;
-    	let each_value_2 = /*mapa1*/ ctx[3];
-    	validate_each_argument(each_value_2);
-    	let each_blocks = [];
+    	let if_block_anchor;
 
-    	for (let i = 0; i < each_value_2.length; i += 1) {
-    		each_blocks[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
+    	function select_block_type_4(ctx, dirty) {
+    		if (!/*enigma*/ ctx[11]) return create_if_block_9;
+    		return create_else_block_1;
     	}
+
+    	let current_block_type = select_block_type_4(ctx);
+    	let if_block = current_block_type(ctx);
 
     	const block = {
     		c: function create() {
-    			t0 = text(t0_value);
-    			t1 = space();
-    			t2 = text(t2_value);
-    			t3 = space();
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].c();
-    			}
-
-    			each_1_anchor = empty();
+    			if_block.c();
+    			if_block_anchor = empty();
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, t0, anchor);
-    			insert_dev(target, t1, anchor);
-    			insert_dev(target, t2, anchor);
-    			insert_dev(target, t3, anchor);
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(target, anchor);
-    			}
-
-    			insert_dev(target, each_1_anchor, anchor);
+    			if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*MudandoDeFase*/ 1024 && t2_value !== (t2_value = /*DeterminandoEixos*/ ctx[16](/*MudandoDeFase*/ ctx[10]) + "")) set_data_dev(t2, t2_value);
+    			if (current_block_type === (current_block_type = select_block_type_4(ctx)) && if_block) {
+    				if_block.p(ctx, dirty);
+    			} else {
+    				if_block.d(1);
+    				if_block = current_block_type(ctx);
 
-    			if (dirty[0] & /*mapa1, LimiteX, Dimensionamento, LimiteY*/ 16584) {
-    				each_value_2 = /*mapa1*/ ctx[3];
-    				validate_each_argument(each_value_2);
-    				let i;
-
-    				for (i = 0; i < each_value_2.length; i += 1) {
-    					const child_ctx = get_each_context_2(ctx, each_value_2, i);
-
-    					if (each_blocks[i]) {
-    						each_blocks[i].p(child_ctx, dirty);
-    					} else {
-    						each_blocks[i] = create_each_block_2(child_ctx);
-    						each_blocks[i].c();
-    						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
-    					}
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
     				}
-
-    				for (; i < each_blocks.length; i += 1) {
-    					each_blocks[i].d(1);
-    				}
-
-    				each_blocks.length = each_value_2.length;
     			}
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t0);
-    			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(t3);
-    			destroy_each(each_blocks, detaching);
-    			if (detaching) detach_dev(each_1_anchor);
+    			if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
     		}
     	};
 
@@ -29803,14 +29666,14 @@ var app = (function () {
     		block,
     		id: create_if_block_8.name,
     		type: "if",
-    		source: "(518:40) ",
+    		source: "(558:40) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (481:0) {#if MudandoDeFase == "tutorial"}
+    // (521:0) {#if MudandoDeFase == "tutorial"}
     function create_if_block(ctx) {
     	let if_block_anchor;
 
@@ -29854,18 +29717,199 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(481:0) {#if MudandoDeFase == \\\"tutorial\\\"}",
+    		source: "(521:0) {#if MudandoDeFase == \\\"tutorial\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (567:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
-    function create_if_block_23(ctx) {
+    // (647:8) {:else}
+    function create_else_block_3(ctx) {
+    	let p;
+    	let t1;
+    	let input;
+    	let mounted;
+    	let dispose;
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			p.textContent = "Se você me tem, quer me compartilhar; se você não me compartilha, você me manteve. O que eu sou?";
+    			t1 = space();
+    			input = element("input");
+    			attr_dev(p, "class", "Enigma");
+    			add_location(p, file, 647, 8, 43306);
+    			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
+    			attr_dev(input, "class", "RespostaEnigma");
+    			add_location(input, file, 648, 8, 43434);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, input, anchor);
+    			set_input_value(input, /*PalavraChave*/ ctx[12]);
+
+    			if (!mounted) {
+    				dispose = [
+    					listen_dev(input, "input", /*input_input_handler_3*/ ctx[27]),
+    					listen_dev(
+    						input,
+    						"keydown",
+    						function () {
+    							if (is_function(/*Alterando*/ ctx[22](/*PalavraChave*/ ctx[12] == "SEGREDO", /*MudandoDeFase*/ ctx[10]))) /*Alterando*/ ctx[22](/*PalavraChave*/ ctx[12] == "SEGREDO", /*MudandoDeFase*/ ctx[10]).apply(this, arguments);
+    						},
+    						false,
+    						false,
+    						false
+    					)
+    				];
+
+    				mounted = true;
+    			}
+    		},
+    		p: function update(new_ctx, dirty) {
+    			ctx = new_ctx;
+
+    			if (dirty[0] & /*PalavraChave*/ 4096 && input.value !== /*PalavraChave*/ ctx[12]) {
+    				set_input_value(input, /*PalavraChave*/ ctx[12]);
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(input);
+    			mounted = false;
+    			run_all(dispose);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block_3.name,
+    		type: "else",
+    		source: "(647:8) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (622:4) {#if !enigma}
+    function create_if_block_25(ctx) {
+    	let t0_value = /*RenderizandoMapa*/ ctx[16]() + "";
+    	let t0;
+    	let t1;
+    	let t2_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[10]) + "";
+    	let t2;
+    	let t3;
+    	let p;
+    	let t4;
+    	let t5;
+    	let t6;
+    	let t7;
+    	let each_1_anchor;
+    	let each_value_6 = /*mapa3*/ ctx[5];
+    	validate_each_argument(each_value_6);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_6.length; i += 1) {
+    		each_blocks[i] = create_each_block_6(get_each_context_6(ctx, each_value_6, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			t0 = text(t0_value);
+    			t1 = space();
+    			t2 = text(t2_value);
+    			t3 = space();
+    			p = element("p");
+    			t4 = text(/*EixoX*/ ctx[8]);
+    			t5 = text(",");
+    			t6 = text(/*EixoY*/ ctx[9]);
+    			t7 = space();
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			each_1_anchor = empty();
+    			add_location(p, file, 626, 4, 42334);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, t2, anchor);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, p, anchor);
+    			append_dev(p, t4);
+    			append_dev(p, t5);
+    			append_dev(p, t6);
+    			insert_dev(target, t7, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(target, anchor);
+    			}
+
+    			insert_dev(target, each_1_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*MudandoDeFase*/ 1024 && t2_value !== (t2_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[10]) + "")) set_data_dev(t2, t2_value);
+    			if (dirty[0] & /*EixoX*/ 256) set_data_dev(t4, /*EixoX*/ ctx[8]);
+    			if (dirty[0] & /*EixoY*/ 512) set_data_dev(t6, /*EixoY*/ ctx[9]);
+
+    			if (dirty[0] & /*mapa3, LimiteX, Dimensionamento, LimiteY*/ 32992) {
+    				each_value_6 = /*mapa3*/ ctx[5];
+    				validate_each_argument(each_value_6);
+    				let i;
+
+    				for (i = 0; i < each_value_6.length; i += 1) {
+    					const child_ctx = get_each_context_6(ctx, each_value_6, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_6(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_6.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(t2);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t7);
+    			destroy_each(each_blocks, detaching);
+    			if (detaching) detach_dev(each_1_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_25.name,
+    		type: "if",
+    		source: "(622:4) {#if !enigma}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (629:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+    function create_if_block_26(ctx) {
     	let tr;
     	let t;
-    	let each_value_7 = /*linhas*/ ctx[28];
+    	let each_value_7 = /*linhas*/ ctx[36];
     	validate_each_argument(each_value_7);
     	let each_blocks = [];
 
@@ -29882,7 +29926,7 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file, 567, 12, 40517);
+    			add_location(tr, file, 629, 12, 42473);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -29894,8 +29938,8 @@ var app = (function () {
     			append_dev(tr, t);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*mapa3, LimiteX, Dimensionamento*/ 16480) {
-    				each_value_7 = /*linhas*/ ctx[28];
+    			if (dirty[0] & /*mapa3, LimiteX, Dimensionamento*/ 32864) {
+    				each_value_7 = /*linhas*/ ctx[36];
     				validate_each_argument(each_value_7);
     				let i;
 
@@ -29926,27 +29970,27 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_23.name,
+    		id: create_if_block_26.name,
     		type: "if",
-    		source: "(567:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		source: "(629:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (570:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
-    function create_if_block_24(ctx) {
+    // (632:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+    function create_if_block_27(ctx) {
     	let if_block_anchor;
 
-    	function select_block_type_6(ctx, dirty) {
-    		if (/*elementos*/ ctx[31] == 0) return create_if_block_25;
-    		if (/*elementos*/ ctx[31] == 1) return create_if_block_26;
-    		if (/*elementos*/ ctx[31] == "V") return create_if_block_27;
-    		if (/*elementos*/ ctx[31] == "DANTE") return create_if_block_28;
+    	function select_block_type_9(ctx, dirty) {
+    		if (/*elementos*/ ctx[39] == 0) return create_if_block_28;
+    		if (/*elementos*/ ctx[39] == 1) return create_if_block_29;
+    		if (/*elementos*/ ctx[39] == "V") return create_if_block_30;
+    		if (/*elementos*/ ctx[39] == "DANTE") return create_if_block_31;
     	}
 
-    	let current_block_type = select_block_type_6(ctx);
+    	let current_block_type = select_block_type_9(ctx);
     	let if_block = current_block_type && current_block_type(ctx);
 
     	const block = {
@@ -29959,7 +30003,7 @@ var app = (function () {
     			insert_dev(target, if_block_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (current_block_type !== (current_block_type = select_block_type_6(ctx))) {
+    			if (current_block_type !== (current_block_type = select_block_type_9(ctx))) {
     				if (if_block) if_block.d(1);
     				if_block = current_block_type && current_block_type(ctx);
 
@@ -29980,17 +30024,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_24.name,
+    		id: create_if_block_27.name,
     		type: "if",
-    		source: "(570:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
+    		source: "(632:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (577:51) 
-    function create_if_block_28(ctx) {
+    // (639:51) 
+    function create_if_block_31(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -30002,8 +30046,116 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/soacabecinha.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
     			attr_dev(img, "class", "svelte-133fi3v");
-    			add_location(img, file, 577, 28, 41126);
-    			add_location(th, file, 577, 24, 41122);
+    			add_location(img, file, 639, 28, 43082);
+    			add_location(th, file, 639, 24, 43078);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_31.name,
+    		type: "if",
+    		source: "(639:51) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (637:47) 
+    function create_if_block_30(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saidanivel3.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "saida");
+    			attr_dev(img, "class", "svelte-133fi3v");
+    			add_location(img, file, 637, 28, 42942);
+    			add_location(th, file, 637, 24, 42938);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_30.name,
+    		type: "if",
+    		source: "(637:47) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (635:45) 
+    function create_if_block_29(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel3.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "parede");
+    			attr_dev(img, "class", "svelte-133fi3v");
+    			add_location(img, file, 635, 28, 42804);
+    			add_location(th, file, 635, 24, 42800);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_29.name,
+    		type: "if",
+    		source: "(635:45) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (633:20) {#if elementos == 0}
+    function create_if_block_28(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel3.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "chao");
+    			attr_dev(img, "class", "svelte-133fi3v");
+    			add_location(img, file, 633, 28, 42672);
+    			add_location(th, file, 633, 24, 42668);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30018,125 +30170,17 @@ var app = (function () {
     		block,
     		id: create_if_block_28.name,
     		type: "if",
-    		source: "(577:51) ",
+    		source: "(633:20) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (575:47) 
-    function create_if_block_27(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saidanivel3.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "saida");
-    			attr_dev(img, "class", "svelte-133fi3v");
-    			add_location(img, file, 575, 28, 40986);
-    			add_location(th, file, 575, 24, 40982);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_27.name,
-    		type: "if",
-    		source: "(575:47) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (573:45) 
-    function create_if_block_26(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel3.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "parede");
-    			attr_dev(img, "class", "svelte-133fi3v");
-    			add_location(img, file, 573, 28, 40848);
-    			add_location(th, file, 573, 24, 40844);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_26.name,
-    		type: "if",
-    		source: "(573:45) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (571:20) {#if elementos == 0}
-    function create_if_block_25(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel3.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "chao");
-    			attr_dev(img, "class", "svelte-133fi3v");
-    			add_location(img, file, 571, 28, 40716);
-    			add_location(th, file, 571, 24, 40712);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_25.name,
-    		type: "if",
-    		source: "(571:20) {#if elementos == 0}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (569:16) {#each linhas as elementos,j}
+    // (631:16) {#each linhas as elementos,j}
     function create_each_block_7(ctx) {
     	let if_block_anchor;
-    	let if_block = /*LimiteX*/ ctx[6] <= /*j*/ ctx[33] && /*LimiteX*/ ctx[6] + /*Dimensionamento*/ ctx[14] * 2 >= /*j*/ ctx[33] && create_if_block_24(ctx);
+    	let if_block = /*LimiteX*/ ctx[6] <= /*j*/ ctx[41] && /*LimiteX*/ ctx[6] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[41] && create_if_block_27(ctx);
 
     	const block = {
     		c: function create() {
@@ -30148,11 +30192,11 @@ var app = (function () {
     			insert_dev(target, if_block_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (/*LimiteX*/ ctx[6] <= /*j*/ ctx[33] && /*LimiteX*/ ctx[6] + /*Dimensionamento*/ ctx[14] * 2 >= /*j*/ ctx[33]) {
+    			if (/*LimiteX*/ ctx[6] <= /*j*/ ctx[41] && /*LimiteX*/ ctx[6] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[41]) {
     				if (if_block) {
     					if_block.p(ctx, dirty);
     				} else {
-    					if_block = create_if_block_24(ctx);
+    					if_block = create_if_block_27(ctx);
     					if_block.c();
     					if_block.m(if_block_anchor.parentNode, if_block_anchor);
     				}
@@ -30171,17 +30215,17 @@ var app = (function () {
     		block,
     		id: create_each_block_7.name,
     		type: "each",
-    		source: "(569:16) {#each linhas as elementos,j}",
+    		source: "(631:16) {#each linhas as elementos,j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (566:8) {#each mapa3 as linhas,i}
+    // (628:8) {#each mapa3 as linhas,i}
     function create_each_block_6(ctx) {
     	let if_block_anchor;
-    	let if_block = /*LimiteY*/ ctx[7] <= /*i*/ ctx[30] && /*LimiteY*/ ctx[7] + /*Dimensionamento*/ ctx[14] * 2 >= /*i*/ ctx[30] && create_if_block_23(ctx);
+    	let if_block = /*LimiteY*/ ctx[7] <= /*i*/ ctx[38] && /*LimiteY*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[38] && create_if_block_26(ctx);
 
     	const block = {
     		c: function create() {
@@ -30193,11 +30237,11 @@ var app = (function () {
     			insert_dev(target, if_block_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (/*LimiteY*/ ctx[7] <= /*i*/ ctx[30] && /*LimiteY*/ ctx[7] + /*Dimensionamento*/ ctx[14] * 2 >= /*i*/ ctx[30]) {
+    			if (/*LimiteY*/ ctx[7] <= /*i*/ ctx[38] && /*LimiteY*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[38]) {
     				if (if_block) {
     					if_block.p(ctx, dirty);
     				} else {
-    					if_block = create_if_block_23(ctx);
+    					if_block = create_if_block_26(ctx);
     					if_block.c();
     					if_block.m(if_block_anchor.parentNode, if_block_anchor);
     				}
@@ -30216,18 +30260,179 @@ var app = (function () {
     		block,
     		id: create_each_block_6.name,
     		type: "each",
-    		source: "(566:8) {#each mapa3 as linhas,i}",
+    		source: "(628:8) {#each mapa3 as linhas,i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (544:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
-    function create_if_block_16(ctx) {
+    // (616:8) {:else}
+    function create_else_block_2(ctx) {
+    	let p;
+    	let t1;
+    	let input;
+    	let mounted;
+    	let dispose;
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			p.textContent = "Poder suficiente para esmagar navios e quebrar telhados mas mesmo assim tenho medo do sol, quem eu sou?";
+    			t1 = space();
+    			input = element("input");
+    			attr_dev(p, "class", "Enigma");
+    			add_location(p, file, 616, 8, 41877);
+    			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
+    			attr_dev(input, "class", "RespostaEnigma");
+    			add_location(input, file, 617, 8, 42012);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, input, anchor);
+    			set_input_value(input, /*PalavraChave*/ ctx[12]);
+
+    			if (!mounted) {
+    				dispose = [
+    					listen_dev(input, "input", /*input_input_handler_2*/ ctx[26]),
+    					listen_dev(
+    						input,
+    						"keydown",
+    						function () {
+    							if (is_function(/*Alterando*/ ctx[22](/*PalavraChave*/ ctx[12] == "GELO", /*MudandoDeFase*/ ctx[10]))) /*Alterando*/ ctx[22](/*PalavraChave*/ ctx[12] == "GELO", /*MudandoDeFase*/ ctx[10]).apply(this, arguments);
+    						},
+    						false,
+    						false,
+    						false
+    					)
+    				];
+
+    				mounted = true;
+    			}
+    		},
+    		p: function update(new_ctx, dirty) {
+    			ctx = new_ctx;
+
+    			if (dirty[0] & /*PalavraChave*/ 4096 && input.value !== /*PalavraChave*/ ctx[12]) {
+    				set_input_value(input, /*PalavraChave*/ ctx[12]);
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(input);
+    			mounted = false;
+    			run_all(dispose);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block_2.name,
+    		type: "else",
+    		source: "(616:8) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (592:4) {#if !enigma}
+    function create_if_block_17(ctx) {
+    	let t0_value = /*RenderizandoMapa*/ ctx[16]() + "";
+    	let t0;
+    	let t1;
+    	let t2_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[10]) + "";
+    	let t2;
+    	let t3;
+    	let each_1_anchor;
+    	let each_value_4 = /*mapa2*/ ctx[4];
+    	validate_each_argument(each_value_4);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_4.length; i += 1) {
+    		each_blocks[i] = create_each_block_4(get_each_context_4(ctx, each_value_4, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			t0 = text(t0_value);
+    			t1 = space();
+    			t2 = text(t2_value);
+    			t3 = space();
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			each_1_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, t2, anchor);
+    			insert_dev(target, t3, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(target, anchor);
+    			}
+
+    			insert_dev(target, each_1_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*MudandoDeFase*/ 1024 && t2_value !== (t2_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[10]) + "")) set_data_dev(t2, t2_value);
+
+    			if (dirty[0] & /*mapa2, LimiteX, Dimensionamento, LimiteY*/ 32976) {
+    				each_value_4 = /*mapa2*/ ctx[4];
+    				validate_each_argument(each_value_4);
+    				let i;
+
+    				for (i = 0; i < each_value_4.length; i += 1) {
+    					const child_ctx = get_each_context_4(ctx, each_value_4, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_4(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_4.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(t2);
+    			if (detaching) detach_dev(t3);
+    			destroy_each(each_blocks, detaching);
+    			if (detaching) detach_dev(each_1_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_17.name,
+    		type: "if",
+    		source: "(592:4) {#if !enigma}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (598:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+    function create_if_block_18(ctx) {
     	let tr;
     	let t;
-    	let each_value_5 = /*linhas*/ ctx[28];
+    	let each_value_5 = /*linhas*/ ctx[36];
     	validate_each_argument(each_value_5);
     	let each_blocks = [];
 
@@ -30244,7 +30449,7 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file, 544, 12, 39462);
+    			add_location(tr, file, 598, 12, 41048);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -30256,8 +30461,8 @@ var app = (function () {
     			append_dev(tr, t);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*mapa2, LimiteX, Dimensionamento*/ 16464) {
-    				each_value_5 = /*linhas*/ ctx[28];
+    			if (dirty[0] & /*mapa2, LimiteX, Dimensionamento*/ 32848) {
+    				each_value_5 = /*linhas*/ ctx[36];
     				validate_each_argument(each_value_5);
     				let i;
 
@@ -30288,24 +30493,569 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_16.name,
+    		id: create_if_block_18.name,
     		type: "if",
-    		source: "(544:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		source: "(598:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (547:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
-    function create_if_block_17(ctx) {
+    // (601:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+    function create_if_block_19(ctx) {
+    	let if_block_anchor;
+
+    	function select_block_type_7(ctx, dirty) {
+    		if (/*elementos*/ ctx[39] == 0) return create_if_block_20;
+    		if (/*elementos*/ ctx[39] == 1) return create_if_block_21;
+    		if (/*elementos*/ ctx[39] == "Z") return create_if_block_22;
+    		if (/*elementos*/ ctx[39] == "DANTE") return create_if_block_23;
+    	}
+
+    	let current_block_type = select_block_type_7(ctx);
+    	let if_block = current_block_type && current_block_type(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (current_block_type !== (current_block_type = select_block_type_7(ctx))) {
+    				if (if_block) if_block.d(1);
+    				if_block = current_block_type && current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) {
+    				if_block.d(detaching);
+    			}
+
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_19.name,
+    		type: "if",
+    		source: "(601:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (608:51) 
+    function create_if_block_23(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/soacabecinha.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "personagem");
+    			attr_dev(img, "class", "svelte-133fi3v");
+    			add_location(img, file, 608, 28, 41657);
+    			add_location(th, file, 608, 24, 41653);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_23.name,
+    		type: "if",
+    		source: "(608:51) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (606:47) 
+    function create_if_block_22(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saidanivel3.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "saida");
+    			attr_dev(img, "class", "svelte-133fi3v");
+    			add_location(img, file, 606, 28, 41517);
+    			add_location(th, file, 606, 24, 41513);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_22.name,
+    		type: "if",
+    		source: "(606:47) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (604:45) 
+    function create_if_block_21(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel2.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "parede");
+    			attr_dev(img, "class", "svelte-133fi3v");
+    			add_location(img, file, 604, 28, 41379);
+    			add_location(th, file, 604, 24, 41375);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_21.name,
+    		type: "if",
+    		source: "(604:45) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (602:20) {#if elementos == 0}
+    function create_if_block_20(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel2.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "chao");
+    			attr_dev(img, "class", "svelte-133fi3v");
+    			add_location(img, file, 602, 28, 41247);
+    			add_location(th, file, 602, 24, 41243);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_20.name,
+    		type: "if",
+    		source: "(602:20) {#if elementos == 0}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (600:16) {#each linhas as elementos,j}
+    function create_each_block_5(ctx) {
+    	let if_block_anchor;
+    	let if_block = /*LimiteX*/ ctx[6] <= /*j*/ ctx[41] && /*LimiteX*/ ctx[6] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[41] && create_if_block_19(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (/*LimiteX*/ ctx[6] <= /*j*/ ctx[41] && /*LimiteX*/ ctx[6] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[41]) {
+    				if (if_block) {
+    					if_block.p(ctx, dirty);
+    				} else {
+    					if_block = create_if_block_19(ctx);
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			} else if (if_block) {
+    				if_block.d(1);
+    				if_block = null;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_5.name,
+    		type: "each",
+    		source: "(600:16) {#each linhas as elementos,j}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (597:8) {#each mapa2 as linhas,i}
+    function create_each_block_4(ctx) {
+    	let if_block_anchor;
+    	let if_block = /*LimiteY*/ ctx[7] <= /*i*/ ctx[38] && /*LimiteY*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[38] && create_if_block_18(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (/*LimiteY*/ ctx[7] <= /*i*/ ctx[38] && /*LimiteY*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[38]) {
+    				if (if_block) {
+    					if_block.p(ctx, dirty);
+    				} else {
+    					if_block = create_if_block_18(ctx);
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			} else if (if_block) {
+    				if_block.d(1);
+    				if_block = null;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_4.name,
+    		type: "each",
+    		source: "(597:8) {#each mapa2 as linhas,i}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (584:8) {:else}
+    function create_else_block_1(ctx) {
+    	let t0_value = /*TempoEnigma*/ ctx[23]() + "";
+    	let t0;
+    	let t1;
+    	let p0;
+    	let t2;
+    	let t3;
+    	let p1;
+    	let t5;
+    	let input;
+    	let mounted;
+    	let dispose;
+
+    	const block = {
+    		c: function create() {
+    			t0 = text(t0_value);
+    			t1 = space();
+    			p0 = element("p");
+    			t2 = text(/*contador*/ ctx[13]);
+    			t3 = space();
+    			p1 = element("p");
+    			p1.textContent = "Fui levado para um quarto escuro e incendiado. Eu chorei e então minha cabeça foi cortada. Quem sou eu?";
+    			t5 = space();
+    			input = element("input");
+    			add_location(p0, file, 585, 8, 40457);
+    			attr_dev(p1, "class", "Enigma");
+    			add_location(p1, file, 586, 8, 40484);
+    			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
+    			attr_dev(input, "class", "RespostaEnigma");
+    			add_location(input, file, 587, 4, 40615);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, p0, anchor);
+    			append_dev(p0, t2);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, p1, anchor);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, input, anchor);
+    			set_input_value(input, /*PalavraChave*/ ctx[12]);
+
+    			if (!mounted) {
+    				dispose = [
+    					listen_dev(input, "input", /*input_input_handler_1*/ ctx[25]),
+    					listen_dev(
+    						input,
+    						"keydown",
+    						function () {
+    							if (is_function(/*Alterando*/ ctx[22](/*PalavraChave*/ ctx[12] == "VELA", /*MudandoDeFase*/ ctx[10]))) /*Alterando*/ ctx[22](/*PalavraChave*/ ctx[12] == "VELA", /*MudandoDeFase*/ ctx[10]).apply(this, arguments);
+    						},
+    						false,
+    						false,
+    						false
+    					)
+    				];
+
+    				mounted = true;
+    			}
+    		},
+    		p: function update(new_ctx, dirty) {
+    			ctx = new_ctx;
+    			if (dirty[0] & /*contador*/ 8192) set_data_dev(t2, /*contador*/ ctx[13]);
+
+    			if (dirty[0] & /*PalavraChave*/ 4096 && input.value !== /*PalavraChave*/ ctx[12]) {
+    				set_input_value(input, /*PalavraChave*/ ctx[12]);
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(p0);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(p1);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(input);
+    			mounted = false;
+    			run_all(dispose);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block_1.name,
+    		type: "else",
+    		source: "(584:8) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (560:4) {#if !enigma}
+    function create_if_block_9(ctx) {
+    	let t0_value = /*RenderizandoMapa*/ ctx[16]() + "";
+    	let t0;
+    	let t1;
+    	let t2_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[10]) + "";
+    	let t2;
+    	let t3;
+    	let each_1_anchor;
+    	let each_value_2 = /*mapa1*/ ctx[3];
+    	validate_each_argument(each_value_2);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_2.length; i += 1) {
+    		each_blocks[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			t0 = text(t0_value);
+    			t1 = space();
+    			t2 = text(t2_value);
+    			t3 = space();
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			each_1_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, t2, anchor);
+    			insert_dev(target, t3, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(target, anchor);
+    			}
+
+    			insert_dev(target, each_1_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*MudandoDeFase*/ 1024 && t2_value !== (t2_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[10]) + "")) set_data_dev(t2, t2_value);
+
+    			if (dirty[0] & /*mapa1, LimiteX, Dimensionamento, LimiteY*/ 32968) {
+    				each_value_2 = /*mapa1*/ ctx[3];
+    				validate_each_argument(each_value_2);
+    				let i;
+
+    				for (i = 0; i < each_value_2.length; i += 1) {
+    					const child_ctx = get_each_context_2(ctx, each_value_2, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_2(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_2.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(t2);
+    			if (detaching) detach_dev(t3);
+    			destroy_each(each_blocks, detaching);
+    			if (detaching) detach_dev(each_1_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_9.name,
+    		type: "if",
+    		source: "(560:4) {#if !enigma}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (566:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+    function create_if_block_10(ctx) {
+    	let tr;
+    	let t;
+    	let each_value_3 = /*linhas*/ ctx[36];
+    	validate_each_argument(each_value_3);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_3.length; i += 1) {
+    		each_blocks[i] = create_each_block_3(get_each_context_3(ctx, each_value_3, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			tr = element("tr");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			t = space();
+    			add_location(tr, file, 566, 12, 39599);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, tr, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(tr, null);
+    			}
+
+    			append_dev(tr, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*mapa1, LimiteX, Dimensionamento*/ 32840) {
+    				each_value_3 = /*linhas*/ ctx[36];
+    				validate_each_argument(each_value_3);
+    				let i;
+
+    				for (i = 0; i < each_value_3.length; i += 1) {
+    					const child_ctx = get_each_context_3(ctx, each_value_3, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_3(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(tr, t);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_3.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(tr);
+    			destroy_each(each_blocks, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_10.name,
+    		type: "if",
+    		source: "(566:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (569:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+    function create_if_block_11(ctx) {
     	let if_block_anchor;
 
     	function select_block_type_5(ctx, dirty) {
-    		if (/*elementos*/ ctx[31] == 0) return create_if_block_18;
-    		if (/*elementos*/ ctx[31] == 1) return create_if_block_19;
-    		if (/*elementos*/ ctx[31] == "Z") return create_if_block_20;
-    		if (/*elementos*/ ctx[31] == "DANTE") return create_if_block_21;
+    		if (/*elementos*/ ctx[39] == 0) return create_if_block_12;
+    		if (/*elementos*/ ctx[39] == 1) return create_if_block_13;
+    		if (/*elementos*/ ctx[39] == "Y") return create_if_block_14;
+    		if (/*elementos*/ ctx[39] == "DANTE") return create_if_block_15;
     	}
 
     	let current_block_type = select_block_type_5(ctx);
@@ -30342,17 +31092,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_17.name,
+    		id: create_if_block_11.name,
     		type: "if",
-    		source: "(547:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
+    		source: "(569:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (554:51) 
-    function create_if_block_21(ctx) {
+    // (576:51) 
+    function create_if_block_15(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -30364,8 +31114,8 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/soacabecinha.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
     			attr_dev(img, "class", "svelte-133fi3v");
-    			add_location(img, file, 554, 28, 40071);
-    			add_location(th, file, 554, 24, 40067);
+    			add_location(img, file, 576, 28, 40208);
+    			add_location(th, file, 576, 24, 40204);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30378,17 +31128,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_21.name,
+    		id: create_if_block_15.name,
     		type: "if",
-    		source: "(554:51) ",
+    		source: "(576:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (552:47) 
-    function create_if_block_20(ctx) {
+    // (574:47) 
+    function create_if_block_14(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -30400,334 +31150,8 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saidanivel3.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
     			attr_dev(img, "class", "svelte-133fi3v");
-    			add_location(img, file, 552, 28, 39931);
-    			add_location(th, file, 552, 24, 39927);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_20.name,
-    		type: "if",
-    		source: "(552:47) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (550:45) 
-    function create_if_block_19(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel2.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "parede");
-    			attr_dev(img, "class", "svelte-133fi3v");
-    			add_location(img, file, 550, 28, 39793);
-    			add_location(th, file, 550, 24, 39789);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_19.name,
-    		type: "if",
-    		source: "(550:45) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (548:20) {#if elementos == 0}
-    function create_if_block_18(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel2.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "chao");
-    			attr_dev(img, "class", "svelte-133fi3v");
-    			add_location(img, file, 548, 28, 39661);
-    			add_location(th, file, 548, 24, 39657);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_18.name,
-    		type: "if",
-    		source: "(548:20) {#if elementos == 0}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (546:16) {#each linhas as elementos,j}
-    function create_each_block_5(ctx) {
-    	let if_block_anchor;
-    	let if_block = /*LimiteX*/ ctx[6] <= /*j*/ ctx[33] && /*LimiteX*/ ctx[6] + /*Dimensionamento*/ ctx[14] * 2 >= /*j*/ ctx[33] && create_if_block_17(ctx);
-
-    	const block = {
-    		c: function create() {
-    			if (if_block) if_block.c();
-    			if_block_anchor = empty();
-    		},
-    		m: function mount(target, anchor) {
-    			if (if_block) if_block.m(target, anchor);
-    			insert_dev(target, if_block_anchor, anchor);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (/*LimiteX*/ ctx[6] <= /*j*/ ctx[33] && /*LimiteX*/ ctx[6] + /*Dimensionamento*/ ctx[14] * 2 >= /*j*/ ctx[33]) {
-    				if (if_block) {
-    					if_block.p(ctx, dirty);
-    				} else {
-    					if_block = create_if_block_17(ctx);
-    					if_block.c();
-    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-    				}
-    			} else if (if_block) {
-    				if_block.d(1);
-    				if_block = null;
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (if_block) if_block.d(detaching);
-    			if (detaching) detach_dev(if_block_anchor);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_each_block_5.name,
-    		type: "each",
-    		source: "(546:16) {#each linhas as elementos,j}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (543:8) {#each mapa2 as linhas,i}
-    function create_each_block_4(ctx) {
-    	let if_block_anchor;
-    	let if_block = /*LimiteY*/ ctx[7] <= /*i*/ ctx[30] && /*LimiteY*/ ctx[7] + /*Dimensionamento*/ ctx[14] * 2 >= /*i*/ ctx[30] && create_if_block_16(ctx);
-
-    	const block = {
-    		c: function create() {
-    			if (if_block) if_block.c();
-    			if_block_anchor = empty();
-    		},
-    		m: function mount(target, anchor) {
-    			if (if_block) if_block.m(target, anchor);
-    			insert_dev(target, if_block_anchor, anchor);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (/*LimiteY*/ ctx[7] <= /*i*/ ctx[30] && /*LimiteY*/ ctx[7] + /*Dimensionamento*/ ctx[14] * 2 >= /*i*/ ctx[30]) {
-    				if (if_block) {
-    					if_block.p(ctx, dirty);
-    				} else {
-    					if_block = create_if_block_16(ctx);
-    					if_block.c();
-    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-    				}
-    			} else if (if_block) {
-    				if_block.d(1);
-    				if_block = null;
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (if_block) if_block.d(detaching);
-    			if (detaching) detach_dev(if_block_anchor);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_each_block_4.name,
-    		type: "each",
-    		source: "(543:8) {#each mapa2 as linhas,i}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (522:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
-    function create_if_block_9(ctx) {
-    	let tr;
-    	let t;
-    	let each_value_3 = /*linhas*/ ctx[28];
-    	validate_each_argument(each_value_3);
-    	let each_blocks = [];
-
-    	for (let i = 0; i < each_value_3.length; i += 1) {
-    		each_blocks[i] = create_each_block_3(get_each_context_3(ctx, each_value_3, i));
-    	}
-
-    	const block = {
-    		c: function create() {
-    			tr = element("tr");
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].c();
-    			}
-
-    			t = space();
-    			add_location(tr, file, 522, 12, 38431);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, tr, anchor);
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(tr, null);
-    			}
-
-    			append_dev(tr, t);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*mapa1, LimiteX, Dimensionamento*/ 16456) {
-    				each_value_3 = /*linhas*/ ctx[28];
-    				validate_each_argument(each_value_3);
-    				let i;
-
-    				for (i = 0; i < each_value_3.length; i += 1) {
-    					const child_ctx = get_each_context_3(ctx, each_value_3, i);
-
-    					if (each_blocks[i]) {
-    						each_blocks[i].p(child_ctx, dirty);
-    					} else {
-    						each_blocks[i] = create_each_block_3(child_ctx);
-    						each_blocks[i].c();
-    						each_blocks[i].m(tr, t);
-    					}
-    				}
-
-    				for (; i < each_blocks.length; i += 1) {
-    					each_blocks[i].d(1);
-    				}
-
-    				each_blocks.length = each_value_3.length;
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(tr);
-    			destroy_each(each_blocks, detaching);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_9.name,
-    		type: "if",
-    		source: "(522:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (525:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
-    function create_if_block_10(ctx) {
-    	let if_block_anchor;
-
-    	function select_block_type_4(ctx, dirty) {
-    		if (/*elementos*/ ctx[31] == 0) return create_if_block_11;
-    		if (/*elementos*/ ctx[31] == 1) return create_if_block_12;
-    		if (/*elementos*/ ctx[31] == "Y") return create_if_block_13;
-    		if (/*elementos*/ ctx[31] == "DANTE") return create_if_block_14;
-    	}
-
-    	let current_block_type = select_block_type_4(ctx);
-    	let if_block = current_block_type && current_block_type(ctx);
-
-    	const block = {
-    		c: function create() {
-    			if (if_block) if_block.c();
-    			if_block_anchor = empty();
-    		},
-    		m: function mount(target, anchor) {
-    			if (if_block) if_block.m(target, anchor);
-    			insert_dev(target, if_block_anchor, anchor);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (current_block_type !== (current_block_type = select_block_type_4(ctx))) {
-    				if (if_block) if_block.d(1);
-    				if_block = current_block_type && current_block_type(ctx);
-
-    				if (if_block) {
-    					if_block.c();
-    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-    				}
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (if_block) {
-    				if_block.d(detaching);
-    			}
-
-    			if (detaching) detach_dev(if_block_anchor);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_10.name,
-    		type: "if",
-    		source: "(525:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (532:51) 
-    function create_if_block_14(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/soacabecinha.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "personagem");
-    			attr_dev(img, "class", "svelte-133fi3v");
-    			add_location(img, file, 532, 28, 39040);
-    			add_location(th, file, 532, 24, 39036);
+    			add_location(img, file, 574, 28, 40068);
+    			add_location(th, file, 574, 24, 40064);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30742,14 +31166,14 @@ var app = (function () {
     		block,
     		id: create_if_block_14.name,
     		type: "if",
-    		source: "(532:51) ",
+    		source: "(574:47) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (530:47) 
+    // (572:45) 
     function create_if_block_13(ctx) {
     	let th;
     	let img;
@@ -30759,11 +31183,11 @@ var app = (function () {
     		c: function create() {
     			th = element("th");
     			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saidanivel3.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "saida");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel1.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "parede");
     			attr_dev(img, "class", "svelte-133fi3v");
-    			add_location(img, file, 530, 28, 38900);
-    			add_location(th, file, 530, 24, 38896);
+    			add_location(img, file, 572, 28, 39930);
+    			add_location(th, file, 572, 24, 39926);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30778,14 +31202,14 @@ var app = (function () {
     		block,
     		id: create_if_block_13.name,
     		type: "if",
-    		source: "(530:47) ",
+    		source: "(572:45) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (528:45) 
+    // (570:20) {#if elementos == 0}
     function create_if_block_12(ctx) {
     	let th;
     	let img;
@@ -30795,11 +31219,11 @@ var app = (function () {
     		c: function create() {
     			th = element("th");
     			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel1.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "parede");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel1.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "chao");
     			attr_dev(img, "class", "svelte-133fi3v");
-    			add_location(img, file, 528, 28, 38762);
-    			add_location(th, file, 528, 24, 38758);
+    			add_location(img, file, 570, 28, 39798);
+    			add_location(th, file, 570, 24, 39794);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30814,53 +31238,17 @@ var app = (function () {
     		block,
     		id: create_if_block_12.name,
     		type: "if",
-    		source: "(528:45) ",
+    		source: "(570:20) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (526:20) {#if elementos == 0}
-    function create_if_block_11(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel1.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "chao");
-    			attr_dev(img, "class", "svelte-133fi3v");
-    			add_location(img, file, 526, 28, 38630);
-    			add_location(th, file, 526, 24, 38626);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_11.name,
-    		type: "if",
-    		source: "(526:20) {#if elementos == 0}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (524:16) {#each linhas as elementos,j}
+    // (568:16) {#each linhas as elementos,j}
     function create_each_block_3(ctx) {
     	let if_block_anchor;
-    	let if_block = /*LimiteX*/ ctx[6] <= /*j*/ ctx[33] && /*LimiteX*/ ctx[6] + /*Dimensionamento*/ ctx[14] * 2 >= /*j*/ ctx[33] && create_if_block_10(ctx);
+    	let if_block = /*LimiteX*/ ctx[6] <= /*j*/ ctx[41] && /*LimiteX*/ ctx[6] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[41] && create_if_block_11(ctx);
 
     	const block = {
     		c: function create() {
@@ -30872,7 +31260,52 @@ var app = (function () {
     			insert_dev(target, if_block_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (/*LimiteX*/ ctx[6] <= /*j*/ ctx[33] && /*LimiteX*/ ctx[6] + /*Dimensionamento*/ ctx[14] * 2 >= /*j*/ ctx[33]) {
+    			if (/*LimiteX*/ ctx[6] <= /*j*/ ctx[41] && /*LimiteX*/ ctx[6] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[41]) {
+    				if (if_block) {
+    					if_block.p(ctx, dirty);
+    				} else {
+    					if_block = create_if_block_11(ctx);
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			} else if (if_block) {
+    				if_block.d(1);
+    				if_block = null;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_3.name,
+    		type: "each",
+    		source: "(568:16) {#each linhas as elementos,j}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (565:8) {#each mapa1 as linhas,i}
+    function create_each_block_2(ctx) {
+    	let if_block_anchor;
+    	let if_block = /*LimiteY*/ ctx[7] <= /*i*/ ctx[38] && /*LimiteY*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[38] && create_if_block_10(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (/*LimiteY*/ ctx[7] <= /*i*/ ctx[38] && /*LimiteY*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[38]) {
     				if (if_block) {
     					if_block.p(ctx, dirty);
     				} else {
@@ -30893,61 +31326,16 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block_3.name,
-    		type: "each",
-    		source: "(524:16) {#each linhas as elementos,j}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (521:8) {#each mapa1 as linhas,i}
-    function create_each_block_2(ctx) {
-    	let if_block_anchor;
-    	let if_block = /*LimiteY*/ ctx[7] <= /*i*/ ctx[30] && /*LimiteY*/ ctx[7] + /*Dimensionamento*/ ctx[14] * 2 >= /*i*/ ctx[30] && create_if_block_9(ctx);
-
-    	const block = {
-    		c: function create() {
-    			if (if_block) if_block.c();
-    			if_block_anchor = empty();
-    		},
-    		m: function mount(target, anchor) {
-    			if (if_block) if_block.m(target, anchor);
-    			insert_dev(target, if_block_anchor, anchor);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (/*LimiteY*/ ctx[7] <= /*i*/ ctx[30] && /*LimiteY*/ ctx[7] + /*Dimensionamento*/ ctx[14] * 2 >= /*i*/ ctx[30]) {
-    				if (if_block) {
-    					if_block.p(ctx, dirty);
-    				} else {
-    					if_block = create_if_block_9(ctx);
-    					if_block.c();
-    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-    				}
-    			} else if (if_block) {
-    				if_block.d(1);
-    				if_block = null;
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (if_block) if_block.d(detaching);
-    			if (detaching) detach_dev(if_block_anchor);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
     		id: create_each_block_2.name,
     		type: "each",
-    		source: "(521:8) {#each mapa1 as linhas,i}",
+    		source: "(565:8) {#each mapa1 as linhas,i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (506:8) {:else}
+    // (546:8) {:else}
     function create_else_block(ctx) {
     	let p0;
     	let t1;
@@ -30987,20 +31375,20 @@ var app = (function () {
     			t11 = space();
     			input = element("input");
     			attr_dev(p0, "class", "Enigma");
-    			add_location(p0, file, 507, 8, 37401);
+    			add_location(p0, file, 547, 8, 38518);
     			attr_dev(p1, "class", "Enigma");
-    			add_location(p1, file, 508, 8, 37496);
+    			add_location(p1, file, 548, 8, 38613);
     			attr_dev(p2, "class", "Enigma");
-    			add_location(p2, file, 509, 8, 37631);
+    			add_location(p2, file, 549, 8, 38748);
     			attr_dev(p3, "class", "Enigma");
-    			add_location(p3, file, 510, 8, 37716);
+    			add_location(p3, file, 550, 8, 38833);
     			attr_dev(p4, "class", "Enigma");
-    			add_location(p4, file, 511, 8, 37822);
+    			add_location(p4, file, 551, 8, 38939);
     			attr_dev(p5, "class", "Enigma");
-    			add_location(p5, file, 512, 8, 37904);
+    			add_location(p5, file, 552, 8, 39021);
     			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
     			attr_dev(input, "class", "RespostaEnigma");
-    			add_location(input, file, 513, 8, 38043);
+    			add_location(input, file, 553, 8, 39160);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p0, anchor);
@@ -31020,12 +31408,12 @@ var app = (function () {
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(input, "input", /*input_input_handler*/ ctx[22]),
+    					listen_dev(input, "input", /*input_input_handler*/ ctx[24]),
     					listen_dev(
     						input,
     						"keydown",
     						function () {
-    							if (is_function(/*Alterando*/ ctx[21](/*PalavraChave*/ ctx[12] == "OK"))) /*Alterando*/ ctx[21](/*PalavraChave*/ ctx[12] == "OK").apply(this, arguments);
+    							if (is_function(/*Alterando*/ ctx[22](/*PalavraChave*/ ctx[12] == "OK", /*MudandoDeFase*/ ctx[10]))) /*Alterando*/ ctx[22](/*PalavraChave*/ ctx[12] == "OK", /*MudandoDeFase*/ ctx[10]).apply(this, arguments);
     						},
     						false,
     						false,
@@ -31066,19 +31454,19 @@ var app = (function () {
     		block,
     		id: create_else_block.name,
     		type: "else",
-    		source: "(506:8) {:else}",
+    		source: "(546:8) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (482:4) {#if !enigma}
+    // (522:4) {#if !enigma}
     function create_if_block_1(ctx) {
-    	let t0_value = /*RenderizandoMapa*/ ctx[15]() + "";
+    	let t0_value = /*RenderizandoMapa*/ ctx[16]() + "";
     	let t0;
     	let t1;
-    	let t2_value = /*DeterminandoEixos*/ ctx[16](/*MudandoDeFase*/ ctx[10]) + "";
+    	let t2_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[10]) + "";
     	let t2;
     	let t3;
     	let each_1_anchor;
@@ -31116,9 +31504,9 @@ var app = (function () {
     			insert_dev(target, each_1_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*MudandoDeFase*/ 1024 && t2_value !== (t2_value = /*DeterminandoEixos*/ ctx[16](/*MudandoDeFase*/ ctx[10]) + "")) set_data_dev(t2, t2_value);
+    			if (dirty[0] & /*MudandoDeFase*/ 1024 && t2_value !== (t2_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[10]) + "")) set_data_dev(t2, t2_value);
 
-    			if (dirty[0] & /*mapa0, LimiteX, Dimensionamento, LimiteY*/ 16580) {
+    			if (dirty[0] & /*mapa0, LimiteX, Dimensionamento, LimiteY*/ 32964) {
     				each_value = /*mapa0*/ ctx[2];
     				validate_each_argument(each_value);
     				let i;
@@ -31156,18 +31544,18 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(482:4) {#if !enigma}",
+    		source: "(522:4) {#if !enigma}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (488:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+    // (528:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
     function create_if_block_2(ctx) {
     	let tr;
     	let t;
-    	let each_value_1 = /*linhas*/ ctx[28];
+    	let each_value_1 = /*linhas*/ ctx[36];
     	validate_each_argument(each_value_1);
     	let each_blocks = [];
 
@@ -31184,7 +31572,7 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file, 488, 12, 36556);
+    			add_location(tr, file, 528, 12, 37673);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -31196,8 +31584,8 @@ var app = (function () {
     			append_dev(tr, t);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*mapa0, LimiteX, Dimensionamento*/ 16452) {
-    				each_value_1 = /*linhas*/ ctx[28];
+    			if (dirty[0] & /*mapa0, LimiteX, Dimensionamento*/ 32836) {
+    				each_value_1 = /*linhas*/ ctx[36];
     				validate_each_argument(each_value_1);
     				let i;
 
@@ -31230,22 +31618,22 @@ var app = (function () {
     		block,
     		id: create_if_block_2.name,
     		type: "if",
-    		source: "(488:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		source: "(528:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (491:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+    // (531:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
     function create_if_block_3(ctx) {
     	let if_block_anchor;
 
     	function select_block_type_3(ctx, dirty) {
-    		if (/*elementos*/ ctx[31] == 0) return create_if_block_4;
-    		if (/*elementos*/ ctx[31] == 1) return create_if_block_5;
-    		if (/*elementos*/ ctx[31] == "X") return create_if_block_6;
-    		if (/*elementos*/ ctx[31] == "DANTE") return create_if_block_7;
+    		if (/*elementos*/ ctx[39] == 0) return create_if_block_4;
+    		if (/*elementos*/ ctx[39] == 1) return create_if_block_5;
+    		if (/*elementos*/ ctx[39] == "X") return create_if_block_6;
+    		if (/*elementos*/ ctx[39] == "DANTE") return create_if_block_7;
     	}
 
     	let current_block_type = select_block_type_3(ctx);
@@ -31284,14 +31672,14 @@ var app = (function () {
     		block,
     		id: create_if_block_3.name,
     		type: "if",
-    		source: "(491:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
+    		source: "(531:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (498:51) 
+    // (538:51) 
     function create_if_block_7(ctx) {
     	let th;
     	let img;
@@ -31304,8 +31692,8 @@ var app = (function () {
     			attr_dev(img, "class", "dante svelte-133fi3v");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/soacabecinha.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
-    			add_location(img, file, 498, 28, 37169);
-    			add_location(th, file, 498, 24, 37165);
+    			add_location(img, file, 538, 28, 38286);
+    			add_location(th, file, 538, 24, 38282);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31320,14 +31708,14 @@ var app = (function () {
     		block,
     		id: create_if_block_7.name,
     		type: "if",
-    		source: "(498:51) ",
+    		source: "(538:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (496:47) 
+    // (536:47) 
     function create_if_block_6(ctx) {
     	let th;
     	let img;
@@ -31340,8 +31728,8 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saidanivel3.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
     			attr_dev(img, "class", "svelte-133fi3v");
-    			add_location(img, file, 496, 28, 37029);
-    			add_location(th, file, 496, 24, 37025);
+    			add_location(img, file, 536, 28, 38146);
+    			add_location(th, file, 536, 24, 38142);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31356,14 +31744,14 @@ var app = (function () {
     		block,
     		id: create_if_block_6.name,
     		type: "if",
-    		source: "(496:47) ",
+    		source: "(536:47) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (494:45) 
+    // (534:45) 
     function create_if_block_5(ctx) {
     	let th;
     	let img;
@@ -31376,8 +31764,8 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredetutorial.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
     			attr_dev(img, "class", "svelte-133fi3v");
-    			add_location(img, file, 494, 28, 36889);
-    			add_location(th, file, 494, 24, 36885);
+    			add_location(img, file, 534, 28, 38006);
+    			add_location(th, file, 534, 24, 38002);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31392,14 +31780,14 @@ var app = (function () {
     		block,
     		id: create_if_block_5.name,
     		type: "if",
-    		source: "(494:45) ",
+    		source: "(534:45) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (492:20) {#if elementos == 0}
+    // (532:20) {#if elementos == 0}
     function create_if_block_4(ctx) {
     	let th;
     	let img;
@@ -31412,8 +31800,8 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaotutorial.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
     			attr_dev(img, "class", "svelte-133fi3v");
-    			add_location(img, file, 492, 28, 36755);
-    			add_location(th, file, 492, 24, 36751);
+    			add_location(img, file, 532, 28, 37872);
+    			add_location(th, file, 532, 24, 37868);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31428,17 +31816,17 @@ var app = (function () {
     		block,
     		id: create_if_block_4.name,
     		type: "if",
-    		source: "(492:20) {#if elementos == 0}",
+    		source: "(532:20) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (490:16) {#each linhas as elementos,j}
+    // (530:16) {#each linhas as elementos,j}
     function create_each_block_1(ctx) {
     	let if_block_anchor;
-    	let if_block = /*LimiteX*/ ctx[6] <= /*j*/ ctx[33] && /*LimiteX*/ ctx[6] + /*Dimensionamento*/ ctx[14] * 2 >= /*j*/ ctx[33] && create_if_block_3(ctx);
+    	let if_block = /*LimiteX*/ ctx[6] <= /*j*/ ctx[41] && /*LimiteX*/ ctx[6] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[41] && create_if_block_3(ctx);
 
     	const block = {
     		c: function create() {
@@ -31450,7 +31838,7 @@ var app = (function () {
     			insert_dev(target, if_block_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (/*LimiteX*/ ctx[6] <= /*j*/ ctx[33] && /*LimiteX*/ ctx[6] + /*Dimensionamento*/ ctx[14] * 2 >= /*j*/ ctx[33]) {
+    			if (/*LimiteX*/ ctx[6] <= /*j*/ ctx[41] && /*LimiteX*/ ctx[6] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[41]) {
     				if (if_block) {
     					if_block.p(ctx, dirty);
     				} else {
@@ -31473,17 +31861,17 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(490:16) {#each linhas as elementos,j}",
+    		source: "(530:16) {#each linhas as elementos,j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (487:8) {#each mapa0 as linhas,i}
+    // (527:8) {#each mapa0 as linhas,i}
     function create_each_block(ctx) {
     	let if_block_anchor;
-    	let if_block = /*LimiteY*/ ctx[7] <= /*i*/ ctx[30] && /*LimiteY*/ ctx[7] + /*Dimensionamento*/ ctx[14] * 2 >= /*i*/ ctx[30] && create_if_block_2(ctx);
+    	let if_block = /*LimiteY*/ ctx[7] <= /*i*/ ctx[38] && /*LimiteY*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[38] && create_if_block_2(ctx);
 
     	const block = {
     		c: function create() {
@@ -31495,7 +31883,7 @@ var app = (function () {
     			insert_dev(target, if_block_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (/*LimiteY*/ ctx[7] <= /*i*/ ctx[30] && /*LimiteY*/ ctx[7] + /*Dimensionamento*/ ctx[14] * 2 >= /*i*/ ctx[30]) {
+    			if (/*LimiteY*/ ctx[7] <= /*i*/ ctx[38] && /*LimiteY*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[38]) {
     				if (if_block) {
     					if_block.p(ctx, dirty);
     				} else {
@@ -31518,7 +31906,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(487:8) {#each mapa0 as linhas,i}",
+    		source: "(527:8) {#each mapa0 as linhas,i}",
     		ctx
     	});
 
@@ -31530,14 +31918,14 @@ var app = (function () {
     	let if_block1_anchor;
     	let mounted;
     	let dispose;
-    	let if_block0 = /*key*/ ctx[0] && create_if_block_30(ctx);
+    	let if_block0 = /*key*/ ctx[0] && create_if_block_33(ctx);
 
     	function select_block_type_1(ctx, dirty) {
     		if (/*MudandoDeFase*/ ctx[10] == "tutorial") return create_if_block;
     		if (/*MudandoDeFase*/ ctx[10] == "nivel1") return create_if_block_8;
-    		if (/*MudandoDeFase*/ ctx[10] == "nivel2") return create_if_block_15;
-    		if (/*MudandoDeFase*/ ctx[10] == "nivel3") return create_if_block_22;
-    		if (/*MudandoDeFase*/ ctx[10] == "vitoria") return create_if_block_29;
+    		if (/*MudandoDeFase*/ ctx[10] == "nivel2") return create_if_block_16;
+    		if (/*MudandoDeFase*/ ctx[10] == "nivel3") return create_if_block_24;
+    		if (/*MudandoDeFase*/ ctx[10] == "vitoria") return create_if_block_32;
     	}
 
     	let current_block_type = select_block_type_1(ctx);
@@ -31560,7 +31948,7 @@ var app = (function () {
     			insert_dev(target, if_block1_anchor, anchor);
 
     			if (!mounted) {
-    				dispose = listen_dev(window, "keydown", /*handleKeydown*/ ctx[13], false, false, false);
+    				dispose = listen_dev(window, "keydown", /*handleKeydown*/ ctx[14], false, false, false);
     				mounted = true;
     			}
     		},
@@ -31569,7 +31957,7 @@ var app = (function () {
     				if (if_block0) {
     					if_block0.p(ctx, dirty);
     				} else {
-    					if_block0 = create_if_block_30(ctx);
+    					if_block0 = create_if_block_33(ctx);
     					if_block0.c();
     					if_block0.m(t.parentNode, t);
     				}
@@ -44089,6 +44477,7 @@ var app = (function () {
     	let EixoY = 0;
     	let SaveX = 0;
     	let SaveY = 0;
+    	let PontoDeSave = [0, 0];
 
     	function DeterminandoEixos(fase) {
     		if (fase == "tutorial") {
@@ -44107,6 +44496,8 @@ var app = (function () {
     					if (mapa1[i][j] == "DANTE") {
     						$$invalidate(8, EixoX = j);
     						$$invalidate(9, EixoY = i);
+    						PontoDeSave[0] = EixoX;
+    						PontoDeSave[1] = EixoY;
     						return;
     					}
     				}
@@ -44132,6 +44523,14 @@ var app = (function () {
     				}
     			}
     		}
+    	}
+
+    	function RetornaAoSave() {
+    		$$invalidate(3, mapa1[EixoY][EixoX] = 0, mapa1);
+    		$$invalidate(8, EixoX = PontoDeSave[0]);
+    		$$invalidate(9, EixoY = PontoDeSave[1]);
+    		$$invalidate(3, mapa1[EixoY][EixoX] = "DANTE", mapa1);
+    		return;
     	}
 
     	function ResertarPosicao() {
@@ -44349,13 +44748,13 @@ var app = (function () {
 
     	function MudarDeFase(FaseAtual) {
     		if (FaseAtual == "X") {
-    			$$invalidate(10, MudandoDeFase = "nivel1");
+    			$$invalidate(11, enigma = true);
     		} else if (FaseAtual == "Y") {
-    			$$invalidate(10, MudandoDeFase = "nivel2");
+    			$$invalidate(11, enigma = true);
     		} else if (FaseAtual == "Z") {
-    			$$invalidate(10, MudandoDeFase = "nivel3");
+    			$$invalidate(11, enigma = true);
     		} else if (FaseAtual == "V") {
-    			$$invalidate(10, MudandoDeFase = "Vitoria");
+    			$$invalidate(11, enigma = true);
     		}
     	}
 
@@ -44364,16 +44763,47 @@ var app = (function () {
 
     	let PalavraChave = '';
 
-    	function Alterando(teste) {
+    	function Alterando(teste, fase) {
     		if (teste) {
     			$$invalidate(11, enigma = teste);
     			$$invalidate(12, PalavraChave = '');
-    		} else {
-    			$$invalidate(11, enigma = teste);
-    			$$invalidate(12, PalavraChave = '');
+
+    			if (fase == "tutorial") {
+    				$$invalidate(10, MudandoDeFase = "nivel1");
+    			} else if (fase == "nivel1") {
+    				$$invalidate(10, MudandoDeFase = "nivel2");
+    			} else if (fase == "nivel2") {
+    				$$invalidate(10, MudandoDeFase = "nivel3");
+    			} else if (fase == "nivel3") {
+    				$$invalidate(10, MudandoDeFase = "vitoria");
+    			}
+
+    			$$invalidate(11, enigma = false);
     		}
 
     		return enigma;
+    	}
+
+    	let Tempo;
+    	let contador = 60;
+
+    	function TempoEnigma() {
+    		Tempo = setInterval(
+    			() => {
+    				$$invalidate(13, contador--, contador);
+
+    				if (contador == 0) {
+    					alert('vc perdeu');
+    					RetornaAoSave();
+    					$$invalidate(10, MudandoDeFase = "nivel1");
+    					$$invalidate(11, enigma = false);
+    					clearInterval(Tempo);
+    					$$invalidate(13, contador = 60);
+    					return;
+    				}
+    			},
+    			1000
+    		);
     	}
 
     	const writable_props = [];
@@ -44383,6 +44813,21 @@ var app = (function () {
     	});
 
     	function input_input_handler() {
+    		PalavraChave = this.value;
+    		$$invalidate(12, PalavraChave);
+    	}
+
+    	function input_input_handler_1() {
+    		PalavraChave = this.value;
+    		$$invalidate(12, PalavraChave);
+    	}
+
+    	function input_input_handler_2() {
+    		PalavraChave = this.value;
+    		$$invalidate(12, PalavraChave);
+    	}
+
+    	function input_input_handler_3() {
     		PalavraChave = this.value;
     		$$invalidate(12, PalavraChave);
     	}
@@ -44404,7 +44849,9 @@ var app = (function () {
     		EixoY,
     		SaveX,
     		SaveY,
+    		PontoDeSave,
     		DeterminandoEixos,
+    		RetornaAoSave,
     		ResertarPosicao,
     		IncremetarX,
     		DecrementarX,
@@ -44414,7 +44861,10 @@ var app = (function () {
     		MudarDeFase,
     		enigma,
     		PalavraChave,
-    		Alterando
+    		Alterando,
+    		Tempo,
+    		contador,
+    		TempoEnigma
     	});
 
     	$$self.$inject_state = $$props => {
@@ -44425,16 +44875,19 @@ var app = (function () {
     		if ('mapa2' in $$props) $$invalidate(4, mapa2 = $$props.mapa2);
     		if ('mapa3' in $$props) $$invalidate(5, mapa3 = $$props.mapa3);
     		if ('mapa4' in $$props) mapa4 = $$props.mapa4;
-    		if ('Dimensionamento' in $$props) $$invalidate(14, Dimensionamento = $$props.Dimensionamento);
+    		if ('Dimensionamento' in $$props) $$invalidate(15, Dimensionamento = $$props.Dimensionamento);
     		if ('LimiteX' in $$props) $$invalidate(6, LimiteX = $$props.LimiteX);
     		if ('LimiteY' in $$props) $$invalidate(7, LimiteY = $$props.LimiteY);
     		if ('EixoX' in $$props) $$invalidate(8, EixoX = $$props.EixoX);
     		if ('EixoY' in $$props) $$invalidate(9, EixoY = $$props.EixoY);
     		if ('SaveX' in $$props) SaveX = $$props.SaveX;
     		if ('SaveY' in $$props) SaveY = $$props.SaveY;
+    		if ('PontoDeSave' in $$props) PontoDeSave = $$props.PontoDeSave;
     		if ('MudandoDeFase' in $$props) $$invalidate(10, MudandoDeFase = $$props.MudandoDeFase);
     		if ('enigma' in $$props) $$invalidate(11, enigma = $$props.enigma);
     		if ('PalavraChave' in $$props) $$invalidate(12, PalavraChave = $$props.PalavraChave);
+    		if ('Tempo' in $$props) Tempo = $$props.Tempo;
+    		if ('contador' in $$props) $$invalidate(13, contador = $$props.contador);
     	};
 
     	if ($$props && "$$inject" in $$props) {
@@ -44455,6 +44908,7 @@ var app = (function () {
     		MudandoDeFase,
     		enigma,
     		PalavraChave,
+    		contador,
     		handleKeydown,
     		Dimensionamento,
     		RenderizandoMapa,
@@ -44464,7 +44918,11 @@ var app = (function () {
     		IncremetarY,
     		DecrementarY,
     		Alterando,
-    		input_input_handler
+    		TempoEnigma,
+    		input_input_handler,
+    		input_input_handler_1,
+    		input_input_handler_2,
+    		input_input_handler_3
     	];
     }
 
