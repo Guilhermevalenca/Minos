@@ -1,4 +1,7 @@
 <script>
+    //imports:
+import Vitoria from "./Vitoria.svelte";
+    import VoltarMenu from "./VoltarMenu.svelte";
     //Referente ao uso do teclado no jogo:
     let key;
     let code;
@@ -211,6 +214,16 @@
                     }
                 }
             }
+        }else if(MudandoDeFase == "vitoria"){
+            for(let i in mapa4){
+                for(let j in mapa4[i]){
+                    if(mapa4[i][j] == "DANTE"){
+                        LimiteX = j - Dimensionamento;
+                        LimiteY = i - Dimensionamento;
+                        return
+                    }
+                }
+            }
         }
     }
     //Logica de movimentação do jogo:
@@ -218,6 +231,7 @@
     let EixoY = 0;
     let SaveX = 0;
     let SaveY = 0;
+    let PontoDeSave = [0,0];
     function DeterminandoEixos(fase){
         if(fase == "tutorial"){
             for(let i in mapa0){
@@ -235,6 +249,8 @@
                     if(mapa1[i][j] == "DANTE"){
                         EixoX = j;
                         EixoY = i;
+                        PontoDeSave[0] = EixoX;
+                        PontoDeSave[1] = EixoY;
                         return
                     }
                 }
@@ -259,7 +275,24 @@
                     }
                 }
             }
+        }else if(fase == "vitoria"){
+            for(let i in mapa4){
+                for(let j in mapa4[i]){
+                    if(mapa4[i][j] == "DANTE"){
+                        EixoX = j;
+                        EixoY = i;
+                        return
+                    }
+                }
+            }
         }
+    }
+    function RetornaAoSave(){
+        mapa1[EixoY][EixoX] = 0;
+        EixoX = PontoDeSave[0];
+        EixoY = PontoDeSave[1];
+        mapa1[EixoY][EixoX] = "DANTE"
+        return
     }
     function ResertarPosicao(){
         EixoX = SaveX;
@@ -303,6 +336,15 @@
             mapa3[EixoY][EixoX] = "DANTE"
 
             mapa3[SaveY][SaveX] = 0;
+        }else if(MudandoDeFase == "vitoria"){
+            MudarDeFase(mapa4[EixoY][EixoX])
+            if(mapa4[EixoY][EixoX] != 0){
+                ResertarPosicao()
+                return
+            }
+            mapa4[EixoY][EixoX] = "DANTE"
+
+            mapa4[SaveY][SaveX] = 0;
         } RenderizandoMapa()
         code = 'd'
     }function DecrementarX(){
@@ -341,6 +383,15 @@
             }
             mapa3[EixoY][EixoX] = "DANTE"
             mapa3[SaveY][SaveX] = 0;
+        }else if(MudandoDeFase == "vitoria"){
+            MudarDeFase(mapa4[EixoY][EixoX])
+            if(mapa4[EixoY][EixoX] != 0){
+                ResertarPosicao()
+                return
+            }
+            mapa4[EixoY][EixoX] = "DANTE"
+
+            mapa4[SaveY][SaveX] = 0;
         }
         RenderizandoMapa()
         code = 'a'
@@ -380,6 +431,15 @@
             }
             mapa3[EixoY][EixoX] = "DANTE"
             mapa3[SaveY][SaveX] = 0;
+        }else if(MudandoDeFase == "vitoria"){
+            MudarDeFase(mapa4[EixoY][EixoX])
+            if(mapa4[EixoY][EixoX] != 0){
+                ResertarPosicao()
+                return
+            }
+            mapa4[EixoY][EixoX] = "DANTE"
+
+            mapa4[SaveY][SaveX] = 0;
         }
         RenderizandoMapa()
         code = 'w'
@@ -419,7 +479,17 @@
             }
             mapa3[EixoY][EixoX] = "DANTE"
             mapa3[SaveY][SaveX] = 0;
-        }RenderizandoMapa()
+        }else if(MudandoDeFase == "vitoria"){
+            MudarDeFase(mapa4[EixoY][EixoX])
+            if(mapa4[EixoY][EixoX] != 0){
+                ResertarPosicao()
+                return
+            }
+            mapa4[EixoY][EixoX] = "DANTE"
+
+            mapa4[SaveY][SaveX] = 0;
+        }
+        RenderizandoMapa()
         code = 's'
     }
     //Referente a mudança de fases:
@@ -427,33 +497,68 @@
     function MudarDeFase(FaseAtual){
         if(FaseAtual == "X"){
             
-            MudandoDeFase = "nivel1";
+            enigma = true;
         
         }else if(FaseAtual == "Y"){
             
-            MudandoDeFase = "nivel2";
+            enigma = true;
         
         }else if(FaseAtual == "Z"){
             
-            MudandoDeFase = "nivel3";
+            enigma = true;
         
         }else if(FaseAtual == "V"){
             
-            MudandoDeFase = "Vitoria"
+            enigma = true;
         
+        }else if(FaseAtual == "C"){
+            
+            enigma = true;
+
         }
     }
     //Referente aos enigmas:
     let enigma = false;
     let PalavraChave = '';
-    function Alterando(teste){
+    function Alterando(teste, fase){
         if(teste){
             enigma = teste;
             PalavraChave = '';
-        }else{
-            enigma = teste;
-            PalavraChave = '';
+            if(fase == "tutorial"){
+
+                MudandoDeFase = "nivel1";
+            
+            }else if(fase == "nivel1"){
+                
+                MudandoDeFase = "nivel2"; 
+            
+            }else if(fase == "nivel2"){
+                
+                MudandoDeFase = "nivel3";
+            
+            }else if(fase == "nivel3"){
+                
+                MudandoDeFase = "vitoria";
+            
+            }
+            enigma = false;
         }return enigma
+    }
+    let Tempo;
+    let contador = 60
+    function TempoEnigma(){
+        Tempo = setInterval( () => {
+            contador--
+            if(contador == 0){
+                alert('vc perdeu')
+                RetornaAoSave()
+                MudandoDeFase = "nivel1"
+                enigma = false;
+                clearInterval(Tempo)
+                contador = 60;
+                return
+        }
+        },1000)
     }
 </script>
 
@@ -464,6 +569,18 @@
         padding: 0px;
         margin: -2px;
     }
+    .Dante0{
+        background-image: url('/css/imagens/chaotutorial.png');
+    }.Dante1{
+        background-image: url('/css/imagens/chaonivel1.png');
+    }.Dante2{
+        background-image: url('/css/imagens/chaonivel2.png');
+    }.Dante3{
+        background-image: url('/css/imagens/chaonivel3.png');
+    }.Dante4{
+        background-image: url('/css/imagens/chaonivel3.png');
+    }
+
     
 </style>
 <svelte:window on:keydown={handleKeydown}/>
@@ -490,13 +607,13 @@
                 {#each linhas as elementos,j}
                 {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
                     {#if elementos == 0}
-                        <th><img src="/css/imagens/chaotutorial.png" alt="chao"></th>
+                        <th style="background:url('/css/imagens/chaotutorial.png');"><img src="/css/imagens/chaotutorial.png" alt="chao"></th>
                     {:else if elementos == 1}
                         <th><img src="/css/imagens/paredetutorial.png" alt="parede"></th>
                     {:else if elementos == "X"}
                         <th><img src="/css/imagens/saidanivel3.png" alt="saida"></th>
                     {:else if elementos == "DANTE"}
-                        <th><img class="dante" src="/css/imagens/soacabecinha.png" alt="personagem"></th>
+                        <th><img class="Dante0" src="/css/imagens/Dante.png" alt="personagem"></th>
                     {/if}
                 {/if}
                 {/each}
@@ -511,11 +628,15 @@
         <p class="Enigma">OBS: Só serão aceitas letras maiúsculas nas respostas de todos os enigmas.</p>
         <p class='Enigma'>Nenhuma das palavras-chave contém qualquer acento.</p>
         <p class="Enigma">Após compreender o funcionamento do Minos Labyrinth, digite: "OK" e poderá prosseguir para a primeira fase.</p>
-        <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "OK")} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
+        <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "OK",MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
         
 
     {/if}
     {:else if MudandoDeFase == "nivel1"}
+
+    {#if !enigma}
+        
+    
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
         {#each mapa1 as linhas,i}
@@ -524,20 +645,30 @@
                 {#each linhas as elementos,j}
                 {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
                     {#if elementos == 0}
-                        <th><img src="/css/imagens/chaonivel1.png" alt="chao"></th>
+                        <th style="background:url('/css/imagens/chaonivel1.png');"><img src="/css/imagens/chaonivel1.png" alt="chao"></th>
                     {:else if elementos == 1}
                         <th><img src="/css/imagens/paredenivel1.png" alt="parede"></th>
                     {:else if elementos == "Y"}
                         <th><img src="/css/imagens/saidanivel3.png" alt="saida"></th>
                     {:else if elementos == "DANTE"}
-                        <th><img src="/css/imagens/soacabecinha.png" alt="personagem"></th>
+                        <th><img class="Dante1" src="/css/imagens/Dante.png" alt="personagem"></th>
                     {/if}
                     {/if}
                 {/each}
             </tr>
             {/if}
         {/each}
+        {:else}
+        {TempoEnigma()}
+        <p>{contador}</p>
+        <p class='Enigma'>Fui levado para um quarto escuro e incendiado. Eu chorei e então minha cabeça foi cortada. Quem sou eu?</p>
+    <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "VELA",MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
+
+        {/if}
     {:else if MudandoDeFase == "nivel2"}
+    {#if !enigma}
+        
+    {clearInterval(Tempo)}
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
         {#each mapa2 as linhas,i}
@@ -546,43 +677,79 @@
                 {#each linhas as elementos,j}
                 {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
                     {#if elementos == 0}
-                        <th><img src="/css/imagens/chaonivel2.png" alt="chao"></th>
+                        <th style="background:url('/css/imagens/chaonivel2.png');"><img src="/css/imagens/chaonivel2.png" alt="chao"></th>
                     {:else if elementos == 1}
                         <th><img src="/css/imagens/paredenivel2.png" alt="parede"></th>
                     {:else if elementos == "Z"}
                         <th><img src="/css/imagens/saidanivel3.png" alt="saida"></th>
                     {:else if elementos == "DANTE"}
-                        <th><img src="/css/imagens/soacabecinha.png" alt="personagem"></th>
+                        <th><img class="Dante2" src="/css/imagens/Dante.png" alt="personagem"></th>
                     {/if}
                     {/if}
                 {/each}
             </tr>
         {/if}
         {/each}
+        {:else}
+        {TempoEnigma()}
+        <p>{contador}</p>
+        <p class='Enigma'>Poder suficiente para esmagar navios e quebrar telhados mas mesmo assim tenho medo do sol, quem eu sou?</p>
+        <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "GELO",MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
+
+        {/if}
     {:else if MudandoDeFase == "nivel3"}
+    {#if !enigma}
+        
+    {clearInterval(Tempo)}
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
-    <p>{EixoX},{EixoY}</p>
         {#each mapa3 as linhas,i}
         {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
             <tr>
                 {#each linhas as elementos,j}
                 {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
                     {#if elementos == 0}
-                        <th><img src="/css/imagens/chaonivel3.png" alt="chao"></th>
+                        <th style="background:url('/css/imagens/chaonivel3.png');"><img src="/css/imagens/chaonivel3.png" alt="chao"></th>
                     {:else if elementos == 1}
                         <th><img src="/css/imagens/paredenivel3.png" alt="parede"></th>
                     {:else if elementos == "V"}
                         <th><img src="/css/imagens/saidanivel3.png" alt="saida"></th>
                     {:else if elementos == "DANTE"}
-                        <th><img src="/css/imagens/soacabecinha.png" alt="personagem"></th>
+                        <th><img class="Dante3" src="/css/imagens/Dante.png" alt="personagem"></th>
                     {/if}
                     {/if}
                 {/each}
             </tr>
             {/if}
         {/each}
+        {:else}
+        {TempoEnigma()}
+        <p>{contador}</p>
+        <p class='Enigma'>Se você me tem, quer me compartilhar; se você não me compartilha, você me manteve. O que eu sou?</p>
+        <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "SEGREDO",MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>        
+        {/if}
     {:else if MudandoDeFase == "vitoria"}
-    <h1>vc venceu</h1>
+    {#if !enigma}
+        
+    {clearInterval(Tempo)}
+    <Vitoria/>
+    
+    {RenderizandoMapa()}
+    {DeterminandoEixos(MudandoDeFase)}
+    {#each mapa4 as linhas}
+        <tr>
+            {#each linhas as elementos}
+                {#if elementos == 0}
+                    <th style="background:url('/css/imagens/chaonivel3.png');"><img src="/css/imagens/chaonivel3.png" alt="chao"></th>
+                {:else if elementos == 1}
+                    <th><img src="/css/imagens/paredenivel3.png" alt="parede"></th>
+                {:else if elementos == "C"}
+                    <th><img src="/css/imagens/saidanivel3" alt="saida"></th>
+                {:else if elementos == "DANTE"}
+                    <th><img class="Dante4" src="/css/imagens/Dante.png" alt="Personagem"></th>    
+                {/if}
+            {/each}
+        </tr>
+    {/each}
+    {/if}
 {/if}
-

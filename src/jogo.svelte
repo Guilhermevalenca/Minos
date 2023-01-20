@@ -391,7 +391,6 @@ let mapa4 =[
     {/if}
 
 
-
 {#if (MudançaDeFase == 0)}
 
 
