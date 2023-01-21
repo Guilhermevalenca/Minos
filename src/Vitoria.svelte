@@ -1,7 +1,3 @@
- <script>
-    import { estado } from "./Estado.js"
-	import { trocarEstadoDoJogo } from './Estado.js'
-</script>
 <style>
     h1{
         color:  rgb(184, 184, 51);
