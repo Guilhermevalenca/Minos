@@ -10,7 +10,7 @@
     import Creditos from './creditos.svelte';
 </script>
 
- 
+
 <head>
 	<link rel="stylesheet" href="/css/appsvelte.css">
 </head>
@@ -18,7 +18,7 @@
 {#if $estado === 'menu'}
 	<Menu/>
 {:else if $estado === 'jogar'}
-	<Jogar/>
+	<Newjogo/>
 {:else if $estado === 'sobre'}
 	<Sobre/>
 {:else if $estado ==='ajuda'}
@@ -35,6 +35,3 @@
 	</audio>
 </div> 
 	
-
-<Creditos/>
-

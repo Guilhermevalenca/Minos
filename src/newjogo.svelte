@@ -1,7 +1,8 @@
 <script>
     //imports:
-import Vitoria from "./Vitoria.svelte";
+    import Vitoria from "./Vitoria.svelte";
     import VoltarMenu from "./VoltarMenu.svelte";
+    import Creditos from "./creditos.svelte";
     //Referente ao uso do teclado no jogo:
     let key;
     let code;
@@ -166,9 +167,9 @@ let mapa3 = [
         [2,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,"falsa",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,"falsa",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 ]
     let mapa4 = [
-        [2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
-        [2,"DANTE",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"C"],
-        [2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+        [2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
+        [2,"DANTE",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"C"],
+        [2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
     ]
     //limite de renderização:
     let Dimensionamento = 6;
@@ -349,8 +350,7 @@ let mapa3 = [
                 ResertarPosicao()
                 return
             }
-            mapa4[EixoY][EixoX] = "DANTE"
-
+            mapa4[EixoY][EixoX] = "DANTE";
             mapa4[SaveY][SaveX] = 0;
         } RenderizandoMapa()
         code = 'd'
@@ -403,7 +403,6 @@ let mapa3 = [
                 return
             }
             mapa4[EixoY][EixoX] = "DANTE"
-
             mapa4[SaveY][SaveX] = 0;
         }
         RenderizandoMapa()
@@ -457,7 +456,6 @@ let mapa3 = [
                 return
             }
             mapa4[EixoY][EixoX] = "DANTE"
-
             mapa4[SaveY][SaveX] = 0;
         }
         RenderizandoMapa()
@@ -511,7 +509,6 @@ let mapa3 = [
                 return
             }
             mapa4[EixoY][EixoX] = "DANTE"
-
             mapa4[SaveY][SaveX] = 0;
         }
         RenderizandoMapa()
@@ -586,13 +583,15 @@ let mapa3 = [
         },1000)
     }
 </script>
-
+<head>
+    <link rel="stylesheet" href="/css/jogo.css">
+</head>
 <style>
     img{
         height: 45px;
         width: 45px;
         padding: 0px;
-        margin: -2px;
+        margin: -3px;
     }
     .Dante0{
         background-image: url('/css/imagens/chaotutorial.png');
@@ -612,7 +611,6 @@ let mapa3 = [
         background-size: 100%;
     }
 
-    
 </style>
 <svelte:window on:keydown={handleKeydown}/>
 {#if (key)}
@@ -626,10 +624,13 @@ let mapa3 = [
             {IncremetarX()} <!--para direita-->
         {/if}
 {/if}
+<VoltarMenu/>
 {#if MudandoDeFase == "tutorial"}
+    
+    <p class='FasesDoJogo'>Tutorial</p>
+
     {#if !enigma}
         
-    
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
         {#each mapa0 as linhas,i}
@@ -644,7 +645,7 @@ let mapa3 = [
                     {:else if elementos == "X"}
                         <th><img src="/css/imagens/saida.png" alt="saida"></th>
                     {:else if elementos == "DANTE"}
-                        <th><img class="Dante0" src="/css/imagens/Dante.png" alt="personagem"></th>
+                        <th class="Dante0"><img src="/css/imagens/Dante.png" alt="personagem"></th>
                     {:else if elementos == "falsa"}
                         <th><img src="/css/imagens/saida.png" alt="falsa"></th>
                     {/if}
@@ -667,6 +668,8 @@ let mapa3 = [
     {/if}
     {:else if MudandoDeFase == "nivel1"}
 
+    <p class='FasesDoJogo'>Nivel 1</p>
+
     {#if !enigma}
         
     {clearInterval(Tempo)}
@@ -684,7 +687,7 @@ let mapa3 = [
                     {:else if elementos == "Y"}
                         <th><img src="/css/imagens/saida.png" alt="saida"></th>
                     {:else if elementos == "DANTE"}
-                        <th><img class="Dante1" src="/css/imagens/Dante.png" alt="personagem"></th>
+                        <th class="Dante1"><img src="/css/imagens/Dante.png" alt="personagem"></th>
                     {:else if elementos == "falsa"}
                         <th><img src="/css/imagens/saida.png" alt="falsa"></th>
                     {/if}
@@ -701,6 +704,9 @@ let mapa3 = [
 
         {/if}
     {:else if MudandoDeFase == "nivel2"}
+
+    <p class='FasesDoJogo'>Nivel 2</p>
+
     {#if !enigma}
         
     {clearInterval(Tempo)}
@@ -718,7 +724,7 @@ let mapa3 = [
                     {:else if elementos == "Z"}
                         <th><img src="/css/imagens/saida.png" alt="saida"></th>
                     {:else if elementos == "DANTE"}
-                        <th><img class="Dante2" src="/css/imagens/Dante.png" alt="personagem"></th>
+                        <th class="Dante2"><img src="/css/imagens/Dante.png" alt="personagem"></th>
                     {:else if elementos == "falsa"}
                         <th><img src="/css/imagens/saida.png" alt="falsa"></th>
                     {/if}
@@ -735,6 +741,9 @@ let mapa3 = [
 
         {/if}
     {:else if MudandoDeFase == "nivel3"}
+
+    <p class='FasesDoJogo'>Nivel 3</p>
+
     {#if !enigma}
         
     {clearInterval(Tempo)}
@@ -752,7 +761,7 @@ let mapa3 = [
                     {:else if elementos == "V"}
                         <th><img src="/css/imagens/saidanivel3.png" alt="saida"></th>
                     {:else if elementos == "DANTE"}
-                        <th><img class="Dante3" src="/css/imagens/Dante.png" alt="personagem"></th>
+                        <th class="Dante3"><img src="/css/imagens/Dante.png" alt="personagem"></th>
                     {:else if elementos == "falsa"}
                         <th><img src="/css/imagens/saida.png" alt="falsa"></th>
                     {/if}
@@ -768,30 +777,31 @@ let mapa3 = [
         <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "SEGREDO",MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>        
         {/if}
     {:else if MudandoDeFase == "vitoria"}
-    <h1>opa</h1>
-    {#if !enigma}
-        
-    {clearInterval(Tempo)}
-    <Vitoria/>
     
+    {#if !enigma}
+
+    <Vitoria/>
+
+    {clearInterval(Tempo)}
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
+
     {#each mapa4 as linhas}
-        <tr>
-            {#each linhas as elementos}
-                {#if elementos == 0}
-                    <th ><img src="/css/imagens/chaonivel3.png" alt="chao"></th>
-                {:else if elementos == 1}
-                    <th><img src="/css/imagens/paredenivel3.png" alt="parede"></th>
-                {:else if elementos == "C"}
-                    <th><img src="/css/imagens/saidanivel3" alt="saida"></th>
-                {:else if elementos == "DANTE"}
-                    <th><img class="Dante4" src="/css/imagens/Dante.png" alt="Personagem"></th>    
-                {/if}
-            {/each}
-        </tr>
+    <tr>
+        {#each linhas as elementos}
+            {#if elementos == 0}
+                <th><img src="/css/imagens/chaonivel3.png" alt="chao"></th>
+            {:else if elementos == 1}
+                <th><img src="/css/imagens/paredenivel3.png" alt="parede"></th>
+            {:else if elementos == "DANTE"}
+                <th class="Dante4"><img src="/css/imagens/Dante.png" alt="personagem"></th>
+            {:else if elementos == "C"}
+                <th><img src="/css/imagens/saida.png" alt="saida"></th>
+            {/if}
+        {/each}
+    </tr>
     {/each}
     {:else}
-    <h1>vc venceu</h1>
+    <Creditos/>
     {/if}
 {/if}
