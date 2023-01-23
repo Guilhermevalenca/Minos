@@ -760,11 +760,7 @@ let mapa3 = [
     </table>
         {:else}
         <p class="textofutil">{TempoEnigma()}</p>
-        <p class="Enigma">Não o esperava ver aqui tao cedo.</p>
-        <p class="Enigma">Tenha em mente: que nem tudo é o que parece.</p>
-        <p class="Enigma">Quando mais se aprofundar nos misterios do labirinto, mas dificil será escapar com vida, esteja preparado para o que deseja.</p>
-        <p class="Enigma">Afinal, um mero mortal jamais deveria cobiçar algo tão grandioso.</p>
-        <p class="Enigma">Deveria se apressar, o enigma nao se resolverá sozinho.</p>
+        <p class="Enigma">Como pode ver, algumas paredes na vdd são caminhos e podem ate ser atalhos, fique atento a eles, serão muito uteis em sua jornada</p>
         <p class='Enigma'>Poder suficiente para esmagar navios e quebrar telhados mas mesmo assim tenho medo do sol, quem eu sou?</p>
         <p class="Contador">{contador}</p>
         <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "GELO",MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
