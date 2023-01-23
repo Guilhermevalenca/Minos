@@ -605,7 +605,7 @@ let mapa3 = [
         Tempo = setInterval( () => {
             contador--
             if(contador == 0){
-                alert('vc perdeu')
+                alert('Tempo Esgotado')
                 RetornaAoSave()
                 MudandoDeFase = "nivel1"
                 enigma = false;
@@ -829,7 +829,7 @@ let mapa3 = [
             {#if elementos == 0}
                 <th><img src="/css/imagens/chaonivel3.png" alt="chao"></th>
             {:else if elementos == 1}
-                <th><img src="/css/imagens/paredenivel3.png" alt="parede"></th>
+                <th><img src="/css/imagens/paredetunel.png" alt="parede"></th>
             {:else if elementos == "DANTE"}
                 <th class="Dante4"><img src="/css/imagens/Dante.png" alt="personagem"></th>
             {:else if elementos == "C"}

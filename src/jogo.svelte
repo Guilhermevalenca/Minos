@@ -578,7 +578,7 @@ let mapa4 =[
         {#if estrada == 0}
             <th id="MapaGeral"><img id='ChaoNoGeral' class="{ClassDante(i,j,eixoX,eixoY,MudançaDeFase)}" src="{IMGmovimentacao(i,j,eixoX,eixoY,MudançaDeFase)}" alt="estrada"></th>
             {:else if estrada == "C"}
-            <th id="MapaGeral"><img class='parede' src="/css/imagens/paredetutorial1.png" alt="parede"></th>
+            <th id="MapaGeral"><img class='parede' src="/css/imagens/paredetunel.png" alt="parede"></th>
         {/if}
     {/each}
 </tr>
