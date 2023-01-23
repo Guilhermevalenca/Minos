@@ -10,6 +10,7 @@ h1{
    color: transparent;
    margin: 0%;
    margin-top: 100px;
+   margin-bottom: 50px;;
 }
 
 h2{
@@ -50,6 +51,34 @@ p{
     margin-top: 10px;
     margin-left: 1%;
 }
+.geral {
+    animation-duration: 30s;
+    animation-name: mymove;
+    position: relative;
+  }
+  
+  @keyframes mymove {
+    from {bottom: 0px;}
+    to {bottom: 3000px;}
+  }
+  .agradeca{  
+    color: rgb(184, 184, 6);
+   background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+    font-size: 100px;
+    margin-top: 500px;
+    animation-duration: 30s;
+    animation-name: mymove;
+    position: relative;
+  }
+  
+  @keyframes mymove {
+    from {bottom: 0px;}
+    to {bottom: 3000px;}
+
+  }
 
 h4{
     font-family:'Felix Titling';
@@ -62,21 +91,8 @@ h4{
    -webkit-background-clip: text;
    color: transparent;
    margin: 0%;
-   margin-top: 30px;
-   margin-left: 1%;
-}
-
-h5{
-    font-family:'Felix Titling';
-    font-size: 180%;
-    border-style:hidden;
-   text-align: center;
-   color: rgb(184, 184, 6);
-   background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
-   background-clip: text;
-   -webkit-background-clip: text;
-   color: transparent;
-   margin: 0%;
+   margin-bottom: 50px;
    margin-top: 100px;
    margin-left: 1%;
+
 }

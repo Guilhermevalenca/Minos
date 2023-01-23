@@ -29463,7 +29463,7 @@ var app = (function () {
     	let head;
     	let link;
     	let t0;
-    	let h10;
+    	let h40;
     	let t2;
     	let p0;
     	let t4;
@@ -29471,228 +29471,265 @@ var app = (function () {
     	let t6;
     	let p2;
     	let t8;
-    	let h11;
-    	let t10;
-    	let h40;
-    	let t12;
     	let p3;
-    	let t14;
-    	let p4;
-    	let t16;
-    	let p5;
-    	let t18;
+    	let t10;
     	let h41;
-    	let t20;
+    	let t12;
+    	let p4;
+    	let t14;
+    	let p5;
+    	let t16;
     	let p6;
-    	let t22;
+    	let t18;
     	let p7;
-    	let t24;
+    	let t20;
     	let p8;
-    	let t26;
+    	let t22;
     	let h42;
-    	let t28;
+    	let t24;
     	let p9;
-    	let t30;
+    	let t26;
     	let p10;
-    	let t32;
+    	let t28;
+    	let h10;
+    	let t30;
     	let p11;
-    	let t34;
+    	let t32;
     	let p12;
-    	let t36;
-    	let h43;
-    	let t38;
+    	let t34;
     	let p13;
+    	let t36;
+    	let h11;
+    	let t38;
+    	let h43;
     	let t40;
-    	let h44;
-    	let t42;
     	let p14;
-    	let t44;
-    	let h12;
-    	let t46;
-    	let h45;
-    	let t48;
+    	let t42;
     	let p15;
-    	let t50;
+    	let t44;
     	let p16;
-    	let t52;
+    	let t46;
+    	let h44;
+    	let t48;
     	let p17;
-    	let t54;
+    	let t50;
     	let p18;
-    	let t56;
-    	let h46;
-    	let t58;
+    	let t52;
     	let p19;
-    	let t60;
+    	let t54;
+    	let h45;
+    	let t56;
     	let p20;
-    	let t62;
+    	let t58;
     	let p21;
-    	let t64;
+    	let t60;
     	let p22;
-    	let t66;
+    	let t62;
     	let p23;
+    	let t64;
+    	let h46;
+    	let t66;
+    	let p24;
     	let t68;
     	let h47;
     	let t70;
-    	let p24;
-    	let t72;
     	let p25;
+    	let t72;
+    	let p26;
 
     	const block = {
     		c: function create() {
     			head = element("head");
     			link = element("link");
     			t0 = space();
-    			h10 = element("h1");
-    			h10.textContent = "Experiências do Grupo";
+    			h40 = element("h4");
+    			h40.textContent = "Design";
     			t2 = space();
     			p0 = element("p");
-    			p0.textContent = "Pela convivência do semestre letivo tinhamos um bom entrosamento que contribuiu para um bom desempenho em equipe,";
+    			p0.textContent = "Alice Manguinho";
     			t4 = space();
     			p1 = element("p");
-    			p1.textContent = "sempre tentando ouvir uns aos outros e ajudar nas dificuldades individuais de cada um.";
+    			p1.textContent = "Assíria Renara";
     			t6 = space();
     			p2 = element("p");
-    			p2.textContent = "Apesar de diversas complicações durante o processo de criação, conseguimos lidar com os problemas e entregar nosso projeto do jeito que desejávamos.";
+    			p2.textContent = "Emmily Kathylen";
     			t8 = space();
+    			p3 = element("p");
+    			p3.textContent = "Guilherme Valença";
+    			t10 = space();
+    			h41 = element("h4");
+    			h41.textContent = "Lógica";
+    			t12 = space();
+    			p4 = element("p");
+    			p4.textContent = "Alice Manguinho";
+    			t14 = space();
+    			p5 = element("p");
+    			p5.textContent = "Assíria Renara";
+    			t16 = space();
+    			p6 = element("p");
+    			p6.textContent = "Claudiane Rodrigues";
+    			t18 = space();
+    			p7 = element("p");
+    			p7.textContent = "Emmily Kathylen";
+    			t20 = space();
+    			p8 = element("p");
+    			p8.textContent = "Guilherme Valença";
+    			t22 = space();
+    			h42 = element("h4");
+    			h42.textContent = "História";
+    			t24 = space();
+    			p9 = element("p");
+    			p9.textContent = "Alice Manguinho";
+    			t26 = space();
+    			p10 = element("p");
+    			p10.textContent = "Assíria Renara";
+    			t28 = space();
+    			h10 = element("h1");
+    			h10.textContent = "Experiência do Grupo";
+    			t30 = space();
+    			p11 = element("p");
+    			p11.textContent = "Pela convivência do semestre letivo tinhamos um bom entrosamento que contribuiu para um bom desempenho em equipe,";
+    			t32 = space();
+    			p12 = element("p");
+    			p12.textContent = "sempre tentando ouvir uns aos outros e ajudar nas dificuldades individuais de cada um.";
+    			t34 = space();
+    			p13 = element("p");
+    			p13.textContent = "Apesar de diversas complicações durante o processo de criação, conseguimos lidar com os problemas e entregar nosso projeto do jeito que desejávamos.";
+    			t36 = space();
     			h11 = element("h1");
     			h11.textContent = "Experiências Pessoais";
-    			t10 = space();
-    			h40 = element("h4");
-    			h40.textContent = "Alice Manguinho";
-    			t12 = space();
-    			p3 = element("p");
-    			p3.textContent = "Foi muito interessante participar da criação do minos. Por nunca ter tido contato com programação, tive dificuldades com CSS e";
-    			t14 = space();
-    			p4 = element("p");
-    			p4.textContent = "com a lógica da página do jogo, mas com o apoio e auxílio da equipe conseguimos finalizar o projeto do jeito que tanto idealizamos durante os meses.";
-    			t16 = space();
-    			p5 = element("p");
-    			p5.textContent = "A persistêcia nos levou a realizaçâo de nossos objetivos.";
-    			t18 = space();
-    			h41 = element("h4");
-    			h41.textContent = "Assíria Renara";
-    			t20 = space();
-    			p6 = element("p");
-    			p6.textContent = "Foi muito divertido o processo de criação dos personagens, frases, história e tudo mais;";
-    			t22 = space();
-    			p7 = element("p");
-    			p7.textContent = "porém a programação foi o que mais me deu dor de cabeça por ter sido o meu primeiro contato com essa área.";
-    			t24 = space();
-    			p8 = element("p");
-    			p8.textContent = "Ainda assim, gostei. A experiência se tornou melhor porque tive a ajuda do meu grupo, creio eu que o resultado ficou ótimo e conseguimos fazer um excelente jogo.";
-    			t26 = space();
-    			h42 = element("h4");
-    			h42.textContent = "Claudiane Rodrigues";
-    			t28 = space();
-    			p9 = element("p");
-    			p9.textContent = "Adorei a experiência de estar programando um jogo (apesar de todo o estresse com coisas dando errado e de trabalhar com front)";
-    			t30 = space();
-    			p10 = element("p");
-    			p10.textContent = "e sinceramente nunca imaginei que gostaria disso...eu diria que eu descobri uma parte de mim que eu não conhecia ainda, aprendi coisas que não sabia,";
-    			t32 = space();
-    			p11 = element("p");
-    			p11.textContent = "coloquei em prática coisas que sabia mas ainda não havia colocado em prática,testei minhas habilidades.";
-    			t34 = space();
-    			p12 = element("p");
-    			p12.textContent = "Enfim... Espero que gostem do nosso jogo :)";
-    			t36 = space();
-    			h43 = element("h4");
-    			h43.textContent = "Emmily Kathylen";
     			t38 = space();
-    			p13 = element("p");
-    			p13.textContent = "a";
+    			h43 = element("h4");
+    			h43.textContent = "Alice Manguinho";
     			t40 = space();
-    			h44 = element("h4");
-    			h44.textContent = "Guilherme Valença";
-    			t42 = space();
     			p14 = element("p");
-    			p14.textContent = "a";
-    			t44 = space();
-    			h12 = element("h1");
-    			h12.textContent = "Sobre a criação";
-    			t46 = space();
-    			h45 = element("h4");
-    			h45.textContent = "Design";
-    			t48 = space();
+    			p14.textContent = "Foi muito interessante participar da criação do minos. Por nunca ter tido contato com programação, tive dificuldades com CSS e";
+    			t42 = space();
     			p15 = element("p");
-    			p15.textContent = "Alice Manguinho";
-    			t50 = space();
+    			p15.textContent = "com a lógica da página do jogo, mas com o apoio e auxílio da equipe conseguimos finalizar o projeto do jeito que tanto idealizamos durante os meses.";
+    			t44 = space();
     			p16 = element("p");
-    			p16.textContent = "Assíria Renara";
-    			t52 = space();
+    			p16.textContent = "A persistêcia nos levou a realizaçâo de nossos objetivos.";
+    			t46 = space();
+    			h44 = element("h4");
+    			h44.textContent = "Assíria Renara";
+    			t48 = space();
     			p17 = element("p");
-    			p17.textContent = "Emmily Kathylen";
-    			t54 = space();
+    			p17.textContent = "Foi muito divertido o processo de criação dos personagens, frases, história e tudo mais;";
+    			t50 = space();
     			p18 = element("p");
-    			p18.textContent = "Guilherme Valença";
-    			t56 = space();
-    			h46 = element("h4");
-    			h46.textContent = "Lógica";
-    			t58 = space();
+    			p18.textContent = "porém a programação foi o que mais me deu dor de cabeça por ter sido o meu primeiro contato com essa área.";
+    			t52 = space();
     			p19 = element("p");
-    			p19.textContent = "Alice Manguinho";
-    			t60 = space();
+    			p19.textContent = "Ainda assim, gostei. A experiência se tornou melhor porque tive a ajuda do meu grupo, creio eu que o resultado ficou ótimo e conseguimos fazer um excelente jogo.";
+    			t54 = space();
+    			h45 = element("h4");
+    			h45.textContent = "Claudiane Rodrigues";
+    			t56 = space();
     			p20 = element("p");
-    			p20.textContent = "Assíria Renara";
-    			t62 = space();
+    			p20.textContent = "Adorei a experiência de estar programando um jogo (apesar de todo o estresse com coisas dando errado e de trabalhar com front)";
+    			t58 = space();
     			p21 = element("p");
-    			p21.textContent = "Claudiane Rodrigues";
-    			t64 = space();
+    			p21.textContent = "e sinceramente nunca imaginei que gostaria disso...eu diria que eu descobri uma parte de mim que eu não conhecia ainda, aprendi coisas que não sabia,";
+    			t60 = space();
     			p22 = element("p");
-    			p22.textContent = "Emmily Kathylen";
-    			t66 = space();
+    			p22.textContent = "coloquei em prática coisas que sabia mas ainda não havia colocado em prática,testei minhas habilidades.";
+    			t62 = space();
     			p23 = element("p");
-    			p23.textContent = "Guilherme Valença";
+    			p23.textContent = "Enfim... Espero que gostem do nosso jogo :)";
+    			t64 = space();
+    			h46 = element("h4");
+    			h46.textContent = "Emmily Kathylen";
+    			t66 = space();
+    			p24 = element("p");
+    			p24.textContent = "a";
     			t68 = space();
     			h47 = element("h4");
-    			h47.textContent = "História";
+    			h47.textContent = "Guilherme Valença";
     			t70 = space();
-    			p24 = element("p");
-    			p24.textContent = "Alice Manguinho";
-    			t72 = space();
     			p25 = element("p");
-    			p25.textContent = "Assíria Renara";
+    			p25.textContent = "a";
+    			t72 = space();
+    			p26 = element("p");
+    			p26.textContent = "Obrigado por Jogar!";
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "/css/creditos.css");
     			add_location(link, file$2, 1, 4, 12);
     			add_location(head, file$2, 0, 0, 0);
-    			add_location(h10, file$2, 4, 0, 73);
-    			add_location(p0, file$2, 6, 0, 109);
-    			add_location(p1, file$2, 7, 0, 233);
-    			add_location(p2, file$2, 8, 0, 330);
-    			add_location(h11, file$2, 10, 0, 491);
-    			add_location(h40, file$2, 12, 0, 527);
-    			add_location(p3, file$2, 14, 0, 557);
-    			add_location(p4, file$2, 15, 0, 694);
-    			add_location(p5, file$2, 16, 0, 852);
-    			add_location(h41, file$2, 18, 0, 922);
-    			add_location(p6, file$2, 20, 0, 951);
-    			add_location(p7, file$2, 21, 0, 1050);
-    			add_location(p8, file$2, 22, 0, 1167);
-    			add_location(h42, file$2, 24, 0, 1341);
-    			add_location(p9, file$2, 26, 0, 1375);
-    			add_location(p10, file$2, 27, 0, 1512);
-    			add_location(p11, file$2, 28, 0, 1672);
-    			add_location(p12, file$2, 29, 0, 1787);
-    			add_location(h43, file$2, 31, 0, 1843);
-    			add_location(p13, file$2, 33, 0, 1873);
-    			add_location(h44, file$2, 35, 0, 1887);
-    			add_location(p14, file$2, 37, 0, 1919);
-    			add_location(h12, file$2, 39, 0, 1933);
-    			add_location(h45, file$2, 41, 0, 1963);
-    			add_location(p15, file$2, 43, 0, 1984);
-    			add_location(p16, file$2, 44, 0, 2010);
-    			add_location(p17, file$2, 45, 0, 2035);
-    			add_location(p18, file$2, 46, 0, 2061);
-    			add_location(h46, file$2, 48, 0, 2091);
-    			add_location(p19, file$2, 50, 0, 2112);
-    			add_location(p20, file$2, 51, 0, 2138);
-    			add_location(p21, file$2, 52, 0, 2163);
-    			add_location(p22, file$2, 53, 0, 2193);
-    			add_location(p23, file$2, 54, 0, 2219);
-    			add_location(h47, file$2, 56, 0, 2249);
-    			add_location(p24, file$2, 58, 0, 2272);
-    			add_location(p25, file$2, 59, 0, 2298);
+    			attr_dev(h40, "class", "geral");
+    			add_location(h40, file$2, 4, 0, 73);
+    			attr_dev(p0, "class", "geral");
+    			add_location(p0, file$2, 6, 0, 108);
+    			attr_dev(p1, "class", "geral");
+    			add_location(p1, file$2, 7, 0, 148);
+    			attr_dev(p2, "class", "geral");
+    			add_location(p2, file$2, 8, 0, 187);
+    			attr_dev(p3, "class", "geral");
+    			add_location(p3, file$2, 9, 0, 227);
+    			attr_dev(h41, "class", "geral");
+    			add_location(h41, file$2, 11, 0, 271);
+    			attr_dev(p4, "class", "geral");
+    			add_location(p4, file$2, 13, 0, 306);
+    			attr_dev(p5, "class", "geral");
+    			add_location(p5, file$2, 14, 0, 346);
+    			attr_dev(p6, "class", "geral");
+    			add_location(p6, file$2, 15, 0, 385);
+    			attr_dev(p7, "class", "geral");
+    			add_location(p7, file$2, 16, 0, 429);
+    			attr_dev(p8, "class", "geral");
+    			add_location(p8, file$2, 17, 0, 469);
+    			attr_dev(h42, "class", "geral");
+    			add_location(h42, file$2, 19, 0, 513);
+    			attr_dev(p9, "class", "geral");
+    			add_location(p9, file$2, 21, 0, 550);
+    			attr_dev(p10, "class", "geral");
+    			add_location(p10, file$2, 22, 0, 590);
+    			attr_dev(h10, "class", "geral");
+    			add_location(h10, file$2, 24, 0, 632);
+    			attr_dev(p11, "class", "geral");
+    			add_location(p11, file$2, 26, 0, 681);
+    			attr_dev(p12, "class", "geral");
+    			add_location(p12, file$2, 27, 0, 819);
+    			attr_dev(p13, "class", "geral");
+    			add_location(p13, file$2, 28, 0, 930);
+    			attr_dev(h11, "class", "geral");
+    			add_location(h11, file$2, 30, 0, 1105);
+    			attr_dev(h43, "class", "geral");
+    			add_location(h43, file$2, 32, 0, 1155);
+    			attr_dev(p14, "class", "geral");
+    			add_location(p14, file$2, 34, 0, 1199);
+    			attr_dev(p15, "class", "geral");
+    			add_location(p15, file$2, 35, 0, 1350);
+    			attr_dev(p16, "class", "geral");
+    			add_location(p16, file$2, 36, 0, 1522);
+    			attr_dev(h44, "class", "geral");
+    			add_location(h44, file$2, 38, 0, 1606);
+    			attr_dev(p17, "class", "geral");
+    			add_location(p17, file$2, 40, 0, 1649);
+    			attr_dev(p18, "class", "geral");
+    			add_location(p18, file$2, 41, 0, 1762);
+    			attr_dev(p19, "class", "geral");
+    			add_location(p19, file$2, 42, 0, 1893);
+    			attr_dev(h45, "class", "geral");
+    			add_location(h45, file$2, 44, 0, 2081);
+    			attr_dev(p20, "class", "geral");
+    			add_location(p20, file$2, 46, 0, 2129);
+    			attr_dev(p21, "class", "geral");
+    			add_location(p21, file$2, 47, 0, 2280);
+    			attr_dev(p22, "class", "geral");
+    			add_location(p22, file$2, 48, 0, 2454);
+    			attr_dev(p23, "class", "geral");
+    			add_location(p23, file$2, 49, 0, 2583);
+    			attr_dev(h46, "class", "geral");
+    			add_location(h46, file$2, 51, 0, 2653);
+    			attr_dev(p24, "class", "geral");
+    			add_location(p24, file$2, 53, 0, 2697);
+    			attr_dev(h47, "class", "geral");
+    			add_location(h47, file$2, 55, 0, 2725);
+    			attr_dev(p25, "class", "geral");
+    			add_location(p25, file$2, 57, 0, 2771);
+    			attr_dev(p26, "class", "agradeca");
+    			add_location(p26, file$2, 59, 0, 2799);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -29701,7 +29738,7 @@ var app = (function () {
     			insert_dev(target, head, anchor);
     			append_dev(head, link);
     			insert_dev(target, t0, anchor);
-    			insert_dev(target, h10, anchor);
+    			insert_dev(target, h40, anchor);
     			insert_dev(target, t2, anchor);
     			insert_dev(target, p0, anchor);
     			insert_dev(target, t4, anchor);
@@ -29709,71 +29746,71 @@ var app = (function () {
     			insert_dev(target, t6, anchor);
     			insert_dev(target, p2, anchor);
     			insert_dev(target, t8, anchor);
-    			insert_dev(target, h11, anchor);
-    			insert_dev(target, t10, anchor);
-    			insert_dev(target, h40, anchor);
-    			insert_dev(target, t12, anchor);
     			insert_dev(target, p3, anchor);
-    			insert_dev(target, t14, anchor);
-    			insert_dev(target, p4, anchor);
-    			insert_dev(target, t16, anchor);
-    			insert_dev(target, p5, anchor);
-    			insert_dev(target, t18, anchor);
+    			insert_dev(target, t10, anchor);
     			insert_dev(target, h41, anchor);
-    			insert_dev(target, t20, anchor);
+    			insert_dev(target, t12, anchor);
+    			insert_dev(target, p4, anchor);
+    			insert_dev(target, t14, anchor);
+    			insert_dev(target, p5, anchor);
+    			insert_dev(target, t16, anchor);
     			insert_dev(target, p6, anchor);
-    			insert_dev(target, t22, anchor);
+    			insert_dev(target, t18, anchor);
     			insert_dev(target, p7, anchor);
-    			insert_dev(target, t24, anchor);
+    			insert_dev(target, t20, anchor);
     			insert_dev(target, p8, anchor);
-    			insert_dev(target, t26, anchor);
+    			insert_dev(target, t22, anchor);
     			insert_dev(target, h42, anchor);
-    			insert_dev(target, t28, anchor);
+    			insert_dev(target, t24, anchor);
     			insert_dev(target, p9, anchor);
-    			insert_dev(target, t30, anchor);
+    			insert_dev(target, t26, anchor);
     			insert_dev(target, p10, anchor);
-    			insert_dev(target, t32, anchor);
+    			insert_dev(target, t28, anchor);
+    			insert_dev(target, h10, anchor);
+    			insert_dev(target, t30, anchor);
     			insert_dev(target, p11, anchor);
-    			insert_dev(target, t34, anchor);
+    			insert_dev(target, t32, anchor);
     			insert_dev(target, p12, anchor);
-    			insert_dev(target, t36, anchor);
-    			insert_dev(target, h43, anchor);
-    			insert_dev(target, t38, anchor);
+    			insert_dev(target, t34, anchor);
     			insert_dev(target, p13, anchor);
+    			insert_dev(target, t36, anchor);
+    			insert_dev(target, h11, anchor);
+    			insert_dev(target, t38, anchor);
+    			insert_dev(target, h43, anchor);
     			insert_dev(target, t40, anchor);
-    			insert_dev(target, h44, anchor);
-    			insert_dev(target, t42, anchor);
     			insert_dev(target, p14, anchor);
-    			insert_dev(target, t44, anchor);
-    			insert_dev(target, h12, anchor);
-    			insert_dev(target, t46, anchor);
-    			insert_dev(target, h45, anchor);
-    			insert_dev(target, t48, anchor);
+    			insert_dev(target, t42, anchor);
     			insert_dev(target, p15, anchor);
-    			insert_dev(target, t50, anchor);
+    			insert_dev(target, t44, anchor);
     			insert_dev(target, p16, anchor);
-    			insert_dev(target, t52, anchor);
+    			insert_dev(target, t46, anchor);
+    			insert_dev(target, h44, anchor);
+    			insert_dev(target, t48, anchor);
     			insert_dev(target, p17, anchor);
-    			insert_dev(target, t54, anchor);
+    			insert_dev(target, t50, anchor);
     			insert_dev(target, p18, anchor);
-    			insert_dev(target, t56, anchor);
-    			insert_dev(target, h46, anchor);
-    			insert_dev(target, t58, anchor);
+    			insert_dev(target, t52, anchor);
     			insert_dev(target, p19, anchor);
-    			insert_dev(target, t60, anchor);
+    			insert_dev(target, t54, anchor);
+    			insert_dev(target, h45, anchor);
+    			insert_dev(target, t56, anchor);
     			insert_dev(target, p20, anchor);
-    			insert_dev(target, t62, anchor);
+    			insert_dev(target, t58, anchor);
     			insert_dev(target, p21, anchor);
-    			insert_dev(target, t64, anchor);
+    			insert_dev(target, t60, anchor);
     			insert_dev(target, p22, anchor);
-    			insert_dev(target, t66, anchor);
+    			insert_dev(target, t62, anchor);
     			insert_dev(target, p23, anchor);
+    			insert_dev(target, t64, anchor);
+    			insert_dev(target, h46, anchor);
+    			insert_dev(target, t66, anchor);
+    			insert_dev(target, p24, anchor);
     			insert_dev(target, t68, anchor);
     			insert_dev(target, h47, anchor);
     			insert_dev(target, t70, anchor);
-    			insert_dev(target, p24, anchor);
-    			insert_dev(target, t72, anchor);
     			insert_dev(target, p25, anchor);
+    			insert_dev(target, t72, anchor);
+    			insert_dev(target, p26, anchor);
     		},
     		p: noop,
     		i: noop,
@@ -29781,7 +29818,7 @@ var app = (function () {
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(head);
     			if (detaching) detach_dev(t0);
-    			if (detaching) detach_dev(h10);
+    			if (detaching) detach_dev(h40);
     			if (detaching) detach_dev(t2);
     			if (detaching) detach_dev(p0);
     			if (detaching) detach_dev(t4);
@@ -29789,71 +29826,71 @@ var app = (function () {
     			if (detaching) detach_dev(t6);
     			if (detaching) detach_dev(p2);
     			if (detaching) detach_dev(t8);
-    			if (detaching) detach_dev(h11);
-    			if (detaching) detach_dev(t10);
-    			if (detaching) detach_dev(h40);
-    			if (detaching) detach_dev(t12);
     			if (detaching) detach_dev(p3);
-    			if (detaching) detach_dev(t14);
-    			if (detaching) detach_dev(p4);
-    			if (detaching) detach_dev(t16);
-    			if (detaching) detach_dev(p5);
-    			if (detaching) detach_dev(t18);
+    			if (detaching) detach_dev(t10);
     			if (detaching) detach_dev(h41);
-    			if (detaching) detach_dev(t20);
+    			if (detaching) detach_dev(t12);
+    			if (detaching) detach_dev(p4);
+    			if (detaching) detach_dev(t14);
+    			if (detaching) detach_dev(p5);
+    			if (detaching) detach_dev(t16);
     			if (detaching) detach_dev(p6);
-    			if (detaching) detach_dev(t22);
+    			if (detaching) detach_dev(t18);
     			if (detaching) detach_dev(p7);
-    			if (detaching) detach_dev(t24);
+    			if (detaching) detach_dev(t20);
     			if (detaching) detach_dev(p8);
-    			if (detaching) detach_dev(t26);
+    			if (detaching) detach_dev(t22);
     			if (detaching) detach_dev(h42);
-    			if (detaching) detach_dev(t28);
+    			if (detaching) detach_dev(t24);
     			if (detaching) detach_dev(p9);
-    			if (detaching) detach_dev(t30);
+    			if (detaching) detach_dev(t26);
     			if (detaching) detach_dev(p10);
-    			if (detaching) detach_dev(t32);
+    			if (detaching) detach_dev(t28);
+    			if (detaching) detach_dev(h10);
+    			if (detaching) detach_dev(t30);
     			if (detaching) detach_dev(p11);
-    			if (detaching) detach_dev(t34);
+    			if (detaching) detach_dev(t32);
     			if (detaching) detach_dev(p12);
-    			if (detaching) detach_dev(t36);
-    			if (detaching) detach_dev(h43);
-    			if (detaching) detach_dev(t38);
+    			if (detaching) detach_dev(t34);
     			if (detaching) detach_dev(p13);
+    			if (detaching) detach_dev(t36);
+    			if (detaching) detach_dev(h11);
+    			if (detaching) detach_dev(t38);
+    			if (detaching) detach_dev(h43);
     			if (detaching) detach_dev(t40);
-    			if (detaching) detach_dev(h44);
-    			if (detaching) detach_dev(t42);
     			if (detaching) detach_dev(p14);
-    			if (detaching) detach_dev(t44);
-    			if (detaching) detach_dev(h12);
-    			if (detaching) detach_dev(t46);
-    			if (detaching) detach_dev(h45);
-    			if (detaching) detach_dev(t48);
+    			if (detaching) detach_dev(t42);
     			if (detaching) detach_dev(p15);
-    			if (detaching) detach_dev(t50);
+    			if (detaching) detach_dev(t44);
     			if (detaching) detach_dev(p16);
-    			if (detaching) detach_dev(t52);
+    			if (detaching) detach_dev(t46);
+    			if (detaching) detach_dev(h44);
+    			if (detaching) detach_dev(t48);
     			if (detaching) detach_dev(p17);
-    			if (detaching) detach_dev(t54);
+    			if (detaching) detach_dev(t50);
     			if (detaching) detach_dev(p18);
-    			if (detaching) detach_dev(t56);
-    			if (detaching) detach_dev(h46);
-    			if (detaching) detach_dev(t58);
+    			if (detaching) detach_dev(t52);
     			if (detaching) detach_dev(p19);
-    			if (detaching) detach_dev(t60);
+    			if (detaching) detach_dev(t54);
+    			if (detaching) detach_dev(h45);
+    			if (detaching) detach_dev(t56);
     			if (detaching) detach_dev(p20);
-    			if (detaching) detach_dev(t62);
+    			if (detaching) detach_dev(t58);
     			if (detaching) detach_dev(p21);
-    			if (detaching) detach_dev(t64);
+    			if (detaching) detach_dev(t60);
     			if (detaching) detach_dev(p22);
-    			if (detaching) detach_dev(t66);
+    			if (detaching) detach_dev(t62);
     			if (detaching) detach_dev(p23);
+    			if (detaching) detach_dev(t64);
+    			if (detaching) detach_dev(h46);
+    			if (detaching) detach_dev(t66);
+    			if (detaching) detach_dev(p24);
     			if (detaching) detach_dev(t68);
     			if (detaching) detach_dev(h47);
     			if (detaching) detach_dev(t70);
-    			if (detaching) detach_dev(p24);
-    			if (detaching) detach_dev(t72);
     			if (detaching) detach_dev(p25);
+    			if (detaching) detach_dev(t72);
+    			if (detaching) detach_dev(p26);
     		}
     	};
 
@@ -29965,7 +30002,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (616:0) {#if (key)}
+    // (604:0) {#if (key)}
     function create_if_block_42(ctx) {
     	let if_block_anchor;
 
@@ -30014,14 +30051,14 @@ var app = (function () {
     		block,
     		id: create_if_block_42.name,
     		type: "if",
-    		source: "(616:0) {#if (key)}",
+    		source: "(604:0) {#if (key)}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (623:41) 
+    // (611:41) 
     function create_if_block_46(ctx) {
     	let t_value = /*IncremetarX*/ ctx[18]() + "";
     	let t;
@@ -30043,14 +30080,14 @@ var app = (function () {
     		block,
     		id: create_if_block_46.name,
     		type: "if",
-    		source: "(623:41) ",
+    		source: "(611:41) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (621:40) 
+    // (609:40) 
     function create_if_block_45(ctx) {
     	let t_value = /*DecrementarX*/ ctx[19]() + "";
     	let t;
@@ -30072,14 +30109,14 @@ var app = (function () {
     		block,
     		id: create_if_block_45.name,
     		type: "if",
-    		source: "(621:40) ",
+    		source: "(609:40) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (619:40) 
+    // (607:40) 
     function create_if_block_44(ctx) {
     	let t_value = /*IncremetarY*/ ctx[20]() + "";
     	let t;
@@ -30101,14 +30138,14 @@ var app = (function () {
     		block,
     		id: create_if_block_44.name,
     		type: "if",
-    		source: "(619:40) ",
+    		source: "(607:40) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (617:8) {#if (code == "ArrowUp")}
+    // (605:8) {#if (code == "ArrowUp")}
     function create_if_block_43(ctx) {
     	let t_value = /*DecrementarY*/ ctx[21]() + "";
     	let t;
@@ -30130,14 +30167,14 @@ var app = (function () {
     		block,
     		id: create_if_block_43.name,
     		type: "if",
-    		source: "(617:8) {#if (code == \\\"ArrowUp\\\")}",
+    		source: "(605:8) {#if (code == \\\"ArrowUp\\\")}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (779:41) 
+    // (783:42) 
     function create_if_block_36(ctx) {
     	let current_block_type_index;
     	let if_block;
@@ -30147,7 +30184,7 @@ var app = (function () {
     	const if_blocks = [];
 
     	function select_block_type_10(ctx, dirty) {
-    		if (!/*enigma*/ ctx[10]) return 0;
+    		if (/*enigma*/ ctx[10]) return 0;
     		return 1;
     	}
 
@@ -30210,7 +30247,7 @@ var app = (function () {
     		block,
     		id: create_if_block_36.name,
     		type: "if",
-    		source: "(779:41) ",
+    		source: "(783:42) ",
     		ctx
     	});
 
@@ -30239,7 +30276,7 @@ var app = (function () {
     			if_block.c();
     			if_block_anchor = empty();
     			attr_dev(p, "class", "FasesDoJogo");
-    			add_location(p, file$1, 744, 4, 46944);
+    			add_location(p, file$1, 744, 4, 47179);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -30281,7 +30318,7 @@ var app = (function () {
     	return block;
     }
 
-    // (706:40) 
+    // (702:40) 
     function create_if_block_18(ctx) {
     	let p;
     	let t1;
@@ -30303,7 +30340,7 @@ var app = (function () {
     			if_block.c();
     			if_block_anchor = empty();
     			attr_dev(p, "class", "FasesDoJogo");
-    			add_location(p, file$1, 707, 4, 45292);
+    			add_location(p, file$1, 703, 4, 45426);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -30338,14 +30375,14 @@ var app = (function () {
     		block,
     		id: create_if_block_18.name,
     		type: "if",
-    		source: "(706:40) ",
+    		source: "(702:40) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (669:40) 
+    // (661:40) 
     function create_if_block_9(ctx) {
     	let p;
     	let t1;
@@ -30367,7 +30404,7 @@ var app = (function () {
     			if_block.c();
     			if_block_anchor = empty();
     			attr_dev(p, "class", "FasesDoJogo");
-    			add_location(p, file$1, 670, 4, 43640);
+    			add_location(p, file$1, 662, 4, 43670);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -30402,14 +30439,14 @@ var app = (function () {
     		block,
     		id: create_if_block_9.name,
     		type: "if",
-    		source: "(669:40) ",
+    		source: "(661:40) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (628:0) {#if MudandoDeFase == "tutorial"}
+    // (616:0) {#if MudandoDeFase == "tut"}
     function create_if_block$1(ctx) {
     	let p;
     	let t1;
@@ -30431,7 +30468,7 @@ var app = (function () {
     			if_block.c();
     			if_block_anchor = empty();
     			attr_dev(p, "class", "FasesDoJogo");
-    			add_location(p, file$1, 629, 4, 41549);
+    			add_location(p, file$1, 617, 4, 41452);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -30466,14 +30503,14 @@ var app = (function () {
     		block,
     		id: create_if_block$1.name,
     		type: "if",
-    		source: "(628:0) {#if MudandoDeFase == \\\"tutorial\\\"}",
+    		source: "(616:0) {#if MudandoDeFase == \\\"tut\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (804:4) {:else}
+    // (811:4) {:else}
     function create_else_block_4(ctx) {
     	let creditos;
     	let current;
@@ -30506,17 +30543,18 @@ var app = (function () {
     		block,
     		id: create_else_block_4.name,
     		type: "else",
-    		source: "(804:4) {:else}",
+    		source: "(811:4) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (781:4) {#if !enigma}
+    // (785:4) {#if enigma}
     function create_if_block_37(ctx) {
     	let vitoria;
     	let t0;
+    	let p;
     	let t1_value = clearInterval(/*Tempo*/ ctx[12]) + "";
     	let t1;
     	let t2;
@@ -30526,7 +30564,7 @@ var app = (function () {
     	let t5_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[9]) + "";
     	let t5;
     	let t6;
-    	let each_1_anchor;
+    	let table;
     	let current;
     	vitoria = new Vitoria({ $$inline: true });
     	let each_value_8 = /*mapa4*/ ctx[6];
@@ -30541,34 +30579,40 @@ var app = (function () {
     		c: function create() {
     			create_component(vitoria.$$.fragment);
     			t0 = space();
+    			p = element("p");
     			t1 = text(t1_value);
     			t2 = space();
     			t3 = text(t3_value);
     			t4 = space();
     			t5 = text(t5_value);
     			t6 = space();
+    			table = element("table");
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
-    			each_1_anchor = empty();
+    			attr_dev(p, "class", "futil");
+    			add_location(p, file$1, 788, 4, 48988);
+    			attr_dev(table, "id", "mapanivel4");
+    			add_location(table, file$1, 793, 0, 49111);
     		},
     		m: function mount(target, anchor) {
     			mount_component(vitoria, target, anchor);
     			insert_dev(target, t0, anchor);
-    			insert_dev(target, t1, anchor);
-    			insert_dev(target, t2, anchor);
-    			insert_dev(target, t3, anchor);
-    			insert_dev(target, t4, anchor);
-    			insert_dev(target, t5, anchor);
+    			insert_dev(target, p, anchor);
+    			append_dev(p, t1);
+    			append_dev(p, t2);
+    			append_dev(p, t3);
+    			append_dev(p, t4);
+    			append_dev(p, t5);
     			insert_dev(target, t6, anchor);
+    			insert_dev(target, table, anchor);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(target, anchor);
+    				each_blocks[i].m(table, null);
     			}
 
-    			insert_dev(target, each_1_anchor, anchor);
     			current = true;
     		},
     		p: function update(ctx, dirty) {
@@ -30588,7 +30632,7 @@ var app = (function () {
     					} else {
     						each_blocks[i] = create_each_block_8(child_ctx);
     						each_blocks[i].c();
-    						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
+    						each_blocks[i].m(table, null);
     					}
     				}
 
@@ -30611,14 +30655,10 @@ var app = (function () {
     		d: function destroy(detaching) {
     			destroy_component(vitoria, detaching);
     			if (detaching) detach_dev(t0);
-    			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(t3);
-    			if (detaching) detach_dev(t4);
-    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(p);
     			if (detaching) detach_dev(t6);
+    			if (detaching) detach_dev(table);
     			destroy_each(each_blocks, detaching);
-    			if (detaching) detach_dev(each_1_anchor);
     		}
     	};
 
@@ -30626,14 +30666,14 @@ var app = (function () {
     		block,
     		id: create_if_block_37.name,
     		type: "if",
-    		source: "(781:4) {#if !enigma}",
+    		source: "(785:4) {#if enigma}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (798:39) 
+    // (804:39) 
     function create_if_block_41(ctx) {
     	let th;
     	let img;
@@ -30645,9 +30685,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
-    			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 798, 20, 49250);
-    			add_location(th, file$1, 798, 16, 49246);
+    			add_location(img, file$1, 804, 20, 49642);
+    			add_location(th, file$1, 804, 16, 49638);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30662,14 +30701,14 @@ var app = (function () {
     		block,
     		id: create_if_block_41.name,
     		type: "if",
-    		source: "(798:39) ",
+    		source: "(804:39) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (796:43) 
+    // (802:43) 
     function create_if_block_40(ctx) {
     	let th;
     	let img;
@@ -30681,10 +30720,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
-    			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 796, 35, 49131);
-    			attr_dev(th, "class", "Dante4 svelte-k97a1p");
-    			add_location(th, file$1, 796, 16, 49112);
+    			add_location(img, file$1, 802, 35, 49523);
+    			attr_dev(th, "class", "Dante4");
+    			add_location(th, file$1, 802, 16, 49504);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30699,14 +30737,14 @@ var app = (function () {
     		block,
     		id: create_if_block_40.name,
     		type: "if",
-    		source: "(796:43) ",
+    		source: "(802:43) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (794:37) 
+    // (800:37) 
     function create_if_block_39(ctx) {
     	let th;
     	let img;
@@ -30718,9 +30756,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel3.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 794, 20, 48990);
-    			add_location(th, file$1, 794, 16, 48986);
+    			add_location(img, file$1, 800, 20, 49382);
+    			add_location(th, file$1, 800, 16, 49378);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30735,14 +30772,14 @@ var app = (function () {
     		block,
     		id: create_if_block_39.name,
     		type: "if",
-    		source: "(794:37) ",
+    		source: "(800:37) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (792:12) {#if elementos == 0}
+    // (798:12) {#if elementos == 0}
     function create_if_block_38(ctx) {
     	let th;
     	let img;
@@ -30754,9 +30791,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel3.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
-    			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 792, 20, 48874);
-    			add_location(th, file$1, 792, 16, 48870);
+    			add_location(img, file$1, 798, 20, 49266);
+    			add_location(th, file$1, 798, 16, 49262);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30771,14 +30807,14 @@ var app = (function () {
     		block,
     		id: create_if_block_38.name,
     		type: "if",
-    		source: "(792:12) {#if elementos == 0}",
+    		source: "(798:12) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (791:8) {#each linhas as elementos}
+    // (797:8) {#each linhas as elementos}
     function create_each_block_9(ctx) {
     	let if_block_anchor;
 
@@ -30825,14 +30861,14 @@ var app = (function () {
     		block,
     		id: create_each_block_9.name,
     		type: "each",
-    		source: "(791:8) {#each linhas as elementos}",
+    		source: "(797:8) {#each linhas as elementos}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (789:4) {#each mapa4 as linhas}
+    // (795:4) {#each mapa4 as linhas}
     function create_each_block_8(ctx) {
     	let tr;
     	let t;
@@ -30853,7 +30889,7 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file$1, 789, 4, 48777);
+    			add_location(tr, file$1, 795, 4, 49169);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -30899,14 +30935,14 @@ var app = (function () {
     		block,
     		id: create_each_block_8.name,
     		type: "each",
-    		source: "(789:4) {#each mapa4 as linhas}",
+    		source: "(795:4) {#each mapa4 as linhas}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (773:8) {:else}
+    // (777:8) {:else}
     function create_else_block_3(ctx) {
     	let t0_value = /*TempoEnigma*/ ctx[23]() + "";
     	let t0;
@@ -30931,12 +30967,12 @@ var app = (function () {
     			p1.textContent = "Se você me tem, quer me compartilhar; se você não me compartilha, você me manteve. O que eu sou?";
     			t5 = space();
     			input = element("input");
-    			add_location(p0, file$1, 774, 8, 48221);
+    			add_location(p0, file$1, 778, 8, 48557);
     			attr_dev(p1, "class", "Enigma");
-    			add_location(p1, file$1, 775, 8, 48248);
+    			add_location(p1, file$1, 779, 8, 48584);
     			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
     			attr_dev(input, "class", "RespostaEnigma");
-    			add_location(input, file$1, 776, 8, 48376);
+    			add_location(input, file$1, 780, 8, 48712);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
@@ -30992,7 +31028,7 @@ var app = (function () {
     		block,
     		id: create_else_block_3.name,
     		type: "else",
-    		source: "(773:8) {:else}",
+    		source: "(777:8) {:else}",
     		ctx
     	});
 
@@ -31001,6 +31037,7 @@ var app = (function () {
 
     // (747:4) {#if !enigma}
     function create_if_block_28(ctx) {
+    	let p;
     	let t0_value = clearInterval(/*Tempo*/ ctx[12]) + "";
     	let t0;
     	let t1;
@@ -31010,7 +31047,7 @@ var app = (function () {
     	let t4_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[9]) + "";
     	let t4;
     	let t5;
-    	let each_1_anchor;
+    	let table;
     	let each_value_6 = /*mapa3*/ ctx[5];
     	validate_each_argument(each_value_6);
     	let each_blocks = [];
@@ -31021,32 +31058,39 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
+    			p = element("p");
     			t0 = text(t0_value);
     			t1 = space();
     			t2 = text(t2_value);
     			t3 = space();
     			t4 = text(t4_value);
     			t5 = space();
+    			table = element("table");
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
-    			each_1_anchor = empty();
+    			attr_dev(p, "class", "futil");
+    			add_location(p, file$1, 748, 4, 47247);
+    			attr_dev(table, "class", "mapa");
+    			attr_dev(table, "align", "center");
+    			attr_dev(table, "id", "mapanivel3");
+    			add_location(table, file$1, 753, 4, 47374);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, t0, anchor);
-    			insert_dev(target, t1, anchor);
-    			insert_dev(target, t2, anchor);
-    			insert_dev(target, t3, anchor);
-    			insert_dev(target, t4, anchor);
+    			insert_dev(target, p, anchor);
+    			append_dev(p, t0);
+    			append_dev(p, t1);
+    			append_dev(p, t2);
+    			append_dev(p, t3);
+    			append_dev(p, t4);
     			insert_dev(target, t5, anchor);
+    			insert_dev(target, table, anchor);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(target, anchor);
+    				each_blocks[i].m(table, null);
     			}
-
-    			insert_dev(target, each_1_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
     			if (dirty[0] & /*Tempo*/ 4096 && t0_value !== (t0_value = clearInterval(/*Tempo*/ ctx[12]) + "")) set_data_dev(t0, t0_value);
@@ -31065,7 +31109,7 @@ var app = (function () {
     					} else {
     						each_blocks[i] = create_each_block_6(child_ctx);
     						each_blocks[i].c();
-    						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
+    						each_blocks[i].m(table, null);
     					}
     				}
 
@@ -31077,14 +31121,10 @@ var app = (function () {
     			}
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t0);
-    			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(t3);
-    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(p);
     			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(table);
     			destroy_each(each_blocks, detaching);
-    			if (detaching) detach_dev(each_1_anchor);
     		}
     	};
 
@@ -31099,7 +31139,7 @@ var app = (function () {
     	return block;
     }
 
-    // (753:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+    // (756:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
     function create_if_block_29(ctx) {
     	let tr;
     	let t;
@@ -31120,7 +31160,7 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file$1, 753, 12, 47220);
+    			add_location(tr, file$1, 756, 12, 47542);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -31166,14 +31206,14 @@ var app = (function () {
     		block,
     		id: create_if_block_29.name,
     		type: "if",
-    		source: "(753:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		source: "(756:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (756:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+    // (759:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
     function create_if_block_30(ctx) {
     	let if_block_anchor;
 
@@ -31221,14 +31261,14 @@ var app = (function () {
     		block,
     		id: create_if_block_30.name,
     		type: "if",
-    		source: "(756:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
+    		source: "(759:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (765:51) 
+    // (768:51) 
     function create_if_block_35(ctx) {
     	let th;
     	let img;
@@ -31240,9 +31280,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "falsa");
-    			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 765, 28, 47984);
-    			add_location(th, file$1, 765, 24, 47980);
+    			add_location(img, file$1, 768, 28, 48306);
+    			add_location(th, file$1, 768, 24, 48302);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31257,14 +31296,14 @@ var app = (function () {
     		block,
     		id: create_if_block_35.name,
     		type: "if",
-    		source: "(765:51) ",
+    		source: "(768:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (763:51) 
+    // (766:51) 
     function create_if_block_34(ctx) {
     	let th;
     	let img;
@@ -31276,10 +31315,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
-    			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 763, 43, 47845);
-    			attr_dev(th, "class", "Dante3 svelte-k97a1p");
-    			add_location(th, file$1, 763, 24, 47826);
+    			add_location(img, file$1, 766, 43, 48167);
+    			attr_dev(th, "class", "Dante3");
+    			add_location(th, file$1, 766, 24, 48148);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31294,14 +31332,14 @@ var app = (function () {
     		block,
     		id: create_if_block_34.name,
     		type: "if",
-    		source: "(763:51) ",
+    		source: "(766:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (761:47) 
+    // (764:47) 
     function create_if_block_33(ctx) {
     	let th;
     	let img;
@@ -31313,9 +31351,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saidanivel3.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
-    			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 761, 28, 47690);
-    			add_location(th, file$1, 761, 24, 47686);
+    			add_location(img, file$1, 764, 28, 48012);
+    			add_location(th, file$1, 764, 24, 48008);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31330,14 +31367,14 @@ var app = (function () {
     		block,
     		id: create_if_block_33.name,
     		type: "if",
-    		source: "(761:47) ",
+    		source: "(764:47) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (759:45) 
+    // (762:45) 
     function create_if_block_32(ctx) {
     	let th;
     	let img;
@@ -31349,9 +31386,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel3.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 759, 28, 47552);
-    			add_location(th, file$1, 759, 24, 47548);
+    			add_location(img, file$1, 762, 28, 47874);
+    			add_location(th, file$1, 762, 24, 47870);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31366,14 +31402,14 @@ var app = (function () {
     		block,
     		id: create_if_block_32.name,
     		type: "if",
-    		source: "(759:45) ",
+    		source: "(762:45) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (757:20) {#if elementos == 0}
+    // (760:20) {#if elementos == 0}
     function create_if_block_31(ctx) {
     	let th;
     	let img;
@@ -31385,9 +31421,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel3.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
-    			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 757, 29, 47420);
-    			add_location(th, file$1, 757, 24, 47415);
+    			add_location(img, file$1, 760, 29, 47742);
+    			add_location(th, file$1, 760, 24, 47737);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31402,14 +31437,14 @@ var app = (function () {
     		block,
     		id: create_if_block_31.name,
     		type: "if",
-    		source: "(757:20) {#if elementos == 0}",
+    		source: "(760:20) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (755:16) {#each linhas as elementos,j}
+    // (758:16) {#each linhas as elementos,j}
     function create_each_block_7(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteX*/ ctx[7] <= /*j*/ ctx[41] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[41] && create_if_block_30(ctx);
@@ -31447,14 +31482,14 @@ var app = (function () {
     		block,
     		id: create_each_block_7.name,
     		type: "each",
-    		source: "(755:16) {#each linhas as elementos,j}",
+    		source: "(758:16) {#each linhas as elementos,j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (752:8) {#each mapa3 as linhas,i}
+    // (755:8) {#each mapa3 as linhas,i}
     function create_each_block_6(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteY*/ ctx[8] <= /*i*/ ctx[38] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[38] && create_if_block_29(ctx);
@@ -31492,7 +31527,7 @@ var app = (function () {
     		block,
     		id: create_each_block_6.name,
     		type: "each",
-    		source: "(752:8) {#each mapa3 as linhas,i}",
+    		source: "(755:8) {#each mapa3 as linhas,i}",
     		ctx
     	});
 
@@ -31524,12 +31559,12 @@ var app = (function () {
     			p1.textContent = "Poder suficiente para esmagar navios e quebrar telhados mas mesmo assim tenho medo do sol, quem eu sou?";
     			t5 = space();
     			input = element("input");
-    			add_location(p0, file$1, 737, 8, 46559);
+    			add_location(p0, file$1, 737, 8, 46794);
     			attr_dev(p1, "class", "Enigma");
-    			add_location(p1, file$1, 738, 8, 46586);
+    			add_location(p1, file$1, 738, 8, 46821);
     			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
     			attr_dev(input, "class", "RespostaEnigma");
-    			add_location(input, file$1, 739, 8, 46721);
+    			add_location(input, file$1, 739, 8, 46956);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
@@ -31592,8 +31627,9 @@ var app = (function () {
     	return block;
     }
 
-    // (710:4) {#if !enigma}
+    // (706:4) {#if !enigma}
     function create_if_block_19(ctx) {
+    	let p;
     	let t0_value = clearInterval(/*Tempo*/ ctx[12]) + "";
     	let t0;
     	let t1;
@@ -31603,7 +31639,7 @@ var app = (function () {
     	let t4_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[9]) + "";
     	let t4;
     	let t5;
-    	let each_1_anchor;
+    	let table;
     	let each_value_4 = /*mapa2*/ ctx[4];
     	validate_each_argument(each_value_4);
     	let each_blocks = [];
@@ -31614,32 +31650,39 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
+    			p = element("p");
     			t0 = text(t0_value);
     			t1 = space();
     			t2 = text(t2_value);
     			t3 = space();
     			t4 = text(t4_value);
     			t5 = space();
+    			table = element("table");
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
-    			each_1_anchor = empty();
+    			attr_dev(p, "class", "futil");
+    			add_location(p, file$1, 707, 4, 45494);
+    			attr_dev(table, "class", "mapa");
+    			attr_dev(table, "align", "center");
+    			attr_dev(table, "id", "mapanivel2");
+    			add_location(table, file$1, 712, 4, 45621);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, t0, anchor);
-    			insert_dev(target, t1, anchor);
-    			insert_dev(target, t2, anchor);
-    			insert_dev(target, t3, anchor);
-    			insert_dev(target, t4, anchor);
+    			insert_dev(target, p, anchor);
+    			append_dev(p, t0);
+    			append_dev(p, t1);
+    			append_dev(p, t2);
+    			append_dev(p, t3);
+    			append_dev(p, t4);
     			insert_dev(target, t5, anchor);
+    			insert_dev(target, table, anchor);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(target, anchor);
+    				each_blocks[i].m(table, null);
     			}
-
-    			insert_dev(target, each_1_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
     			if (dirty[0] & /*Tempo*/ 4096 && t0_value !== (t0_value = clearInterval(/*Tempo*/ ctx[12]) + "")) set_data_dev(t0, t0_value);
@@ -31658,7 +31701,7 @@ var app = (function () {
     					} else {
     						each_blocks[i] = create_each_block_4(child_ctx);
     						each_blocks[i].c();
-    						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
+    						each_blocks[i].m(table, null);
     					}
     				}
 
@@ -31670,14 +31713,10 @@ var app = (function () {
     			}
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t0);
-    			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(t3);
-    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(p);
     			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(table);
     			destroy_each(each_blocks, detaching);
-    			if (detaching) detach_dev(each_1_anchor);
     		}
     	};
 
@@ -31685,14 +31724,14 @@ var app = (function () {
     		block,
     		id: create_if_block_19.name,
     		type: "if",
-    		source: "(710:4) {#if !enigma}",
+    		source: "(706:4) {#if !enigma}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (716:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+    // (715:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
     function create_if_block_20(ctx) {
     	let tr;
     	let t;
@@ -31713,7 +31752,7 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file$1, 716, 12, 45568);
+    			add_location(tr, file$1, 715, 12, 45789);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -31759,14 +31798,14 @@ var app = (function () {
     		block,
     		id: create_if_block_20.name,
     		type: "if",
-    		source: "(716:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		source: "(715:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (719:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+    // (718:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
     function create_if_block_21(ctx) {
     	let if_block_anchor;
 
@@ -31814,14 +31853,14 @@ var app = (function () {
     		block,
     		id: create_if_block_21.name,
     		type: "if",
-    		source: "(719:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
+    		source: "(718:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (728:51) 
+    // (727:51) 
     function create_if_block_26(ctx) {
     	let th;
     	let img;
@@ -31833,9 +31872,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "falsa");
-    			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 728, 28, 46326);
-    			add_location(th, file$1, 728, 24, 46322);
+    			add_location(img, file$1, 727, 28, 46547);
+    			add_location(th, file$1, 727, 24, 46543);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31850,14 +31888,14 @@ var app = (function () {
     		block,
     		id: create_if_block_26.name,
     		type: "if",
-    		source: "(728:51) ",
+    		source: "(727:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (726:51) 
+    // (725:51) 
     function create_if_block_25(ctx) {
     	let th;
     	let img;
@@ -31869,10 +31907,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
-    			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 726, 43, 46187);
-    			attr_dev(th, "class", "Dante2 svelte-k97a1p");
-    			add_location(th, file$1, 726, 24, 46168);
+    			add_location(img, file$1, 725, 43, 46408);
+    			attr_dev(th, "class", "Dante2");
+    			add_location(th, file$1, 725, 24, 46389);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31887,14 +31924,14 @@ var app = (function () {
     		block,
     		id: create_if_block_25.name,
     		type: "if",
-    		source: "(726:51) ",
+    		source: "(725:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (724:47) 
+    // (723:47) 
     function create_if_block_24(ctx) {
     	let th;
     	let img;
@@ -31906,9 +31943,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
-    			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 724, 28, 46038);
-    			add_location(th, file$1, 724, 24, 46034);
+    			add_location(img, file$1, 723, 28, 46259);
+    			add_location(th, file$1, 723, 24, 46255);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31923,14 +31959,14 @@ var app = (function () {
     		block,
     		id: create_if_block_24.name,
     		type: "if",
-    		source: "(724:47) ",
+    		source: "(723:47) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (722:45) 
+    // (721:45) 
     function create_if_block_23(ctx) {
     	let th;
     	let img;
@@ -31942,9 +31978,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel2.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 722, 28, 45900);
-    			add_location(th, file$1, 722, 24, 45896);
+    			add_location(img, file$1, 721, 28, 46121);
+    			add_location(th, file$1, 721, 24, 46117);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31959,14 +31994,14 @@ var app = (function () {
     		block,
     		id: create_if_block_23.name,
     		type: "if",
-    		source: "(722:45) ",
+    		source: "(721:45) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (720:20) {#if elementos == 0}
+    // (719:20) {#if elementos == 0}
     function create_if_block_22(ctx) {
     	let th;
     	let img;
@@ -31978,9 +32013,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel2.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
-    			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 720, 29, 45768);
-    			add_location(th, file$1, 720, 24, 45763);
+    			add_location(img, file$1, 719, 29, 45989);
+    			add_location(th, file$1, 719, 24, 45984);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31995,14 +32029,14 @@ var app = (function () {
     		block,
     		id: create_if_block_22.name,
     		type: "if",
-    		source: "(720:20) {#if elementos == 0}",
+    		source: "(719:20) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (718:16) {#each linhas as elementos,j}
+    // (717:16) {#each linhas as elementos,j}
     function create_each_block_5(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteX*/ ctx[7] <= /*j*/ ctx[41] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[41] && create_if_block_21(ctx);
@@ -32040,14 +32074,14 @@ var app = (function () {
     		block,
     		id: create_each_block_5.name,
     		type: "each",
-    		source: "(718:16) {#each linhas as elementos,j}",
+    		source: "(717:16) {#each linhas as elementos,j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (715:8) {#each mapa2 as linhas,i}
+    // (714:8) {#each mapa2 as linhas,i}
     function create_each_block_4(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteY*/ ctx[8] <= /*i*/ ctx[38] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[38] && create_if_block_20(ctx);
@@ -32085,14 +32119,14 @@ var app = (function () {
     		block,
     		id: create_each_block_4.name,
     		type: "each",
-    		source: "(715:8) {#each mapa2 as linhas,i}",
+    		source: "(714:8) {#each mapa2 as linhas,i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (699:8) {:else}
+    // (695:8) {:else}
     function create_else_block_1(ctx) {
     	let t0_value = /*TempoEnigma*/ ctx[23]() + "";
     	let t0;
@@ -32117,12 +32151,12 @@ var app = (function () {
     			p1.textContent = "Fui levado para um quarto escuro e incendiado. Eu chorei e então minha cabeça foi cortada. Quem sou eu?";
     			t5 = space();
     			input = element("input");
-    			add_location(p0, file$1, 700, 8, 44911);
+    			add_location(p0, file$1, 696, 8, 45045);
     			attr_dev(p1, "class", "Enigma");
-    			add_location(p1, file$1, 701, 8, 44938);
+    			add_location(p1, file$1, 697, 8, 45072);
     			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
     			attr_dev(input, "class", "RespostaEnigma");
-    			add_location(input, file$1, 702, 4, 45069);
+    			add_location(input, file$1, 698, 4, 45203);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
@@ -32178,15 +32212,16 @@ var app = (function () {
     		block,
     		id: create_else_block_1.name,
     		type: "else",
-    		source: "(699:8) {:else}",
+    		source: "(695:8) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (673:4) {#if !enigma}
+    // (665:4) {#if !enigma}
     function create_if_block_10(ctx) {
+    	let p;
     	let t0_value = clearInterval(/*Tempo*/ ctx[12]) + "";
     	let t0;
     	let t1;
@@ -32196,7 +32231,7 @@ var app = (function () {
     	let t4_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[9]) + "";
     	let t4;
     	let t5;
-    	let each_1_anchor;
+    	let table;
     	let each_value_2 = /*mapa1*/ ctx[3];
     	validate_each_argument(each_value_2);
     	let each_blocks = [];
@@ -32207,32 +32242,39 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
+    			p = element("p");
     			t0 = text(t0_value);
     			t1 = space();
     			t2 = text(t2_value);
     			t3 = space();
     			t4 = text(t4_value);
     			t5 = space();
+    			table = element("table");
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
-    			each_1_anchor = empty();
+    			attr_dev(p, "class", "futil");
+    			add_location(p, file$1, 666, 4, 43741);
+    			attr_dev(table, "class", "mapa");
+    			attr_dev(table, "align", "center");
+    			attr_dev(table, "id", "mapanivel1");
+    			add_location(table, file$1, 671, 4, 43868);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, t0, anchor);
-    			insert_dev(target, t1, anchor);
-    			insert_dev(target, t2, anchor);
-    			insert_dev(target, t3, anchor);
-    			insert_dev(target, t4, anchor);
+    			insert_dev(target, p, anchor);
+    			append_dev(p, t0);
+    			append_dev(p, t1);
+    			append_dev(p, t2);
+    			append_dev(p, t3);
+    			append_dev(p, t4);
     			insert_dev(target, t5, anchor);
+    			insert_dev(target, table, anchor);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(target, anchor);
+    				each_blocks[i].m(table, null);
     			}
-
-    			insert_dev(target, each_1_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
     			if (dirty[0] & /*Tempo*/ 4096 && t0_value !== (t0_value = clearInterval(/*Tempo*/ ctx[12]) + "")) set_data_dev(t0, t0_value);
@@ -32251,7 +32293,7 @@ var app = (function () {
     					} else {
     						each_blocks[i] = create_each_block_2(child_ctx);
     						each_blocks[i].c();
-    						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
+    						each_blocks[i].m(table, null);
     					}
     				}
 
@@ -32263,14 +32305,10 @@ var app = (function () {
     			}
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t0);
-    			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(t3);
-    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(p);
     			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(table);
     			destroy_each(each_blocks, detaching);
-    			if (detaching) detach_dev(each_1_anchor);
     		}
     	};
 
@@ -32278,14 +32316,14 @@ var app = (function () {
     		block,
     		id: create_if_block_10.name,
     		type: "if",
-    		source: "(673:4) {#if !enigma}",
+    		source: "(665:4) {#if !enigma}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (679:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+    // (674:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
     function create_if_block_11(ctx) {
     	let tr;
     	let t;
@@ -32306,7 +32344,7 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file$1, 679, 12, 43916);
+    			add_location(tr, file$1, 674, 12, 44036);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -32352,14 +32390,14 @@ var app = (function () {
     		block,
     		id: create_if_block_11.name,
     		type: "if",
-    		source: "(679:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		source: "(674:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (682:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+    // (677:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
     function create_if_block_12(ctx) {
     	let if_block_anchor;
 
@@ -32407,14 +32445,14 @@ var app = (function () {
     		block,
     		id: create_if_block_12.name,
     		type: "if",
-    		source: "(682:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
+    		source: "(677:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (691:51) 
+    // (686:51) 
     function create_if_block_17(ctx) {
     	let th;
     	let img;
@@ -32426,9 +32464,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "falsa");
-    			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 691, 28, 44674);
-    			add_location(th, file$1, 691, 24, 44670);
+    			add_location(img, file$1, 686, 28, 44794);
+    			add_location(th, file$1, 686, 24, 44790);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -32443,14 +32480,14 @@ var app = (function () {
     		block,
     		id: create_if_block_17.name,
     		type: "if",
-    		source: "(691:51) ",
+    		source: "(686:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (689:51) 
+    // (684:51) 
     function create_if_block_16(ctx) {
     	let th;
     	let img;
@@ -32462,10 +32499,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
-    			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 689, 43, 44535);
-    			attr_dev(th, "class", "Dante1 svelte-k97a1p");
-    			add_location(th, file$1, 689, 24, 44516);
+    			add_location(img, file$1, 684, 43, 44655);
+    			attr_dev(th, "class", "Dante1");
+    			add_location(th, file$1, 684, 24, 44636);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -32480,14 +32516,14 @@ var app = (function () {
     		block,
     		id: create_if_block_16.name,
     		type: "if",
-    		source: "(689:51) ",
+    		source: "(684:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (687:47) 
+    // (682:47) 
     function create_if_block_15(ctx) {
     	let th;
     	let img;
@@ -32499,9 +32535,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
-    			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 687, 28, 44386);
-    			add_location(th, file$1, 687, 24, 44382);
+    			add_location(img, file$1, 682, 28, 44506);
+    			add_location(th, file$1, 682, 24, 44502);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -32516,14 +32551,14 @@ var app = (function () {
     		block,
     		id: create_if_block_15.name,
     		type: "if",
-    		source: "(687:47) ",
+    		source: "(682:47) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (685:45) 
+    // (680:45) 
     function create_if_block_14(ctx) {
     	let th;
     	let img;
@@ -32535,9 +32570,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel1.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 685, 28, 44248);
-    			add_location(th, file$1, 685, 24, 44244);
+    			add_location(img, file$1, 680, 28, 44368);
+    			add_location(th, file$1, 680, 24, 44364);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -32552,14 +32586,14 @@ var app = (function () {
     		block,
     		id: create_if_block_14.name,
     		type: "if",
-    		source: "(685:45) ",
+    		source: "(680:45) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (683:20) {#if elementos == 0}
+    // (678:20) {#if elementos == 0}
     function create_if_block_13(ctx) {
     	let th;
     	let img;
@@ -32571,9 +32605,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel1.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
-    			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 683, 29, 44116);
-    			add_location(th, file$1, 683, 24, 44111);
+    			add_location(img, file$1, 678, 29, 44236);
+    			add_location(th, file$1, 678, 24, 44231);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -32588,14 +32621,14 @@ var app = (function () {
     		block,
     		id: create_if_block_13.name,
     		type: "if",
-    		source: "(683:20) {#if elementos == 0}",
+    		source: "(678:20) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (681:16) {#each linhas as elementos,j}
+    // (676:16) {#each linhas as elementos,j}
     function create_each_block_3(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteX*/ ctx[7] <= /*j*/ ctx[41] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[41] && create_if_block_12(ctx);
@@ -32633,14 +32666,14 @@ var app = (function () {
     		block,
     		id: create_each_block_3.name,
     		type: "each",
-    		source: "(681:16) {#each linhas as elementos,j}",
+    		source: "(676:16) {#each linhas as elementos,j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (678:8) {#each mapa1 as linhas,i}
+    // (673:8) {#each mapa1 as linhas,i}
     function create_each_block_2(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteY*/ ctx[8] <= /*i*/ ctx[38] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[38] && create_if_block_11(ctx);
@@ -32678,14 +32711,14 @@ var app = (function () {
     		block,
     		id: create_each_block_2.name,
     		type: "each",
-    		source: "(678:8) {#each mapa1 as linhas,i}",
+    		source: "(673:8) {#each mapa1 as linhas,i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (657:8) {:else}
+    // (649:8) {:else}
     function create_else_block(ctx) {
     	let p0;
     	let t1;
@@ -32725,20 +32758,20 @@ var app = (function () {
     			t11 = space();
     			input = element("input");
     			attr_dev(p0, "class", "Enigma");
-    			add_location(p0, file$1, 658, 8, 42765);
+    			add_location(p0, file$1, 650, 8, 42795);
     			attr_dev(p1, "class", "Enigma");
-    			add_location(p1, file$1, 659, 8, 42860);
+    			add_location(p1, file$1, 651, 8, 42890);
     			attr_dev(p2, "class", "Enigma");
-    			add_location(p2, file$1, 660, 8, 42955);
+    			add_location(p2, file$1, 652, 8, 42985);
     			attr_dev(p3, "class", "Enigma");
-    			add_location(p3, file$1, 661, 8, 43086);
+    			add_location(p3, file$1, 653, 8, 43116);
     			attr_dev(p4, "class", "Enigma");
-    			add_location(p4, file$1, 662, 8, 43192);
+    			add_location(p4, file$1, 654, 8, 43222);
     			attr_dev(p5, "class", "Enigma");
-    			add_location(p5, file$1, 663, 8, 43274);
+    			add_location(p5, file$1, 655, 8, 43304);
     			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
     			attr_dev(input, "class", "RespostaEnigma");
-    			add_location(input, file$1, 664, 8, 43413);
+    			add_location(input, file$1, 656, 8, 43443);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p0, anchor);
@@ -32804,22 +32837,23 @@ var app = (function () {
     		block,
     		id: create_else_block.name,
     		type: "else",
-    		source: "(657:8) {:else}",
+    		source: "(649:8) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (632:4) {#if !enigma}
+    // (620:4) {#if !enigma}
     function create_if_block_1$1(ctx) {
+    	let p;
     	let t0_value = /*RenderizandoMapa*/ ctx[16]() + "";
     	let t0;
     	let t1;
     	let t2_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[9]) + "";
     	let t2;
     	let t3;
-    	let each_1_anchor;
+    	let table;
     	let each_value = /*mapa0*/ ctx[2];
     	validate_each_argument(each_value);
     	let each_blocks = [];
@@ -32830,28 +32864,35 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
+    			p = element("p");
     			t0 = text(t0_value);
     			t1 = space();
     			t2 = text(t2_value);
     			t3 = space();
+    			table = element("table");
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
-    			each_1_anchor = empty();
+    			attr_dev(p, "class", "futil");
+    			add_location(p, file$1, 621, 4, 41524);
+    			attr_dev(table, "class", "mapa");
+    			attr_dev(table, "align", "center");
+    			attr_dev(table, "id", "mapatutorial");
+    			add_location(table, file$1, 625, 4, 41623);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, t0, anchor);
-    			insert_dev(target, t1, anchor);
-    			insert_dev(target, t2, anchor);
+    			insert_dev(target, p, anchor);
+    			append_dev(p, t0);
+    			append_dev(p, t1);
+    			append_dev(p, t2);
     			insert_dev(target, t3, anchor);
+    			insert_dev(target, table, anchor);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(target, anchor);
+    				each_blocks[i].m(table, null);
     			}
-
-    			insert_dev(target, each_1_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
     			if (dirty[0] & /*MudandoDeFase*/ 512 && t2_value !== (t2_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[9]) + "")) set_data_dev(t2, t2_value);
@@ -32869,7 +32910,7 @@ var app = (function () {
     					} else {
     						each_blocks[i] = create_each_block(child_ctx);
     						each_blocks[i].c();
-    						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
+    						each_blocks[i].m(table, null);
     					}
     				}
 
@@ -32881,12 +32922,10 @@ var app = (function () {
     			}
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t0);
-    			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(t2);
+    			if (detaching) detach_dev(p);
     			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(table);
     			destroy_each(each_blocks, detaching);
-    			if (detaching) detach_dev(each_1_anchor);
     		}
     	};
 
@@ -32894,14 +32933,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$1.name,
     		type: "if",
-    		source: "(632:4) {#if !enigma}",
+    		source: "(620:4) {#if !enigma}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (637:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+    // (628:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
     function create_if_block_2$1(ctx) {
     	let tr;
     	let t;
@@ -32922,7 +32961,7 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file$1, 637, 12, 41798);
+    			add_location(tr, file$1, 628, 12, 41793);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -32968,14 +33007,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2$1.name,
     		type: "if",
-    		source: "(637:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		source: "(628:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (640:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+    // (631:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
     function create_if_block_3$1(ctx) {
     	let if_block_anchor;
 
@@ -33023,14 +33062,14 @@ var app = (function () {
     		block,
     		id: create_if_block_3$1.name,
     		type: "if",
-    		source: "(640:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
+    		source: "(631:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (649:51) 
+    // (640:51) 
     function create_if_block_8(ctx) {
     	let th;
     	let img;
@@ -33042,9 +33081,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "falsa");
-    			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 649, 28, 42559);
-    			add_location(th, file$1, 649, 24, 42555);
+    			add_location(img, file$1, 640, 28, 42575);
+    			add_location(th, file$1, 640, 24, 42571);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -33059,14 +33097,14 @@ var app = (function () {
     		block,
     		id: create_if_block_8.name,
     		type: "if",
-    		source: "(649:51) ",
+    		source: "(640:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (647:51) 
+    // (638:51) 
     function create_if_block_7(ctx) {
     	let th;
     	let img;
@@ -33078,10 +33116,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
-    			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 647, 43, 42420);
-    			attr_dev(th, "class", "Dante0 svelte-k97a1p");
-    			add_location(th, file$1, 647, 24, 42401);
+    			add_location(img, file$1, 638, 43, 42436);
+    			attr_dev(th, "class", "Dante0");
+    			add_location(th, file$1, 638, 24, 42417);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -33096,14 +33133,14 @@ var app = (function () {
     		block,
     		id: create_if_block_7.name,
     		type: "if",
-    		source: "(647:51) ",
+    		source: "(638:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (645:47) 
+    // (636:47) 
     function create_if_block_6(ctx) {
     	let th;
     	let img;
@@ -33115,9 +33152,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
-    			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 645, 28, 42271);
-    			add_location(th, file$1, 645, 24, 42267);
+    			add_location(img, file$1, 636, 28, 42287);
+    			add_location(th, file$1, 636, 24, 42283);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -33132,14 +33168,14 @@ var app = (function () {
     		block,
     		id: create_if_block_6.name,
     		type: "if",
-    		source: "(645:47) ",
+    		source: "(636:47) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (643:45) 
+    // (634:45) 
     function create_if_block_5(ctx) {
     	let th;
     	let img;
@@ -33151,9 +33187,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredetutorial.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 643, 28, 42131);
-    			add_location(th, file$1, 643, 24, 42127);
+    			add_location(img, file$1, 634, 28, 42147);
+    			add_location(th, file$1, 634, 24, 42143);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -33168,14 +33203,14 @@ var app = (function () {
     		block,
     		id: create_if_block_5.name,
     		type: "if",
-    		source: "(643:45) ",
+    		source: "(634:45) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (641:20) {#if elementos == 0}
+    // (632:20) {#if elementos == 0}
     function create_if_block_4(ctx) {
     	let th;
     	let img;
@@ -33187,9 +33222,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaotutorial.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
-    			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 641, 28, 41997);
-    			add_location(th, file$1, 641, 24, 41993);
+    			add_location(img, file$1, 632, 49, 42013);
+    			attr_dev(th, "class", "chaoturorial");
+    			add_location(th, file$1, 632, 24, 41988);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -33204,14 +33239,14 @@ var app = (function () {
     		block,
     		id: create_if_block_4.name,
     		type: "if",
-    		source: "(641:20) {#if elementos == 0}",
+    		source: "(632:20) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (639:16) {#each linhas as elementos,j}
+    // (630:16) {#each linhas as elementos,j}
     function create_each_block_1(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteX*/ ctx[7] <= /*j*/ ctx[41] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[41] && create_if_block_3$1(ctx);
@@ -33249,14 +33284,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(639:16) {#each linhas as elementos,j}",
+    		source: "(630:16) {#each linhas as elementos,j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (636:8) {#each mapa0 as linhas,i}
+    // (627:8) {#each mapa0 as linhas,i}
     function create_each_block(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteY*/ ctx[8] <= /*i*/ ctx[38] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[38] && create_if_block_2$1(ctx);
@@ -33294,7 +33329,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(636:8) {#each mapa0 as linhas,i}",
+    		source: "(627:8) {#each mapa0 as linhas,i}",
     		ctx
     	});
 
@@ -33303,11 +33338,13 @@ var app = (function () {
 
     function create_fragment$1(ctx) {
     	let head;
-    	let link;
+    	let link0;
     	let t0;
+    	let link1;
     	let t1;
-    	let voltarmenu;
     	let t2;
+    	let voltarmenu;
+    	let t3;
     	let current_block_type_index;
     	let if_block1;
     	let if_block1_anchor;
@@ -33328,11 +33365,11 @@ var app = (function () {
     	const if_blocks = [];
 
     	function select_block_type_1(ctx, dirty) {
-    		if (/*MudandoDeFase*/ ctx[9] == "tutorial") return 0;
+    		if (/*MudandoDeFase*/ ctx[9] == "tut") return 0;
     		if (/*MudandoDeFase*/ ctx[9] == "nivel1") return 1;
     		if (/*MudandoDeFase*/ ctx[9] == "nivel2") return 2;
     		if (/*MudandoDeFase*/ ctx[9] == "nivel3") return 3;
-    		if (/*MudandoDeFase*/ ctx[9] == "vitoria") return 4;
+    		if (/*MudandoDeFase*/ ctx[9] == "tutorial") return 4;
     		return -1;
     	}
 
@@ -33343,30 +33380,37 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			head = element("head");
-    			link = element("link");
+    			link0 = element("link");
     			t0 = space();
-    			if (if_block0) if_block0.c();
+    			link1 = element("link");
     			t1 = space();
-    			create_component(voltarmenu.$$.fragment);
+    			if (if_block0) if_block0.c();
     			t2 = space();
+    			create_component(voltarmenu.$$.fragment);
+    			t3 = space();
     			if (if_block1) if_block1.c();
     			if_block1_anchor = empty();
-    			attr_dev(link, "rel", "stylesheet");
-    			attr_dev(link, "href", "/css/jogo.css");
-    			add_location(link, file$1, 586, 4, 40308);
-    			add_location(head, file$1, 585, 0, 40296);
+    			attr_dev(link0, "rel", "stylesheet");
+    			attr_dev(link0, "href", "/css/jogo.css");
+    			add_location(link0, file$1, 598, 4, 40850);
+    			attr_dev(link1, "rel", "stylesheet");
+    			attr_dev(link1, "href", "/css/newjogo.css");
+    			add_location(link1, file$1, 599, 4, 40900);
+    			add_location(head, file$1, 597, 0, 40838);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, head, anchor);
-    			append_dev(head, link);
-    			insert_dev(target, t0, anchor);
-    			if (if_block0) if_block0.m(target, anchor);
+    			append_dev(head, link0);
+    			append_dev(head, t0);
+    			append_dev(head, link1);
     			insert_dev(target, t1, anchor);
-    			mount_component(voltarmenu, target, anchor);
+    			if (if_block0) if_block0.m(target, anchor);
     			insert_dev(target, t2, anchor);
+    			mount_component(voltarmenu, target, anchor);
+    			insert_dev(target, t3, anchor);
 
     			if (~current_block_type_index) {
     				if_blocks[current_block_type_index].m(target, anchor);
@@ -33387,7 +33431,7 @@ var app = (function () {
     				} else {
     					if_block0 = create_if_block_42(ctx);
     					if_block0.c();
-    					if_block0.m(t1.parentNode, t1);
+    					if_block0.m(t2.parentNode, t2);
     				}
     			} else if (if_block0) {
     				if_block0.d(1);
@@ -33442,11 +33486,11 @@ var app = (function () {
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(head);
-    			if (detaching) detach_dev(t0);
-    			if (if_block0) if_block0.d(detaching);
     			if (detaching) detach_dev(t1);
-    			destroy_component(voltarmenu, detaching);
+    			if (if_block0) if_block0.d(detaching);
     			if (detaching) detach_dev(t2);
+    			destroy_component(voltarmenu, detaching);
+    			if (detaching) detach_dev(t3);
 
     			if (~current_block_type_index) {
     				if_blocks[current_block_type_index].d(detaching);
@@ -46175,6 +46219,10 @@ var app = (function () {
     			MudarDeFase(mapa1[EixoY][EixoX]);
 
     			if (mapa1[EixoY][EixoX] != 0) {
+    				if (mapa1[EixoY][EixoX] == "falsa") {
+    					alert('Nem tudo é o que parece pequeno Dante!');
+    				}
+
     				ResertarPosicao();
     				return;
     			}
@@ -46186,7 +46234,7 @@ var app = (function () {
 
     			if (mapa2[EixoY][EixoX] != 0) {
     				if (mapa2[EixoY][EixoX] == "falsa") {
-    					alert('Nem tudo é o que parece jovem mortal!');
+    					alert('Nem tudo é o que parece pequeno Dante!');
     				}
 
     				ResertarPosicao();
@@ -46200,7 +46248,7 @@ var app = (function () {
 
     			if (mapa3[EixoY][EixoX] != 0) {
     				if (mapa3[EixoY][EixoX] == "falsa") {
-    					alert('Nem tudo é o que parece jovem mortal!');
+    					alert('Nem tudo é o que parece pequeno Dante!');
     				}
 
     				ResertarPosicao();
@@ -46244,6 +46292,10 @@ var app = (function () {
     			MudarDeFase(mapa1[EixoY][EixoX]);
 
     			if (mapa1[EixoY][EixoX] != 0) {
+    				if (mapa1[EixoY][EixoX] == "falsa") {
+    					alert('Nem tudo é o que parece pequeno Dante!');
+    				}
+
     				ResertarPosicao();
     				return;
     			}
@@ -46255,7 +46307,7 @@ var app = (function () {
 
     			if (mapa2[EixoY][EixoX] != 0) {
     				if (mapa2[EixoY][EixoX] == "falsa") {
-    					alert('Talvez devesse tentar outra saída');
+    					alert('Talvez devesse tentar outra saída...');
     				}
 
     				ResertarPosicao();
@@ -46313,6 +46365,10 @@ var app = (function () {
     			MudarDeFase(mapa1[EixoY][EixoX]);
 
     			if (mapa1[EixoY][EixoX] != 0) {
+    				if (mapa1[EixoY][EixoX] == "falsa") {
+    					alert('Essa é mesmo a saída?');
+    				}
+
     				ResertarPosicao();
     				return;
     			}
@@ -46338,7 +46394,7 @@ var app = (function () {
 
     			if (mapa3[EixoY][EixoX] != 0) {
     				if (mapa3[EixoY][EixoX] == "falsa") {
-    					alert('Talvez devesse tentar outra saída...');
+    					alert('Tem certeza que essa é a saída?');
     				}
 
     				ResertarPosicao();
@@ -46382,6 +46438,10 @@ var app = (function () {
     			MudarDeFase(mapa1[EixoY][EixoX]);
 
     			if (mapa1[EixoY][EixoX] != 0) {
+    				if (mapa1[EixoY][EixoX] == "falsa") {
+    					alert('Não consegue não é?');
+    				}
+
     				ResertarPosicao();
     				return;
     			}
@@ -46393,7 +46453,7 @@ var app = (function () {
 
     			if (mapa2[EixoY][EixoX] != 0) {
     				if (mapa2[EixoY][EixoX] == "falsa") {
-    					alert('Nem tudo é o que parece');
+    					alert('Nem tudo é o que parece jovem criança');
     				}
 
     				ResertarPosicao();
