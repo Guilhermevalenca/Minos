@@ -1,0 +1,48 @@
+    img{
+        height: 60px;
+        width: 60px;
+        padding: 0px;
+        margin: -4px;
+    }
+    .Dante0{
+        background-image: url('/css/imagens/chaotutorial.png');
+        background-size: 100%;
+    }.Dante1{
+        background-image: url('/css/imagens/chaonivel1.png');
+        background-size: 100%;
+    }
+    .Dante2{
+        background-image: url('/css/imagens/chaonivel2.png');
+        background-size: 100%;
+    }.Dante3{
+        background-image: url('/css/imagens/chaonivel3.png');
+        background-size: 100%;
+    }.Dante4{
+        background-image: url('/css/imagens/chaonivel3.png');
+        background-size: 100%;
+    }
+.mapa{
+    margin-top: 2%;
+    margin-left: 30%;
+    background-size: 60px;
+}
+
+#mapatutorial{
+    background-image: url('/css/imagens/chaotutorial.png');
+}
+#mapanivel1{
+    background-image: url('/css/imagens/chaonivel1.png');
+}
+#mapanivel2{
+    background-image: url('/css/imagens/chaonivel2.png');
+}
+#mapanivel3{
+    background-image: url('/css/imagens/chaonivel3.png');
+}
+#mapanivel4{
+    background-image: url('/css/imagens/chaonivel3.png');
+}
+.futil{
+    color: transparent;
+    font-size: 0px;
+}
