@@ -39,9 +39,10 @@
     text-align: center;
     color: white;
     font-size: 50px;
+    position: relative;
     margin: 0%;
-    margin-left: 80%;
-    position: fixed;
+    margin-top: 80px;
+    margin-bottom: -70px;
 }
 .Enigma{
     color: rgb(184, 184, 6);

@@ -600,7 +600,7 @@ let mapa3 = [
         }
     }
     let Tempo;
-    let contador = 60
+    let contador = 90;
     function TempoEnigma(){
         Tempo = setInterval( () => {
             contador--
@@ -610,7 +610,7 @@ let mapa3 = [
                 MudandoDeFase = "nivel1"
                 enigma = false;
                 clearInterval(Tempo)
-                contador = 60;
+                contador = 90;
                 return
         }
         },1000)
@@ -634,7 +634,7 @@ let mapa3 = [
         {/if}
 {/if}
 <VoltarMenu/>
-{#if MudandoDeFase == "tut"}
+{#if MudandoDeFase == "tutorial"}
     
     <p class='FasesDoJogo'>Tutorial</p>
 
@@ -714,9 +714,11 @@ let mapa3 = [
         {/each}
     </table>
         {:else}
-        {TempoEnigma()}
-        <p>{contador}</p>
+        <p class="textofutil">{TempoEnigma()}</p>
+        <p class="Enigma">Vejo que estar se divertindo, mas tome cuidado, há muitas criaturas misteriosas que rondam este labirinto</p>
+        <p class="Enigma">Responda-me com atenção, pois seu erro tem um custo muito alto</p>
         <p class='Enigma'>Fui levado para um quarto escuro e incendiado. Eu chorei e então minha cabeça foi cortada. Quem sou eu?</p>
+        <p class="Contador">{contador}</p>
     <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "VELA",MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
 
         {/if}
@@ -757,9 +759,14 @@ let mapa3 = [
         {/each}
     </table>
         {:else}
-        {TempoEnigma()}
-        <p>{contador}</p>
+        <p class="textofutil">{TempoEnigma()}</p>
+        <p class="Enigma">Não o esperava ver aqui tao cedo.</p>
+        <p class="Enigma">Tenha em mente: que nem tudo é o que parece.</p>
+        <p class="Enigma">Quando mais se aprofundar nos misterios do labirinto, mas dificil será escapar com vida, esteja preparado para o que deseja.</p>
+        <p class="Enigma">Afinal, um mero mortal jamais deveria cobiçar algo tão grandioso.</p>
+        <p class="Enigma">Deveria se apressar, o enigma nao se resolverá sozinho.</p>
         <p class='Enigma'>Poder suficiente para esmagar navios e quebrar telhados mas mesmo assim tenho medo do sol, quem eu sou?</p>
+        <p class="Contador">{contador}</p>
         <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "GELO",MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
 
         {/if}
@@ -798,14 +805,15 @@ let mapa3 = [
         {/each}
     </table>
         {:else}
-        {TempoEnigma()}
-        <p>{contador}</p>
+        <p class="textofutil">{TempoEnigma()}</p>
+        <p class="Enigma">Para um ser tao inferior e fragil, você ate que se saiu bem, pena que nao sobreviverá para contar a historia...</p>
         <p class='Enigma'>Se você me tem, quer me compartilhar; se você não me compartilha, você me manteve. O que eu sou?</p>
+        <p class="Contador">{contador}</p>
         <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "SEGREDO",MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>        
         {/if}
-    {:else if MudandoDeFase == "tutorial"}
+    {:else if MudandoDeFase == "vitoria"}
     
-    {#if enigma}
+    {#if !enigma}
 
     <Vitoria/>
 
