@@ -53,7 +53,7 @@
 
 <p class="geral"> Participar desse projeto foi de longe a melhor experiência que ja tive, apesar de ser nova no ramo da programação gostei muito de aprender o funcionamento por trás do jogo. </p>
 <p class="geral"> Tive dificuldades no inicio porém com a ajuda e opoio da equipe conseguimos aprender muita coisa e praticar.</p>
-<p class="geral"> Por fim, gostei muito de ter participado e colocado em pratica o que aprendi espero que vocês gostem do nosso jogo e se divirtam assim como nos divertimos</p>
+<p class="geral"> Por fim, gostei muito de ter participado e colocado em pratica o que aprendi espero que vocês gostem do nosso jogo e se divirtam assim como nos divertimos.</p>
 
 <h4 class="geral"> Guilherme Valença </h4>
 
