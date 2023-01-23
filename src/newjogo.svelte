@@ -585,33 +585,9 @@ let mapa3 = [
 </script>
 <head>
     <link rel="stylesheet" href="/css/jogo.css">
+    <link rel="stylesheet" href="/css/newjogo.css">
 </head>
-<style>
-    img{
-        height: 45px;
-        width: 45px;
-        padding: 0px;
-        margin: -3px;
-    }
-    .Dante0{
-        background-image: url('/css/imagens/chaotutorial.png');
-        background-size: 100%;
 
-    }.Dante1{
-        background-image: url('/css/imagens/chaonivel1.png');
-        background-size: 100%;
-    }.Dante2{
-        background-image: url('/css/imagens/chaonivel2.png');
-        background-size: 100%;
-    }.Dante3{
-        background-image: url('/css/imagens/chaonivel3.png');
-        background-size: 100%;
-    }.Dante4{
-        background-image: url('/css/imagens/chaonivel3.png');
-        background-size: 100%;
-    }
-
-</style>
 <svelte:window on:keydown={handleKeydown}/>
 {#if (key)}
         {#if (code == "ArrowUp")}
@@ -633,13 +609,14 @@ let mapa3 = [
         
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
+    <table class="mapa" align="center" id="mapatutorial">
         {#each mapa0 as linhas,i}
         {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
             <tr>
                 {#each linhas as elementos,j}
                 {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
                     {#if elementos == 0}
-                        <th><img src="/css/imagens/chaotutorial.png" alt="chao"></th>
+                        <th class="chaoturorial"><img src="/css/imagens/chaotutorial.png" alt="chao"></th>
                     {:else if elementos == 1}
                         <th><img src="/css/imagens/paredetutorial.png" alt="parede"></th>
                     {:else if elementos == "X"}
@@ -654,6 +631,7 @@ let mapa3 = [
             </tr>
         {/if}
         {/each}
+    </table>
         {:else}
 
         <p class='Enigma'>Sempre que passar de fase, haverá um enigma a ser solucionado. </p>
@@ -675,6 +653,7 @@ let mapa3 = [
     {clearInterval(Tempo)}
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
+    <table class="mapa" align="center" id="mapanivel1">
         {#each mapa1 as linhas,i}
         {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
             <tr>
@@ -696,6 +675,7 @@ let mapa3 = [
             </tr>
             {/if}
         {/each}
+    </table>
         {:else}
         {TempoEnigma()}
         <p>{contador}</p>
@@ -712,6 +692,7 @@ let mapa3 = [
     {clearInterval(Tempo)}
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
+    <table class="mapa" align="center" id="mapanivel2">
         {#each mapa2 as linhas,i}
         {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
             <tr>
@@ -733,6 +714,7 @@ let mapa3 = [
             </tr>
         {/if}
         {/each}
+    </table>
         {:else}
         {TempoEnigma()}
         <p>{contador}</p>
@@ -749,6 +731,7 @@ let mapa3 = [
     {clearInterval(Tempo)}
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
+    <table class="mapa" align="center" id="mapanivel3">
         {#each mapa3 as linhas,i}
         {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
             <tr>
@@ -770,6 +753,7 @@ let mapa3 = [
             </tr>
             {/if}
         {/each}
+    </table>
         {:else}
         {TempoEnigma()}
         <p>{contador}</p>
@@ -785,7 +769,7 @@ let mapa3 = [
     {clearInterval(Tempo)}
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
-
+<table class="mapa" align="center" id="mapanivel4">
     {#each mapa4 as linhas}
     <tr>
         {#each linhas as elementos}
@@ -801,6 +785,7 @@ let mapa3 = [
         {/each}
     </tr>
     {/each}
+    </table>
     {:else}
     <Creditos/>
     {/if}
