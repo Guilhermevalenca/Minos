@@ -607,8 +607,10 @@ let mapa3 = [
 
     {#if !enigma}
         
+    <p class="futil">
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
+    </p>
     <table class="mapa" align="center" id="mapatutorial">
         {#each mapa0 as linhas,i}
         {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
@@ -650,9 +652,11 @@ let mapa3 = [
 
     {#if !enigma}
         
+    <p class="futil">
     {clearInterval(Tempo)}
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
+    </p>
     <table class="mapa" align="center" id="mapanivel1">
         {#each mapa1 as linhas,i}
         {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
@@ -688,10 +692,12 @@ let mapa3 = [
     <p class='FasesDoJogo'>Nivel 2</p>
 
     {#if !enigma}
-        
+     
+    <p class="futil">
     {clearInterval(Tempo)}
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
+    </p>
     <table class="mapa" align="center" id="mapanivel2">
         {#each mapa2 as linhas,i}
         {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
@@ -727,10 +733,12 @@ let mapa3 = [
     <p class='FasesDoJogo'>Nivel 3</p>
 
     {#if !enigma}
-        
+     
+    <p class="futil">
     {clearInterval(Tempo)}
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
+    </p>
     <table class="mapa" align="center" id="mapanivel3">
         {#each mapa3 as linhas,i}
         {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
@@ -766,10 +774,12 @@ let mapa3 = [
 
     <Vitoria/>
 
+    <p class="futil">
     {clearInterval(Tempo)}
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
-<table class="mapa" align="center" id="mapanivel4">
+    </p>
+<table id="mapanivel4">
     {#each mapa4 as linhas}
     <tr>
         {#each linhas as elementos}

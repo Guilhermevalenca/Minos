@@ -42,3 +42,7 @@
 #mapanivel4{
     background-image: url('/css/imagens/chaonivel3.png');
 }
+.futil{
+    color: transparent;
+    font-size: 0px;
+}
