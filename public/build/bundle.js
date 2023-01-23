@@ -30239,7 +30239,7 @@ var app = (function () {
     			if_block.c();
     			if_block_anchor = empty();
     			attr_dev(p, "class", "FasesDoJogo");
-    			add_location(p, file$1, 744, 4, 46776);
+    			add_location(p, file$1, 744, 4, 46944);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -30303,7 +30303,7 @@ var app = (function () {
     			if_block.c();
     			if_block_anchor = empty();
     			attr_dev(p, "class", "FasesDoJogo");
-    			add_location(p, file$1, 707, 4, 45124);
+    			add_location(p, file$1, 707, 4, 45292);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -30367,7 +30367,7 @@ var app = (function () {
     			if_block.c();
     			if_block_anchor = empty();
     			attr_dev(p, "class", "FasesDoJogo");
-    			add_location(p, file$1, 670, 4, 43472);
+    			add_location(p, file$1, 670, 4, 43640);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -30431,7 +30431,7 @@ var app = (function () {
     			if_block.c();
     			if_block_anchor = empty();
     			attr_dev(p, "class", "FasesDoJogo");
-    			add_location(p, file$1, 629, 4, 41387);
+    			add_location(p, file$1, 629, 4, 41549);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -30646,8 +30646,8 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
     			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 798, 20, 49082);
-    			add_location(th, file$1, 798, 16, 49078);
+    			add_location(img, file$1, 798, 20, 49250);
+    			add_location(th, file$1, 798, 16, 49246);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30682,9 +30682,9 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
     			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 796, 35, 48963);
+    			add_location(img, file$1, 796, 35, 49131);
     			attr_dev(th, "class", "Dante4 svelte-k97a1p");
-    			add_location(th, file$1, 796, 16, 48944);
+    			add_location(th, file$1, 796, 16, 49112);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30719,8 +30719,8 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel3.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
     			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 794, 20, 48822);
-    			add_location(th, file$1, 794, 16, 48818);
+    			add_location(img, file$1, 794, 20, 48990);
+    			add_location(th, file$1, 794, 16, 48986);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30755,8 +30755,8 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel3.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
     			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 792, 20, 48706);
-    			add_location(th, file$1, 792, 16, 48702);
+    			add_location(img, file$1, 792, 20, 48874);
+    			add_location(th, file$1, 792, 16, 48870);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30853,7 +30853,7 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file$1, 789, 4, 48609);
+    			add_location(tr, file$1, 789, 4, 48777);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -30931,12 +30931,12 @@ var app = (function () {
     			p1.textContent = "Se você me tem, quer me compartilhar; se você não me compartilha, você me manteve. O que eu sou?";
     			t5 = space();
     			input = element("input");
-    			add_location(p0, file$1, 774, 8, 48053);
+    			add_location(p0, file$1, 774, 8, 48221);
     			attr_dev(p1, "class", "Enigma");
-    			add_location(p1, file$1, 775, 8, 48080);
+    			add_location(p1, file$1, 775, 8, 48248);
     			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
     			attr_dev(input, "class", "RespostaEnigma");
-    			add_location(input, file$1, 776, 8, 48208);
+    			add_location(input, file$1, 776, 8, 48376);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
@@ -31120,7 +31120,7 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file$1, 753, 12, 47052);
+    			add_location(tr, file$1, 753, 12, 47220);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -31241,8 +31241,8 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "falsa");
     			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 765, 28, 47816);
-    			add_location(th, file$1, 765, 24, 47812);
+    			add_location(img, file$1, 765, 28, 47984);
+    			add_location(th, file$1, 765, 24, 47980);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31277,9 +31277,9 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
     			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 763, 43, 47677);
+    			add_location(img, file$1, 763, 43, 47845);
     			attr_dev(th, "class", "Dante3 svelte-k97a1p");
-    			add_location(th, file$1, 763, 24, 47658);
+    			add_location(th, file$1, 763, 24, 47826);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31314,8 +31314,8 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saidanivel3.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
     			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 761, 28, 47522);
-    			add_location(th, file$1, 761, 24, 47518);
+    			add_location(img, file$1, 761, 28, 47690);
+    			add_location(th, file$1, 761, 24, 47686);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31350,8 +31350,8 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel3.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
     			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 759, 28, 47384);
-    			add_location(th, file$1, 759, 24, 47380);
+    			add_location(img, file$1, 759, 28, 47552);
+    			add_location(th, file$1, 759, 24, 47548);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31386,8 +31386,8 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel3.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
     			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 757, 29, 47252);
-    			add_location(th, file$1, 757, 24, 47247);
+    			add_location(img, file$1, 757, 29, 47420);
+    			add_location(th, file$1, 757, 24, 47415);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31524,12 +31524,12 @@ var app = (function () {
     			p1.textContent = "Poder suficiente para esmagar navios e quebrar telhados mas mesmo assim tenho medo do sol, quem eu sou?";
     			t5 = space();
     			input = element("input");
-    			add_location(p0, file$1, 737, 8, 46391);
+    			add_location(p0, file$1, 737, 8, 46559);
     			attr_dev(p1, "class", "Enigma");
-    			add_location(p1, file$1, 738, 8, 46418);
+    			add_location(p1, file$1, 738, 8, 46586);
     			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
     			attr_dev(input, "class", "RespostaEnigma");
-    			add_location(input, file$1, 739, 8, 46553);
+    			add_location(input, file$1, 739, 8, 46721);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
@@ -31713,7 +31713,7 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file$1, 716, 12, 45400);
+    			add_location(tr, file$1, 716, 12, 45568);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -31834,8 +31834,8 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "falsa");
     			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 728, 28, 46158);
-    			add_location(th, file$1, 728, 24, 46154);
+    			add_location(img, file$1, 728, 28, 46326);
+    			add_location(th, file$1, 728, 24, 46322);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31870,9 +31870,9 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
     			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 726, 43, 46019);
+    			add_location(img, file$1, 726, 43, 46187);
     			attr_dev(th, "class", "Dante2 svelte-k97a1p");
-    			add_location(th, file$1, 726, 24, 46000);
+    			add_location(th, file$1, 726, 24, 46168);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31907,8 +31907,8 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
     			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 724, 28, 45870);
-    			add_location(th, file$1, 724, 24, 45866);
+    			add_location(img, file$1, 724, 28, 46038);
+    			add_location(th, file$1, 724, 24, 46034);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31943,8 +31943,8 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel2.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
     			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 722, 28, 45732);
-    			add_location(th, file$1, 722, 24, 45728);
+    			add_location(img, file$1, 722, 28, 45900);
+    			add_location(th, file$1, 722, 24, 45896);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31979,8 +31979,8 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel2.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
     			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 720, 29, 45600);
-    			add_location(th, file$1, 720, 24, 45595);
+    			add_location(img, file$1, 720, 29, 45768);
+    			add_location(th, file$1, 720, 24, 45763);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -32117,12 +32117,12 @@ var app = (function () {
     			p1.textContent = "Fui levado para um quarto escuro e incendiado. Eu chorei e então minha cabeça foi cortada. Quem sou eu?";
     			t5 = space();
     			input = element("input");
-    			add_location(p0, file$1, 700, 8, 44743);
+    			add_location(p0, file$1, 700, 8, 44911);
     			attr_dev(p1, "class", "Enigma");
-    			add_location(p1, file$1, 701, 8, 44770);
+    			add_location(p1, file$1, 701, 8, 44938);
     			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
     			attr_dev(input, "class", "RespostaEnigma");
-    			add_location(input, file$1, 702, 4, 44901);
+    			add_location(input, file$1, 702, 4, 45069);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
@@ -32306,7 +32306,7 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file$1, 679, 12, 43748);
+    			add_location(tr, file$1, 679, 12, 43916);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -32427,8 +32427,8 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "falsa");
     			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 691, 28, 44506);
-    			add_location(th, file$1, 691, 24, 44502);
+    			add_location(img, file$1, 691, 28, 44674);
+    			add_location(th, file$1, 691, 24, 44670);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -32463,9 +32463,9 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
     			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 689, 43, 44367);
+    			add_location(img, file$1, 689, 43, 44535);
     			attr_dev(th, "class", "Dante1 svelte-k97a1p");
-    			add_location(th, file$1, 689, 24, 44348);
+    			add_location(th, file$1, 689, 24, 44516);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -32500,8 +32500,8 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
     			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 687, 28, 44218);
-    			add_location(th, file$1, 687, 24, 44214);
+    			add_location(img, file$1, 687, 28, 44386);
+    			add_location(th, file$1, 687, 24, 44382);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -32536,8 +32536,8 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel1.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
     			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 685, 28, 44080);
-    			add_location(th, file$1, 685, 24, 44076);
+    			add_location(img, file$1, 685, 28, 44248);
+    			add_location(th, file$1, 685, 24, 44244);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -32572,8 +32572,8 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel1.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
     			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 683, 29, 43948);
-    			add_location(th, file$1, 683, 24, 43943);
+    			add_location(img, file$1, 683, 29, 44116);
+    			add_location(th, file$1, 683, 24, 44111);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -32709,10 +32709,10 @@ var app = (function () {
     			p0.textContent = "Sempre que passar de fase, haverá um enigma a ser solucionado.";
     			t1 = space();
     			p1 = element("p");
-    			p1.textContent = "Lembre-se: Existe um limite de tempo tanto para resolver os enigmas, como para sair de cada labirinto.";
+    			p1.textContent = "Lembre-se: Existe um limite de tempo para resolver os enigmas.";
     			t3 = space();
     			p2 = element("p");
-    			p2.textContent = "Ao perder em qualquer nível, voltará para o primeiro.";
+    			p2.textContent = "Ao atingir o limite de tempo para resolver o enigma em qualquer nível você voltará para o primeiro.";
     			t5 = space();
     			p3 = element("p");
     			p3.textContent = "OBS: Só serão aceitas letras maiúsculas nas respostas de todos os enigmas.";
@@ -32725,20 +32725,20 @@ var app = (function () {
     			t11 = space();
     			input = element("input");
     			attr_dev(p0, "class", "Enigma");
-    			add_location(p0, file$1, 658, 8, 42603);
+    			add_location(p0, file$1, 658, 8, 42765);
     			attr_dev(p1, "class", "Enigma");
-    			add_location(p1, file$1, 659, 8, 42698);
+    			add_location(p1, file$1, 659, 8, 42860);
     			attr_dev(p2, "class", "Enigma");
-    			add_location(p2, file$1, 660, 8, 42833);
+    			add_location(p2, file$1, 660, 8, 42955);
     			attr_dev(p3, "class", "Enigma");
-    			add_location(p3, file$1, 661, 8, 42918);
+    			add_location(p3, file$1, 661, 8, 43086);
     			attr_dev(p4, "class", "Enigma");
-    			add_location(p4, file$1, 662, 8, 43024);
+    			add_location(p4, file$1, 662, 8, 43192);
     			attr_dev(p5, "class", "Enigma");
-    			add_location(p5, file$1, 663, 8, 43106);
+    			add_location(p5, file$1, 663, 8, 43274);
     			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
     			attr_dev(input, "class", "RespostaEnigma");
-    			add_location(input, file$1, 664, 8, 43245);
+    			add_location(input, file$1, 664, 8, 43413);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p0, anchor);
@@ -32922,7 +32922,7 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file$1, 637, 12, 41636);
+    			add_location(tr, file$1, 637, 12, 41798);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -33043,8 +33043,8 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "falsa");
     			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 649, 28, 42397);
-    			add_location(th, file$1, 649, 24, 42393);
+    			add_location(img, file$1, 649, 28, 42559);
+    			add_location(th, file$1, 649, 24, 42555);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -33079,9 +33079,9 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
     			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 647, 43, 42258);
+    			add_location(img, file$1, 647, 43, 42420);
     			attr_dev(th, "class", "Dante0 svelte-k97a1p");
-    			add_location(th, file$1, 647, 24, 42239);
+    			add_location(th, file$1, 647, 24, 42401);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -33116,8 +33116,8 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
     			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 645, 28, 42109);
-    			add_location(th, file$1, 645, 24, 42105);
+    			add_location(img, file$1, 645, 28, 42271);
+    			add_location(th, file$1, 645, 24, 42267);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -33152,8 +33152,8 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredetutorial.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
     			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 643, 28, 41969);
-    			add_location(th, file$1, 643, 24, 41965);
+    			add_location(img, file$1, 643, 28, 42131);
+    			add_location(th, file$1, 643, 24, 42127);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -33188,8 +33188,8 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaotutorial.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
     			attr_dev(img, "class", "svelte-k97a1p");
-    			add_location(img, file$1, 641, 28, 41835);
-    			add_location(th, file$1, 641, 24, 41831);
+    			add_location(img, file$1, 641, 28, 41997);
+    			add_location(th, file$1, 641, 24, 41993);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -33353,8 +33353,8 @@ var app = (function () {
     			if_block1_anchor = empty();
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "/css/jogo.css");
-    			add_location(link, file$1, 586, 4, 40146);
-    			add_location(head, file$1, 585, 0, 40134);
+    			add_location(link, file$1, 586, 4, 40308);
+    			add_location(head, file$1, 585, 0, 40296);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -34413,7 +34413,8 @@ var app = (function () {
     			1,
     			1,
     			1,
-    			1
+    			1,
+    			2
     		],
     		[
     			2,
@@ -34468,7 +34469,8 @@ var app = (function () {
     			0,
     			0,
     			0,
-    			1
+    			1,
+    			2
     		],
     		[
     			2,
@@ -34523,7 +34525,8 @@ var app = (function () {
     			1,
     			1,
     			0,
-    			1
+    			1,
+    			2
     		],
     		[
     			2,
@@ -34578,7 +34581,8 @@ var app = (function () {
     			1,
     			1,
     			0,
-    			1
+    			1,
+    			2
     		],
     		[
     			2,
@@ -34633,7 +34637,8 @@ var app = (function () {
     			1,
     			1,
     			0,
-    			1
+    			1,
+    			2
     		],
     		[
     			2,
@@ -34688,7 +34693,8 @@ var app = (function () {
     			0,
     			0,
     			0,
-    			1
+    			1,
+    			2
     		],
     		[
     			2,
@@ -34743,7 +34749,8 @@ var app = (function () {
     			1,
     			1,
     			0,
-    			1
+    			1,
+    			2
     		],
     		[
     			2,
@@ -34798,7 +34805,8 @@ var app = (function () {
     			1,
     			1,
     			0,
-    			1
+    			1,
+    			2
     		],
     		[
     			2,
@@ -34853,7 +34861,8 @@ var app = (function () {
     			1,
     			1,
     			0,
-    			1
+    			1,
+    			2
     		],
     		[
     			2,
@@ -34908,7 +34917,8 @@ var app = (function () {
     			1,
     			1,
     			0,
-    			1
+    			1,
+    			2
     		],
     		[
     			2,
@@ -34963,125 +34973,33 @@ var app = (function () {
     			1,
     			1,
     			0,
-    			1
+    			1,
+    			2
     		],
     		[
     			2,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
+    			"falsa",
     			0,
-    			1
-    		],
-    		[
-    			2,
-    			1,
     			0,
-    			1,
-    			1,
-    			1,
-    			1,
     			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
     			0,
-    			1,
     			0,
-    			1,
     			0,
-    			1,
     			0,
-    			1,
-    			1,
     			0,
-    			1,
     			0,
     			1,
     			1,
-    			1,
-    			1,
-    			1,
     			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
     			1,
-    			1,
-    			1,
-    			1,
-    			1,
     			0,
     			1,
-    			1,
-    			0,
     			0,
     			1,
     			0,
     			1,
-    			0,
-    			1
-    		],
-    		[
-    			2,
     			1,
-    			0,
-    			0,
     			0,
-    			0,
     			1,
     			0,
     			0,
@@ -35089,101 +35007,30 @@ var app = (function () {
     			0,
     			0,
     			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
     			0,
     			1,
-    			0,
     			1,
-    			0,
     			0,
     			1,
-    			1,
     			0,
     			1,
-    			0,
-    			1
-    		],
-    		[
-    			2,
     			1,
     			0,
     			1,
-    			1,
-    			0,
     			0,
-    			0,
     			1,
-    			0,
     			1,
     			0,
-    			1,
     			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
     			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
     			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
     			1,
     			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
     			0,
-    			0,
-    			0,
     			1,
-    			1,
     			0,
-    			0,
     			1,
-    			0,
-    			1
+    			2
     		],
     		[
     			2,
@@ -35192,6 +35039,19 @@ var app = (function () {
     			1,
     			1,
     			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
     			0,
     			1,
     			1,
@@ -35204,19 +35064,8 @@ var app = (function () {
     			1,
     			1,
     			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
     			1,
-    			0,
+    			1,
     			1,
     			1,
     			1,
@@ -35228,17 +35077,16 @@ var app = (function () {
     			1,
     			1,
     			0,
-    			0,
-    			0,
-    			1,
-    			1,
     			1,
     			1,
     			0,
-    			1,
+    			0,
     			1,
     			0,
-    			1
+    			1,
+    			0,
+    			1,
+    			2
     		],
     		[
     			2,
@@ -35247,6 +35095,14 @@ var app = (function () {
     			0,
     			0,
     			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
     			0,
     			0,
     			0,
@@ -35257,30 +35113,22 @@ var app = (function () {
     			0,
     			0,
     			0,
-    			1,
     			0,
-    			1,
     			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
     			0,
-    			1,
     			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
     			0,
     			0,
     			1,
@@ -35289,11 +35137,12 @@ var app = (function () {
     			0,
     			0,
     			1,
-    			0,
-    			1,
     			1,
     			0,
-    			1
+    			1,
+    			0,
+    			1,
+    			2
     		],
     		[
     			2,
@@ -35301,82 +35150,8 @@ var app = (function () {
     			0,
     			1,
     			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
     			0,
     			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
     			0,
     			1,
     			0,
@@ -35385,25 +35160,45 @@ var app = (function () {
     			1,
     			1,
     			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			0,
     			1,
     			1,
     			1,
-    			0,
-    			0,
     			1,
     			1,
     			1,
     			0,
     			1,
-    			0,
-    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
     			1,
     			0,
     			0,
     			0,
     			0,
-    			1
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
     		],
     		[
     			2,
@@ -35417,175 +35212,23 @@ var app = (function () {
     			1,
     			0,
     			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
     			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			1,
-    			1,
-    			1,
     			1,
     			1,
     			1,
     			1,
     			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
     			0,
     			0,
     			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
     			0,
-    			1,
-    			1,
-    			1,
-    			1,
     			0,
-    			1,
     			0,
     			0,
     			0,
     			0,
     			0,
-    			1,
     			0,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
     			0,
     			1,
     			0,
@@ -35600,30 +35243,18 @@ var app = (function () {
     			1,
     			1,
     			0,
-    			1,
     			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
     			0,
     			1,
     			1,
     			1,
     			1,
     			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
     			1,
     			1,
     			0,
-    			1
+    			"falsa",
+    			2
     		],
     		[
     			2,
@@ -35642,6 +35273,384 @@ var app = (function () {
     			0,
     			0,
     			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
     			0,
     			0,
     			0,
@@ -35678,7 +35687,22 @@ var app = (function () {
     			0,
     			0,
     			0,
-    			1
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			2
     		],
     		[
     			2,
@@ -35733,9 +35757,11 @@ var app = (function () {
     			1,
     			1,
     			1,
-    			1
+    			1,
+    			2
     		],
     		[
+    			2,
     			2,
     			2,
     			2,
@@ -36867,7 +36893,7 @@ var app = (function () {
     		],
     		[
     			2,
-    			1,
+    			"falsa",
     			0,
     			0,
     			0,
@@ -46160,7 +46186,7 @@ var app = (function () {
 
     			if (mapa2[EixoY][EixoX] != 0) {
     				if (mapa2[EixoY][EixoX] == "falsa") {
-    					alert('Nem tudo é oq parece');
+    					alert('Nem tudo é o que parece jovem mortal!');
     				}
 
     				ResertarPosicao();
@@ -46174,7 +46200,7 @@ var app = (function () {
 
     			if (mapa3[EixoY][EixoX] != 0) {
     				if (mapa3[EixoY][EixoX] == "falsa") {
-    					alert('Nem tudo é oq parece');
+    					alert('Nem tudo é o que parece jovem mortal!');
     				}
 
     				ResertarPosicao();
@@ -46229,7 +46255,7 @@ var app = (function () {
 
     			if (mapa2[EixoY][EixoX] != 0) {
     				if (mapa2[EixoY][EixoX] == "falsa") {
-    					alert('Nem tudo é oq parece');
+    					alert('Talvez devesse tentar outra saída');
     				}
 
     				ResertarPosicao();
@@ -46243,7 +46269,7 @@ var app = (function () {
 
     			if (mapa3[EixoY][EixoX] != 0) {
     				if (mapa3[EixoY][EixoX] == "falsa") {
-    					alert('Nem tudo é oq parece');
+    					alert('Não consegue não é?');
     				}
 
     				ResertarPosicao();
@@ -46295,7 +46321,7 @@ var app = (function () {
     			$$invalidate(3, mapa1[SaveY][SaveX] = 0, mapa1);
     		} else if (MudandoDeFase == "nivel2") {
     			if (mapa2[EixoY][EixoX] == "falsa") {
-    				alert('Nem tudo é oq parece');
+    				alert('Talvez devesse tentar outra saída...');
     			}
 
     			MudarDeFase(mapa2[EixoY][EixoX]);
@@ -46312,7 +46338,7 @@ var app = (function () {
 
     			if (mapa3[EixoY][EixoX] != 0) {
     				if (mapa3[EixoY][EixoX] == "falsa") {
-    					alert('Nem tudo é oq parece');
+    					alert('Talvez devesse tentar outra saída...');
     				}
 
     				ResertarPosicao();
@@ -46367,7 +46393,7 @@ var app = (function () {
 
     			if (mapa2[EixoY][EixoX] != 0) {
     				if (mapa2[EixoY][EixoX] == "falsa") {
-    					alert('Nem tudo é oq parece');
+    					alert('Nem tudo é o que parece');
     				}
 
     				ResertarPosicao();
@@ -46381,7 +46407,7 @@ var app = (function () {
 
     			if (mapa3[EixoY][EixoX] != 0) {
     				if (mapa3[EixoY][EixoX] == "falsa") {
-    					alert('Nem tudo é oq parece');
+    					alert('Tem certeza que é essa a saída?');
     				}
 
     				ResertarPosicao();
