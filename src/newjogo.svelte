@@ -40,7 +40,7 @@
     ]
     let mapa1 = [
         [2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
-        [2,"DANTE",0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+        [2,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
         [2,1,0,1,1,1,1,1,0,1,1,0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1,0,1,1,0,1,1,1,1,0,1],
         [2,1,0,1,0,0,0,1,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1,0,1,1,0,1,1,1,1,0,1],
         [2,1,0,1,0,1,0,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,0,1,1,0,1,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,1,0,1],
@@ -48,7 +48,7 @@
         [2,1,0,1,1,1,0,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,0,1,0,1,1,1,0,1,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,0,1],
         [2,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,1,0,1,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,1,1,0,1],
         [2,1,0,1,1,1,1,1,0,1,1,1,1,1,1,0,0,0,1,0,1,1,0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,0,0,1,1,0,1],
-        [2,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,1,0,0,1,0,1,0,0,0,0,0,1,1,0,1,0,1,1,0,1,0,1,1,0,0,1,1,0,1,1,1,0,1],
+        [2,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,1,0,0,1,"DANTE",1,0,0,0,0,0,1,1,0,1,0,1,1,0,1,0,1,1,0,0,1,1,0,1,1,1,0,1],
         [2,1,0,1,1,1,1,1,1,1,0,1,1,0,1,0,1,0,1,1,1,0,0,1,0,1,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,0,0,1,0,1,1,1,0,1],
         [2,1,0,0,0,0,0,0,0,0,0,1,1,0,1,0,1,0,1,0,1,1,0,1,0,0,0,0,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,0,0,1,1,0,1,0,1],
         [2,1,0,1,1,1,1,0,1,1,1,1,1,0,1,0,1,0,1,0,1,1,0,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,0,0,1,0,1,0,1],
@@ -68,7 +68,7 @@
     ]
     let mapa2 = [
         [2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],
-        [2,"DANTE",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2],
+        [2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2],
         [2,1,0,1,1,1,1,1,0,1,1,0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,2],
         [2,1,0,1,0,0,0,1,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,2],
         [2,1,0,1,0,1,0,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,0,1,0,0,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,2],
@@ -98,8 +98,8 @@
         [2,1,0,1,0,1,1,1,1,1,0,1,1,0,0,0,0,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,0,0,1,0,0,0,1,0,1,1,1,1,1,1,1,1,0,1,0,1,0,1,1,1,0,1,0,1,2],
         [2,1,0,1,0,0,0,0,0,0,0,1,1,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,1,1,1,0,0,0,1,0,0,0,1,0,1,1,1,0,1,1,1,2],
         [2,1,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,1,1,1,0,0,1,1,1,1,1,0,1,0,1,1,1,1,0,1,1,0,1,0,1,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,1,1,1,0,0,0,"falsa",2],
-        [2,1,0,0,0,0,0,1,0,0,0,1,0,0,1,0,1,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,1,0,0,0,0,1,1,1,1,2],
-        [2,1,1,1,1,0,1,0,1,1,0,0,1,1,0,1,1,1,1,0,0,1,0,0,0,0,1,0,1,1,1,0,1,1,0,1,0,1,1,1,1,0,1,1,1,1,0,0,0,0,0,1,1,1,0,1,0,1,1,0,1,1,1,1,2],
+        [2,1,"DANTE",0,0,0,0,1,0,0,0,1,0,0,1,0,1,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,1,0,0,0,0,1,1,1,1,2],
+        [2,1,1,1,1,0,1,0,1,1,0,0,"CAMINHO",1,0,1,1,1,1,0,0,1,0,0,0,0,1,0,1,1,1,0,1,1,0,1,0,1,1,1,1,0,1,1,1,1,0,0,0,0,0,1,1,1,0,1,0,1,1,0,1,1,1,1,2],
         [2,1,0,0,0,0,1,0,1,0,0,1,1,0,0,1,1,1,1,1,0,0,0,1,1,1,1,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,1,1,0,1,1,1,0,0,0,0,0,1,0,1,1,0,1,1,1,1,2],
         [2,1,0,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,0,0,0,0,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,0,1,0,0,1,1,1,1,1,1,1,1,1,0,1,0,1,1,0,0,0,0,"falsa",2],
         [2,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,1,0,0,1,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,2],
@@ -323,7 +323,10 @@ let mapa3 = [
             mapa1[SaveY][SaveX] = 0;
         }else if(MudandoDeFase == "nivel2"){
             MudarDeFase(mapa2[EixoY][EixoX])
-            if(mapa2[EixoY][EixoX] != 0){
+            if(mapa2[EixoY][EixoX] == "CAMINHO"){
+                mapa2[SaveY][SaveX] = 0; 
+                return
+            }else if(mapa2[EixoY][EixoX] != 0){
                 if(mapa2[EixoY][EixoX] == "falsa"){
                     alert('Nem tudo é oq parece')
                 }
@@ -331,7 +334,9 @@ let mapa3 = [
                 return
             }
             mapa2[EixoY][EixoX] = "DANTE"
-            mapa2[SaveY][SaveX] = 0;
+            if(mapa2[SaveY][SaveX] != "CAMINHO"){
+                mapa2[SaveY][SaveX] = 0;
+            }
         }else if(MudandoDeFase == "nivel3"){
             MudarDeFase(mapa3[EixoY][EixoX])
             if(mapa3[EixoY][EixoX] != 0){
@@ -376,7 +381,10 @@ let mapa3 = [
             mapa1[SaveY][SaveX] = 0;
         }else if(MudandoDeFase == "nivel2"){
             MudarDeFase(mapa2[EixoY][EixoX])
-            if(mapa2[EixoY][EixoX] != 0){
+            if(mapa2[EixoY][EixoX] == "CAMINHO"){
+                mapa2[SaveY][SaveX] = 0; 
+                return
+            }else if(mapa2[EixoY][EixoX] != 0){
                 if(mapa2[EixoY][EixoX] == "falsa"){
                     alert('Nem tudo é oq parece')
                 }
@@ -384,7 +392,9 @@ let mapa3 = [
                 return
             }
             mapa2[EixoY][EixoX] = "DANTE"
-            mapa2[SaveY][SaveX] = 0;
+            if(mapa2[SaveY][SaveX] != "CAMINHO"){
+                mapa2[SaveY][SaveX] = 0;
+            }
         }else if(MudandoDeFase == "nivel3"){
             MudarDeFase(mapa3[EixoY][EixoX])
             if(mapa3[EixoY][EixoX] != 0){
@@ -432,12 +442,17 @@ let mapa3 = [
                     alert('Nem tudo é oq parece')
                 }
             MudarDeFase(mapa2[EixoY][EixoX])
-            if(mapa2[EixoY][EixoX] != 0){
+            if(mapa2[EixoY][EixoX] == "CAMINHO"){
+                mapa2[SaveY][SaveX] = 0; 
+                return
+            }else if(mapa2[EixoY][EixoX] != 0){
                 ResertarPosicao()
                 return
             }
             mapa2[EixoY][EixoX] = "DANTE"
-            mapa2[SaveY][SaveX] = 0;
+            if(mapa2[SaveY][SaveX] != "CAMINHO"){
+                mapa2[SaveY][SaveX] = 0;
+            }
         }else if(MudandoDeFase == "nivel3"){
             MudarDeFase(mapa3[EixoY][EixoX])
             if(mapa3[EixoY][EixoX] != 0){
@@ -482,7 +497,10 @@ let mapa3 = [
             mapa1[SaveY][SaveX] = 0;
         }else if(MudandoDeFase == "nivel2"){
             MudarDeFase(mapa2[EixoY][EixoX])
-            if(mapa2[EixoY][EixoX] != 0){
+            if(mapa2[EixoY][EixoX] == "CAMINHO"){
+                mapa2[SaveY][SaveX] = 0; 
+                return
+            }else if(mapa2[EixoY][EixoX] != 0){
                 if(mapa2[EixoY][EixoX] == "falsa"){
                     alert('Nem tudo é oq parece')
                 }
@@ -490,7 +508,9 @@ let mapa3 = [
                 return
             }
             mapa2[EixoY][EixoX] = "DANTE"
-            mapa2[SaveY][SaveX] = 0;
+            if(mapa2[SaveY][SaveX] != "CAMINHO"){
+                mapa2[SaveY][SaveX] = 0;
+            }
         }else if(MudandoDeFase == "nivel3"){
             MudarDeFase(mapa3[EixoY][EixoX])
             if(mapa3[EixoY][EixoX] != 0){
@@ -607,7 +627,7 @@ let mapa3 = [
 
     {#if !enigma}
         
-    <p class="futil">
+    <p class="textofutil">
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
     </p>
@@ -652,7 +672,7 @@ let mapa3 = [
 
     {#if !enigma}
         
-    <p class="futil">
+    <p class="textofutil">
     {clearInterval(Tempo)}
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
@@ -693,7 +713,7 @@ let mapa3 = [
 
     {#if !enigma}
      
-    <p class="futil">
+    <p class="textofutil">
     {clearInterval(Tempo)}
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
@@ -714,6 +734,8 @@ let mapa3 = [
                         <th class="Dante2"><img src="/css/imagens/Dante.png" alt="personagem"></th>
                     {:else if elementos == "falsa"}
                         <th><img src="/css/imagens/saida.png" alt="falsa"></th>
+                    {:else if elementos == "CAMINHO"}
+                        <th><img src="/css/imagens/paredenivel2.png" alt="paredefalsa"></th>
                     {/if}
                     {/if}
                 {/each}
@@ -734,7 +756,7 @@ let mapa3 = [
 
     {#if !enigma}
      
-    <p class="futil">
+    <p class="textofutil">
     {clearInterval(Tempo)}
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
@@ -774,7 +796,7 @@ let mapa3 = [
 
     <Vitoria/>
 
-    <p class="futil">
+    <p class="textofutil">
     {clearInterval(Tempo)}
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
