@@ -316,6 +316,9 @@ let mapa3 = [
         }else if(MudandoDeFase == "nivel1"){
             MudarDeFase(mapa1[EixoY][EixoX])
             if(mapa1[EixoY][EixoX] != 0){
+                if(mapa1[EixoY][EixoX] == "falsa"){
+                    alert('Nem tudo é o que parece pequeno Dante!')
+                }
                 ResertarPosicao()
                 return
             }
@@ -325,7 +328,7 @@ let mapa3 = [
             MudarDeFase(mapa2[EixoY][EixoX])
             if(mapa2[EixoY][EixoX] != 0){
                 if(mapa2[EixoY][EixoX] == "falsa"){
-                    alert('Nem tudo é o que parece jovem mortal!')
+                    alert('Nem tudo é o que parece pequeno Dante!')
                 }
                 ResertarPosicao()
                 return
@@ -336,7 +339,7 @@ let mapa3 = [
             MudarDeFase(mapa3[EixoY][EixoX])
             if(mapa3[EixoY][EixoX] != 0){
                 if(mapa3[EixoY][EixoX] == "falsa"){
-                    alert('Nem tudo é o que parece jovem mortal!')
+                    alert('Nem tudo é o que parece pequeno Dante!')
                 }
                 ResertarPosicao()
                 return
@@ -369,6 +372,9 @@ let mapa3 = [
         }else if(MudandoDeFase == "nivel1"){
             MudarDeFase(mapa1[EixoY][EixoX])
             if(mapa1[EixoY][EixoX] != 0){
+                if(mapa1[EixoY][EixoX] == "falsa"){
+                    alert('Nem tudo é o que parece pequeno Dante!')
+                }
                 ResertarPosicao()
                 return
             }
@@ -378,7 +384,7 @@ let mapa3 = [
             MudarDeFase(mapa2[EixoY][EixoX])
             if(mapa2[EixoY][EixoX] != 0){
                 if(mapa2[EixoY][EixoX] == "falsa"){
-                    alert('Talvez devesse tentar outra saída')
+                    alert('Talvez devesse tentar outra saída...')
                 }
                 ResertarPosicao()
                 return
@@ -422,6 +428,9 @@ let mapa3 = [
         }else if(MudandoDeFase == "nivel1"){
             MudarDeFase(mapa1[EixoY][EixoX])
             if(mapa1[EixoY][EixoX] != 0){
+                if(mapa1[EixoY][EixoX] == "falsa"){
+                    alert('Essa é mesmo a saída?')
+                }
                 ResertarPosicao()
                 return
             }
@@ -442,7 +451,7 @@ let mapa3 = [
             MudarDeFase(mapa3[EixoY][EixoX])
             if(mapa3[EixoY][EixoX] != 0){
                 if(mapa3[EixoY][EixoX] == "falsa"){
-                    alert('Talvez devesse tentar outra saída...')
+                    alert('Tem certeza que essa é a saída?')
                 }
                 ResertarPosicao()
                 return
@@ -475,6 +484,9 @@ let mapa3 = [
         }else if(MudandoDeFase == "nivel1"){
             MudarDeFase(mapa1[EixoY][EixoX])
             if(mapa1[EixoY][EixoX] != 0){
+                if(mapa1[EixoY][EixoX] == "falsa"){
+                    alert('Não consegue não é?')
+                }
                 ResertarPosicao()
                 return
             }
@@ -484,7 +496,7 @@ let mapa3 = [
             MudarDeFase(mapa2[EixoY][EixoX])
             if(mapa2[EixoY][EixoX] != 0){
                 if(mapa2[EixoY][EixoX] == "falsa"){
-                    alert('Nem tudo é o que parece')
+                    alert('Nem tudo é o que parece jovem criança')
                 }
                 ResertarPosicao()
                 return
@@ -601,7 +613,7 @@ let mapa3 = [
         {/if}
 {/if}
 <VoltarMenu/>
-{#if MudandoDeFase == "tutorial"}
+{#if MudandoDeFase == "tut"}
     
     <p class='FasesDoJogo'>Tutorial</p>
 
@@ -768,9 +780,9 @@ let mapa3 = [
         <p class='Enigma'>Se você me tem, quer me compartilhar; se você não me compartilha, você me manteve. O que eu sou?</p>
         <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "SEGREDO",MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>        
         {/if}
-    {:else if MudandoDeFase == "vitoria"}
+    {:else if MudandoDeFase == "tutorial"}
     
-    {#if !enigma}
+    {#if enigma}
 
     <Vitoria/>
 
