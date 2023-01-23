@@ -30002,15 +30002,15 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (604:0) {#if (key)}
-    function create_if_block_42(ctx) {
+    // (625:0) {#if (key)}
+    function create_if_block_43(ctx) {
     	let if_block_anchor;
 
     	function select_block_type(ctx, dirty) {
-    		if (/*code*/ ctx[1] == "ArrowUp") return create_if_block_43;
-    		if (/*code*/ ctx[1] == "ArrowDown") return create_if_block_44;
-    		if (/*code*/ ctx[1] == "ArrowLeft") return create_if_block_45;
-    		if (/*code*/ ctx[1] == "ArrowRight") return create_if_block_46;
+    		if (/*code*/ ctx[1] == "ArrowUp") return create_if_block_44;
+    		if (/*code*/ ctx[1] == "ArrowDown") return create_if_block_45;
+    		if (/*code*/ ctx[1] == "ArrowLeft") return create_if_block_46;
+    		if (/*code*/ ctx[1] == "ArrowRight") return create_if_block_47;
     	}
 
     	let current_block_type = select_block_type(ctx);
@@ -30049,18 +30049,47 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_42.name,
+    		id: create_if_block_43.name,
     		type: "if",
-    		source: "(604:0) {#if (key)}",
+    		source: "(625:0) {#if (key)}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (611:41) 
-    function create_if_block_46(ctx) {
+    // (632:41) 
+    function create_if_block_47(ctx) {
     	let t_value = /*IncremetarX*/ ctx[18]() + "";
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text(t_value);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_47.name,
+    		type: "if",
+    		source: "(632:41) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (630:40) 
+    function create_if_block_46(ctx) {
+    	let t_value = /*DecrementarX*/ ctx[19]() + "";
     	let t;
 
     	const block = {
@@ -30080,16 +30109,16 @@ var app = (function () {
     		block,
     		id: create_if_block_46.name,
     		type: "if",
-    		source: "(611:41) ",
+    		source: "(630:40) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (609:40) 
+    // (628:40) 
     function create_if_block_45(ctx) {
-    	let t_value = /*DecrementarX*/ ctx[19]() + "";
+    	let t_value = /*IncremetarY*/ ctx[20]() + "";
     	let t;
 
     	const block = {
@@ -30109,16 +30138,16 @@ var app = (function () {
     		block,
     		id: create_if_block_45.name,
     		type: "if",
-    		source: "(609:40) ",
+    		source: "(628:40) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (607:40) 
+    // (626:8) {#if (code == "ArrowUp")}
     function create_if_block_44(ctx) {
-    	let t_value = /*IncremetarY*/ ctx[20]() + "";
+    	let t_value = /*DecrementarY*/ ctx[21]() + "";
     	let t;
 
     	const block = {
@@ -30138,53 +30167,24 @@ var app = (function () {
     		block,
     		id: create_if_block_44.name,
     		type: "if",
-    		source: "(607:40) ",
+    		source: "(626:8) {#if (code == \\\"ArrowUp\\\")}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (605:8) {#if (code == "ArrowUp")}
-    function create_if_block_43(ctx) {
-    	let t_value = /*DecrementarY*/ ctx[21]() + "";
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			t = text(t_value);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
-    		},
-    		p: noop,
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_43.name,
-    		type: "if",
-    		source: "(605:8) {#if (code == \\\"ArrowUp\\\")}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (783:42) 
-    function create_if_block_36(ctx) {
+    // (806:41) 
+    function create_if_block_37(ctx) {
     	let current_block_type_index;
     	let if_block;
     	let if_block_anchor;
     	let current;
-    	const if_block_creators = [create_if_block_37, create_else_block_4];
+    	const if_block_creators = [create_if_block_38, create_else_block_4];
     	const if_blocks = [];
 
     	function select_block_type_10(ctx, dirty) {
-    		if (/*enigma*/ ctx[10]) return 0;
+    		if (!/*enigma*/ ctx[10]) return 0;
     		return 1;
     	}
 
@@ -30245,23 +30245,23 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_36.name,
+    		id: create_if_block_37.name,
     		type: "if",
-    		source: "(783:42) ",
+    		source: "(806:41) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (743:40) 
-    function create_if_block_27(ctx) {
+    // (766:40) 
+    function create_if_block_28(ctx) {
     	let p;
     	let t1;
     	let if_block_anchor;
 
     	function select_block_type_8(ctx, dirty) {
-    		if (!/*enigma*/ ctx[10]) return create_if_block_28;
+    		if (!/*enigma*/ ctx[10]) return create_if_block_29;
     		return create_else_block_3;
     	}
 
@@ -30276,7 +30276,7 @@ var app = (function () {
     			if_block.c();
     			if_block_anchor = empty();
     			attr_dev(p, "class", "FasesDoJogo");
-    			add_location(p, file$1, 744, 4, 47184);
+    			add_location(p, file$1, 767, 4, 48139);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -30309,16 +30309,16 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_27.name,
+    		id: create_if_block_28.name,
     		type: "if",
-    		source: "(743:40) ",
+    		source: "(766:40) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (702:40) 
+    // (723:40) 
     function create_if_block_18(ctx) {
     	let p;
     	let t1;
@@ -30340,7 +30340,7 @@ var app = (function () {
     			if_block.c();
     			if_block_anchor = empty();
     			attr_dev(p, "class", "FasesDoJogo");
-    			add_location(p, file$1, 703, 4, 45431);
+    			add_location(p, file$1, 724, 4, 46232);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -30375,14 +30375,14 @@ var app = (function () {
     		block,
     		id: create_if_block_18.name,
     		type: "if",
-    		source: "(702:40) ",
+    		source: "(723:40) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (661:40) 
+    // (682:40) 
     function create_if_block_9(ctx) {
     	let p;
     	let t1;
@@ -30404,7 +30404,7 @@ var app = (function () {
     			if_block.c();
     			if_block_anchor = empty();
     			attr_dev(p, "class", "FasesDoJogo");
-    			add_location(p, file$1, 662, 4, 43675);
+    			add_location(p, file$1, 683, 4, 44471);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -30439,14 +30439,14 @@ var app = (function () {
     		block,
     		id: create_if_block_9.name,
     		type: "if",
-    		source: "(661:40) ",
+    		source: "(682:40) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (616:0) {#if MudandoDeFase == "tut"}
+    // (637:0) {#if MudandoDeFase == "tutorial"}
     function create_if_block$1(ctx) {
     	let p;
     	let t1;
@@ -30468,7 +30468,7 @@ var app = (function () {
     			if_block.c();
     			if_block_anchor = empty();
     			attr_dev(p, "class", "FasesDoJogo");
-    			add_location(p, file$1, 617, 4, 41457);
+    			add_location(p, file$1, 638, 4, 42248);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -30503,14 +30503,14 @@ var app = (function () {
     		block,
     		id: create_if_block$1.name,
     		type: "if",
-    		source: "(616:0) {#if MudandoDeFase == \\\"tut\\\"}",
+    		source: "(637:0) {#if MudandoDeFase == \\\"tutorial\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (811:4) {:else}
+    // (834:4) {:else}
     function create_else_block_4(ctx) {
     	let creditos;
     	let current;
@@ -30543,15 +30543,15 @@ var app = (function () {
     		block,
     		id: create_else_block_4.name,
     		type: "else",
-    		source: "(811:4) {:else}",
+    		source: "(834:4) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (785:4) {#if enigma}
-    function create_if_block_37(ctx) {
+    // (808:4) {#if !enigma}
+    function create_if_block_38(ctx) {
     	let vitoria;
     	let t0;
     	let p;
@@ -30592,10 +30592,10 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr_dev(p, "class", "futil");
-    			add_location(p, file$1, 788, 4, 48993);
+    			attr_dev(p, "class", "textofutil");
+    			add_location(p, file$1, 811, 4, 49953);
     			attr_dev(table, "id", "mapanivel4");
-    			add_location(table, file$1, 793, 0, 49116);
+    			add_location(table, file$1, 816, 0, 50081);
     		},
     		m: function mount(target, anchor) {
     			mount_component(vitoria, target, anchor);
@@ -30664,17 +30664,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_37.name,
+    		id: create_if_block_38.name,
     		type: "if",
-    		source: "(785:4) {#if enigma}",
+    		source: "(808:4) {#if !enigma}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (804:39) 
-    function create_if_block_41(ctx) {
+    // (827:39) 
+    function create_if_block_42(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -30685,8 +30685,44 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
-    			add_location(img, file$1, 804, 20, 49646);
-    			add_location(th, file$1, 804, 16, 49642);
+    			add_location(img, file$1, 827, 20, 50610);
+    			add_location(th, file$1, 827, 16, 50606);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_42.name,
+    		type: "if",
+    		source: "(827:39) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (825:43) 
+    function create_if_block_41(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "personagem");
+    			add_location(img, file$1, 825, 35, 50491);
+    			attr_dev(th, "class", "Dante4");
+    			add_location(th, file$1, 825, 16, 50472);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30701,14 +30737,14 @@ var app = (function () {
     		block,
     		id: create_if_block_41.name,
     		type: "if",
-    		source: "(804:39) ",
+    		source: "(825:43) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (802:43) 
+    // (823:37) 
     function create_if_block_40(ctx) {
     	let th;
     	let img;
@@ -30718,11 +30754,10 @@ var app = (function () {
     		c: function create() {
     			th = element("th");
     			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "personagem");
-    			add_location(img, file$1, 802, 35, 49527);
-    			attr_dev(th, "class", "Dante4");
-    			add_location(th, file$1, 802, 16, 49508);
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredetunel.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "parede");
+    			add_location(img, file$1, 823, 20, 50351);
+    			add_location(th, file$1, 823, 16, 50347);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30737,14 +30772,14 @@ var app = (function () {
     		block,
     		id: create_if_block_40.name,
     		type: "if",
-    		source: "(802:43) ",
+    		source: "(823:37) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (800:37) 
+    // (821:12) {#if elementos == 0}
     function create_if_block_39(ctx) {
     	let th;
     	let img;
@@ -30754,10 +30789,10 @@ var app = (function () {
     		c: function create() {
     			th = element("th");
     			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredetunel.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 800, 20, 49387);
-    			add_location(th, file$1, 800, 16, 49383);
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaotunel.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "chao");
+    			add_location(img, file$1, 821, 20, 50236);
+    			add_location(th, file$1, 821, 16, 50232);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30772,57 +30807,22 @@ var app = (function () {
     		block,
     		id: create_if_block_39.name,
     		type: "if",
-    		source: "(800:37) ",
+    		source: "(821:12) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (798:12) {#if elementos == 0}
-    function create_if_block_38(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel3.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "chao");
-    			add_location(img, file$1, 798, 20, 49271);
-    			add_location(th, file$1, 798, 16, 49267);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_38.name,
-    		type: "if",
-    		source: "(798:12) {#if elementos == 0}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (797:8) {#each linhas as elementos}
+    // (820:8) {#each linhas as elementos}
     function create_each_block_9(ctx) {
     	let if_block_anchor;
 
     	function select_block_type_11(ctx, dirty) {
-    		if (/*elementos*/ ctx[39] == 0) return create_if_block_38;
-    		if (/*elementos*/ ctx[39] == 1) return create_if_block_39;
-    		if (/*elementos*/ ctx[39] == "DANTE") return create_if_block_40;
-    		if (/*elementos*/ ctx[39] == "C") return create_if_block_41;
+    		if (/*elementos*/ ctx[39] == 0) return create_if_block_39;
+    		if (/*elementos*/ ctx[39] == 1) return create_if_block_40;
+    		if (/*elementos*/ ctx[39] == "DANTE") return create_if_block_41;
+    		if (/*elementos*/ ctx[39] == "C") return create_if_block_42;
     	}
 
     	let current_block_type = select_block_type_11(ctx);
@@ -30861,14 +30861,14 @@ var app = (function () {
     		block,
     		id: create_each_block_9.name,
     		type: "each",
-    		source: "(797:8) {#each linhas as elementos}",
+    		source: "(820:8) {#each linhas as elementos}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (795:4) {#each mapa4 as linhas}
+    // (818:4) {#each mapa4 as linhas}
     function create_each_block_8(ctx) {
     	let tr;
     	let t;
@@ -30889,7 +30889,7 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file$1, 795, 4, 49174);
+    			add_location(tr, file$1, 818, 4, 50139);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -30935,14 +30935,14 @@ var app = (function () {
     		block,
     		id: create_each_block_8.name,
     		type: "each",
-    		source: "(795:4) {#each mapa4 as linhas}",
+    		source: "(818:4) {#each mapa4 as linhas}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (777:8) {:else}
+    // (800:8) {:else}
     function create_else_block_3(ctx) {
     	let t0_value = /*TempoEnigma*/ ctx[23]() + "";
     	let t0;
@@ -30967,12 +30967,12 @@ var app = (function () {
     			p1.textContent = "Se você me tem, quer me compartilhar; se você não me compartilha, você me manteve. O que eu sou?";
     			t5 = space();
     			input = element("input");
-    			add_location(p0, file$1, 778, 8, 48562);
+    			add_location(p0, file$1, 801, 8, 49522);
     			attr_dev(p1, "class", "Enigma");
-    			add_location(p1, file$1, 779, 8, 48589);
+    			add_location(p1, file$1, 802, 8, 49549);
     			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
     			attr_dev(input, "class", "RespostaEnigma");
-    			add_location(input, file$1, 780, 8, 48717);
+    			add_location(input, file$1, 803, 8, 49677);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
@@ -31028,15 +31028,15 @@ var app = (function () {
     		block,
     		id: create_else_block_3.name,
     		type: "else",
-    		source: "(777:8) {:else}",
+    		source: "(800:8) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (747:4) {#if !enigma}
-    function create_if_block_28(ctx) {
+    // (770:4) {#if !enigma}
+    function create_if_block_29(ctx) {
     	let p;
     	let t0_value = clearInterval(/*Tempo*/ ctx[12]) + "";
     	let t0;
@@ -31071,12 +31071,12 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr_dev(p, "class", "futil");
-    			add_location(p, file$1, 748, 4, 47252);
+    			attr_dev(p, "class", "textofutil");
+    			add_location(p, file$1, 771, 4, 48207);
     			attr_dev(table, "class", "mapa");
     			attr_dev(table, "align", "center");
     			attr_dev(table, "id", "mapanivel3");
-    			add_location(table, file$1, 753, 4, 47379);
+    			add_location(table, file$1, 776, 4, 48339);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -31130,17 +31130,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_28.name,
+    		id: create_if_block_29.name,
     		type: "if",
-    		source: "(747:4) {#if !enigma}",
+    		source: "(770:4) {#if !enigma}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (756:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
-    function create_if_block_29(ctx) {
+    // (779:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+    function create_if_block_30(ctx) {
     	let tr;
     	let t;
     	let each_value_7 = /*linhas*/ ctx[36];
@@ -31160,7 +31160,7 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file$1, 756, 12, 47547);
+    			add_location(tr, file$1, 779, 12, 48507);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -31204,25 +31204,25 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_29.name,
+    		id: create_if_block_30.name,
     		type: "if",
-    		source: "(756:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		source: "(779:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (759:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
-    function create_if_block_30(ctx) {
+    // (782:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+    function create_if_block_31(ctx) {
     	let if_block_anchor;
 
     	function select_block_type_9(ctx, dirty) {
-    		if (/*elementos*/ ctx[39] == 0) return create_if_block_31;
-    		if (/*elementos*/ ctx[39] == 1) return create_if_block_32;
-    		if (/*elementos*/ ctx[39] == "V") return create_if_block_33;
-    		if (/*elementos*/ ctx[39] == "DANTE") return create_if_block_34;
-    		if (/*elementos*/ ctx[39] == "falsa") return create_if_block_35;
+    		if (/*elementos*/ ctx[39] == 0) return create_if_block_32;
+    		if (/*elementos*/ ctx[39] == 1) return create_if_block_33;
+    		if (/*elementos*/ ctx[39] == "V") return create_if_block_34;
+    		if (/*elementos*/ ctx[39] == "DANTE") return create_if_block_35;
+    		if (/*elementos*/ ctx[39] == "falsa") return create_if_block_36;
     	}
 
     	let current_block_type = select_block_type_9(ctx);
@@ -31259,17 +31259,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_30.name,
+    		id: create_if_block_31.name,
     		type: "if",
-    		source: "(759:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
+    		source: "(782:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (768:51) 
-    function create_if_block_35(ctx) {
+    // (791:51) 
+    function create_if_block_36(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -31280,8 +31280,44 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "falsa");
-    			add_location(img, file$1, 768, 28, 48311);
-    			add_location(th, file$1, 768, 24, 48307);
+    			add_location(img, file$1, 791, 28, 49271);
+    			add_location(th, file$1, 791, 24, 49267);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_36.name,
+    		type: "if",
+    		source: "(791:51) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (789:51) 
+    function create_if_block_35(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "personagem");
+    			add_location(img, file$1, 789, 43, 49132);
+    			attr_dev(th, "class", "Dante3");
+    			add_location(th, file$1, 789, 24, 49113);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31296,14 +31332,14 @@ var app = (function () {
     		block,
     		id: create_if_block_35.name,
     		type: "if",
-    		source: "(768:51) ",
+    		source: "(789:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (766:51) 
+    // (787:47) 
     function create_if_block_34(ctx) {
     	let th;
     	let img;
@@ -31313,11 +31349,10 @@ var app = (function () {
     		c: function create() {
     			th = element("th");
     			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "personagem");
-    			add_location(img, file$1, 766, 43, 48172);
-    			attr_dev(th, "class", "Dante3");
-    			add_location(th, file$1, 766, 24, 48153);
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saidanivel3.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "saida");
+    			add_location(img, file$1, 787, 28, 48977);
+    			add_location(th, file$1, 787, 24, 48973);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31332,14 +31367,14 @@ var app = (function () {
     		block,
     		id: create_if_block_34.name,
     		type: "if",
-    		source: "(766:51) ",
+    		source: "(787:47) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (764:47) 
+    // (785:45) 
     function create_if_block_33(ctx) {
     	let th;
     	let img;
@@ -31349,10 +31384,10 @@ var app = (function () {
     		c: function create() {
     			th = element("th");
     			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saidanivel3.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "saida");
-    			add_location(img, file$1, 764, 28, 48017);
-    			add_location(th, file$1, 764, 24, 48013);
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel3.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "parede");
+    			add_location(img, file$1, 785, 28, 48839);
+    			add_location(th, file$1, 785, 24, 48835);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31367,14 +31402,14 @@ var app = (function () {
     		block,
     		id: create_if_block_33.name,
     		type: "if",
-    		source: "(764:47) ",
+    		source: "(785:45) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (762:45) 
+    // (783:20) {#if elementos == 0}
     function create_if_block_32(ctx) {
     	let th;
     	let img;
@@ -31384,10 +31419,10 @@ var app = (function () {
     		c: function create() {
     			th = element("th");
     			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel3.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 762, 28, 47879);
-    			add_location(th, file$1, 762, 24, 47875);
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel3.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "chao");
+    			add_location(img, file$1, 783, 29, 48707);
+    			add_location(th, file$1, 783, 24, 48702);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31402,52 +31437,17 @@ var app = (function () {
     		block,
     		id: create_if_block_32.name,
     		type: "if",
-    		source: "(762:45) ",
+    		source: "(783:20) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (760:20) {#if elementos == 0}
-    function create_if_block_31(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel3.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "chao");
-    			add_location(img, file$1, 760, 29, 47747);
-    			add_location(th, file$1, 760, 24, 47742);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_31.name,
-    		type: "if",
-    		source: "(760:20) {#if elementos == 0}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (758:16) {#each linhas as elementos,j}
+    // (781:16) {#each linhas as elementos,j}
     function create_each_block_7(ctx) {
     	let if_block_anchor;
-    	let if_block = /*LimiteX*/ ctx[7] <= /*j*/ ctx[41] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[41] && create_if_block_30(ctx);
+    	let if_block = /*LimiteX*/ ctx[7] <= /*j*/ ctx[41] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[41] && create_if_block_31(ctx);
 
     	const block = {
     		c: function create() {
@@ -31460,6 +31460,51 @@ var app = (function () {
     		},
     		p: function update(ctx, dirty) {
     			if (/*LimiteX*/ ctx[7] <= /*j*/ ctx[41] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[41]) {
+    				if (if_block) {
+    					if_block.p(ctx, dirty);
+    				} else {
+    					if_block = create_if_block_31(ctx);
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			} else if (if_block) {
+    				if_block.d(1);
+    				if_block = null;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_7.name,
+    		type: "each",
+    		source: "(781:16) {#each linhas as elementos,j}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (778:8) {#each mapa3 as linhas,i}
+    function create_each_block_6(ctx) {
+    	let if_block_anchor;
+    	let if_block = /*LimiteY*/ ctx[8] <= /*i*/ ctx[38] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[38] && create_if_block_30(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (/*LimiteY*/ ctx[8] <= /*i*/ ctx[38] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[38]) {
     				if (if_block) {
     					if_block.p(ctx, dirty);
     				} else {
@@ -31480,61 +31525,16 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block_7.name,
-    		type: "each",
-    		source: "(758:16) {#each linhas as elementos,j}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (755:8) {#each mapa3 as linhas,i}
-    function create_each_block_6(ctx) {
-    	let if_block_anchor;
-    	let if_block = /*LimiteY*/ ctx[8] <= /*i*/ ctx[38] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[38] && create_if_block_29(ctx);
-
-    	const block = {
-    		c: function create() {
-    			if (if_block) if_block.c();
-    			if_block_anchor = empty();
-    		},
-    		m: function mount(target, anchor) {
-    			if (if_block) if_block.m(target, anchor);
-    			insert_dev(target, if_block_anchor, anchor);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (/*LimiteY*/ ctx[8] <= /*i*/ ctx[38] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[38]) {
-    				if (if_block) {
-    					if_block.p(ctx, dirty);
-    				} else {
-    					if_block = create_if_block_29(ctx);
-    					if_block.c();
-    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-    				}
-    			} else if (if_block) {
-    				if_block.d(1);
-    				if_block = null;
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (if_block) if_block.d(detaching);
-    			if (detaching) detach_dev(if_block_anchor);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
     		id: create_each_block_6.name,
     		type: "each",
-    		source: "(755:8) {#each mapa3 as linhas,i}",
+    		source: "(778:8) {#each mapa3 as linhas,i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (736:8) {:else}
+    // (759:8) {:else}
     function create_else_block_2(ctx) {
     	let t0_value = /*TempoEnigma*/ ctx[23]() + "";
     	let t0;
@@ -31559,12 +31559,12 @@ var app = (function () {
     			p1.textContent = "Poder suficiente para esmagar navios e quebrar telhados mas mesmo assim tenho medo do sol, quem eu sou?";
     			t5 = space();
     			input = element("input");
-    			add_location(p0, file$1, 737, 8, 46799);
+    			add_location(p0, file$1, 760, 8, 47754);
     			attr_dev(p1, "class", "Enigma");
-    			add_location(p1, file$1, 738, 8, 46826);
+    			add_location(p1, file$1, 761, 8, 47781);
     			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
     			attr_dev(input, "class", "RespostaEnigma");
-    			add_location(input, file$1, 739, 8, 46961);
+    			add_location(input, file$1, 762, 8, 47916);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
@@ -31620,14 +31620,14 @@ var app = (function () {
     		block,
     		id: create_else_block_2.name,
     		type: "else",
-    		source: "(736:8) {:else}",
+    		source: "(759:8) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (706:4) {#if !enigma}
+    // (727:4) {#if !enigma}
     function create_if_block_19(ctx) {
     	let p;
     	let t0_value = clearInterval(/*Tempo*/ ctx[12]) + "";
@@ -31663,12 +31663,12 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr_dev(p, "class", "futil");
-    			add_location(p, file$1, 707, 4, 45499);
+    			attr_dev(p, "class", "textofutil");
+    			add_location(p, file$1, 728, 4, 46300);
     			attr_dev(table, "class", "mapa");
     			attr_dev(table, "align", "center");
     			attr_dev(table, "id", "mapanivel2");
-    			add_location(table, file$1, 712, 4, 45626);
+    			add_location(table, file$1, 733, 4, 46432);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -31724,14 +31724,14 @@ var app = (function () {
     		block,
     		id: create_if_block_19.name,
     		type: "if",
-    		source: "(706:4) {#if !enigma}",
+    		source: "(727:4) {#if !enigma}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (715:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+    // (736:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
     function create_if_block_20(ctx) {
     	let tr;
     	let t;
@@ -31752,7 +31752,7 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file$1, 715, 12, 45794);
+    			add_location(tr, file$1, 736, 12, 46600);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -31798,14 +31798,14 @@ var app = (function () {
     		block,
     		id: create_if_block_20.name,
     		type: "if",
-    		source: "(715:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		source: "(736:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (718:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+    // (739:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
     function create_if_block_21(ctx) {
     	let if_block_anchor;
 
@@ -31815,6 +31815,7 @@ var app = (function () {
     		if (/*elementos*/ ctx[39] == "Z") return create_if_block_24;
     		if (/*elementos*/ ctx[39] == "DANTE") return create_if_block_25;
     		if (/*elementos*/ ctx[39] == "falsa") return create_if_block_26;
+    		if (/*elementos*/ ctx[39] == "CAMINHO") return create_if_block_27;
     	}
 
     	let current_block_type = select_block_type_7(ctx);
@@ -31853,14 +31854,49 @@ var app = (function () {
     		block,
     		id: create_if_block_21.name,
     		type: "if",
-    		source: "(718:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
+    		source: "(739:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (727:51) 
+    // (750:53) 
+    function create_if_block_27(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel2.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "paredefalsa");
+    			add_location(img, file$1, 750, 28, 47494);
+    			add_location(th, file$1, 750, 24, 47490);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_27.name,
+    		type: "if",
+    		source: "(750:53) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (748:51) 
     function create_if_block_26(ctx) {
     	let th;
     	let img;
@@ -31872,8 +31908,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "falsa");
-    			add_location(img, file$1, 727, 28, 46552);
-    			add_location(th, file$1, 727, 24, 46548);
+    			add_location(img, file$1, 748, 28, 47358);
+    			add_location(th, file$1, 748, 24, 47354);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31888,14 +31924,14 @@ var app = (function () {
     		block,
     		id: create_if_block_26.name,
     		type: "if",
-    		source: "(727:51) ",
+    		source: "(748:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (725:51) 
+    // (746:51) 
     function create_if_block_25(ctx) {
     	let th;
     	let img;
@@ -31907,9 +31943,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
-    			add_location(img, file$1, 725, 43, 46413);
+    			add_location(img, file$1, 746, 43, 47219);
     			attr_dev(th, "class", "Dante2");
-    			add_location(th, file$1, 725, 24, 46394);
+    			add_location(th, file$1, 746, 24, 47200);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31924,14 +31960,14 @@ var app = (function () {
     		block,
     		id: create_if_block_25.name,
     		type: "if",
-    		source: "(725:51) ",
+    		source: "(746:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (723:47) 
+    // (744:47) 
     function create_if_block_24(ctx) {
     	let th;
     	let img;
@@ -31943,8 +31979,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
-    			add_location(img, file$1, 723, 28, 46264);
-    			add_location(th, file$1, 723, 24, 46260);
+    			add_location(img, file$1, 744, 28, 47070);
+    			add_location(th, file$1, 744, 24, 47066);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31959,14 +31995,14 @@ var app = (function () {
     		block,
     		id: create_if_block_24.name,
     		type: "if",
-    		source: "(723:47) ",
+    		source: "(744:47) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (721:45) 
+    // (742:45) 
     function create_if_block_23(ctx) {
     	let th;
     	let img;
@@ -31978,8 +32014,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel2.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 721, 28, 46126);
-    			add_location(th, file$1, 721, 24, 46122);
+    			add_location(img, file$1, 742, 28, 46932);
+    			add_location(th, file$1, 742, 24, 46928);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31994,14 +32030,14 @@ var app = (function () {
     		block,
     		id: create_if_block_23.name,
     		type: "if",
-    		source: "(721:45) ",
+    		source: "(742:45) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (719:20) {#if elementos == 0}
+    // (740:20) {#if elementos == 0}
     function create_if_block_22(ctx) {
     	let th;
     	let img;
@@ -32013,8 +32049,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel2.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
-    			add_location(img, file$1, 719, 29, 45994);
-    			add_location(th, file$1, 719, 24, 45989);
+    			add_location(img, file$1, 740, 29, 46800);
+    			add_location(th, file$1, 740, 24, 46795);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -32029,14 +32065,14 @@ var app = (function () {
     		block,
     		id: create_if_block_22.name,
     		type: "if",
-    		source: "(719:20) {#if elementos == 0}",
+    		source: "(740:20) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (717:16) {#each linhas as elementos,j}
+    // (738:16) {#each linhas as elementos,j}
     function create_each_block_5(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteX*/ ctx[7] <= /*j*/ ctx[41] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[41] && create_if_block_21(ctx);
@@ -32074,14 +32110,14 @@ var app = (function () {
     		block,
     		id: create_each_block_5.name,
     		type: "each",
-    		source: "(717:16) {#each linhas as elementos,j}",
+    		source: "(738:16) {#each linhas as elementos,j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (714:8) {#each mapa2 as linhas,i}
+    // (735:8) {#each mapa2 as linhas,i}
     function create_each_block_4(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteY*/ ctx[8] <= /*i*/ ctx[38] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[38] && create_if_block_20(ctx);
@@ -32119,14 +32155,14 @@ var app = (function () {
     		block,
     		id: create_each_block_4.name,
     		type: "each",
-    		source: "(714:8) {#each mapa2 as linhas,i}",
+    		source: "(735:8) {#each mapa2 as linhas,i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (695:8) {:else}
+    // (716:8) {:else}
     function create_else_block_1(ctx) {
     	let t0_value = /*TempoEnigma*/ ctx[23]() + "";
     	let t0;
@@ -32151,12 +32187,12 @@ var app = (function () {
     			p1.textContent = "Fui levado para um quarto escuro e incendiado. Eu chorei e então minha cabeça foi cortada. Quem sou eu?";
     			t5 = space();
     			input = element("input");
-    			add_location(p0, file$1, 696, 8, 45050);
+    			add_location(p0, file$1, 717, 8, 45851);
     			attr_dev(p1, "class", "Enigma");
-    			add_location(p1, file$1, 697, 8, 45077);
+    			add_location(p1, file$1, 718, 8, 45878);
     			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
     			attr_dev(input, "class", "RespostaEnigma");
-    			add_location(input, file$1, 698, 4, 45208);
+    			add_location(input, file$1, 719, 4, 46009);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
@@ -32212,14 +32248,14 @@ var app = (function () {
     		block,
     		id: create_else_block_1.name,
     		type: "else",
-    		source: "(695:8) {:else}",
+    		source: "(716:8) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (665:4) {#if !enigma}
+    // (686:4) {#if !enigma}
     function create_if_block_10(ctx) {
     	let p;
     	let t0_value = clearInterval(/*Tempo*/ ctx[12]) + "";
@@ -32255,12 +32291,12 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr_dev(p, "class", "futil");
-    			add_location(p, file$1, 666, 4, 43746);
+    			attr_dev(p, "class", "textofutil");
+    			add_location(p, file$1, 687, 4, 44542);
     			attr_dev(table, "class", "mapa");
     			attr_dev(table, "align", "center");
     			attr_dev(table, "id", "mapanivel1");
-    			add_location(table, file$1, 671, 4, 43873);
+    			add_location(table, file$1, 692, 4, 44674);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -32316,14 +32352,14 @@ var app = (function () {
     		block,
     		id: create_if_block_10.name,
     		type: "if",
-    		source: "(665:4) {#if !enigma}",
+    		source: "(686:4) {#if !enigma}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (674:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+    // (695:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
     function create_if_block_11(ctx) {
     	let tr;
     	let t;
@@ -32344,7 +32380,7 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file$1, 674, 12, 44041);
+    			add_location(tr, file$1, 695, 12, 44842);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -32390,14 +32426,14 @@ var app = (function () {
     		block,
     		id: create_if_block_11.name,
     		type: "if",
-    		source: "(674:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		source: "(695:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (677:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+    // (698:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
     function create_if_block_12(ctx) {
     	let if_block_anchor;
 
@@ -32445,14 +32481,14 @@ var app = (function () {
     		block,
     		id: create_if_block_12.name,
     		type: "if",
-    		source: "(677:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
+    		source: "(698:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (686:51) 
+    // (707:51) 
     function create_if_block_17(ctx) {
     	let th;
     	let img;
@@ -32464,8 +32500,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "falsa");
-    			add_location(img, file$1, 686, 28, 44799);
-    			add_location(th, file$1, 686, 24, 44795);
+    			add_location(img, file$1, 707, 28, 45600);
+    			add_location(th, file$1, 707, 24, 45596);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -32480,14 +32516,14 @@ var app = (function () {
     		block,
     		id: create_if_block_17.name,
     		type: "if",
-    		source: "(686:51) ",
+    		source: "(707:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (684:51) 
+    // (705:51) 
     function create_if_block_16(ctx) {
     	let th;
     	let img;
@@ -32499,9 +32535,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
-    			add_location(img, file$1, 684, 43, 44660);
+    			add_location(img, file$1, 705, 43, 45461);
     			attr_dev(th, "class", "Dante1");
-    			add_location(th, file$1, 684, 24, 44641);
+    			add_location(th, file$1, 705, 24, 45442);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -32516,14 +32552,14 @@ var app = (function () {
     		block,
     		id: create_if_block_16.name,
     		type: "if",
-    		source: "(684:51) ",
+    		source: "(705:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (682:47) 
+    // (703:47) 
     function create_if_block_15(ctx) {
     	let th;
     	let img;
@@ -32535,8 +32571,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
-    			add_location(img, file$1, 682, 28, 44511);
-    			add_location(th, file$1, 682, 24, 44507);
+    			add_location(img, file$1, 703, 28, 45312);
+    			add_location(th, file$1, 703, 24, 45308);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -32551,14 +32587,14 @@ var app = (function () {
     		block,
     		id: create_if_block_15.name,
     		type: "if",
-    		source: "(682:47) ",
+    		source: "(703:47) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (680:45) 
+    // (701:45) 
     function create_if_block_14(ctx) {
     	let th;
     	let img;
@@ -32570,8 +32606,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel1.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 680, 28, 44373);
-    			add_location(th, file$1, 680, 24, 44369);
+    			add_location(img, file$1, 701, 28, 45174);
+    			add_location(th, file$1, 701, 24, 45170);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -32586,14 +32622,14 @@ var app = (function () {
     		block,
     		id: create_if_block_14.name,
     		type: "if",
-    		source: "(680:45) ",
+    		source: "(701:45) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (678:20) {#if elementos == 0}
+    // (699:20) {#if elementos == 0}
     function create_if_block_13(ctx) {
     	let th;
     	let img;
@@ -32605,8 +32641,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel1.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
-    			add_location(img, file$1, 678, 29, 44241);
-    			add_location(th, file$1, 678, 24, 44236);
+    			add_location(img, file$1, 699, 29, 45042);
+    			add_location(th, file$1, 699, 24, 45037);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -32621,14 +32657,14 @@ var app = (function () {
     		block,
     		id: create_if_block_13.name,
     		type: "if",
-    		source: "(678:20) {#if elementos == 0}",
+    		source: "(699:20) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (676:16) {#each linhas as elementos,j}
+    // (697:16) {#each linhas as elementos,j}
     function create_each_block_3(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteX*/ ctx[7] <= /*j*/ ctx[41] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[41] && create_if_block_12(ctx);
@@ -32666,14 +32702,14 @@ var app = (function () {
     		block,
     		id: create_each_block_3.name,
     		type: "each",
-    		source: "(676:16) {#each linhas as elementos,j}",
+    		source: "(697:16) {#each linhas as elementos,j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (673:8) {#each mapa1 as linhas,i}
+    // (694:8) {#each mapa1 as linhas,i}
     function create_each_block_2(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteY*/ ctx[8] <= /*i*/ ctx[38] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[38] && create_if_block_11(ctx);
@@ -32711,14 +32747,14 @@ var app = (function () {
     		block,
     		id: create_each_block_2.name,
     		type: "each",
-    		source: "(673:8) {#each mapa1 as linhas,i}",
+    		source: "(694:8) {#each mapa1 as linhas,i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (649:8) {:else}
+    // (670:8) {:else}
     function create_else_block(ctx) {
     	let p0;
     	let t1;
@@ -32758,20 +32794,20 @@ var app = (function () {
     			t11 = space();
     			input = element("input");
     			attr_dev(p0, "class", "Enigma");
-    			add_location(p0, file$1, 650, 8, 42800);
+    			add_location(p0, file$1, 671, 8, 43596);
     			attr_dev(p1, "class", "Enigma");
-    			add_location(p1, file$1, 651, 8, 42895);
+    			add_location(p1, file$1, 672, 8, 43691);
     			attr_dev(p2, "class", "Enigma");
-    			add_location(p2, file$1, 652, 8, 42990);
+    			add_location(p2, file$1, 673, 8, 43786);
     			attr_dev(p3, "class", "Enigma");
-    			add_location(p3, file$1, 653, 8, 43121);
+    			add_location(p3, file$1, 674, 8, 43917);
     			attr_dev(p4, "class", "Enigma");
-    			add_location(p4, file$1, 654, 8, 43227);
+    			add_location(p4, file$1, 675, 8, 44023);
     			attr_dev(p5, "class", "Enigma");
-    			add_location(p5, file$1, 655, 8, 43309);
+    			add_location(p5, file$1, 676, 8, 44105);
     			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
     			attr_dev(input, "class", "RespostaEnigma");
-    			add_location(input, file$1, 656, 8, 43448);
+    			add_location(input, file$1, 677, 8, 44244);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p0, anchor);
@@ -32837,14 +32873,14 @@ var app = (function () {
     		block,
     		id: create_else_block.name,
     		type: "else",
-    		source: "(649:8) {:else}",
+    		source: "(670:8) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (620:4) {#if !enigma}
+    // (641:4) {#if !enigma}
     function create_if_block_1$1(ctx) {
     	let p;
     	let t0_value = /*RenderizandoMapa*/ ctx[16]() + "";
@@ -32875,12 +32911,12 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr_dev(p, "class", "futil");
-    			add_location(p, file$1, 621, 4, 41529);
+    			attr_dev(p, "class", "textofutil");
+    			add_location(p, file$1, 642, 4, 42320);
     			attr_dev(table, "class", "mapa");
     			attr_dev(table, "align", "center");
     			attr_dev(table, "id", "mapatutorial");
-    			add_location(table, file$1, 625, 4, 41628);
+    			add_location(table, file$1, 646, 4, 42424);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -32933,14 +32969,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$1.name,
     		type: "if",
-    		source: "(620:4) {#if !enigma}",
+    		source: "(641:4) {#if !enigma}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (628:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+    // (649:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
     function create_if_block_2$1(ctx) {
     	let tr;
     	let t;
@@ -32961,7 +32997,7 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file$1, 628, 12, 41798);
+    			add_location(tr, file$1, 649, 12, 42594);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -33007,14 +33043,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2$1.name,
     		type: "if",
-    		source: "(628:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		source: "(649:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (631:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+    // (652:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
     function create_if_block_3$1(ctx) {
     	let if_block_anchor;
 
@@ -33062,14 +33098,14 @@ var app = (function () {
     		block,
     		id: create_if_block_3$1.name,
     		type: "if",
-    		source: "(631:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
+    		source: "(652:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (640:51) 
+    // (661:51) 
     function create_if_block_8(ctx) {
     	let th;
     	let img;
@@ -33081,8 +33117,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "falsa");
-    			add_location(img, file$1, 640, 28, 42580);
-    			add_location(th, file$1, 640, 24, 42576);
+    			add_location(img, file$1, 661, 28, 43376);
+    			add_location(th, file$1, 661, 24, 43372);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -33097,14 +33133,14 @@ var app = (function () {
     		block,
     		id: create_if_block_8.name,
     		type: "if",
-    		source: "(640:51) ",
+    		source: "(661:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (638:51) 
+    // (659:51) 
     function create_if_block_7(ctx) {
     	let th;
     	let img;
@@ -33116,9 +33152,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
-    			add_location(img, file$1, 638, 43, 42441);
+    			add_location(img, file$1, 659, 43, 43237);
     			attr_dev(th, "class", "Dante0");
-    			add_location(th, file$1, 638, 24, 42422);
+    			add_location(th, file$1, 659, 24, 43218);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -33133,14 +33169,14 @@ var app = (function () {
     		block,
     		id: create_if_block_7.name,
     		type: "if",
-    		source: "(638:51) ",
+    		source: "(659:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (636:47) 
+    // (657:47) 
     function create_if_block_6(ctx) {
     	let th;
     	let img;
@@ -33152,8 +33188,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
-    			add_location(img, file$1, 636, 28, 42292);
-    			add_location(th, file$1, 636, 24, 42288);
+    			add_location(img, file$1, 657, 28, 43088);
+    			add_location(th, file$1, 657, 24, 43084);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -33168,14 +33204,14 @@ var app = (function () {
     		block,
     		id: create_if_block_6.name,
     		type: "if",
-    		source: "(636:47) ",
+    		source: "(657:47) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (634:45) 
+    // (655:45) 
     function create_if_block_5(ctx) {
     	let th;
     	let img;
@@ -33187,8 +33223,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredetutorial.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 634, 28, 42152);
-    			add_location(th, file$1, 634, 24, 42148);
+    			add_location(img, file$1, 655, 28, 42948);
+    			add_location(th, file$1, 655, 24, 42944);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -33203,14 +33239,14 @@ var app = (function () {
     		block,
     		id: create_if_block_5.name,
     		type: "if",
-    		source: "(634:45) ",
+    		source: "(655:45) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (632:20) {#if elementos == 0}
+    // (653:20) {#if elementos == 0}
     function create_if_block_4(ctx) {
     	let th;
     	let img;
@@ -33222,9 +33258,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaotutorial.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
-    			add_location(img, file$1, 632, 49, 42018);
+    			add_location(img, file$1, 653, 49, 42814);
     			attr_dev(th, "class", "chaoturorial");
-    			add_location(th, file$1, 632, 24, 41993);
+    			add_location(th, file$1, 653, 24, 42789);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -33239,14 +33275,14 @@ var app = (function () {
     		block,
     		id: create_if_block_4.name,
     		type: "if",
-    		source: "(632:20) {#if elementos == 0}",
+    		source: "(653:20) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (630:16) {#each linhas as elementos,j}
+    // (651:16) {#each linhas as elementos,j}
     function create_each_block_1(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteX*/ ctx[7] <= /*j*/ ctx[41] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[41] && create_if_block_3$1(ctx);
@@ -33284,14 +33320,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(630:16) {#each linhas as elementos,j}",
+    		source: "(651:16) {#each linhas as elementos,j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (627:8) {#each mapa0 as linhas,i}
+    // (648:8) {#each mapa0 as linhas,i}
     function create_each_block(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteY*/ ctx[8] <= /*i*/ ctx[38] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[38] && create_if_block_2$1(ctx);
@@ -33329,7 +33365,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(627:8) {#each mapa0 as linhas,i}",
+    		source: "(648:8) {#each mapa0 as linhas,i}",
     		ctx
     	});
 
@@ -33351,25 +33387,25 @@ var app = (function () {
     	let current;
     	let mounted;
     	let dispose;
-    	let if_block0 = /*key*/ ctx[0] && create_if_block_42(ctx);
+    	let if_block0 = /*key*/ ctx[0] && create_if_block_43(ctx);
     	voltarmenu = new VoltarMenu({ $$inline: true });
 
     	const if_block_creators = [
     		create_if_block$1,
     		create_if_block_9,
     		create_if_block_18,
-    		create_if_block_27,
-    		create_if_block_36
+    		create_if_block_28,
+    		create_if_block_37
     	];
 
     	const if_blocks = [];
 
     	function select_block_type_1(ctx, dirty) {
-    		if (/*MudandoDeFase*/ ctx[9] == "tut") return 0;
+    		if (/*MudandoDeFase*/ ctx[9] == "tutorial") return 0;
     		if (/*MudandoDeFase*/ ctx[9] == "nivel1") return 1;
     		if (/*MudandoDeFase*/ ctx[9] == "nivel2") return 2;
     		if (/*MudandoDeFase*/ ctx[9] == "nivel3") return 3;
-    		if (/*MudandoDeFase*/ ctx[9] == "tutorial") return 4;
+    		if (/*MudandoDeFase*/ ctx[9] == "vitoria") return 4;
     		return -1;
     	}
 
@@ -33392,11 +33428,11 @@ var app = (function () {
     			if_block1_anchor = empty();
     			attr_dev(link0, "rel", "stylesheet");
     			attr_dev(link0, "href", "/css/jogo.css");
-    			add_location(link0, file$1, 598, 4, 40855);
+    			add_location(link0, file$1, 619, 4, 41641);
     			attr_dev(link1, "rel", "stylesheet");
     			attr_dev(link1, "href", "/css/newjogo.css");
-    			add_location(link1, file$1, 599, 4, 40905);
-    			add_location(head, file$1, 597, 0, 40843);
+    			add_location(link1, file$1, 620, 4, 41691);
+    			add_location(head, file$1, 618, 0, 41629);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -33429,7 +33465,7 @@ var app = (function () {
     				if (if_block0) {
     					if_block0.p(ctx, dirty);
     				} else {
-    					if_block0 = create_if_block_42(ctx);
+    					if_block0 = create_if_block_43(ctx);
     					if_block0.c();
     					if_block0.m(t2.parentNode, t2);
     				}
@@ -34462,422 +34498,422 @@ var app = (function () {
     		],
     		[
     			2,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
     			"DANTE",
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
     			1,
     			0,
     			1,
@@ -35932,2022 +35968,2022 @@ var app = (function () {
     		],
     		[
     			2,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			"falsa",
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			"falsa",
+    			2
+    		],
+    		[
+    			2,
+    			1,
     			"DANTE",
     			0,
     			0,
     			0,
     			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			"falsa",
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			"falsa",
-    			2
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
     			1,
     			0,
     			0,
@@ -38020,7 +38056,7 @@ var app = (function () {
     			1,
     			0,
     			0,
-    			1,
+    			"CAMINHO",
     			1,
     			0,
     			1,
@@ -46232,7 +46268,10 @@ var app = (function () {
     		} else if (MudandoDeFase == "nivel2") {
     			MudarDeFase(mapa2[EixoY][EixoX]);
 
-    			if (mapa2[EixoY][EixoX] != 0) {
+    			if (mapa2[EixoY][EixoX] == "CAMINHO") {
+    				$$invalidate(4, mapa2[SaveY][SaveX] = 0, mapa2);
+    				return;
+    			} else if (mapa2[EixoY][EixoX] != 0) {
     				if (mapa2[EixoY][EixoX] == "falsa") {
     					alert('Nem tudo é o que parece pequeno Dante!');
     				}
@@ -46242,7 +46281,10 @@ var app = (function () {
     			}
 
     			$$invalidate(4, mapa2[EixoY][EixoX] = "DANTE", mapa2);
-    			$$invalidate(4, mapa2[SaveY][SaveX] = 0, mapa2);
+
+    			if (mapa2[SaveY][SaveX] != "CAMINHO") {
+    				$$invalidate(4, mapa2[SaveY][SaveX] = 0, mapa2);
+    			}
     		} else if (MudandoDeFase == "nivel3") {
     			MudarDeFase(mapa3[EixoY][EixoX]);
 
@@ -46305,7 +46347,10 @@ var app = (function () {
     		} else if (MudandoDeFase == "nivel2") {
     			MudarDeFase(mapa2[EixoY][EixoX]);
 
-    			if (mapa2[EixoY][EixoX] != 0) {
+    			if (mapa2[EixoY][EixoX] == "CAMINHO") {
+    				$$invalidate(4, mapa2[SaveY][SaveX] = 0, mapa2);
+    				return;
+    			} else if (mapa2[EixoY][EixoX] != 0) {
     				if (mapa2[EixoY][EixoX] == "falsa") {
     					alert('Talvez devesse tentar outra saída...');
     				}
@@ -46315,7 +46360,10 @@ var app = (function () {
     			}
 
     			$$invalidate(4, mapa2[EixoY][EixoX] = "DANTE", mapa2);
-    			$$invalidate(4, mapa2[SaveY][SaveX] = 0, mapa2);
+
+    			if (mapa2[SaveY][SaveX] != "CAMINHO") {
+    				$$invalidate(4, mapa2[SaveY][SaveX] = 0, mapa2);
+    			}
     		} else if (MudandoDeFase == "nivel3") {
     			MudarDeFase(mapa3[EixoY][EixoX]);
 
@@ -46382,13 +46430,19 @@ var app = (function () {
 
     			MudarDeFase(mapa2[EixoY][EixoX]);
 
-    			if (mapa2[EixoY][EixoX] != 0) {
+    			if (mapa2[EixoY][EixoX] == "CAMINHO") {
+    				$$invalidate(4, mapa2[SaveY][SaveX] = 0, mapa2);
+    				return;
+    			} else if (mapa2[EixoY][EixoX] != 0) {
     				ResertarPosicao();
     				return;
     			}
 
     			$$invalidate(4, mapa2[EixoY][EixoX] = "DANTE", mapa2);
-    			$$invalidate(4, mapa2[SaveY][SaveX] = 0, mapa2);
+
+    			if (mapa2[SaveY][SaveX] != "CAMINHO") {
+    				$$invalidate(4, mapa2[SaveY][SaveX] = 0, mapa2);
+    			}
     		} else if (MudandoDeFase == "nivel3") {
     			MudarDeFase(mapa3[EixoY][EixoX]);
 
@@ -46451,7 +46505,10 @@ var app = (function () {
     		} else if (MudandoDeFase == "nivel2") {
     			MudarDeFase(mapa2[EixoY][EixoX]);
 
-    			if (mapa2[EixoY][EixoX] != 0) {
+    			if (mapa2[EixoY][EixoX] == "CAMINHO") {
+    				$$invalidate(4, mapa2[SaveY][SaveX] = 0, mapa2);
+    				return;
+    			} else if (mapa2[EixoY][EixoX] != 0) {
     				if (mapa2[EixoY][EixoX] == "falsa") {
     					alert('Nem tudo é o que parece jovem criança');
     				}
@@ -46461,7 +46518,10 @@ var app = (function () {
     			}
 
     			$$invalidate(4, mapa2[EixoY][EixoX] = "DANTE", mapa2);
-    			$$invalidate(4, mapa2[SaveY][SaveX] = 0, mapa2);
+
+    			if (mapa2[SaveY][SaveX] != "CAMINHO") {
+    				$$invalidate(4, mapa2[SaveY][SaveX] = 0, mapa2);
+    			}
     		} else if (MudandoDeFase == "nivel3") {
     			MudarDeFase(mapa3[EixoY][EixoX]);
 

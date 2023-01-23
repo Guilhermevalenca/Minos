@@ -634,7 +634,7 @@ let mapa3 = [
         {/if}
 {/if}
 <VoltarMenu/>
-{#if MudandoDeFase == "tut"}
+{#if MudandoDeFase == "tutorial"}
     
     <p class='FasesDoJogo'>Tutorial</p>
 
@@ -803,9 +803,9 @@ let mapa3 = [
         <p class='Enigma'>Se você me tem, quer me compartilhar; se você não me compartilha, você me manteve. O que eu sou?</p>
         <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "SEGREDO",MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>        
         {/if}
-    {:else if MudandoDeFase == "tutorial"}
+    {:else if MudandoDeFase == "vitoria"}
     
-    {#if enigma}
+    {#if !enigma}
 
     <Vitoria/>
 
@@ -819,7 +819,7 @@ let mapa3 = [
     <tr>
         {#each linhas as elementos}
             {#if elementos == 0}
-                <th><img src="/css/imagens/chaonivel3.png" alt="chao"></th>
+                <th><img src="/css/imagens/chaotunel.png" alt="chao"></th>
             {:else if elementos == 1}
                 <th><img src="/css/imagens/paredetunel.png" alt="parede"></th>
             {:else if elementos == "DANTE"}

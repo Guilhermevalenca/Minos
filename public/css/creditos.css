@@ -52,7 +52,7 @@ p{
     margin-left: 1%;
 }
 .geral {
-    animation-duration: 30s;
+    animation-duration: 60s;
     animation-name: mymove;
     position: relative;
   }
@@ -69,7 +69,7 @@ p{
    color: transparent;
     font-size: 100px;
     margin-top: 500px;
-    animation-duration: 30s;
+    animation-duration: 60s;
     animation-name: mymove;
     position: relative;
   }
