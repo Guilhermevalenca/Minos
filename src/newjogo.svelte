@@ -644,7 +644,7 @@ let mapa3 = [
         }
     }
     let Tempo;
-    let contador = 300;
+    let contador = 600;
     function TempoEnigma(){
         Tempo = setInterval( () => {
             contador--
