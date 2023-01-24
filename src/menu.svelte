@@ -10,8 +10,8 @@
 
 
 <div class="divapp">
-    <ul class="ulapp"><button  class="buttonapp" on:click={() => trocarEstadoDoJogo('jogar')}><p class="pmenu">Novo jogo</p></button></ul>
+    <ul class="ulapp"><button  class="buttonapp" on:click={() => trocarEstadoDoJogo('jogar')}><p class="pmenu">Jogar</p></button></ul>
+    <ul class="ulapp"><button  class="buttonapp" on:click={() => trocarEstadoDoJogo('ajuda')}><p class="pmenu">Como jogar</p></button></ul>
     <ul class="ulapp"><button  class="buttonapp" on:click={() => trocarEstadoDoJogo('sobre')}><p class="pmenu">Sobre</p></button></ul>
-    <ul class="ulapp"><button  class="buttonapp" on:click={() => trocarEstadoDoJogo('ajuda')}><p class="pmenu">Ajuda</p></button></ul>
     <ul class="ulapp"><button class="buttonapp" on:click={() => trocarEstadoDoJogo('creditos')}><p class="pmenu">Créditos</p></button></ul>
 </div>
