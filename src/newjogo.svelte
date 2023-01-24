@@ -336,7 +336,7 @@ let mapa3 = [
                 return
             }else if(mapa2[EixoY][EixoX] != 0){
                 if(mapa2[EixoY][EixoX] == "falsa"){
-                    alert('Nem tudo é o que parece pequeno Dante!')
+                    alert('Nem tudo é o que parece jovem Dante!')
                 }
                 ResertarPosicao()
                 return
@@ -355,7 +355,7 @@ let mapa3 = [
                 return
             }else if(mapa3[EixoY][EixoX] != 0){
                 if(mapa3[EixoY][EixoX] == "falsa"){
-                    alert('Nem tudo é o que parece pequeno Dante!')
+                    alert('Nem tudo é o que parece jovem Dante!')
                 }
                 ResertarPosicao()
                 return
@@ -390,7 +390,7 @@ let mapa3 = [
             MudarDeFase(mapa1[EixoY][EixoX])
             if(mapa1[EixoY][EixoX] != 0){
                 if(mapa1[EixoY][EixoX] == "falsa"){
-                    alert('Nem tudo é o que parece pequeno Dante!')
+                    alert('Nem tudo é o que parece jovem Dante!')
                 }
                 ResertarPosicao()
                 return
@@ -426,7 +426,7 @@ let mapa3 = [
                 return
             }else if(mapa3[EixoY][EixoX] != 0){
                 if(mapa3[EixoY][EixoX] == "falsa"){
-                    alert('Não consegue não é?')
+                    alert('Não consegue, não é?')
                 }
                 ResertarPosicao()
                 return
@@ -534,7 +534,7 @@ let mapa3 = [
             MudarDeFase(mapa1[EixoY][EixoX])
             if(mapa1[EixoY][EixoX] != 0){
                 if(mapa1[EixoY][EixoX] == "falsa"){
-                    alert('Não consegue não é?')
+                    alert('Não consegue, não é?')
                 }
                 ResertarPosicao()
                 return
@@ -758,9 +758,10 @@ let mapa3 = [
     </table>
         {:else}
         <p class="textofutil">{TempoEnigma()}</p>
-        <p class="Enigma">Vejo que estar se divertindo, mas tome cuidado, há muitas criaturas misteriosas que rondam este labirinto</p>
-        <p class="Enigma">Responda-me com atenção, pois seu erro tem um custo muito alto</p>
-        <p class='Enigma'>Fui levado para um quarto escuro e incendiado. Eu chorei e então minha cabeça foi cortada. Quem sou eu?</p>
+        <p class="Enigma">O que achou das provações resultantes de sua ações precipitadas?</p>
+        <p class="Enigma">Deveria tomar cuidado, este não é um labirinto comum e os guardiões deste lugar não gostam de visitantes inesperados.</p>
+        <p class="Enigma">Responda-me cautelosamente, deuses não costumam ser piedosos como tanto propagam.</p>
+        <p class='Enigma'>Fui levado para um quarto escuro e incendiado. Eu chorei e então minha cabeça foi cortada. Quem sou?</p>
         <p class="Contador">{contador}</p>
     <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "VELA",MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
 
@@ -803,8 +804,11 @@ let mapa3 = [
     </table>
         {:else}
         <p class="textofutil">{TempoEnigma()}</p>
-        <p class="Enigma">Como pode ver, algumas paredes na vdd são caminhos e podem ate ser atalhos, fique atento a eles, serão muito uteis em sua jornada</p>
-        <p class='Enigma'>Poder suficiente para esmagar navios e quebrar telhados mas mesmo assim tenho medo do sol, quem eu sou?</p>
+        <p class="Enigma">Gostei de você, jovem.</p>
+        <p class="Enigma">Como pôde perceber, nem tudo é o que parece.</p>
+        <p class="Enigma">Espero não acostuma-lo mal, mas por enquanto vou aconselha-lo a não confiar tanto no que seus olhos vêem.</p>
+        <p class='Enigma'>Paredes falsas podem parecer algo impensável para humanos, mas não me compare com seres como vocês.</p>
+        <p class='Enigma'>Poder suficiente para esmagar navios e quebrar telhados mas mesmo assim tenho medo do sol. O que eu sou?</p>
         <p class="Contador">{contador}</p>
         <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "GELO",MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
 
@@ -847,8 +851,9 @@ let mapa3 = [
     </table>
         {:else}
         <p class="textofutil">{TempoEnigma()}</p>
-        <p class="Enigma">Para um ser tao inferior e fragil, você ate que se saiu bem, pena que nao sobreviverá para contar a historia...</p>
-        <p class='Enigma'>Se você me tem, quer me compartilhar; se você não me compartilha, você me manteve. O que eu sou?</p>
+        <p class="Enigma">Se saiu bem, Dante. Conseguiu sobreviver até aqui, mas será que realmente acabou?</p>
+        <p class="Enigma">Seja rápido se deseja sobreviver.</p>
+        <p class='Enigma'>Se você me tem, quer me compartilhar; se você não me compartilha, você me manteve. O que sou?</p>
         <p class="Contador">{contador}</p>
         <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "SEGREDO",MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>        
         {/if}

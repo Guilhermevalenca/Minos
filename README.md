@@ -32,7 +32,9 @@
 
 <h2> Emmily Kathylen </h2>
 
-
+<h5>Participar desse projeto foi de longe a melhor experiência que já tive, apesar de ser nova no ramo da programação gostei muito de aprender o funcionamento por trás do jogo.</h5>
+<h5>Tive dificuldades no inicio porém com a ajuda e apoio da equipe conseguimos aprender muita coisa e praticar.</h5>
+<h5> Por fim, gostei muito de ter participado e colocado em prática o que aprendi espero que vocês gostem do nosso jogo e se divirtam assim como nos divertimos.</h5>
 
 <h2> Guilherme Valença </h2>
 
