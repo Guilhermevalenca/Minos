@@ -6,6 +6,7 @@
 
 <p class="geral"> Alice Manguinho </p>
 <p class="geral"> Assíria Renara </p>
+<p class="geral"> Claudiane Rodrigues </p>
 <p class="geral"> Emmily Kathylen </p>
 <p class="geral"> Guilherme Valença </p>
 

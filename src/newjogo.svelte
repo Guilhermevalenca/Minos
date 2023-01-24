@@ -121,7 +121,7 @@ let mapa3 = [
         [2,1,0,1,1,1,0,1,1,0,1,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,0,1,0,0,0,1,0,0,1,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,1,0,1,1,1,1,1,1,1,1,0,1,0,1,0,1,0,1,0,1,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,0,0,1,1,1,1,1,1,1,1,1,1,0,1,0,1],
         [2,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,1,1,1,1,1,1,1,0,1,1,0,1,1,1,0,1,0,1,1,0,0,1,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,1,0,1,0,0,0,0,0,0,1,0,1,0,1,0,1,0,1,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1],
         [2,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,0,1,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,1,0,1,1,1,0,0,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,0,1,0,1,1,1,0,1,0,1,1,1,1,0,1,0,1,0,1,0,1,0,1,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1],
-        [2,1,0,0,1,1,0,0,0,0,0,0,1,1,1,0,1,0,1,0,1,1,1,1,1,1,0,1,0,1,1,0,1,1,0,0,1,1,0,0,1,0,0,1,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,1,0,0,1,1,0,1,0,1,"V",0,0,0,1,0,1,0,1,0,1,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+        [2,1,0,0,1,1,0,0,0,0,0,0,1,1,1,0,1,0,1,0,1,1,1,1,1,1,0,1,0,1,1,0,1,1,0,0,1,1,0,0,1,0,0,1,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,"CAMINHO",0,"CAMINHO",0,0,1,1,0,"CAMINHO",0,1,"V",0,0,0,1,0,1,0,1,0,1,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
         [2,1,1,0,0,1,0,1,1,0,1,1,0,0,0,0,1,0,1,0,1,1,1,1,1,1,0,1,0,1,1,0,1,1,0,1,1,0,0,1,0,0,1,1,1,0,1,1,1,0,1,0,1,1,1,1,1,1,1,1,0,1,0,1,0,1,0,1,1,0,0,1,0,1,0,1,1,1,1,1,1,0,1,0,1,0,1,0,0,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1],
         [2,1,1,1,0,1,0,0,0,0,1,0,1,1,1,0,1,0,1,0,1,1,1,1,1,1,0,0,0,0,0,0,1,1,0,1,0,0,1,0,0,1,1,1,1,1,0,0,1,1,1,0,1,0,0,0,0,0,0,1,0,1,0,1,0,1,0,1,1,1,0,1,0,1,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1],
         [2,1,1,1,0,0,1,1,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0,0,1,0,0,1,1,1,1,1,1,1,0,1,1,1,0,1,0,1,1,1,1,0,1,0,1,0,1,0,1,0,1,1,0,0,1,0,1,1,1,1,1,1,1,1,1,1,0,1,0,1,0,1,1,0,0,1,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1],
@@ -343,7 +343,10 @@ let mapa3 = [
             }
         }else if(MudandoDeFase == "nivel3"){
             MudarDeFase(mapa3[EixoY][EixoX])
-            if(mapa3[EixoY][EixoX] != 0){
+            if(mapa3[EixoY][EixoX] == "CAMINHO"){
+                mapa3[SaveY][SaveX] = 0; 
+                return
+            }else if(mapa3[EixoY][EixoX] != 0){
                 if(mapa3[EixoY][EixoX] == "falsa"){
                     alert('Nem tudo é o que parece pequeno Dante!')
                 }
@@ -351,8 +354,9 @@ let mapa3 = [
                 return
             }
             mapa3[EixoY][EixoX] = "DANTE"
-
-            mapa3[SaveY][SaveX] = 0;
+            if(mapa3[SaveY][SaveX] != "CAMINHO"){
+                mapa3[SaveY][SaveX] = 0;
+            }
         }else if(MudandoDeFase == "vitoria"){
             MudarDeFase(mapa4[EixoY][EixoX])
             if(mapa4[EixoY][EixoX] != 0){
@@ -404,7 +408,10 @@ let mapa3 = [
             }
         }else if(MudandoDeFase == "nivel3"){
             MudarDeFase(mapa3[EixoY][EixoX])
-            if(mapa3[EixoY][EixoX] != 0){
+            if(mapa3[EixoY][EixoX] == "CAMINHO"){
+                mapa3[SaveY][SaveX] = 0; 
+                return
+            }else if(mapa3[EixoY][EixoX] != 0){
                 if(mapa3[EixoY][EixoX] == "falsa"){
                     alert('Não consegue não é?')
                 }
@@ -412,7 +419,9 @@ let mapa3 = [
                 return
             }
             mapa3[EixoY][EixoX] = "DANTE"
-            mapa3[SaveY][SaveX] = 0;
+            if(mapa3[SaveY][SaveX] != "CAMINHO"){
+                mapa3[SaveY][SaveX] = 0;
+            }
         }else if(MudandoDeFase == "vitoria"){
             MudarDeFase(mapa4[EixoY][EixoX])
             if(mapa4[EixoY][EixoX] != 0){
@@ -465,7 +474,10 @@ let mapa3 = [
             }
         }else if(MudandoDeFase == "nivel3"){
             MudarDeFase(mapa3[EixoY][EixoX])
-            if(mapa3[EixoY][EixoX] != 0){
+            if(mapa3[EixoY][EixoX] == "CAMINHO"){
+                mapa3[SaveY][SaveX] = 0; 
+                return
+            }else if(mapa3[EixoY][EixoX] != 0){
                 if(mapa3[EixoY][EixoX] == "falsa"){
                     alert('Tem certeza que essa é a saída?')
                 }
@@ -473,7 +485,9 @@ let mapa3 = [
                 return
             }
             mapa3[EixoY][EixoX] = "DANTE"
-            mapa3[SaveY][SaveX] = 0;
+            if(mapa3[SaveY][SaveX] != "CAMINHO"){
+                mapa3[SaveY][SaveX] = 0;
+            }
         }else if(MudandoDeFase == "vitoria"){
             MudarDeFase(mapa4[EixoY][EixoX])
             if(mapa4[EixoY][EixoX] != 0){
@@ -526,7 +540,10 @@ let mapa3 = [
             }
         }else if(MudandoDeFase == "nivel3"){
             MudarDeFase(mapa3[EixoY][EixoX])
-            if(mapa3[EixoY][EixoX] != 0){
+            if(mapa3[EixoY][EixoX] == "CAMINHO"){
+                mapa3[SaveY][SaveX] = 0; 
+                return
+            }else if(mapa3[EixoY][EixoX] != 0){
                 if(mapa3[EixoY][EixoX] == "falsa"){
                     alert('Tem certeza que é essa a saída?')
                 }
@@ -534,7 +551,9 @@ let mapa3 = [
                 return
             }
             mapa3[EixoY][EixoX] = "DANTE"
-            mapa3[SaveY][SaveX] = 0;
+            if(mapa3[SaveY][SaveX] != "CAMINHO"){
+                mapa3[SaveY][SaveX] = 0;
+            }
         }else if(MudandoDeFase == "vitoria"){
             MudarDeFase(mapa4[EixoY][EixoX])
             if(mapa4[EixoY][EixoX] != 0){
@@ -793,6 +812,8 @@ let mapa3 = [
                         <th class="Dante3"><img src="/css/imagens/Dante.png" alt="personagem"></th>
                     {:else if elementos == "falsa"}
                         <th><img src="/css/imagens/saida.png" alt="falsa"></th>
+                    {:else if elementos == "CAMINHO"}
+                        <th><img src="/css/imagens/paredenivel3.png" alt="paredefalsa"></th>
                     {/if}
                     {/if}
                 {/each}
