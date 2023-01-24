@@ -173,7 +173,7 @@ let mapa3 = [
         [2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
     ]
     //limite de renderização:
-    let Dimensionamento = 7;
+    let Dimensionamento = 6;
     let LimiteX = 0;
     let LimiteY = 0;
     function RenderizandoMapa(){
