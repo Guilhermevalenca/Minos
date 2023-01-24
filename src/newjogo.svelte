@@ -306,6 +306,7 @@ let mapa3 = [
         SaveX = EixoX;
         SaveY = EixoY;
         EixoX++
+        code = "d"
         if(MudandoDeFase == "tutorial"){
             MudarDeFase(mapa0[EixoY][EixoX]) 
             if(mapa0[EixoY][EixoX] != 0){
@@ -366,11 +367,11 @@ let mapa3 = [
             mapa4[EixoY][EixoX] = "DANTE";
             mapa4[SaveY][SaveX] = 0;
         } RenderizandoMapa()
-        code = 'd'
     }function DecrementarX(){
         SaveX = EixoX;
         SaveY = EixoY;
         EixoX--
+        code = "a"
         if(MudandoDeFase == "tutorial"){
             MudarDeFase(mapa0[EixoY][EixoX])
             if(mapa0[EixoY][EixoX] != 0){
@@ -432,11 +433,11 @@ let mapa3 = [
             mapa4[SaveY][SaveX] = 0;
         }
         RenderizandoMapa()
-        code = 'a'
     }function IncremetarY(){
         SaveX = EixoX;
         SaveY = EixoY;
         EixoY++
+        code = "w"
         if(MudandoDeFase == "tutorial"){
             MudarDeFase(mapa0[EixoY][EixoX])
             if(mapa0[EixoY][EixoX] != 0){
@@ -498,11 +499,11 @@ let mapa3 = [
             mapa4[SaveY][SaveX] = 0;
         }
         RenderizandoMapa()
-        code = 'w'
     }function DecrementarY(){
         SaveX = EixoX;
         SaveY = EixoY;
         EixoY--
+        code = "s"
         if(MudandoDeFase == "tutorial"){
             MudarDeFase(mapa0[EixoY][EixoX])
             if(mapa0[EixoY][EixoX] != 0){
@@ -564,7 +565,6 @@ let mapa3 = [
             mapa4[SaveY][SaveX] = 0;
         }
         RenderizandoMapa()
-        code = 's'
     }
     //Referente a mudança de fases:
     let MudandoDeFase = "tutorial";
