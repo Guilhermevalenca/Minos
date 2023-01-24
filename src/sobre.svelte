@@ -22,14 +22,11 @@ hora de finalmente desvender o mistério que o "Minos Labyrinth" tinha a lhe ofe
 </p>
 
 
-<h1 class='sobreh1'>Os Deuses</h1>
+<h1 class='sobreh1'>Os Deuses:</h1>
 
 <h2>Alice Manguinho</h2>
 
 <p>Foi muito interessante participar da criação do minos. Por nunca ter tido contato com programação, tive dificuldades com CSS e com a lógica da página do jogo, mas com o apoio e auxílio da equipe conseguimos finalizar o projeto do jeito que tanto idealizamos durante os meses. A persistêcia nos levou a realizaçâo de nossos objetivos.
-
- <h2>Allan Lima</h2>
-    <p>Professor Responsável <br> allan.lima@igarassu.ifpe.edu.br </p>
 
  <h2>Assíria Renara</h2>
 
@@ -43,5 +40,7 @@ hora de finalmente desvender o mistério que o "Minos Labyrinth" tinha a lhe ofe
 
  <h2>Guilherme Valença</h2>
 
+ <h1 class='sobreh1'>Mestre:</h1>
 
-   
+   <h2>Allan Lima</h2>
+    <p>Professor Responsável <br> allan.lima@igarassu.ifpe.edu.br </p>
