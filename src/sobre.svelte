@@ -25,22 +25,23 @@ hora de finalmente desvender o mistério que o "Minos Labyrinth" tinha a lhe ofe
 <h1 class='sobreh1'>Os Deuses</h1>
 
 <h2>Alice Manguinho</h2>
-    <p> 17 anos <br> 1° período de IPI <br> asms1@discente.ifpe.edu.br </p>
+
+<p>Foi muito interessante participar da criação do minos. Por nunca ter tido contato com programação, tive dificuldades com CSS e com a lógica da página do jogo, mas com o apoio e auxílio da equipe conseguimos finalizar o projeto do jeito que tanto idealizamos durante os meses. A persistêcia nos levou a realizaçâo de nossos objetivos.
 
  <h2>Allan Lima</h2>
     <p>Professor Responsável <br> allan.lima@igarassu.ifpe.edu.br </p>
 
  <h2>Assíria Renara</h2>
-    <p>22 anos <br> 1° período de IPI <br> aross@discente.ifpe.edu.br </p>
+
+ <p> Foi muito divertido o processo de criação dos personagens, frases, história e tudo mais; porém a programação foi o que mais me deu dor de cabeça por ter sido o meu primeiro contato com essa área. Ainda assim, gostei. A experiência se tornou melhor porque tive a ajuda do meu grupo, creio eu que o resultado ficou ótimo e conseguimos fazer um excelente jogo. </p>
     
  <h2>Claudiane Rodrigues</h2>
-    <p> 21 anos <br> 1° período de IPI <br> cra@discente.ifpe.edu.br </p>
+ <p>Adorei a experiência de estar programando um jogo (apesar de todo o estresse com coisas dando errado e de trabalhar com front) e sinceramente nunca imaginei que gostaria disso...eu diria que eu descobri uma parte de mim que eu não conhecia ainda, aprendi coisas que não sabia, coloquei em prática coisas que sabia mas ainda não havia colocado em prática,testei minhas habilidades. Enfim... Espero que gostem do nosso jogo :) </p>
 
  <h2>Emmily Kathylen</h2>
-    <p>20 anos <br> 1° período de IPI <br> emmilysouzakathylen@gmail.com </p>
+<p>Participar desse projeto foi de longe a melhor experiência que já tive, apesar de ser nova no ramo da programação gostei muito de aprender o funcionamento por trás do jogo. Tive dificuldades no inicio porém com a ajuda e apoio da equipe conseguimos aprender muita coisa e praticar. Por fim, gostei muito de ter participado e colocado em pratica o que aprendi espero que vocês gostem do nosso jogo e se divirtam assim como nos divertimos.</p>
 
  <h2>Guilherme Valença</h2>
-    <p>21 anos <br> 1° período de IPI <br> gvrp@discente.ifpe.edu.br </p>
 
 
    
