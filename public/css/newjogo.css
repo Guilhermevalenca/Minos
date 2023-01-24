@@ -7,7 +7,8 @@
     .Dante0{
         background-image: url('/css/imagens/chaotutorial.png');
         background-size: 100%;
-    }.Dante1{
+    }
+    .Dante1{
         background-image: url('/css/imagens/chaonivel1.png');
         background-size: 100%;
     }
@@ -19,6 +20,10 @@
         background-size: 100%;
     }.Dante4{
         background-image: url('/css/imagens/chaotunel.png');
+        background-size: 100%;
+    }
+    #chao0{
+        background-image: url('/css/imagens/chaotutorial.png');
         background-size: 100%;
     }
 .mapa{
@@ -45,4 +50,18 @@
 .textofutil{
     color: transparent;
     font-size: 0px;
+}
+
+
+
+th.minimapa{
+    margin-top: 0px;
+    height: 15px;
+    width: 15px;
+}
+.imgmini{
+    height: 20px;
+    width: 20px;
+    padding: 0px;
+    margin: -2px;    
 }

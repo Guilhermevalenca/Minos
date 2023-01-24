@@ -29,12 +29,6 @@
     font-size: 30px;
     margin: 0%;
 }
-.RespostaEnigma{
-    margin-left: 45%;
-    margin-top: 5%;
-    height: 50px;
-    width: 200px;
-}
 .Contador{
     text-align: center;
     color: white;
@@ -135,6 +129,13 @@ img#ChaoNoGeral {
     height: 45px;
     width: 45px;
     margin: -2px;
+}
+.RespostaEnigma{
+    margin-left: 45%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    height: 50px;
+    width: 200px;
 }
 .RespostaEnigma{
     font-size: 100%;
