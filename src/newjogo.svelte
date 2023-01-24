@@ -336,7 +336,7 @@ let mapa3 = [
                 return
             }else if(mapa2[EixoY][EixoX] != 0){
                 if(mapa2[EixoY][EixoX] == "falsa"){
-                    alert('Nem tudo é o que parece jovem Dante!')
+                    // alert('Nem tudo é o que parece jovem Dante!')
                 }
                 ResertarPosicao()
                 return
@@ -643,7 +643,7 @@ let mapa3 = [
         }
     }
     let Tempo;
-    let contador = 150;
+    let contador = 300;
     function TempoEnigma(){
         Tempo = setInterval( () => {
             contador--

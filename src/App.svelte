@@ -28,7 +28,7 @@
 {/if} 
 
 
-<!--
+
 <audio src="/css/audio.mp3" autoplay preload="auto"></audio>
 
 <div>
@@ -37,4 +37,3 @@
 		<source src="/css/audio2.ogg" type="audio/ogg">
 	</audio>
 </div> 
--->
