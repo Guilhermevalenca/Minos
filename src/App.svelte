@@ -23,6 +23,8 @@
 	<Sobre/>
 {:else if $estado ==='ajuda'}
 	<Ajuda/>
+{:else if $estado === 'creditos'}
+	<Creditos/>
 {/if} 
 
 

@@ -1,5 +1,9 @@
+<script>
+    import VoltarMenu from "./VoltarMenu.svelte";
+</script>
 <head>
     <link rel="stylesheet" href="/css/creditos.css">
+    <link rel="stylesheet" href="/css/menu.css">
 </head>
 
 <h4 class="geral"> Design </h4>
@@ -61,3 +65,5 @@
 <p class="geral"> a </p>
 
 <p class="agradeca"> Obrigado por Jogar!</p>
+
+<p class="geral" id="voltar"><VoltarMenu/></p>
