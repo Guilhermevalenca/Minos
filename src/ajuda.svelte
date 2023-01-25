@@ -20,6 +20,12 @@
 <ul><button class='botao2'>↞</button> <button class='botao3'>↠</button></ul>
 <ul><button id='button' class='buteum'>↡</button></ul>
 
+<!--
+<ul><button id='button' class='botaum'>W</button></ul>
+<ul><button class='botao2'>A</button> <button class='botao3'>D</button></ul>
+<ul><button id='button' class='buteum'>S</button></ul>
+-->
+
 <h3 class="h3ajuda">Olá, querido humano.</h3>
 <p>Se você chegou aqui, temo que já esteja em um território perigoso.</p>
 <p>Humanos não deveriam arriscar tanto suas vidas, será que sua curiosidade vale tanto assim?</p>

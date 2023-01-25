@@ -57,4 +57,4 @@
 
 <p class="agradeca"> Obrigado por Jogar!</p>
 
-<p class="geral" id="voltar"><VoltarMenu/></p>
+<p class="geral" id="voltar"> <VoltarMenu/> </p>

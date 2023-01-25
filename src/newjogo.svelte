@@ -3,7 +3,6 @@
     import Vitoria from "./Vitoria.svelte";
     import VoltarMenu from "./VoltarMenu.svelte";
     import Creditos from "./creditos.svelte";
-  import { claim_space } from "svelte/internal";
     //Referente ao uso do teclado no jogo:
     let key;
     let code;
@@ -236,7 +235,7 @@ let mapa3 = [
     let SaveX = 0;
     let SaveY = 0;
     let PontoDeSave = [0,0];
-    function DeterminandoEixos(fase){
+    function DeterminandoEixos(fase){ //Ponto zero onde o jogador começa a jogar
         if(fase == "tutorial"){
             for(let i in mapa0){
                 for(let j in mapa0[i]){
@@ -291,23 +290,35 @@ let mapa3 = [
             }
         }
     }
-    function RetornaAoSave(){
+    function RetornaAoSave(){ //Voltar para o nivel 1, para onde deveria voltar
         mapa1[EixoY][EixoX] = 0;
         EixoX = PontoDeSave[0];
         EixoY = PontoDeSave[1];
         mapa1[EixoY][EixoX] = "DANTE"
         return
     }
-    function ResertarPosicao(){
+    function ResertarPosicao(){//Caso tente passar por onde nao deveria
         EixoX = SaveX;
         EixoY = SaveY;
         RenderizandoMapa()
     }
-    function IncremetarX(){
+    //toda movimentação segue a msm logica, mudando apenas qual Eixo vai ser alterado de valor
+    function MovimentaçãoPeloMapa(move){
         SaveX = EixoX;
         SaveY = EixoY;
-        EixoX++
-        code = "d"
+        if(move == "DIREITA"){
+            EixoX++
+            code = "d"
+        }else if (move == "ESQUERDA"){
+            EixoX--
+            code = "a"
+        }else if(move == "CIMA"){
+            EixoY--
+            code = "w"
+        }else if(move == "BAIXO"){
+            EixoY++
+            code = "s"
+        }
         if(MudandoDeFase == "tutorial"){
             MudarDeFase(mapa0[EixoY][EixoX]) 
             if(mapa0[EixoY][EixoX] != 0){
@@ -319,7 +330,7 @@ let mapa3 = [
         }else if(MudandoDeFase == "nivel1"){
             MudarDeFase(mapa1[EixoY][EixoX])
             if(mapa1[EixoY][EixoX] != 0){
-                if(mapa1[EixoY][EixoX] == "falsa"){
+                if(mapa1[EixoY][EixoX] == "falsa"){ //para Saidas falsas
                     alert('Nem tudo é o que parece pequeno Dante!')
                 }
                 ResertarPosicao()
@@ -329,21 +340,21 @@ let mapa3 = [
             mapa1[SaveY][SaveX] = 0;
         }else if(MudandoDeFase == "nivel2"){
             MudarDeFase(mapa2[EixoY][EixoX])
-            if(mapa2[EixoY][EixoX] == 7){
-                if(mapa2[SaveY][SaveX] == 7){
+            if(mapa2[EixoY][EixoX] == 7){ //paredes falsas
+                if(mapa2[SaveY][SaveX] == 7){ //não transforma paredes falsas em estrada
                     return
                 }
                 mapa2[SaveY][SaveX] = 0; 
                 return
             }else if(mapa2[EixoY][EixoX] != 0){
-                if(mapa2[EixoY][EixoX] == "falsa"){
-                    // alert('Nem tudo é o que parece jovem Dante!')
+                if(mapa2[EixoY][EixoX] == "falsa"){ //saida falsa
+                    alert('Nem tudo é o que parece jovem Dante!')
                 }
                 ResertarPosicao()
                 return
             }
             mapa2[EixoY][EixoX] = "DANTE"
-            if(mapa2[SaveY][SaveX] != 7){
+            if(mapa2[SaveY][SaveX] != 7){ 
                 mapa2[SaveY][SaveX] = 0;
             }
         }else if(MudandoDeFase == "nivel3"){
@@ -374,225 +385,9 @@ let mapa3 = [
             mapa4[EixoY][EixoX] = "DANTE";
             mapa4[SaveY][SaveX] = 0;
         } RenderizandoMapa()
-    }function DecrementarX(){
-        SaveX = EixoX;
-        SaveY = EixoY;
-        EixoX--
-        code = "a"
-        if(MudandoDeFase == "tutorial"){
-            MudarDeFase(mapa0[EixoY][EixoX])
-            if(mapa0[EixoY][EixoX] != 0){
-                ResertarPosicao()
-                return
-            }
-            mapa0[SaveY][SaveX] = 0;
-            mapa0[EixoY][EixoX] = "DANTE"
-        }else if(MudandoDeFase == "nivel1"){
-            MudarDeFase(mapa1[EixoY][EixoX])
-            if(mapa1[EixoY][EixoX] != 0){
-                if(mapa1[EixoY][EixoX] == "falsa"){
-                    alert('Nem tudo é o que parece jovem Dante!')
-                }
-                ResertarPosicao()
-                return
-            }
-            mapa1[EixoY][EixoX] = "DANTE"
-            mapa1[SaveY][SaveX] = 0;
-        }else if(MudandoDeFase == "nivel2"){
-            MudarDeFase(mapa2[EixoY][EixoX])
-            if(mapa2[EixoY][EixoX] == 7){
-                if(mapa2[SaveY][SaveX] == 7){
-                    return
-                }
-                mapa2[SaveY][SaveX] = 0; 
-                return
-            }else if(mapa2[EixoY][EixoX] != 0){
-                if(mapa2[EixoY][EixoX] == "falsa"){
-                    alert('Talvez devesse tentar outra saída...')
-                }
-                ResertarPosicao()
-                return
-            }
-            mapa2[EixoY][EixoX] = "DANTE"
-            if(mapa2[SaveY][SaveX] != 7){
-                mapa2[SaveY][SaveX] = 0;
-            }
-        }else if(MudandoDeFase == "nivel3"){
-            MudarDeFase(mapa3[EixoY][EixoX])
-            if(mapa3[EixoY][EixoX] == 7){
-                if(mapa3[SaveY][SaveX] == 7){
-                    return
-                }
-                mapa3[SaveY][SaveX] = 0; 
-                return
-            }else if(mapa3[EixoY][EixoX] != 0){
-                if(mapa3[EixoY][EixoX] == "falsa"){
-                    alert('Não consegue, não é?')
-                }
-                ResertarPosicao()
-                return
-            }
-            mapa3[EixoY][EixoX] = "DANTE"
-            if(mapa3[SaveY][SaveX] != 7){
-                mapa3[SaveY][SaveX] = 0;
-            }
-        }else if(MudandoDeFase == "vitoria"){
-            MudarDeFase(mapa4[EixoY][EixoX])
-            if(mapa4[EixoY][EixoX] != 0){
-                ResertarPosicao()
-                return
-            }
-            mapa4[EixoY][EixoX] = "DANTE"
-            mapa4[SaveY][SaveX] = 0;
-        }
-        RenderizandoMapa()
-    }function IncremetarY(){
-        SaveX = EixoX;
-        SaveY = EixoY;
-        EixoY++
-        code = "w"
-        if(MudandoDeFase == "tutorial"){
-            MudarDeFase(mapa0[EixoY][EixoX])
-            if(mapa0[EixoY][EixoX] != 0){
-                ResertarPosicao()
-                return
-            }
-            mapa0[SaveY][SaveX] = 0;
-            mapa0[EixoY][EixoX] = "DANTE"
-        }else if(MudandoDeFase == "nivel1"){
-            MudarDeFase(mapa1[EixoY][EixoX])
-            if(mapa1[EixoY][EixoX] != 0){
-                if(mapa1[EixoY][EixoX] == "falsa"){
-                    alert('Essa é mesmo a saída?')
-                }
-                ResertarPosicao()
-                return
-            }
-            mapa1[EixoY][EixoX] = "DANTE"
-            mapa1[SaveY][SaveX] = 0;
-        }else if(MudandoDeFase == "nivel2"){
-            if(mapa2[EixoY][EixoX] == "falsa"){
-                    alert('Talvez devesse tentar outra saída...')
-                }
-            MudarDeFase(mapa2[EixoY][EixoX])
-            if(mapa2[EixoY][EixoX] == 7){
-                if(mapa2[SaveY][SaveX] == 7){
-                    return
-                }
-                mapa2[SaveY][SaveX] = 0; 
-                return
-            }else if(mapa2[EixoY][EixoX] != 0){
-                ResertarPosicao()
-                return
-            }
-            mapa2[EixoY][EixoX] = "DANTE"
-            if(mapa2[SaveY][SaveX] != 7){
-                mapa2[SaveY][SaveX] = 0;
-            }
-        }else if(MudandoDeFase == "nivel3"){
-            MudarDeFase(mapa3[EixoY][EixoX])
-            if(mapa3[EixoY][EixoX] == 7){
-                if(mapa3[SaveY][SaveX] == 7){
-                    return
-                }
-                mapa3[SaveY][SaveX] = 0; 
-                return
-            }else if(mapa3[EixoY][EixoX] != 0){
-                if(mapa3[EixoY][EixoX] == "falsa"){
-                    alert('Tem certeza que essa é a saída?')
-                }
-                ResertarPosicao()
-                return
-            }
-            mapa3[EixoY][EixoX] = "DANTE"
-            if(mapa3[SaveY][SaveX] != 7){
-                mapa3[SaveY][SaveX] = 0;
-            }
-        }else if(MudandoDeFase == "vitoria"){
-            MudarDeFase(mapa4[EixoY][EixoX])
-            if(mapa4[EixoY][EixoX] != 0){
-                ResertarPosicao()
-                return
-            }
-            mapa4[EixoY][EixoX] = "DANTE"
-            mapa4[SaveY][SaveX] = 0;
-        }
-        RenderizandoMapa()
-    }function DecrementarY(){
-        SaveX = EixoX;
-        SaveY = EixoY;
-        EixoY--
-        code = "s"
-        if(MudandoDeFase == "tutorial"){
-            MudarDeFase(mapa0[EixoY][EixoX])
-            if(mapa0[EixoY][EixoX] != 0){
-                ResertarPosicao()
-                return
-            }
-            mapa0[SaveY][SaveX] = 0;
-            mapa0[EixoY][EixoX] = "DANTE"
-        }else if(MudandoDeFase == "nivel1"){
-            MudarDeFase(mapa1[EixoY][EixoX])
-            if(mapa1[EixoY][EixoX] != 0){
-                if(mapa1[EixoY][EixoX] == "falsa"){
-                    alert('Não consegue, não é?')
-                }
-                ResertarPosicao()
-                return
-            }
-            mapa1[EixoY][EixoX] = "DANTE"
-            mapa1[SaveY][SaveX] = 0;
-        }else if(MudandoDeFase == "nivel2"){
-            MudarDeFase(mapa2[EixoY][EixoX])
-            if(mapa2[EixoY][EixoX] == 7){
-                if(mapa2[SaveY][SaveX] == 7){
-                    return
-                }
-                mapa2[SaveY][SaveX] = 0; 
-                return
-            }else if(mapa2[EixoY][EixoX] != 0){
-                if(mapa2[EixoY][EixoX] == "falsa"){
-                    alert('Nem tudo é o que parece jovem criança')
-                }
-                ResertarPosicao()
-                return
-            }
-            mapa2[EixoY][EixoX] = "DANTE"
-            if(mapa2[SaveY][SaveX] != 7){
-                mapa2[SaveY][SaveX] = 0;
-            }
-        }else if(MudandoDeFase == "nivel3"){
-            MudarDeFase(mapa3[EixoY][EixoX])
-            if(mapa3[EixoY][EixoX] == 7){
-                if(mapa3[SaveY][SaveX] == 7){
-                    return
-                }
-                mapa3[SaveY][SaveX] = 0; 
-                return
-            }else if(mapa3[EixoY][EixoX] != 0){
-                if(mapa3[EixoY][EixoX] == "falsa"){
-                    alert('Tem certeza que é essa a saída?')
-                }
-                ResertarPosicao()
-                return
-            }
-            mapa3[EixoY][EixoX] = "DANTE"
-            if(mapa3[SaveY][SaveX] != 7){
-                mapa3[SaveY][SaveX] = 0;
-            }
-        }else if(MudandoDeFase == "vitoria"){
-            MudarDeFase(mapa4[EixoY][EixoX])
-            if(mapa4[EixoY][EixoX] != 0){
-                ResertarPosicao()
-                return
-            }
-            mapa4[EixoY][EixoX] = "DANTE"
-            mapa4[SaveY][SaveX] = 0;
-        }
-        RenderizandoMapa()
     }
     //Referente a mudança de fases:
-    let MudandoDeFase = "tutorial";
+    let MudandoDeFase = "tutorial"; // fase inicial do jogo
     function MudarDeFase(FaseAtual){
         if(FaseAtual == "X"){
             
@@ -619,7 +414,7 @@ let mapa3 = [
     //Referente aos enigmas:
     let enigma = false;
     let PalavraChave = '';
-    function Alterando(teste, fase){
+    function Alterando(teste, fase){ // mudança de fase ao acerta o enigma
         if(teste){
             enigma = teste;
             PalavraChave = '';
@@ -644,7 +439,8 @@ let mapa3 = [
         }
     }
     let Tempo;
-    let contador = 600;
+    let temporizador = 300;
+    let contador = temporizador; // Contador geral para resolver todos os enigmas 
     function TempoEnigma(){
         Tempo = setInterval( () => {
             contador--
@@ -654,10 +450,12 @@ let mapa3 = [
                 MudandoDeFase = "nivel1"
                 enigma = false;
                 clearInterval(Tempo)
-                contador = 90;
                 return
         }
         },1000)
+    }
+    function ResertarContador(){
+        contador = temporizador;
     }
 </script>
 <head>
@@ -668,13 +466,21 @@ let mapa3 = [
 <svelte:window on:keydown={handleKeydown}/>
 {#if (key)}
         {#if (code == "ArrowUp")}
-            {DecrementarY()} <!--para cima -->
+
+            {MovimentaçãoPeloMapa("CIMA")} <!--para cima KeyW-->
+        
         {:else if (code == "ArrowDown")}
-            {IncremetarY()} <!--para baixo-->
+
+            {MovimentaçãoPeloMapa("BAIXO")} <!--para baixo KeyS-->
+
         {:else if (code == "ArrowLeft")}
-            {DecrementarX()} <!--para esquerda-->
+
+            {MovimentaçãoPeloMapa("ESQUERDA")} <!--para esquerda KeyA-->
+
         {:else if (code == "ArrowRight")}
-            {IncremetarX()} <!--para direita-->
+
+            {MovimentaçãoPeloMapa("DIREITA")} <!--para direita KeyD-->
+
         {/if}
 {/if}
 <VoltarMenu/>
@@ -770,7 +576,7 @@ let mapa3 = [
         {/each}
     </table>
         {:else}
-        <p class="textofutil">{TempoEnigma()}</p>
+        <p class="textofutil">{TempoEnigma()}{ResertarContador()}</p>
         <p class="Enigma">O que achou das provações resultantes de sua ações precipitadas?</p>
         <p class="Enigma">Deveria tomar cuidado, este não é um labirinto comum e os guardiões deste lugar não gostam de visitantes inesperados.</p>
         <p class="Enigma">Responda-me cautelosamente, deuses não costumam ser piedosos como tanto propagam.</p>
@@ -833,7 +639,7 @@ let mapa3 = [
         {/each}
     </table>
         {:else}
-        <p class="textofutil">{TempoEnigma()}</p>
+        <p class="textofutil">{TempoEnigma()}{ResertarContador()}</p>
         <p class="Enigma">Gostei de você, jovem.</p>
         <p class="Enigma">Como pôde perceber, nem tudo é o que parece.</p>
         <p class="Enigma">Espero não acostuma-lo mal, mas por enquanto vou aconselha-lo a não confiar tanto no que seus olhos vêem.</p>
@@ -899,7 +705,7 @@ let mapa3 = [
         {/each}
     </table>
         {:else}
-        <p class="textofutil">{TempoEnigma()}</p>
+        <p class="textofutil">{TempoEnigma()}{ResertarContador()}</p>
         <p class="Enigma">Se saiu bem, Dante. Conseguiu sobreviver até aqui, mas será que realmente acabou?</p>
         <p class="Enigma">Seja rápido se deseja sobreviver.</p>
         <p class='Enigma'>Se você me tem, quer me compartilhar; se você não me compartilha, você me manteve. O que sou?</p>

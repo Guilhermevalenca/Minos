@@ -3,7 +3,7 @@
 	import Ajuda from './ajuda.svelte'
 	import Menu from './menu.svelte'
 	import Sobre from './sobre.svelte'
-	import Jogar from './jogo.svelte'
+	import Jogar from './jogo(futil).svelte'
 	import {estado} from './Estado.js'
 	import Teste from './teste.svelte'
   	import Newjogo from './newjogo.svelte';
