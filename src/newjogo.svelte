@@ -64,7 +64,7 @@
         [2,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,1,0,1,1,1,1,1,1,1,0,1,1,1,1,0,1,0,0,0,0,0,1,0,1,2],
         [2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,0,1,2],
         [2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2],  
-        [2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,"Y",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],
+        [2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,"Y",1,1,1,1,"falsa",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],
         [2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]
     ]
     let mapa2 = [
@@ -331,7 +331,7 @@ let mapa3 = [
             MudarDeFase(mapa1[EixoY][EixoX])
             if(mapa1[EixoY][EixoX] != 0){
                 if(mapa1[EixoY][EixoX] == "falsa"){ //para Saidas falsas
-                    alert('Nem tudo é o que parece pequeno Dante!')
+                    alert('Não foi dessa vez!')
                 }
                 ResertarPosicao()
                 return
@@ -367,7 +367,7 @@ let mapa3 = [
                 return
             }else if(mapa3[EixoY][EixoX] != 0){
                 if(mapa3[EixoY][EixoX] == "falsa"){
-                    alert('Nem tudo é o que parece jovem Dante!')
+                    alert('Não consegue, não é?')
                 }
                 ResertarPosicao()
                 return
@@ -461,29 +461,33 @@ let mapa3 = [
 <head>
     <link rel="stylesheet" href="/css/jogo.css">
     <link rel="stylesheet" href="/css/newjogo.css">
+    <link rel="stylesheet" href="/css/ajuda.css">
 </head>
 
 <svelte:window on:keydown={handleKeydown}/>
+
 {#if (key)}
-        {#if (code == "ArrowUp")}
+        {#if (code == "ArrowUp") || (code == "KeyW")}
 
-            {MovimentaçãoPeloMapa("CIMA")} <!--para cima KeyW-->
+            {MovimentaçãoPeloMapa("CIMA")} <!--para cima-->
         
-        {:else if (code == "ArrowDown")}
+        {:else if (code == "ArrowDown") || (code == "KeyS")}
 
-            {MovimentaçãoPeloMapa("BAIXO")} <!--para baixo KeyS-->
+            {MovimentaçãoPeloMapa("BAIXO")} <!--para baixo-->
 
-        {:else if (code == "ArrowLeft")}
+        {:else if (code == "ArrowLeft") || (code == "KeyA")}
 
-            {MovimentaçãoPeloMapa("ESQUERDA")} <!--para esquerda KeyA-->
+            {MovimentaçãoPeloMapa("ESQUERDA")} <!--para esquerda-->
 
-        {:else if (code == "ArrowRight")}
+        {:else if (code == "ArrowRight") || (code == "KeyD")}
 
-            {MovimentaçãoPeloMapa("DIREITA")} <!--para direita KeyD-->
+            {MovimentaçãoPeloMapa("DIREITA")} <!--para direita-->
 
         {/if}
 {/if}
+
 <VoltarMenu/>
+
 {#if MudandoDeFase == "tutorial"}
     
     <p class='FasesDoJogo'>Tutorial</p>
@@ -494,6 +498,13 @@ let mapa3 = [
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
     </p>
+    <div id="DicaTutorial" class="aimds">
+        <ul><h2 class="h2">Como jogar?</h2></ul>
+        <ul class="info">↟ ou W para Cima</ul>
+        <ul class="info">↡ ou S para Baixo</ul>
+        <ul class="info">↠ ou D para a Direita</ul>
+        <ul class="info">↞ ou A para a Esquerda</ul>
+    </div>
     <table class="mapa" align="center" id="mapatutorial">
         {#each mapa0 as linhas,i}
         {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}

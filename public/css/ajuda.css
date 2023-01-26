@@ -19,32 +19,31 @@
    margin-top: 200px;
    margin-left: 60px;
 }
-h2{
+h2.h2{
     font-family:'Felix Titling';
     font-size: 200%;
     border-style:hidden;
-   text-align: left;
-   color: rgb(184, 184, 6);
-   background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
-   background-clip: text;
-   -webkit-background-clip: text;
-   color: transparent;
-   margin: 0%;
-   margin-top: 200px;
-   margin-left: 1%;
+    text-align: left;
+    color: rgb(184, 184, 6);
+    background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 0%;
+    margin-top: 200px;
+    margin-left: 1%;
+    margin-bottom: 50px;
 }
-li{
+ul.info{
     font-size: 30px;
     color: #ffff00;
     margin-left: 1%;
-
 }
 #button{
     left: 60px;
     top: -70px;
     background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
     margin-bottom: 0px;
-    
 }
 .h3ajuda{
     margin-top: 70px;
@@ -80,7 +79,8 @@ h4{
  margin-bottom: 50px;
 }
 .aimds{
-    margin-bottom: 100px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 .botaum{
     width: 60px;
@@ -117,4 +117,18 @@ h4{
     margin-left:20px;
     margin-right:10px;
     background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+}
+.divbutton1{
+    margin: 0px;
+    margin-top: 50px;
+    margin-left: 0%;
+}
+.divbutton2{
+    margin: 0px;
+    margin-top: -210px;
+    margin-left: 20%;
+}
+.info{
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
