@@ -237,7 +237,9 @@ let mapa3 = [
     let EixoY = 0;
     let SaveX = 0;
     let SaveY = 0;
-    let PontoDeSave = [0,0];
+    let PontoDeSave1 = [0,0];
+    let PontoDeSave2 = [0,0];
+    let PontoDeSave3 = [0,0];
     function DeterminandoEixos(fase){ //Ponto zero onde o jogador começa a jogar
         if(fase == "tutorial"){
             for(let i in mapa0){
@@ -255,8 +257,8 @@ let mapa3 = [
                     if(mapa1[i][j] == "DANTE"){
                         EixoX = j;
                         EixoY = i;
-                        PontoDeSave[0] = EixoX;
-                        PontoDeSave[1] = EixoY;
+                        PontoDeSave1[0] = EixoX;
+                        PontoDeSave1[1] = EixoY;
                         return
                     }
                 }
@@ -267,6 +269,8 @@ let mapa3 = [
                     if(mapa2[i][j] == "DANTE"){
                         EixoX = j;
                         EixoY = i;
+                        PontoDeSave2[0] = EixoX;
+                        PontoDeSave2[1] = EixoY;
                         return
                     }
                 }
@@ -277,6 +281,8 @@ let mapa3 = [
                     if(mapa3[i][j] == "DANTE"){
                         EixoX = j;
                         EixoY = i;
+                        PontoDeSave3[0] = EixoX;
+                        PontoDeSave3[1] = EixoY;
                         return
                     }
                 }
@@ -295,8 +301,8 @@ let mapa3 = [
     }
     function RetornaAoSave(){ //Voltar para o nivel 1, para onde deveria voltar
         mapa1[EixoY][EixoX] = 0;
-        EixoX = PontoDeSave[0];
-        EixoY = PontoDeSave[1];
+        EixoX = PontoDeSave1[0];
+        EixoY = PontoDeSave1[1];
         mapa1[EixoY][EixoX] = "DANTE";
         Tudodnv()
         return
@@ -497,6 +503,7 @@ let mapa3 = [
                     alert('O monstro o alcançou')
                     RetornaAoSave()
                     MudandoDeFase = "tutorial"
+                    return
                 }
                 if(Indice > 0){
                     mapa1[Mapa1Save[Indice - 1][1]][Mapa1Save[Indice - 1][0]] = 0;
@@ -510,6 +517,7 @@ let mapa3 = [
                     alert('O monstro o alcançou')
                     RetornaAoSave()
                     MudandoDeFase = "nivel1"
+                    return
                 }
                 if(Indice > 0){
                     mapa2[Mapa2Save[Indice - 1][1]][Mapa2Save[Indice - 1][0]] = 0;
@@ -523,6 +531,7 @@ let mapa3 = [
                     alert('O monstro o alcançou')
                     RetornaAoSave()
                     MudandoDeFase = "nivel1"
+                    return
                 }
                 if(Indice > 0){
                     mapa3[Mapa3Save[Indice - 1][1]][Mapa3Save[Indice - 1][0]] = 0;
@@ -530,18 +539,54 @@ let mapa3 = [
             }Indice++
     },Ritmo)
     }
-    function Acelerar(){
-        if(Indice == SaveIndice){
-                Ritmo = Ritmo - 1000;
-                if(Ritmo < 1000){
-                    Ritmo = 500;
-                }
-                SaveIndice = SaveIndice + 10;
+    function acelerar(teste){
+        if(teste){
+            clearInterval(Movimentar)
+            Ritmo -= 1000
+            if(Ritmo < 1000){
+                Ritmo = 10;
             }
-        return Ritmo;
+            SaveIndice += 60;
+            Perseguição(MudandoDeFase);
+        }
     }
     function Tudodnv(){
         clearInterval(Movimentar)
+        Ritmo = 3000;
+        if(MudandoDeFase == "nivel1"){
+            for(let i in mapa1){
+            for(let j in mapa1[i]){
+                if(mapa1[i][j] == "MINOS" || mapa1[i][j] == "DANTE"){
+                    mapa1[i][j] = 0;
+                }
+            }
+        }
+        EixoX = PontoDeSave1[0];
+        EixoY = PontoDeSave1[1];
+        mapa1[EixoY][EixoX] = "DANTE";
+        }else if(MudandoDeFase == "nivel2"){
+            for(let i in mapa2){
+            for(let j in mapa2[i]){
+                if(mapa2[i][j] == "MINOS" || mapa2[i][j] == "DANTE"){
+                    mapa2[i][j] = 0;
+                }
+            }
+        }
+        EixoX = PontoDeSave2[0];
+        EixoY = PontoDeSave2[1];
+        mapa2[EixoY][EixoX] = "DANTE";
+        }else if(MudandoDeFase == "nivel3"){
+            for(let i in mapa3){
+            for(let j in mapa3[i]){
+                if(mapa3[i][j] == "MINOS" || mapa3[i][j] == "DANTE"){
+                    mapa3[i][j] = 0;
+                }
+            }
+        }
+        EixoX = PontoDeSave3[0];
+        EixoY = PontoDeSave3[1];
+        mapa3[EixoY][EixoX] = "DANTE";
+        }
         Indice = 0;
         SaveIndice = 30;
         Mapa1Save = [];
@@ -549,6 +594,17 @@ let mapa3 = [
         Mapa3Save = [];
         return
     }
+    let contagem = 0;
+    let Perguntas = [
+    "Fui levado para um quarto escuro e incendiado. Eu chorei e então minha cabeça foi cortada. Quem sou?",
+    "Poder suficiente para esmagar navios e quebrar telhados mas mesmo assim tenho medo do sol. O que eu sou?",
+    "Se você me tem, quer me compartilhar; se você não me compartilha, você me manteve. O que sou?"
+];
+    let respostas = [
+    "VELA",
+    "GELO",
+    "SEGREDO"
+    ];
 </script>
 <head>
     <link rel="stylesheet" href="/css/jogo.css">
@@ -653,11 +709,12 @@ let mapa3 = [
         
     <p class="textofutil">
     {Perseguição(MudandoDeFase)}
+    {acelerar(Indice == SaveIndice)}
     {clearInterval(Tempo)}
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
     </p>
-    <p class='Enigma'>{Indice},{Ritmo}</p>
+    <p class='Enigma'>{Indice},{Ritmo},{SaveIndice}</p>
     <table class="mapa" align="center" id="mapanivel1">
         {#each mapa1 as linhas,i}
         {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
@@ -688,9 +745,9 @@ let mapa3 = [
         <p class="Enigma">O que achou das provações resultantes de sua ações precipitadas?</p>
         <p class="Enigma">Deveria tomar cuidado, este não é um labirinto comum e os guardiões deste lugar não gostam de visitantes inesperados.</p>
         <p class="Enigma">Responda-me cautelosamente, deuses não costumam ser piedosos como tanto propagam.</p>
-        <p class='Enigma'>Fui levado para um quarto escuro e incendiado. Eu chorei e então minha cabeça foi cortada. Quem sou?</p>
+        <p class='Enigma'>{Perguntas[contagem]}</p>
         <p class="Contador">{contador}s</p>
-    <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "VELA",MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
+    <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == respostas[contagem],MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
     {#each mapa1 as linhas}
     <tr class="minimapa">
         {#each linhas as elementos}
@@ -717,8 +774,8 @@ let mapa3 = [
     {#if !enigma}
      
     <p class="textofutil">
-    {clearInterval(Movimentar)}
     {Perseguição(MudandoDeFase)}
+    {acelerar(Indice == SaveIndice)}
     {clearInterval(Tempo)}
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
@@ -756,9 +813,9 @@ let mapa3 = [
         <p class="Enigma">Como pôde perceber, nem tudo é o que parece.</p>
         <p class="Enigma">Espero não acostuma-lo mal, mas por enquanto vou aconselha-lo a não confiar tanto no que seus olhos vêem.</p>
         <p class='Enigma'>Paredes falsas podem parecer algo impensável para humanos, mas não me compare com seres como vocês.</p>
-        <p class='Enigma'>Poder suficiente para esmagar navios e quebrar telhados mas mesmo assim tenho medo do sol. O que eu sou?</p>
+        <p class='Enigma'>Perguntas[contagem]</p>
         <p class="Contador">{contador}s</p>
-        <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "GELO",MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
+        <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == respostas[contagem],MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
         {#each mapa2 as linhas}
         <tr class="minimapa">
         {#each linhas as elementos}
@@ -787,8 +844,8 @@ let mapa3 = [
     {#if !enigma}
      
     <p class="textofutil">
-    {clearInterval(Movimentar)}
     {Perseguição(MudandoDeFase)}
+    {acelerar(Indice == SaveIndice)}
     {clearInterval(Tempo)}
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
@@ -824,9 +881,9 @@ let mapa3 = [
         <p class="textofutil">{TempoEnigma()}{ResertarContador()}{clearInterval(Movimentar)}</p>
         <p class="Enigma">Se saiu bem, Dante. Conseguiu sobreviver até aqui, mas será que realmente acabou?</p>
         <p class="Enigma">Seja rápido se deseja sobreviver.</p>
-        <p class='Enigma'>Se você me tem, quer me compartilhar; se você não me compartilha, você me manteve. O que sou?</p>
+        <p class='Enigma'>Perguntas[contagem]</p>
         <p class="Contador">{contador}s</p>
-        <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == "SEGREDO",MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
+        <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == respostas[contagem],MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
         {#each mapa3 as linhas}
         <tr class="minimapa">
         {#each linhas as elementos}
