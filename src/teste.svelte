@@ -338,7 +338,7 @@ let mapa3 = [
 
             if(mapa1[EixoY][EixoX] != 0){
                 if(mapa1[EixoY][EixoX] == "MINOS"){
-                    alert('O monstro o alcanço')
+                    alert('O monstro o alcançou')
                     RetornaAoSave()
                     MudandoDeFase = "tutorial"
                 }else if(mapa1[EixoY][EixoX] == "falsa"){ //para Saidas falsas
@@ -359,7 +359,7 @@ let mapa3 = [
                 return
             }else if(mapa2[EixoY][EixoX] != 0){
                 if(mapa2[EixoY][EixoX] == "MINOS"){
-                    alert('O monstro o alcanço')
+                    alert('O monstro o alcançou')
                     RetornaAoSave()
                     MudandoDeFase = "nivel1"
                 }else if(mapa2[EixoY][EixoX] == "falsa"){ //saida falsa
@@ -382,7 +382,7 @@ let mapa3 = [
                 return
             }else if(mapa3[EixoY][EixoX] != 0){
                 if(mapa3[EixoY][EixoX] == "MINOS"){
-                    alert('O monstro o alcanço')
+                    alert('O monstro o alcançou')
                     RetornaAoSave()
                     MudandoDeFase = "nivel1"
                 }else if(mapa3[EixoY][EixoX] == "falsa"){
@@ -494,7 +494,7 @@ let mapa3 = [
                 if(mapa1[PosicaoMonstroY][PosicaoMonstroX] != "DANTE"){
                     mapa1[PosicaoMonstroY][PosicaoMonstroX] = "MINOS";
                 }else{
-                    alert('O monstro o alcanço')
+                    alert('O monstro o alcançou')
                     RetornaAoSave()
                     MudandoDeFase = "tutorial"
                 }
@@ -507,7 +507,7 @@ let mapa3 = [
                 if(mapa2[PosicaoMonstroY][PosicaoMonstroX] != "DANTE"){
                     mapa2[PosicaoMonstroY][PosicaoMonstroX] = "MINOS";
                 }else{
-                    alert('O monstro o alcanço')
+                    alert('O monstro o alcançou')
                     RetornaAoSave()
                     MudandoDeFase = "nivel1"
                 }
@@ -520,7 +520,7 @@ let mapa3 = [
                 if(mapa3[PosicaoMonstroY][PosicaoMonstroX] != "DANTE"){
                     mapa3[PosicaoMonstroY][PosicaoMonstroX] = "MINOS";
                 }else{
-                    alert('O monstro o alcanço')
+                    alert('O monstro o alcançou')
                     RetornaAoSave()
                     MudandoDeFase = "nivel1"
                 }

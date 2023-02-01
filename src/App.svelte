@@ -18,7 +18,7 @@
 {#if $estado === 'menu'}
 	<Menu/>
 {:else if $estado === 'jogar'}
-	<Teste/>
+	<Newjogo/>
 {:else if $estado === 'sobre'}
 	<Sobre/>
 {:else if $estado ==='ajuda'}
