@@ -26,15 +26,3 @@
 {:else if $estado === 'creditos'}
 	<Creditos/>
 {/if}
-
-<!--
-
-<audio src="/css/audio.mp3" autoplay preload="auto"></audio>
-
-<div>
-	<audio id="audio" autoplay loop>
-		<source src="/css/audio3.wav" type="audio/wav">
-		<source src="/css/audio2.ogg" type="audio/ogg">
-	</audio>
-</div> 
--->

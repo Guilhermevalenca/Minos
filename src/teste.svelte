@@ -493,6 +493,7 @@ let mapa3 = [
     let PosicaoMonstroY = 0;
     let SaveIndice = 10;
     function Perseguição(mapa){
+        clearInterval(Caçar)
         Movimentar = setInterval(() => {
             if(mapa == "nivel1"){
                 PosicaoMonstroX = Mapa1Save[Indice][0];
@@ -551,7 +552,7 @@ let mapa3 = [
         Ritmo = 3000;
         Caçar = setInterval( () => {
             Perseguição(MudandoDeFase)
-        },60000)
+        },6000)
     }
     function acelerar(teste){
         if(teste){
@@ -608,7 +609,6 @@ let mapa3 = [
         Mapa1Save = [];
         Mapa2Save = [];
         Mapa3Save = [];
-        MudarEnigma()
         return
     }
     let contagem = 0;
@@ -622,12 +622,11 @@ let mapa3 = [
     "GELO",
     "SEGREDO"
     ];
-    function MudarEnigma(){
-        contagem++
-        if(contagem > 2){
-            contagem = 0;
-        }
-    }
+    function NumeroAleatorio(minimo, maximo) {
+    minimo = Math.ceil(minimo);
+    maximo = Math.floor(maximo);
+    contagem = Math.floor(Math.random() * (maximo - minimo) + min);
+  }
 </script>
 <head>
     <link rel="stylesheet" href="/css/jogo.css">
@@ -659,10 +658,19 @@ let mapa3 = [
 
 <VoltarMenu/>
 
+
+
+<div>
+	<audio id="audio" autoplay loop>
+		<source src="/css/sons/PlayMusicGame.wav" type="audio/wav">
+		<source src="/css/sons/PlayMusicGame.ogg" type="audio/ogg">
+	</audio>
+</div>
+
 {#if MudandoDeFase == "tutorial"}
     
     <p class='FasesDoJogo'>Tutorial</p>
-
+    <p class="Enigma">Recomendamos utilizar fones de ouvidos</p>
     {#if !enigma}
         
     <p class="textofutil">
@@ -775,10 +783,14 @@ let mapa3 = [
         {/each}
     </table>
     <div id="DicaTutorial" class="aimds">
-        <ul class="info">Há muito tempo atrás, mais tempo do que todas as suas gerações podem ter passado na terra, Minotauro nasceu da relação da rainha de Creta com um touro dado por Poseidon. O rei tomado pela raiva tentou matar o animal, mas Poseidon interviu todas as vezes pela vida de sua criação.</ul>
+        <ul class="fic">Há muito tempo atrás, mais tempo do que todas as suas gerações podem ter passado na terra, Minotauro nasceu da relação da rainha de Creta com um touro dado por Poseidon. O rei tomado pela raiva tentou matar o animal, mas Poseidon interviu todas as vezes pela vida de sua criação.</ul>
     </div>
         {:else}
-        <p class="textofutil">{TempoEnigma()}{ResertarContador()}{clearInterval(Movimentar)}</p>
+        <p class="textofutil">
+            {TempoEnigma()}
+            {ResertarContador()}
+            {clearInterval(Movimentar)}
+        </p>
         <p class="Enigma">O que achou das provações resultantes de sua ações precipitadas?</p>
         <p class="Enigma">Deveria tomar cuidado, este não é um labirinto comum e os guardiões deste lugar não gostam de visitantes inesperados.</p>
         <p class="Enigma">Responda-me cautelosamente, deuses não costumam ser piedosos como tanto propagam.</p>
@@ -858,15 +870,14 @@ let mapa3 = [
     </table>
     <div id="DicaTutorial" class="aimds">
         <ul class="info">Os deuses acataram a ira e súplicas do rei, mas não iriam contra Poseidon por um mero mortal. Então, com uma idéia de Atena, decidiram aprisionar o monstro em um labirinto. Desde então Minotauro vive de suas caçadas, e posso afirmar que ele sabe bem como tratar seus visitantes.</ul>
-    </div>
         {:else}
         <p class="textofutil">{TempoEnigma()}{ResertarContador()}{clearInterval(Movimentar)}</p>
         <p class="Enigma">Gostei de você, jovem.</p>
         <p class="Enigma">Como pôde perceber, nem tudo é o que parece.</p>
         <p class="Enigma">Espero não acostuma-lo mal, mas por enquanto vou aconselha-lo a não confiar tanto no que seus olhos vêem.</p>
         <p class='Enigma'>Paredes falsas podem parecer algo impensável para humanos, mas não me compare com seres como vocês.</p>
-        <p class='Enigma'>Perguntas[contagem]</p>
-        <p class="Contador">{contador}s</p>
+        <p class='Enigma'>{Perguntas[contagem]}</p>
+        <p class="Contador">{contador}</p>
         <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == respostas[contagem],MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
         {#each mapa2 as linhas}
         <tr class="minimapa">
@@ -948,7 +959,7 @@ let mapa3 = [
         <p class="textofutil">{TempoEnigma()}{ResertarContador()}{clearInterval(Movimentar)}</p>
         <p class="Enigma">Se saiu bem, Dante. Conseguiu sobreviver até aqui, mas será que realmente acabou?</p>
         <p class="Enigma">Seja rápido se deseja sobreviver.</p>
-        <p class='Enigma'>Perguntas[contagem]</p>
+        <p class='Enigma'>{Perguntas[contagem]}</p>
         <p class="Contador">{contador}s</p>
         <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == respostas[contagem],MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
         {#each mapa3 as linhas}

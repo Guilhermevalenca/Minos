@@ -28,8 +28,9 @@
     }
 .mapa{
     margin-top: 2%;
-    margin-left: 30%;
+    margin-left: 35%;
     background-size: 60px;
+    
 }
 
 #mapatutorial{
@@ -70,3 +71,12 @@ th.minimapa{
     padding: 0px;
     margin-bottom: -400px;
 }
+
+.fic{
+    font-family:'Felix Titling';
+    font-size: 20px;
+    color: rgb(184, 184, 6);
+    background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }

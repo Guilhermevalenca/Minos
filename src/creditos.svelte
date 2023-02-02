@@ -27,6 +27,11 @@
 <p class="geral"> Alice Manguinho </p>
 <p class="geral"> Assíria Renara </p> 
 
+<h4 class="geral"> Áudio </h4>
+
+<p class="geral"> Mauro Sergio </p>
+
+
 <h1 class="geral"> Experiência do Grupo </h1>
 
 <p class="geral"> Pela convivência do semestre letivo tinhamos um bom entrosamento que contribuiu para um bom desempenho em equipe, </p>
