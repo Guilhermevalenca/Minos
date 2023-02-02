@@ -359,7 +359,10 @@ let mapa3 = [
             mapa1[EixoY][EixoX] = "DANTE"
             mapa1[SaveY][SaveX] = 0;
         }else if(MudandoDeFase == "nivel2"){
+
             MudarDeFase(mapa2[EixoY][EixoX])
+            Mapa2Save.push([SaveX,SaveY])
+            
             if(mapa2[EixoY][EixoX] == 7){ //paredes falsas
                 if(mapa2[SaveY][SaveX] == 7){ //não transforma paredes falsas em estrada
                     return
@@ -382,7 +385,10 @@ let mapa3 = [
                 mapa2[SaveY][SaveX] = 0;
             }
         }else if(MudandoDeFase == "nivel3"){
+
             MudarDeFase(mapa3[EixoY][EixoX])
+            Mapa3Save.push([SaveX,SaveY])
+            
             if(mapa3[EixoY][EixoX] == 7){
                 if(mapa3[SaveY][SaveX] == 7){
                     return
@@ -496,9 +502,10 @@ let mapa3 = [
     let PosicaoMonstroX = 0;
     let PosicaoMonstroY = 0;
     let SaveIndice = 10;
-    function Perseguição(mapa){
+    function Perseguição(){
+        clearInterval(Caçar)
         Movimentar = setInterval(() => {
-            if(mapa == "nivel1"){
+            if(MudandoDeFase == "nivel1"){
                 PosicaoMonstroX = Mapa1Save[Indice][0];
                 PosicaoMonstroY = Mapa1Save[Indice][1];
                 if(mapa1[PosicaoMonstroY][PosicaoMonstroX] != "DANTE"){
@@ -512,7 +519,7 @@ let mapa3 = [
                 if(Indice > 0){
                     mapa1[Mapa1Save[Indice - 1][1]][Mapa1Save[Indice - 1][0]] = 0;
                 }
-            }else if(mapa == "nivel2"){
+            }else if(MudandoDeFase == "nivel2"){
                 PosicaoMonstroX = Mapa2Save[Indice][0];
                 PosicaoMonstroY = Mapa2Save[Indice][1];
                 if(mapa2[PosicaoMonstroY][PosicaoMonstroX] != "DANTE"){
@@ -526,7 +533,7 @@ let mapa3 = [
                 if(Indice > 0){
                     mapa2[Mapa2Save[Indice - 1][1]][Mapa2Save[Indice - 1][0]] = 0;
                 }
-            }else if(mapa == "nivel3"){
+            }else if(MudandoDeFase == "nivel3"){
                 PosicaoMonstroX = Mapa3Save[Indice][0];
                 PosicaoMonstroY = Mapa3Save[Indice][1];
                 if(mapa3[PosicaoMonstroY][PosicaoMonstroX] != "DANTE"){
@@ -545,16 +552,16 @@ let mapa3 = [
     }
     let Caçar;
     let Cronometro;
-    let HoraDaCaçada = 60;
+    let HoraDaCaçada = 6;
     function Cronometrar(){
         Cronometro = setInterval(() => {
             HoraDaCaçada--
         },1000)
     }
     function IniciarACaçada(){
-        Ritmo = 3000;
         Caçar = setInterval( () => {
-            Perseguição(MudandoDeFase)
+            Ritmo = 3000;
+            Perseguição()
         },6000)
     }
     function acelerar(teste){
@@ -570,7 +577,9 @@ let mapa3 = [
     }
     function Tudodnv(){
         clearInterval(Cronometro)
-        HoraDaCaçada = 60;
+        clearInterval(Caçar)
+        clearInterval(Movimentar)
+        HoraDaCaçada = 6;
         Ritmo = 3000;
         if(MudandoDeFase == "nivel1"){
             for(let i in mapa1){
@@ -613,7 +622,8 @@ let mapa3 = [
         Mapa3Save = [];
         return
     }
-    let contagem = 0;
+    let NumRandom = 0;
+    let SaveNumRandom = [];
     let Perguntas = [
     "Fui levado para um quarto escuro e incendiado. Eu chorei e então minha cabeça foi cortada. Quem sou?",
     "Poder suficiente para esmagar navios e quebrar telhados mas mesmo assim tenho medo do sol. O que eu sou?",
@@ -627,7 +637,18 @@ let mapa3 = [
     function NumeroAleatorio(minimo, maximo) {
     minimo = Math.ceil(minimo);
     maximo = Math.floor(maximo);
-    contagem = Math.floor(Math.random() * (maximo - minimo) + min);
+    return Math.floor(Math.random() * (maximo - minimo) + minimo);
+  }
+  function GeraNum(){
+    NumRandom = NumeroAleatorio(0,Perguntas.length)
+    for(let i in SaveNumRandom){
+        if(NumRandom == SaveNumRandom[i]){
+            GeraNum()
+            return
+        }
+    }
+    SaveNumRandom.push(NumRandom)
+    return
   }
 </script>
 <head>
@@ -676,7 +697,6 @@ let mapa3 = [
     {#if !enigma}
         
     <p class="textofutil">
-    {clearInterval(Movimentar)}
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
     </p>
@@ -741,6 +761,7 @@ let mapa3 = [
     {#if !enigma}
         
     <p class="textofutil">
+        {IniciarACaçada()}
         {Cronometrar()}
         {acelerar(Indice == SaveIndice)}
         {clearInterval(Tempo)}
@@ -788,17 +809,17 @@ let mapa3 = [
     </div>
         {:else}
         <p class="textofutil">
+
             {TempoEnigma()}
             {ResertarContador()}
-            
-        
+            {GeraNum()}
         </p>
         <p class="Enigma">O que achou das provações resultantes de sua ações precipitadas?</p>
         <p class="Enigma">Deveria tomar cuidado, este não é um labirinto comum e os guardiões deste lugar não gostam de visitantes inesperados.</p>
         <p class="Enigma">Responda-me cautelosamente, deuses não costumam ser piedosos como tanto propagam.</p>
-        <p class='Enigma'>{Perguntas[contagem]}</p>
+        <p class='Enigma'>{Perguntas[NumeroAleatorio(0,NumRandom)]}</p>
         <p class="Contador">{contador}s</p>
-    <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == respostas[contagem],MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
+    <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == respostas[NumeroAleatorio(0,NumRandom)],MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
     {#each mapa1 as linhas}
     <tr class="minimapa">
         {#each linhas as elementos}
@@ -872,15 +893,21 @@ let mapa3 = [
     </table>
     <div id="DicaTutorial" class="aimds">
         <ul class="info">Os deuses acataram a ira e súplicas do rei, mas não iriam contra Poseidon por um mero mortal. Então, com uma idéia de Atena, decidiram aprisionar o monstro em um labirinto. Desde então Minotauro vive de suas caçadas, e posso afirmar que ele sabe bem como tratar seus visitantes.</ul>
+    </div>
         {:else}
-        <p class="textofutil">{TempoEnigma()}{ResertarContador()}</p>
+        <p class="textofutil">
+
+            {TempoEnigma()}
+            {ResertarContador()}
+            {GeraNum()}
+        </p>
         <p class="Enigma">Gostei de você, jovem.</p>
         <p class="Enigma">Como pôde perceber, nem tudo é o que parece.</p>
         <p class="Enigma">Espero não acostuma-lo mal, mas por enquanto vou aconselha-lo a não confiar tanto no que seus olhos vêem.</p>
         <p class='Enigma'>Paredes falsas podem parecer algo impensável para humanos, mas não me compare com seres como vocês.</p>
-        <p class='Enigma'>{Perguntas[contagem]}</p>
+        <p class='Enigma'>{Perguntas[NumeroAleatorio(0,NumRandom)]}</p>
         <p class="Contador">{contador}</p>
-        <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == respostas[contagem],MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
+        <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == respostas[NumeroAleatorio(0,NumRandom)],MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
         {#each mapa2 as linhas}
         <tr class="minimapa">
         {#each linhas as elementos}
@@ -958,12 +985,17 @@ let mapa3 = [
         <ul class="info">Cuidado, os passos estão mais próximos a cada segundo. Consegue ouvir seu coração? Corra se quiser viver.</ul>
     </div>
         {:else}
-        <p class="textofutil">{TempoEnigma()}{ResertarContador()}</p>
+        <p class="textofutil">
+
+            {TempoEnigma()}
+            {ResertarContador()}
+            {GeraNum()};
+        </p>
         <p class="Enigma">Se saiu bem, Dante. Conseguiu sobreviver até aqui, mas será que realmente acabou?</p>
         <p class="Enigma">Seja rápido se deseja sobreviver.</p>
-        <p class='Enigma'>{Perguntas[contagem]}</p>
+        <p class='Enigma'>{Perguntas[NumeroAleatorio(0,NumRandom)]}</p>
         <p class="Contador">{contador}s</p>
-        <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == respostas[contagem],MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
+        <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == respostas[NumeroAleatorio(0,NumRandom)],MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
         {#each mapa3 as linhas}
         <tr class="minimapa">
         {#each linhas as elementos}
