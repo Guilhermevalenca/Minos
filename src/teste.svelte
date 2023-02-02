@@ -747,7 +747,7 @@ let mapa3 = [
     {:else if Ritmo == 1000}
         <p class="Enigma">O Minotauro começou a correr</p>
     {:else if Ritmo < 1000}
-        <p class="Enigma">O Minotauro estar enfurecido</p>
+        <p class="Enigma">O Minotauro está enfurecido</p>
     {/if}
     <table class="mapa" align="center" id="mapanivel1">
         {#each mapa1 as linhas,i}
@@ -827,7 +827,7 @@ let mapa3 = [
     {:else if Ritmo == 1000}
         <p class="Enigma">O Minotauro começou a correr</p>
     {:else if Ritmo < 1000}
-        <p class="Enigma">O Minotauro estar enfurecido</p>
+        <p class="Enigma">O Minotauro está enfurecido</p>
     {/if}
     <table class="mapa" align="center" id="mapanivel2">
         {#each mapa2 as linhas,i}
@@ -912,7 +912,7 @@ let mapa3 = [
     {:else if Ritmo == 1000}
         <p class="Enigma">O Minotauro começou a correr</p>
     {:else if Ritmo < 1000}
-        <p class="Enigma">O Minotauro estar enfurecido</p>
+        <p class="Enigma">O Minotauro está enfurecido</p>
     {/if}
     <table class="mapa" align="center" id="mapanivel3">
         {#each mapa3 as linhas,i}
