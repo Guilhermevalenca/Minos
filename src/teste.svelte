@@ -869,8 +869,7 @@ let mapa3 = [
         {/each}
     </table>
     <div id="DicaTutorial" class="aimds">
-        <ul class="fic">Os deuses acataram a ira e súplicas do rei, mas não iriam contra Poseidon por um mero mortal. Então, com uma idéia de Atena, decidiram aprisionar o monstro em um labirinto. Desde então Minotauro vive de suas caçadas, e posso afirmar que ele sabe bem como tratar visitantes.</ul>
-    </div>
+        <ul class="info">Os deuses acataram a ira e súplicas do rei, mas não iriam contra Poseidon por um mero mortal. Então, com uma idéia de Atena, decidiram aprisionar o monstro em um labirinto. Desde então Minotauro vive de suas caçadas, e posso afirmar que ele sabe bem como tratar seus visitantes.</ul>
         {:else}
         <p class="textofutil">{TempoEnigma()}{ResertarContador()}</p>
         <p class="Enigma">Gostei de você, jovem.</p>
@@ -954,7 +953,7 @@ let mapa3 = [
         {/each}
     </table>
     <div id="DicaTutorial" class="aimds">
-        <ul class="info"></ul>
+        <ul class="info">Cuidado, os passos estão mais próximos a cada segundo. Consegue ouvir seu coração? Corra se quiser viver.</ul>
     </div>
         {:else}
         <p class="textofutil">{TempoEnigma()}{ResertarContador()}</p>
