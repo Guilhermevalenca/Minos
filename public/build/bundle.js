@@ -21533,7 +21533,7 @@ var app = (function () {
     	return block;
     }
 
-    // (974:41) 
+    // (984:41) 
     function create_if_block_76(ctx) {
     	let current_block_type_index;
     	let if_block;
@@ -21606,14 +21606,14 @@ var app = (function () {
     		block,
     		id: create_if_block_76.name,
     		type: "if",
-    		source: "(974:41) ",
+    		source: "(984:41) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (892:40) 
+    // (902:40) 
     function create_if_block_54$1(ctx) {
     	let p;
     	let t1;
@@ -21635,7 +21635,7 @@ var app = (function () {
     			if_block.c();
     			if_block_anchor = empty();
     			attr_dev(p, "class", "FasesDoJogo");
-    			add_location(p, file$2, 893, 4, 53930);
+    			add_location(p, file$2, 903, 4, 54727);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -21670,14 +21670,14 @@ var app = (function () {
     		block,
     		id: create_if_block_54$1.name,
     		type: "if",
-    		source: "(892:40) ",
+    		source: "(902:40) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (807:40) 
+    // (817:40) 
     function create_if_block_32$1(ctx) {
     	let p;
     	let t1;
@@ -21699,7 +21699,7 @@ var app = (function () {
     			if_block.c();
     			if_block_anchor = empty();
     			attr_dev(p, "class", "FasesDoJogo");
-    			add_location(p, file$2, 808, 4, 49852);
+    			add_location(p, file$2, 818, 4, 50377);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -21734,14 +21734,14 @@ var app = (function () {
     		block,
     		id: create_if_block_32$1.name,
     		type: "if",
-    		source: "(807:40) ",
+    		source: "(817:40) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (727:40) 
+    // (737:40) 
     function create_if_block_12$1(ctx) {
     	let p;
     	let t1;
@@ -21763,7 +21763,7 @@ var app = (function () {
     			if_block.c();
     			if_block_anchor = empty();
     			attr_dev(p, "class", "FasesDoJogo");
-    			add_location(p, file$2, 728, 4, 46088);
+    			add_location(p, file$2, 738, 4, 46348);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -21798,17 +21798,19 @@ var app = (function () {
     		block,
     		id: create_if_block_12$1.name,
     		type: "if",
-    		source: "(727:40) ",
+    		source: "(737:40) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (662:0) {#if MudandoDeFase == "tutorial"}
+    // (672:0) {#if MudandoDeFase == "tutorial"}
     function create_if_block$2(ctx) {
-    	let p;
+    	let p0;
     	let t1;
+    	let p1;
+    	let t3;
     	let if_block_anchor;
 
     	function select_block_type_2(ctx, dirty) {
@@ -21821,17 +21823,24 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			p = element("p");
-    			p.textContent = "Tutorial";
+    			p0 = element("p");
+    			p0.textContent = "Tutorial";
     			t1 = space();
+    			p1 = element("p");
+    			p1.textContent = "Recomendamos utilizar fones de ouvidos";
+    			t3 = space();
     			if_block.c();
     			if_block_anchor = empty();
-    			attr_dev(p, "class", "FasesDoJogo");
-    			add_location(p, file$2, 663, 4, 42953);
+    			attr_dev(p0, "class", "FasesDoJogo");
+    			add_location(p0, file$2, 673, 4, 43149);
+    			attr_dev(p1, "class", "Enigma");
+    			add_location(p1, file$2, 674, 4, 43190);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, p, anchor);
+    			insert_dev(target, p0, anchor);
     			insert_dev(target, t1, anchor);
+    			insert_dev(target, p1, anchor);
+    			insert_dev(target, t3, anchor);
     			if_block.m(target, anchor);
     			insert_dev(target, if_block_anchor, anchor);
     		},
@@ -21851,8 +21860,10 @@ var app = (function () {
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(p0);
     			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(p1);
+    			if (detaching) detach_dev(t3);
     			if_block.d(detaching);
     			if (detaching) detach_dev(if_block_anchor);
     		}
@@ -21862,14 +21873,14 @@ var app = (function () {
     		block,
     		id: create_if_block$2.name,
     		type: "if",
-    		source: "(662:0) {#if MudandoDeFase == \\\"tutorial\\\"}",
+    		source: "(672:0) {#if MudandoDeFase == \\\"tutorial\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (1003:4) {:else}
+    // (1013:4) {:else}
     function create_else_block_4$1(ctx) {
     	let creditos;
     	let current;
@@ -21902,14 +21913,14 @@ var app = (function () {
     		block,
     		id: create_else_block_4$1.name,
     		type: "else",
-    		source: "(1003:4) {:else}",
+    		source: "(1013:4) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (976:4) {#if !enigma}
+    // (986:4) {#if !enigma}
     function create_if_block_77(ctx) {
     	let vitoria;
     	let t0;
@@ -21957,9 +21968,9 @@ var app = (function () {
     			}
 
     			attr_dev(p, "class", "textofutil");
-    			add_location(p, file$2, 979, 4, 57849);
+    			add_location(p, file$2, 989, 4, 58646);
     			attr_dev(table, "id", "mapanivel4");
-    			add_location(table, file$2, 985, 0, 58010);
+    			add_location(table, file$2, 995, 0, 58807);
     		},
     		m: function mount(target, anchor) {
     			mount_component(vitoria, target, anchor);
@@ -22033,14 +22044,14 @@ var app = (function () {
     		block,
     		id: create_if_block_77.name,
     		type: "if",
-    		source: "(976:4) {#if !enigma}",
+    		source: "(986:4) {#if !enigma}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (996:39) 
+    // (1006:39) 
     function create_if_block_81(ctx) {
     	let th;
     	let img;
@@ -22052,8 +22063,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
-    			add_location(img, file$2, 996, 20, 58539);
-    			add_location(th, file$2, 996, 16, 58535);
+    			add_location(img, file$2, 1006, 20, 59336);
+    			add_location(th, file$2, 1006, 16, 59332);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -22068,14 +22079,14 @@ var app = (function () {
     		block,
     		id: create_if_block_81.name,
     		type: "if",
-    		source: "(996:39) ",
+    		source: "(1006:39) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (994:43) 
+    // (1004:43) 
     function create_if_block_80(ctx) {
     	let th;
     	let img;
@@ -22087,9 +22098,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
-    			add_location(img, file$2, 994, 35, 58420);
+    			add_location(img, file$2, 1004, 35, 59217);
     			attr_dev(th, "class", "Dante4");
-    			add_location(th, file$2, 994, 16, 58401);
+    			add_location(th, file$2, 1004, 16, 59198);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -22104,14 +22115,14 @@ var app = (function () {
     		block,
     		id: create_if_block_80.name,
     		type: "if",
-    		source: "(994:43) ",
+    		source: "(1004:43) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (992:37) 
+    // (1002:37) 
     function create_if_block_79(ctx) {
     	let th;
     	let img;
@@ -22123,8 +22134,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredetunel.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$2, 992, 20, 58280);
-    			add_location(th, file$2, 992, 16, 58276);
+    			add_location(img, file$2, 1002, 20, 59077);
+    			add_location(th, file$2, 1002, 16, 59073);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -22139,14 +22150,14 @@ var app = (function () {
     		block,
     		id: create_if_block_79.name,
     		type: "if",
-    		source: "(992:37) ",
+    		source: "(1002:37) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (990:12) {#if elementos == 0}
+    // (1000:12) {#if elementos == 0}
     function create_if_block_78(ctx) {
     	let th;
     	let img;
@@ -22158,8 +22169,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaotunel.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
-    			add_location(img, file$2, 990, 20, 58165);
-    			add_location(th, file$2, 990, 16, 58161);
+    			add_location(img, file$2, 1000, 20, 58962);
+    			add_location(th, file$2, 1000, 16, 58958);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -22174,14 +22185,14 @@ var app = (function () {
     		block,
     		id: create_if_block_78.name,
     		type: "if",
-    		source: "(990:12) {#if elementos == 0}",
+    		source: "(1000:12) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (989:8) {#each linhas as elementos}
+    // (999:8) {#each linhas as elementos}
     function create_each_block_17$1(ctx) {
     	let if_block_anchor;
 
@@ -22228,14 +22239,14 @@ var app = (function () {
     		block,
     		id: create_each_block_17$1.name,
     		type: "each",
-    		source: "(989:8) {#each linhas as elementos}",
+    		source: "(999:8) {#each linhas as elementos}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (987:4) {#each mapa4 as linhas}
+    // (997:4) {#each mapa4 as linhas}
     function create_each_block_16$1(ctx) {
     	let tr;
     	let t;
@@ -22256,7 +22267,7 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file$2, 987, 4, 58068);
+    			add_location(tr, file$2, 997, 4, 58865);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -22302,14 +22313,14 @@ var app = (function () {
     		block,
     		id: create_each_block_16$1.name,
     		type: "each",
-    		source: "(987:4) {#each mapa4 as linhas}",
+    		source: "(997:4) {#each mapa4 as linhas}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (947:8) {:else}
+    // (957:8) {:else}
     function create_else_block_3$1(ctx) {
     	let p0;
     	let t0_value = /*TempoEnigma*/ ctx[26]() + "";
@@ -22371,18 +22382,18 @@ var app = (function () {
 
     			each_1_anchor = empty();
     			attr_dev(p0, "class", "textofutil");
-    			add_location(p0, file$2, 947, 8, 56243);
+    			add_location(p0, file$2, 957, 8, 57040);
     			attr_dev(p1, "class", "Enigma");
-    			add_location(p1, file$2, 948, 8, 56341);
+    			add_location(p1, file$2, 958, 8, 57138);
     			attr_dev(p2, "class", "Enigma");
-    			add_location(p2, file$2, 949, 8, 56454);
+    			add_location(p2, file$2, 959, 8, 57251);
     			attr_dev(p3, "class", "Enigma");
-    			add_location(p3, file$2, 950, 8, 56519);
+    			add_location(p3, file$2, 960, 8, 57316);
     			attr_dev(p4, "class", "Contador");
-    			add_location(p4, file$2, 951, 8, 56570);
+    			add_location(p4, file$2, 961, 8, 57367);
     			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
     			attr_dev(input, "class", "RespostaEnigma");
-    			add_location(input, file$2, 952, 8, 56615);
+    			add_location(input, file$2, 962, 8, 57412);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p0, anchor);
@@ -22485,14 +22496,14 @@ var app = (function () {
     		block,
     		id: create_else_block_3$1.name,
     		type: "else",
-    		source: "(947:8) {:else}",
+    		source: "(957:8) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (896:4) {#if !enigma}
+    // (906:4) {#if !enigma}
     function create_if_block_55$1(ctx) {
     	let p;
     	let t0_value = /*IniciarACaçada*/ ctx[29]() + "";
@@ -22564,16 +22575,16 @@ var app = (function () {
     			div = element("div");
     			ul = element("ul");
     			attr_dev(p, "class", "textofutil");
-    			add_location(p, file$2, 897, 4, 53998);
+    			add_location(p, file$2, 907, 4, 54795);
     			attr_dev(table, "class", "mapa");
     			attr_dev(table, "align", "center");
     			attr_dev(table, "id", "mapanivel3");
-    			add_location(table, file$2, 916, 4, 54712);
+    			add_location(table, file$2, 926, 4, 55509);
     			attr_dev(ul, "class", "info");
-    			add_location(ul, file$2, 944, 8, 56182);
+    			add_location(ul, file$2, 954, 8, 56979);
     			attr_dev(div, "id", "DicaTutorial");
     			attr_dev(div, "class", "aimds");
-    			add_location(div, file$2, 943, 4, 56135);
+    			add_location(div, file$2, 953, 4, 56932);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -22662,14 +22673,14 @@ var app = (function () {
     		block,
     		id: create_if_block_55$1.name,
     		type: "if",
-    		source: "(896:4) {#if !enigma}",
+    		source: "(906:4) {#if !enigma}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (967:33) 
+    // (977:33) 
     function create_if_block_75(ctx) {
     	let th;
     	let img;
@@ -22682,8 +22693,8 @@ var app = (function () {
     			attr_dev(img, "class", "imgmini");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredefalsanivel3.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "paredefalsa");
-    			add_location(img, file$2, 967, 16, 57597);
-    			add_location(th, file$2, 967, 12, 57593);
+    			add_location(img, file$2, 977, 16, 58394);
+    			add_location(th, file$2, 977, 12, 58390);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -22698,14 +22709,14 @@ var app = (function () {
     		block,
     		id: create_if_block_75.name,
     		type: "if",
-    		source: "(967:33) ",
+    		source: "(977:33) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (965:39) 
+    // (975:39) 
     function create_if_block_74(ctx) {
     	let th;
     	let img;
@@ -22718,8 +22729,8 @@ var app = (function () {
     			attr_dev(img, "class", "imgmini");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "falsa");
-    			add_location(img, file$2, 965, 16, 57477);
-    			add_location(th, file$2, 965, 12, 57473);
+    			add_location(img, file$2, 975, 16, 58274);
+    			add_location(th, file$2, 975, 12, 58270);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -22734,14 +22745,14 @@ var app = (function () {
     		block,
     		id: create_if_block_74.name,
     		type: "if",
-    		source: "(965:39) ",
+    		source: "(975:39) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (963:39) 
+    // (973:39) 
     function create_if_block_73(ctx) {
     	let th;
     	let img;
@@ -22755,8 +22766,8 @@ var app = (function () {
     			attr_dev(img, "id", "chao1");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel3.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
-    			add_location(img, file$2, 963, 16, 57330);
-    			add_location(th, file$2, 963, 12, 57326);
+    			add_location(img, file$2, 973, 16, 58127);
+    			add_location(th, file$2, 973, 12, 58123);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -22771,14 +22782,14 @@ var app = (function () {
     		block,
     		id: create_if_block_73.name,
     		type: "if",
-    		source: "(963:39) ",
+    		source: "(973:39) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (961:35) 
+    // (971:35) 
     function create_if_block_72(ctx) {
     	let th;
     	let img;
@@ -22791,8 +22802,8 @@ var app = (function () {
     			attr_dev(img, "class", "imgmini");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saidanivel3.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
-    			add_location(img, file$2, 961, 16, 57198);
-    			add_location(th, file$2, 961, 12, 57194);
+    			add_location(img, file$2, 971, 16, 57995);
+    			add_location(th, file$2, 971, 12, 57991);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -22807,14 +22818,14 @@ var app = (function () {
     		block,
     		id: create_if_block_72.name,
     		type: "if",
-    		source: "(961:35) ",
+    		source: "(971:35) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (959:33) 
+    // (969:33) 
     function create_if_block_71(ctx) {
     	let th;
     	let img;
@@ -22827,8 +22838,8 @@ var app = (function () {
     			attr_dev(img, "class", "imgmini");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel3.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$2, 959, 16, 57068);
-    			add_location(th, file$2, 959, 12, 57064);
+    			add_location(img, file$2, 969, 16, 57865);
+    			add_location(th, file$2, 969, 12, 57861);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -22843,14 +22854,14 @@ var app = (function () {
     		block,
     		id: create_if_block_71.name,
     		type: "if",
-    		source: "(959:33) ",
+    		source: "(969:33) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (957:8) {#if elementos == 0}
+    // (967:8) {#if elementos == 0}
     function create_if_block_70(ctx) {
     	let th;
     	let img;
@@ -22864,8 +22875,8 @@ var app = (function () {
     			attr_dev(img, "id", "chao1");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel3.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
-    			add_location(img, file$2, 957, 16, 56933);
-    			add_location(th, file$2, 957, 12, 56929);
+    			add_location(img, file$2, 967, 16, 57730);
+    			add_location(th, file$2, 967, 12, 57726);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -22880,14 +22891,14 @@ var app = (function () {
     		block,
     		id: create_if_block_70.name,
     		type: "if",
-    		source: "(957:8) {#if elementos == 0}",
+    		source: "(967:8) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (956:8) {#each linhas as elementos}
+    // (966:8) {#each linhas as elementos}
     function create_each_block_15$1(ctx) {
     	let if_block_anchor;
 
@@ -22936,14 +22947,14 @@ var app = (function () {
     		block,
     		id: create_each_block_15$1.name,
     		type: "each",
-    		source: "(956:8) {#each linhas as elementos}",
+    		source: "(966:8) {#each linhas as elementos}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (954:8) {#each mapa3 as linhas}
+    // (964:8) {#each mapa3 as linhas}
     function create_each_block_14$1(ctx) {
     	let tr;
     	let t;
@@ -22965,7 +22976,7 @@ var app = (function () {
 
     			t = space();
     			attr_dev(tr, "class", "minimapa");
-    			add_location(tr, file$2, 954, 8, 56827);
+    			add_location(tr, file$2, 964, 8, 57624);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -23011,14 +23022,14 @@ var app = (function () {
     		block,
     		id: create_each_block_14$1.name,
     		type: "each",
-    		source: "(954:8) {#each mapa3 as linhas}",
+    		source: "(964:8) {#each mapa3 as linhas}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (914:27) 
+    // (924:27) 
     function create_if_block_69(ctx) {
     	let p;
 
@@ -23027,7 +23038,7 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "O Minotauro está enfurecido";
     			attr_dev(p, "class", "Enigma");
-    			add_location(p, file$2, 914, 8, 54646);
+    			add_location(p, file$2, 924, 8, 55443);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -23042,14 +23053,14 @@ var app = (function () {
     		block,
     		id: create_if_block_69.name,
     		type: "if",
-    		source: "(914:27) ",
+    		source: "(924:27) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (912:28) 
+    // (922:28) 
     function create_if_block_68$1(ctx) {
     	let p;
 
@@ -23058,7 +23069,7 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "O Minotauro começou a correr";
     			attr_dev(p, "class", "Enigma");
-    			add_location(p, file$2, 912, 8, 54557);
+    			add_location(p, file$2, 922, 8, 55354);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -23073,14 +23084,14 @@ var app = (function () {
     		block,
     		id: create_if_block_68$1.name,
     		type: "if",
-    		source: "(912:28) ",
+    		source: "(922:28) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (910:28) 
+    // (920:28) 
     function create_if_block_67$1(ctx) {
     	let p;
 
@@ -23089,7 +23100,7 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "O Minotauro acelerou o passo";
     			attr_dev(p, "class", "Enigma");
-    			add_location(p, file$2, 910, 8, 54467);
+    			add_location(p, file$2, 920, 8, 55264);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -23104,14 +23115,14 @@ var app = (function () {
     		block,
     		id: create_if_block_67$1.name,
     		type: "if",
-    		source: "(910:28) ",
+    		source: "(920:28) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (908:28) 
+    // (918:28) 
     function create_if_block_66$1(ctx) {
     	let p;
 
@@ -23120,7 +23131,7 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "O Minotauro começou a perseguição";
     			attr_dev(p, "class", "Enigma");
-    			add_location(p, file$2, 908, 8, 54372);
+    			add_location(p, file$2, 918, 8, 55169);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -23135,14 +23146,14 @@ var app = (function () {
     		block,
     		id: create_if_block_66$1.name,
     		type: "if",
-    		source: "(908:28) ",
+    		source: "(918:28) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (906:4) {#if HoraDaCaçada > 0}
+    // (916:4) {#if HoraDaCaçada > 0}
     function create_if_block_65$1(ctx) {
     	let p;
     	let t0;
@@ -23154,7 +23165,7 @@ var app = (function () {
     			t0 = text("O Minotauro ira surgir em: ");
     			t1 = text(/*HoraDaCaçada*/ ctx[18]);
     			attr_dev(p, "class", "Enigma");
-    			add_location(p, file$2, 906, 8, 54269);
+    			add_location(p, file$2, 916, 8, 55066);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -23173,14 +23184,14 @@ var app = (function () {
     		block,
     		id: create_if_block_65$1.name,
     		type: "if",
-    		source: "(906:4) {#if HoraDaCaçada > 0}",
+    		source: "(916:4) {#if HoraDaCaçada > 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (919:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+    // (929:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
     function create_if_block_56$1(ctx) {
     	let tr;
     	let t;
@@ -23201,7 +23212,7 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file$2, 919, 12, 54880);
+    			add_location(tr, file$2, 929, 12, 55677);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -23247,14 +23258,14 @@ var app = (function () {
     		block,
     		id: create_if_block_56$1.name,
     		type: "if",
-    		source: "(919:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		source: "(929:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (922:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+    // (932:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
     function create_if_block_57$1(ctx) {
     	let if_block_anchor;
 
@@ -23304,14 +23315,14 @@ var app = (function () {
     		block,
     		id: create_if_block_57$1.name,
     		type: "if",
-    		source: "(922:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
+    		source: "(932:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (935:51) 
+    // (945:51) 
     function create_if_block_64$1(ctx) {
     	let th;
     	let img;
@@ -23323,8 +23334,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/minotauro.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "monstro");
-    			add_location(img, file$2, 935, 28, 55924);
-    			add_location(th, file$2, 935, 24, 55920);
+    			add_location(img, file$2, 945, 28, 56721);
+    			add_location(th, file$2, 945, 24, 56717);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -23339,14 +23350,14 @@ var app = (function () {
     		block,
     		id: create_if_block_64$1.name,
     		type: "if",
-    		source: "(935:51) ",
+    		source: "(945:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (933:45) 
+    // (943:45) 
     function create_if_block_63$1(ctx) {
     	let th;
     	let img;
@@ -23358,8 +23369,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredefalsanivel2.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "paredefalsa");
-    			add_location(img, file$2, 933, 28, 55772);
-    			add_location(th, file$2, 933, 24, 55768);
+    			add_location(img, file$2, 943, 28, 56569);
+    			add_location(th, file$2, 943, 24, 56565);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -23374,14 +23385,14 @@ var app = (function () {
     		block,
     		id: create_if_block_63$1.name,
     		type: "if",
-    		source: "(933:45) ",
+    		source: "(943:45) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (931:51) 
+    // (941:51) 
     function create_if_block_62$1(ctx) {
     	let th;
     	let img;
@@ -23393,8 +23404,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "falsa");
-    			add_location(img, file$2, 931, 28, 55644);
-    			add_location(th, file$2, 931, 24, 55640);
+    			add_location(img, file$2, 941, 28, 56441);
+    			add_location(th, file$2, 941, 24, 56437);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -23409,14 +23420,14 @@ var app = (function () {
     		block,
     		id: create_if_block_62$1.name,
     		type: "if",
-    		source: "(931:51) ",
+    		source: "(941:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (929:51) 
+    // (939:51) 
     function create_if_block_61$1(ctx) {
     	let th;
     	let img;
@@ -23428,9 +23439,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
-    			add_location(img, file$2, 929, 43, 55505);
+    			add_location(img, file$2, 939, 43, 56302);
     			attr_dev(th, "class", "Dante3");
-    			add_location(th, file$2, 929, 24, 55486);
+    			add_location(th, file$2, 939, 24, 56283);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -23445,14 +23456,14 @@ var app = (function () {
     		block,
     		id: create_if_block_61$1.name,
     		type: "if",
-    		source: "(929:51) ",
+    		source: "(939:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (927:47) 
+    // (937:47) 
     function create_if_block_60$1(ctx) {
     	let th;
     	let img;
@@ -23464,8 +23475,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saidanivel3.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
-    			add_location(img, file$2, 927, 28, 55350);
-    			add_location(th, file$2, 927, 24, 55346);
+    			add_location(img, file$2, 937, 28, 56147);
+    			add_location(th, file$2, 937, 24, 56143);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -23480,14 +23491,14 @@ var app = (function () {
     		block,
     		id: create_if_block_60$1.name,
     		type: "if",
-    		source: "(927:47) ",
+    		source: "(937:47) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (925:45) 
+    // (935:45) 
     function create_if_block_59$1(ctx) {
     	let th;
     	let img;
@@ -23499,8 +23510,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel3.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$2, 925, 28, 55212);
-    			add_location(th, file$2, 925, 24, 55208);
+    			add_location(img, file$2, 935, 28, 56009);
+    			add_location(th, file$2, 935, 24, 56005);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -23515,14 +23526,14 @@ var app = (function () {
     		block,
     		id: create_if_block_59$1.name,
     		type: "if",
-    		source: "(925:45) ",
+    		source: "(935:45) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (923:20) {#if elementos == 0}
+    // (933:20) {#if elementos == 0}
     function create_if_block_58$1(ctx) {
     	let th;
     	let img;
@@ -23534,8 +23545,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel3.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
-    			add_location(img, file$2, 923, 29, 55080);
-    			add_location(th, file$2, 923, 24, 55075);
+    			add_location(img, file$2, 933, 29, 55877);
+    			add_location(th, file$2, 933, 24, 55872);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -23550,14 +23561,14 @@ var app = (function () {
     		block,
     		id: create_if_block_58$1.name,
     		type: "if",
-    		source: "(923:20) {#if elementos == 0}",
+    		source: "(933:20) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (921:16) {#each linhas as elementos,j}
+    // (931:16) {#each linhas as elementos,j}
     function create_each_block_13$1(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteX*/ ctx[7] <= /*j*/ ctx[63] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[21] * 2 >= /*j*/ ctx[63] && create_if_block_57$1(ctx);
@@ -23595,14 +23606,14 @@ var app = (function () {
     		block,
     		id: create_each_block_13$1.name,
     		type: "each",
-    		source: "(921:16) {#each linhas as elementos,j}",
+    		source: "(931:16) {#each linhas as elementos,j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (918:8) {#each mapa3 as linhas,i}
+    // (928:8) {#each mapa3 as linhas,i}
     function create_each_block_12$1(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteY*/ ctx[8] <= /*i*/ ctx[60] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[21] * 2 >= /*i*/ ctx[60] && create_if_block_56$1(ctx);
@@ -23640,14 +23651,14 @@ var app = (function () {
     		block,
     		id: create_each_block_12$1.name,
     		type: "each",
-    		source: "(918:8) {#each mapa3 as linhas,i}",
+    		source: "(928:8) {#each mapa3 as linhas,i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (862:8) {:else}
+    // (872:8) {:else}
     function create_else_block_2$1(ctx) {
     	let p0;
     	let t0_value = /*TempoEnigma*/ ctx[26]() + "";
@@ -23719,22 +23730,22 @@ var app = (function () {
 
     			each_1_anchor = empty();
     			attr_dev(p0, "class", "textofutil");
-    			add_location(p0, file$2, 862, 8, 52154);
+    			add_location(p0, file$2, 872, 8, 52951);
     			attr_dev(p1, "class", "Enigma");
-    			add_location(p1, file$2, 863, 8, 52252);
+    			add_location(p1, file$2, 873, 8, 53049);
     			attr_dev(p2, "class", "Enigma");
-    			add_location(p2, file$2, 864, 8, 52306);
+    			add_location(p2, file$2, 874, 8, 53103);
     			attr_dev(p3, "class", "Enigma");
-    			add_location(p3, file$2, 865, 8, 52382);
+    			add_location(p3, file$2, 875, 8, 53179);
     			attr_dev(p4, "class", "Enigma");
-    			add_location(p4, file$2, 866, 8, 52519);
+    			add_location(p4, file$2, 876, 8, 53316);
     			attr_dev(p5, "class", "Enigma");
-    			add_location(p5, file$2, 867, 8, 52650);
+    			add_location(p5, file$2, 877, 8, 53447);
     			attr_dev(p6, "class", "Contador");
-    			add_location(p6, file$2, 868, 8, 52701);
+    			add_location(p6, file$2, 878, 8, 53498);
     			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
     			attr_dev(input, "class", "RespostaEnigma");
-    			add_location(input, file$2, 869, 8, 52746);
+    			add_location(input, file$2, 879, 8, 53543);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p0, anchor);
@@ -23845,14 +23856,14 @@ var app = (function () {
     		block,
     		id: create_else_block_2$1.name,
     		type: "else",
-    		source: "(862:8) {:else}",
+    		source: "(872:8) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (811:4) {#if !enigma}
+    // (821:4) {#if !enigma}
     function create_if_block_33$1(ctx) {
     	let p;
     	let t0_value = /*IniciarACaçada*/ ctx[29]() + "";
@@ -23923,17 +23934,18 @@ var app = (function () {
     			t13 = space();
     			div = element("div");
     			ul = element("ul");
+    			ul.textContent = "Os deuses acataram a ira e súplicas do rei, mas não iriam contra Poseidon por um mero mortal. Então, com uma idéia de Atena, decidiram aprisionar o monstro em um labirinto. Desde então Minotauro vive de suas caçadas, e posso afirmar que ele sabe bem como tratar visitantes.";
     			attr_dev(p, "class", "textofutil");
-    			add_location(p, file$2, 812, 4, 49920);
+    			add_location(p, file$2, 822, 4, 50445);
     			attr_dev(table, "class", "mapa");
     			attr_dev(table, "align", "center");
     			attr_dev(table, "id", "mapanivel2");
-    			add_location(table, file$2, 831, 4, 50634);
-    			attr_dev(ul, "class", "info");
-    			add_location(ul, file$2, 859, 8, 52093);
+    			add_location(table, file$2, 841, 4, 51159);
+    			attr_dev(ul, "class", "fic");
+    			add_location(ul, file$2, 869, 8, 52618);
     			attr_dev(div, "id", "DicaTutorial");
     			attr_dev(div, "class", "aimds");
-    			add_location(div, file$2, 858, 4, 52046);
+    			add_location(div, file$2, 868, 4, 52571);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -24022,14 +24034,14 @@ var app = (function () {
     		block,
     		id: create_if_block_33$1.name,
     		type: "if",
-    		source: "(811:4) {#if !enigma}",
+    		source: "(821:4) {#if !enigma}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (884:33) 
+    // (894:33) 
     function create_if_block_53$1(ctx) {
     	let th;
     	let img;
@@ -24042,8 +24054,8 @@ var app = (function () {
     			attr_dev(img, "class", "imgmini");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredefalsanivel2.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "paredefalsa");
-    			add_location(img, file$2, 884, 16, 53722);
-    			add_location(th, file$2, 884, 12, 53718);
+    			add_location(img, file$2, 894, 16, 54519);
+    			add_location(th, file$2, 894, 12, 54515);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -24058,14 +24070,14 @@ var app = (function () {
     		block,
     		id: create_if_block_53$1.name,
     		type: "if",
-    		source: "(884:33) ",
+    		source: "(894:33) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (882:39) 
+    // (892:39) 
     function create_if_block_52$1(ctx) {
     	let th;
     	let img;
@@ -24078,8 +24090,8 @@ var app = (function () {
     			attr_dev(img, "class", "imgmini");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "falsa");
-    			add_location(img, file$2, 882, 16, 53602);
-    			add_location(th, file$2, 882, 12, 53598);
+    			add_location(img, file$2, 892, 16, 54399);
+    			add_location(th, file$2, 892, 12, 54395);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -24094,14 +24106,14 @@ var app = (function () {
     		block,
     		id: create_if_block_52$1.name,
     		type: "if",
-    		source: "(882:39) ",
+    		source: "(892:39) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (880:39) 
+    // (890:39) 
     function create_if_block_51$1(ctx) {
     	let th;
     	let img;
@@ -24115,8 +24127,8 @@ var app = (function () {
     			attr_dev(img, "id", "chao1");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel2.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
-    			add_location(img, file$2, 880, 16, 53455);
-    			add_location(th, file$2, 880, 12, 53451);
+    			add_location(img, file$2, 890, 16, 54252);
+    			add_location(th, file$2, 890, 12, 54248);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -24131,14 +24143,14 @@ var app = (function () {
     		block,
     		id: create_if_block_51$1.name,
     		type: "if",
-    		source: "(880:39) ",
+    		source: "(890:39) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (878:35) 
+    // (888:35) 
     function create_if_block_50$1(ctx) {
     	let th;
     	let img;
@@ -24151,8 +24163,8 @@ var app = (function () {
     			attr_dev(img, "class", "imgmini");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
-    			add_location(img, file$2, 878, 16, 53329);
-    			add_location(th, file$2, 878, 12, 53325);
+    			add_location(img, file$2, 888, 16, 54126);
+    			add_location(th, file$2, 888, 12, 54122);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -24167,14 +24179,14 @@ var app = (function () {
     		block,
     		id: create_if_block_50$1.name,
     		type: "if",
-    		source: "(878:35) ",
+    		source: "(888:35) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (876:33) 
+    // (886:33) 
     function create_if_block_49$1(ctx) {
     	let th;
     	let img;
@@ -24187,8 +24199,8 @@ var app = (function () {
     			attr_dev(img, "class", "imgmini");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel2.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$2, 876, 16, 53199);
-    			add_location(th, file$2, 876, 12, 53195);
+    			add_location(img, file$2, 886, 16, 53996);
+    			add_location(th, file$2, 886, 12, 53992);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -24203,14 +24215,14 @@ var app = (function () {
     		block,
     		id: create_if_block_49$1.name,
     		type: "if",
-    		source: "(876:33) ",
+    		source: "(886:33) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (874:8) {#if elementos == 0}
+    // (884:8) {#if elementos == 0}
     function create_if_block_48$1(ctx) {
     	let th;
     	let img;
@@ -24224,8 +24236,8 @@ var app = (function () {
     			attr_dev(img, "id", "chao1");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel2.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
-    			add_location(img, file$2, 874, 16, 53064);
-    			add_location(th, file$2, 874, 12, 53060);
+    			add_location(img, file$2, 884, 16, 53861);
+    			add_location(th, file$2, 884, 12, 53857);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -24240,14 +24252,14 @@ var app = (function () {
     		block,
     		id: create_if_block_48$1.name,
     		type: "if",
-    		source: "(874:8) {#if elementos == 0}",
+    		source: "(884:8) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (873:8) {#each linhas as elementos}
+    // (883:8) {#each linhas as elementos}
     function create_each_block_11$1(ctx) {
     	let if_block_anchor;
 
@@ -24296,14 +24308,14 @@ var app = (function () {
     		block,
     		id: create_each_block_11$1.name,
     		type: "each",
-    		source: "(873:8) {#each linhas as elementos}",
+    		source: "(883:8) {#each linhas as elementos}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (871:8) {#each mapa2 as linhas}
+    // (881:8) {#each mapa2 as linhas}
     function create_each_block_10$1(ctx) {
     	let tr;
     	let t;
@@ -24325,7 +24337,7 @@ var app = (function () {
 
     			t = space();
     			attr_dev(tr, "class", "minimapa");
-    			add_location(tr, file$2, 871, 8, 52958);
+    			add_location(tr, file$2, 881, 8, 53755);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -24371,14 +24383,14 @@ var app = (function () {
     		block,
     		id: create_each_block_10$1.name,
     		type: "each",
-    		source: "(871:8) {#each mapa2 as linhas}",
+    		source: "(881:8) {#each mapa2 as linhas}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (829:27) 
+    // (839:27) 
     function create_if_block_47$1(ctx) {
     	let p;
 
@@ -24387,7 +24399,7 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "O Minotauro está enfurecido";
     			attr_dev(p, "class", "Enigma");
-    			add_location(p, file$2, 829, 8, 50568);
+    			add_location(p, file$2, 839, 8, 51093);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -24402,14 +24414,14 @@ var app = (function () {
     		block,
     		id: create_if_block_47$1.name,
     		type: "if",
-    		source: "(829:27) ",
+    		source: "(839:27) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (827:28) 
+    // (837:28) 
     function create_if_block_46$1(ctx) {
     	let p;
 
@@ -24418,7 +24430,7 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "O Minotauro começou a correr";
     			attr_dev(p, "class", "Enigma");
-    			add_location(p, file$2, 827, 8, 50479);
+    			add_location(p, file$2, 837, 8, 51004);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -24433,14 +24445,14 @@ var app = (function () {
     		block,
     		id: create_if_block_46$1.name,
     		type: "if",
-    		source: "(827:28) ",
+    		source: "(837:28) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (825:28) 
+    // (835:28) 
     function create_if_block_45$1(ctx) {
     	let p;
 
@@ -24449,7 +24461,7 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "O Minotauro acelerou o passo";
     			attr_dev(p, "class", "Enigma");
-    			add_location(p, file$2, 825, 8, 50389);
+    			add_location(p, file$2, 835, 8, 50914);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -24464,14 +24476,14 @@ var app = (function () {
     		block,
     		id: create_if_block_45$1.name,
     		type: "if",
-    		source: "(825:28) ",
+    		source: "(835:28) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (823:28) 
+    // (833:28) 
     function create_if_block_44$1(ctx) {
     	let p;
 
@@ -24480,7 +24492,7 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "O Minotauro começou a perseguição";
     			attr_dev(p, "class", "Enigma");
-    			add_location(p, file$2, 823, 8, 50294);
+    			add_location(p, file$2, 833, 8, 50819);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -24495,14 +24507,14 @@ var app = (function () {
     		block,
     		id: create_if_block_44$1.name,
     		type: "if",
-    		source: "(823:28) ",
+    		source: "(833:28) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (821:4) {#if HoraDaCaçada > 0}
+    // (831:4) {#if HoraDaCaçada > 0}
     function create_if_block_43$1(ctx) {
     	let p;
     	let t0;
@@ -24514,7 +24526,7 @@ var app = (function () {
     			t0 = text("O Minotauro ira surgir em: ");
     			t1 = text(/*HoraDaCaçada*/ ctx[18]);
     			attr_dev(p, "class", "Enigma");
-    			add_location(p, file$2, 821, 8, 50191);
+    			add_location(p, file$2, 831, 8, 50716);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -24533,14 +24545,14 @@ var app = (function () {
     		block,
     		id: create_if_block_43$1.name,
     		type: "if",
-    		source: "(821:4) {#if HoraDaCaçada > 0}",
+    		source: "(831:4) {#if HoraDaCaçada > 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (834:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+    // (844:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
     function create_if_block_34$1(ctx) {
     	let tr;
     	let t;
@@ -24561,7 +24573,7 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file$2, 834, 12, 50802);
+    			add_location(tr, file$2, 844, 12, 51327);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -24607,14 +24619,14 @@ var app = (function () {
     		block,
     		id: create_if_block_34$1.name,
     		type: "if",
-    		source: "(834:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		source: "(844:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (837:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+    // (847:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
     function create_if_block_35$1(ctx) {
     	let if_block_anchor;
 
@@ -24664,14 +24676,14 @@ var app = (function () {
     		block,
     		id: create_if_block_35$1.name,
     		type: "if",
-    		source: "(837:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
+    		source: "(847:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (850:51) 
+    // (860:51) 
     function create_if_block_42$1(ctx) {
     	let th;
     	let img;
@@ -24683,8 +24695,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/minotauro.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "monstro");
-    			add_location(img, file$2, 850, 28, 51839);
-    			add_location(th, file$2, 850, 24, 51835);
+    			add_location(img, file$2, 860, 28, 52364);
+    			add_location(th, file$2, 860, 24, 52360);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -24699,14 +24711,14 @@ var app = (function () {
     		block,
     		id: create_if_block_42$1.name,
     		type: "if",
-    		source: "(850:51) ",
+    		source: "(860:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (848:45) 
+    // (858:45) 
     function create_if_block_41$1(ctx) {
     	let th;
     	let img;
@@ -24718,8 +24730,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredefalsanivel2.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "paredefalsa");
-    			add_location(img, file$2, 848, 28, 51687);
-    			add_location(th, file$2, 848, 24, 51683);
+    			add_location(img, file$2, 858, 28, 52212);
+    			add_location(th, file$2, 858, 24, 52208);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -24734,14 +24746,14 @@ var app = (function () {
     		block,
     		id: create_if_block_41$1.name,
     		type: "if",
-    		source: "(848:45) ",
+    		source: "(858:45) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (846:51) 
+    // (856:51) 
     function create_if_block_40$1(ctx) {
     	let th;
     	let img;
@@ -24753,8 +24765,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "falsa");
-    			add_location(img, file$2, 846, 28, 51559);
-    			add_location(th, file$2, 846, 24, 51555);
+    			add_location(img, file$2, 856, 28, 52084);
+    			add_location(th, file$2, 856, 24, 52080);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -24769,14 +24781,14 @@ var app = (function () {
     		block,
     		id: create_if_block_40$1.name,
     		type: "if",
-    		source: "(846:51) ",
+    		source: "(856:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (844:51) 
+    // (854:51) 
     function create_if_block_39$1(ctx) {
     	let th;
     	let img;
@@ -24788,9 +24800,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
-    			add_location(img, file$2, 844, 43, 51420);
+    			add_location(img, file$2, 854, 43, 51945);
     			attr_dev(th, "class", "Dante2");
-    			add_location(th, file$2, 844, 24, 51401);
+    			add_location(th, file$2, 854, 24, 51926);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -24805,14 +24817,14 @@ var app = (function () {
     		block,
     		id: create_if_block_39$1.name,
     		type: "if",
-    		source: "(844:51) ",
+    		source: "(854:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (842:47) 
+    // (852:47) 
     function create_if_block_38$1(ctx) {
     	let th;
     	let img;
@@ -24824,8 +24836,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
-    			add_location(img, file$2, 842, 28, 51271);
-    			add_location(th, file$2, 842, 24, 51267);
+    			add_location(img, file$2, 852, 28, 51796);
+    			add_location(th, file$2, 852, 24, 51792);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -24840,14 +24852,14 @@ var app = (function () {
     		block,
     		id: create_if_block_38$1.name,
     		type: "if",
-    		source: "(842:47) ",
+    		source: "(852:47) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (840:45) 
+    // (850:45) 
     function create_if_block_37$1(ctx) {
     	let th;
     	let img;
@@ -24859,8 +24871,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel2.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$2, 840, 28, 51133);
-    			add_location(th, file$2, 840, 24, 51129);
+    			add_location(img, file$2, 850, 28, 51658);
+    			add_location(th, file$2, 850, 24, 51654);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -24875,14 +24887,14 @@ var app = (function () {
     		block,
     		id: create_if_block_37$1.name,
     		type: "if",
-    		source: "(840:45) ",
+    		source: "(850:45) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (838:20) {#if elementos == 0}
+    // (848:20) {#if elementos == 0}
     function create_if_block_36$1(ctx) {
     	let th;
     	let img;
@@ -24894,8 +24906,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel2.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
-    			add_location(img, file$2, 838, 28, 51001);
-    			add_location(th, file$2, 838, 24, 50997);
+    			add_location(img, file$2, 848, 28, 51526);
+    			add_location(th, file$2, 848, 24, 51522);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -24910,14 +24922,14 @@ var app = (function () {
     		block,
     		id: create_if_block_36$1.name,
     		type: "if",
-    		source: "(838:20) {#if elementos == 0}",
+    		source: "(848:20) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (836:16) {#each linhas as elementos,j}
+    // (846:16) {#each linhas as elementos,j}
     function create_each_block_9$1(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteX*/ ctx[7] <= /*j*/ ctx[63] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[21] * 2 >= /*j*/ ctx[63] && create_if_block_35$1(ctx);
@@ -24955,14 +24967,14 @@ var app = (function () {
     		block,
     		id: create_each_block_9$1.name,
     		type: "each",
-    		source: "(836:16) {#each linhas as elementos,j}",
+    		source: "(846:16) {#each linhas as elementos,j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (833:8) {#each mapa2 as linhas,i}
+    // (843:8) {#each mapa2 as linhas,i}
     function create_each_block_8$1(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteY*/ ctx[8] <= /*i*/ ctx[60] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[21] * 2 >= /*i*/ ctx[60] && create_if_block_34$1(ctx);
@@ -25000,14 +25012,14 @@ var app = (function () {
     		block,
     		id: create_each_block_8$1.name,
     		type: "each",
-    		source: "(833:8) {#each mapa2 as linhas,i}",
+    		source: "(843:8) {#each mapa2 as linhas,i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (780:8) {:else}
+    // (790:8) {:else}
     function create_else_block_1$1(ctx) {
     	let p0;
     	let t0_value = /*TempoEnigma*/ ctx[26]() + "";
@@ -25076,20 +25088,20 @@ var app = (function () {
 
     			each_1_anchor = empty();
     			attr_dev(p0, "class", "textofutil");
-    			add_location(p0, file$2, 780, 8, 48265);
+    			add_location(p0, file$2, 790, 8, 48790);
     			attr_dev(p1, "class", "Enigma");
-    			add_location(p1, file$2, 781, 8, 48363);
+    			add_location(p1, file$2, 791, 8, 48888);
     			attr_dev(p2, "class", "Enigma");
-    			add_location(p2, file$2, 782, 8, 48459);
+    			add_location(p2, file$2, 792, 8, 48984);
     			attr_dev(p3, "class", "Enigma");
-    			add_location(p3, file$2, 783, 8, 48608);
+    			add_location(p3, file$2, 793, 8, 49133);
     			attr_dev(p4, "class", "Enigma");
-    			add_location(p4, file$2, 784, 8, 48721);
+    			add_location(p4, file$2, 794, 8, 49246);
     			attr_dev(p5, "class", "Contador");
-    			add_location(p5, file$2, 785, 8, 48774);
+    			add_location(p5, file$2, 795, 8, 49299);
     			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
     			attr_dev(input, "class", "RespostaEnigma");
-    			add_location(input, file$2, 786, 4, 48815);
+    			add_location(input, file$2, 796, 4, 49340);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p0, anchor);
@@ -25198,14 +25210,14 @@ var app = (function () {
     		block,
     		id: create_else_block_1$1.name,
     		type: "else",
-    		source: "(780:8) {:else}",
+    		source: "(790:8) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (731:4) {#if !enigma}
+    // (741:4) {#if !enigma}
     function create_if_block_13$1(ctx) {
     	let p;
     	let t0_value = /*IniciarACaçada*/ ctx[29]() + "";
@@ -25276,18 +25288,18 @@ var app = (function () {
     			t13 = space();
     			div = element("div");
     			ul = element("ul");
-    			ul.textContent = "OLA TUDO BEM?";
+    			ul.textContent = "Há muito tempo atrás, mais tempo do que todas as suas gerações podem ter passado na terra, Minotauro nasceu da relação da rainha de Creta com um touro dado por Poseidon. O rei tomado pela raiva tentou matar o animal, mas Poseidon interviu todas as vezes pela vida de sua criação.";
     			attr_dev(p, "class", "textofutil");
-    			add_location(p, file$2, 732, 4, 46159);
+    			add_location(p, file$2, 742, 4, 46419);
     			attr_dev(table, "class", "mapa");
     			attr_dev(table, "align", "center");
     			attr_dev(table, "id", "mapanivel1");
-    			add_location(table, file$2, 751, 4, 46873);
-    			attr_dev(ul, "class", "info");
-    			add_location(ul, file$2, 777, 8, 48191);
+    			add_location(table, file$2, 761, 4, 47133);
+    			attr_dev(ul, "class", "fic");
+    			add_location(ul, file$2, 787, 8, 48451);
     			attr_dev(div, "id", "DicaTutorial");
     			attr_dev(div, "class", "aimds");
-    			add_location(div, file$2, 776, 4, 48144);
+    			add_location(div, file$2, 786, 4, 48404);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -25376,14 +25388,14 @@ var app = (function () {
     		block,
     		id: create_if_block_13$1.name,
     		type: "if",
-    		source: "(731:4) {#if !enigma}",
+    		source: "(741:4) {#if !enigma}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (799:39) 
+    // (809:39) 
     function create_if_block_31$1(ctx) {
     	let th;
     	let img;
@@ -25396,8 +25408,8 @@ var app = (function () {
     			attr_dev(img, "class", "imgmini");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "falsa");
-    			add_location(img, file$2, 799, 16, 49662);
-    			add_location(th, file$2, 799, 12, 49658);
+    			add_location(img, file$2, 809, 16, 50187);
+    			add_location(th, file$2, 809, 12, 50183);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -25412,14 +25424,14 @@ var app = (function () {
     		block,
     		id: create_if_block_31$1.name,
     		type: "if",
-    		source: "(799:39) ",
+    		source: "(809:39) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (797:39) 
+    // (807:39) 
     function create_if_block_30$1(ctx) {
     	let th;
     	let img;
@@ -25433,8 +25445,8 @@ var app = (function () {
     			attr_dev(img, "id", "chao1");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel1.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
-    			add_location(img, file$2, 797, 16, 49516);
-    			add_location(th, file$2, 797, 12, 49512);
+    			add_location(img, file$2, 807, 16, 50041);
+    			add_location(th, file$2, 807, 12, 50037);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -25449,14 +25461,14 @@ var app = (function () {
     		block,
     		id: create_if_block_30$1.name,
     		type: "if",
-    		source: "(797:39) ",
+    		source: "(807:39) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (795:35) 
+    // (805:35) 
     function create_if_block_29$1(ctx) {
     	let th;
     	let img;
@@ -25469,8 +25481,8 @@ var app = (function () {
     			attr_dev(img, "class", "imgmini");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
-    			add_location(img, file$2, 795, 16, 49390);
-    			add_location(th, file$2, 795, 12, 49386);
+    			add_location(img, file$2, 805, 16, 49915);
+    			add_location(th, file$2, 805, 12, 49911);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -25485,14 +25497,14 @@ var app = (function () {
     		block,
     		id: create_if_block_29$1.name,
     		type: "if",
-    		source: "(795:35) ",
+    		source: "(805:35) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (793:33) 
+    // (803:33) 
     function create_if_block_28$1(ctx) {
     	let th;
     	let img;
@@ -25505,8 +25517,8 @@ var app = (function () {
     			attr_dev(img, "class", "imgmini");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel1.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$2, 793, 16, 49260);
-    			add_location(th, file$2, 793, 12, 49256);
+    			add_location(img, file$2, 803, 16, 49785);
+    			add_location(th, file$2, 803, 12, 49781);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -25521,14 +25533,14 @@ var app = (function () {
     		block,
     		id: create_if_block_28$1.name,
     		type: "if",
-    		source: "(793:33) ",
+    		source: "(803:33) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (791:8) {#if elementos == 0}
+    // (801:8) {#if elementos == 0}
     function create_if_block_27$1(ctx) {
     	let th;
     	let img;
@@ -25542,8 +25554,8 @@ var app = (function () {
     			attr_dev(img, "id", "chao1");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel1.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
-    			add_location(img, file$2, 791, 16, 49125);
-    			add_location(th, file$2, 791, 12, 49121);
+    			add_location(img, file$2, 801, 16, 49650);
+    			add_location(th, file$2, 801, 12, 49646);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -25558,14 +25570,14 @@ var app = (function () {
     		block,
     		id: create_if_block_27$1.name,
     		type: "if",
-    		source: "(791:8) {#if elementos == 0}",
+    		source: "(801:8) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (790:8) {#each linhas as elementos}
+    // (800:8) {#each linhas as elementos}
     function create_each_block_7$1(ctx) {
     	let if_block_anchor;
 
@@ -25613,14 +25625,14 @@ var app = (function () {
     		block,
     		id: create_each_block_7$1.name,
     		type: "each",
-    		source: "(790:8) {#each linhas as elementos}",
+    		source: "(800:8) {#each linhas as elementos}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (788:4) {#each mapa1 as linhas}
+    // (798:4) {#each mapa1 as linhas}
     function create_each_block_6$1(ctx) {
     	let tr;
     	let t;
@@ -25642,7 +25654,7 @@ var app = (function () {
 
     			t = space();
     			attr_dev(tr, "class", "minimapa");
-    			add_location(tr, file$2, 788, 4, 49019);
+    			add_location(tr, file$2, 798, 4, 49544);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -25688,14 +25700,14 @@ var app = (function () {
     		block,
     		id: create_each_block_6$1.name,
     		type: "each",
-    		source: "(788:4) {#each mapa1 as linhas}",
+    		source: "(798:4) {#each mapa1 as linhas}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (749:27) 
+    // (759:27) 
     function create_if_block_26$1(ctx) {
     	let p;
 
@@ -25704,7 +25716,7 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "O Minotauro está enfurecido";
     			attr_dev(p, "class", "Enigma");
-    			add_location(p, file$2, 749, 8, 46807);
+    			add_location(p, file$2, 759, 8, 47067);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -25719,14 +25731,14 @@ var app = (function () {
     		block,
     		id: create_if_block_26$1.name,
     		type: "if",
-    		source: "(749:27) ",
+    		source: "(759:27) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (747:28) 
+    // (757:28) 
     function create_if_block_25$1(ctx) {
     	let p;
 
@@ -25735,7 +25747,7 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "O Minotauro começou a correr";
     			attr_dev(p, "class", "Enigma");
-    			add_location(p, file$2, 747, 8, 46718);
+    			add_location(p, file$2, 757, 8, 46978);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -25750,14 +25762,14 @@ var app = (function () {
     		block,
     		id: create_if_block_25$1.name,
     		type: "if",
-    		source: "(747:28) ",
+    		source: "(757:28) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (745:28) 
+    // (755:28) 
     function create_if_block_24$1(ctx) {
     	let p;
 
@@ -25766,7 +25778,7 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "O Minotauro acelerou o passo";
     			attr_dev(p, "class", "Enigma");
-    			add_location(p, file$2, 745, 8, 46628);
+    			add_location(p, file$2, 755, 8, 46888);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -25781,14 +25793,14 @@ var app = (function () {
     		block,
     		id: create_if_block_24$1.name,
     		type: "if",
-    		source: "(745:28) ",
+    		source: "(755:28) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (743:28) 
+    // (753:28) 
     function create_if_block_23$1(ctx) {
     	let p;
 
@@ -25797,7 +25809,7 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "O Minotauro começou a perseguição";
     			attr_dev(p, "class", "Enigma");
-    			add_location(p, file$2, 743, 8, 46533);
+    			add_location(p, file$2, 753, 8, 46793);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -25812,14 +25824,14 @@ var app = (function () {
     		block,
     		id: create_if_block_23$1.name,
     		type: "if",
-    		source: "(743:28) ",
+    		source: "(753:28) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (741:4) {#if HoraDaCaçada > 0}
+    // (751:4) {#if HoraDaCaçada > 0}
     function create_if_block_22$1(ctx) {
     	let p;
     	let t0;
@@ -25831,7 +25843,7 @@ var app = (function () {
     			t0 = text("O Minotauro ira surgir em: ");
     			t1 = text(/*HoraDaCaçada*/ ctx[18]);
     			attr_dev(p, "class", "Enigma");
-    			add_location(p, file$2, 741, 8, 46430);
+    			add_location(p, file$2, 751, 8, 46690);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -25850,14 +25862,14 @@ var app = (function () {
     		block,
     		id: create_if_block_22$1.name,
     		type: "if",
-    		source: "(741:4) {#if HoraDaCaçada > 0}",
+    		source: "(751:4) {#if HoraDaCaçada > 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (754:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+    // (764:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
     function create_if_block_14$1(ctx) {
     	let tr;
     	let t;
@@ -25878,7 +25890,7 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file$2, 754, 12, 47041);
+    			add_location(tr, file$2, 764, 12, 47301);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -25924,14 +25936,14 @@ var app = (function () {
     		block,
     		id: create_if_block_14$1.name,
     		type: "if",
-    		source: "(754:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		source: "(764:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (757:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+    // (767:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
     function create_if_block_15$1(ctx) {
     	let if_block_anchor;
 
@@ -25980,14 +25992,14 @@ var app = (function () {
     		block,
     		id: create_if_block_15$1.name,
     		type: "if",
-    		source: "(757:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
+    		source: "(767:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (768:51) 
+    // (778:51) 
     function create_if_block_21$1(ctx) {
     	let th;
     	let img;
@@ -25999,8 +26011,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/minotauro.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "monstro");
-    			add_location(img, file$2, 768, 28, 47933);
-    			add_location(th, file$2, 768, 24, 47929);
+    			add_location(img, file$2, 778, 28, 48193);
+    			add_location(th, file$2, 778, 24, 48189);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -26015,14 +26027,14 @@ var app = (function () {
     		block,
     		id: create_if_block_21$1.name,
     		type: "if",
-    		source: "(768:51) ",
+    		source: "(778:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (766:51) 
+    // (776:51) 
     function create_if_block_20$1(ctx) {
     	let th;
     	let img;
@@ -26034,8 +26046,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "falsa");
-    			add_location(img, file$2, 766, 28, 47799);
-    			add_location(th, file$2, 766, 24, 47795);
+    			add_location(img, file$2, 776, 28, 48059);
+    			add_location(th, file$2, 776, 24, 48055);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -26050,14 +26062,14 @@ var app = (function () {
     		block,
     		id: create_if_block_20$1.name,
     		type: "if",
-    		source: "(766:51) ",
+    		source: "(776:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (764:51) 
+    // (774:51) 
     function create_if_block_19$1(ctx) {
     	let th;
     	let img;
@@ -26069,9 +26081,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
-    			add_location(img, file$2, 764, 43, 47660);
+    			add_location(img, file$2, 774, 43, 47920);
     			attr_dev(th, "class", "Dante1");
-    			add_location(th, file$2, 764, 24, 47641);
+    			add_location(th, file$2, 774, 24, 47901);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -26086,14 +26098,14 @@ var app = (function () {
     		block,
     		id: create_if_block_19$1.name,
     		type: "if",
-    		source: "(764:51) ",
+    		source: "(774:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (762:47) 
+    // (772:47) 
     function create_if_block_18$1(ctx) {
     	let th;
     	let img;
@@ -26105,8 +26117,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
-    			add_location(img, file$2, 762, 28, 47511);
-    			add_location(th, file$2, 762, 24, 47507);
+    			add_location(img, file$2, 772, 28, 47771);
+    			add_location(th, file$2, 772, 24, 47767);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -26121,14 +26133,14 @@ var app = (function () {
     		block,
     		id: create_if_block_18$1.name,
     		type: "if",
-    		source: "(762:47) ",
+    		source: "(772:47) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (760:45) 
+    // (770:45) 
     function create_if_block_17$1(ctx) {
     	let th;
     	let img;
@@ -26140,8 +26152,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel1.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$2, 760, 28, 47373);
-    			add_location(th, file$2, 760, 24, 47369);
+    			add_location(img, file$2, 770, 28, 47633);
+    			add_location(th, file$2, 770, 24, 47629);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -26156,14 +26168,14 @@ var app = (function () {
     		block,
     		id: create_if_block_17$1.name,
     		type: "if",
-    		source: "(760:45) ",
+    		source: "(770:45) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (758:20) {#if elementos == 0}
+    // (768:20) {#if elementos == 0}
     function create_if_block_16$1(ctx) {
     	let th;
     	let img;
@@ -26175,8 +26187,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel1.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
-    			add_location(img, file$2, 758, 29, 47241);
-    			add_location(th, file$2, 758, 24, 47236);
+    			add_location(img, file$2, 768, 29, 47501);
+    			add_location(th, file$2, 768, 24, 47496);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -26191,14 +26203,14 @@ var app = (function () {
     		block,
     		id: create_if_block_16$1.name,
     		type: "if",
-    		source: "(758:20) {#if elementos == 0}",
+    		source: "(768:20) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (756:16) {#each linhas as elementos,j}
+    // (766:16) {#each linhas as elementos,j}
     function create_each_block_5$1(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteX*/ ctx[7] <= /*j*/ ctx[63] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[21] * 2 >= /*j*/ ctx[63] && create_if_block_15$1(ctx);
@@ -26236,14 +26248,14 @@ var app = (function () {
     		block,
     		id: create_each_block_5$1.name,
     		type: "each",
-    		source: "(756:16) {#each linhas as elementos,j}",
+    		source: "(766:16) {#each linhas as elementos,j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (753:8) {#each mapa1 as linhas,i}
+    // (763:8) {#each mapa1 as linhas,i}
     function create_each_block_4$1(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteY*/ ctx[8] <= /*i*/ ctx[60] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[21] * 2 >= /*i*/ ctx[60] && create_if_block_14$1(ctx);
@@ -26281,14 +26293,14 @@ var app = (function () {
     		block,
     		id: create_each_block_4$1.name,
     		type: "each",
-    		source: "(753:8) {#each mapa1 as linhas,i}",
+    		source: "(763:8) {#each mapa1 as linhas,i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (701:8) {:else}
+    // (711:8) {:else}
     function create_else_block$1(ctx) {
     	let p0;
     	let t1;
@@ -26344,20 +26356,20 @@ var app = (function () {
 
     			each_1_anchor = empty();
     			attr_dev(p0, "class", "Enigma");
-    			add_location(p0, file$2, 702, 8, 44509);
+    			add_location(p0, file$2, 712, 8, 44769);
     			attr_dev(p1, "class", "Enigma");
-    			add_location(p1, file$2, 703, 8, 44604);
+    			add_location(p1, file$2, 713, 8, 44864);
     			attr_dev(p2, "class", "Enigma");
-    			add_location(p2, file$2, 704, 8, 44699);
+    			add_location(p2, file$2, 714, 8, 44959);
     			attr_dev(p3, "class", "Enigma");
-    			add_location(p3, file$2, 705, 8, 44830);
+    			add_location(p3, file$2, 715, 8, 45090);
     			attr_dev(p4, "class", "Enigma");
-    			add_location(p4, file$2, 706, 8, 44936);
+    			add_location(p4, file$2, 716, 8, 45196);
     			attr_dev(p5, "class", "Enigma");
-    			add_location(p5, file$2, 707, 8, 45018);
+    			add_location(p5, file$2, 717, 8, 45278);
     			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
     			attr_dev(input, "class", "RespostaEnigma");
-    			add_location(input, file$2, 708, 8, 45157);
+    			add_location(input, file$2, 718, 8, 45417);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p0, anchor);
@@ -26457,14 +26469,14 @@ var app = (function () {
     		block,
     		id: create_else_block$1.name,
     		type: "else",
-    		source: "(701:8) {:else}",
+    		source: "(711:8) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (666:4) {#if !enigma}
+    // (676:4) {#if !enigma}
     function create_if_block_1$2(ctx) {
     	let p;
     	let t0_value = clearInterval(/*Movimentar*/ ctx[14]) + "";
@@ -26530,25 +26542,25 @@ var app = (function () {
     			}
 
     			attr_dev(p, "class", "textofutil");
-    			add_location(p, file$2, 667, 4, 43025);
+    			add_location(p, file$2, 677, 4, 43285);
     			attr_dev(h2, "class", "h2");
-    			add_location(h2, file$2, 673, 12, 43213);
-    			add_location(ul0, file$2, 673, 8, 43209);
+    			add_location(h2, file$2, 683, 12, 43473);
+    			add_location(ul0, file$2, 683, 8, 43469);
     			attr_dev(ul1, "class", "info");
-    			add_location(ul1, file$2, 674, 8, 43259);
+    			add_location(ul1, file$2, 684, 8, 43519);
     			attr_dev(ul2, "class", "info");
-    			add_location(ul2, file$2, 675, 8, 43307);
+    			add_location(ul2, file$2, 685, 8, 43567);
     			attr_dev(ul3, "class", "info");
-    			add_location(ul3, file$2, 676, 8, 43356);
+    			add_location(ul3, file$2, 686, 8, 43616);
     			attr_dev(ul4, "class", "info");
-    			add_location(ul4, file$2, 677, 8, 43409);
+    			add_location(ul4, file$2, 687, 8, 43669);
     			attr_dev(div, "id", "DicaTutorial");
     			attr_dev(div, "class", "aimds");
-    			add_location(div, file$2, 672, 4, 43162);
+    			add_location(div, file$2, 682, 4, 43422);
     			attr_dev(table, "class", "mapa");
     			attr_dev(table, "align", "center");
     			attr_dev(table, "id", "mapatutorial");
-    			add_location(table, file$2, 679, 4, 43471);
+    			add_location(table, file$2, 689, 4, 43731);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -26618,14 +26630,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$2.name,
     		type: "if",
-    		source: "(666:4) {#if !enigma}",
+    		source: "(676:4) {#if !enigma}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (719:39) 
+    // (729:39) 
     function create_if_block_11$1(ctx) {
     	let th;
     	let img;
@@ -26639,8 +26651,8 @@ var app = (function () {
     			attr_dev(img, "id", "chao0");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaotutorial.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
-    			add_location(img, file$2, 719, 16, 45867);
-    			add_location(th, file$2, 719, 12, 45863);
+    			add_location(img, file$2, 729, 16, 46127);
+    			add_location(th, file$2, 729, 12, 46123);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -26655,14 +26667,14 @@ var app = (function () {
     		block,
     		id: create_if_block_11$1.name,
     		type: "if",
-    		source: "(719:39) ",
+    		source: "(729:39) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (717:35) 
+    // (727:35) 
     function create_if_block_10$1(ctx) {
     	let th;
     	let img;
@@ -26675,8 +26687,8 @@ var app = (function () {
     			attr_dev(img, "class", "imgmini");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
-    			add_location(img, file$2, 717, 16, 45741);
-    			add_location(th, file$2, 717, 12, 45737);
+    			add_location(img, file$2, 727, 16, 46001);
+    			add_location(th, file$2, 727, 12, 45997);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -26691,14 +26703,14 @@ var app = (function () {
     		block,
     		id: create_if_block_10$1.name,
     		type: "if",
-    		source: "(717:35) ",
+    		source: "(727:35) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (715:33) 
+    // (725:33) 
     function create_if_block_9$1(ctx) {
     	let th;
     	let img;
@@ -26711,8 +26723,8 @@ var app = (function () {
     			attr_dev(img, "class", "imgmini");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredetutorial.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$2, 715, 16, 45609);
-    			add_location(th, file$2, 715, 12, 45605);
+    			add_location(img, file$2, 725, 16, 45869);
+    			add_location(th, file$2, 725, 12, 45865);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -26727,14 +26739,14 @@ var app = (function () {
     		block,
     		id: create_if_block_9$1.name,
     		type: "if",
-    		source: "(715:33) ",
+    		source: "(725:33) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (713:12) {#if elementos == 0}
+    // (723:12) {#if elementos == 0}
     function create_if_block_8$1(ctx) {
     	let th;
     	let img;
@@ -26748,8 +26760,8 @@ var app = (function () {
     			attr_dev(img, "id", "chao0");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaotutorial.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
-    			add_location(img, file$2, 713, 16, 45472);
-    			add_location(th, file$2, 713, 12, 45468);
+    			add_location(img, file$2, 723, 16, 45732);
+    			add_location(th, file$2, 723, 12, 45728);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -26764,14 +26776,14 @@ var app = (function () {
     		block,
     		id: create_if_block_8$1.name,
     		type: "if",
-    		source: "(713:12) {#if elementos == 0}",
+    		source: "(723:12) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (712:12) {#each linhas as elementos}
+    // (722:12) {#each linhas as elementos}
     function create_each_block_3$1(ctx) {
     	let if_block_anchor;
 
@@ -26818,14 +26830,14 @@ var app = (function () {
     		block,
     		id: create_each_block_3$1.name,
     		type: "each",
-    		source: "(712:12) {#each linhas as elementos}",
+    		source: "(722:12) {#each linhas as elementos}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (710:8) {#each mapa0 as linhas}
+    // (720:8) {#each mapa0 as linhas}
     function create_each_block_2$1(ctx) {
     	let tr;
     	let t;
@@ -26847,7 +26859,7 @@ var app = (function () {
 
     			t = space();
     			attr_dev(tr, "class", "minimapa");
-    			add_location(tr, file$2, 710, 12, 45358);
+    			add_location(tr, file$2, 720, 12, 45618);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -26893,14 +26905,14 @@ var app = (function () {
     		block,
     		id: create_each_block_2$1.name,
     		type: "each",
-    		source: "(710:8) {#each mapa0 as linhas}",
+    		source: "(720:8) {#each mapa0 as linhas}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (682:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+    // (692:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
     function create_if_block_2$2(ctx) {
     	let tr;
     	let t;
@@ -26921,7 +26933,7 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file$2, 682, 12, 43641);
+    			add_location(tr, file$2, 692, 12, 43901);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -26967,14 +26979,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2$2.name,
     		type: "if",
-    		source: "(682:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		source: "(692:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (685:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+    // (695:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
     function create_if_block_3$2(ctx) {
     	let if_block_anchor;
 
@@ -27021,14 +27033,14 @@ var app = (function () {
     		block,
     		id: create_if_block_3$2.name,
     		type: "if",
-    		source: "(685:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
+    		source: "(695:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (692:51) 
+    // (702:51) 
     function create_if_block_7$1(ctx) {
     	let th;
     	let img;
@@ -27040,9 +27052,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
-    			add_location(img, file$2, 692, 43, 44284);
+    			add_location(img, file$2, 702, 43, 44544);
     			attr_dev(th, "class", "Dante0");
-    			add_location(th, file$2, 692, 24, 44265);
+    			add_location(th, file$2, 702, 24, 44525);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -27057,14 +27069,14 @@ var app = (function () {
     		block,
     		id: create_if_block_7$1.name,
     		type: "if",
-    		source: "(692:51) ",
+    		source: "(702:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (690:47) 
+    // (700:47) 
     function create_if_block_6$1(ctx) {
     	let th;
     	let img;
@@ -27076,8 +27088,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
-    			add_location(img, file$2, 690, 28, 44135);
-    			add_location(th, file$2, 690, 24, 44131);
+    			add_location(img, file$2, 700, 28, 44395);
+    			add_location(th, file$2, 700, 24, 44391);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -27092,14 +27104,14 @@ var app = (function () {
     		block,
     		id: create_if_block_6$1.name,
     		type: "if",
-    		source: "(690:47) ",
+    		source: "(700:47) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (688:45) 
+    // (698:45) 
     function create_if_block_5$1(ctx) {
     	let th;
     	let img;
@@ -27111,8 +27123,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredetutorial.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$2, 688, 28, 43995);
-    			add_location(th, file$2, 688, 24, 43991);
+    			add_location(img, file$2, 698, 28, 44255);
+    			add_location(th, file$2, 698, 24, 44251);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -27127,14 +27139,14 @@ var app = (function () {
     		block,
     		id: create_if_block_5$1.name,
     		type: "if",
-    		source: "(688:45) ",
+    		source: "(698:45) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (686:20) {#if elementos == 0}
+    // (696:20) {#if elementos == 0}
     function create_if_block_4$2(ctx) {
     	let th;
     	let img;
@@ -27146,9 +27158,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaotutorial.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
-    			add_location(img, file$2, 686, 49, 43861);
+    			add_location(img, file$2, 696, 49, 44121);
     			attr_dev(th, "class", "chaoturorial");
-    			add_location(th, file$2, 686, 24, 43836);
+    			add_location(th, file$2, 696, 24, 44096);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -27163,14 +27175,14 @@ var app = (function () {
     		block,
     		id: create_if_block_4$2.name,
     		type: "if",
-    		source: "(686:20) {#if elementos == 0}",
+    		source: "(696:20) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (684:16) {#each linhas as elementos,j}
+    // (694:16) {#each linhas as elementos,j}
     function create_each_block_1$1(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteX*/ ctx[7] <= /*j*/ ctx[63] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[21] * 2 >= /*j*/ ctx[63] && create_if_block_3$2(ctx);
@@ -27208,14 +27220,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1$1.name,
     		type: "each",
-    		source: "(684:16) {#each linhas as elementos,j}",
+    		source: "(694:16) {#each linhas as elementos,j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (681:8) {#each mapa0 as linhas,i}
+    // (691:8) {#each mapa0 as linhas,i}
     function create_each_block$1(ctx) {
     	let if_block_anchor;
     	let if_block = /*LimiteY*/ ctx[8] <= /*i*/ ctx[60] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[21] * 2 >= /*i*/ ctx[60] && create_if_block_2$2(ctx);
@@ -27253,7 +27265,7 @@ var app = (function () {
     		block,
     		id: create_each_block$1.name,
     		type: "each",
-    		source: "(681:8) {#each mapa0 as linhas,i}",
+    		source: "(691:8) {#each mapa0 as linhas,i}",
     		ctx
     	});
 
@@ -27271,6 +27283,13 @@ var app = (function () {
     	let t3;
     	let voltarmenu;
     	let t4;
+    	let div;
+    	let audio;
+    	let source0;
+    	let source0_src_value;
+    	let source1;
+    	let source1_src_value;
+    	let t5;
     	let current_block_type_index;
     	let if_block1;
     	let if_block1_anchor;
@@ -27316,6 +27335,11 @@ var app = (function () {
     			t3 = space();
     			create_component(voltarmenu.$$.fragment);
     			t4 = space();
+    			div = element("div");
+    			audio = element("audio");
+    			source0 = element("source");
+    			source1 = element("source");
+    			t5 = space();
     			if (if_block1) if_block1.c();
     			if_block1_anchor = empty();
     			attr_dev(link0, "rel", "stylesheet");
@@ -27328,6 +27352,17 @@ var app = (function () {
     			attr_dev(link2, "href", "/css/ajuda.css");
     			add_location(link2, file$2, 634, 4, 42223);
     			add_location(head, file$2, 631, 0, 42108);
+    			if (!src_url_equal(source0.src, source0_src_value = "/css/sons/PlayMusicGame.wav")) attr_dev(source0, "src", source0_src_value);
+    			attr_dev(source0, "type", "audio/wav");
+    			add_location(source0, file$2, 665, 2, 42956);
+    			if (!src_url_equal(source1.src, source1_src_value = "/css/sons/PlayMusicGame.ogg")) attr_dev(source1, "src", source1_src_value);
+    			attr_dev(source1, "type", "audio/ogg");
+    			add_location(source1, file$2, 666, 2, 43019);
+    			attr_dev(audio, "id", "audio");
+    			audio.autoplay = true;
+    			audio.loop = true;
+    			add_location(audio, file$2, 664, 1, 42920);
+    			add_location(div, file$2, 663, 0, 42912);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -27344,6 +27379,11 @@ var app = (function () {
     			insert_dev(target, t3, anchor);
     			mount_component(voltarmenu, target, anchor);
     			insert_dev(target, t4, anchor);
+    			insert_dev(target, div, anchor);
+    			append_dev(div, audio);
+    			append_dev(audio, source0);
+    			append_dev(audio, source1);
+    			insert_dev(target, t5, anchor);
 
     			if (~current_block_type_index) {
     				if_blocks[current_block_type_index].m(target, anchor);
@@ -27424,6 +27464,8 @@ var app = (function () {
     			if (detaching) detach_dev(t3);
     			destroy_component(voltarmenu, detaching);
     			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(div);
+    			if (detaching) detach_dev(t5);
 
     			if (~current_block_type_index) {
     				if_blocks[current_block_type_index].d(detaching);

@@ -783,7 +783,7 @@ let mapa3 = [
         {/each}
     </table>
     <div id="DicaTutorial" class="aimds">
-        <ul class="info">Há muito tempo atrás, mais tempo do que todas as suas gerações podem ter passado na terra, Minotauro nasceu da relação da rainha de Creta com um touro dado por Poseidon. O rei tomado pela raiva tentou matar o animal, mas Poseidon interviu todas as vezes pela vida de sua criação.</ul>
+        <ul class="fic">Há muito tempo atrás, mais tempo do que todas as suas gerações podem ter passado na terra, Minotauro nasceu da relação da rainha de Creta com um touro dado por Poseidon. O rei tomado pela raiva tentou matar o animal, mas Poseidon interviu todas as vezes pela vida de sua criação.</ul>
     </div>
         {:else}
         <p class="textofutil">
@@ -869,7 +869,7 @@ let mapa3 = [
         {/each}
     </table>
     <div id="DicaTutorial" class="aimds">
-        <ul class="info">Os deuses acataram a ira e súplicas do rei, mas não iriam contra Poseidon por um mero mortal. Então, com uma idéia de Atena, decidiram aprisionar o monstro em um labirinto. Desde então Minotauro vive de suas caçadas, e posso afirmar que ele sabe bem como tratar visitantes.</ul>
+        <ul class="fic">Os deuses acataram a ira e súplicas do rei, mas não iriam contra Poseidon por um mero mortal. Então, com uma idéia de Atena, decidiram aprisionar o monstro em um labirinto. Desde então Minotauro vive de suas caçadas, e posso afirmar que ele sabe bem como tratar visitantes.</ul>
     </div>
         {:else}
         <p class="textofutil">{TempoEnigma()}{ResertarContador()}{clearInterval(Movimentar)}</p>
