@@ -5,8 +5,8 @@
 	import Sobre from './sobre.svelte'
 	import Jogar from './jogo(futil).svelte'
 	import {estado} from './Estado.js'
-	import Teste from './teste.svelte'
-  	import Newjogo from './newjogo.svelte';
+	import NewJogo from './NewJogo.svelte'
+  	import OldJogo from './OldJogo.svelte';
     import Creditos from './creditos.svelte';
 </script>
 
@@ -18,7 +18,7 @@
 {#if $estado === 'menu'}
 	<Menu/>
 {:else if $estado === 'jogar'}
-	<Teste/>
+	<NewJogo/>
 {:else if $estado === 'sobre'}
 	<Sobre/>
 {:else if $estado ==='ajuda'}
