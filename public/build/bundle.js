@@ -188,14 +188,6 @@ var app = (function () {
     function set_input_value(input, value) {
         input.value = value == null ? '' : value;
     }
-    function set_style(node, key, value, important) {
-        if (value === null) {
-            node.style.removeProperty(key);
-        }
-        else {
-            node.style.setProperty(key, value, important ? 'important' : '');
-        }
-    }
     function custom_event(type, detail, { bubbles = false, cancelable = false } = {}) {
         const e = document.createEvent('CustomEvent');
         e.initCustomEvent(type, bubbles, cancelable, detail);
@@ -3552,44 +3544,57 @@ var app = (function () {
     	let t0;
     	let voltarmenu;
     	let t1;
+    	let div0;
+    	let ul0;
     	let h2;
     	let t3;
-    	let ul0;
-    	let li0;
-    	let t5;
-    	let li1;
-    	let t7;
-    	let li2;
-    	let t9;
-    	let li3;
-    	let t11;
     	let ul1;
+    	let t5;
+    	let ul2;
+    	let t7;
+    	let ul3;
+    	let t9;
+    	let ul4;
+    	let t11;
+    	let div1;
+    	let ul5;
     	let button0;
     	let t13;
-    	let ul2;
+    	let ul6;
     	let button1;
     	let t15;
     	let button2;
     	let t17;
-    	let ul3;
+    	let ul7;
     	let button3;
     	let t19;
-    	let h3;
+    	let div2;
+    	let ul8;
+    	let button4;
     	let t21;
+    	let ul9;
+    	let button5;
+    	let button6;
+    	let t24;
+    	let ul10;
+    	let button7;
+    	let t26;
+    	let h3;
+    	let t28;
     	let p0;
-    	let t23;
+    	let t30;
     	let p1;
-    	let t25;
+    	let t32;
     	let p2;
-    	let t27;
+    	let t34;
     	let p3;
-    	let t29;
+    	let t36;
     	let p4;
-    	let t31;
+    	let t38;
     	let p5;
-    	let t33;
+    	let t40;
     	let p6;
-    	let t35;
+    	let t42;
     	let h4;
     	let current;
     	voltarmenu = new VoltarMenu({ $$inline: true });
@@ -3601,97 +3606,137 @@ var app = (function () {
     			t0 = space();
     			create_component(voltarmenu.$$.fragment);
     			t1 = space();
+    			div0 = element("div");
+    			ul0 = element("ul");
     			h2 = element("h2");
     			h2.textContent = "Como jogar?";
     			t3 = space();
-    			ul0 = element("ul");
-    			li0 = element("li");
-    			li0.textContent = "Ir para frente";
-    			t5 = space();
-    			li1 = element("li");
-    			li1.textContent = "Ir para trás";
-    			t7 = space();
-    			li2 = element("li");
-    			li2.textContent = "Ir para a direita";
-    			t9 = space();
-    			li3 = element("li");
-    			li3.textContent = "Ir para a esquerda";
-    			t11 = space();
     			ul1 = element("ul");
+    			ul1.textContent = "↟ ou W para Cima";
+    			t5 = space();
+    			ul2 = element("ul");
+    			ul2.textContent = "↡ ou S para Baixo";
+    			t7 = space();
+    			ul3 = element("ul");
+    			ul3.textContent = "↠ ou D para a Direita";
+    			t9 = space();
+    			ul4 = element("ul");
+    			ul4.textContent = "↞ ou A para a Esquerda";
+    			t11 = space();
+    			div1 = element("div");
+    			ul5 = element("ul");
     			button0 = element("button");
     			button0.textContent = "↟";
     			t13 = space();
-    			ul2 = element("ul");
+    			ul6 = element("ul");
     			button1 = element("button");
     			button1.textContent = "↞";
     			t15 = space();
     			button2 = element("button");
     			button2.textContent = "↠";
     			t17 = space();
-    			ul3 = element("ul");
+    			ul7 = element("ul");
     			button3 = element("button");
     			button3.textContent = "↡";
     			t19 = space();
+    			div2 = element("div");
+    			ul8 = element("ul");
+    			button4 = element("button");
+    			button4.textContent = "W";
+    			t21 = space();
+    			ul9 = element("ul");
+    			button5 = element("button");
+    			button5.textContent = "A";
+    			button6 = element("button");
+    			button6.textContent = "D";
+    			t24 = space();
+    			ul10 = element("ul");
+    			button7 = element("button");
+    			button7.textContent = "S";
+    			t26 = space();
     			h3 = element("h3");
     			h3.textContent = "Olá, querido humano.";
-    			t21 = space();
+    			t28 = space();
     			p0 = element("p");
     			p0.textContent = "Se você chegou aqui, temo que já esteja em um território perigoso.";
-    			t23 = space();
+    			t30 = space();
     			p1 = element("p");
     			p1.textContent = "Humanos não deveriam arriscar tanto suas vidas, será que sua curiosidade vale tanto assim?";
-    			t25 = space();
+    			t32 = space();
     			p2 = element("p");
     			p2.textContent = "Deseja um conselho?";
-    			t27 = space();
+    			t34 = space();
     			p3 = element("p");
     			p3.textContent = "Não seja guiado por suas emoções,";
-    			t29 = space();
+    			t36 = space();
     			p4 = element("p");
     			p4.textContent = "o tempo não é seu amigo.";
-    			t31 = space();
+    			t38 = space();
     			p5 = element("p");
     			p5.textContent = "Não olhe para trás ou tente voltar.";
-    			t33 = space();
+    			t40 = space();
     			p6 = element("p");
     			p6.textContent = "Fique atento e ouça bem o que lhe rodeia.";
-    			t35 = space();
+    			t42 = space();
     			h4 = element("h4");
     			h4.textContent = "Sua curiosidade pode ser sua maior perdição, \r\n    preste atenção nas entrelinhas e proteja sua retaguarda.";
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "/css/ajuda.css");
     			add_location(link, file$8, 5, 4, 86);
     			add_location(head, file$8, 4, 0, 74);
-    			add_location(h2, file$8, 9, 0, 159);
-    			add_location(li0, file$8, 11, 4, 205);
-    			add_location(li1, file$8, 12, 4, 234);
-    			add_location(li2, file$8, 13, 4, 261);
-    			add_location(li3, file$8, 14, 4, 293);
-    			attr_dev(ul0, "class", "aimds");
-    			add_location(ul0, file$8, 10, 0, 181);
+    			attr_dev(h2, "class", "h2");
+    			add_location(h2, file$8, 11, 8, 218);
+    			add_location(ul0, file$8, 11, 4, 214);
+    			attr_dev(ul1, "class", "info");
+    			add_location(ul1, file$8, 12, 4, 260);
+    			attr_dev(ul2, "class", "info");
+    			add_location(ul2, file$8, 13, 4, 304);
+    			attr_dev(ul3, "class", "info");
+    			add_location(ul3, file$8, 14, 4, 349);
+    			attr_dev(ul4, "class", "info");
+    			add_location(ul4, file$8, 15, 4, 398);
+    			attr_dev(div0, "class", "aimds");
+    			add_location(div0, file$8, 10, 0, 189);
     			attr_dev(button0, "id", "button");
     			attr_dev(button0, "class", "botaum");
-    			add_location(button0, file$8, 18, 4, 337);
-    			add_location(ul1, file$8, 18, 0, 333);
+    			add_location(button0, file$8, 19, 8, 488);
+    			add_location(ul5, file$8, 19, 4, 484);
     			attr_dev(button1, "class", "botao2");
-    			add_location(button1, file$8, 19, 4, 393);
+    			add_location(button1, file$8, 20, 8, 548);
     			attr_dev(button2, "class", "botao3");
-    			add_location(button2, file$8, 19, 38, 427);
-    			add_location(ul2, file$8, 19, 0, 389);
+    			add_location(button2, file$8, 20, 42, 582);
+    			add_location(ul6, file$8, 20, 4, 544);
     			attr_dev(button3, "id", "button");
     			attr_dev(button3, "class", "buteum");
-    			add_location(button3, file$8, 20, 4, 471);
-    			add_location(ul3, file$8, 20, 0, 467);
+    			add_location(button3, file$8, 21, 8, 630);
+    			add_location(ul7, file$8, 21, 4, 626);
+    			attr_dev(div1, "class", "divbutton1");
+    			add_location(div1, file$8, 18, 0, 454);
+    			attr_dev(button4, "id", "button");
+    			attr_dev(button4, "class", "botaum");
+    			add_location(button4, file$8, 24, 8, 724);
+    			add_location(ul8, file$8, 24, 4, 720);
+    			attr_dev(button5, "class", "botao2");
+    			add_location(button5, file$8, 25, 8, 784);
+    			attr_dev(button6, "class", "botao3");
+    			add_location(button6, file$8, 25, 41, 817);
+    			add_location(ul9, file$8, 25, 4, 780);
+    			attr_dev(button7, "id", "button");
+    			attr_dev(button7, "class", "buteum");
+    			add_location(button7, file$8, 26, 8, 865);
+    			add_location(ul10, file$8, 26, 4, 861);
+    			attr_dev(div2, "class", "divbutton2");
+    			add_location(div2, file$8, 23, 0, 690);
     			attr_dev(h3, "class", "h3ajuda");
-    			add_location(h3, file$8, 22, 0, 525);
-    			add_location(p0, file$8, 23, 0, 572);
-    			add_location(p1, file$8, 24, 0, 647);
-    			add_location(p2, file$8, 25, 0, 746);
-    			add_location(p3, file$8, 26, 0, 774);
-    			add_location(p4, file$8, 27, 0, 816);
-    			add_location(p5, file$8, 28, 0, 849);
-    			add_location(p6, file$8, 29, 0, 893);
-    			add_location(h4, file$8, 31, 0, 945);
+    			add_location(h3, file$8, 29, 0, 927);
+    			add_location(p0, file$8, 30, 0, 974);
+    			add_location(p1, file$8, 31, 0, 1049);
+    			add_location(p2, file$8, 32, 0, 1148);
+    			add_location(p3, file$8, 33, 0, 1176);
+    			add_location(p4, file$8, 34, 0, 1218);
+    			add_location(p5, file$8, 35, 0, 1251);
+    			add_location(p6, file$8, 36, 0, 1295);
+    			add_location(h4, file$8, 38, 0, 1347);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3702,44 +3747,57 @@ var app = (function () {
     			insert_dev(target, t0, anchor);
     			mount_component(voltarmenu, target, anchor);
     			insert_dev(target, t1, anchor);
-    			insert_dev(target, h2, anchor);
-    			insert_dev(target, t3, anchor);
-    			insert_dev(target, ul0, anchor);
-    			append_dev(ul0, li0);
-    			append_dev(ul0, t5);
-    			append_dev(ul0, li1);
-    			append_dev(ul0, t7);
-    			append_dev(ul0, li2);
-    			append_dev(ul0, t9);
-    			append_dev(ul0, li3);
+    			insert_dev(target, div0, anchor);
+    			append_dev(div0, ul0);
+    			append_dev(ul0, h2);
+    			append_dev(div0, t3);
+    			append_dev(div0, ul1);
+    			append_dev(div0, t5);
+    			append_dev(div0, ul2);
+    			append_dev(div0, t7);
+    			append_dev(div0, ul3);
+    			append_dev(div0, t9);
+    			append_dev(div0, ul4);
     			insert_dev(target, t11, anchor);
-    			insert_dev(target, ul1, anchor);
-    			append_dev(ul1, button0);
-    			insert_dev(target, t13, anchor);
-    			insert_dev(target, ul2, anchor);
-    			append_dev(ul2, button1);
-    			append_dev(ul2, t15);
-    			append_dev(ul2, button2);
-    			insert_dev(target, t17, anchor);
-    			insert_dev(target, ul3, anchor);
-    			append_dev(ul3, button3);
+    			insert_dev(target, div1, anchor);
+    			append_dev(div1, ul5);
+    			append_dev(ul5, button0);
+    			append_dev(div1, t13);
+    			append_dev(div1, ul6);
+    			append_dev(ul6, button1);
+    			append_dev(ul6, t15);
+    			append_dev(ul6, button2);
+    			append_dev(div1, t17);
+    			append_dev(div1, ul7);
+    			append_dev(ul7, button3);
     			insert_dev(target, t19, anchor);
+    			insert_dev(target, div2, anchor);
+    			append_dev(div2, ul8);
+    			append_dev(ul8, button4);
+    			append_dev(div2, t21);
+    			append_dev(div2, ul9);
+    			append_dev(ul9, button5);
+    			append_dev(ul9, button6);
+    			append_dev(div2, t24);
+    			append_dev(div2, ul10);
+    			append_dev(ul10, button7);
+    			insert_dev(target, t26, anchor);
     			insert_dev(target, h3, anchor);
-    			insert_dev(target, t21, anchor);
+    			insert_dev(target, t28, anchor);
     			insert_dev(target, p0, anchor);
-    			insert_dev(target, t23, anchor);
+    			insert_dev(target, t30, anchor);
     			insert_dev(target, p1, anchor);
-    			insert_dev(target, t25, anchor);
+    			insert_dev(target, t32, anchor);
     			insert_dev(target, p2, anchor);
-    			insert_dev(target, t27, anchor);
+    			insert_dev(target, t34, anchor);
     			insert_dev(target, p3, anchor);
-    			insert_dev(target, t29, anchor);
+    			insert_dev(target, t36, anchor);
     			insert_dev(target, p4, anchor);
-    			insert_dev(target, t31, anchor);
+    			insert_dev(target, t38, anchor);
     			insert_dev(target, p5, anchor);
-    			insert_dev(target, t33, anchor);
+    			insert_dev(target, t40, anchor);
     			insert_dev(target, p6, anchor);
-    			insert_dev(target, t35, anchor);
+    			insert_dev(target, t42, anchor);
     			insert_dev(target, h4, anchor);
     			current = true;
     		},
@@ -3758,32 +3816,28 @@ var app = (function () {
     			if (detaching) detach_dev(t0);
     			destroy_component(voltarmenu, detaching);
     			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(h2);
-    			if (detaching) detach_dev(t3);
-    			if (detaching) detach_dev(ul0);
+    			if (detaching) detach_dev(div0);
     			if (detaching) detach_dev(t11);
-    			if (detaching) detach_dev(ul1);
-    			if (detaching) detach_dev(t13);
-    			if (detaching) detach_dev(ul2);
-    			if (detaching) detach_dev(t17);
-    			if (detaching) detach_dev(ul3);
+    			if (detaching) detach_dev(div1);
     			if (detaching) detach_dev(t19);
+    			if (detaching) detach_dev(div2);
+    			if (detaching) detach_dev(t26);
     			if (detaching) detach_dev(h3);
-    			if (detaching) detach_dev(t21);
+    			if (detaching) detach_dev(t28);
     			if (detaching) detach_dev(p0);
-    			if (detaching) detach_dev(t23);
+    			if (detaching) detach_dev(t30);
     			if (detaching) detach_dev(p1);
-    			if (detaching) detach_dev(t25);
+    			if (detaching) detach_dev(t32);
     			if (detaching) detach_dev(p2);
-    			if (detaching) detach_dev(t27);
+    			if (detaching) detach_dev(t34);
     			if (detaching) detach_dev(p3);
-    			if (detaching) detach_dev(t29);
+    			if (detaching) detach_dev(t36);
     			if (detaching) detach_dev(p4);
-    			if (detaching) detach_dev(t31);
+    			if (detaching) detach_dev(t38);
     			if (detaching) detach_dev(p5);
-    			if (detaching) detach_dev(t33);
+    			if (detaching) detach_dev(t40);
     			if (detaching) detach_dev(p6);
-    			if (detaching) detach_dev(t35);
+    			if (detaching) detach_dev(t42);
     			if (detaching) detach_dev(h4);
     		}
     	};
@@ -4407,59 +4461,59 @@ var app = (function () {
     	}
     }
 
-    /* src\jogo.svelte generated by Svelte v3.53.1 */
-    const file$4 = "src\\jogo.svelte";
+    /* src\jogo(futil).svelte generated by Svelte v3.53.1 */
+    const file$4 = "src\\jogo(futil).svelte";
 
-    function get_each_context_8$1(ctx, list, i) {
+    function get_each_context_8$2(ctx, list, i) {
     	const child_ctx = ctx.slice();
     	child_ctx[50] = list[i];
     	child_ctx[40] = i;
     	return child_ctx;
     }
 
-    function get_each_context_9$1(ctx, list, i) {
+    function get_each_context_9$2(ctx, list, i) {
     	const child_ctx = ctx.slice();
     	child_ctx[41] = list[i];
     	child_ctx[43] = i;
     	return child_ctx;
     }
 
-    function get_each_context_6$1(ctx, list, i) {
+    function get_each_context_6$2(ctx, list, i) {
     	const child_ctx = ctx.slice();
     	child_ctx[38] = list[i];
     	child_ctx[40] = i;
     	return child_ctx;
     }
 
-    function get_each_context_7$1(ctx, list, i) {
+    function get_each_context_7$2(ctx, list, i) {
     	const child_ctx = ctx.slice();
     	child_ctx[41] = list[i];
     	child_ctx[43] = i;
     	return child_ctx;
     }
 
-    function get_each_context_4$1(ctx, list, i) {
+    function get_each_context_4$2(ctx, list, i) {
     	const child_ctx = ctx.slice();
     	child_ctx[38] = list[i];
     	child_ctx[40] = i;
     	return child_ctx;
     }
 
-    function get_each_context_5$1(ctx, list, i) {
+    function get_each_context_5$2(ctx, list, i) {
     	const child_ctx = ctx.slice();
     	child_ctx[41] = list[i];
     	child_ctx[43] = i;
     	return child_ctx;
     }
 
-    function get_each_context_2$1(ctx, list, i) {
+    function get_each_context_2$2(ctx, list, i) {
     	const child_ctx = ctx.slice();
     	child_ctx[38] = list[i];
     	child_ctx[40] = i;
     	return child_ctx;
     }
 
-    function get_each_context_3$1(ctx, list, i) {
+    function get_each_context_3$2(ctx, list, i) {
     	const child_ctx = ctx.slice();
     	child_ctx[41] = list[i];
     	child_ctx[43] = i;
@@ -4481,14 +4535,14 @@ var app = (function () {
     }
 
     // (381:0) {#if (key)}
-    function create_if_block_36$1(ctx) {
+    function create_if_block_36$2(ctx) {
     	let if_block_anchor;
 
     	function select_block_type(ctx, dirty) {
-    		if (/*code*/ ctx[1] == "ArrowUp") return create_if_block_37$1;
-    		if (/*code*/ ctx[1] == "ArrowDown") return create_if_block_38$1;
-    		if (/*code*/ ctx[1] == "ArrowLeft") return create_if_block_39$1;
-    		if (/*code*/ ctx[1] == "ArrowRight") return create_if_block_40$1;
+    		if (/*code*/ ctx[1] == "ArrowUp") return create_if_block_37$2;
+    		if (/*code*/ ctx[1] == "ArrowDown") return create_if_block_38$2;
+    		if (/*code*/ ctx[1] == "ArrowLeft") return create_if_block_39$2;
+    		if (/*code*/ ctx[1] == "ArrowRight") return create_if_block_40$2;
     	}
 
     	let current_block_type = select_block_type(ctx);
@@ -4527,7 +4581,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_36$1.name,
+    		id: create_if_block_36$2.name,
     		type: "if",
     		source: "(381:0) {#if (key)}",
     		ctx
@@ -4537,7 +4591,7 @@ var app = (function () {
     }
 
     // (388:45) 
-    function create_if_block_40$1(ctx) {
+    function create_if_block_40$2(ctx) {
     	let t_value = /*incremetarX*/ ctx[18]() + "";
     	let t;
 
@@ -4556,7 +4610,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_40$1.name,
+    		id: create_if_block_40$2.name,
     		type: "if",
     		source: "(388:45) ",
     		ctx
@@ -4566,7 +4620,7 @@ var app = (function () {
     }
 
     // (386:44) 
-    function create_if_block_39$1(ctx) {
+    function create_if_block_39$2(ctx) {
     	let t_value = /*decrementarX*/ ctx[20]() + "";
     	let t;
 
@@ -4585,7 +4639,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_39$1.name,
+    		id: create_if_block_39$2.name,
     		type: "if",
     		source: "(386:44) ",
     		ctx
@@ -4595,7 +4649,7 @@ var app = (function () {
     }
 
     // (384:44) 
-    function create_if_block_38$1(ctx) {
+    function create_if_block_38$2(ctx) {
     	let t_value = /*incremetarY*/ ctx[19]() + "";
     	let t;
 
@@ -4614,7 +4668,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_38$1.name,
+    		id: create_if_block_38$2.name,
     		type: "if",
     		source: "(384:44) ",
     		ctx
@@ -4624,7 +4678,7 @@ var app = (function () {
     }
 
     // (382:12) {#if (code == "ArrowUp")}
-    function create_if_block_37$1(ctx) {
+    function create_if_block_37$2(ctx) {
     	let t_value = /*decrementarY*/ ctx[21]() + "";
     	let t;
 
@@ -4643,7 +4697,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_37$1.name,
+    		id: create_if_block_37$2.name,
     		type: "if",
     		source: "(382:12) {#if (code == \\\"ArrowUp\\\")}",
     		ctx
@@ -4653,7 +4707,7 @@ var app = (function () {
     }
 
     // (560:31) 
-    function create_if_block_32$1(ctx) {
+    function create_if_block_32$2(ctx) {
     	let p;
     	let t1;
     	let t2_value = clearInterval(/*NewTempo*/ ctx[2]) + "";
@@ -4663,7 +4717,7 @@ var app = (function () {
     	let if_block;
     	let if_block_anchor;
     	let current;
-    	const if_block_creators = [create_if_block_33$1, create_else_block_6];
+    	const if_block_creators = [create_if_block_33$2, create_else_block_6];
     	const if_blocks = [];
 
     	function select_block_type_9(ctx, dirty) {
@@ -4744,7 +4798,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_32$1.name,
+    		id: create_if_block_32$2.name,
     		type: "if",
     		source: "(560:31) ",
     		ctx
@@ -4754,7 +4808,7 @@ var app = (function () {
     }
 
     // (514:31) 
-    function create_if_block_24$1(ctx) {
+    function create_if_block_24$2(ctx) {
     	let t0_value = clearInterval(/*NewTempo*/ ctx[2]) + "";
     	let t0;
     	let t1;
@@ -4763,8 +4817,8 @@ var app = (function () {
     	let if_block_anchor;
 
     	function select_block_type_7(ctx, dirty) {
-    		if (!/*enigma*/ ctx[6]) return create_if_block_25$1;
-    		return create_else_block_4$1;
+    		if (!/*enigma*/ ctx[6]) return create_if_block_25$2;
+    		return create_else_block_4$2;
     	}
 
     	let current_block_type = select_block_type_7(ctx);
@@ -4819,7 +4873,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_24$1.name,
+    		id: create_if_block_24$2.name,
     		type: "if",
     		source: "(514:31) ",
     		ctx
@@ -4829,14 +4883,14 @@ var app = (function () {
     }
 
     // (474:31) 
-    function create_if_block_16$1(ctx) {
+    function create_if_block_16$2(ctx) {
     	let p;
     	let t1;
     	let if_block_anchor;
 
     	function select_block_type_5(ctx, dirty) {
-    		if (!/*enigma*/ ctx[6]) return create_if_block_17$1;
-    		return create_else_block_2$1;
+    		if (!/*enigma*/ ctx[6]) return create_if_block_17$2;
+    		return create_else_block_2$2;
     	}
 
     	let current_block_type = select_block_type_5(ctx);
@@ -4883,7 +4937,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_16$1.name,
+    		id: create_if_block_16$2.name,
     		type: "if",
     		source: "(474:31) ",
     		ctx
@@ -5075,7 +5129,7 @@ var app = (function () {
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_8.length; i += 1) {
-    		each_blocks[i] = create_each_block_8$1(get_each_context_8$1(ctx, each_value_8, i));
+    		each_blocks[i] = create_each_block_8$2(get_each_context_8$2(ctx, each_value_8, i));
     	}
 
     	const block = {
@@ -5115,12 +5169,12 @@ var app = (function () {
     				let i;
 
     				for (i = 0; i < each_value_8.length; i += 1) {
-    					const child_ctx = get_each_context_8$1(ctx, each_value_8, i);
+    					const child_ctx = get_each_context_8$2(ctx, each_value_8, i);
 
     					if (each_blocks[i]) {
     						each_blocks[i].p(child_ctx, dirty);
     					} else {
-    						each_blocks[i] = create_each_block_8$1(child_ctx);
+    						each_blocks[i] = create_each_block_8$2(child_ctx);
     						each_blocks[i].c();
     						each_blocks[i].m(table, null);
     					}
@@ -5164,7 +5218,7 @@ var app = (function () {
     }
 
     // (565:0) {#if !enigma}
-    function create_if_block_33$1(ctx) {
+    function create_if_block_33$2(ctx) {
     	let t0_value = /*EnigmaTime*/ ctx[11](/*MudançaDeFase*/ ctx[3]) + "";
     	let t0;
     	let t1;
@@ -5237,7 +5291,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_33$1.name,
+    		id: create_if_block_33$2.name,
     		type: "if",
     		source: "(565:0) {#if !enigma}",
     		ctx
@@ -5247,7 +5301,7 @@ var app = (function () {
     }
 
     // (580:37) 
-    function create_if_block_35$1(ctx) {
+    function create_if_block_35$2(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -5275,7 +5329,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_35$1.name,
+    		id: create_if_block_35$2.name,
     		type: "if",
     		source: "(580:37) ",
     		ctx
@@ -5285,7 +5339,7 @@ var app = (function () {
     }
 
     // (578:8) {#if estrada == 0}
-    function create_if_block_34$1(ctx) {
+    function create_if_block_34$2(ctx) {
     	let th;
     	let img;
     	let img_class_value;
@@ -5323,7 +5377,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_34$1.name,
+    		id: create_if_block_34$2.name,
     		type: "if",
     		source: "(578:8) {#if estrada == 0}",
     		ctx
@@ -5333,12 +5387,12 @@ var app = (function () {
     }
 
     // (576:8) {#each elementos as estrada,j}
-    function create_each_block_9$1(ctx) {
+    function create_each_block_9$2(ctx) {
     	let if_block_anchor;
 
     	function select_block_type_10(ctx, dirty) {
-    		if (/*estrada*/ ctx[41] == 0) return create_if_block_34$1;
-    		if (/*estrada*/ ctx[41] == "C") return create_if_block_35$1;
+    		if (/*estrada*/ ctx[41] == 0) return create_if_block_34$2;
+    		if (/*estrada*/ ctx[41] == "C") return create_if_block_35$2;
     	}
 
     	let current_block_type = select_block_type_10(ctx);
@@ -5367,7 +5421,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block_9$1.name,
+    		id: create_each_block_9$2.name,
     		type: "each",
     		source: "(576:8) {#each elementos as estrada,j}",
     		ctx
@@ -5377,7 +5431,7 @@ var app = (function () {
     }
 
     // (574:4) {#each mapa4 as elementos,i}
-    function create_each_block_8$1(ctx) {
+    function create_each_block_8$2(ctx) {
     	let tr;
     	let t;
     	let each_value_9 = /*elementos*/ ctx[50];
@@ -5385,7 +5439,7 @@ var app = (function () {
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_9.length; i += 1) {
-    		each_blocks[i] = create_each_block_9$1(get_each_context_9$1(ctx, each_value_9, i));
+    		each_blocks[i] = create_each_block_9$2(get_each_context_9$2(ctx, each_value_9, i));
     	}
 
     	const block = {
@@ -5416,12 +5470,12 @@ var app = (function () {
     				let i;
 
     				for (i = 0; i < each_value_9.length; i += 1) {
-    					const child_ctx = get_each_context_9$1(ctx, each_value_9, i);
+    					const child_ctx = get_each_context_9$2(ctx, each_value_9, i);
 
     					if (each_blocks[i]) {
     						each_blocks[i].p(child_ctx, dirty);
     					} else {
-    						each_blocks[i] = create_each_block_9$1(child_ctx);
+    						each_blocks[i] = create_each_block_9$2(child_ctx);
     						each_blocks[i].c();
     						each_blocks[i].m(tr, t);
     					}
@@ -5442,7 +5496,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block_8$1.name,
+    		id: create_each_block_8$2.name,
     		type: "each",
     		source: "(574:4) {#each mapa4 as elementos,i}",
     		ctx
@@ -5452,7 +5506,7 @@ var app = (function () {
     }
 
     // (526:0) {:else}
-    function create_else_block_4$1(ctx) {
+    function create_else_block_4$2(ctx) {
     	let t0_value = /*ResertarContadores*/ ctx[26]() + "";
     	let t0;
     	let t1;
@@ -5478,7 +5532,7 @@ var app = (function () {
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_6.length; i += 1) {
-    		each_blocks[i] = create_each_block_6$1(get_each_context_6$1(ctx, each_value_6, i));
+    		each_blocks[i] = create_each_block_6$2(get_each_context_6$2(ctx, each_value_6, i));
     	}
 
     	const block = {
@@ -5541,12 +5595,12 @@ var app = (function () {
     				let i;
 
     				for (i = 0; i < each_value_6.length; i += 1) {
-    					const child_ctx = get_each_context_6$1(ctx, each_value_6, i);
+    					const child_ctx = get_each_context_6$2(ctx, each_value_6, i);
 
     					if (each_blocks[i]) {
     						each_blocks[i].p(child_ctx, dirty);
     					} else {
-    						each_blocks[i] = create_each_block_6$1(child_ctx);
+    						each_blocks[i] = create_each_block_6$2(child_ctx);
     						each_blocks[i].c();
     						each_blocks[i].m(table, null);
     					}
@@ -5579,7 +5633,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block_4$1.name,
+    		id: create_else_block_4$2.name,
     		type: "else",
     		source: "(526:0) {:else}",
     		ctx
@@ -5589,7 +5643,7 @@ var app = (function () {
     }
 
     // (521:0) {#if !enigma}
-    function create_if_block_25$1(ctx) {
+    function create_if_block_25$2(ctx) {
     	let t0_value = /*EnigmaTime*/ ctx[11](/*MudançaDeFase*/ ctx[3]) + "";
     	let t0;
     	let t1;
@@ -5660,7 +5714,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_25$1.name,
+    		id: create_if_block_25$2.name,
     		type: "if",
     		source: "(521:0) {#if !enigma}",
     		ctx
@@ -5708,7 +5762,7 @@ var app = (function () {
     }
 
     // (549:39) 
-    function create_if_block_31$1(ctx) {
+    function create_if_block_31$2(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -5736,7 +5790,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_31$1.name,
+    		id: create_if_block_31$2.name,
     		type: "if",
     		source: "(549:39) ",
     		ctx
@@ -5746,7 +5800,7 @@ var app = (function () {
     }
 
     // (547:33) 
-    function create_if_block_30$1(ctx) {
+    function create_if_block_30$2(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -5774,7 +5828,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_30$1.name,
+    		id: create_if_block_30$2.name,
     		type: "if",
     		source: "(547:33) ",
     		ctx
@@ -5784,7 +5838,7 @@ var app = (function () {
     }
 
     // (545:33) 
-    function create_if_block_29$1(ctx) {
+    function create_if_block_29$2(ctx) {
     	let th;
 
     	const block = {
@@ -5804,7 +5858,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_29$1.name,
+    		id: create_if_block_29$2.name,
     		type: "if",
     		source: "(545:33) ",
     		ctx
@@ -5814,7 +5868,7 @@ var app = (function () {
     }
 
     // (543:33) 
-    function create_if_block_28$1(ctx) {
+    function create_if_block_28$2(ctx) {
     	let th;
     	let img;
     	let img_class_value;
@@ -5852,7 +5906,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_28$1.name,
+    		id: create_if_block_28$2.name,
     		type: "if",
     		source: "(543:33) ",
     		ctx
@@ -5862,7 +5916,7 @@ var app = (function () {
     }
 
     // (541:45) 
-    function create_if_block_27$1(ctx) {
+    function create_if_block_27$2(ctx) {
     	let t_value = /*ResertarPosicao*/ ctx[22]() + "";
     	let t;
 
@@ -5881,7 +5935,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_27$1.name,
+    		id: create_if_block_27$2.name,
     		type: "if",
     		source: "(541:45) ",
     		ctx
@@ -5891,7 +5945,7 @@ var app = (function () {
     }
 
     // (539:8) {#if (mapa3[eixoY][eixoX] == "V")}
-    function create_if_block_26$1(ctx) {
+    function create_if_block_26$2(ctx) {
     	let t_value = /*proximafase*/ ctx[12](/*mapa3*/ ctx[16][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]]) + "";
     	let t;
 
@@ -5912,7 +5966,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_26$1.name,
+    		id: create_if_block_26$2.name,
     		type: "if",
     		source: "(539:8) {#if (mapa3[eixoY][eixoX] == \\\"V\\\")}",
     		ctx
@@ -5922,16 +5976,16 @@ var app = (function () {
     }
 
     // (538:4) {#each regiao as estrada,j}
-    function create_each_block_7$1(ctx) {
+    function create_each_block_7$2(ctx) {
     	let if_block_anchor;
 
     	function select_block_type_8(ctx, dirty) {
-    		if (/*mapa3*/ ctx[16][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]] == "V") return create_if_block_26$1;
-    		if (/*mapa3*/ ctx[16][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]] != 0) return create_if_block_27$1;
-    		if (/*estrada*/ ctx[41] == 0) return create_if_block_28$1;
-    		if (/*estrada*/ ctx[41] == 2) return create_if_block_29$1;
-    		if (/*estrada*/ ctx[41] == 1) return create_if_block_30$1;
-    		if (/*estrada*/ ctx[41] == "falsa") return create_if_block_31$1;
+    		if (/*mapa3*/ ctx[16][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]] == "V") return create_if_block_26$2;
+    		if (/*mapa3*/ ctx[16][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]] != 0) return create_if_block_27$2;
+    		if (/*estrada*/ ctx[41] == 0) return create_if_block_28$2;
+    		if (/*estrada*/ ctx[41] == 2) return create_if_block_29$2;
+    		if (/*estrada*/ ctx[41] == 1) return create_if_block_30$2;
+    		if (/*estrada*/ ctx[41] == "falsa") return create_if_block_31$2;
     		return create_else_block_5;
     	}
 
@@ -5968,7 +6022,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block_7$1.name,
+    		id: create_each_block_7$2.name,
     		type: "each",
     		source: "(538:4) {#each regiao as estrada,j}",
     		ctx
@@ -5978,7 +6032,7 @@ var app = (function () {
     }
 
     // (536:4) {#each mapa3 as regiao,i}
-    function create_each_block_6$1(ctx) {
+    function create_each_block_6$2(ctx) {
     	let tr;
     	let t;
     	let each_value_7 = /*regiao*/ ctx[38];
@@ -5986,7 +6040,7 @@ var app = (function () {
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_7.length; i += 1) {
-    		each_blocks[i] = create_each_block_7$1(get_each_context_7$1(ctx, each_value_7, i));
+    		each_blocks[i] = create_each_block_7$2(get_each_context_7$2(ctx, each_value_7, i));
     	}
 
     	const block = {
@@ -6017,12 +6071,12 @@ var app = (function () {
     				let i;
 
     				for (i = 0; i < each_value_7.length; i += 1) {
-    					const child_ctx = get_each_context_7$1(ctx, each_value_7, i);
+    					const child_ctx = get_each_context_7$2(ctx, each_value_7, i);
 
     					if (each_blocks[i]) {
     						each_blocks[i].p(child_ctx, dirty);
     					} else {
-    						each_blocks[i] = create_each_block_7$1(child_ctx);
+    						each_blocks[i] = create_each_block_7$2(child_ctx);
     						each_blocks[i].c();
     						each_blocks[i].m(tr, t);
     					}
@@ -6043,7 +6097,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block_6$1.name,
+    		id: create_each_block_6$2.name,
     		type: "each",
     		source: "(536:4) {#each mapa3 as regiao,i}",
     		ctx
@@ -6053,7 +6107,7 @@ var app = (function () {
     }
 
     // (485:0) {:else}
-    function create_else_block_2$1(ctx) {
+    function create_else_block_2$2(ctx) {
     	let t0_value = clearInterval(/*NewTempo*/ ctx[2]) + "";
     	let t0;
     	let t1;
@@ -6069,7 +6123,7 @@ var app = (function () {
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_4.length; i += 1) {
-    		each_blocks[i] = create_each_block_4$1(get_each_context_4$1(ctx, each_value_4, i));
+    		each_blocks[i] = create_each_block_4$2(get_each_context_4$2(ctx, each_value_4, i));
     	}
 
     	const block = {
@@ -6112,12 +6166,12 @@ var app = (function () {
     				let i;
 
     				for (i = 0; i < each_value_4.length; i += 1) {
-    					const child_ctx = get_each_context_4$1(ctx, each_value_4, i);
+    					const child_ctx = get_each_context_4$2(ctx, each_value_4, i);
 
     					if (each_blocks[i]) {
     						each_blocks[i].p(child_ctx, dirty);
     					} else {
-    						each_blocks[i] = create_each_block_4$1(child_ctx);
+    						each_blocks[i] = create_each_block_4$2(child_ctx);
     						each_blocks[i].c();
     						each_blocks[i].m(table, null);
     					}
@@ -6144,7 +6198,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block_2$1.name,
+    		id: create_else_block_2$2.name,
     		type: "else",
     		source: "(485:0) {:else}",
     		ctx
@@ -6154,7 +6208,7 @@ var app = (function () {
     }
 
     // (480:0) {#if !enigma}
-    function create_if_block_17$1(ctx) {
+    function create_if_block_17$2(ctx) {
     	let t0_value = /*EnigmaTime*/ ctx[11](/*MudançaDeFase*/ ctx[3]) + "";
     	let t0;
     	let t1;
@@ -6225,7 +6279,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_17$1.name,
+    		id: create_if_block_17$2.name,
     		type: "if",
     		source: "(480:0) {#if !enigma}",
     		ctx
@@ -6235,7 +6289,7 @@ var app = (function () {
     }
 
     // (506:8) {:else}
-    function create_else_block_3$1(ctx) {
+    function create_else_block_3$2(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -6263,7 +6317,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block_3$1.name,
+    		id: create_else_block_3$2.name,
     		type: "else",
     		source: "(506:8) {:else}",
     		ctx
@@ -6273,7 +6327,7 @@ var app = (function () {
     }
 
     // (504:39) 
-    function create_if_block_23$1(ctx) {
+    function create_if_block_23$2(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -6301,7 +6355,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_23$1.name,
+    		id: create_if_block_23$2.name,
     		type: "if",
     		source: "(504:39) ",
     		ctx
@@ -6311,7 +6365,7 @@ var app = (function () {
     }
 
     // (502:33) 
-    function create_if_block_22$1(ctx) {
+    function create_if_block_22$2(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -6339,7 +6393,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_22$1.name,
+    		id: create_if_block_22$2.name,
     		type: "if",
     		source: "(502:33) ",
     		ctx
@@ -6349,7 +6403,7 @@ var app = (function () {
     }
 
     // (500:33) 
-    function create_if_block_21$1(ctx) {
+    function create_if_block_21$2(ctx) {
     	let th;
 
     	const block = {
@@ -6369,7 +6423,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_21$1.name,
+    		id: create_if_block_21$2.name,
     		type: "if",
     		source: "(500:33) ",
     		ctx
@@ -6379,7 +6433,7 @@ var app = (function () {
     }
 
     // (498:33) 
-    function create_if_block_20$1(ctx) {
+    function create_if_block_20$2(ctx) {
     	let th;
     	let img;
     	let img_class_value;
@@ -6417,7 +6471,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_20$1.name,
+    		id: create_if_block_20$2.name,
     		type: "if",
     		source: "(498:33) ",
     		ctx
@@ -6427,7 +6481,7 @@ var app = (function () {
     }
 
     // (496:45) 
-    function create_if_block_19$1(ctx) {
+    function create_if_block_19$2(ctx) {
     	let t_value = /*ResertarPosicao*/ ctx[22]() + "";
     	let t;
 
@@ -6446,7 +6500,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_19$1.name,
+    		id: create_if_block_19$2.name,
     		type: "if",
     		source: "(496:45) ",
     		ctx
@@ -6456,7 +6510,7 @@ var app = (function () {
     }
 
     // (494:8) {#if (mapa2[eixoY][eixoX] == "Z")}
-    function create_if_block_18$1(ctx) {
+    function create_if_block_18$2(ctx) {
     	let t_value = /*proximafase*/ ctx[12](/*mapa2*/ ctx[15][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]]) + "";
     	let t;
 
@@ -6477,7 +6531,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_18$1.name,
+    		id: create_if_block_18$2.name,
     		type: "if",
     		source: "(494:8) {#if (mapa2[eixoY][eixoX] == \\\"Z\\\")}",
     		ctx
@@ -6487,17 +6541,17 @@ var app = (function () {
     }
 
     // (493:4) {#each regiao as estrada,j}
-    function create_each_block_5$1(ctx) {
+    function create_each_block_5$2(ctx) {
     	let if_block_anchor;
 
     	function select_block_type_6(ctx, dirty) {
-    		if (/*mapa2*/ ctx[15][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]] == "Z") return create_if_block_18$1;
-    		if (/*mapa2*/ ctx[15][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]] != 0) return create_if_block_19$1;
-    		if (/*estrada*/ ctx[41] == 0) return create_if_block_20$1;
-    		if (/*estrada*/ ctx[41] == 2) return create_if_block_21$1;
-    		if (/*estrada*/ ctx[41] == 1) return create_if_block_22$1;
-    		if (/*estrada*/ ctx[41] == "falsa") return create_if_block_23$1;
-    		return create_else_block_3$1;
+    		if (/*mapa2*/ ctx[15][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]] == "Z") return create_if_block_18$2;
+    		if (/*mapa2*/ ctx[15][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]] != 0) return create_if_block_19$2;
+    		if (/*estrada*/ ctx[41] == 0) return create_if_block_20$2;
+    		if (/*estrada*/ ctx[41] == 2) return create_if_block_21$2;
+    		if (/*estrada*/ ctx[41] == 1) return create_if_block_22$2;
+    		if (/*estrada*/ ctx[41] == "falsa") return create_if_block_23$2;
+    		return create_else_block_3$2;
     	}
 
     	let current_block_type = select_block_type_6(ctx);
@@ -6533,7 +6587,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block_5$1.name,
+    		id: create_each_block_5$2.name,
     		type: "each",
     		source: "(493:4) {#each regiao as estrada,j}",
     		ctx
@@ -6543,7 +6597,7 @@ var app = (function () {
     }
 
     // (491:4) {#each mapa2 as regiao,i}
-    function create_each_block_4$1(ctx) {
+    function create_each_block_4$2(ctx) {
     	let tr;
     	let t;
     	let each_value_5 = /*regiao*/ ctx[38];
@@ -6551,7 +6605,7 @@ var app = (function () {
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_5.length; i += 1) {
-    		each_blocks[i] = create_each_block_5$1(get_each_context_5$1(ctx, each_value_5, i));
+    		each_blocks[i] = create_each_block_5$2(get_each_context_5$2(ctx, each_value_5, i));
     	}
 
     	const block = {
@@ -6582,12 +6636,12 @@ var app = (function () {
     				let i;
 
     				for (i = 0; i < each_value_5.length; i += 1) {
-    					const child_ctx = get_each_context_5$1(ctx, each_value_5, i);
+    					const child_ctx = get_each_context_5$2(ctx, each_value_5, i);
 
     					if (each_blocks[i]) {
     						each_blocks[i].p(child_ctx, dirty);
     					} else {
-    						each_blocks[i] = create_each_block_5$1(child_ctx);
+    						each_blocks[i] = create_each_block_5$2(child_ctx);
     						each_blocks[i].c();
     						each_blocks[i].m(tr, t);
     					}
@@ -6608,7 +6662,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block_4$1.name,
+    		id: create_each_block_4$2.name,
     		type: "each",
     		source: "(491:4) {#each mapa2 as regiao,i}",
     		ctx
@@ -6631,7 +6685,7 @@ var app = (function () {
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_2.length; i += 1) {
-    		each_blocks[i] = create_each_block_2$1(get_each_context_2$1(ctx, each_value_2, i));
+    		each_blocks[i] = create_each_block_2$2(get_each_context_2$2(ctx, each_value_2, i));
     	}
 
     	const block = {
@@ -6669,12 +6723,12 @@ var app = (function () {
     				let i;
 
     				for (i = 0; i < each_value_2.length; i += 1) {
-    					const child_ctx = get_each_context_2$1(ctx, each_value_2, i);
+    					const child_ctx = get_each_context_2$2(ctx, each_value_2, i);
 
     					if (each_blocks[i]) {
     						each_blocks[i].p(child_ctx, dirty);
     					} else {
-    						each_blocks[i] = create_each_block_2$1(child_ctx);
+    						each_blocks[i] = create_each_block_2$2(child_ctx);
     						each_blocks[i].c();
     						each_blocks[i].m(table, null);
     					}
@@ -6873,7 +6927,7 @@ var app = (function () {
     }
 
     // (463:39) 
-    function create_if_block_15$1(ctx) {
+    function create_if_block_15$2(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -6901,7 +6955,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_15$1.name,
+    		id: create_if_block_15$2.name,
     		type: "if",
     		source: "(463:39) ",
     		ctx
@@ -6911,7 +6965,7 @@ var app = (function () {
     }
 
     // (461:33) 
-    function create_if_block_14$1(ctx) {
+    function create_if_block_14$2(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -6939,7 +6993,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_14$1.name,
+    		id: create_if_block_14$2.name,
     		type: "if",
     		source: "(461:33) ",
     		ctx
@@ -6949,7 +7003,7 @@ var app = (function () {
     }
 
     // (459:33) 
-    function create_if_block_13$1(ctx) {
+    function create_if_block_13$2(ctx) {
     	let th;
 
     	const block = {
@@ -6969,7 +7023,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_13$1.name,
+    		id: create_if_block_13$2.name,
     		type: "if",
     		source: "(459:33) ",
     		ctx
@@ -6979,7 +7033,7 @@ var app = (function () {
     }
 
     // (457:33) 
-    function create_if_block_12$1(ctx) {
+    function create_if_block_12$2(ctx) {
     	let th;
     	let img;
     	let img_class_value;
@@ -7017,7 +7071,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_12$1.name,
+    		id: create_if_block_12$2.name,
     		type: "if",
     		source: "(457:33) ",
     		ctx
@@ -7087,16 +7141,16 @@ var app = (function () {
     }
 
     // (452:4) {#each regiao as estrada,j}
-    function create_each_block_3$1(ctx) {
+    function create_each_block_3$2(ctx) {
     	let if_block_anchor;
 
     	function select_block_type_4(ctx, dirty) {
     		if (/*mapa1*/ ctx[14][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]] == "Y") return create_if_block_10$2;
     		if (/*mapa1*/ ctx[14][/*eixoY*/ ctx[5]][/*eixoX*/ ctx[4]] != 0) return create_if_block_11$2;
-    		if (/*estrada*/ ctx[41] == 0) return create_if_block_12$1;
-    		if (/*estrada*/ ctx[41] == 2) return create_if_block_13$1;
-    		if (/*estrada*/ ctx[41] == 1) return create_if_block_14$1;
-    		if (/*estrada*/ ctx[41] == "falsa") return create_if_block_15$1;
+    		if (/*estrada*/ ctx[41] == 0) return create_if_block_12$2;
+    		if (/*estrada*/ ctx[41] == 2) return create_if_block_13$2;
+    		if (/*estrada*/ ctx[41] == 1) return create_if_block_14$2;
+    		if (/*estrada*/ ctx[41] == "falsa") return create_if_block_15$2;
     		return create_else_block_1$2;
     	}
 
@@ -7133,7 +7187,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block_3$1.name,
+    		id: create_each_block_3$2.name,
     		type: "each",
     		source: "(452:4) {#each regiao as estrada,j}",
     		ctx
@@ -7143,7 +7197,7 @@ var app = (function () {
     }
 
     // (450:4) {#each mapa1 as regiao,i}
-    function create_each_block_2$1(ctx) {
+    function create_each_block_2$2(ctx) {
     	let tr;
     	let t;
     	let each_value_3 = /*regiao*/ ctx[38];
@@ -7151,7 +7205,7 @@ var app = (function () {
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_3.length; i += 1) {
-    		each_blocks[i] = create_each_block_3$1(get_each_context_3$1(ctx, each_value_3, i));
+    		each_blocks[i] = create_each_block_3$2(get_each_context_3$2(ctx, each_value_3, i));
     	}
 
     	const block = {
@@ -7182,12 +7236,12 @@ var app = (function () {
     				let i;
 
     				for (i = 0; i < each_value_3.length; i += 1) {
-    					const child_ctx = get_each_context_3$1(ctx, each_value_3, i);
+    					const child_ctx = get_each_context_3$2(ctx, each_value_3, i);
 
     					if (each_blocks[i]) {
     						each_blocks[i].p(child_ctx, dirty);
     					} else {
-    						each_blocks[i] = create_each_block_3$1(child_ctx);
+    						each_blocks[i] = create_each_block_3$2(child_ctx);
     						each_blocks[i].c();
     						each_blocks[i].m(tr, t);
     					}
@@ -7208,7 +7262,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block_2$1.name,
+    		id: create_each_block_2$2.name,
     		type: "each",
     		source: "(450:4) {#each mapa1 as regiao,i}",
     		ctx
@@ -7617,14 +7671,14 @@ var app = (function () {
     	let mounted;
     	let dispose;
     	voltarmenu = new VoltarMenu({ $$inline: true });
-    	let if_block0 = /*key*/ ctx[0] && create_if_block_36$1(ctx);
+    	let if_block0 = /*key*/ ctx[0] && create_if_block_36$2(ctx);
 
     	const if_block_creators = [
     		create_if_block$3,
     		create_if_block_8$2,
-    		create_if_block_16$1,
-    		create_if_block_24$1,
-    		create_if_block_32$1
+    		create_if_block_16$2,
+    		create_if_block_24$2,
+    		create_if_block_32$2
     	];
 
     	const if_blocks = [];
@@ -7687,7 +7741,7 @@ var app = (function () {
     				if (if_block0) {
     					if_block0.p(ctx, dirty);
     				} else {
-    					if_block0 = create_if_block_36$1(ctx);
+    					if_block0 = create_if_block_36$2(ctx);
     					if_block0.c();
     					if_block0.m(t2.parentNode, t2);
     				}
@@ -7820,7 +7874,7 @@ var app = (function () {
 
     function instance$4($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
-    	validate_slots('Jogo', slots, []);
+    	validate_slots('Jogo_futil', slots, []);
     	let key;
     	let code;
 
@@ -20521,7 +20575,7 @@ var app = (function () {
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
-    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console.warn(`<Jogo> was created with unknown prop '${key}'`);
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console.warn(`<Jogo_futil> was created with unknown prop '${key}'`);
     	});
 
     	function input_input_handler() {
@@ -20650,8560 +20704,24 @@ var app = (function () {
     	];
     }
 
-    class Jogo extends SvelteComponentDev {
+    class Jogo_futil extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
     		init(this, options, instance$4, create_fragment$4, safe_not_equal, {}, null, [-1, -1]);
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
-    			tagName: "Jogo",
+    			tagName: "Jogo_futil",
     			options,
     			id: create_fragment$4.name
     		});
     	}
     }
 
-    /* src\teste.svelte generated by Svelte v3.53.1 */
-    const file$3 = "src\\teste.svelte";
-
-    function get_each_context$1(ctx, list, i) {
-    	const child_ctx = ctx.slice();
-    	child_ctx[18] = list[i];
-    	child_ctx[20] = i;
-    	return child_ctx;
-    }
-
-    function get_each_context_1$1(ctx, list, i) {
-    	const child_ctx = ctx.slice();
-    	child_ctx[21] = list[i];
-    	child_ctx[23] = i;
-    	return child_ctx;
-    }
-
-    // (172:0) {#if (key)}
-    function create_if_block_7$1(ctx) {
-    	let if_block_anchor;
-
-    	function select_block_type(ctx, dirty) {
-    		if (/*code*/ ctx[1] == "ArrowUp") return create_if_block_8$1;
-    		if (/*code*/ ctx[1] == "ArrowDown") return create_if_block_9$1;
-    		if (/*code*/ ctx[1] == "ArrowLeft") return create_if_block_10$1;
-    		if (/*code*/ ctx[1] == "ArrowRight") return create_if_block_11$1;
-    	}
-
-    	let current_block_type = select_block_type(ctx);
-    	let if_block = current_block_type && current_block_type(ctx);
-
-    	const block = {
-    		c: function create() {
-    			if (if_block) if_block.c();
-    			if_block_anchor = empty();
-    		},
-    		m: function mount(target, anchor) {
-    			if (if_block) if_block.m(target, anchor);
-    			insert_dev(target, if_block_anchor, anchor);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (current_block_type === (current_block_type = select_block_type(ctx)) && if_block) {
-    				if_block.p(ctx, dirty);
-    			} else {
-    				if (if_block) if_block.d(1);
-    				if_block = current_block_type && current_block_type(ctx);
-
-    				if (if_block) {
-    					if_block.c();
-    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-    				}
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (if_block) {
-    				if_block.d(detaching);
-    			}
-
-    			if (detaching) detach_dev(if_block_anchor);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_7$1.name,
-    		type: "if",
-    		source: "(172:0) {#if (key)}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (179:45) 
-    function create_if_block_11$1(ctx) {
-    	let t0_value = /*incremetarX*/ ctx[10]() + "";
-    	let t0;
-    	let t1;
-
-    	const block = {
-    		c: function create() {
-    			t0 = text(t0_value);
-    			t1 = text(" para direita");
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t0, anchor);
-    			insert_dev(target, t1, anchor);
-    		},
-    		p: noop,
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t0);
-    			if (detaching) detach_dev(t1);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_11$1.name,
-    		type: "if",
-    		source: "(179:45) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (177:44) 
-    function create_if_block_10$1(ctx) {
-    	let t0_value = /*decrementarX*/ ctx[12]() + "";
-    	let t0;
-    	let t1;
-
-    	const block = {
-    		c: function create() {
-    			t0 = text(t0_value);
-    			t1 = text("    para esquerda");
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t0, anchor);
-    			insert_dev(target, t1, anchor);
-    		},
-    		p: noop,
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t0);
-    			if (detaching) detach_dev(t1);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_10$1.name,
-    		type: "if",
-    		source: "(177:44) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (175:44) 
-    function create_if_block_9$1(ctx) {
-    	let t0_value = /*incremetarY*/ ctx[11]() + "";
-    	let t0;
-    	let t1;
-
-    	const block = {
-    		c: function create() {
-    			t0 = text(t0_value);
-    			t1 = text(" para baixo");
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t0, anchor);
-    			insert_dev(target, t1, anchor);
-    		},
-    		p: noop,
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t0);
-    			if (detaching) detach_dev(t1);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_9$1.name,
-    		type: "if",
-    		source: "(175:44) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (173:12) {#if (code == "ArrowUp")}
-    function create_if_block_8$1(ctx) {
-    	let t0_value = /*decrementarY*/ ctx[13]() + "";
-    	let t0;
-    	let t1;
-
-    	const block = {
-    		c: function create() {
-    			t0 = text(t0_value);
-    			t1 = text(" para cima");
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t0, anchor);
-    			insert_dev(target, t1, anchor);
-    		},
-    		p: noop,
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t0);
-    			if (detaching) detach_dev(t1);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_8$1.name,
-    		type: "if",
-    		source: "(173:12) {#if (code == \\\"ArrowUp\\\")}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (192:1) {:else}
-    function create_else_block_1$1(ctx) {
-    	let p;
-
-    	const block = {
-    		c: function create() {
-    			p = element("p");
-    			p.textContent = "Focus this window and press any key";
-    			add_location(p, file$3, 192, 2, 18082);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, p, anchor);
-    		},
-    		p: noop,
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(p);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_else_block_1$1.name,
-    		type: "else",
-    		source: "(192:1) {:else}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (185:1) {#if key}
-    function create_if_block_5$1(ctx) {
-    	let kbd;
-    	let t0_value = (/*key*/ ctx[0] === ' ' ? 'Space' : /*key*/ ctx[0]) + "";
-    	let t0;
-    	let t1;
-    	let if_block_anchor;
-
-    	function select_block_type_2(ctx, dirty) {
-    		if (/*code*/ ctx[1] == "ArrowUp") return create_if_block_6$1;
-    		return create_else_block$1;
-    	}
-
-    	let current_block_type = select_block_type_2(ctx);
-    	let if_block = current_block_type(ctx);
-
-    	const block = {
-    		c: function create() {
-    			kbd = element("kbd");
-    			t0 = text(t0_value);
-    			t1 = space();
-    			if_block.c();
-    			if_block_anchor = empty();
-    			add_location(kbd, file$3, 185, 2, 17915);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, kbd, anchor);
-    			append_dev(kbd, t0);
-    			insert_dev(target, t1, anchor);
-    			if_block.m(target, anchor);
-    			insert_dev(target, if_block_anchor, anchor);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (dirty & /*key*/ 1 && t0_value !== (t0_value = (/*key*/ ctx[0] === ' ' ? 'Space' : /*key*/ ctx[0]) + "")) set_data_dev(t0, t0_value);
-
-    			if (current_block_type === (current_block_type = select_block_type_2(ctx)) && if_block) {
-    				if_block.p(ctx, dirty);
-    			} else {
-    				if_block.d(1);
-    				if_block = current_block_type(ctx);
-
-    				if (if_block) {
-    					if_block.c();
-    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-    				}
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(kbd);
-    			if (detaching) detach_dev(t1);
-    			if_block.d(detaching);
-    			if (detaching) detach_dev(if_block_anchor);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_5$1.name,
-    		type: "if",
-    		source: "(185:1) {#if key}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (189:8) {:else}
-    function create_else_block$1(ctx) {
-    	let p;
-
-    	const block = {
-    		c: function create() {
-    			p = element("p");
-    			p.textContent = "nao funciono";
-    			add_location(p, file$3, 189, 8, 18034);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, p, anchor);
-    		},
-    		p: noop,
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(p);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_else_block$1.name,
-    		type: "else",
-    		source: "(189:8) {:else}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (187:8) {#if (code == "ArrowUp")}
-    function create_if_block_6$1(ctx) {
-    	let p;
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			p = element("p");
-    			t = text(/*code*/ ctx[1]);
-    			add_location(p, file$3, 187, 2, 17994);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, p, anchor);
-    			append_dev(p, t);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (dirty & /*code*/ 2) set_data_dev(t, /*code*/ ctx[1]);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(p);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_6$1.name,
-    		type: "if",
-    		source: "(187:8) {#if (code == \\\"ArrowUp\\\")}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (200:1) {#if (LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i)}
-    function create_if_block$2(ctx) {
-    	let tr;
-    	let t;
-    	let each_value_1 = /*linhas*/ ctx[18];
-    	validate_each_argument(each_value_1);
-    	let each_blocks = [];
-
-    	for (let i = 0; i < each_value_1.length; i += 1) {
-    		each_blocks[i] = create_each_block_1$1(get_each_context_1$1(ctx, each_value_1, i));
-    	}
-
-    	const block = {
-    		c: function create() {
-    			tr = element("tr");
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].c();
-    			}
-
-    			t = space();
-    			add_location(tr, file$3, 200, 3, 18281);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, tr, anchor);
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(tr, null);
-    			}
-
-    			append_dev(tr, t);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (dirty & /*mapa, LimiteX, Dimensionamento*/ 324) {
-    				each_value_1 = /*linhas*/ ctx[18];
-    				validate_each_argument(each_value_1);
-    				let i;
-
-    				for (i = 0; i < each_value_1.length; i += 1) {
-    					const child_ctx = get_each_context_1$1(ctx, each_value_1, i);
-
-    					if (each_blocks[i]) {
-    						each_blocks[i].p(child_ctx, dirty);
-    					} else {
-    						each_blocks[i] = create_each_block_1$1(child_ctx);
-    						each_blocks[i].c();
-    						each_blocks[i].m(tr, t);
-    					}
-    				}
-
-    				for (; i < each_blocks.length; i += 1) {
-    					each_blocks[i].d(1);
-    				}
-
-    				each_blocks.length = each_value_1.length;
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(tr);
-    			destroy_each(each_blocks, detaching);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block$2.name,
-    		type: "if",
-    		source: "(200:1) {#if (LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i)}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (203:5) {#if (LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j)}
-    function create_if_block_1$2(ctx) {
-    	let if_block_anchor;
-
-    	function select_block_type_3(ctx, dirty) {
-    		if (/*elementos*/ ctx[21] == 0) return create_if_block_2$2;
-    		if (/*elementos*/ ctx[21] == 1) return create_if_block_3$2;
-    		if (/*elementos*/ ctx[21] == "P") return create_if_block_4$2;
-    	}
-
-    	let current_block_type = select_block_type_3(ctx);
-    	let if_block = current_block_type && current_block_type(ctx);
-
-    	const block = {
-    		c: function create() {
-    			if (if_block) if_block.c();
-    			if_block_anchor = empty();
-    		},
-    		m: function mount(target, anchor) {
-    			if (if_block) if_block.m(target, anchor);
-    			insert_dev(target, if_block_anchor, anchor);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (current_block_type !== (current_block_type = select_block_type_3(ctx))) {
-    				if (if_block) if_block.d(1);
-    				if_block = current_block_type && current_block_type(ctx);
-
-    				if (if_block) {
-    					if_block.c();
-    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-    				}
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (if_block) {
-    				if_block.d(detaching);
-    			}
-
-    			if (detaching) detach_dev(if_block_anchor);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_1$2.name,
-    		type: "if",
-    		source: "(203:5) {#if (LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j)}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (208:35) 
-    function create_if_block_4$2(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/soacabecinha.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "jow");
-    			attr_dev(img, "class", "svelte-kf5ld7");
-    			add_location(img, file$3, 208, 12, 18640);
-    			add_location(th, file$3, 208, 8, 18636);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_4$2.name,
-    		type: "if",
-    		source: "(208:35) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (206:33) 
-    function create_if_block_3$2(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel3.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "ola");
-    			attr_dev(img, "class", "svelte-kf5ld7");
-    			add_location(img, file$3, 206, 12, 18533);
-    			add_location(th, file$3, 206, 8, 18529);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_3$2.name,
-    		type: "if",
-    		source: "(206:33) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (204:7) {#if elementos == 0}
-    function create_if_block_2$2(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel3.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "opa");
-    			attr_dev(img, "class", "svelte-kf5ld7");
-    			add_location(img, file$3, 204, 12, 18430);
-    			add_location(th, file$3, 204, 8, 18426);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_2$2.name,
-    		type: "if",
-    		source: "(204:7) {#if elementos == 0}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (202:4) {#each linhas as elementos,j}
-    function create_each_block_1$1(ctx) {
-    	let if_block_anchor;
-    	let if_block = /*LimiteX*/ ctx[6] <= /*j*/ ctx[23] && /*LimiteX*/ ctx[6] + /*Dimensionamento*/ ctx[8] * 2 >= /*j*/ ctx[23] && create_if_block_1$2(ctx);
-
-    	const block = {
-    		c: function create() {
-    			if (if_block) if_block.c();
-    			if_block_anchor = empty();
-    		},
-    		m: function mount(target, anchor) {
-    			if (if_block) if_block.m(target, anchor);
-    			insert_dev(target, if_block_anchor, anchor);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (/*LimiteX*/ ctx[6] <= /*j*/ ctx[23] && /*LimiteX*/ ctx[6] + /*Dimensionamento*/ ctx[8] * 2 >= /*j*/ ctx[23]) {
-    				if (if_block) {
-    					if_block.p(ctx, dirty);
-    				} else {
-    					if_block = create_if_block_1$2(ctx);
-    					if_block.c();
-    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-    				}
-    			} else if (if_block) {
-    				if_block.d(1);
-    				if_block = null;
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (if_block) if_block.d(detaching);
-    			if (detaching) detach_dev(if_block_anchor);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_each_block_1$1.name,
-    		type: "each",
-    		source: "(202:4) {#each linhas as elementos,j}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (199:0) {#each mapa as linhas,i}
-    function create_each_block$1(ctx) {
-    	let if_block_anchor;
-    	let if_block = /*LimiteY*/ ctx[5] <= /*i*/ ctx[20] && /*LimiteY*/ ctx[5] + /*Dimensionamento*/ ctx[8] * 2 >= /*i*/ ctx[20] && create_if_block$2(ctx);
-
-    	const block = {
-    		c: function create() {
-    			if (if_block) if_block.c();
-    			if_block_anchor = empty();
-    		},
-    		m: function mount(target, anchor) {
-    			if (if_block) if_block.m(target, anchor);
-    			insert_dev(target, if_block_anchor, anchor);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (/*LimiteY*/ ctx[5] <= /*i*/ ctx[20] && /*LimiteY*/ ctx[5] + /*Dimensionamento*/ ctx[8] * 2 >= /*i*/ ctx[20]) {
-    				if (if_block) {
-    					if_block.p(ctx, dirty);
-    				} else {
-    					if_block = create_if_block$2(ctx);
-    					if_block.c();
-    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-    				}
-    			} else if (if_block) {
-    				if_block.d(1);
-    				if_block = null;
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (if_block) if_block.d(detaching);
-    			if (detaching) detach_dev(if_block_anchor);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_each_block$1.name,
-    		type: "each",
-    		source: "(199:0) {#each mapa as linhas,i}",
-    		ctx
-    	});
-
-    	return block;
-    }
+    /* src\creditos.svelte generated by Svelte v3.53.1 */
+    const file$3 = "src\\creditos.svelte";
 
     function create_fragment$3(ctx) {
-    	let t0;
-    	let div;
-    	let t1;
-    	let t2_value = /*posicaoinicial*/ ctx[9]() + "";
-    	let t2;
-    	let t3;
-    	let p;
-    	let t4;
-    	let t5;
-    	let t6;
-    	let t7;
-    	let each_1_anchor;
-    	let mounted;
-    	let dispose;
-    	let if_block0 = /*key*/ ctx[0] && create_if_block_7$1(ctx);
-
-    	function select_block_type_1(ctx, dirty) {
-    		if (/*key*/ ctx[0]) return create_if_block_5$1;
-    		return create_else_block_1$1;
-    	}
-
-    	let current_block_type = select_block_type_1(ctx);
-    	let if_block1 = current_block_type(ctx);
-    	let each_value = /*mapa*/ ctx[2];
-    	validate_each_argument(each_value);
-    	let each_blocks = [];
-
-    	for (let i = 0; i < each_value.length; i += 1) {
-    		each_blocks[i] = create_each_block$1(get_each_context$1(ctx, each_value, i));
-    	}
-
-    	const block = {
-    		c: function create() {
-    			if (if_block0) if_block0.c();
-    			t0 = space();
-    			div = element("div");
-    			if_block1.c();
-    			t1 = space();
-    			t2 = text(t2_value);
-    			t3 = space();
-    			p = element("p");
-    			t4 = text(/*eixoX*/ ctx[3]);
-    			t5 = text(", ");
-    			t6 = text(/*eixoY*/ ctx[4]);
-    			t7 = space();
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].c();
-    			}
-
-    			each_1_anchor = empty();
-    			set_style(div, "text-align", "center");
-    			add_location(div, file$3, 183, 0, 17867);
-    			add_location(p, file$3, 197, 0, 18164);
-    		},
-    		l: function claim(nodes) {
-    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
-    		},
-    		m: function mount(target, anchor) {
-    			if (if_block0) if_block0.m(target, anchor);
-    			insert_dev(target, t0, anchor);
-    			insert_dev(target, div, anchor);
-    			if_block1.m(div, null);
-    			insert_dev(target, t1, anchor);
-    			insert_dev(target, t2, anchor);
-    			insert_dev(target, t3, anchor);
-    			insert_dev(target, p, anchor);
-    			append_dev(p, t4);
-    			append_dev(p, t5);
-    			append_dev(p, t6);
-    			insert_dev(target, t7, anchor);
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(target, anchor);
-    			}
-
-    			insert_dev(target, each_1_anchor, anchor);
-
-    			if (!mounted) {
-    				dispose = listen_dev(window, "keydown", /*handleKeydown*/ ctx[7], false, false, false);
-    				mounted = true;
-    			}
-    		},
-    		p: function update(ctx, [dirty]) {
-    			if (/*key*/ ctx[0]) {
-    				if (if_block0) {
-    					if_block0.p(ctx, dirty);
-    				} else {
-    					if_block0 = create_if_block_7$1(ctx);
-    					if_block0.c();
-    					if_block0.m(t0.parentNode, t0);
-    				}
-    			} else if (if_block0) {
-    				if_block0.d(1);
-    				if_block0 = null;
-    			}
-
-    			if (current_block_type === (current_block_type = select_block_type_1(ctx)) && if_block1) {
-    				if_block1.p(ctx, dirty);
-    			} else {
-    				if_block1.d(1);
-    				if_block1 = current_block_type(ctx);
-
-    				if (if_block1) {
-    					if_block1.c();
-    					if_block1.m(div, null);
-    				}
-    			}
-
-    			if (dirty & /*eixoX*/ 8) set_data_dev(t4, /*eixoX*/ ctx[3]);
-    			if (dirty & /*eixoY*/ 16) set_data_dev(t6, /*eixoY*/ ctx[4]);
-
-    			if (dirty & /*mapa, LimiteX, Dimensionamento, LimiteY*/ 356) {
-    				each_value = /*mapa*/ ctx[2];
-    				validate_each_argument(each_value);
-    				let i;
-
-    				for (i = 0; i < each_value.length; i += 1) {
-    					const child_ctx = get_each_context$1(ctx, each_value, i);
-
-    					if (each_blocks[i]) {
-    						each_blocks[i].p(child_ctx, dirty);
-    					} else {
-    						each_blocks[i] = create_each_block$1(child_ctx);
-    						each_blocks[i].c();
-    						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
-    					}
-    				}
-
-    				for (; i < each_blocks.length; i += 1) {
-    					each_blocks[i].d(1);
-    				}
-
-    				each_blocks.length = each_value.length;
-    			}
-    		},
-    		i: noop,
-    		o: noop,
-    		d: function destroy(detaching) {
-    			if (if_block0) if_block0.d(detaching);
-    			if (detaching) detach_dev(t0);
-    			if (detaching) detach_dev(div);
-    			if_block1.d();
-    			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(t3);
-    			if (detaching) detach_dev(p);
-    			if (detaching) detach_dev(t7);
-    			destroy_each(each_blocks, detaching);
-    			if (detaching) detach_dev(each_1_anchor);
-    			mounted = false;
-    			dispose();
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_fragment$3.name,
-    		type: "component",
-    		source: "",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    function instance$3($$self, $$props, $$invalidate) {
-    	let { $$slots: slots = {}, $$scope } = $$props;
-    	validate_slots('Teste', slots, []);
-    	let key;
-    	let code;
-
-    	function handleKeydown(event) {
-    		$$invalidate(0, key = event.key);
-    		$$invalidate(1, code = event.code);
-    	}
-
-    	let mapa = [
-    		[
-    			2,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			0,
-    			0,
-    			0,
-    			0,
-    			0,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		],
-    		[
-    			2,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1,
-    			1
-    		]
-    	];
-
-    	let eixoX = 0;
-    	let eixoY = 0;
-    	let y = 0;
-    	let x = 0;
-    	let LimiteY = 0;
-    	let LimiteX = 0;
-    	let Dimensionamento = 8;
-
-    	function RenderizaçãoDoMapa() {
-    		for (let i in mapa) {
-    			for (let j in mapa[i]) {
-    				if (mapa[i][j] == "P") {
-    					$$invalidate(5, LimiteY = i - Dimensionamento);
-    					$$invalidate(6, LimiteX = j - Dimensionamento);
-    					return;
-    				}
-    			}
-    		}
-    	}
-
-    	RenderizaçãoDoMapa();
-
-    	function posicaoinicial() {
-    		for (let i in mapa) {
-    			for (let j in mapa[i]) {
-    				if (mapa[i][j] == 0) {
-    					$$invalidate(4, eixoY = i);
-    					$$invalidate(3, eixoX = j);
-    					$$invalidate(2, mapa[i][j] = "P", mapa);
-    					return;
-    				}
-    			}
-    		}
-    	}
-
-    	function incremetarX() {
-    		x = eixoX;
-    		y = eixoY;
-    		$$invalidate(3, eixoX++, eixoX);
-
-    		if (mapa[eixoY][eixoX] == 1) {
-    			ResertarPosicao();
-    			return;
-    		}
-
-    		$$invalidate(2, mapa[eixoY][eixoX] = "P", mapa);
-    		$$invalidate(2, mapa[y][x] = 0, mapa);
-    		RenderizaçãoDoMapa();
-    		$$invalidate(1, code = "d");
-    	}
-
-    	function incremetarY() {
-    		x = eixoX;
-    		y = eixoY;
-    		$$invalidate(4, eixoY++, eixoY);
-
-    		if (mapa[eixoY][eixoX] == 1) {
-    			ResertarPosicao();
-    			return;
-    		}
-
-    		$$invalidate(2, mapa[eixoY][eixoX] = "P", mapa);
-    		$$invalidate(2, mapa[y][x] = 0, mapa);
-    		RenderizaçãoDoMapa();
-    		$$invalidate(1, code = "w");
-    	}
-
-    	function decrementarX() {
-    		x = eixoX;
-    		y = eixoY;
-    		$$invalidate(3, eixoX--, eixoX);
-
-    		if (mapa[eixoY][eixoX] == 1) {
-    			ResertarPosicao();
-    			return;
-    		}
-
-    		$$invalidate(2, mapa[eixoY][eixoX] = "P", mapa);
-    		$$invalidate(2, mapa[y][x] = 0, mapa);
-    		RenderizaçãoDoMapa();
-    		$$invalidate(1, code = "a");
-    	}
-
-    	function decrementarY() {
-    		x = eixoX;
-    		y = eixoY;
-    		$$invalidate(4, eixoY--, eixoY);
-
-    		if (mapa[eixoY][eixoX] == 1) {
-    			ResertarPosicao();
-    			return;
-    		}
-
-    		$$invalidate(2, mapa[eixoY][eixoX] = "P", mapa);
-    		$$invalidate(2, mapa[y][x] = 0, mapa);
-    		RenderizaçãoDoMapa();
-    		$$invalidate(1, code = "s");
-    	}
-
-    	function ResertarPosicao() {
-    		$$invalidate(3, eixoX = x);
-    		$$invalidate(4, eixoY = y);
-    		$$invalidate(2, mapa[eixoY][eixoX] = "P", mapa);
-    		RenderizaçãoDoMapa();
-    	}
-
-    	const writable_props = [];
-
-    	Object.keys($$props).forEach(key => {
-    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console.warn(`<Teste> was created with unknown prop '${key}'`);
-    	});
-
-    	$$self.$capture_state = () => ({
-    		each,
-    		key,
-    		code,
-    		handleKeydown,
-    		mapa,
-    		eixoX,
-    		eixoY,
-    		y,
-    		x,
-    		LimiteY,
-    		LimiteX,
-    		Dimensionamento,
-    		RenderizaçãoDoMapa,
-    		posicaoinicial,
-    		incremetarX,
-    		incremetarY,
-    		decrementarX,
-    		decrementarY,
-    		ResertarPosicao
-    	});
-
-    	$$self.$inject_state = $$props => {
-    		if ('key' in $$props) $$invalidate(0, key = $$props.key);
-    		if ('code' in $$props) $$invalidate(1, code = $$props.code);
-    		if ('mapa' in $$props) $$invalidate(2, mapa = $$props.mapa);
-    		if ('eixoX' in $$props) $$invalidate(3, eixoX = $$props.eixoX);
-    		if ('eixoY' in $$props) $$invalidate(4, eixoY = $$props.eixoY);
-    		if ('y' in $$props) y = $$props.y;
-    		if ('x' in $$props) x = $$props.x;
-    		if ('LimiteY' in $$props) $$invalidate(5, LimiteY = $$props.LimiteY);
-    		if ('LimiteX' in $$props) $$invalidate(6, LimiteX = $$props.LimiteX);
-    		if ('Dimensionamento' in $$props) $$invalidate(8, Dimensionamento = $$props.Dimensionamento);
-    	};
-
-    	if ($$props && "$$inject" in $$props) {
-    		$$self.$inject_state($$props.$$inject);
-    	}
-
-    	return [
-    		key,
-    		code,
-    		mapa,
-    		eixoX,
-    		eixoY,
-    		LimiteY,
-    		LimiteX,
-    		handleKeydown,
-    		Dimensionamento,
-    		posicaoinicial,
-    		incremetarX,
-    		incremetarY,
-    		decrementarX,
-    		decrementarY
-    	];
-    }
-
-    class Teste extends SvelteComponentDev {
-    	constructor(options) {
-    		super(options);
-    		init(this, options, instance$3, create_fragment$3, safe_not_equal, {});
-
-    		dispatch_dev("SvelteRegisterComponent", {
-    			component: this,
-    			tagName: "Teste",
-    			options,
-    			id: create_fragment$3.name
-    		});
-    	}
-    }
-
-    /* src\creditos.svelte generated by Svelte v3.53.1 */
-    const file$2 = "src\\creditos.svelte";
-
-    function create_fragment$2(ctx) {
     	let head;
     	let link0;
     	let t0;
@@ -29425,86 +20943,86 @@ var app = (function () {
     			create_component(voltarmenu.$$.fragment);
     			attr_dev(link0, "rel", "stylesheet");
     			attr_dev(link0, "href", "/css/creditos.css");
-    			add_location(link0, file$2, 4, 4, 84);
+    			add_location(link0, file$3, 4, 4, 84);
     			attr_dev(link1, "rel", "stylesheet");
     			attr_dev(link1, "href", "/css/menu.css");
-    			add_location(link1, file$2, 5, 4, 138);
-    			add_location(head, file$2, 3, 0, 72);
+    			add_location(link1, file$3, 5, 4, 138);
+    			add_location(head, file$3, 3, 0, 72);
     			attr_dev(h40, "class", "geral");
-    			add_location(h40, file$2, 8, 0, 195);
+    			add_location(h40, file$3, 8, 0, 195);
     			attr_dev(p0, "class", "geral");
-    			add_location(p0, file$2, 10, 0, 230);
+    			add_location(p0, file$3, 10, 0, 230);
     			attr_dev(p1, "class", "geral");
-    			add_location(p1, file$2, 11, 0, 270);
+    			add_location(p1, file$3, 11, 0, 270);
     			attr_dev(p2, "class", "geral");
-    			add_location(p2, file$2, 12, 0, 309);
+    			add_location(p2, file$3, 12, 0, 309);
     			attr_dev(p3, "class", "geral");
-    			add_location(p3, file$2, 13, 0, 353);
+    			add_location(p3, file$3, 13, 0, 353);
     			attr_dev(p4, "class", "geral");
-    			add_location(p4, file$2, 14, 0, 393);
+    			add_location(p4, file$3, 14, 0, 393);
     			attr_dev(h41, "class", "geral");
-    			add_location(h41, file$2, 16, 0, 437);
+    			add_location(h41, file$3, 16, 0, 437);
     			attr_dev(p5, "class", "geral");
-    			add_location(p5, file$2, 18, 0, 472);
+    			add_location(p5, file$3, 18, 0, 472);
     			attr_dev(p6, "class", "geral");
-    			add_location(p6, file$2, 19, 0, 512);
+    			add_location(p6, file$3, 19, 0, 512);
     			attr_dev(p7, "class", "geral");
-    			add_location(p7, file$2, 20, 0, 551);
+    			add_location(p7, file$3, 20, 0, 551);
     			attr_dev(p8, "class", "geral");
-    			add_location(p8, file$2, 21, 0, 595);
+    			add_location(p8, file$3, 21, 0, 595);
     			attr_dev(p9, "class", "geral");
-    			add_location(p9, file$2, 22, 0, 635);
+    			add_location(p9, file$3, 22, 0, 635);
     			attr_dev(h42, "class", "geral");
-    			add_location(h42, file$2, 24, 0, 679);
+    			add_location(h42, file$3, 24, 0, 679);
     			attr_dev(p10, "class", "geral");
-    			add_location(p10, file$2, 26, 0, 716);
+    			add_location(p10, file$3, 26, 0, 716);
     			attr_dev(p11, "class", "geral");
-    			add_location(p11, file$2, 27, 0, 756);
+    			add_location(p11, file$3, 27, 0, 756);
     			attr_dev(h10, "class", "geral");
-    			add_location(h10, file$2, 29, 0, 798);
+    			add_location(h10, file$3, 29, 0, 798);
     			attr_dev(p12, "class", "geral");
-    			add_location(p12, file$2, 31, 0, 847);
+    			add_location(p12, file$3, 31, 0, 847);
     			attr_dev(p13, "class", "geral");
-    			add_location(p13, file$2, 32, 0, 985);
+    			add_location(p13, file$3, 32, 0, 985);
     			attr_dev(p14, "class", "geral");
-    			add_location(p14, file$2, 33, 0, 1096);
+    			add_location(p14, file$3, 33, 0, 1096);
     			attr_dev(h11, "class", "geral");
-    			add_location(h11, file$2, 35, 0, 1271);
+    			add_location(h11, file$3, 35, 0, 1271);
     			attr_dev(h43, "class", "geral");
-    			add_location(h43, file$2, 37, 0, 1309);
-    			add_location(br0, file$2, 39, 26, 1379);
-    			add_location(br1, file$2, 39, 49, 1402);
+    			add_location(h43, file$3, 37, 0, 1309);
+    			add_location(br0, file$3, 39, 26, 1379);
+    			add_location(br1, file$3, 39, 49, 1402);
     			attr_dev(p15, "class", "geral");
-    			add_location(p15, file$2, 39, 0, 1353);
+    			add_location(p15, file$3, 39, 0, 1353);
     			attr_dev(h44, "class", "geral");
-    			add_location(h44, file$2, 41, 0, 1442);
-    			add_location(br2, file$2, 43, 26, 1511);
-    			add_location(br3, file$2, 43, 49, 1534);
+    			add_location(h44, file$3, 41, 0, 1442);
+    			add_location(br2, file$3, 43, 26, 1511);
+    			add_location(br3, file$3, 43, 49, 1534);
     			attr_dev(p16, "class", "geral");
-    			add_location(p16, file$2, 43, 0, 1485);
+    			add_location(p16, file$3, 43, 0, 1485);
     			attr_dev(h45, "class", "geral");
-    			add_location(h45, file$2, 45, 0, 1574);
-    			add_location(br4, file$2, 47, 26, 1648);
-    			add_location(br5, file$2, 47, 49, 1671);
+    			add_location(h45, file$3, 45, 0, 1574);
+    			add_location(br4, file$3, 47, 26, 1648);
+    			add_location(br5, file$3, 47, 49, 1671);
     			attr_dev(p17, "class", "geral");
-    			add_location(p17, file$2, 47, 0, 1622);
+    			add_location(p17, file$3, 47, 0, 1622);
     			attr_dev(h46, "class", "geral");
-    			add_location(h46, file$2, 49, 0, 1709);
-    			add_location(br6, file$2, 51, 26, 1779);
-    			add_location(br7, file$2, 51, 49, 1802);
+    			add_location(h46, file$3, 49, 0, 1709);
+    			add_location(br6, file$3, 51, 26, 1779);
+    			add_location(br7, file$3, 51, 49, 1802);
     			attr_dev(p18, "class", "geral");
-    			add_location(p18, file$2, 51, 0, 1753);
+    			add_location(p18, file$3, 51, 0, 1753);
     			attr_dev(h47, "class", "geral");
-    			add_location(h47, file$2, 53, 0, 1845);
-    			add_location(br8, file$2, 55, 26, 1917);
-    			add_location(br9, file$2, 55, 49, 1940);
+    			add_location(h47, file$3, 53, 0, 1845);
+    			add_location(br8, file$3, 55, 26, 1917);
+    			add_location(br9, file$3, 55, 49, 1940);
     			attr_dev(p19, "class", "geral");
-    			add_location(p19, file$2, 55, 0, 1891);
+    			add_location(p19, file$3, 55, 0, 1891);
     			attr_dev(p20, "class", "agradeca");
-    			add_location(p20, file$2, 57, 0, 1979);
+    			add_location(p20, file$3, 57, 0, 1979);
     			attr_dev(p21, "class", "geral");
     			attr_dev(p21, "id", "voltar");
-    			add_location(p21, file$2, 59, 0, 2027);
+    			add_location(p21, file$3, 59, 0, 2027);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -29688,7 +21206,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$2.name,
+    		id: create_fragment$3.name,
     		type: "component",
     		source: "",
     		ctx
@@ -29697,7 +21215,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$2($$self, $$props, $$invalidate) {
+    function instance$3($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('Creditos', slots, []);
     	const writable_props = [];
@@ -29713,97 +21231,145 @@ var app = (function () {
     class Creditos extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$2, create_fragment$2, safe_not_equal, {});
+    		init(this, options, instance$3, create_fragment$3, safe_not_equal, {});
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "Creditos",
     			options,
-    			id: create_fragment$2.name
+    			id: create_fragment$3.name
     		});
     	}
     }
 
-    /* src\newjogo.svelte generated by Svelte v3.53.1 */
-    const file$1 = "src\\newjogo.svelte";
+    /* src\teste.svelte generated by Svelte v3.53.1 */
+    const file$2 = "src\\teste.svelte";
 
-    function get_each_context_8(ctx, list, i) {
+    function get_each_context_16$1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[36] = list[i];
+    	child_ctx[58] = list[i];
     	return child_ctx;
     }
 
-    function get_each_context_9(ctx, list, i) {
+    function get_each_context_17$1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[39] = list[i];
+    	child_ctx[61] = list[i];
     	return child_ctx;
     }
 
-    function get_each_context_6(ctx, list, i) {
+    function get_each_context_14$1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[36] = list[i];
-    	child_ctx[38] = i;
+    	child_ctx[58] = list[i];
     	return child_ctx;
     }
 
-    function get_each_context_7(ctx, list, i) {
+    function get_each_context_15$1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[39] = list[i];
-    	child_ctx[41] = i;
+    	child_ctx[61] = list[i];
     	return child_ctx;
     }
 
-    function get_each_context_4(ctx, list, i) {
+    function get_each_context_12$1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[36] = list[i];
-    	child_ctx[38] = i;
+    	child_ctx[58] = list[i];
+    	child_ctx[60] = i;
     	return child_ctx;
     }
 
-    function get_each_context_5(ctx, list, i) {
+    function get_each_context_13$1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[39] = list[i];
-    	child_ctx[41] = i;
+    	child_ctx[61] = list[i];
+    	child_ctx[63] = i;
     	return child_ctx;
     }
 
-    function get_each_context_2(ctx, list, i) {
+    function get_each_context_10$1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[36] = list[i];
-    	child_ctx[38] = i;
+    	child_ctx[58] = list[i];
     	return child_ctx;
     }
 
-    function get_each_context_3(ctx, list, i) {
+    function get_each_context_11$1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[39] = list[i];
-    	child_ctx[41] = i;
+    	child_ctx[61] = list[i];
     	return child_ctx;
     }
 
-    function get_each_context(ctx, list, i) {
+    function get_each_context_8$1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[36] = list[i];
-    	child_ctx[38] = i;
+    	child_ctx[58] = list[i];
+    	child_ctx[60] = i;
     	return child_ctx;
     }
 
-    function get_each_context_1(ctx, list, i) {
+    function get_each_context_9$1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[39] = list[i];
-    	child_ctx[41] = i;
+    	child_ctx[61] = list[i];
+    	child_ctx[63] = i;
     	return child_ctx;
     }
 
-    // (668:0) {#if (key)}
-    function create_if_block_44(ctx) {
+    function get_each_context_6$1(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[58] = list[i];
+    	return child_ctx;
+    }
+
+    function get_each_context_7$1(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[61] = list[i];
+    	return child_ctx;
+    }
+
+    function get_each_context_4$1(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[58] = list[i];
+    	child_ctx[60] = i;
+    	return child_ctx;
+    }
+
+    function get_each_context_5$1(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[61] = list[i];
+    	child_ctx[63] = i;
+    	return child_ctx;
+    }
+
+    function get_each_context_2$1(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[58] = list[i];
+    	return child_ctx;
+    }
+
+    function get_each_context_3$1(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[61] = list[i];
+    	return child_ctx;
+    }
+
+    function get_each_context$1(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[58] = list[i];
+    	child_ctx[60] = i;
+    	return child_ctx;
+    }
+
+    function get_each_context_1$1(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[61] = list[i];
+    	child_ctx[63] = i;
+    	return child_ctx;
+    }
+
+    // (640:0) {#if (key)}
+    function create_if_block_82(ctx) {
     	let if_block_anchor;
 
     	function select_block_type(ctx, dirty) {
-    		if (/*code*/ ctx[1] == "ArrowUp") return create_if_block_45;
-    		if (/*code*/ ctx[1] == "ArrowDown") return create_if_block_46;
-    		if (/*code*/ ctx[1] == "ArrowLeft") return create_if_block_47;
-    		if (/*code*/ ctx[1] == "ArrowRight") return create_if_block_48;
+    		if (/*code*/ ctx[1] == "ArrowUp" || /*code*/ ctx[1] == "KeyW") return create_if_block_83;
+    		if (/*code*/ ctx[1] == "ArrowDown" || /*code*/ ctx[1] == "KeyS") return create_if_block_84;
+    		if (/*code*/ ctx[1] == "ArrowLeft" || /*code*/ ctx[1] == "KeyA") return create_if_block_85;
+    		if (/*code*/ ctx[1] == "ArrowRight" || /*code*/ ctx[1] == "KeyD") return create_if_block_86;
     	}
 
     	let current_block_type = select_block_type(ctx);
@@ -29842,18 +21408,18 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_44.name,
+    		id: create_if_block_82.name,
     		type: "if",
-    		source: "(668:0) {#if (key)}",
+    		source: "(640:0) {#if (key)}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (675:41) 
-    function create_if_block_48(ctx) {
-    	let t_value = /*IncremetarX*/ ctx[18]() + "";
+    // (653:61) 
+    function create_if_block_86(ctx) {
+    	let t_value = /*MovimentaçãoPeloMapa*/ ctx[24]("DIREITA") + "";
     	let t;
 
     	const block = {
@@ -29871,18 +21437,18 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_48.name,
+    		id: create_if_block_86.name,
     		type: "if",
-    		source: "(675:41) ",
+    		source: "(653:61) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (673:40) 
-    function create_if_block_47(ctx) {
-    	let t_value = /*DecrementarX*/ ctx[19]() + "";
+    // (649:60) 
+    function create_if_block_85(ctx) {
+    	let t_value = /*MovimentaçãoPeloMapa*/ ctx[24]("ESQUERDA") + "";
     	let t;
 
     	const block = {
@@ -29900,18 +21466,18 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_47.name,
+    		id: create_if_block_85.name,
     		type: "if",
-    		source: "(673:40) ",
+    		source: "(649:60) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (671:40) 
-    function create_if_block_46(ctx) {
-    	let t_value = /*IncremetarY*/ ctx[20]() + "";
+    // (645:60) 
+    function create_if_block_84(ctx) {
+    	let t_value = /*MovimentaçãoPeloMapa*/ ctx[24]("BAIXO") + "";
     	let t;
 
     	const block = {
@@ -29929,18 +21495,18 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_46.name,
+    		id: create_if_block_84.name,
     		type: "if",
-    		source: "(671:40) ",
+    		source: "(645:60) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (669:8) {#if (code == "ArrowUp")}
-    function create_if_block_45(ctx) {
-    	let t_value = /*DecrementarY*/ ctx[21]() + "";
+    // (641:8) {#if (code == "ArrowUp") || (code == "KeyW")}
+    function create_if_block_83(ctx) {
+    	let t_value = /*MovimentaçãoPeloMapa*/ ctx[24]("CIMA") + "";
     	let t;
 
     	const block = {
@@ -29958,30 +21524,30 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_45.name,
+    		id: create_if_block_83.name,
     		type: "if",
-    		source: "(669:8) {#if (code == \\\"ArrowUp\\\")}",
+    		source: "(641:8) {#if (code == \\\"ArrowUp\\\") || (code == \\\"KeyW\\\")}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (860:41) 
-    function create_if_block_38(ctx) {
+    // (974:41) 
+    function create_if_block_76(ctx) {
     	let current_block_type_index;
     	let if_block;
     	let if_block_anchor;
     	let current;
-    	const if_block_creators = [create_if_block_39, create_else_block_4];
+    	const if_block_creators = [create_if_block_77, create_else_block_4$1];
     	const if_blocks = [];
 
-    	function select_block_type_10(ctx, dirty) {
+    	function select_block_type_17(ctx, dirty) {
     		if (!/*enigma*/ ctx[10]) return 0;
     		return 1;
     	}
 
-    	current_block_type_index = select_block_type_10(ctx);
+    	current_block_type_index = select_block_type_17(ctx);
     	if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
 
     	const block = {
@@ -29996,7 +21562,7 @@ var app = (function () {
     		},
     		p: function update(ctx, dirty) {
     			let previous_block_index = current_block_type_index;
-    			current_block_type_index = select_block_type_10(ctx);
+    			current_block_type_index = select_block_type_17(ctx);
 
     			if (current_block_type_index === previous_block_index) {
     				if_blocks[current_block_type_index].p(ctx, dirty);
@@ -30038,27 +21604,27 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_38.name,
+    		id: create_if_block_76.name,
     		type: "if",
-    		source: "(860:41) ",
+    		source: "(974:41) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (816:40) 
-    function create_if_block_28(ctx) {
+    // (892:40) 
+    function create_if_block_54$1(ctx) {
     	let p;
     	let t1;
     	let if_block_anchor;
 
-    	function select_block_type_8(ctx, dirty) {
-    		if (!/*enigma*/ ctx[10]) return create_if_block_29;
-    		return create_else_block_3;
+    	function select_block_type_13(ctx, dirty) {
+    		if (!/*enigma*/ ctx[10]) return create_if_block_55$1;
+    		return create_else_block_3$1;
     	}
 
-    	let current_block_type = select_block_type_8(ctx);
+    	let current_block_type = select_block_type_13(ctx);
     	let if_block = current_block_type(ctx);
 
     	const block = {
@@ -30069,7 +21635,7 @@ var app = (function () {
     			if_block.c();
     			if_block_anchor = empty();
     			attr_dev(p, "class", "FasesDoJogo");
-    			add_location(p, file$1, 817, 4, 50369);
+    			add_location(p, file$2, 893, 4, 53930);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -30078,7 +21644,7 @@ var app = (function () {
     			insert_dev(target, if_block_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (current_block_type === (current_block_type = select_block_type_8(ctx)) && if_block) {
+    			if (current_block_type === (current_block_type = select_block_type_13(ctx)) && if_block) {
     				if_block.p(ctx, dirty);
     			} else {
     				if_block.d(1);
@@ -30102,27 +21668,27 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_28.name,
+    		id: create_if_block_54$1.name,
     		type: "if",
-    		source: "(816:40) ",
+    		source: "(892:40) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (769:40) 
-    function create_if_block_18(ctx) {
+    // (807:40) 
+    function create_if_block_32$1(ctx) {
     	let p;
     	let t1;
     	let if_block_anchor;
 
-    	function select_block_type_6(ctx, dirty) {
-    		if (!/*enigma*/ ctx[10]) return create_if_block_19;
-    		return create_else_block_2;
+    	function select_block_type_9(ctx, dirty) {
+    		if (!/*enigma*/ ctx[10]) return create_if_block_33$1;
+    		return create_else_block_2$1;
     	}
 
-    	let current_block_type = select_block_type_6(ctx);
+    	let current_block_type = select_block_type_9(ctx);
     	let if_block = current_block_type(ctx);
 
     	const block = {
@@ -30133,7 +21699,7 @@ var app = (function () {
     			if_block.c();
     			if_block_anchor = empty();
     			attr_dev(p, "class", "FasesDoJogo");
-    			add_location(p, file$1, 770, 4, 48022);
+    			add_location(p, file$2, 808, 4, 49852);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -30142,7 +21708,7 @@ var app = (function () {
     			insert_dev(target, if_block_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (current_block_type === (current_block_type = select_block_type_6(ctx)) && if_block) {
+    			if (current_block_type === (current_block_type = select_block_type_9(ctx)) && if_block) {
     				if_block.p(ctx, dirty);
     			} else {
     				if_block.d(1);
@@ -30166,27 +21732,27 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_18.name,
+    		id: create_if_block_32$1.name,
     		type: "if",
-    		source: "(769:40) ",
+    		source: "(807:40) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (725:40) 
-    function create_if_block_9(ctx) {
+    // (727:40) 
+    function create_if_block_12$1(ctx) {
     	let p;
     	let t1;
     	let if_block_anchor;
 
-    	function select_block_type_4(ctx, dirty) {
-    		if (!/*enigma*/ ctx[10]) return create_if_block_10;
-    		return create_else_block_1;
+    	function select_block_type_5(ctx, dirty) {
+    		if (!/*enigma*/ ctx[10]) return create_if_block_13$1;
+    		return create_else_block_1$1;
     	}
 
-    	let current_block_type = select_block_type_4(ctx);
+    	let current_block_type = select_block_type_5(ctx);
     	let if_block = current_block_type(ctx);
 
     	const block = {
@@ -30197,7 +21763,7 @@ var app = (function () {
     			if_block.c();
     			if_block_anchor = empty();
     			attr_dev(p, "class", "FasesDoJogo");
-    			add_location(p, file$1, 726, 4, 45862);
+    			add_location(p, file$2, 728, 4, 46088);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -30206,7 +21772,7 @@ var app = (function () {
     			insert_dev(target, if_block_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (current_block_type === (current_block_type = select_block_type_4(ctx)) && if_block) {
+    			if (current_block_type === (current_block_type = select_block_type_5(ctx)) && if_block) {
     				if_block.p(ctx, dirty);
     			} else {
     				if_block.d(1);
@@ -30230,24 +21796,24 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_9.name,
+    		id: create_if_block_12$1.name,
     		type: "if",
-    		source: "(725:40) ",
+    		source: "(727:40) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (680:0) {#if MudandoDeFase == "tutorial"}
-    function create_if_block$1(ctx) {
+    // (662:0) {#if MudandoDeFase == "tutorial"}
+    function create_if_block$2(ctx) {
     	let p;
     	let t1;
     	let if_block_anchor;
 
     	function select_block_type_2(ctx, dirty) {
-    		if (!/*enigma*/ ctx[10]) return create_if_block_1$1;
-    		return create_else_block;
+    		if (!/*enigma*/ ctx[10]) return create_if_block_1$2;
+    		return create_else_block$1;
     	}
 
     	let current_block_type = select_block_type_2(ctx);
@@ -30261,7 +21827,7 @@ var app = (function () {
     			if_block.c();
     			if_block_anchor = empty();
     			attr_dev(p, "class", "FasesDoJogo");
-    			add_location(p, file$1, 681, 4, 43639);
+    			add_location(p, file$2, 663, 4, 42953);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -30294,17 +21860,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block$1.name,
+    		id: create_if_block$2.name,
     		type: "if",
-    		source: "(680:0) {#if MudandoDeFase == \\\"tutorial\\\"}",
+    		source: "(662:0) {#if MudandoDeFase == \\\"tutorial\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (888:4) {:else}
-    function create_else_block_4(ctx) {
+    // (1003:4) {:else}
+    function create_else_block_4$1(ctx) {
     	let creditos;
     	let current;
     	creditos = new Creditos({ $$inline: true });
@@ -30334,38 +21900,41 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block_4.name,
+    		id: create_else_block_4$1.name,
     		type: "else",
-    		source: "(888:4) {:else}",
+    		source: "(1003:4) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (862:4) {#if !enigma}
-    function create_if_block_39(ctx) {
+    // (976:4) {#if !enigma}
+    function create_if_block_77(ctx) {
     	let vitoria;
     	let t0;
     	let p;
-    	let t1_value = clearInterval(/*Tempo*/ ctx[12]) + "";
+    	let t1_value = clearInterval(/*Movimentar*/ ctx[14]) + "";
     	let t1;
     	let t2;
-    	let t3_value = /*RenderizandoMapa*/ ctx[16]() + "";
+    	let t3_value = clearInterval(/*Tempo*/ ctx[12]) + "";
     	let t3;
     	let t4;
-    	let t5_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[9]) + "";
+    	let t5_value = /*RenderizandoMapa*/ ctx[22]() + "";
     	let t5;
     	let t6;
+    	let t7_value = /*DeterminandoEixos*/ ctx[23](/*MudandoDeFase*/ ctx[9]) + "";
+    	let t7;
+    	let t8;
     	let table;
     	let current;
     	vitoria = new Vitoria({ $$inline: true });
-    	let each_value_8 = /*mapa4*/ ctx[6];
-    	validate_each_argument(each_value_8);
+    	let each_value_16 = /*mapa4*/ ctx[6];
+    	validate_each_argument(each_value_16);
     	let each_blocks = [];
 
-    	for (let i = 0; i < each_value_8.length; i += 1) {
-    		each_blocks[i] = create_each_block_8(get_each_context_8(ctx, each_value_8, i));
+    	for (let i = 0; i < each_value_16.length; i += 1) {
+    		each_blocks[i] = create_each_block_16$1(get_each_context_16$1(ctx, each_value_16, i));
     	}
 
     	const block = {
@@ -30379,6 +21948,8 @@ var app = (function () {
     			t4 = space();
     			t5 = text(t5_value);
     			t6 = space();
+    			t7 = text(t7_value);
+    			t8 = space();
     			table = element("table");
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -30386,9 +21957,9 @@ var app = (function () {
     			}
 
     			attr_dev(p, "class", "textofutil");
-    			add_location(p, file$1, 865, 4, 52548);
+    			add_location(p, file$2, 979, 4, 57849);
     			attr_dev(table, "id", "mapanivel4");
-    			add_location(table, file$1, 870, 0, 52676);
+    			add_location(table, file$2, 985, 0, 58010);
     		},
     		m: function mount(target, anchor) {
     			mount_component(vitoria, target, anchor);
@@ -30399,7 +21970,9 @@ var app = (function () {
     			append_dev(p, t3);
     			append_dev(p, t4);
     			append_dev(p, t5);
-    			insert_dev(target, t6, anchor);
+    			append_dev(p, t6);
+    			append_dev(p, t7);
+    			insert_dev(target, t8, anchor);
     			insert_dev(target, table, anchor);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -30409,21 +21982,22 @@ var app = (function () {
     			current = true;
     		},
     		p: function update(ctx, dirty) {
-    			if ((!current || dirty[0] & /*Tempo*/ 4096) && t1_value !== (t1_value = clearInterval(/*Tempo*/ ctx[12]) + "")) set_data_dev(t1, t1_value);
-    			if ((!current || dirty[0] & /*MudandoDeFase*/ 512) && t5_value !== (t5_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[9]) + "")) set_data_dev(t5, t5_value);
+    			if ((!current || dirty[0] & /*Movimentar*/ 16384) && t1_value !== (t1_value = clearInterval(/*Movimentar*/ ctx[14]) + "")) set_data_dev(t1, t1_value);
+    			if ((!current || dirty[0] & /*Tempo*/ 4096) && t3_value !== (t3_value = clearInterval(/*Tempo*/ ctx[12]) + "")) set_data_dev(t3, t3_value);
+    			if ((!current || dirty[0] & /*MudandoDeFase*/ 512) && t7_value !== (t7_value = /*DeterminandoEixos*/ ctx[23](/*MudandoDeFase*/ ctx[9]) + "")) set_data_dev(t7, t7_value);
 
     			if (dirty[0] & /*mapa4*/ 64) {
-    				each_value_8 = /*mapa4*/ ctx[6];
-    				validate_each_argument(each_value_8);
+    				each_value_16 = /*mapa4*/ ctx[6];
+    				validate_each_argument(each_value_16);
     				let i;
 
-    				for (i = 0; i < each_value_8.length; i += 1) {
-    					const child_ctx = get_each_context_8(ctx, each_value_8, i);
+    				for (i = 0; i < each_value_16.length; i += 1) {
+    					const child_ctx = get_each_context_16$1(ctx, each_value_16, i);
 
     					if (each_blocks[i]) {
     						each_blocks[i].p(child_ctx, dirty);
     					} else {
-    						each_blocks[i] = create_each_block_8(child_ctx);
+    						each_blocks[i] = create_each_block_16$1(child_ctx);
     						each_blocks[i].c();
     						each_blocks[i].m(table, null);
     					}
@@ -30433,7 +22007,7 @@ var app = (function () {
     					each_blocks[i].d(1);
     				}
 
-    				each_blocks.length = each_value_8.length;
+    				each_blocks.length = each_value_16.length;
     			}
     		},
     		i: function intro(local) {
@@ -30449,7 +22023,7 @@ var app = (function () {
     			destroy_component(vitoria, detaching);
     			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(p);
-    			if (detaching) detach_dev(t6);
+    			if (detaching) detach_dev(t8);
     			if (detaching) detach_dev(table);
     			destroy_each(each_blocks, detaching);
     		}
@@ -30457,17 +22031,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_39.name,
+    		id: create_if_block_77.name,
     		type: "if",
-    		source: "(862:4) {#if !enigma}",
+    		source: "(976:4) {#if !enigma}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (881:39) 
-    function create_if_block_43(ctx) {
+    // (996:39) 
+    function create_if_block_81(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -30478,8 +22052,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
-    			add_location(img, file$1, 881, 20, 53205);
-    			add_location(th, file$1, 881, 16, 53201);
+    			add_location(img, file$2, 996, 20, 58539);
+    			add_location(th, file$2, 996, 16, 58535);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30492,17 +22066,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_43.name,
+    		id: create_if_block_81.name,
     		type: "if",
-    		source: "(881:39) ",
+    		source: "(996:39) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (879:43) 
-    function create_if_block_42(ctx) {
+    // (994:43) 
+    function create_if_block_80(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -30513,9 +22087,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
-    			add_location(img, file$1, 879, 35, 53086);
+    			add_location(img, file$2, 994, 35, 58420);
     			attr_dev(th, "class", "Dante4");
-    			add_location(th, file$1, 879, 16, 53067);
+    			add_location(th, file$2, 994, 16, 58401);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30528,17 +22102,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_42.name,
+    		id: create_if_block_80.name,
     		type: "if",
-    		source: "(879:43) ",
+    		source: "(994:43) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (877:37) 
-    function create_if_block_41(ctx) {
+    // (992:37) 
+    function create_if_block_79(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -30549,8 +22123,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredetunel.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 877, 20, 52946);
-    			add_location(th, file$1, 877, 16, 52942);
+    			add_location(img, file$2, 992, 20, 58280);
+    			add_location(th, file$2, 992, 16, 58276);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30563,17 +22137,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_41.name,
+    		id: create_if_block_79.name,
     		type: "if",
-    		source: "(877:37) ",
+    		source: "(992:37) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (875:12) {#if elementos == 0}
-    function create_if_block_40(ctx) {
+    // (990:12) {#if elementos == 0}
+    function create_if_block_78(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -30584,8 +22158,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaotunel.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
-    			add_location(img, file$1, 875, 20, 52831);
-    			add_location(th, file$1, 875, 16, 52827);
+    			add_location(img, file$2, 990, 20, 58165);
+    			add_location(th, file$2, 990, 16, 58161);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -30598,24 +22172,2460 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_40.name,
+    		id: create_if_block_78.name,
     		type: "if",
-    		source: "(875:12) {#if elementos == 0}",
+    		source: "(990:12) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (874:8) {#each linhas as elementos}
-    function create_each_block_9(ctx) {
+    // (989:8) {#each linhas as elementos}
+    function create_each_block_17$1(ctx) {
+    	let if_block_anchor;
+
+    	function select_block_type_18(ctx, dirty) {
+    		if (/*elementos*/ ctx[61] == 0) return create_if_block_78;
+    		if (/*elementos*/ ctx[61] == 1) return create_if_block_79;
+    		if (/*elementos*/ ctx[61] == "DANTE") return create_if_block_80;
+    		if (/*elementos*/ ctx[61] == "C") return create_if_block_81;
+    	}
+
+    	let current_block_type = select_block_type_18(ctx);
+    	let if_block = current_block_type && current_block_type(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (current_block_type !== (current_block_type = select_block_type_18(ctx))) {
+    				if (if_block) if_block.d(1);
+    				if_block = current_block_type && current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) {
+    				if_block.d(detaching);
+    			}
+
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_17$1.name,
+    		type: "each",
+    		source: "(989:8) {#each linhas as elementos}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (987:4) {#each mapa4 as linhas}
+    function create_each_block_16$1(ctx) {
+    	let tr;
+    	let t;
+    	let each_value_17 = /*linhas*/ ctx[58];
+    	validate_each_argument(each_value_17);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_17.length; i += 1) {
+    		each_blocks[i] = create_each_block_17$1(get_each_context_17$1(ctx, each_value_17, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			tr = element("tr");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			t = space();
+    			add_location(tr, file$2, 987, 4, 58068);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, tr, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(tr, null);
+    			}
+
+    			append_dev(tr, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*mapa4*/ 64) {
+    				each_value_17 = /*linhas*/ ctx[58];
+    				validate_each_argument(each_value_17);
+    				let i;
+
+    				for (i = 0; i < each_value_17.length; i += 1) {
+    					const child_ctx = get_each_context_17$1(ctx, each_value_17, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_17$1(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(tr, t);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_17.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(tr);
+    			destroy_each(each_blocks, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_16$1.name,
+    		type: "each",
+    		source: "(987:4) {#each mapa4 as linhas}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (947:8) {:else}
+    function create_else_block_3$1(ctx) {
+    	let p0;
+    	let t0_value = /*TempoEnigma*/ ctx[26]() + "";
+    	let t0;
+    	let t1_value = /*ResertarContador*/ ctx[27]() + "";
+    	let t1;
+    	let t2_value = clearInterval(/*Movimentar*/ ctx[14]) + "";
+    	let t2;
+    	let t3;
+    	let p1;
+    	let t5;
+    	let p2;
+    	let t7;
+    	let p3;
+    	let t9;
+    	let p4;
+    	let t10;
+    	let t11;
+    	let t12;
+    	let input;
+    	let t13;
+    	let each_1_anchor;
+    	let mounted;
+    	let dispose;
+    	let each_value_14 = /*mapa3*/ ctx[5];
+    	validate_each_argument(each_value_14);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_14.length; i += 1) {
+    		each_blocks[i] = create_each_block_14$1(get_each_context_14$1(ctx, each_value_14, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			p0 = element("p");
+    			t0 = text(t0_value);
+    			t1 = text(t1_value);
+    			t2 = text(t2_value);
+    			t3 = space();
+    			p1 = element("p");
+    			p1.textContent = "Se saiu bem, Dante. Conseguiu sobreviver até aqui, mas será que realmente acabou?";
+    			t5 = space();
+    			p2 = element("p");
+    			p2.textContent = "Seja rápido se deseja sobreviver.";
+    			t7 = space();
+    			p3 = element("p");
+    			p3.textContent = "Perguntas[contagem]";
+    			t9 = space();
+    			p4 = element("p");
+    			t10 = text(/*contador*/ ctx[13]);
+    			t11 = text("s");
+    			t12 = space();
+    			input = element("input");
+    			t13 = space();
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			each_1_anchor = empty();
+    			attr_dev(p0, "class", "textofutil");
+    			add_location(p0, file$2, 947, 8, 56243);
+    			attr_dev(p1, "class", "Enigma");
+    			add_location(p1, file$2, 948, 8, 56341);
+    			attr_dev(p2, "class", "Enigma");
+    			add_location(p2, file$2, 949, 8, 56454);
+    			attr_dev(p3, "class", "Enigma");
+    			add_location(p3, file$2, 950, 8, 56519);
+    			attr_dev(p4, "class", "Contador");
+    			add_location(p4, file$2, 951, 8, 56570);
+    			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
+    			attr_dev(input, "class", "RespostaEnigma");
+    			add_location(input, file$2, 952, 8, 56615);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p0, anchor);
+    			append_dev(p0, t0);
+    			append_dev(p0, t1);
+    			append_dev(p0, t2);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, p1, anchor);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, p2, anchor);
+    			insert_dev(target, t7, anchor);
+    			insert_dev(target, p3, anchor);
+    			insert_dev(target, t9, anchor);
+    			insert_dev(target, p4, anchor);
+    			append_dev(p4, t10);
+    			append_dev(p4, t11);
+    			insert_dev(target, t12, anchor);
+    			insert_dev(target, input, anchor);
+    			set_input_value(input, /*PalavraChave*/ ctx[11]);
+    			insert_dev(target, t13, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(target, anchor);
+    			}
+
+    			insert_dev(target, each_1_anchor, anchor);
+
+    			if (!mounted) {
+    				dispose = [
+    					listen_dev(input, "input", /*input_input_handler_3*/ ctx[36]),
+    					listen_dev(
+    						input,
+    						"keydown",
+    						function () {
+    							if (is_function(/*Alterando*/ ctx[25](/*PalavraChave*/ ctx[11] == /*respostas*/ ctx[32][/*contagem*/ ctx[19]], /*MudandoDeFase*/ ctx[9]))) /*Alterando*/ ctx[25](/*PalavraChave*/ ctx[11] == /*respostas*/ ctx[32][/*contagem*/ ctx[19]], /*MudandoDeFase*/ ctx[9]).apply(this, arguments);
+    						},
+    						false,
+    						false,
+    						false
+    					)
+    				];
+
+    				mounted = true;
+    			}
+    		},
+    		p: function update(new_ctx, dirty) {
+    			ctx = new_ctx;
+    			if (dirty[0] & /*Movimentar*/ 16384 && t2_value !== (t2_value = clearInterval(/*Movimentar*/ ctx[14]) + "")) set_data_dev(t2, t2_value);
+    			if (dirty[0] & /*contador*/ 8192) set_data_dev(t10, /*contador*/ ctx[13]);
+
+    			if (dirty[0] & /*PalavraChave*/ 2048 && input.value !== /*PalavraChave*/ ctx[11]) {
+    				set_input_value(input, /*PalavraChave*/ ctx[11]);
+    			}
+
+    			if (dirty[0] & /*mapa3*/ 32) {
+    				each_value_14 = /*mapa3*/ ctx[5];
+    				validate_each_argument(each_value_14);
+    				let i;
+
+    				for (i = 0; i < each_value_14.length; i += 1) {
+    					const child_ctx = get_each_context_14$1(ctx, each_value_14, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_14$1(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_14.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p0);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(p1);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(p2);
+    			if (detaching) detach_dev(t7);
+    			if (detaching) detach_dev(p3);
+    			if (detaching) detach_dev(t9);
+    			if (detaching) detach_dev(p4);
+    			if (detaching) detach_dev(t12);
+    			if (detaching) detach_dev(input);
+    			if (detaching) detach_dev(t13);
+    			destroy_each(each_blocks, detaching);
+    			if (detaching) detach_dev(each_1_anchor);
+    			mounted = false;
+    			run_all(dispose);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block_3$1.name,
+    		type: "else",
+    		source: "(947:8) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (896:4) {#if !enigma}
+    function create_if_block_55$1(ctx) {
+    	let p;
+    	let t0_value = /*IniciarACaçada*/ ctx[29]() + "";
+    	let t0;
+    	let t1;
+    	let t2_value = /*Cronometrar*/ ctx[28]() + "";
+    	let t2;
+    	let t3;
+    	let t4_value = /*acelerar*/ ctx[30](/*Indice*/ ctx[16] == /*SaveIndice*/ ctx[17]) + "";
+    	let t4;
+    	let t5;
+    	let t6_value = clearInterval(/*Tempo*/ ctx[12]) + "";
+    	let t6;
+    	let t7;
+    	let t8_value = /*RenderizandoMapa*/ ctx[22]() + "";
+    	let t8;
+    	let t9;
+    	let t10_value = /*DeterminandoEixos*/ ctx[23](/*MudandoDeFase*/ ctx[9]) + "";
+    	let t10;
+    	let t11;
+    	let t12;
+    	let table;
+    	let t13;
+    	let div;
+    	let ul;
+
+    	function select_block_type_14(ctx, dirty) {
+    		if (/*HoraDaCaçada*/ ctx[18] > 0) return create_if_block_65$1;
+    		if (/*Ritmo*/ ctx[15] == 3000) return create_if_block_66$1;
+    		if (/*Ritmo*/ ctx[15] == 2000) return create_if_block_67$1;
+    		if (/*Ritmo*/ ctx[15] == 1000) return create_if_block_68$1;
+    		if (/*Ritmo*/ ctx[15] < 1000) return create_if_block_69;
+    	}
+
+    	let current_block_type = select_block_type_14(ctx);
+    	let if_block = current_block_type && current_block_type(ctx);
+    	let each_value_12 = /*mapa3*/ ctx[5];
+    	validate_each_argument(each_value_12);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_12.length; i += 1) {
+    		each_blocks[i] = create_each_block_12$1(get_each_context_12$1(ctx, each_value_12, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			t0 = text(t0_value);
+    			t1 = space();
+    			t2 = text(t2_value);
+    			t3 = space();
+    			t4 = text(t4_value);
+    			t5 = space();
+    			t6 = text(t6_value);
+    			t7 = space();
+    			t8 = text(t8_value);
+    			t9 = space();
+    			t10 = text(t10_value);
+    			t11 = space();
+    			if (if_block) if_block.c();
+    			t12 = space();
+    			table = element("table");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			t13 = space();
+    			div = element("div");
+    			ul = element("ul");
+    			attr_dev(p, "class", "textofutil");
+    			add_location(p, file$2, 897, 4, 53998);
+    			attr_dev(table, "class", "mapa");
+    			attr_dev(table, "align", "center");
+    			attr_dev(table, "id", "mapanivel3");
+    			add_location(table, file$2, 916, 4, 54712);
+    			attr_dev(ul, "class", "info");
+    			add_location(ul, file$2, 944, 8, 56182);
+    			attr_dev(div, "id", "DicaTutorial");
+    			attr_dev(div, "class", "aimds");
+    			add_location(div, file$2, 943, 4, 56135);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    			append_dev(p, t0);
+    			append_dev(p, t1);
+    			append_dev(p, t2);
+    			append_dev(p, t3);
+    			append_dev(p, t4);
+    			append_dev(p, t5);
+    			append_dev(p, t6);
+    			append_dev(p, t7);
+    			append_dev(p, t8);
+    			append_dev(p, t9);
+    			append_dev(p, t10);
+    			insert_dev(target, t11, anchor);
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, t12, anchor);
+    			insert_dev(target, table, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(table, null);
+    			}
+
+    			insert_dev(target, t13, anchor);
+    			insert_dev(target, div, anchor);
+    			append_dev(div, ul);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*Indice, SaveIndice*/ 196608 && t4_value !== (t4_value = /*acelerar*/ ctx[30](/*Indice*/ ctx[16] == /*SaveIndice*/ ctx[17]) + "")) set_data_dev(t4, t4_value);
+    			if (dirty[0] & /*Tempo*/ 4096 && t6_value !== (t6_value = clearInterval(/*Tempo*/ ctx[12]) + "")) set_data_dev(t6, t6_value);
+    			if (dirty[0] & /*MudandoDeFase*/ 512 && t10_value !== (t10_value = /*DeterminandoEixos*/ ctx[23](/*MudandoDeFase*/ ctx[9]) + "")) set_data_dev(t10, t10_value);
+
+    			if (current_block_type === (current_block_type = select_block_type_14(ctx)) && if_block) {
+    				if_block.p(ctx, dirty);
+    			} else {
+    				if (if_block) if_block.d(1);
+    				if_block = current_block_type && current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(t12.parentNode, t12);
+    				}
+    			}
+
+    			if (dirty[0] & /*mapa3, LimiteX, Dimensionamento, LimiteY*/ 2097568) {
+    				each_value_12 = /*mapa3*/ ctx[5];
+    				validate_each_argument(each_value_12);
+    				let i;
+
+    				for (i = 0; i < each_value_12.length; i += 1) {
+    					const child_ctx = get_each_context_12$1(ctx, each_value_12, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_12$1(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(table, null);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_12.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t11);
+
+    			if (if_block) {
+    				if_block.d(detaching);
+    			}
+
+    			if (detaching) detach_dev(t12);
+    			if (detaching) detach_dev(table);
+    			destroy_each(each_blocks, detaching);
+    			if (detaching) detach_dev(t13);
+    			if (detaching) detach_dev(div);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_55$1.name,
+    		type: "if",
+    		source: "(896:4) {#if !enigma}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (967:33) 
+    function create_if_block_75(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredefalsanivel3.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "paredefalsa");
+    			add_location(img, file$2, 967, 16, 57597);
+    			add_location(th, file$2, 967, 12, 57593);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_75.name,
+    		type: "if",
+    		source: "(967:33) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (965:39) 
+    function create_if_block_74(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "falsa");
+    			add_location(img, file$2, 965, 16, 57477);
+    			add_location(th, file$2, 965, 12, 57473);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_74.name,
+    		type: "if",
+    		source: "(965:39) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (963:39) 
+    function create_if_block_73(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			attr_dev(img, "id", "chao1");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel3.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "personagem");
+    			add_location(img, file$2, 963, 16, 57330);
+    			add_location(th, file$2, 963, 12, 57326);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_73.name,
+    		type: "if",
+    		source: "(963:39) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (961:35) 
+    function create_if_block_72(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saidanivel3.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "saida");
+    			add_location(img, file$2, 961, 16, 57198);
+    			add_location(th, file$2, 961, 12, 57194);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_72.name,
+    		type: "if",
+    		source: "(961:35) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (959:33) 
+    function create_if_block_71(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel3.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "parede");
+    			add_location(img, file$2, 959, 16, 57068);
+    			add_location(th, file$2, 959, 12, 57064);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_71.name,
+    		type: "if",
+    		source: "(959:33) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (957:8) {#if elementos == 0}
+    function create_if_block_70(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			attr_dev(img, "id", "chao1");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel3.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "chao");
+    			add_location(img, file$2, 957, 16, 56933);
+    			add_location(th, file$2, 957, 12, 56929);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_70.name,
+    		type: "if",
+    		source: "(957:8) {#if elementos == 0}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (956:8) {#each linhas as elementos}
+    function create_each_block_15$1(ctx) {
+    	let if_block_anchor;
+
+    	function select_block_type_16(ctx, dirty) {
+    		if (/*elementos*/ ctx[61] == 0) return create_if_block_70;
+    		if (/*elementos*/ ctx[61] == 1) return create_if_block_71;
+    		if (/*elementos*/ ctx[61] == "V") return create_if_block_72;
+    		if (/*elementos*/ ctx[61] == "DANTE") return create_if_block_73;
+    		if (/*elementos*/ ctx[61] == "falsa") return create_if_block_74;
+    		if (/*elementos*/ ctx[61] == 7) return create_if_block_75;
+    	}
+
+    	let current_block_type = select_block_type_16(ctx);
+    	let if_block = current_block_type && current_block_type(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (current_block_type !== (current_block_type = select_block_type_16(ctx))) {
+    				if (if_block) if_block.d(1);
+    				if_block = current_block_type && current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) {
+    				if_block.d(detaching);
+    			}
+
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_15$1.name,
+    		type: "each",
+    		source: "(956:8) {#each linhas as elementos}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (954:8) {#each mapa3 as linhas}
+    function create_each_block_14$1(ctx) {
+    	let tr;
+    	let t;
+    	let each_value_15 = /*linhas*/ ctx[58];
+    	validate_each_argument(each_value_15);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_15.length; i += 1) {
+    		each_blocks[i] = create_each_block_15$1(get_each_context_15$1(ctx, each_value_15, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			tr = element("tr");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			t = space();
+    			attr_dev(tr, "class", "minimapa");
+    			add_location(tr, file$2, 954, 8, 56827);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, tr, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(tr, null);
+    			}
+
+    			append_dev(tr, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*mapa3*/ 32) {
+    				each_value_15 = /*linhas*/ ctx[58];
+    				validate_each_argument(each_value_15);
+    				let i;
+
+    				for (i = 0; i < each_value_15.length; i += 1) {
+    					const child_ctx = get_each_context_15$1(ctx, each_value_15, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_15$1(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(tr, t);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_15.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(tr);
+    			destroy_each(each_blocks, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_14$1.name,
+    		type: "each",
+    		source: "(954:8) {#each mapa3 as linhas}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (914:27) 
+    function create_if_block_69(ctx) {
+    	let p;
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			p.textContent = "O Minotauro está enfurecido";
+    			attr_dev(p, "class", "Enigma");
+    			add_location(p, file$2, 914, 8, 54646);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_69.name,
+    		type: "if",
+    		source: "(914:27) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (912:28) 
+    function create_if_block_68$1(ctx) {
+    	let p;
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			p.textContent = "O Minotauro começou a correr";
+    			attr_dev(p, "class", "Enigma");
+    			add_location(p, file$2, 912, 8, 54557);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_68$1.name,
+    		type: "if",
+    		source: "(912:28) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (910:28) 
+    function create_if_block_67$1(ctx) {
+    	let p;
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			p.textContent = "O Minotauro acelerou o passo";
+    			attr_dev(p, "class", "Enigma");
+    			add_location(p, file$2, 910, 8, 54467);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_67$1.name,
+    		type: "if",
+    		source: "(910:28) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (908:28) 
+    function create_if_block_66$1(ctx) {
+    	let p;
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			p.textContent = "O Minotauro começou a perseguição";
+    			attr_dev(p, "class", "Enigma");
+    			add_location(p, file$2, 908, 8, 54372);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_66$1.name,
+    		type: "if",
+    		source: "(908:28) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (906:4) {#if HoraDaCaçada > 0}
+    function create_if_block_65$1(ctx) {
+    	let p;
+    	let t0;
+    	let t1;
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			t0 = text("O Minotauro ira surgir em: ");
+    			t1 = text(/*HoraDaCaçada*/ ctx[18]);
+    			attr_dev(p, "class", "Enigma");
+    			add_location(p, file$2, 906, 8, 54269);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    			append_dev(p, t0);
+    			append_dev(p, t1);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*HoraDaCaçada*/ 262144) set_data_dev(t1, /*HoraDaCaçada*/ ctx[18]);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_65$1.name,
+    		type: "if",
+    		source: "(906:4) {#if HoraDaCaçada > 0}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (919:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+    function create_if_block_56$1(ctx) {
+    	let tr;
+    	let t;
+    	let each_value_13 = /*linhas*/ ctx[58];
+    	validate_each_argument(each_value_13);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_13.length; i += 1) {
+    		each_blocks[i] = create_each_block_13$1(get_each_context_13$1(ctx, each_value_13, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			tr = element("tr");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			t = space();
+    			add_location(tr, file$2, 919, 12, 54880);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, tr, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(tr, null);
+    			}
+
+    			append_dev(tr, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*mapa3, LimiteX, Dimensionamento*/ 2097312) {
+    				each_value_13 = /*linhas*/ ctx[58];
+    				validate_each_argument(each_value_13);
+    				let i;
+
+    				for (i = 0; i < each_value_13.length; i += 1) {
+    					const child_ctx = get_each_context_13$1(ctx, each_value_13, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_13$1(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(tr, t);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_13.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(tr);
+    			destroy_each(each_blocks, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_56$1.name,
+    		type: "if",
+    		source: "(919:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (922:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+    function create_if_block_57$1(ctx) {
+    	let if_block_anchor;
+
+    	function select_block_type_15(ctx, dirty) {
+    		if (/*elementos*/ ctx[61] == 0) return create_if_block_58$1;
+    		if (/*elementos*/ ctx[61] == 1) return create_if_block_59$1;
+    		if (/*elementos*/ ctx[61] == "V") return create_if_block_60$1;
+    		if (/*elementos*/ ctx[61] == "DANTE") return create_if_block_61$1;
+    		if (/*elementos*/ ctx[61] == "falsa") return create_if_block_62$1;
+    		if (/*elementos*/ ctx[61] == 7) return create_if_block_63$1;
+    		if (/*elementos*/ ctx[61] == "MINOS") return create_if_block_64$1;
+    	}
+
+    	let current_block_type = select_block_type_15(ctx);
+    	let if_block = current_block_type && current_block_type(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (current_block_type !== (current_block_type = select_block_type_15(ctx))) {
+    				if (if_block) if_block.d(1);
+    				if_block = current_block_type && current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) {
+    				if_block.d(detaching);
+    			}
+
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_57$1.name,
+    		type: "if",
+    		source: "(922:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (935:51) 
+    function create_if_block_64$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/minotauro.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "monstro");
+    			add_location(img, file$2, 935, 28, 55924);
+    			add_location(th, file$2, 935, 24, 55920);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_64$1.name,
+    		type: "if",
+    		source: "(935:51) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (933:45) 
+    function create_if_block_63$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredefalsanivel2.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "paredefalsa");
+    			add_location(img, file$2, 933, 28, 55772);
+    			add_location(th, file$2, 933, 24, 55768);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_63$1.name,
+    		type: "if",
+    		source: "(933:45) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (931:51) 
+    function create_if_block_62$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "falsa");
+    			add_location(img, file$2, 931, 28, 55644);
+    			add_location(th, file$2, 931, 24, 55640);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_62$1.name,
+    		type: "if",
+    		source: "(931:51) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (929:51) 
+    function create_if_block_61$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "personagem");
+    			add_location(img, file$2, 929, 43, 55505);
+    			attr_dev(th, "class", "Dante3");
+    			add_location(th, file$2, 929, 24, 55486);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_61$1.name,
+    		type: "if",
+    		source: "(929:51) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (927:47) 
+    function create_if_block_60$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saidanivel3.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "saida");
+    			add_location(img, file$2, 927, 28, 55350);
+    			add_location(th, file$2, 927, 24, 55346);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_60$1.name,
+    		type: "if",
+    		source: "(927:47) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (925:45) 
+    function create_if_block_59$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel3.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "parede");
+    			add_location(img, file$2, 925, 28, 55212);
+    			add_location(th, file$2, 925, 24, 55208);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_59$1.name,
+    		type: "if",
+    		source: "(925:45) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (923:20) {#if elementos == 0}
+    function create_if_block_58$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel3.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "chao");
+    			add_location(img, file$2, 923, 29, 55080);
+    			add_location(th, file$2, 923, 24, 55075);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_58$1.name,
+    		type: "if",
+    		source: "(923:20) {#if elementos == 0}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (921:16) {#each linhas as elementos,j}
+    function create_each_block_13$1(ctx) {
+    	let if_block_anchor;
+    	let if_block = /*LimiteX*/ ctx[7] <= /*j*/ ctx[63] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[21] * 2 >= /*j*/ ctx[63] && create_if_block_57$1(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (/*LimiteX*/ ctx[7] <= /*j*/ ctx[63] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[21] * 2 >= /*j*/ ctx[63]) {
+    				if (if_block) {
+    					if_block.p(ctx, dirty);
+    				} else {
+    					if_block = create_if_block_57$1(ctx);
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			} else if (if_block) {
+    				if_block.d(1);
+    				if_block = null;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_13$1.name,
+    		type: "each",
+    		source: "(921:16) {#each linhas as elementos,j}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (918:8) {#each mapa3 as linhas,i}
+    function create_each_block_12$1(ctx) {
+    	let if_block_anchor;
+    	let if_block = /*LimiteY*/ ctx[8] <= /*i*/ ctx[60] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[21] * 2 >= /*i*/ ctx[60] && create_if_block_56$1(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (/*LimiteY*/ ctx[8] <= /*i*/ ctx[60] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[21] * 2 >= /*i*/ ctx[60]) {
+    				if (if_block) {
+    					if_block.p(ctx, dirty);
+    				} else {
+    					if_block = create_if_block_56$1(ctx);
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			} else if (if_block) {
+    				if_block.d(1);
+    				if_block = null;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_12$1.name,
+    		type: "each",
+    		source: "(918:8) {#each mapa3 as linhas,i}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (862:8) {:else}
+    function create_else_block_2$1(ctx) {
+    	let p0;
+    	let t0_value = /*TempoEnigma*/ ctx[26]() + "";
+    	let t0;
+    	let t1_value = /*ResertarContador*/ ctx[27]() + "";
+    	let t1;
+    	let t2_value = clearInterval(/*Movimentar*/ ctx[14]) + "";
+    	let t2;
+    	let t3;
+    	let p1;
+    	let t5;
+    	let p2;
+    	let t7;
+    	let p3;
+    	let t9;
+    	let p4;
+    	let t11;
+    	let p5;
+    	let t13;
+    	let p6;
+    	let t14;
+    	let t15;
+    	let t16;
+    	let input;
+    	let t17;
+    	let each_1_anchor;
+    	let mounted;
+    	let dispose;
+    	let each_value_10 = /*mapa2*/ ctx[4];
+    	validate_each_argument(each_value_10);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_10.length; i += 1) {
+    		each_blocks[i] = create_each_block_10$1(get_each_context_10$1(ctx, each_value_10, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			p0 = element("p");
+    			t0 = text(t0_value);
+    			t1 = text(t1_value);
+    			t2 = text(t2_value);
+    			t3 = space();
+    			p1 = element("p");
+    			p1.textContent = "Gostei de você, jovem.";
+    			t5 = space();
+    			p2 = element("p");
+    			p2.textContent = "Como pôde perceber, nem tudo é o que parece.";
+    			t7 = space();
+    			p3 = element("p");
+    			p3.textContent = "Espero não acostuma-lo mal, mas por enquanto vou aconselha-lo a não confiar tanto no que seus olhos vêem.";
+    			t9 = space();
+    			p4 = element("p");
+    			p4.textContent = "Paredes falsas podem parecer algo impensável para humanos, mas não me compare com seres como vocês.";
+    			t11 = space();
+    			p5 = element("p");
+    			p5.textContent = "Perguntas[contagem]";
+    			t13 = space();
+    			p6 = element("p");
+    			t14 = text(/*contador*/ ctx[13]);
+    			t15 = text("s");
+    			t16 = space();
+    			input = element("input");
+    			t17 = space();
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			each_1_anchor = empty();
+    			attr_dev(p0, "class", "textofutil");
+    			add_location(p0, file$2, 862, 8, 52154);
+    			attr_dev(p1, "class", "Enigma");
+    			add_location(p1, file$2, 863, 8, 52252);
+    			attr_dev(p2, "class", "Enigma");
+    			add_location(p2, file$2, 864, 8, 52306);
+    			attr_dev(p3, "class", "Enigma");
+    			add_location(p3, file$2, 865, 8, 52382);
+    			attr_dev(p4, "class", "Enigma");
+    			add_location(p4, file$2, 866, 8, 52519);
+    			attr_dev(p5, "class", "Enigma");
+    			add_location(p5, file$2, 867, 8, 52650);
+    			attr_dev(p6, "class", "Contador");
+    			add_location(p6, file$2, 868, 8, 52701);
+    			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
+    			attr_dev(input, "class", "RespostaEnigma");
+    			add_location(input, file$2, 869, 8, 52746);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p0, anchor);
+    			append_dev(p0, t0);
+    			append_dev(p0, t1);
+    			append_dev(p0, t2);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, p1, anchor);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, p2, anchor);
+    			insert_dev(target, t7, anchor);
+    			insert_dev(target, p3, anchor);
+    			insert_dev(target, t9, anchor);
+    			insert_dev(target, p4, anchor);
+    			insert_dev(target, t11, anchor);
+    			insert_dev(target, p5, anchor);
+    			insert_dev(target, t13, anchor);
+    			insert_dev(target, p6, anchor);
+    			append_dev(p6, t14);
+    			append_dev(p6, t15);
+    			insert_dev(target, t16, anchor);
+    			insert_dev(target, input, anchor);
+    			set_input_value(input, /*PalavraChave*/ ctx[11]);
+    			insert_dev(target, t17, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(target, anchor);
+    			}
+
+    			insert_dev(target, each_1_anchor, anchor);
+
+    			if (!mounted) {
+    				dispose = [
+    					listen_dev(input, "input", /*input_input_handler_2*/ ctx[35]),
+    					listen_dev(
+    						input,
+    						"keydown",
+    						function () {
+    							if (is_function(/*Alterando*/ ctx[25](/*PalavraChave*/ ctx[11] == /*respostas*/ ctx[32][/*contagem*/ ctx[19]], /*MudandoDeFase*/ ctx[9]))) /*Alterando*/ ctx[25](/*PalavraChave*/ ctx[11] == /*respostas*/ ctx[32][/*contagem*/ ctx[19]], /*MudandoDeFase*/ ctx[9]).apply(this, arguments);
+    						},
+    						false,
+    						false,
+    						false
+    					)
+    				];
+
+    				mounted = true;
+    			}
+    		},
+    		p: function update(new_ctx, dirty) {
+    			ctx = new_ctx;
+    			if (dirty[0] & /*Movimentar*/ 16384 && t2_value !== (t2_value = clearInterval(/*Movimentar*/ ctx[14]) + "")) set_data_dev(t2, t2_value);
+    			if (dirty[0] & /*contador*/ 8192) set_data_dev(t14, /*contador*/ ctx[13]);
+
+    			if (dirty[0] & /*PalavraChave*/ 2048 && input.value !== /*PalavraChave*/ ctx[11]) {
+    				set_input_value(input, /*PalavraChave*/ ctx[11]);
+    			}
+
+    			if (dirty[0] & /*mapa2*/ 16) {
+    				each_value_10 = /*mapa2*/ ctx[4];
+    				validate_each_argument(each_value_10);
+    				let i;
+
+    				for (i = 0; i < each_value_10.length; i += 1) {
+    					const child_ctx = get_each_context_10$1(ctx, each_value_10, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_10$1(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_10.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p0);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(p1);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(p2);
+    			if (detaching) detach_dev(t7);
+    			if (detaching) detach_dev(p3);
+    			if (detaching) detach_dev(t9);
+    			if (detaching) detach_dev(p4);
+    			if (detaching) detach_dev(t11);
+    			if (detaching) detach_dev(p5);
+    			if (detaching) detach_dev(t13);
+    			if (detaching) detach_dev(p6);
+    			if (detaching) detach_dev(t16);
+    			if (detaching) detach_dev(input);
+    			if (detaching) detach_dev(t17);
+    			destroy_each(each_blocks, detaching);
+    			if (detaching) detach_dev(each_1_anchor);
+    			mounted = false;
+    			run_all(dispose);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block_2$1.name,
+    		type: "else",
+    		source: "(862:8) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (811:4) {#if !enigma}
+    function create_if_block_33$1(ctx) {
+    	let p;
+    	let t0_value = /*IniciarACaçada*/ ctx[29]() + "";
+    	let t0;
+    	let t1;
+    	let t2_value = /*Cronometrar*/ ctx[28]() + "";
+    	let t2;
+    	let t3;
+    	let t4_value = /*acelerar*/ ctx[30](/*Indice*/ ctx[16] == /*SaveIndice*/ ctx[17]) + "";
+    	let t4;
+    	let t5;
+    	let t6_value = clearInterval(/*Tempo*/ ctx[12]) + "";
+    	let t6;
+    	let t7;
+    	let t8_value = /*RenderizandoMapa*/ ctx[22]() + "";
+    	let t8;
+    	let t9;
+    	let t10_value = /*DeterminandoEixos*/ ctx[23](/*MudandoDeFase*/ ctx[9]) + "";
+    	let t10;
+    	let t11;
+    	let t12;
+    	let table;
+    	let t13;
+    	let div;
+    	let ul;
+
+    	function select_block_type_10(ctx, dirty) {
+    		if (/*HoraDaCaçada*/ ctx[18] > 0) return create_if_block_43$1;
+    		if (/*Ritmo*/ ctx[15] == 3000) return create_if_block_44$1;
+    		if (/*Ritmo*/ ctx[15] == 2000) return create_if_block_45$1;
+    		if (/*Ritmo*/ ctx[15] == 1000) return create_if_block_46$1;
+    		if (/*Ritmo*/ ctx[15] < 1000) return create_if_block_47$1;
+    	}
+
+    	let current_block_type = select_block_type_10(ctx);
+    	let if_block = current_block_type && current_block_type(ctx);
+    	let each_value_8 = /*mapa2*/ ctx[4];
+    	validate_each_argument(each_value_8);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_8.length; i += 1) {
+    		each_blocks[i] = create_each_block_8$1(get_each_context_8$1(ctx, each_value_8, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			t0 = text(t0_value);
+    			t1 = space();
+    			t2 = text(t2_value);
+    			t3 = space();
+    			t4 = text(t4_value);
+    			t5 = space();
+    			t6 = text(t6_value);
+    			t7 = space();
+    			t8 = text(t8_value);
+    			t9 = space();
+    			t10 = text(t10_value);
+    			t11 = space();
+    			if (if_block) if_block.c();
+    			t12 = space();
+    			table = element("table");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			t13 = space();
+    			div = element("div");
+    			ul = element("ul");
+    			attr_dev(p, "class", "textofutil");
+    			add_location(p, file$2, 812, 4, 49920);
+    			attr_dev(table, "class", "mapa");
+    			attr_dev(table, "align", "center");
+    			attr_dev(table, "id", "mapanivel2");
+    			add_location(table, file$2, 831, 4, 50634);
+    			attr_dev(ul, "class", "info");
+    			add_location(ul, file$2, 859, 8, 52093);
+    			attr_dev(div, "id", "DicaTutorial");
+    			attr_dev(div, "class", "aimds");
+    			add_location(div, file$2, 858, 4, 52046);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    			append_dev(p, t0);
+    			append_dev(p, t1);
+    			append_dev(p, t2);
+    			append_dev(p, t3);
+    			append_dev(p, t4);
+    			append_dev(p, t5);
+    			append_dev(p, t6);
+    			append_dev(p, t7);
+    			append_dev(p, t8);
+    			append_dev(p, t9);
+    			append_dev(p, t10);
+    			insert_dev(target, t11, anchor);
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, t12, anchor);
+    			insert_dev(target, table, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(table, null);
+    			}
+
+    			insert_dev(target, t13, anchor);
+    			insert_dev(target, div, anchor);
+    			append_dev(div, ul);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*Indice, SaveIndice*/ 196608 && t4_value !== (t4_value = /*acelerar*/ ctx[30](/*Indice*/ ctx[16] == /*SaveIndice*/ ctx[17]) + "")) set_data_dev(t4, t4_value);
+    			if (dirty[0] & /*Tempo*/ 4096 && t6_value !== (t6_value = clearInterval(/*Tempo*/ ctx[12]) + "")) set_data_dev(t6, t6_value);
+    			if (dirty[0] & /*MudandoDeFase*/ 512 && t10_value !== (t10_value = /*DeterminandoEixos*/ ctx[23](/*MudandoDeFase*/ ctx[9]) + "")) set_data_dev(t10, t10_value);
+
+    			if (current_block_type === (current_block_type = select_block_type_10(ctx)) && if_block) {
+    				if_block.p(ctx, dirty);
+    			} else {
+    				if (if_block) if_block.d(1);
+    				if_block = current_block_type && current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(t12.parentNode, t12);
+    				}
+    			}
+
+    			if (dirty[0] & /*mapa2, LimiteX, Dimensionamento, LimiteY*/ 2097552) {
+    				each_value_8 = /*mapa2*/ ctx[4];
+    				validate_each_argument(each_value_8);
+    				let i;
+
+    				for (i = 0; i < each_value_8.length; i += 1) {
+    					const child_ctx = get_each_context_8$1(ctx, each_value_8, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_8$1(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(table, null);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_8.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t11);
+
+    			if (if_block) {
+    				if_block.d(detaching);
+    			}
+
+    			if (detaching) detach_dev(t12);
+    			if (detaching) detach_dev(table);
+    			destroy_each(each_blocks, detaching);
+    			if (detaching) detach_dev(t13);
+    			if (detaching) detach_dev(div);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_33$1.name,
+    		type: "if",
+    		source: "(811:4) {#if !enigma}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (884:33) 
+    function create_if_block_53$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredefalsanivel2.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "paredefalsa");
+    			add_location(img, file$2, 884, 16, 53722);
+    			add_location(th, file$2, 884, 12, 53718);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_53$1.name,
+    		type: "if",
+    		source: "(884:33) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (882:39) 
+    function create_if_block_52$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "falsa");
+    			add_location(img, file$2, 882, 16, 53602);
+    			add_location(th, file$2, 882, 12, 53598);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_52$1.name,
+    		type: "if",
+    		source: "(882:39) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (880:39) 
+    function create_if_block_51$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			attr_dev(img, "id", "chao1");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel2.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "personagem");
+    			add_location(img, file$2, 880, 16, 53455);
+    			add_location(th, file$2, 880, 12, 53451);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_51$1.name,
+    		type: "if",
+    		source: "(880:39) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (878:35) 
+    function create_if_block_50$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "saida");
+    			add_location(img, file$2, 878, 16, 53329);
+    			add_location(th, file$2, 878, 12, 53325);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_50$1.name,
+    		type: "if",
+    		source: "(878:35) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (876:33) 
+    function create_if_block_49$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel2.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "parede");
+    			add_location(img, file$2, 876, 16, 53199);
+    			add_location(th, file$2, 876, 12, 53195);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_49$1.name,
+    		type: "if",
+    		source: "(876:33) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (874:8) {#if elementos == 0}
+    function create_if_block_48$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			attr_dev(img, "id", "chao1");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel2.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "chao");
+    			add_location(img, file$2, 874, 16, 53064);
+    			add_location(th, file$2, 874, 12, 53060);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_48$1.name,
+    		type: "if",
+    		source: "(874:8) {#if elementos == 0}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (873:8) {#each linhas as elementos}
+    function create_each_block_11$1(ctx) {
+    	let if_block_anchor;
+
+    	function select_block_type_12(ctx, dirty) {
+    		if (/*elementos*/ ctx[61] == 0) return create_if_block_48$1;
+    		if (/*elementos*/ ctx[61] == 1) return create_if_block_49$1;
+    		if (/*elementos*/ ctx[61] == "Z") return create_if_block_50$1;
+    		if (/*elementos*/ ctx[61] == "DANTE") return create_if_block_51$1;
+    		if (/*elementos*/ ctx[61] == "falsa") return create_if_block_52$1;
+    		if (/*elementos*/ ctx[61] == 7) return create_if_block_53$1;
+    	}
+
+    	let current_block_type = select_block_type_12(ctx);
+    	let if_block = current_block_type && current_block_type(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (current_block_type !== (current_block_type = select_block_type_12(ctx))) {
+    				if (if_block) if_block.d(1);
+    				if_block = current_block_type && current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) {
+    				if_block.d(detaching);
+    			}
+
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_11$1.name,
+    		type: "each",
+    		source: "(873:8) {#each linhas as elementos}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (871:8) {#each mapa2 as linhas}
+    function create_each_block_10$1(ctx) {
+    	let tr;
+    	let t;
+    	let each_value_11 = /*linhas*/ ctx[58];
+    	validate_each_argument(each_value_11);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_11.length; i += 1) {
+    		each_blocks[i] = create_each_block_11$1(get_each_context_11$1(ctx, each_value_11, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			tr = element("tr");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			t = space();
+    			attr_dev(tr, "class", "minimapa");
+    			add_location(tr, file$2, 871, 8, 52958);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, tr, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(tr, null);
+    			}
+
+    			append_dev(tr, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*mapa2*/ 16) {
+    				each_value_11 = /*linhas*/ ctx[58];
+    				validate_each_argument(each_value_11);
+    				let i;
+
+    				for (i = 0; i < each_value_11.length; i += 1) {
+    					const child_ctx = get_each_context_11$1(ctx, each_value_11, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_11$1(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(tr, t);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_11.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(tr);
+    			destroy_each(each_blocks, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_10$1.name,
+    		type: "each",
+    		source: "(871:8) {#each mapa2 as linhas}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (829:27) 
+    function create_if_block_47$1(ctx) {
+    	let p;
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			p.textContent = "O Minotauro está enfurecido";
+    			attr_dev(p, "class", "Enigma");
+    			add_location(p, file$2, 829, 8, 50568);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_47$1.name,
+    		type: "if",
+    		source: "(829:27) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (827:28) 
+    function create_if_block_46$1(ctx) {
+    	let p;
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			p.textContent = "O Minotauro começou a correr";
+    			attr_dev(p, "class", "Enigma");
+    			add_location(p, file$2, 827, 8, 50479);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_46$1.name,
+    		type: "if",
+    		source: "(827:28) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (825:28) 
+    function create_if_block_45$1(ctx) {
+    	let p;
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			p.textContent = "O Minotauro acelerou o passo";
+    			attr_dev(p, "class", "Enigma");
+    			add_location(p, file$2, 825, 8, 50389);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_45$1.name,
+    		type: "if",
+    		source: "(825:28) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (823:28) 
+    function create_if_block_44$1(ctx) {
+    	let p;
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			p.textContent = "O Minotauro começou a perseguição";
+    			attr_dev(p, "class", "Enigma");
+    			add_location(p, file$2, 823, 8, 50294);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_44$1.name,
+    		type: "if",
+    		source: "(823:28) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (821:4) {#if HoraDaCaçada > 0}
+    function create_if_block_43$1(ctx) {
+    	let p;
+    	let t0;
+    	let t1;
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			t0 = text("O Minotauro ira surgir em: ");
+    			t1 = text(/*HoraDaCaçada*/ ctx[18]);
+    			attr_dev(p, "class", "Enigma");
+    			add_location(p, file$2, 821, 8, 50191);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    			append_dev(p, t0);
+    			append_dev(p, t1);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*HoraDaCaçada*/ 262144) set_data_dev(t1, /*HoraDaCaçada*/ ctx[18]);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_43$1.name,
+    		type: "if",
+    		source: "(821:4) {#if HoraDaCaçada > 0}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (834:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+    function create_if_block_34$1(ctx) {
+    	let tr;
+    	let t;
+    	let each_value_9 = /*linhas*/ ctx[58];
+    	validate_each_argument(each_value_9);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_9.length; i += 1) {
+    		each_blocks[i] = create_each_block_9$1(get_each_context_9$1(ctx, each_value_9, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			tr = element("tr");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			t = space();
+    			add_location(tr, file$2, 834, 12, 50802);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, tr, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(tr, null);
+    			}
+
+    			append_dev(tr, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*mapa2, LimiteX, Dimensionamento*/ 2097296) {
+    				each_value_9 = /*linhas*/ ctx[58];
+    				validate_each_argument(each_value_9);
+    				let i;
+
+    				for (i = 0; i < each_value_9.length; i += 1) {
+    					const child_ctx = get_each_context_9$1(ctx, each_value_9, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_9$1(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(tr, t);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_9.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(tr);
+    			destroy_each(each_blocks, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_34$1.name,
+    		type: "if",
+    		source: "(834:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (837:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+    function create_if_block_35$1(ctx) {
     	let if_block_anchor;
 
     	function select_block_type_11(ctx, dirty) {
-    		if (/*elementos*/ ctx[39] == 0) return create_if_block_40;
-    		if (/*elementos*/ ctx[39] == 1) return create_if_block_41;
-    		if (/*elementos*/ ctx[39] == "DANTE") return create_if_block_42;
-    		if (/*elementos*/ ctx[39] == "C") return create_if_block_43;
+    		if (/*elementos*/ ctx[61] == 0) return create_if_block_36$1;
+    		if (/*elementos*/ ctx[61] == 1) return create_if_block_37$1;
+    		if (/*elementos*/ ctx[61] == "Z") return create_if_block_38$1;
+    		if (/*elementos*/ ctx[61] == "DANTE") return create_if_block_39$1;
+    		if (/*elementos*/ ctx[61] == "falsa") return create_if_block_40$1;
+    		if (/*elementos*/ ctx[61] == 7) return create_if_block_41$1;
+    		if (/*elementos*/ ctx[61] == "MINOS") return create_if_block_42$1;
     	}
 
     	let current_block_type = select_block_type_11(ctx);
@@ -30652,164 +24662,472 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block_9.name,
-    		type: "each",
-    		source: "(874:8) {#each linhas as elementos}",
+    		id: create_if_block_35$1.name,
+    		type: "if",
+    		source: "(837:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (872:4) {#each mapa4 as linhas}
-    function create_each_block_8(ctx) {
-    	let tr;
-    	let t;
-    	let each_value_9 = /*linhas*/ ctx[36];
-    	validate_each_argument(each_value_9);
-    	let each_blocks = [];
-
-    	for (let i = 0; i < each_value_9.length; i += 1) {
-    		each_blocks[i] = create_each_block_9(get_each_context_9(ctx, each_value_9, i));
-    	}
+    // (850:51) 
+    function create_if_block_42$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
 
     	const block = {
     		c: function create() {
-    			tr = element("tr");
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].c();
-    			}
-
-    			t = space();
-    			add_location(tr, file$1, 872, 4, 52734);
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/minotauro.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "monstro");
+    			add_location(img, file$2, 850, 28, 51839);
+    			add_location(th, file$2, 850, 24, 51835);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, tr, anchor);
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(tr, null);
-    			}
-
-    			append_dev(tr, t);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*mapa4*/ 64) {
-    				each_value_9 = /*linhas*/ ctx[36];
-    				validate_each_argument(each_value_9);
-    				let i;
-
-    				for (i = 0; i < each_value_9.length; i += 1) {
-    					const child_ctx = get_each_context_9(ctx, each_value_9, i);
-
-    					if (each_blocks[i]) {
-    						each_blocks[i].p(child_ctx, dirty);
-    					} else {
-    						each_blocks[i] = create_each_block_9(child_ctx);
-    						each_blocks[i].c();
-    						each_blocks[i].m(tr, t);
-    					}
-    				}
-
-    				for (; i < each_blocks.length; i += 1) {
-    					each_blocks[i].d(1);
-    				}
-
-    				each_blocks.length = each_value_9.length;
-    			}
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(tr);
-    			destroy_each(each_blocks, detaching);
+    			if (detaching) detach_dev(th);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block_8.name,
-    		type: "each",
-    		source: "(872:4) {#each mapa4 as linhas}",
+    		id: create_if_block_42$1.name,
+    		type: "if",
+    		source: "(850:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (852:8) {:else}
-    function create_else_block_3(ctx) {
+    // (848:45) 
+    function create_if_block_41$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredefalsanivel2.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "paredefalsa");
+    			add_location(img, file$2, 848, 28, 51687);
+    			add_location(th, file$2, 848, 24, 51683);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_41$1.name,
+    		type: "if",
+    		source: "(848:45) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (846:51) 
+    function create_if_block_40$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "falsa");
+    			add_location(img, file$2, 846, 28, 51559);
+    			add_location(th, file$2, 846, 24, 51555);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_40$1.name,
+    		type: "if",
+    		source: "(846:51) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (844:51) 
+    function create_if_block_39$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "personagem");
+    			add_location(img, file$2, 844, 43, 51420);
+    			attr_dev(th, "class", "Dante2");
+    			add_location(th, file$2, 844, 24, 51401);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_39$1.name,
+    		type: "if",
+    		source: "(844:51) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (842:47) 
+    function create_if_block_38$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "saida");
+    			add_location(img, file$2, 842, 28, 51271);
+    			add_location(th, file$2, 842, 24, 51267);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_38$1.name,
+    		type: "if",
+    		source: "(842:47) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (840:45) 
+    function create_if_block_37$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel2.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "parede");
+    			add_location(img, file$2, 840, 28, 51133);
+    			add_location(th, file$2, 840, 24, 51129);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_37$1.name,
+    		type: "if",
+    		source: "(840:45) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (838:20) {#if elementos == 0}
+    function create_if_block_36$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel2.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "chao");
+    			add_location(img, file$2, 838, 28, 51001);
+    			add_location(th, file$2, 838, 24, 50997);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_36$1.name,
+    		type: "if",
+    		source: "(838:20) {#if elementos == 0}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (836:16) {#each linhas as elementos,j}
+    function create_each_block_9$1(ctx) {
+    	let if_block_anchor;
+    	let if_block = /*LimiteX*/ ctx[7] <= /*j*/ ctx[63] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[21] * 2 >= /*j*/ ctx[63] && create_if_block_35$1(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (/*LimiteX*/ ctx[7] <= /*j*/ ctx[63] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[21] * 2 >= /*j*/ ctx[63]) {
+    				if (if_block) {
+    					if_block.p(ctx, dirty);
+    				} else {
+    					if_block = create_if_block_35$1(ctx);
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			} else if (if_block) {
+    				if_block.d(1);
+    				if_block = null;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_9$1.name,
+    		type: "each",
+    		source: "(836:16) {#each linhas as elementos,j}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (833:8) {#each mapa2 as linhas,i}
+    function create_each_block_8$1(ctx) {
+    	let if_block_anchor;
+    	let if_block = /*LimiteY*/ ctx[8] <= /*i*/ ctx[60] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[21] * 2 >= /*i*/ ctx[60] && create_if_block_34$1(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (/*LimiteY*/ ctx[8] <= /*i*/ ctx[60] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[21] * 2 >= /*i*/ ctx[60]) {
+    				if (if_block) {
+    					if_block.p(ctx, dirty);
+    				} else {
+    					if_block = create_if_block_34$1(ctx);
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			} else if (if_block) {
+    				if_block.d(1);
+    				if_block = null;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_8$1.name,
+    		type: "each",
+    		source: "(833:8) {#each mapa2 as linhas,i}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (780:8) {:else}
+    function create_else_block_1$1(ctx) {
     	let p0;
+    	let t0_value = /*TempoEnigma*/ ctx[26]() + "";
+    	let t0;
+    	let t1_value = /*ResertarContador*/ ctx[27]() + "";
     	let t1;
-    	let p1;
+    	let t2_value = clearInterval(/*Movimentar*/ ctx[14]) + "";
+    	let t2;
     	let t3;
-    	let p2;
+    	let p1;
     	let t5;
-    	let p3;
+    	let p2;
     	let t7;
-    	let p4;
-    	let t8;
+    	let p3;
     	let t9;
+    	let p4;
+    	let t10_value = /*Perguntas*/ ctx[31][/*contagem*/ ctx[19]] + "";
     	let t10;
+    	let t11;
+    	let p5;
+    	let t12;
+    	let t13;
+    	let t14;
     	let input;
+    	let t15;
+    	let each_1_anchor;
     	let mounted;
     	let dispose;
+    	let each_value_6 = /*mapa1*/ ctx[3];
+    	validate_each_argument(each_value_6);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_6.length; i += 1) {
+    		each_blocks[i] = create_each_block_6$1(get_each_context_6$1(ctx, each_value_6, i));
+    	}
 
     	const block = {
     		c: function create() {
     			p0 = element("p");
-    			p0.textContent = `${/*TempoEnigma*/ ctx[23]()}`;
-    			t1 = space();
-    			p1 = element("p");
-    			p1.textContent = "Se saiu bem, Dante. Conseguiu sobreviver até aqui, mas será que realmente acabou?";
+    			t0 = text(t0_value);
+    			t1 = text(t1_value);
+    			t2 = text(t2_value);
     			t3 = space();
-    			p2 = element("p");
-    			p2.textContent = "Seja rápido se deseja sobreviver.";
+    			p1 = element("p");
+    			p1.textContent = "O que achou das provações resultantes de sua ações precipitadas?";
     			t5 = space();
-    			p3 = element("p");
-    			p3.textContent = "Se você me tem, quer me compartilhar; se você não me compartilha, você me manteve. O que sou?";
+    			p2 = element("p");
+    			p2.textContent = "Deveria tomar cuidado, este não é um labirinto comum e os guardiões deste lugar não gostam de visitantes inesperados.";
     			t7 = space();
+    			p3 = element("p");
+    			p3.textContent = "Responda-me cautelosamente, deuses não costumam ser piedosos como tanto propagam.";
+    			t9 = space();
     			p4 = element("p");
-    			t8 = text(/*contador*/ ctx[13]);
-    			t9 = text("s");
-    			t10 = space();
+    			t10 = text(t10_value);
+    			t11 = space();
+    			p5 = element("p");
+    			t12 = text(/*contador*/ ctx[13]);
+    			t13 = text("s");
+    			t14 = space();
     			input = element("input");
+    			t15 = space();
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			each_1_anchor = empty();
     			attr_dev(p0, "class", "textofutil");
-    			add_location(p0, file$1, 852, 8, 51873);
+    			add_location(p0, file$2, 780, 8, 48265);
     			attr_dev(p1, "class", "Enigma");
-    			add_location(p1, file$1, 853, 8, 51924);
+    			add_location(p1, file$2, 781, 8, 48363);
     			attr_dev(p2, "class", "Enigma");
-    			add_location(p2, file$1, 854, 8, 52037);
+    			add_location(p2, file$2, 782, 8, 48459);
     			attr_dev(p3, "class", "Enigma");
-    			add_location(p3, file$1, 855, 8, 52102);
-    			attr_dev(p4, "class", "Contador");
-    			add_location(p4, file$1, 856, 8, 52227);
+    			add_location(p3, file$2, 783, 8, 48608);
+    			attr_dev(p4, "class", "Enigma");
+    			add_location(p4, file$2, 784, 8, 48721);
+    			attr_dev(p5, "class", "Contador");
+    			add_location(p5, file$2, 785, 8, 48774);
     			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
     			attr_dev(input, "class", "RespostaEnigma");
-    			add_location(input, file$1, 857, 8, 52272);
+    			add_location(input, file$2, 786, 4, 48815);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p0, anchor);
-    			insert_dev(target, t1, anchor);
-    			insert_dev(target, p1, anchor);
+    			append_dev(p0, t0);
+    			append_dev(p0, t1);
+    			append_dev(p0, t2);
     			insert_dev(target, t3, anchor);
-    			insert_dev(target, p2, anchor);
+    			insert_dev(target, p1, anchor);
     			insert_dev(target, t5, anchor);
-    			insert_dev(target, p3, anchor);
+    			insert_dev(target, p2, anchor);
     			insert_dev(target, t7, anchor);
+    			insert_dev(target, p3, anchor);
+    			insert_dev(target, t9, anchor);
     			insert_dev(target, p4, anchor);
-    			append_dev(p4, t8);
-    			append_dev(p4, t9);
-    			insert_dev(target, t10, anchor);
+    			append_dev(p4, t10);
+    			insert_dev(target, t11, anchor);
+    			insert_dev(target, p5, anchor);
+    			append_dev(p5, t12);
+    			append_dev(p5, t13);
+    			insert_dev(target, t14, anchor);
     			insert_dev(target, input, anchor);
     			set_input_value(input, /*PalavraChave*/ ctx[11]);
+    			insert_dev(target, t15, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(target, anchor);
+    			}
+
+    			insert_dev(target, each_1_anchor, anchor);
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(input, "input", /*input_input_handler_3*/ ctx[27]),
+    					listen_dev(input, "input", /*input_input_handler_1*/ ctx[34]),
     					listen_dev(
     						input,
     						"keydown",
     						function () {
-    							if (is_function(/*Alterando*/ ctx[22](/*PalavraChave*/ ctx[11] == "SEGREDO", /*MudandoDeFase*/ ctx[9]))) /*Alterando*/ ctx[22](/*PalavraChave*/ ctx[11] == "SEGREDO", /*MudandoDeFase*/ ctx[9]).apply(this, arguments);
+    							if (is_function(/*Alterando*/ ctx[25](/*PalavraChave*/ ctx[11] == /*respostas*/ ctx[32][/*contagem*/ ctx[19]], /*MudandoDeFase*/ ctx[9]))) /*Alterando*/ ctx[25](/*PalavraChave*/ ctx[11] == /*respostas*/ ctx[32][/*contagem*/ ctx[19]], /*MudandoDeFase*/ ctx[9]).apply(this, arguments);
     						},
     						false,
     						false,
@@ -30822,115 +25140,28 @@ var app = (function () {
     		},
     		p: function update(new_ctx, dirty) {
     			ctx = new_ctx;
-    			if (dirty[0] & /*contador*/ 8192) set_data_dev(t8, /*contador*/ ctx[13]);
+    			if (dirty[0] & /*Movimentar*/ 16384 && t2_value !== (t2_value = clearInterval(/*Movimentar*/ ctx[14]) + "")) set_data_dev(t2, t2_value);
+    			if (dirty[0] & /*contagem*/ 524288 && t10_value !== (t10_value = /*Perguntas*/ ctx[31][/*contagem*/ ctx[19]] + "")) set_data_dev(t10, t10_value);
+    			if (dirty[0] & /*contador*/ 8192) set_data_dev(t12, /*contador*/ ctx[13]);
 
     			if (dirty[0] & /*PalavraChave*/ 2048 && input.value !== /*PalavraChave*/ ctx[11]) {
     				set_input_value(input, /*PalavraChave*/ ctx[11]);
     			}
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(p0);
-    			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(p1);
-    			if (detaching) detach_dev(t3);
-    			if (detaching) detach_dev(p2);
-    			if (detaching) detach_dev(t5);
-    			if (detaching) detach_dev(p3);
-    			if (detaching) detach_dev(t7);
-    			if (detaching) detach_dev(p4);
-    			if (detaching) detach_dev(t10);
-    			if (detaching) detach_dev(input);
-    			mounted = false;
-    			run_all(dispose);
-    		}
-    	};
 
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_else_block_3.name,
-    		type: "else",
-    		source: "(852:8) {:else}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (820:4) {#if !enigma}
-    function create_if_block_29(ctx) {
-    	let p;
-    	let t0_value = clearInterval(/*Tempo*/ ctx[12]) + "";
-    	let t0;
-    	let t1;
-    	let t2_value = /*RenderizandoMapa*/ ctx[16]() + "";
-    	let t2;
-    	let t3;
-    	let t4_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[9]) + "";
-    	let t4;
-    	let t5;
-    	let table;
-    	let each_value_6 = /*mapa3*/ ctx[5];
-    	validate_each_argument(each_value_6);
-    	let each_blocks = [];
-
-    	for (let i = 0; i < each_value_6.length; i += 1) {
-    		each_blocks[i] = create_each_block_6(get_each_context_6(ctx, each_value_6, i));
-    	}
-
-    	const block = {
-    		c: function create() {
-    			p = element("p");
-    			t0 = text(t0_value);
-    			t1 = space();
-    			t2 = text(t2_value);
-    			t3 = space();
-    			t4 = text(t4_value);
-    			t5 = space();
-    			table = element("table");
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].c();
-    			}
-
-    			attr_dev(p, "class", "textofutil");
-    			add_location(p, file$1, 821, 4, 50437);
-    			attr_dev(table, "class", "mapa");
-    			attr_dev(table, "align", "center");
-    			attr_dev(table, "id", "mapanivel3");
-    			add_location(table, file$1, 826, 4, 50569);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, p, anchor);
-    			append_dev(p, t0);
-    			append_dev(p, t1);
-    			append_dev(p, t2);
-    			append_dev(p, t3);
-    			append_dev(p, t4);
-    			insert_dev(target, t5, anchor);
-    			insert_dev(target, table, anchor);
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(table, null);
-    			}
-    		},
-    		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*Tempo*/ 4096 && t0_value !== (t0_value = clearInterval(/*Tempo*/ ctx[12]) + "")) set_data_dev(t0, t0_value);
-    			if (dirty[0] & /*MudandoDeFase*/ 512 && t4_value !== (t4_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[9]) + "")) set_data_dev(t4, t4_value);
-
-    			if (dirty[0] & /*mapa3, LimiteX, Dimensionamento, LimiteY*/ 33184) {
-    				each_value_6 = /*mapa3*/ ctx[5];
+    			if (dirty[0] & /*mapa1*/ 8) {
+    				each_value_6 = /*mapa1*/ ctx[3];
     				validate_each_argument(each_value_6);
     				let i;
 
     				for (i = 0; i < each_value_6.length; i += 1) {
-    					const child_ctx = get_each_context_6(ctx, each_value_6, i);
+    					const child_ctx = get_each_context_6$1(ctx, each_value_6, i);
 
     					if (each_blocks[i]) {
     						each_blocks[i].p(child_ctx, dirty);
     					} else {
-    						each_blocks[i] = create_each_block_6(child_ctx);
+    						each_blocks[i] = create_each_block_6$1(child_ctx);
     						each_blocks[i].c();
-    						each_blocks[i].m(table, null);
+    						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
     					}
     				}
 
@@ -30942,71 +25173,179 @@ var app = (function () {
     			}
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(p0);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(p1);
     			if (detaching) detach_dev(t5);
-    			if (detaching) detach_dev(table);
+    			if (detaching) detach_dev(p2);
+    			if (detaching) detach_dev(t7);
+    			if (detaching) detach_dev(p3);
+    			if (detaching) detach_dev(t9);
+    			if (detaching) detach_dev(p4);
+    			if (detaching) detach_dev(t11);
+    			if (detaching) detach_dev(p5);
+    			if (detaching) detach_dev(t14);
+    			if (detaching) detach_dev(input);
+    			if (detaching) detach_dev(t15);
     			destroy_each(each_blocks, detaching);
+    			if (detaching) detach_dev(each_1_anchor);
+    			mounted = false;
+    			run_all(dispose);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_29.name,
-    		type: "if",
-    		source: "(820:4) {#if !enigma}",
+    		id: create_else_block_1$1.name,
+    		type: "else",
+    		source: "(780:8) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (829:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
-    function create_if_block_30(ctx) {
-    	let tr;
-    	let t;
-    	let each_value_7 = /*linhas*/ ctx[36];
-    	validate_each_argument(each_value_7);
+    // (731:4) {#if !enigma}
+    function create_if_block_13$1(ctx) {
+    	let p;
+    	let t0_value = /*IniciarACaçada*/ ctx[29]() + "";
+    	let t0;
+    	let t1;
+    	let t2_value = /*Cronometrar*/ ctx[28]() + "";
+    	let t2;
+    	let t3;
+    	let t4_value = /*acelerar*/ ctx[30](/*Indice*/ ctx[16] == /*SaveIndice*/ ctx[17]) + "";
+    	let t4;
+    	let t5;
+    	let t6_value = clearInterval(/*Tempo*/ ctx[12]) + "";
+    	let t6;
+    	let t7;
+    	let t8_value = /*RenderizandoMapa*/ ctx[22]() + "";
+    	let t8;
+    	let t9;
+    	let t10_value = /*DeterminandoEixos*/ ctx[23](/*MudandoDeFase*/ ctx[9]) + "";
+    	let t10;
+    	let t11;
+    	let t12;
+    	let table;
+    	let t13;
+    	let div;
+    	let ul;
+
+    	function select_block_type_6(ctx, dirty) {
+    		if (/*HoraDaCaçada*/ ctx[18] > 0) return create_if_block_22$1;
+    		if (/*Ritmo*/ ctx[15] == 3000) return create_if_block_23$1;
+    		if (/*Ritmo*/ ctx[15] == 2000) return create_if_block_24$1;
+    		if (/*Ritmo*/ ctx[15] == 1000) return create_if_block_25$1;
+    		if (/*Ritmo*/ ctx[15] < 1000) return create_if_block_26$1;
+    	}
+
+    	let current_block_type = select_block_type_6(ctx);
+    	let if_block = current_block_type && current_block_type(ctx);
+    	let each_value_4 = /*mapa1*/ ctx[3];
+    	validate_each_argument(each_value_4);
     	let each_blocks = [];
 
-    	for (let i = 0; i < each_value_7.length; i += 1) {
-    		each_blocks[i] = create_each_block_7(get_each_context_7(ctx, each_value_7, i));
+    	for (let i = 0; i < each_value_4.length; i += 1) {
+    		each_blocks[i] = create_each_block_4$1(get_each_context_4$1(ctx, each_value_4, i));
     	}
 
     	const block = {
     		c: function create() {
-    			tr = element("tr");
+    			p = element("p");
+    			t0 = text(t0_value);
+    			t1 = space();
+    			t2 = text(t2_value);
+    			t3 = space();
+    			t4 = text(t4_value);
+    			t5 = space();
+    			t6 = text(t6_value);
+    			t7 = space();
+    			t8 = text(t8_value);
+    			t9 = space();
+    			t10 = text(t10_value);
+    			t11 = space();
+    			if (if_block) if_block.c();
+    			t12 = space();
+    			table = element("table");
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
-    			t = space();
-    			add_location(tr, file$1, 829, 12, 50737);
+    			t13 = space();
+    			div = element("div");
+    			ul = element("ul");
+    			ul.textContent = "OLA TUDO BEM?";
+    			attr_dev(p, "class", "textofutil");
+    			add_location(p, file$2, 732, 4, 46159);
+    			attr_dev(table, "class", "mapa");
+    			attr_dev(table, "align", "center");
+    			attr_dev(table, "id", "mapanivel1");
+    			add_location(table, file$2, 751, 4, 46873);
+    			attr_dev(ul, "class", "info");
+    			add_location(ul, file$2, 777, 8, 48191);
+    			attr_dev(div, "id", "DicaTutorial");
+    			attr_dev(div, "class", "aimds");
+    			add_location(div, file$2, 776, 4, 48144);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, tr, anchor);
+    			insert_dev(target, p, anchor);
+    			append_dev(p, t0);
+    			append_dev(p, t1);
+    			append_dev(p, t2);
+    			append_dev(p, t3);
+    			append_dev(p, t4);
+    			append_dev(p, t5);
+    			append_dev(p, t6);
+    			append_dev(p, t7);
+    			append_dev(p, t8);
+    			append_dev(p, t9);
+    			append_dev(p, t10);
+    			insert_dev(target, t11, anchor);
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, t12, anchor);
+    			insert_dev(target, table, anchor);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(tr, null);
+    				each_blocks[i].m(table, null);
     			}
 
-    			append_dev(tr, t);
+    			insert_dev(target, t13, anchor);
+    			insert_dev(target, div, anchor);
+    			append_dev(div, ul);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*mapa3, LimiteX, Dimensionamento*/ 32928) {
-    				each_value_7 = /*linhas*/ ctx[36];
-    				validate_each_argument(each_value_7);
+    			if (dirty[0] & /*Indice, SaveIndice*/ 196608 && t4_value !== (t4_value = /*acelerar*/ ctx[30](/*Indice*/ ctx[16] == /*SaveIndice*/ ctx[17]) + "")) set_data_dev(t4, t4_value);
+    			if (dirty[0] & /*Tempo*/ 4096 && t6_value !== (t6_value = clearInterval(/*Tempo*/ ctx[12]) + "")) set_data_dev(t6, t6_value);
+    			if (dirty[0] & /*MudandoDeFase*/ 512 && t10_value !== (t10_value = /*DeterminandoEixos*/ ctx[23](/*MudandoDeFase*/ ctx[9]) + "")) set_data_dev(t10, t10_value);
+
+    			if (current_block_type === (current_block_type = select_block_type_6(ctx)) && if_block) {
+    				if_block.p(ctx, dirty);
+    			} else {
+    				if (if_block) if_block.d(1);
+    				if_block = current_block_type && current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(t12.parentNode, t12);
+    				}
+    			}
+
+    			if (dirty[0] & /*mapa1, LimiteX, Dimensionamento, LimiteY*/ 2097544) {
+    				each_value_4 = /*mapa1*/ ctx[3];
+    				validate_each_argument(each_value_4);
     				let i;
 
-    				for (i = 0; i < each_value_7.length; i += 1) {
-    					const child_ctx = get_each_context_7(ctx, each_value_7, i);
+    				for (i = 0; i < each_value_4.length; i += 1) {
+    					const child_ctx = get_each_context_4$1(ctx, each_value_4, i);
 
     					if (each_blocks[i]) {
     						each_blocks[i].p(child_ctx, dirty);
     					} else {
-    						each_blocks[i] = create_each_block_7(child_ctx);
+    						each_blocks[i] = create_each_block_4$1(child_ctx);
     						each_blocks[i].c();
-    						each_blocks[i].m(tr, t);
+    						each_blocks[i].m(table, null);
     					}
     				}
 
@@ -31014,40 +25353,231 @@ var app = (function () {
     					each_blocks[i].d(1);
     				}
 
-    				each_blocks.length = each_value_7.length;
+    				each_blocks.length = each_value_4.length;
     			}
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(tr);
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t11);
+
+    			if (if_block) {
+    				if_block.d(detaching);
+    			}
+
+    			if (detaching) detach_dev(t12);
+    			if (detaching) detach_dev(table);
     			destroy_each(each_blocks, detaching);
+    			if (detaching) detach_dev(t13);
+    			if (detaching) detach_dev(div);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_30.name,
+    		id: create_if_block_13$1.name,
     		type: "if",
-    		source: "(829:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		source: "(731:4) {#if !enigma}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (832:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
-    function create_if_block_31(ctx) {
+    // (799:39) 
+    function create_if_block_31$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "falsa");
+    			add_location(img, file$2, 799, 16, 49662);
+    			add_location(th, file$2, 799, 12, 49658);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_31$1.name,
+    		type: "if",
+    		source: "(799:39) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (797:39) 
+    function create_if_block_30$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			attr_dev(img, "id", "chao1");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel1.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "personagem");
+    			add_location(img, file$2, 797, 16, 49516);
+    			add_location(th, file$2, 797, 12, 49512);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_30$1.name,
+    		type: "if",
+    		source: "(797:39) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (795:35) 
+    function create_if_block_29$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "saida");
+    			add_location(img, file$2, 795, 16, 49390);
+    			add_location(th, file$2, 795, 12, 49386);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_29$1.name,
+    		type: "if",
+    		source: "(795:35) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (793:33) 
+    function create_if_block_28$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel1.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "parede");
+    			add_location(img, file$2, 793, 16, 49260);
+    			add_location(th, file$2, 793, 12, 49256);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_28$1.name,
+    		type: "if",
+    		source: "(793:33) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (791:8) {#if elementos == 0}
+    function create_if_block_27$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			attr_dev(img, "id", "chao1");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel1.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "chao");
+    			add_location(img, file$2, 791, 16, 49125);
+    			add_location(th, file$2, 791, 12, 49121);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_27$1.name,
+    		type: "if",
+    		source: "(791:8) {#if elementos == 0}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (790:8) {#each linhas as elementos}
+    function create_each_block_7$1(ctx) {
     	let if_block_anchor;
 
-    	function select_block_type_9(ctx, dirty) {
-    		if (/*elementos*/ ctx[39] == 0) return create_if_block_32;
-    		if (/*elementos*/ ctx[39] == 1) return create_if_block_33;
-    		if (/*elementos*/ ctx[39] == "V") return create_if_block_34;
-    		if (/*elementos*/ ctx[39] == "DANTE") return create_if_block_35;
-    		if (/*elementos*/ ctx[39] == "falsa") return create_if_block_36;
-    		if (/*elementos*/ ctx[39] == 7) return create_if_block_37;
+    	function select_block_type_8(ctx, dirty) {
+    		if (/*elementos*/ ctx[61] == 0) return create_if_block_27$1;
+    		if (/*elementos*/ ctx[61] == 1) return create_if_block_28$1;
+    		if (/*elementos*/ ctx[61] == "Y") return create_if_block_29$1;
+    		if (/*elementos*/ ctx[61] == "DANTE") return create_if_block_30$1;
+    		if (/*elementos*/ ctx[61] == "falsa") return create_if_block_31$1;
     	}
 
-    	let current_block_type = select_block_type_9(ctx);
+    	let current_block_type = select_block_type_8(ctx);
     	let if_block = current_block_type && current_block_type(ctx);
 
     	const block = {
@@ -31060,7 +25590,7 @@ var app = (function () {
     			insert_dev(target, if_block_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (current_block_type !== (current_block_type = select_block_type_9(ctx))) {
+    			if (current_block_type !== (current_block_type = select_block_type_8(ctx))) {
     				if (if_block) if_block.d(1);
     				if_block = current_block_type && current_block_type(ctx);
 
@@ -31081,573 +25611,25 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_31.name,
-    		type: "if",
-    		source: "(832:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (843:45) 
-    function create_if_block_37(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredefalsanivel2.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "paredefalsa");
-    			add_location(img, file$1, 843, 28, 51629);
-    			add_location(th, file$1, 843, 24, 51625);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_37.name,
-    		type: "if",
-    		source: "(843:45) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (841:51) 
-    function create_if_block_36(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "falsa");
-    			add_location(img, file$1, 841, 28, 51501);
-    			add_location(th, file$1, 841, 24, 51497);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_36.name,
-    		type: "if",
-    		source: "(841:51) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (839:51) 
-    function create_if_block_35(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "personagem");
-    			add_location(img, file$1, 839, 43, 51362);
-    			attr_dev(th, "class", "Dante3");
-    			add_location(th, file$1, 839, 24, 51343);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_35.name,
-    		type: "if",
-    		source: "(839:51) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (837:47) 
-    function create_if_block_34(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saidanivel3.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "saida");
-    			add_location(img, file$1, 837, 28, 51207);
-    			add_location(th, file$1, 837, 24, 51203);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_34.name,
-    		type: "if",
-    		source: "(837:47) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (835:45) 
-    function create_if_block_33(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel3.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 835, 28, 51069);
-    			add_location(th, file$1, 835, 24, 51065);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_33.name,
-    		type: "if",
-    		source: "(835:45) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (833:20) {#if elementos == 0}
-    function create_if_block_32(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel3.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "chao");
-    			add_location(img, file$1, 833, 29, 50937);
-    			add_location(th, file$1, 833, 24, 50932);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_32.name,
-    		type: "if",
-    		source: "(833:20) {#if elementos == 0}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (831:16) {#each linhas as elementos,j}
-    function create_each_block_7(ctx) {
-    	let if_block_anchor;
-    	let if_block = /*LimiteX*/ ctx[7] <= /*j*/ ctx[41] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[41] && create_if_block_31(ctx);
-
-    	const block = {
-    		c: function create() {
-    			if (if_block) if_block.c();
-    			if_block_anchor = empty();
-    		},
-    		m: function mount(target, anchor) {
-    			if (if_block) if_block.m(target, anchor);
-    			insert_dev(target, if_block_anchor, anchor);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (/*LimiteX*/ ctx[7] <= /*j*/ ctx[41] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[41]) {
-    				if (if_block) {
-    					if_block.p(ctx, dirty);
-    				} else {
-    					if_block = create_if_block_31(ctx);
-    					if_block.c();
-    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-    				}
-    			} else if (if_block) {
-    				if_block.d(1);
-    				if_block = null;
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (if_block) if_block.d(detaching);
-    			if (detaching) detach_dev(if_block_anchor);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_each_block_7.name,
+    		id: create_each_block_7$1.name,
     		type: "each",
-    		source: "(831:16) {#each linhas as elementos,j}",
+    		source: "(790:8) {#each linhas as elementos}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (828:8) {#each mapa3 as linhas,i}
-    function create_each_block_6(ctx) {
-    	let if_block_anchor;
-    	let if_block = /*LimiteY*/ ctx[8] <= /*i*/ ctx[38] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[38] && create_if_block_30(ctx);
-
-    	const block = {
-    		c: function create() {
-    			if (if_block) if_block.c();
-    			if_block_anchor = empty();
-    		},
-    		m: function mount(target, anchor) {
-    			if (if_block) if_block.m(target, anchor);
-    			insert_dev(target, if_block_anchor, anchor);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (/*LimiteY*/ ctx[8] <= /*i*/ ctx[38] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[38]) {
-    				if (if_block) {
-    					if_block.p(ctx, dirty);
-    				} else {
-    					if_block = create_if_block_30(ctx);
-    					if_block.c();
-    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-    				}
-    			} else if (if_block) {
-    				if_block.d(1);
-    				if_block = null;
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (if_block) if_block.d(detaching);
-    			if (detaching) detach_dev(if_block_anchor);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_each_block_6.name,
-    		type: "each",
-    		source: "(828:8) {#each mapa3 as linhas,i}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (805:8) {:else}
-    function create_else_block_2(ctx) {
-    	let p0;
-    	let t1;
-    	let p1;
-    	let t3;
-    	let p2;
-    	let t5;
-    	let p3;
-    	let t7;
-    	let p4;
-    	let t9;
-    	let p5;
-    	let t11;
-    	let p6;
-    	let t12;
-    	let t13;
-    	let t14;
-    	let input;
-    	let mounted;
-    	let dispose;
-
-    	const block = {
-    		c: function create() {
-    			p0 = element("p");
-    			p0.textContent = `${/*TempoEnigma*/ ctx[23]()}`;
-    			t1 = space();
-    			p1 = element("p");
-    			p1.textContent = "Gostei de você, jovem.";
-    			t3 = space();
-    			p2 = element("p");
-    			p2.textContent = "Como pôde perceber, nem tudo é o que parece.";
-    			t5 = space();
-    			p3 = element("p");
-    			p3.textContent = "Espero não acostuma-lo mal, mas por enquanto vou aconselha-lo a não confiar tanto no que seus olhos vêem.";
-    			t7 = space();
-    			p4 = element("p");
-    			p4.textContent = "Paredes falsas podem parecer algo impensável para humanos, mas não me compare com seres como vocês.";
-    			t9 = space();
-    			p5 = element("p");
-    			p5.textContent = "Poder suficiente para esmagar navios e quebrar telhados mas mesmo assim tenho medo do sol. O que eu sou?";
-    			t11 = space();
-    			p6 = element("p");
-    			t12 = text(/*contador*/ ctx[13]);
-    			t13 = text("s");
-    			t14 = space();
-    			input = element("input");
-    			attr_dev(p0, "class", "textofutil");
-    			add_location(p0, file$1, 805, 8, 49516);
-    			attr_dev(p1, "class", "Enigma");
-    			add_location(p1, file$1, 806, 8, 49567);
-    			attr_dev(p2, "class", "Enigma");
-    			add_location(p2, file$1, 807, 8, 49621);
-    			attr_dev(p3, "class", "Enigma");
-    			add_location(p3, file$1, 808, 8, 49697);
-    			attr_dev(p4, "class", "Enigma");
-    			add_location(p4, file$1, 809, 8, 49834);
-    			attr_dev(p5, "class", "Enigma");
-    			add_location(p5, file$1, 810, 8, 49965);
-    			attr_dev(p6, "class", "Contador");
-    			add_location(p6, file$1, 811, 8, 50101);
-    			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
-    			attr_dev(input, "class", "RespostaEnigma");
-    			add_location(input, file$1, 812, 8, 50146);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, p0, anchor);
-    			insert_dev(target, t1, anchor);
-    			insert_dev(target, p1, anchor);
-    			insert_dev(target, t3, anchor);
-    			insert_dev(target, p2, anchor);
-    			insert_dev(target, t5, anchor);
-    			insert_dev(target, p3, anchor);
-    			insert_dev(target, t7, anchor);
-    			insert_dev(target, p4, anchor);
-    			insert_dev(target, t9, anchor);
-    			insert_dev(target, p5, anchor);
-    			insert_dev(target, t11, anchor);
-    			insert_dev(target, p6, anchor);
-    			append_dev(p6, t12);
-    			append_dev(p6, t13);
-    			insert_dev(target, t14, anchor);
-    			insert_dev(target, input, anchor);
-    			set_input_value(input, /*PalavraChave*/ ctx[11]);
-
-    			if (!mounted) {
-    				dispose = [
-    					listen_dev(input, "input", /*input_input_handler_2*/ ctx[26]),
-    					listen_dev(
-    						input,
-    						"keydown",
-    						function () {
-    							if (is_function(/*Alterando*/ ctx[22](/*PalavraChave*/ ctx[11] == "GELO", /*MudandoDeFase*/ ctx[9]))) /*Alterando*/ ctx[22](/*PalavraChave*/ ctx[11] == "GELO", /*MudandoDeFase*/ ctx[9]).apply(this, arguments);
-    						},
-    						false,
-    						false,
-    						false
-    					)
-    				];
-
-    				mounted = true;
-    			}
-    		},
-    		p: function update(new_ctx, dirty) {
-    			ctx = new_ctx;
-    			if (dirty[0] & /*contador*/ 8192) set_data_dev(t12, /*contador*/ ctx[13]);
-
-    			if (dirty[0] & /*PalavraChave*/ 2048 && input.value !== /*PalavraChave*/ ctx[11]) {
-    				set_input_value(input, /*PalavraChave*/ ctx[11]);
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(p0);
-    			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(p1);
-    			if (detaching) detach_dev(t3);
-    			if (detaching) detach_dev(p2);
-    			if (detaching) detach_dev(t5);
-    			if (detaching) detach_dev(p3);
-    			if (detaching) detach_dev(t7);
-    			if (detaching) detach_dev(p4);
-    			if (detaching) detach_dev(t9);
-    			if (detaching) detach_dev(p5);
-    			if (detaching) detach_dev(t11);
-    			if (detaching) detach_dev(p6);
-    			if (detaching) detach_dev(t14);
-    			if (detaching) detach_dev(input);
-    			mounted = false;
-    			run_all(dispose);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_else_block_2.name,
-    		type: "else",
-    		source: "(805:8) {:else}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (773:4) {#if !enigma}
-    function create_if_block_19(ctx) {
-    	let p;
-    	let t0_value = clearInterval(/*Tempo*/ ctx[12]) + "";
-    	let t0;
-    	let t1;
-    	let t2_value = /*RenderizandoMapa*/ ctx[16]() + "";
-    	let t2;
-    	let t3;
-    	let t4_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[9]) + "";
-    	let t4;
-    	let t5;
-    	let table;
-    	let each_value_4 = /*mapa2*/ ctx[4];
-    	validate_each_argument(each_value_4);
-    	let each_blocks = [];
-
-    	for (let i = 0; i < each_value_4.length; i += 1) {
-    		each_blocks[i] = create_each_block_4(get_each_context_4(ctx, each_value_4, i));
-    	}
-
-    	const block = {
-    		c: function create() {
-    			p = element("p");
-    			t0 = text(t0_value);
-    			t1 = space();
-    			t2 = text(t2_value);
-    			t3 = space();
-    			t4 = text(t4_value);
-    			t5 = space();
-    			table = element("table");
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].c();
-    			}
-
-    			attr_dev(p, "class", "textofutil");
-    			add_location(p, file$1, 774, 4, 48090);
-    			attr_dev(table, "class", "mapa");
-    			attr_dev(table, "align", "center");
-    			attr_dev(table, "id", "mapanivel2");
-    			add_location(table, file$1, 779, 4, 48222);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, p, anchor);
-    			append_dev(p, t0);
-    			append_dev(p, t1);
-    			append_dev(p, t2);
-    			append_dev(p, t3);
-    			append_dev(p, t4);
-    			insert_dev(target, t5, anchor);
-    			insert_dev(target, table, anchor);
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(table, null);
-    			}
-    		},
-    		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*Tempo*/ 4096 && t0_value !== (t0_value = clearInterval(/*Tempo*/ ctx[12]) + "")) set_data_dev(t0, t0_value);
-    			if (dirty[0] & /*MudandoDeFase*/ 512 && t4_value !== (t4_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[9]) + "")) set_data_dev(t4, t4_value);
-
-    			if (dirty[0] & /*mapa2, LimiteX, Dimensionamento, LimiteY*/ 33168) {
-    				each_value_4 = /*mapa2*/ ctx[4];
-    				validate_each_argument(each_value_4);
-    				let i;
-
-    				for (i = 0; i < each_value_4.length; i += 1) {
-    					const child_ctx = get_each_context_4(ctx, each_value_4, i);
-
-    					if (each_blocks[i]) {
-    						each_blocks[i].p(child_ctx, dirty);
-    					} else {
-    						each_blocks[i] = create_each_block_4(child_ctx);
-    						each_blocks[i].c();
-    						each_blocks[i].m(table, null);
-    					}
-    				}
-
-    				for (; i < each_blocks.length; i += 1) {
-    					each_blocks[i].d(1);
-    				}
-
-    				each_blocks.length = each_value_4.length;
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(p);
-    			if (detaching) detach_dev(t5);
-    			if (detaching) detach_dev(table);
-    			destroy_each(each_blocks, detaching);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_19.name,
-    		type: "if",
-    		source: "(773:4) {#if !enigma}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (782:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
-    function create_if_block_20(ctx) {
+    // (788:4) {#each mapa1 as linhas}
+    function create_each_block_6$1(ctx) {
     	let tr;
     	let t;
-    	let each_value_5 = /*linhas*/ ctx[36];
-    	validate_each_argument(each_value_5);
+    	let each_value_7 = /*linhas*/ ctx[58];
+    	validate_each_argument(each_value_7);
     	let each_blocks = [];
 
-    	for (let i = 0; i < each_value_5.length; i += 1) {
-    		each_blocks[i] = create_each_block_5(get_each_context_5(ctx, each_value_5, i));
+    	for (let i = 0; i < each_value_7.length; i += 1) {
+    		each_blocks[i] = create_each_block_7$1(get_each_context_7$1(ctx, each_value_7, i));
     	}
 
     	const block = {
@@ -31659,7 +25641,8 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file$1, 782, 12, 48390);
+    			attr_dev(tr, "class", "minimapa");
+    			add_location(tr, file$2, 788, 4, 49019);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -31671,18 +25654,254 @@ var app = (function () {
     			append_dev(tr, t);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*mapa2, LimiteX, Dimensionamento*/ 32912) {
-    				each_value_5 = /*linhas*/ ctx[36];
-    				validate_each_argument(each_value_5);
+    			if (dirty[0] & /*mapa1*/ 8) {
+    				each_value_7 = /*linhas*/ ctx[58];
+    				validate_each_argument(each_value_7);
     				let i;
 
-    				for (i = 0; i < each_value_5.length; i += 1) {
-    					const child_ctx = get_each_context_5(ctx, each_value_5, i);
+    				for (i = 0; i < each_value_7.length; i += 1) {
+    					const child_ctx = get_each_context_7$1(ctx, each_value_7, i);
 
     					if (each_blocks[i]) {
     						each_blocks[i].p(child_ctx, dirty);
     					} else {
-    						each_blocks[i] = create_each_block_5(child_ctx);
+    						each_blocks[i] = create_each_block_7$1(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(tr, t);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_7.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(tr);
+    			destroy_each(each_blocks, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_6$1.name,
+    		type: "each",
+    		source: "(788:4) {#each mapa1 as linhas}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (749:27) 
+    function create_if_block_26$1(ctx) {
+    	let p;
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			p.textContent = "O Minotauro está enfurecido";
+    			attr_dev(p, "class", "Enigma");
+    			add_location(p, file$2, 749, 8, 46807);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_26$1.name,
+    		type: "if",
+    		source: "(749:27) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (747:28) 
+    function create_if_block_25$1(ctx) {
+    	let p;
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			p.textContent = "O Minotauro começou a correr";
+    			attr_dev(p, "class", "Enigma");
+    			add_location(p, file$2, 747, 8, 46718);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_25$1.name,
+    		type: "if",
+    		source: "(747:28) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (745:28) 
+    function create_if_block_24$1(ctx) {
+    	let p;
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			p.textContent = "O Minotauro acelerou o passo";
+    			attr_dev(p, "class", "Enigma");
+    			add_location(p, file$2, 745, 8, 46628);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_24$1.name,
+    		type: "if",
+    		source: "(745:28) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (743:28) 
+    function create_if_block_23$1(ctx) {
+    	let p;
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			p.textContent = "O Minotauro começou a perseguição";
+    			attr_dev(p, "class", "Enigma");
+    			add_location(p, file$2, 743, 8, 46533);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_23$1.name,
+    		type: "if",
+    		source: "(743:28) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (741:4) {#if HoraDaCaçada > 0}
+    function create_if_block_22$1(ctx) {
+    	let p;
+    	let t0;
+    	let t1;
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			t0 = text("O Minotauro ira surgir em: ");
+    			t1 = text(/*HoraDaCaçada*/ ctx[18]);
+    			attr_dev(p, "class", "Enigma");
+    			add_location(p, file$2, 741, 8, 46430);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    			append_dev(p, t0);
+    			append_dev(p, t1);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*HoraDaCaçada*/ 262144) set_data_dev(t1, /*HoraDaCaçada*/ ctx[18]);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_22$1.name,
+    		type: "if",
+    		source: "(741:4) {#if HoraDaCaçada > 0}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (754:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+    function create_if_block_14$1(ctx) {
+    	let tr;
+    	let t;
+    	let each_value_5 = /*linhas*/ ctx[58];
+    	validate_each_argument(each_value_5);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_5.length; i += 1) {
+    		each_blocks[i] = create_each_block_5$1(get_each_context_5$1(ctx, each_value_5, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			tr = element("tr");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			t = space();
+    			add_location(tr, file$2, 754, 12, 47041);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, tr, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(tr, null);
+    			}
+
+    			append_dev(tr, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*mapa1, LimiteX, Dimensionamento*/ 2097288) {
+    				each_value_5 = /*linhas*/ ctx[58];
+    				validate_each_argument(each_value_5);
+    				let i;
+
+    				for (i = 0; i < each_value_5.length; i += 1) {
+    					const child_ctx = get_each_context_5$1(ctx, each_value_5, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_5$1(child_ctx);
     						each_blocks[i].c();
     						each_blocks[i].m(tr, t);
     					}
@@ -31703,26 +25922,26 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_20.name,
+    		id: create_if_block_14$1.name,
     		type: "if",
-    		source: "(782:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		source: "(754:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (785:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
-    function create_if_block_21(ctx) {
+    // (757:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+    function create_if_block_15$1(ctx) {
     	let if_block_anchor;
 
     	function select_block_type_7(ctx, dirty) {
-    		if (/*elementos*/ ctx[39] == 0) return create_if_block_22;
-    		if (/*elementos*/ ctx[39] == 1) return create_if_block_23;
-    		if (/*elementos*/ ctx[39] == "Z") return create_if_block_24;
-    		if (/*elementos*/ ctx[39] == "DANTE") return create_if_block_25;
-    		if (/*elementos*/ ctx[39] == "falsa") return create_if_block_26;
-    		if (/*elementos*/ ctx[39] == 7) return create_if_block_27;
+    		if (/*elementos*/ ctx[61] == 0) return create_if_block_16$1;
+    		if (/*elementos*/ ctx[61] == 1) return create_if_block_17$1;
+    		if (/*elementos*/ ctx[61] == "Y") return create_if_block_18$1;
+    		if (/*elementos*/ ctx[61] == "DANTE") return create_if_block_19$1;
+    		if (/*elementos*/ ctx[61] == "falsa") return create_if_block_20$1;
+    		if (/*elementos*/ ctx[61] == "MINOS") return create_if_block_21$1;
     	}
 
     	let current_block_type = select_block_type_7(ctx);
@@ -31759,17 +25978,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_21.name,
+    		id: create_if_block_15$1.name,
     		type: "if",
-    		source: "(785:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
+    		source: "(757:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (796:45) 
-    function create_if_block_27(ctx) {
+    // (768:51) 
+    function create_if_block_21$1(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -31778,10 +25997,10 @@ var app = (function () {
     		c: function create() {
     			th = element("th");
     			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredefalsanivel2.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "paredefalsa");
-    			add_location(img, file$1, 796, 28, 49276);
-    			add_location(th, file$1, 796, 24, 49272);
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/minotauro.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "monstro");
+    			add_location(img, file$2, 768, 28, 47933);
+    			add_location(th, file$2, 768, 24, 47929);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31794,17 +26013,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_27.name,
+    		id: create_if_block_21$1.name,
     		type: "if",
-    		source: "(796:45) ",
+    		source: "(768:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (794:51) 
-    function create_if_block_26(ctx) {
+    // (766:51) 
+    function create_if_block_20$1(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -31815,8 +26034,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "falsa");
-    			add_location(img, file$1, 794, 28, 49148);
-    			add_location(th, file$1, 794, 24, 49144);
+    			add_location(img, file$2, 766, 28, 47799);
+    			add_location(th, file$2, 766, 24, 47795);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -31829,17 +26048,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_26.name,
+    		id: create_if_block_20$1.name,
     		type: "if",
-    		source: "(794:51) ",
+    		source: "(766:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (792:51) 
-    function create_if_block_25(ctx) {
+    // (764:51) 
+    function create_if_block_19$1(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -31850,640 +26069,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
-    			add_location(img, file$1, 792, 43, 49009);
-    			attr_dev(th, "class", "Dante2");
-    			add_location(th, file$1, 792, 24, 48990);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_25.name,
-    		type: "if",
-    		source: "(792:51) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (790:47) 
-    function create_if_block_24(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "saida");
-    			add_location(img, file$1, 790, 28, 48860);
-    			add_location(th, file$1, 790, 24, 48856);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_24.name,
-    		type: "if",
-    		source: "(790:47) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (788:45) 
-    function create_if_block_23(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel2.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 788, 28, 48722);
-    			add_location(th, file$1, 788, 24, 48718);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_23.name,
-    		type: "if",
-    		source: "(788:45) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (786:20) {#if elementos == 0}
-    function create_if_block_22(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel2.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "chao");
-    			add_location(img, file$1, 786, 29, 48590);
-    			add_location(th, file$1, 786, 24, 48585);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_22.name,
-    		type: "if",
-    		source: "(786:20) {#if elementos == 0}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (784:16) {#each linhas as elementos,j}
-    function create_each_block_5(ctx) {
-    	let if_block_anchor;
-    	let if_block = /*LimiteX*/ ctx[7] <= /*j*/ ctx[41] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[41] && create_if_block_21(ctx);
-
-    	const block = {
-    		c: function create() {
-    			if (if_block) if_block.c();
-    			if_block_anchor = empty();
-    		},
-    		m: function mount(target, anchor) {
-    			if (if_block) if_block.m(target, anchor);
-    			insert_dev(target, if_block_anchor, anchor);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (/*LimiteX*/ ctx[7] <= /*j*/ ctx[41] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[41]) {
-    				if (if_block) {
-    					if_block.p(ctx, dirty);
-    				} else {
-    					if_block = create_if_block_21(ctx);
-    					if_block.c();
-    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-    				}
-    			} else if (if_block) {
-    				if_block.d(1);
-    				if_block = null;
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (if_block) if_block.d(detaching);
-    			if (detaching) detach_dev(if_block_anchor);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_each_block_5.name,
-    		type: "each",
-    		source: "(784:16) {#each linhas as elementos,j}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (781:8) {#each mapa2 as linhas,i}
-    function create_each_block_4(ctx) {
-    	let if_block_anchor;
-    	let if_block = /*LimiteY*/ ctx[8] <= /*i*/ ctx[38] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[38] && create_if_block_20(ctx);
-
-    	const block = {
-    		c: function create() {
-    			if (if_block) if_block.c();
-    			if_block_anchor = empty();
-    		},
-    		m: function mount(target, anchor) {
-    			if (if_block) if_block.m(target, anchor);
-    			insert_dev(target, if_block_anchor, anchor);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (/*LimiteY*/ ctx[8] <= /*i*/ ctx[38] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[38]) {
-    				if (if_block) {
-    					if_block.p(ctx, dirty);
-    				} else {
-    					if_block = create_if_block_20(ctx);
-    					if_block.c();
-    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-    				}
-    			} else if (if_block) {
-    				if_block.d(1);
-    				if_block = null;
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (if_block) if_block.d(detaching);
-    			if (detaching) detach_dev(if_block_anchor);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_each_block_4.name,
-    		type: "each",
-    		source: "(781:8) {#each mapa2 as linhas,i}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (759:8) {:else}
-    function create_else_block_1(ctx) {
-    	let p0;
-    	let t1;
-    	let p1;
-    	let t3;
-    	let p2;
-    	let t5;
-    	let p3;
-    	let t7;
-    	let p4;
-    	let t9;
-    	let p5;
-    	let t10;
-    	let t11;
-    	let t12;
-    	let input;
-    	let mounted;
-    	let dispose;
-
-    	const block = {
-    		c: function create() {
-    			p0 = element("p");
-    			p0.textContent = `${/*TempoEnigma*/ ctx[23]()}`;
-    			t1 = space();
-    			p1 = element("p");
-    			p1.textContent = "O que achou das provações resultantes de sua ações precipitadas?";
-    			t3 = space();
-    			p2 = element("p");
-    			p2.textContent = "Deveria tomar cuidado, este não é um labirinto comum e os guardiões deste lugar não gostam de visitantes inesperados.";
-    			t5 = space();
-    			p3 = element("p");
-    			p3.textContent = "Responda-me cautelosamente, deuses não costumam ser piedosos como tanto propagam.";
-    			t7 = space();
-    			p4 = element("p");
-    			p4.textContent = "Fui levado para um quarto escuro e incendiado. Eu chorei e então minha cabeça foi cortada. Quem sou?";
-    			t9 = space();
-    			p5 = element("p");
-    			t10 = text(/*contador*/ ctx[13]);
-    			t11 = text("s");
-    			t12 = space();
-    			input = element("input");
-    			attr_dev(p0, "class", "textofutil");
-    			add_location(p0, file$1, 759, 8, 47217);
-    			attr_dev(p1, "class", "Enigma");
-    			add_location(p1, file$1, 760, 8, 47268);
-    			attr_dev(p2, "class", "Enigma");
-    			add_location(p2, file$1, 761, 8, 47364);
-    			attr_dev(p3, "class", "Enigma");
-    			add_location(p3, file$1, 762, 8, 47513);
-    			attr_dev(p4, "class", "Enigma");
-    			add_location(p4, file$1, 763, 8, 47626);
-    			attr_dev(p5, "class", "Contador");
-    			add_location(p5, file$1, 764, 8, 47758);
-    			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
-    			attr_dev(input, "class", "RespostaEnigma");
-    			add_location(input, file$1, 765, 4, 47799);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, p0, anchor);
-    			insert_dev(target, t1, anchor);
-    			insert_dev(target, p1, anchor);
-    			insert_dev(target, t3, anchor);
-    			insert_dev(target, p2, anchor);
-    			insert_dev(target, t5, anchor);
-    			insert_dev(target, p3, anchor);
-    			insert_dev(target, t7, anchor);
-    			insert_dev(target, p4, anchor);
-    			insert_dev(target, t9, anchor);
-    			insert_dev(target, p5, anchor);
-    			append_dev(p5, t10);
-    			append_dev(p5, t11);
-    			insert_dev(target, t12, anchor);
-    			insert_dev(target, input, anchor);
-    			set_input_value(input, /*PalavraChave*/ ctx[11]);
-
-    			if (!mounted) {
-    				dispose = [
-    					listen_dev(input, "input", /*input_input_handler_1*/ ctx[25]),
-    					listen_dev(
-    						input,
-    						"keydown",
-    						function () {
-    							if (is_function(/*Alterando*/ ctx[22](/*PalavraChave*/ ctx[11] == "VELA", /*MudandoDeFase*/ ctx[9]))) /*Alterando*/ ctx[22](/*PalavraChave*/ ctx[11] == "VELA", /*MudandoDeFase*/ ctx[9]).apply(this, arguments);
-    						},
-    						false,
-    						false,
-    						false
-    					)
-    				];
-
-    				mounted = true;
-    			}
-    		},
-    		p: function update(new_ctx, dirty) {
-    			ctx = new_ctx;
-    			if (dirty[0] & /*contador*/ 8192) set_data_dev(t10, /*contador*/ ctx[13]);
-
-    			if (dirty[0] & /*PalavraChave*/ 2048 && input.value !== /*PalavraChave*/ ctx[11]) {
-    				set_input_value(input, /*PalavraChave*/ ctx[11]);
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(p0);
-    			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(p1);
-    			if (detaching) detach_dev(t3);
-    			if (detaching) detach_dev(p2);
-    			if (detaching) detach_dev(t5);
-    			if (detaching) detach_dev(p3);
-    			if (detaching) detach_dev(t7);
-    			if (detaching) detach_dev(p4);
-    			if (detaching) detach_dev(t9);
-    			if (detaching) detach_dev(p5);
-    			if (detaching) detach_dev(t12);
-    			if (detaching) detach_dev(input);
-    			mounted = false;
-    			run_all(dispose);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_else_block_1.name,
-    		type: "else",
-    		source: "(759:8) {:else}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (729:4) {#if !enigma}
-    function create_if_block_10(ctx) {
-    	let p;
-    	let t0_value = clearInterval(/*Tempo*/ ctx[12]) + "";
-    	let t0;
-    	let t1;
-    	let t2_value = /*RenderizandoMapa*/ ctx[16]() + "";
-    	let t2;
-    	let t3;
-    	let t4_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[9]) + "";
-    	let t4;
-    	let t5;
-    	let table;
-    	let each_value_2 = /*mapa1*/ ctx[3];
-    	validate_each_argument(each_value_2);
-    	let each_blocks = [];
-
-    	for (let i = 0; i < each_value_2.length; i += 1) {
-    		each_blocks[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
-    	}
-
-    	const block = {
-    		c: function create() {
-    			p = element("p");
-    			t0 = text(t0_value);
-    			t1 = space();
-    			t2 = text(t2_value);
-    			t3 = space();
-    			t4 = text(t4_value);
-    			t5 = space();
-    			table = element("table");
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].c();
-    			}
-
-    			attr_dev(p, "class", "textofutil");
-    			add_location(p, file$1, 730, 4, 45933);
-    			attr_dev(table, "class", "mapa");
-    			attr_dev(table, "align", "center");
-    			attr_dev(table, "id", "mapanivel1");
-    			add_location(table, file$1, 735, 4, 46065);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, p, anchor);
-    			append_dev(p, t0);
-    			append_dev(p, t1);
-    			append_dev(p, t2);
-    			append_dev(p, t3);
-    			append_dev(p, t4);
-    			insert_dev(target, t5, anchor);
-    			insert_dev(target, table, anchor);
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(table, null);
-    			}
-    		},
-    		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*Tempo*/ 4096 && t0_value !== (t0_value = clearInterval(/*Tempo*/ ctx[12]) + "")) set_data_dev(t0, t0_value);
-    			if (dirty[0] & /*MudandoDeFase*/ 512 && t4_value !== (t4_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[9]) + "")) set_data_dev(t4, t4_value);
-
-    			if (dirty[0] & /*mapa1, LimiteX, Dimensionamento, LimiteY*/ 33160) {
-    				each_value_2 = /*mapa1*/ ctx[3];
-    				validate_each_argument(each_value_2);
-    				let i;
-
-    				for (i = 0; i < each_value_2.length; i += 1) {
-    					const child_ctx = get_each_context_2(ctx, each_value_2, i);
-
-    					if (each_blocks[i]) {
-    						each_blocks[i].p(child_ctx, dirty);
-    					} else {
-    						each_blocks[i] = create_each_block_2(child_ctx);
-    						each_blocks[i].c();
-    						each_blocks[i].m(table, null);
-    					}
-    				}
-
-    				for (; i < each_blocks.length; i += 1) {
-    					each_blocks[i].d(1);
-    				}
-
-    				each_blocks.length = each_value_2.length;
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(p);
-    			if (detaching) detach_dev(t5);
-    			if (detaching) detach_dev(table);
-    			destroy_each(each_blocks, detaching);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_10.name,
-    		type: "if",
-    		source: "(729:4) {#if !enigma}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (738:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
-    function create_if_block_11(ctx) {
-    	let tr;
-    	let t;
-    	let each_value_3 = /*linhas*/ ctx[36];
-    	validate_each_argument(each_value_3);
-    	let each_blocks = [];
-
-    	for (let i = 0; i < each_value_3.length; i += 1) {
-    		each_blocks[i] = create_each_block_3(get_each_context_3(ctx, each_value_3, i));
-    	}
-
-    	const block = {
-    		c: function create() {
-    			tr = element("tr");
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].c();
-    			}
-
-    			t = space();
-    			add_location(tr, file$1, 738, 12, 46233);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, tr, anchor);
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(tr, null);
-    			}
-
-    			append_dev(tr, t);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*mapa1, LimiteX, Dimensionamento*/ 32904) {
-    				each_value_3 = /*linhas*/ ctx[36];
-    				validate_each_argument(each_value_3);
-    				let i;
-
-    				for (i = 0; i < each_value_3.length; i += 1) {
-    					const child_ctx = get_each_context_3(ctx, each_value_3, i);
-
-    					if (each_blocks[i]) {
-    						each_blocks[i].p(child_ctx, dirty);
-    					} else {
-    						each_blocks[i] = create_each_block_3(child_ctx);
-    						each_blocks[i].c();
-    						each_blocks[i].m(tr, t);
-    					}
-    				}
-
-    				for (; i < each_blocks.length; i += 1) {
-    					each_blocks[i].d(1);
-    				}
-
-    				each_blocks.length = each_value_3.length;
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(tr);
-    			destroy_each(each_blocks, detaching);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_11.name,
-    		type: "if",
-    		source: "(738:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (741:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
-    function create_if_block_12(ctx) {
-    	let if_block_anchor;
-
-    	function select_block_type_5(ctx, dirty) {
-    		if (/*elementos*/ ctx[39] == 0) return create_if_block_13;
-    		if (/*elementos*/ ctx[39] == 1) return create_if_block_14;
-    		if (/*elementos*/ ctx[39] == "Y") return create_if_block_15;
-    		if (/*elementos*/ ctx[39] == "DANTE") return create_if_block_16;
-    		if (/*elementos*/ ctx[39] == "falsa") return create_if_block_17;
-    	}
-
-    	let current_block_type = select_block_type_5(ctx);
-    	let if_block = current_block_type && current_block_type(ctx);
-
-    	const block = {
-    		c: function create() {
-    			if (if_block) if_block.c();
-    			if_block_anchor = empty();
-    		},
-    		m: function mount(target, anchor) {
-    			if (if_block) if_block.m(target, anchor);
-    			insert_dev(target, if_block_anchor, anchor);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (current_block_type !== (current_block_type = select_block_type_5(ctx))) {
-    				if (if_block) if_block.d(1);
-    				if_block = current_block_type && current_block_type(ctx);
-
-    				if (if_block) {
-    					if_block.c();
-    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-    				}
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (if_block) {
-    				if_block.d(detaching);
-    			}
-
-    			if (detaching) detach_dev(if_block_anchor);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_12.name,
-    		type: "if",
-    		source: "(741:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (750:51) 
-    function create_if_block_17(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "falsa");
-    			add_location(img, file$1, 750, 28, 46991);
-    			add_location(th, file$1, 750, 24, 46987);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_17.name,
-    		type: "if",
-    		source: "(750:51) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (748:51) 
-    function create_if_block_16(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "personagem");
-    			add_location(img, file$1, 748, 43, 46852);
+    			add_location(img, file$2, 764, 43, 47660);
     			attr_dev(th, "class", "Dante1");
-    			add_location(th, file$1, 748, 24, 46833);
+    			add_location(th, file$2, 764, 24, 47641);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -32496,17 +26084,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_16.name,
+    		id: create_if_block_19$1.name,
     		type: "if",
-    		source: "(748:51) ",
+    		source: "(764:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (746:47) 
-    function create_if_block_15(ctx) {
+    // (762:47) 
+    function create_if_block_18$1(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -32517,8 +26105,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
-    			add_location(img, file$1, 746, 28, 46703);
-    			add_location(th, file$1, 746, 24, 46699);
+    			add_location(img, file$2, 762, 28, 47511);
+    			add_location(th, file$2, 762, 24, 47507);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -32531,17 +26119,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_15.name,
+    		id: create_if_block_18$1.name,
     		type: "if",
-    		source: "(746:47) ",
+    		source: "(762:47) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (744:45) 
-    function create_if_block_14(ctx) {
+    // (760:45) 
+    function create_if_block_17$1(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -32552,8 +26140,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel1.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 744, 28, 46565);
-    			add_location(th, file$1, 744, 24, 46561);
+    			add_location(img, file$2, 760, 28, 47373);
+    			add_location(th, file$2, 760, 24, 47369);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -32566,17 +26154,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_14.name,
+    		id: create_if_block_17$1.name,
     		type: "if",
-    		source: "(744:45) ",
+    		source: "(760:45) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (742:20) {#if elementos == 0}
-    function create_if_block_13(ctx) {
+    // (758:20) {#if elementos == 0}
+    function create_if_block_16$1(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -32587,8 +26175,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel1.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
-    			add_location(img, file$1, 742, 29, 46433);
-    			add_location(th, file$1, 742, 24, 46428);
+    			add_location(img, file$2, 758, 29, 47241);
+    			add_location(th, file$2, 758, 24, 47236);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -32601,19 +26189,19 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_13.name,
+    		id: create_if_block_16$1.name,
     		type: "if",
-    		source: "(742:20) {#if elementos == 0}",
+    		source: "(758:20) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (740:16) {#each linhas as elementos,j}
-    function create_each_block_3(ctx) {
+    // (756:16) {#each linhas as elementos,j}
+    function create_each_block_5$1(ctx) {
     	let if_block_anchor;
-    	let if_block = /*LimiteX*/ ctx[7] <= /*j*/ ctx[41] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[41] && create_if_block_12(ctx);
+    	let if_block = /*LimiteX*/ ctx[7] <= /*j*/ ctx[63] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[21] * 2 >= /*j*/ ctx[63] && create_if_block_15$1(ctx);
 
     	const block = {
     		c: function create() {
@@ -32625,11 +26213,11 @@ var app = (function () {
     			insert_dev(target, if_block_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (/*LimiteX*/ ctx[7] <= /*j*/ ctx[41] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[41]) {
+    			if (/*LimiteX*/ ctx[7] <= /*j*/ ctx[63] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[21] * 2 >= /*j*/ ctx[63]) {
     				if (if_block) {
     					if_block.p(ctx, dirty);
     				} else {
-    					if_block = create_if_block_12(ctx);
+    					if_block = create_if_block_15$1(ctx);
     					if_block.c();
     					if_block.m(if_block_anchor.parentNode, if_block_anchor);
     				}
@@ -32646,19 +26234,19 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block_3.name,
+    		id: create_each_block_5$1.name,
     		type: "each",
-    		source: "(740:16) {#each linhas as elementos,j}",
+    		source: "(756:16) {#each linhas as elementos,j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (737:8) {#each mapa1 as linhas,i}
-    function create_each_block_2(ctx) {
+    // (753:8) {#each mapa1 as linhas,i}
+    function create_each_block_4$1(ctx) {
     	let if_block_anchor;
-    	let if_block = /*LimiteY*/ ctx[8] <= /*i*/ ctx[38] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[38] && create_if_block_11(ctx);
+    	let if_block = /*LimiteY*/ ctx[8] <= /*i*/ ctx[60] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[21] * 2 >= /*i*/ ctx[60] && create_if_block_14$1(ctx);
 
     	const block = {
     		c: function create() {
@@ -32670,11 +26258,11 @@ var app = (function () {
     			insert_dev(target, if_block_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (/*LimiteY*/ ctx[8] <= /*i*/ ctx[38] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[38]) {
+    			if (/*LimiteY*/ ctx[8] <= /*i*/ ctx[60] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[21] * 2 >= /*i*/ ctx[60]) {
     				if (if_block) {
     					if_block.p(ctx, dirty);
     				} else {
-    					if_block = create_if_block_11(ctx);
+    					if_block = create_if_block_14$1(ctx);
     					if_block.c();
     					if_block.m(if_block_anchor.parentNode, if_block_anchor);
     				}
@@ -32691,17 +26279,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block_2.name,
+    		id: create_each_block_4$1.name,
     		type: "each",
-    		source: "(737:8) {#each mapa1 as linhas,i}",
+    		source: "(753:8) {#each mapa1 as linhas,i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (713:8) {:else}
-    function create_else_block(ctx) {
+    // (701:8) {:else}
+    function create_else_block$1(ctx) {
     	let p0;
     	let t1;
     	let p1;
@@ -32715,8 +26303,17 @@ var app = (function () {
     	let p5;
     	let t11;
     	let input;
+    	let t12;
+    	let each_1_anchor;
     	let mounted;
     	let dispose;
+    	let each_value_2 = /*mapa0*/ ctx[2];
+    	validate_each_argument(each_value_2);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_2.length; i += 1) {
+    		each_blocks[i] = create_each_block_2$1(get_each_context_2$1(ctx, each_value_2, i));
+    	}
 
     	const block = {
     		c: function create() {
@@ -32739,21 +26336,28 @@ var app = (function () {
     			p5.textContent = "Após compreender o funcionamento do Minos Labyrinth, digite: \"OK\" e poderá prosseguir para a primeira fase.";
     			t11 = space();
     			input = element("input");
+    			t12 = space();
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			each_1_anchor = empty();
     			attr_dev(p0, "class", "Enigma");
-    			add_location(p0, file$1, 714, 8, 44987);
+    			add_location(p0, file$2, 702, 8, 44509);
     			attr_dev(p1, "class", "Enigma");
-    			add_location(p1, file$1, 715, 8, 45082);
+    			add_location(p1, file$2, 703, 8, 44604);
     			attr_dev(p2, "class", "Enigma");
-    			add_location(p2, file$1, 716, 8, 45177);
+    			add_location(p2, file$2, 704, 8, 44699);
     			attr_dev(p3, "class", "Enigma");
-    			add_location(p3, file$1, 717, 8, 45308);
+    			add_location(p3, file$2, 705, 8, 44830);
     			attr_dev(p4, "class", "Enigma");
-    			add_location(p4, file$1, 718, 8, 45414);
+    			add_location(p4, file$2, 706, 8, 44936);
     			attr_dev(p5, "class", "Enigma");
-    			add_location(p5, file$1, 719, 8, 45496);
+    			add_location(p5, file$2, 707, 8, 45018);
     			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
     			attr_dev(input, "class", "RespostaEnigma");
-    			add_location(input, file$1, 720, 8, 45635);
+    			add_location(input, file$2, 708, 8, 45157);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p0, anchor);
@@ -32770,15 +26374,22 @@ var app = (function () {
     			insert_dev(target, t11, anchor);
     			insert_dev(target, input, anchor);
     			set_input_value(input, /*PalavraChave*/ ctx[11]);
+    			insert_dev(target, t12, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(target, anchor);
+    			}
+
+    			insert_dev(target, each_1_anchor, anchor);
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(input, "input", /*input_input_handler*/ ctx[24]),
+    					listen_dev(input, "input", /*input_input_handler*/ ctx[33]),
     					listen_dev(
     						input,
     						"keydown",
     						function () {
-    							if (is_function(/*Alterando*/ ctx[22](/*PalavraChave*/ ctx[11] == "OK", /*MudandoDeFase*/ ctx[9]))) /*Alterando*/ ctx[22](/*PalavraChave*/ ctx[11] == "OK", /*MudandoDeFase*/ ctx[9]).apply(this, arguments);
+    							if (is_function(/*Alterando*/ ctx[25](/*PalavraChave*/ ctx[11] == "OK", /*MudandoDeFase*/ ctx[9]))) /*Alterando*/ ctx[25](/*PalavraChave*/ ctx[11] == "OK", /*MudandoDeFase*/ ctx[9]).apply(this, arguments);
     						},
     						false,
     						false,
@@ -32795,6 +26406,30 @@ var app = (function () {
     			if (dirty[0] & /*PalavraChave*/ 2048 && input.value !== /*PalavraChave*/ ctx[11]) {
     				set_input_value(input, /*PalavraChave*/ ctx[11]);
     			}
+
+    			if (dirty[0] & /*mapa0*/ 4) {
+    				each_value_2 = /*mapa0*/ ctx[2];
+    				validate_each_argument(each_value_2);
+    				let i;
+
+    				for (i = 0; i < each_value_2.length; i += 1) {
+    					const child_ctx = get_each_context_2$1(ctx, each_value_2, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_2$1(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_2.length;
+    			}
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(p0);
@@ -32810,6 +26445,9 @@ var app = (function () {
     			if (detaching) detach_dev(p5);
     			if (detaching) detach_dev(t11);
     			if (detaching) detach_dev(input);
+    			if (detaching) detach_dev(t12);
+    			destroy_each(each_blocks, detaching);
+    			if (detaching) detach_dev(each_1_anchor);
     			mounted = false;
     			run_all(dispose);
     		}
@@ -32817,31 +26455,46 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block.name,
+    		id: create_else_block$1.name,
     		type: "else",
-    		source: "(713:8) {:else}",
+    		source: "(701:8) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (684:4) {#if !enigma}
-    function create_if_block_1$1(ctx) {
+    // (666:4) {#if !enigma}
+    function create_if_block_1$2(ctx) {
     	let p;
-    	let t0_value = /*RenderizandoMapa*/ ctx[16]() + "";
+    	let t0_value = clearInterval(/*Movimentar*/ ctx[14]) + "";
     	let t0;
     	let t1;
-    	let t2_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[9]) + "";
+    	let t2_value = /*RenderizandoMapa*/ ctx[22]() + "";
     	let t2;
     	let t3;
+    	let t4_value = /*DeterminandoEixos*/ ctx[23](/*MudandoDeFase*/ ctx[9]) + "";
+    	let t4;
+    	let t5;
+    	let div;
+    	let ul0;
+    	let h2;
+    	let t7;
+    	let ul1;
+    	let t9;
+    	let ul2;
+    	let t11;
+    	let ul3;
+    	let t13;
+    	let ul4;
+    	let t15;
     	let table;
     	let each_value = /*mapa0*/ ctx[2];
     	validate_each_argument(each_value);
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value.length; i += 1) {
-    		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+    		each_blocks[i] = create_each_block$1(get_each_context$1(ctx, each_value, i));
     	}
 
     	const block = {
@@ -32851,6 +26504,25 @@ var app = (function () {
     			t1 = space();
     			t2 = text(t2_value);
     			t3 = space();
+    			t4 = text(t4_value);
+    			t5 = space();
+    			div = element("div");
+    			ul0 = element("ul");
+    			h2 = element("h2");
+    			h2.textContent = "Como jogar?";
+    			t7 = space();
+    			ul1 = element("ul");
+    			ul1.textContent = "↟ ou W para Cima";
+    			t9 = space();
+    			ul2 = element("ul");
+    			ul2.textContent = "↡ ou S para Baixo";
+    			t11 = space();
+    			ul3 = element("ul");
+    			ul3.textContent = "↠ ou D para a Direita";
+    			t13 = space();
+    			ul4 = element("ul");
+    			ul4.textContent = "↞ ou A para a Esquerda";
+    			t15 = space();
     			table = element("table");
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -32858,18 +26530,46 @@ var app = (function () {
     			}
 
     			attr_dev(p, "class", "textofutil");
-    			add_location(p, file$1, 685, 4, 43711);
+    			add_location(p, file$2, 667, 4, 43025);
+    			attr_dev(h2, "class", "h2");
+    			add_location(h2, file$2, 673, 12, 43213);
+    			add_location(ul0, file$2, 673, 8, 43209);
+    			attr_dev(ul1, "class", "info");
+    			add_location(ul1, file$2, 674, 8, 43259);
+    			attr_dev(ul2, "class", "info");
+    			add_location(ul2, file$2, 675, 8, 43307);
+    			attr_dev(ul3, "class", "info");
+    			add_location(ul3, file$2, 676, 8, 43356);
+    			attr_dev(ul4, "class", "info");
+    			add_location(ul4, file$2, 677, 8, 43409);
+    			attr_dev(div, "id", "DicaTutorial");
+    			attr_dev(div, "class", "aimds");
+    			add_location(div, file$2, 672, 4, 43162);
     			attr_dev(table, "class", "mapa");
     			attr_dev(table, "align", "center");
     			attr_dev(table, "id", "mapatutorial");
-    			add_location(table, file$1, 689, 4, 43815);
+    			add_location(table, file$2, 679, 4, 43471);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
     			append_dev(p, t0);
     			append_dev(p, t1);
     			append_dev(p, t2);
-    			insert_dev(target, t3, anchor);
+    			append_dev(p, t3);
+    			append_dev(p, t4);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, div, anchor);
+    			append_dev(div, ul0);
+    			append_dev(ul0, h2);
+    			append_dev(div, t7);
+    			append_dev(div, ul1);
+    			append_dev(div, t9);
+    			append_dev(div, ul2);
+    			append_dev(div, t11);
+    			append_dev(div, ul3);
+    			append_dev(div, t13);
+    			append_dev(div, ul4);
+    			insert_dev(target, t15, anchor);
     			insert_dev(target, table, anchor);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -32877,20 +26577,21 @@ var app = (function () {
     			}
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*MudandoDeFase*/ 512 && t2_value !== (t2_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[9]) + "")) set_data_dev(t2, t2_value);
+    			if (dirty[0] & /*Movimentar*/ 16384 && t0_value !== (t0_value = clearInterval(/*Movimentar*/ ctx[14]) + "")) set_data_dev(t0, t0_value);
+    			if (dirty[0] & /*MudandoDeFase*/ 512 && t4_value !== (t4_value = /*DeterminandoEixos*/ ctx[23](/*MudandoDeFase*/ ctx[9]) + "")) set_data_dev(t4, t4_value);
 
-    			if (dirty[0] & /*mapa0, LimiteX, Dimensionamento, LimiteY*/ 33156) {
+    			if (dirty[0] & /*mapa0, LimiteX, Dimensionamento, LimiteY*/ 2097540) {
     				each_value = /*mapa0*/ ctx[2];
     				validate_each_argument(each_value);
     				let i;
 
     				for (i = 0; i < each_value.length; i += 1) {
-    					const child_ctx = get_each_context(ctx, each_value, i);
+    					const child_ctx = get_each_context$1(ctx, each_value, i);
 
     					if (each_blocks[i]) {
     						each_blocks[i].p(child_ctx, dirty);
     					} else {
-    						each_blocks[i] = create_each_block(child_ctx);
+    						each_blocks[i] = create_each_block$1(child_ctx);
     						each_blocks[i].c();
     						each_blocks[i].m(table, null);
     					}
@@ -32905,7 +26606,9 @@ var app = (function () {
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(p);
-    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(div);
+    			if (detaching) detach_dev(t15);
     			if (detaching) detach_dev(table);
     			destroy_each(each_blocks, detaching);
     		}
@@ -32913,25 +26616,225 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_1$1.name,
+    		id: create_if_block_1$2.name,
     		type: "if",
-    		source: "(684:4) {#if !enigma}",
+    		source: "(666:4) {#if !enigma}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (692:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
-    function create_if_block_2$1(ctx) {
+    // (719:39) 
+    function create_if_block_11$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			attr_dev(img, "id", "chao0");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaotutorial.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "personagem");
+    			add_location(img, file$2, 719, 16, 45867);
+    			add_location(th, file$2, 719, 12, 45863);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_11$1.name,
+    		type: "if",
+    		source: "(719:39) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (717:35) 
+    function create_if_block_10$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "saida");
+    			add_location(img, file$2, 717, 16, 45741);
+    			add_location(th, file$2, 717, 12, 45737);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_10$1.name,
+    		type: "if",
+    		source: "(717:35) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (715:33) 
+    function create_if_block_9$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredetutorial.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "parede");
+    			add_location(img, file$2, 715, 16, 45609);
+    			add_location(th, file$2, 715, 12, 45605);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_9$1.name,
+    		type: "if",
+    		source: "(715:33) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (713:12) {#if elementos == 0}
+    function create_if_block_8$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			attr_dev(img, "id", "chao0");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaotutorial.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "chao");
+    			add_location(img, file$2, 713, 16, 45472);
+    			add_location(th, file$2, 713, 12, 45468);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_8$1.name,
+    		type: "if",
+    		source: "(713:12) {#if elementos == 0}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (712:12) {#each linhas as elementos}
+    function create_each_block_3$1(ctx) {
+    	let if_block_anchor;
+
+    	function select_block_type_4(ctx, dirty) {
+    		if (/*elementos*/ ctx[61] == 0) return create_if_block_8$1;
+    		if (/*elementos*/ ctx[61] == 1) return create_if_block_9$1;
+    		if (/*elementos*/ ctx[61] == "X") return create_if_block_10$1;
+    		if (/*elementos*/ ctx[61] == "DANTE") return create_if_block_11$1;
+    	}
+
+    	let current_block_type = select_block_type_4(ctx);
+    	let if_block = current_block_type && current_block_type(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (current_block_type !== (current_block_type = select_block_type_4(ctx))) {
+    				if (if_block) if_block.d(1);
+    				if_block = current_block_type && current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) {
+    				if_block.d(detaching);
+    			}
+
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_3$1.name,
+    		type: "each",
+    		source: "(712:12) {#each linhas as elementos}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (710:8) {#each mapa0 as linhas}
+    function create_each_block_2$1(ctx) {
     	let tr;
     	let t;
-    	let each_value_1 = /*linhas*/ ctx[36];
-    	validate_each_argument(each_value_1);
+    	let each_value_3 = /*linhas*/ ctx[58];
+    	validate_each_argument(each_value_3);
     	let each_blocks = [];
 
-    	for (let i = 0; i < each_value_1.length; i += 1) {
-    		each_blocks[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
+    	for (let i = 0; i < each_value_3.length; i += 1) {
+    		each_blocks[i] = create_each_block_3$1(get_each_context_3$1(ctx, each_value_3, i));
     	}
 
     	const block = {
@@ -32943,7 +26846,8 @@ var app = (function () {
     			}
 
     			t = space();
-    			add_location(tr, file$1, 692, 12, 43985);
+    			attr_dev(tr, "class", "minimapa");
+    			add_location(tr, file$2, 710, 12, 45358);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -32955,18 +26859,92 @@ var app = (function () {
     			append_dev(tr, t);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*mapa0, LimiteX, Dimensionamento*/ 32900) {
-    				each_value_1 = /*linhas*/ ctx[36];
-    				validate_each_argument(each_value_1);
+    			if (dirty[0] & /*mapa0*/ 4) {
+    				each_value_3 = /*linhas*/ ctx[58];
+    				validate_each_argument(each_value_3);
     				let i;
 
-    				for (i = 0; i < each_value_1.length; i += 1) {
-    					const child_ctx = get_each_context_1(ctx, each_value_1, i);
+    				for (i = 0; i < each_value_3.length; i += 1) {
+    					const child_ctx = get_each_context_3$1(ctx, each_value_3, i);
 
     					if (each_blocks[i]) {
     						each_blocks[i].p(child_ctx, dirty);
     					} else {
-    						each_blocks[i] = create_each_block_1(child_ctx);
+    						each_blocks[i] = create_each_block_3$1(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(tr, t);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_3.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(tr);
+    			destroy_each(each_blocks, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_2$1.name,
+    		type: "each",
+    		source: "(710:8) {#each mapa0 as linhas}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (682:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+    function create_if_block_2$2(ctx) {
+    	let tr;
+    	let t;
+    	let each_value_1 = /*linhas*/ ctx[58];
+    	validate_each_argument(each_value_1);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_1.length; i += 1) {
+    		each_blocks[i] = create_each_block_1$1(get_each_context_1$1(ctx, each_value_1, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			tr = element("tr");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			t = space();
+    			add_location(tr, file$2, 682, 12, 43641);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, tr, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(tr, null);
+    			}
+
+    			append_dev(tr, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*mapa0, LimiteX, Dimensionamento*/ 2097284) {
+    				each_value_1 = /*linhas*/ ctx[58];
+    				validate_each_argument(each_value_1);
+    				let i;
+
+    				for (i = 0; i < each_value_1.length; i += 1) {
+    					const child_ctx = get_each_context_1$1(ctx, each_value_1, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_1$1(child_ctx);
     						each_blocks[i].c();
     						each_blocks[i].m(tr, t);
     					}
@@ -32987,25 +26965,24 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_2$1.name,
+    		id: create_if_block_2$2.name,
     		type: "if",
-    		source: "(692:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		source: "(682:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (695:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
-    function create_if_block_3$1(ctx) {
+    // (685:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+    function create_if_block_3$2(ctx) {
     	let if_block_anchor;
 
     	function select_block_type_3(ctx, dirty) {
-    		if (/*elementos*/ ctx[39] == 0) return create_if_block_4$1;
-    		if (/*elementos*/ ctx[39] == 1) return create_if_block_5;
-    		if (/*elementos*/ ctx[39] == "X") return create_if_block_6;
-    		if (/*elementos*/ ctx[39] == "DANTE") return create_if_block_7;
-    		if (/*elementos*/ ctx[39] == "falsa") return create_if_block_8;
+    		if (/*elementos*/ ctx[61] == 0) return create_if_block_4$2;
+    		if (/*elementos*/ ctx[61] == 1) return create_if_block_5$1;
+    		if (/*elementos*/ ctx[61] == "X") return create_if_block_6$1;
+    		if (/*elementos*/ ctx[61] == "DANTE") return create_if_block_7$1;
     	}
 
     	let current_block_type = select_block_type_3(ctx);
@@ -33042,52 +27019,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_3$1.name,
+    		id: create_if_block_3$2.name,
     		type: "if",
-    		source: "(695:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
+    		source: "(685:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (704:51) 
-    function create_if_block_8(ctx) {
-    	let th;
-    	let img;
-    	let img_src_value;
-
-    	const block = {
-    		c: function create() {
-    			th = element("th");
-    			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "falsa");
-    			add_location(img, file$1, 704, 28, 44767);
-    			add_location(th, file$1, 704, 24, 44763);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, th, anchor);
-    			append_dev(th, img);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(th);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_8.name,
-    		type: "if",
-    		source: "(704:51) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (702:51) 
-    function create_if_block_7(ctx) {
+    // (692:51) 
+    function create_if_block_7$1(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -33098,9 +27040,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "personagem");
-    			add_location(img, file$1, 702, 43, 44628);
+    			add_location(img, file$2, 692, 43, 44284);
     			attr_dev(th, "class", "Dante0");
-    			add_location(th, file$1, 702, 24, 44609);
+    			add_location(th, file$2, 692, 24, 44265);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -33113,17 +27055,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_7.name,
+    		id: create_if_block_7$1.name,
     		type: "if",
-    		source: "(702:51) ",
+    		source: "(692:51) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (700:47) 
-    function create_if_block_6(ctx) {
+    // (690:47) 
+    function create_if_block_6$1(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -33134,8 +27076,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "saida");
-    			add_location(img, file$1, 700, 28, 44479);
-    			add_location(th, file$1, 700, 24, 44475);
+    			add_location(img, file$2, 690, 28, 44135);
+    			add_location(th, file$2, 690, 24, 44131);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -33148,17 +27090,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_6.name,
+    		id: create_if_block_6$1.name,
     		type: "if",
-    		source: "(700:47) ",
+    		source: "(690:47) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (698:45) 
-    function create_if_block_5(ctx) {
+    // (688:45) 
+    function create_if_block_5$1(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -33169,8 +27111,8 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredetutorial.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "parede");
-    			add_location(img, file$1, 698, 28, 44339);
-    			add_location(th, file$1, 698, 24, 44335);
+    			add_location(img, file$2, 688, 28, 43995);
+    			add_location(th, file$2, 688, 24, 43991);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -33183,17 +27125,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_5.name,
+    		id: create_if_block_5$1.name,
     		type: "if",
-    		source: "(698:45) ",
+    		source: "(688:45) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (696:20) {#if elementos == 0}
-    function create_if_block_4$1(ctx) {
+    // (686:20) {#if elementos == 0}
+    function create_if_block_4$2(ctx) {
     	let th;
     	let img;
     	let img_src_value;
@@ -33204,9 +27146,9 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaotutorial.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "chao");
-    			add_location(img, file$1, 696, 49, 44205);
+    			add_location(img, file$2, 686, 49, 43861);
     			attr_dev(th, "class", "chaoturorial");
-    			add_location(th, file$1, 696, 24, 44180);
+    			add_location(th, file$2, 686, 24, 43836);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -33219,19 +27161,19 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_4$1.name,
+    		id: create_if_block_4$2.name,
     		type: "if",
-    		source: "(696:20) {#if elementos == 0}",
+    		source: "(686:20) {#if elementos == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (694:16) {#each linhas as elementos,j}
-    function create_each_block_1(ctx) {
+    // (684:16) {#each linhas as elementos,j}
+    function create_each_block_1$1(ctx) {
     	let if_block_anchor;
-    	let if_block = /*LimiteX*/ ctx[7] <= /*j*/ ctx[41] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[41] && create_if_block_3$1(ctx);
+    	let if_block = /*LimiteX*/ ctx[7] <= /*j*/ ctx[63] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[21] * 2 >= /*j*/ ctx[63] && create_if_block_3$2(ctx);
 
     	const block = {
     		c: function create() {
@@ -33243,11 +27185,11 @@ var app = (function () {
     			insert_dev(target, if_block_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (/*LimiteX*/ ctx[7] <= /*j*/ ctx[41] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[41]) {
+    			if (/*LimiteX*/ ctx[7] <= /*j*/ ctx[63] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[21] * 2 >= /*j*/ ctx[63]) {
     				if (if_block) {
     					if_block.p(ctx, dirty);
     				} else {
-    					if_block = create_if_block_3$1(ctx);
+    					if_block = create_if_block_3$2(ctx);
     					if_block.c();
     					if_block.m(if_block_anchor.parentNode, if_block_anchor);
     				}
@@ -33264,19 +27206,19 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block_1.name,
+    		id: create_each_block_1$1.name,
     		type: "each",
-    		source: "(694:16) {#each linhas as elementos,j}",
+    		source: "(684:16) {#each linhas as elementos,j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (691:8) {#each mapa0 as linhas,i}
-    function create_each_block(ctx) {
+    // (681:8) {#each mapa0 as linhas,i}
+    function create_each_block$1(ctx) {
     	let if_block_anchor;
-    	let if_block = /*LimiteY*/ ctx[8] <= /*i*/ ctx[38] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[38] && create_if_block_2$1(ctx);
+    	let if_block = /*LimiteY*/ ctx[8] <= /*i*/ ctx[60] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[21] * 2 >= /*i*/ ctx[60] && create_if_block_2$2(ctx);
 
     	const block = {
     		c: function create() {
@@ -33288,11 +27230,11 @@ var app = (function () {
     			insert_dev(target, if_block_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (/*LimiteY*/ ctx[8] <= /*i*/ ctx[38] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[38]) {
+    			if (/*LimiteY*/ ctx[8] <= /*i*/ ctx[60] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[21] * 2 >= /*i*/ ctx[60]) {
     				if (if_block) {
     					if_block.p(ctx, dirty);
     				} else {
-    					if_block = create_if_block_2$1(ctx);
+    					if_block = create_if_block_2$2(ctx);
     					if_block.c();
     					if_block.m(if_block_anchor.parentNode, if_block_anchor);
     				}
@@ -33309,39 +27251,41 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block.name,
+    		id: create_each_block$1.name,
     		type: "each",
-    		source: "(691:8) {#each mapa0 as linhas,i}",
+    		source: "(681:8) {#each mapa0 as linhas,i}",
     		ctx
     	});
 
     	return block;
     }
 
-    function create_fragment$1(ctx) {
+    function create_fragment$2(ctx) {
     	let head;
     	let link0;
     	let t0;
     	let link1;
     	let t1;
+    	let link2;
     	let t2;
-    	let voltarmenu;
     	let t3;
+    	let voltarmenu;
+    	let t4;
     	let current_block_type_index;
     	let if_block1;
     	let if_block1_anchor;
     	let current;
     	let mounted;
     	let dispose;
-    	let if_block0 = /*key*/ ctx[0] && create_if_block_44(ctx);
+    	let if_block0 = /*key*/ ctx[0] && create_if_block_82(ctx);
     	voltarmenu = new VoltarMenu({ $$inline: true });
 
     	const if_block_creators = [
-    		create_if_block$1,
-    		create_if_block_9,
-    		create_if_block_18,
-    		create_if_block_28,
-    		create_if_block_38
+    		create_if_block$2,
+    		create_if_block_12$1,
+    		create_if_block_32$1,
+    		create_if_block_54$1,
+    		create_if_block_76
     	];
 
     	const if_blocks = [];
@@ -33366,19 +27310,24 @@ var app = (function () {
     			t0 = space();
     			link1 = element("link");
     			t1 = space();
-    			if (if_block0) if_block0.c();
+    			link2 = element("link");
     			t2 = space();
-    			create_component(voltarmenu.$$.fragment);
+    			if (if_block0) if_block0.c();
     			t3 = space();
+    			create_component(voltarmenu.$$.fragment);
+    			t4 = space();
     			if (if_block1) if_block1.c();
     			if_block1_anchor = empty();
     			attr_dev(link0, "rel", "stylesheet");
     			attr_dev(link0, "href", "/css/jogo.css");
-    			add_location(link0, file$1, 662, 4, 43032);
+    			add_location(link0, file$2, 632, 4, 42120);
     			attr_dev(link1, "rel", "stylesheet");
     			attr_dev(link1, "href", "/css/newjogo.css");
-    			add_location(link1, file$1, 663, 4, 43082);
-    			add_location(head, file$1, 661, 0, 43020);
+    			add_location(link1, file$2, 633, 4, 42170);
+    			attr_dev(link2, "rel", "stylesheet");
+    			attr_dev(link2, "href", "/css/ajuda.css");
+    			add_location(link2, file$2, 634, 4, 42223);
+    			add_location(head, file$2, 631, 0, 42108);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -33388,11 +27337,13 @@ var app = (function () {
     			append_dev(head, link0);
     			append_dev(head, t0);
     			append_dev(head, link1);
-    			insert_dev(target, t1, anchor);
-    			if (if_block0) if_block0.m(target, anchor);
+    			append_dev(head, t1);
+    			append_dev(head, link2);
     			insert_dev(target, t2, anchor);
-    			mount_component(voltarmenu, target, anchor);
+    			if (if_block0) if_block0.m(target, anchor);
     			insert_dev(target, t3, anchor);
+    			mount_component(voltarmenu, target, anchor);
+    			insert_dev(target, t4, anchor);
 
     			if (~current_block_type_index) {
     				if_blocks[current_block_type_index].m(target, anchor);
@@ -33402,7 +27353,7 @@ var app = (function () {
     			current = true;
 
     			if (!mounted) {
-    				dispose = listen_dev(window, "keydown", /*handleKeydown*/ ctx[14], false, false, false);
+    				dispose = listen_dev(window, "keydown", /*handleKeydown*/ ctx[20], false, false, false);
     				mounted = true;
     			}
     		},
@@ -33411,9 +27362,9 @@ var app = (function () {
     				if (if_block0) {
     					if_block0.p(ctx, dirty);
     				} else {
-    					if_block0 = create_if_block_44(ctx);
+    					if_block0 = create_if_block_82(ctx);
     					if_block0.c();
-    					if_block0.m(t2.parentNode, t2);
+    					if_block0.m(t3.parentNode, t3);
     				}
     			} else if (if_block0) {
     				if_block0.d(1);
@@ -33468,11 +27419,11 @@ var app = (function () {
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(head);
-    			if (detaching) detach_dev(t1);
-    			if (if_block0) if_block0.d(detaching);
     			if (detaching) detach_dev(t2);
-    			destroy_component(voltarmenu, detaching);
+    			if (if_block0) if_block0.d(detaching);
     			if (detaching) detach_dev(t3);
+    			destroy_component(voltarmenu, detaching);
+    			if (detaching) detach_dev(t4);
 
     			if (~current_block_type_index) {
     				if_blocks[current_block_type_index].d(detaching);
@@ -33486,7 +27437,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$1.name,
+    		id: create_fragment$2.name,
     		type: "component",
     		source: "",
     		ctx
@@ -33495,9 +27446,9 @@ var app = (function () {
     	return block;
     }
 
-    function instance$1($$self, $$props, $$invalidate) {
+    function instance$2($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
-    	validate_slots('Newjogo', slots, []);
+    	validate_slots('Teste', slots, []);
     	let key;
     	let code;
 
@@ -35760,7 +29711,7 @@ var app = (function () {
     			1,
     			1,
     			1,
-    			1,
+    			"falsa",
     			1,
     			1,
     			1,
@@ -36012,9 +29963,9 @@ var app = (function () {
     			1,
     			0,
     			1,
-    			0,
+    			7,
     			1,
-    			0,
+    			7,
     			1,
     			1,
     			1,
@@ -36556,7 +30507,7 @@ var app = (function () {
     			1,
     			1,
     			1,
-    			1,
+    			7,
     			1,
     			1,
     			0,
@@ -37089,7 +31040,7 @@ var app = (function () {
     			0,
     			0,
     			0,
-    			0,
+    			7,
     			1,
     			0,
     			1,
@@ -37156,8 +31107,8 @@ var app = (function () {
     			0,
     			1,
     			1,
-    			0,
-    			0,
+    			7,
+    			7,
     			1,
     			1,
     			1,
@@ -37389,7 +31340,7 @@ var app = (function () {
     		[
     			2,
     			1,
-    			1,
+    			7,
     			0,
     			0,
     			1,
@@ -37664,7 +31615,7 @@ var app = (function () {
     			0,
     			0,
     			0,
-    			1,
+    			7,
     			0,
     			0,
     			0,
@@ -38298,7 +32249,7 @@ var app = (function () {
     			1,
     			1,
     			"falsa",
-    			1,
+    			7,
     			"falsa",
     			1,
     			1,
@@ -41386,7 +35337,7 @@ var app = (function () {
     		],
     		[
     			2,
-    			3,
+    			1,
     			0,
     			0,
     			0,
@@ -41616,19 +35567,19 @@ var app = (function () {
     			1,
     			0,
     			0,
-    			1,
-    			1,
+    			7,
+    			7,
     			0,
     			0,
-    			1,
-    			1,
+    			7,
+    			7,
     			0,
     			0,
-    			1,
-    			1,
+    			7,
+    			7,
     			0,
     			0,
-    			1,
+    			7,
     			0,
     			0,
     			1,
@@ -42803,7 +36754,7 @@ var app = (function () {
     			1,
     			1,
     			1,
-    			1,
+    			7,
     			1,
     			1,
     			1,
@@ -43056,7 +37007,18600 @@ var app = (function () {
     			1,
     			1,
     			1,
+    			7,
     			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			0,
+    			"falsa"
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			7,
+    			1,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			7,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			7,
+    			1,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			1,
+    			7,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			7,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			1,
+    			7,
+    			1,
+    			7,
+    			7,
+    			7,
+    			1,
+    			7,
+    			1,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			1,
+    			7,
+    			1,
+    			7,
+    			7,
+    			7,
+    			1,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			1,
+    			7,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			7,
+    			1,
+    			7,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			7,
+    			1,
+    			7,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			1,
+    			7,
+    			7,
+    			7,
+    			1,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			1,
+    			7,
+    			7,
+    			7,
+    			1,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			7,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			3,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			"falsa",
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			"falsa",
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		]
+    	];
+
+    	let mapa4 = [
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		],
+    		[
+    			2,
+    			"DANTE",
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			"C"
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		]
+    	];
+
+    	let Mapa1Save = [];
+    	let Mapa2Save = [];
+    	let Mapa3Save = [];
+
+    	//limite de renderização:
+    	let Dimensionamento = 4;
+
+    	let LimiteX = 0;
+    	let LimiteY = 0;
+
+    	function RenderizandoMapa() {
+    		if (MudandoDeFase == "tutorial") {
+    			for (let i in mapa0) {
+    				for (let j in mapa0[i]) {
+    					if (mapa0[i][j] == "DANTE") {
+    						$$invalidate(7, LimiteX = j - Dimensionamento);
+    						$$invalidate(8, LimiteY = i - Dimensionamento);
+    						return;
+    					}
+    				}
+    			}
+    		} else if (MudandoDeFase == "nivel1") {
+    			for (let i in mapa1) {
+    				for (let j in mapa1[i]) {
+    					if (mapa1[i][j] == "DANTE") {
+    						$$invalidate(7, LimiteX = j - Dimensionamento);
+    						$$invalidate(8, LimiteY = i - Dimensionamento);
+    						return;
+    					}
+    				}
+    			}
+    		} else if (MudandoDeFase == "nivel2") {
+    			for (let i in mapa2) {
+    				for (let j in mapa2[i]) {
+    					if (mapa2[i][j] == "DANTE") {
+    						$$invalidate(7, LimiteX = j - Dimensionamento);
+    						$$invalidate(8, LimiteY = i - Dimensionamento);
+    						return;
+    					}
+    				}
+    			}
+    		} else if (MudandoDeFase == "nivel3") {
+    			for (let i in mapa3) {
+    				for (let j in mapa3[i]) {
+    					if (mapa3[i][j] == "DANTE") {
+    						$$invalidate(7, LimiteX = j - Dimensionamento);
+    						$$invalidate(8, LimiteY = i - Dimensionamento);
+    						return;
+    					}
+    				}
+    			}
+    		} else if (MudandoDeFase == "vitoria") {
+    			for (let i in mapa4) {
+    				for (let j in mapa4[i]) {
+    					if (mapa4[i][j] == "DANTE") {
+    						$$invalidate(7, LimiteX = j - Dimensionamento);
+    						$$invalidate(8, LimiteY = i - Dimensionamento);
+    						return;
+    					}
+    				}
+    			}
+    		}
+    	}
+
+    	//Logica de movimentação do jogo:
+    	let EixoX = 0;
+
+    	let EixoY = 0;
+    	let SaveX = 0;
+    	let SaveY = 0;
+    	let PontoDeSave1 = [0, 0];
+    	let PontoDeSave2 = [0, 0];
+    	let PontoDeSave3 = [0, 0];
+
+    	function DeterminandoEixos(fase) {
+    		//Ponto zero onde o jogador começa a jogar
+    		if (fase == "tutorial") {
+    			for (let i in mapa0) {
+    				for (let j in mapa0[i]) {
+    					if (mapa0[i][j] == "DANTE") {
+    						EixoX = j;
+    						EixoY = i;
+    						return;
+    					}
+    				}
+    			}
+    		} else if (fase == "nivel1") {
+    			for (let i in mapa1) {
+    				for (let j in mapa1[i]) {
+    					if (mapa1[i][j] == "DANTE") {
+    						EixoX = j;
+    						EixoY = i;
+    						PontoDeSave1[0] = EixoX;
+    						PontoDeSave1[1] = EixoY;
+    						return;
+    					}
+    				}
+    			}
+    		} else if (fase == "nivel2") {
+    			for (let i in mapa2) {
+    				for (let j in mapa2[i]) {
+    					if (mapa2[i][j] == "DANTE") {
+    						EixoX = j;
+    						EixoY = i;
+    						PontoDeSave2[0] = EixoX;
+    						PontoDeSave2[1] = EixoY;
+    						return;
+    					}
+    				}
+    			}
+    		} else if (fase == "nivel3") {
+    			for (let i in mapa3) {
+    				for (let j in mapa3[i]) {
+    					if (mapa3[i][j] == "DANTE") {
+    						EixoX = j;
+    						EixoY = i;
+    						PontoDeSave3[0] = EixoX;
+    						PontoDeSave3[1] = EixoY;
+    						return;
+    					}
+    				}
+    			}
+    		} else if (fase == "vitoria") {
+    			for (let i in mapa4) {
+    				for (let j in mapa4[i]) {
+    					if (mapa4[i][j] == "DANTE") {
+    						EixoX = j;
+    						EixoY = i;
+    						return;
+    					}
+    				}
+    			}
+    		}
+    	}
+
+    	function RetornaAoSave() {
+    		//Voltar para o nivel 1, para onde deveria voltar
+    		$$invalidate(3, mapa1[EixoY][EixoX] = 0, mapa1);
+
+    		EixoX = PontoDeSave1[0];
+    		EixoY = PontoDeSave1[1];
+    		$$invalidate(3, mapa1[EixoY][EixoX] = "DANTE", mapa1);
+    		Tudodnv();
+    		return;
+    	}
+
+    	function ResertarPosicao() {
+    		//Caso tente passar por onde nao deveria
+    		EixoX = SaveX;
+
+    		EixoY = SaveY;
+    		RenderizandoMapa();
+    	}
+
+    	//toda movimentação segue a msm logica, mudando apenas qual Eixo vai ser alterado de valor
+    	function MovimentaçãoPeloMapa(move) {
+    		SaveX = EixoX;
+    		SaveY = EixoY;
+
+    		if (move == "DIREITA") {
+    			EixoX++;
+    			$$invalidate(1, code = "d");
+    		} else if (move == "ESQUERDA") {
+    			EixoX--;
+    			$$invalidate(1, code = "a");
+    		} else if (move == "CIMA") {
+    			EixoY--;
+    			$$invalidate(1, code = "w");
+    		} else if (move == "BAIXO") {
+    			EixoY++;
+    			$$invalidate(1, code = "s");
+    		}
+
+    		if (MudandoDeFase == "tutorial") {
+    			MudarDeFase(mapa0[EixoY][EixoX]);
+
+    			if (mapa0[EixoY][EixoX] != 0) {
+    				ResertarPosicao();
+    				return;
+    			}
+
+    			$$invalidate(2, mapa0[SaveY][SaveX] = 0, mapa0);
+    			$$invalidate(2, mapa0[EixoY][EixoX] = "DANTE", mapa0);
+    		} else if (MudandoDeFase == "nivel1") {
+    			MudarDeFase(mapa1[EixoY][EixoX]);
+    			Mapa1Save.push([SaveX, SaveY]);
+
+    			if (mapa1[EixoY][EixoX] != 0) {
+    				if (mapa1[EixoY][EixoX] == "MINOS") {
+    					alert('O monstro o alcançou');
+    					RetornaAoSave();
+    					$$invalidate(9, MudandoDeFase = "tutorial");
+    				} else if (mapa1[EixoY][EixoX] == "falsa") {
+    					//para Saidas falsas
+    					alert('Não foi dessa vez!');
+    				}
+
+    				ResertarPosicao();
+    				return;
+    			}
+
+    			$$invalidate(3, mapa1[EixoY][EixoX] = "DANTE", mapa1);
+    			$$invalidate(3, mapa1[SaveY][SaveX] = 0, mapa1);
+    		} else if (MudandoDeFase == "nivel2") {
+    			MudarDeFase(mapa2[EixoY][EixoX]);
+
+    			if (mapa2[EixoY][EixoX] == 7) {
+    				//paredes falsas
+    				if (mapa2[SaveY][SaveX] == 7) {
+    					//não transforma paredes falsas em estrada
+    					return;
+    				}
+
+    				$$invalidate(4, mapa2[SaveY][SaveX] = 0, mapa2);
+    				return;
+    			} else if (mapa2[EixoY][EixoX] != 0) {
+    				if (mapa2[EixoY][EixoX] == "MINOS") {
+    					alert('O monstro o alcançou');
+    					RetornaAoSave();
+    					$$invalidate(9, MudandoDeFase = "nivel1");
+    				} else if (mapa2[EixoY][EixoX] == "falsa") {
+    					//saida falsa
+    					alert('Nem tudo é o que parece jovem Dante!');
+    				}
+
+    				ResertarPosicao();
+    				return;
+    			}
+
+    			$$invalidate(4, mapa2[EixoY][EixoX] = "DANTE", mapa2);
+
+    			if (mapa2[SaveY][SaveX] != 7) {
+    				$$invalidate(4, mapa2[SaveY][SaveX] = 0, mapa2);
+    			}
+    		} else if (MudandoDeFase == "nivel3") {
+    			MudarDeFase(mapa3[EixoY][EixoX]);
+
+    			if (mapa3[EixoY][EixoX] == 7) {
+    				if (mapa3[SaveY][SaveX] == 7) {
+    					return;
+    				}
+
+    				$$invalidate(5, mapa3[SaveY][SaveX] = 0, mapa3);
+    				return;
+    			} else if (mapa3[EixoY][EixoX] != 0) {
+    				if (mapa3[EixoY][EixoX] == "MINOS") {
+    					alert('O monstro o alcançou');
+    					RetornaAoSave();
+    					$$invalidate(9, MudandoDeFase = "nivel1");
+    				} else if (mapa3[EixoY][EixoX] == "falsa") {
+    					alert('Não consegue, não é?');
+    				}
+
+    				ResertarPosicao();
+    				return;
+    			}
+
+    			$$invalidate(5, mapa3[EixoY][EixoX] = "DANTE", mapa3);
+
+    			if (mapa3[SaveY][SaveX] != 7) {
+    				$$invalidate(5, mapa3[SaveY][SaveX] = 0, mapa3);
+    			}
+    		} else if (MudandoDeFase == "vitoria") {
+    			MudarDeFase(mapa4[EixoY][EixoX]);
+
+    			if (mapa4[EixoY][EixoX] != 0) {
+    				ResertarPosicao();
+    				return;
+    			}
+
+    			$$invalidate(6, mapa4[EixoY][EixoX] = "DANTE", mapa4);
+    			$$invalidate(6, mapa4[SaveY][SaveX] = 0, mapa4);
+    		}
+
+    		RenderizandoMapa();
+    	}
+
+    	//Referente a mudança de fases:
+    	let MudandoDeFase = "tutorial"; // fase inicial do jogo
+
+    	function MudarDeFase(FaseAtual) {
+    		if (FaseAtual == "X") {
+    			$$invalidate(10, enigma = true);
+    		} else if (FaseAtual == "Y") {
+    			$$invalidate(10, enigma = true);
+    			Tudodnv();
+    		} else if (FaseAtual == "Z") {
+    			$$invalidate(10, enigma = true);
+    			Tudodnv();
+    		} else if (FaseAtual == "V") {
+    			$$invalidate(10, enigma = true);
+    			Tudodnv();
+    		} else if (FaseAtual == "C") {
+    			$$invalidate(10, enigma = true);
+    			Tudodnv();
+    		}
+    	}
+
+    	//Referente aos enigmas:
+    	let enigma = false;
+
+    	let PalavraChave = '';
+
+    	function Alterando(teste, fase) {
+    		// mudança de fase ao acerta o enigma
+    		if (teste) {
+    			$$invalidate(10, enigma = teste);
+    			$$invalidate(11, PalavraChave = '');
+
+    			if (fase == "tutorial") {
+    				$$invalidate(9, MudandoDeFase = "nivel1");
+    			} else if (fase == "nivel1") {
+    				$$invalidate(9, MudandoDeFase = "nivel2");
+    			} else if (fase == "nivel2") {
+    				$$invalidate(9, MudandoDeFase = "nivel3");
+    			} else if (fase == "nivel3") {
+    				$$invalidate(9, MudandoDeFase = "vitoria");
+    			}
+
+    			$$invalidate(10, enigma = false);
+    		}
+    	}
+
+    	let Tempo;
+    	let temporizador = 300;
+    	let contador = temporizador; // Contador geral para resolver todos os enigmas 
+
+    	function TempoEnigma() {
+    		$$invalidate(12, Tempo = setInterval(
+    			() => {
+    				$$invalidate(13, contador--, contador);
+
+    				if (contador == 0) {
+    					alert('Tempo Esgotado');
+    					RetornaAoSave();
+    					$$invalidate(9, MudandoDeFase = "nivel1");
+    					$$invalidate(10, enigma = false);
+    					clearInterval(Tempo);
+    					return;
+    				}
+    			},
+    			1000
+    		));
+    	}
+
+    	function ResertarContador() {
+    		$$invalidate(13, contador = temporizador);
+    	}
+
+    	let Movimentar;
+    	let Ritmo = 4000;
+    	let Indice = 0;
+    	let PosicaoMonstroX = 0;
+    	let PosicaoMonstroY = 0;
+    	let SaveIndice = 10;
+
+    	function Perseguição(mapa) {
+    		$$invalidate(14, Movimentar = setInterval(
+    			() => {
+    				if (mapa == "nivel1") {
+    					PosicaoMonstroX = Mapa1Save[Indice][0];
+    					PosicaoMonstroY = Mapa1Save[Indice][1];
+
+    					if (mapa1[PosicaoMonstroY][PosicaoMonstroX] != "DANTE") {
+    						$$invalidate(3, mapa1[PosicaoMonstroY][PosicaoMonstroX] = "MINOS", mapa1);
+    					} else {
+    						alert('O monstro o alcançou');
+    						RetornaAoSave();
+    						$$invalidate(9, MudandoDeFase = "tutorial");
+    						return;
+    					}
+
+    					if (Indice > 0) {
+    						$$invalidate(3, mapa1[Mapa1Save[Indice - 1][1]][Mapa1Save[Indice - 1][0]] = 0, mapa1);
+    					}
+    				} else if (mapa == "nivel2") {
+    					PosicaoMonstroX = Mapa2Save[Indice][0];
+    					PosicaoMonstroY = Mapa2Save[Indice][1];
+
+    					if (mapa2[PosicaoMonstroY][PosicaoMonstroX] != "DANTE") {
+    						$$invalidate(4, mapa2[PosicaoMonstroY][PosicaoMonstroX] = "MINOS", mapa2);
+    					} else {
+    						alert('O monstro o alcançou');
+    						RetornaAoSave();
+    						$$invalidate(9, MudandoDeFase = "nivel1");
+    						return;
+    					}
+
+    					if (Indice > 0) {
+    						$$invalidate(4, mapa2[Mapa2Save[Indice - 1][1]][Mapa2Save[Indice - 1][0]] = 0, mapa2);
+    					}
+    				} else if (mapa == "nivel3") {
+    					PosicaoMonstroX = Mapa3Save[Indice][0];
+    					PosicaoMonstroY = Mapa3Save[Indice][1];
+
+    					if (mapa3[PosicaoMonstroY][PosicaoMonstroX] != "DANTE") {
+    						$$invalidate(5, mapa3[PosicaoMonstroY][PosicaoMonstroX] = "MINOS", mapa3);
+    					} else {
+    						alert('O monstro o alcançou');
+    						RetornaAoSave();
+    						$$invalidate(9, MudandoDeFase = "nivel1");
+    						return;
+    					}
+
+    					if (Indice > 0) {
+    						$$invalidate(5, mapa3[Mapa3Save[Indice - 1][1]][Mapa3Save[Indice - 1][0]] = 0, mapa3);
+    					}
+    				}
+
+    				$$invalidate(16, Indice++, Indice);
+    			},
+    			Ritmo
+    		));
+    	}
+
+    	let Caçar;
+    	let Cronometro;
+    	let HoraDaCaçada = 60;
+
+    	function Cronometrar() {
+    		Cronometro = setInterval(
+    			() => {
+    				$$invalidate(18, HoraDaCaçada--, HoraDaCaçada);
+    			},
+    			1000
+    		);
+    	}
+
+    	function IniciarACaçada() {
+    		$$invalidate(15, Ritmo = 3000);
+
+    		Caçar = setInterval(
+    			() => {
+    				Perseguição(MudandoDeFase);
+    			},
+    			60000
+    		);
+    	}
+
+    	function acelerar(teste) {
+    		if (teste) {
+    			clearInterval(Movimentar);
+    			$$invalidate(15, Ritmo -= 1000);
+
+    			if (Ritmo < 1000) {
+    				$$invalidate(15, Ritmo = 10);
+    			}
+
+    			$$invalidate(17, SaveIndice += 60);
+    			Perseguição(MudandoDeFase);
+    		}
+    	}
+
+    	function Tudodnv() {
+    		clearInterval(Movimentar);
+    		clearInterval(Cronometro);
+    		$$invalidate(18, HoraDaCaçada = 60);
+    		$$invalidate(15, Ritmo = 3000);
+
+    		if (MudandoDeFase == "nivel1") {
+    			for (let i in mapa1) {
+    				for (let j in mapa1[i]) {
+    					if (mapa1[i][j] == "MINOS" || mapa1[i][j] == "DANTE") {
+    						$$invalidate(3, mapa1[i][j] = 0, mapa1);
+    					}
+    				}
+    			}
+
+    			EixoX = PontoDeSave1[0];
+    			EixoY = PontoDeSave1[1];
+    			$$invalidate(3, mapa1[EixoY][EixoX] = "DANTE", mapa1);
+    		} else if (MudandoDeFase == "nivel2") {
+    			for (let i in mapa2) {
+    				for (let j in mapa2[i]) {
+    					if (mapa2[i][j] == "MINOS" || mapa2[i][j] == "DANTE") {
+    						$$invalidate(4, mapa2[i][j] = 0, mapa2);
+    					}
+    				}
+    			}
+
+    			EixoX = PontoDeSave2[0];
+    			EixoY = PontoDeSave2[1];
+    			$$invalidate(4, mapa2[EixoY][EixoX] = "DANTE", mapa2);
+    		} else if (MudandoDeFase == "nivel3") {
+    			for (let i in mapa3) {
+    				for (let j in mapa3[i]) {
+    					if (mapa3[i][j] == "MINOS" || mapa3[i][j] == "DANTE") {
+    						$$invalidate(5, mapa3[i][j] = 0, mapa3);
+    					}
+    				}
+    			}
+
+    			EixoX = PontoDeSave3[0];
+    			EixoY = PontoDeSave3[1];
+    			$$invalidate(5, mapa3[EixoY][EixoX] = "DANTE", mapa3);
+    		}
+
+    		$$invalidate(16, Indice = 0);
+    		$$invalidate(17, SaveIndice = 30);
+    		Mapa1Save = [];
+    		Mapa2Save = [];
+    		Mapa3Save = [];
+    		MudarEnigma();
+    		return;
+    	}
+
+    	let contagem = 0;
+
+    	let Perguntas = [
+    		"Fui levado para um quarto escuro e incendiado. Eu chorei e então minha cabeça foi cortada. Quem sou?",
+    		"Poder suficiente para esmagar navios e quebrar telhados mas mesmo assim tenho medo do sol. O que eu sou?",
+    		"Se você me tem, quer me compartilhar; se você não me compartilha, você me manteve. O que sou?"
+    	];
+
+    	let respostas = ["VELA", "GELO", "SEGREDO"];
+
+    	function MudarEnigma() {
+    		$$invalidate(19, contagem++, contagem);
+
+    		if (contagem > 2) {
+    			$$invalidate(19, contagem = 0);
+    		}
+    	}
+
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console.warn(`<Teste> was created with unknown prop '${key}'`);
+    	});
+
+    	function input_input_handler() {
+    		PalavraChave = this.value;
+    		$$invalidate(11, PalavraChave);
+    	}
+
+    	function input_input_handler_1() {
+    		PalavraChave = this.value;
+    		$$invalidate(11, PalavraChave);
+    	}
+
+    	function input_input_handler_2() {
+    		PalavraChave = this.value;
+    		$$invalidate(11, PalavraChave);
+    	}
+
+    	function input_input_handler_3() {
+    		PalavraChave = this.value;
+    		$$invalidate(11, PalavraChave);
+    	}
+
+    	$$self.$capture_state = () => ({
+    		Vitoria,
+    		VoltarMenu,
+    		Creditos,
+    		key,
+    		code,
+    		handleKeydown,
+    		mapa0,
+    		mapa1,
+    		mapa2,
+    		mapa3,
+    		mapa4,
+    		Mapa1Save,
+    		Mapa2Save,
+    		Mapa3Save,
+    		Dimensionamento,
+    		LimiteX,
+    		LimiteY,
+    		RenderizandoMapa,
+    		EixoX,
+    		EixoY,
+    		SaveX,
+    		SaveY,
+    		PontoDeSave1,
+    		PontoDeSave2,
+    		PontoDeSave3,
+    		DeterminandoEixos,
+    		RetornaAoSave,
+    		ResertarPosicao,
+    		MovimentaçãoPeloMapa,
+    		MudandoDeFase,
+    		MudarDeFase,
+    		enigma,
+    		PalavraChave,
+    		Alterando,
+    		Tempo,
+    		temporizador,
+    		contador,
+    		TempoEnigma,
+    		ResertarContador,
+    		Movimentar,
+    		Ritmo,
+    		Indice,
+    		PosicaoMonstroX,
+    		PosicaoMonstroY,
+    		SaveIndice,
+    		Perseguição,
+    		Caçar,
+    		Cronometro,
+    		HoraDaCaçada,
+    		Cronometrar,
+    		IniciarACaçada,
+    		acelerar,
+    		Tudodnv,
+    		contagem,
+    		Perguntas,
+    		respostas,
+    		MudarEnigma
+    	});
+
+    	$$self.$inject_state = $$props => {
+    		if ('key' in $$props) $$invalidate(0, key = $$props.key);
+    		if ('code' in $$props) $$invalidate(1, code = $$props.code);
+    		if ('mapa0' in $$props) $$invalidate(2, mapa0 = $$props.mapa0);
+    		if ('mapa1' in $$props) $$invalidate(3, mapa1 = $$props.mapa1);
+    		if ('mapa2' in $$props) $$invalidate(4, mapa2 = $$props.mapa2);
+    		if ('mapa3' in $$props) $$invalidate(5, mapa3 = $$props.mapa3);
+    		if ('mapa4' in $$props) $$invalidate(6, mapa4 = $$props.mapa4);
+    		if ('Mapa1Save' in $$props) Mapa1Save = $$props.Mapa1Save;
+    		if ('Mapa2Save' in $$props) Mapa2Save = $$props.Mapa2Save;
+    		if ('Mapa3Save' in $$props) Mapa3Save = $$props.Mapa3Save;
+    		if ('Dimensionamento' in $$props) $$invalidate(21, Dimensionamento = $$props.Dimensionamento);
+    		if ('LimiteX' in $$props) $$invalidate(7, LimiteX = $$props.LimiteX);
+    		if ('LimiteY' in $$props) $$invalidate(8, LimiteY = $$props.LimiteY);
+    		if ('EixoX' in $$props) EixoX = $$props.EixoX;
+    		if ('EixoY' in $$props) EixoY = $$props.EixoY;
+    		if ('SaveX' in $$props) SaveX = $$props.SaveX;
+    		if ('SaveY' in $$props) SaveY = $$props.SaveY;
+    		if ('PontoDeSave1' in $$props) PontoDeSave1 = $$props.PontoDeSave1;
+    		if ('PontoDeSave2' in $$props) PontoDeSave2 = $$props.PontoDeSave2;
+    		if ('PontoDeSave3' in $$props) PontoDeSave3 = $$props.PontoDeSave3;
+    		if ('MudandoDeFase' in $$props) $$invalidate(9, MudandoDeFase = $$props.MudandoDeFase);
+    		if ('enigma' in $$props) $$invalidate(10, enigma = $$props.enigma);
+    		if ('PalavraChave' in $$props) $$invalidate(11, PalavraChave = $$props.PalavraChave);
+    		if ('Tempo' in $$props) $$invalidate(12, Tempo = $$props.Tempo);
+    		if ('temporizador' in $$props) temporizador = $$props.temporizador;
+    		if ('contador' in $$props) $$invalidate(13, contador = $$props.contador);
+    		if ('Movimentar' in $$props) $$invalidate(14, Movimentar = $$props.Movimentar);
+    		if ('Ritmo' in $$props) $$invalidate(15, Ritmo = $$props.Ritmo);
+    		if ('Indice' in $$props) $$invalidate(16, Indice = $$props.Indice);
+    		if ('PosicaoMonstroX' in $$props) PosicaoMonstroX = $$props.PosicaoMonstroX;
+    		if ('PosicaoMonstroY' in $$props) PosicaoMonstroY = $$props.PosicaoMonstroY;
+    		if ('SaveIndice' in $$props) $$invalidate(17, SaveIndice = $$props.SaveIndice);
+    		if ('Caçar' in $$props) Caçar = $$props.Caçar;
+    		if ('Cronometro' in $$props) Cronometro = $$props.Cronometro;
+    		if ('HoraDaCaçada' in $$props) $$invalidate(18, HoraDaCaçada = $$props.HoraDaCaçada);
+    		if ('contagem' in $$props) $$invalidate(19, contagem = $$props.contagem);
+    		if ('Perguntas' in $$props) $$invalidate(31, Perguntas = $$props.Perguntas);
+    		if ('respostas' in $$props) $$invalidate(32, respostas = $$props.respostas);
+    	};
+
+    	if ($$props && "$$inject" in $$props) {
+    		$$self.$inject_state($$props.$$inject);
+    	}
+
+    	return [
+    		key,
+    		code,
+    		mapa0,
+    		mapa1,
+    		mapa2,
+    		mapa3,
+    		mapa4,
+    		LimiteX,
+    		LimiteY,
+    		MudandoDeFase,
+    		enigma,
+    		PalavraChave,
+    		Tempo,
+    		contador,
+    		Movimentar,
+    		Ritmo,
+    		Indice,
+    		SaveIndice,
+    		HoraDaCaçada,
+    		contagem,
+    		handleKeydown,
+    		Dimensionamento,
+    		RenderizandoMapa,
+    		DeterminandoEixos,
+    		MovimentaçãoPeloMapa,
+    		Alterando,
+    		TempoEnigma,
+    		ResertarContador,
+    		Cronometrar,
+    		IniciarACaçada,
+    		acelerar,
+    		Perguntas,
+    		respostas,
+    		input_input_handler,
+    		input_input_handler_1,
+    		input_input_handler_2,
+    		input_input_handler_3
+    	];
+    }
+
+    class Teste extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$2, create_fragment$2, safe_not_equal, {}, null, [-1, -1, -1]);
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "Teste",
+    			options,
+    			id: create_fragment$2.name
+    		});
+    	}
+    }
+
+    /* src\newjogo.svelte generated by Svelte v3.53.1 */
+    const file$1 = "src\\newjogo.svelte";
+
+    function get_each_context_16(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[35] = list[i];
+    	return child_ctx;
+    }
+
+    function get_each_context_17(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[38] = list[i];
+    	return child_ctx;
+    }
+
+    function get_each_context_14(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[35] = list[i];
+    	return child_ctx;
+    }
+
+    function get_each_context_15(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[38] = list[i];
+    	return child_ctx;
+    }
+
+    function get_each_context_12(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[35] = list[i];
+    	child_ctx[37] = i;
+    	return child_ctx;
+    }
+
+    function get_each_context_13(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[38] = list[i];
+    	child_ctx[40] = i;
+    	return child_ctx;
+    }
+
+    function get_each_context_10(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[35] = list[i];
+    	return child_ctx;
+    }
+
+    function get_each_context_11(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[38] = list[i];
+    	return child_ctx;
+    }
+
+    function get_each_context_8(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[35] = list[i];
+    	child_ctx[37] = i;
+    	return child_ctx;
+    }
+
+    function get_each_context_9(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[38] = list[i];
+    	child_ctx[40] = i;
+    	return child_ctx;
+    }
+
+    function get_each_context_6(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[35] = list[i];
+    	return child_ctx;
+    }
+
+    function get_each_context_7(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[38] = list[i];
+    	return child_ctx;
+    }
+
+    function get_each_context_4(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[35] = list[i];
+    	child_ctx[37] = i;
+    	return child_ctx;
+    }
+
+    function get_each_context_5(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[38] = list[i];
+    	child_ctx[40] = i;
+    	return child_ctx;
+    }
+
+    function get_each_context_2(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[35] = list[i];
+    	return child_ctx;
+    }
+
+    function get_each_context_3(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[38] = list[i];
+    	return child_ctx;
+    }
+
+    function get_each_context(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[35] = list[i];
+    	child_ctx[37] = i;
+    	return child_ctx;
+    }
+
+    function get_each_context_1(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[38] = list[i];
+    	child_ctx[40] = i;
+    	return child_ctx;
+    }
+
+    // (469:0) {#if (key)}
+    function create_if_block_64(ctx) {
+    	let if_block_anchor;
+
+    	function select_block_type(ctx, dirty) {
+    		if (/*code*/ ctx[1] == "ArrowUp" || /*code*/ ctx[1] == "KeyW") return create_if_block_65;
+    		if (/*code*/ ctx[1] == "ArrowDown" || /*code*/ ctx[1] == "KeyS") return create_if_block_66;
+    		if (/*code*/ ctx[1] == "ArrowLeft" || /*code*/ ctx[1] == "KeyA") return create_if_block_67;
+    		if (/*code*/ ctx[1] == "ArrowRight" || /*code*/ ctx[1] == "KeyD") return create_if_block_68;
+    	}
+
+    	let current_block_type = select_block_type(ctx);
+    	let if_block = current_block_type && current_block_type(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (current_block_type === (current_block_type = select_block_type(ctx)) && if_block) {
+    				if_block.p(ctx, dirty);
+    			} else {
+    				if (if_block) if_block.d(1);
+    				if_block = current_block_type && current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) {
+    				if_block.d(detaching);
+    			}
+
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_64.name,
+    		type: "if",
+    		source: "(469:0) {#if (key)}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (482:61) 
+    function create_if_block_68(ctx) {
+    	let t_value = /*MovimentaçãoPeloMapa*/ ctx[18]("DIREITA") + "";
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text(t_value);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_68.name,
+    		type: "if",
+    		source: "(482:61) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (478:60) 
+    function create_if_block_67(ctx) {
+    	let t_value = /*MovimentaçãoPeloMapa*/ ctx[18]("ESQUERDA") + "";
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text(t_value);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_67.name,
+    		type: "if",
+    		source: "(478:60) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (474:60) 
+    function create_if_block_66(ctx) {
+    	let t_value = /*MovimentaçãoPeloMapa*/ ctx[18]("BAIXO") + "";
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text(t_value);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_66.name,
+    		type: "if",
+    		source: "(474:60) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (470:8) {#if (code == "ArrowUp") || (code == "KeyW")}
+    function create_if_block_65(ctx) {
+    	let t_value = /*MovimentaçãoPeloMapa*/ ctx[18]("CIMA") + "";
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text(t_value);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_65.name,
+    		type: "if",
+    		source: "(470:8) {#if (code == \\\"ArrowUp\\\") || (code == \\\"KeyW\\\")}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (745:41) 
+    function create_if_block_58(ctx) {
+    	let current_block_type_index;
+    	let if_block;
+    	let if_block_anchor;
+    	let current;
+    	const if_block_creators = [create_if_block_59, create_else_block_4];
+    	const if_blocks = [];
+
+    	function select_block_type_14(ctx, dirty) {
+    		if (!/*enigma*/ ctx[10]) return 0;
+    		return 1;
+    	}
+
+    	current_block_type_index = select_block_type_14(ctx);
+    	if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+
+    	const block = {
+    		c: function create() {
+    			if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if_blocks[current_block_type_index].m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    			current = true;
+    		},
+    		p: function update(ctx, dirty) {
+    			let previous_block_index = current_block_type_index;
+    			current_block_type_index = select_block_type_14(ctx);
+
+    			if (current_block_type_index === previous_block_index) {
+    				if_blocks[current_block_type_index].p(ctx, dirty);
+    			} else {
+    				group_outros();
+
+    				transition_out(if_blocks[previous_block_index], 1, 1, () => {
+    					if_blocks[previous_block_index] = null;
+    				});
+
+    				check_outros();
+    				if_block = if_blocks[current_block_type_index];
+
+    				if (!if_block) {
+    					if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+    					if_block.c();
+    				} else {
+    					if_block.p(ctx, dirty);
+    				}
+
+    				transition_in(if_block, 1);
+    				if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    			}
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(if_block);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(if_block);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			if_blocks[current_block_type_index].d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_58.name,
+    		type: "if",
+    		source: "(745:41) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (682:40) 
+    function create_if_block_42(ctx) {
+    	let p;
+    	let t1;
+    	let if_block_anchor;
+
+    	function select_block_type_11(ctx, dirty) {
+    		if (!/*enigma*/ ctx[10]) return create_if_block_43;
+    		return create_else_block_3;
+    	}
+
+    	let current_block_type = select_block_type_11(ctx);
+    	let if_block = current_block_type(ctx);
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			p.textContent = "Nivel 3";
+    			t1 = space();
+    			if_block.c();
+    			if_block_anchor = empty();
+    			attr_dev(p, "class", "FasesDoJogo");
+    			add_location(p, file$1, 683, 4, 46429);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    			insert_dev(target, t1, anchor);
+    			if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (current_block_type === (current_block_type = select_block_type_11(ctx)) && if_block) {
+    				if_block.p(ctx, dirty);
+    			} else {
+    				if_block.d(1);
+    				if_block = current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			}
+    		},
+    		i: noop,
+    		o: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t1);
+    			if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_42.name,
+    		type: "if",
+    		source: "(682:40) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (616:40) 
+    function create_if_block_26(ctx) {
+    	let p;
+    	let t1;
+    	let if_block_anchor;
+
+    	function select_block_type_8(ctx, dirty) {
+    		if (!/*enigma*/ ctx[10]) return create_if_block_27;
+    		return create_else_block_2;
+    	}
+
+    	let current_block_type = select_block_type_8(ctx);
+    	let if_block = current_block_type(ctx);
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			p.textContent = "Nivel 2";
+    			t1 = space();
+    			if_block.c();
+    			if_block_anchor = empty();
+    			attr_dev(p, "class", "FasesDoJogo");
+    			add_location(p, file$1, 617, 4, 43115);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    			insert_dev(target, t1, anchor);
+    			if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (current_block_type === (current_block_type = select_block_type_8(ctx)) && if_block) {
+    				if_block.p(ctx, dirty);
+    			} else {
+    				if_block.d(1);
+    				if_block = current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			}
+    		},
+    		i: noop,
+    		o: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t1);
+    			if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_26.name,
+    		type: "if",
+    		source: "(616:40) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (555:40) 
+    function create_if_block_12(ctx) {
+    	let p;
+    	let t1;
+    	let if_block_anchor;
+
+    	function select_block_type_5(ctx, dirty) {
+    		if (!/*enigma*/ ctx[10]) return create_if_block_13;
+    		return create_else_block_1;
+    	}
+
+    	let current_block_type = select_block_type_5(ctx);
+    	let if_block = current_block_type(ctx);
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			p.textContent = "Nivel 1";
+    			t1 = space();
+    			if_block.c();
+    			if_block_anchor = empty();
+    			attr_dev(p, "class", "FasesDoJogo");
+    			add_location(p, file$1, 556, 4, 40134);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    			insert_dev(target, t1, anchor);
+    			if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (current_block_type === (current_block_type = select_block_type_5(ctx)) && if_block) {
+    				if_block.p(ctx, dirty);
+    			} else {
+    				if_block.d(1);
+    				if_block = current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			}
+    		},
+    		i: noop,
+    		o: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t1);
+    			if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_12.name,
+    		type: "if",
+    		source: "(555:40) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (491:0) {#if MudandoDeFase == "tutorial"}
+    function create_if_block$1(ctx) {
+    	let p;
+    	let t1;
+    	let if_block_anchor;
+
+    	function select_block_type_2(ctx, dirty) {
+    		if (!/*enigma*/ ctx[10]) return create_if_block_1$1;
+    		return create_else_block;
+    	}
+
+    	let current_block_type = select_block_type_2(ctx);
+    	let if_block = current_block_type(ctx);
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			p.textContent = "Tutorial";
+    			t1 = space();
+    			if_block.c();
+    			if_block_anchor = empty();
+    			attr_dev(p, "class", "FasesDoJogo");
+    			add_location(p, file$1, 492, 4, 37032);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    			insert_dev(target, t1, anchor);
+    			if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (current_block_type === (current_block_type = select_block_type_2(ctx)) && if_block) {
+    				if_block.p(ctx, dirty);
+    			} else {
+    				if_block.d(1);
+    				if_block = current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			}
+    		},
+    		i: noop,
+    		o: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t1);
+    			if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block$1.name,
+    		type: "if",
+    		source: "(491:0) {#if MudandoDeFase == \\\"tutorial\\\"}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (773:4) {:else}
+    function create_else_block_4(ctx) {
+    	let creditos;
+    	let current;
+    	creditos = new Creditos({ $$inline: true });
+
+    	const block = {
+    		c: function create() {
+    			create_component(creditos.$$.fragment);
+    		},
+    		m: function mount(target, anchor) {
+    			mount_component(creditos, target, anchor);
+    			current = true;
+    		},
+    		p: noop,
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(creditos.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(creditos.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			destroy_component(creditos, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block_4.name,
+    		type: "else",
+    		source: "(773:4) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (747:4) {#if !enigma}
+    function create_if_block_59(ctx) {
+    	let vitoria;
+    	let t0;
+    	let p;
+    	let t1_value = clearInterval(/*Tempo*/ ctx[12]) + "";
+    	let t1;
+    	let t2;
+    	let t3_value = /*RenderizandoMapa*/ ctx[16]() + "";
+    	let t3;
+    	let t4;
+    	let t5_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[9]) + "";
+    	let t5;
+    	let t6;
+    	let table;
+    	let current;
+    	vitoria = new Vitoria({ $$inline: true });
+    	let each_value_16 = /*mapa4*/ ctx[6];
+    	validate_each_argument(each_value_16);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_16.length; i += 1) {
+    		each_blocks[i] = create_each_block_16(get_each_context_16(ctx, each_value_16, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			create_component(vitoria.$$.fragment);
+    			t0 = space();
+    			p = element("p");
+    			t1 = text(t1_value);
+    			t2 = space();
+    			t3 = text(t3_value);
+    			t4 = space();
+    			t5 = text(t5_value);
+    			t6 = space();
+    			table = element("table");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			attr_dev(p, "class", "textofutil");
+    			add_location(p, file$1, 750, 4, 49576);
+    			attr_dev(table, "id", "mapanivel4");
+    			add_location(table, file$1, 755, 0, 49704);
+    		},
+    		m: function mount(target, anchor) {
+    			mount_component(vitoria, target, anchor);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, p, anchor);
+    			append_dev(p, t1);
+    			append_dev(p, t2);
+    			append_dev(p, t3);
+    			append_dev(p, t4);
+    			append_dev(p, t5);
+    			insert_dev(target, t6, anchor);
+    			insert_dev(target, table, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(table, null);
+    			}
+
+    			current = true;
+    		},
+    		p: function update(ctx, dirty) {
+    			if ((!current || dirty[0] & /*Tempo*/ 4096) && t1_value !== (t1_value = clearInterval(/*Tempo*/ ctx[12]) + "")) set_data_dev(t1, t1_value);
+    			if ((!current || dirty[0] & /*MudandoDeFase*/ 512) && t5_value !== (t5_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[9]) + "")) set_data_dev(t5, t5_value);
+
+    			if (dirty[0] & /*mapa4*/ 64) {
+    				each_value_16 = /*mapa4*/ ctx[6];
+    				validate_each_argument(each_value_16);
+    				let i;
+
+    				for (i = 0; i < each_value_16.length; i += 1) {
+    					const child_ctx = get_each_context_16(ctx, each_value_16, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_16(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(table, null);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_16.length;
+    			}
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(vitoria.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(vitoria.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			destroy_component(vitoria, detaching);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t6);
+    			if (detaching) detach_dev(table);
+    			destroy_each(each_blocks, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_59.name,
+    		type: "if",
+    		source: "(747:4) {#if !enigma}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (766:39) 
+    function create_if_block_63(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "saida");
+    			add_location(img, file$1, 766, 20, 50233);
+    			add_location(th, file$1, 766, 16, 50229);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_63.name,
+    		type: "if",
+    		source: "(766:39) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (764:43) 
+    function create_if_block_62(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "personagem");
+    			add_location(img, file$1, 764, 35, 50114);
+    			attr_dev(th, "class", "Dante4");
+    			add_location(th, file$1, 764, 16, 50095);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_62.name,
+    		type: "if",
+    		source: "(764:43) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (762:37) 
+    function create_if_block_61(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredetunel.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "parede");
+    			add_location(img, file$1, 762, 20, 49974);
+    			add_location(th, file$1, 762, 16, 49970);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_61.name,
+    		type: "if",
+    		source: "(762:37) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (760:12) {#if elementos == 0}
+    function create_if_block_60(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaotunel.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "chao");
+    			add_location(img, file$1, 760, 20, 49859);
+    			add_location(th, file$1, 760, 16, 49855);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_60.name,
+    		type: "if",
+    		source: "(760:12) {#if elementos == 0}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (759:8) {#each linhas as elementos}
+    function create_each_block_17(ctx) {
+    	let if_block_anchor;
+
+    	function select_block_type_15(ctx, dirty) {
+    		if (/*elementos*/ ctx[38] == 0) return create_if_block_60;
+    		if (/*elementos*/ ctx[38] == 1) return create_if_block_61;
+    		if (/*elementos*/ ctx[38] == "DANTE") return create_if_block_62;
+    		if (/*elementos*/ ctx[38] == "C") return create_if_block_63;
+    	}
+
+    	let current_block_type = select_block_type_15(ctx);
+    	let if_block = current_block_type && current_block_type(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (current_block_type !== (current_block_type = select_block_type_15(ctx))) {
+    				if (if_block) if_block.d(1);
+    				if_block = current_block_type && current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) {
+    				if_block.d(detaching);
+    			}
+
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_17.name,
+    		type: "each",
+    		source: "(759:8) {#each linhas as elementos}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (757:4) {#each mapa4 as linhas}
+    function create_each_block_16(ctx) {
+    	let tr;
+    	let t;
+    	let each_value_17 = /*linhas*/ ctx[35];
+    	validate_each_argument(each_value_17);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_17.length; i += 1) {
+    		each_blocks[i] = create_each_block_17(get_each_context_17(ctx, each_value_17, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			tr = element("tr");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			t = space();
+    			add_location(tr, file$1, 757, 4, 49762);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, tr, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(tr, null);
+    			}
+
+    			append_dev(tr, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*mapa4*/ 64) {
+    				each_value_17 = /*linhas*/ ctx[35];
+    				validate_each_argument(each_value_17);
+    				let i;
+
+    				for (i = 0; i < each_value_17.length; i += 1) {
+    					const child_ctx = get_each_context_17(ctx, each_value_17, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_17(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(tr, t);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_17.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(tr);
+    			destroy_each(each_blocks, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_16.name,
+    		type: "each",
+    		source: "(757:4) {#each mapa4 as linhas}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (718:8) {:else}
+    function create_else_block_3(ctx) {
+    	let p0;
+    	let t2;
+    	let p1;
+    	let t4;
+    	let p2;
+    	let t6;
+    	let p3;
+    	let t8;
+    	let p4;
+    	let t9;
+    	let t10;
+    	let t11;
+    	let input;
+    	let t12;
+    	let each_1_anchor;
+    	let mounted;
+    	let dispose;
+    	let each_value_14 = /*mapa3*/ ctx[5];
+    	validate_each_argument(each_value_14);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_14.length; i += 1) {
+    		each_blocks[i] = create_each_block_14(get_each_context_14(ctx, each_value_14, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			p0 = element("p");
+    			p0.textContent = `${/*TempoEnigma*/ ctx[20]()}${/*ResertarContador*/ ctx[21]()}`;
+    			t2 = space();
+    			p1 = element("p");
+    			p1.textContent = "Se saiu bem, Dante. Conseguiu sobreviver até aqui, mas será que realmente acabou?";
+    			t4 = space();
+    			p2 = element("p");
+    			p2.textContent = "Seja rápido se deseja sobreviver.";
+    			t6 = space();
+    			p3 = element("p");
+    			p3.textContent = "Se você me tem, quer me compartilhar; se você não me compartilha, você me manteve. O que sou?";
+    			t8 = space();
+    			p4 = element("p");
+    			t9 = text(/*contador*/ ctx[13]);
+    			t10 = text("s");
+    			t11 = space();
+    			input = element("input");
+    			t12 = space();
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			each_1_anchor = empty();
+    			attr_dev(p0, "class", "textofutil");
+    			add_location(p0, file$1, 718, 8, 47933);
+    			attr_dev(p1, "class", "Enigma");
+    			add_location(p1, file$1, 719, 8, 48004);
+    			attr_dev(p2, "class", "Enigma");
+    			add_location(p2, file$1, 720, 8, 48117);
+    			attr_dev(p3, "class", "Enigma");
+    			add_location(p3, file$1, 721, 8, 48182);
+    			attr_dev(p4, "class", "Contador");
+    			add_location(p4, file$1, 722, 8, 48307);
+    			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
+    			attr_dev(input, "class", "RespostaEnigma");
+    			add_location(input, file$1, 723, 8, 48352);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p0, anchor);
+    			insert_dev(target, t2, anchor);
+    			insert_dev(target, p1, anchor);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, p2, anchor);
+    			insert_dev(target, t6, anchor);
+    			insert_dev(target, p3, anchor);
+    			insert_dev(target, t8, anchor);
+    			insert_dev(target, p4, anchor);
+    			append_dev(p4, t9);
+    			append_dev(p4, t10);
+    			insert_dev(target, t11, anchor);
+    			insert_dev(target, input, anchor);
+    			set_input_value(input, /*PalavraChave*/ ctx[11]);
+    			insert_dev(target, t12, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(target, anchor);
+    			}
+
+    			insert_dev(target, each_1_anchor, anchor);
+
+    			if (!mounted) {
+    				dispose = [
+    					listen_dev(input, "input", /*input_input_handler_3*/ ctx[25]),
+    					listen_dev(
+    						input,
+    						"keydown",
+    						function () {
+    							if (is_function(/*Alterando*/ ctx[19](/*PalavraChave*/ ctx[11] == "SEGREDO", /*MudandoDeFase*/ ctx[9]))) /*Alterando*/ ctx[19](/*PalavraChave*/ ctx[11] == "SEGREDO", /*MudandoDeFase*/ ctx[9]).apply(this, arguments);
+    						},
+    						false,
+    						false,
+    						false
+    					)
+    				];
+
+    				mounted = true;
+    			}
+    		},
+    		p: function update(new_ctx, dirty) {
+    			ctx = new_ctx;
+    			if (dirty[0] & /*contador*/ 8192) set_data_dev(t9, /*contador*/ ctx[13]);
+
+    			if (dirty[0] & /*PalavraChave*/ 2048 && input.value !== /*PalavraChave*/ ctx[11]) {
+    				set_input_value(input, /*PalavraChave*/ ctx[11]);
+    			}
+
+    			if (dirty[0] & /*mapa3*/ 32) {
+    				each_value_14 = /*mapa3*/ ctx[5];
+    				validate_each_argument(each_value_14);
+    				let i;
+
+    				for (i = 0; i < each_value_14.length; i += 1) {
+    					const child_ctx = get_each_context_14(ctx, each_value_14, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_14(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_14.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p0);
+    			if (detaching) detach_dev(t2);
+    			if (detaching) detach_dev(p1);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(p2);
+    			if (detaching) detach_dev(t6);
+    			if (detaching) detach_dev(p3);
+    			if (detaching) detach_dev(t8);
+    			if (detaching) detach_dev(p4);
+    			if (detaching) detach_dev(t11);
+    			if (detaching) detach_dev(input);
+    			if (detaching) detach_dev(t12);
+    			destroy_each(each_blocks, detaching);
+    			if (detaching) detach_dev(each_1_anchor);
+    			mounted = false;
+    			run_all(dispose);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block_3.name,
+    		type: "else",
+    		source: "(718:8) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (686:4) {#if !enigma}
+    function create_if_block_43(ctx) {
+    	let p;
+    	let t0_value = clearInterval(/*Tempo*/ ctx[12]) + "";
+    	let t0;
+    	let t1;
+    	let t2_value = /*RenderizandoMapa*/ ctx[16]() + "";
+    	let t2;
+    	let t3;
+    	let t4_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[9]) + "";
+    	let t4;
+    	let t5;
+    	let table;
+    	let each_value_12 = /*mapa3*/ ctx[5];
+    	validate_each_argument(each_value_12);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_12.length; i += 1) {
+    		each_blocks[i] = create_each_block_12(get_each_context_12(ctx, each_value_12, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			t0 = text(t0_value);
+    			t1 = space();
+    			t2 = text(t2_value);
+    			t3 = space();
+    			t4 = text(t4_value);
+    			t5 = space();
+    			table = element("table");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			attr_dev(p, "class", "textofutil");
+    			add_location(p, file$1, 687, 4, 46497);
+    			attr_dev(table, "class", "mapa");
+    			attr_dev(table, "align", "center");
+    			attr_dev(table, "id", "mapanivel3");
+    			add_location(table, file$1, 692, 4, 46629);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    			append_dev(p, t0);
+    			append_dev(p, t1);
+    			append_dev(p, t2);
+    			append_dev(p, t3);
+    			append_dev(p, t4);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, table, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(table, null);
+    			}
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*Tempo*/ 4096 && t0_value !== (t0_value = clearInterval(/*Tempo*/ ctx[12]) + "")) set_data_dev(t0, t0_value);
+    			if (dirty[0] & /*MudandoDeFase*/ 512 && t4_value !== (t4_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[9]) + "")) set_data_dev(t4, t4_value);
+
+    			if (dirty[0] & /*mapa3, LimiteX, Dimensionamento, LimiteY*/ 33184) {
+    				each_value_12 = /*mapa3*/ ctx[5];
+    				validate_each_argument(each_value_12);
+    				let i;
+
+    				for (i = 0; i < each_value_12.length; i += 1) {
+    					const child_ctx = get_each_context_12(ctx, each_value_12, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_12(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(table, null);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_12.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(table);
+    			destroy_each(each_blocks, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_43.name,
+    		type: "if",
+    		source: "(686:4) {#if !enigma}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (738:33) 
+    function create_if_block_57(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredefalsanivel3.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "paredefalsa");
+    			add_location(img, file$1, 738, 16, 49324);
+    			add_location(th, file$1, 738, 12, 49320);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_57.name,
+    		type: "if",
+    		source: "(738:33) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (736:39) 
+    function create_if_block_56(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "falsa");
+    			add_location(img, file$1, 736, 16, 49204);
+    			add_location(th, file$1, 736, 12, 49200);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_56.name,
+    		type: "if",
+    		source: "(736:39) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (734:39) 
+    function create_if_block_55(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			attr_dev(img, "id", "chao1");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel3.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "personagem");
+    			add_location(img, file$1, 734, 16, 49057);
+    			add_location(th, file$1, 734, 12, 49053);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_55.name,
+    		type: "if",
+    		source: "(734:39) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (732:35) 
+    function create_if_block_54(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saidanivel3.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "saida");
+    			add_location(img, file$1, 732, 16, 48925);
+    			add_location(th, file$1, 732, 12, 48921);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_54.name,
+    		type: "if",
+    		source: "(732:35) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (730:33) 
+    function create_if_block_53(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel3.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "parede");
+    			add_location(img, file$1, 730, 16, 48795);
+    			add_location(th, file$1, 730, 12, 48791);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_53.name,
+    		type: "if",
+    		source: "(730:33) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (728:8) {#if elementos == 0}
+    function create_if_block_52(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			attr_dev(img, "id", "chao1");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel3.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "chao");
+    			add_location(img, file$1, 728, 16, 48660);
+    			add_location(th, file$1, 728, 12, 48656);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_52.name,
+    		type: "if",
+    		source: "(728:8) {#if elementos == 0}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (727:8) {#each linhas as elementos}
+    function create_each_block_15(ctx) {
+    	let if_block_anchor;
+
+    	function select_block_type_13(ctx, dirty) {
+    		if (/*elementos*/ ctx[38] == 0) return create_if_block_52;
+    		if (/*elementos*/ ctx[38] == 1) return create_if_block_53;
+    		if (/*elementos*/ ctx[38] == "V") return create_if_block_54;
+    		if (/*elementos*/ ctx[38] == "DANTE") return create_if_block_55;
+    		if (/*elementos*/ ctx[38] == "falsa") return create_if_block_56;
+    		if (/*elementos*/ ctx[38] == 7) return create_if_block_57;
+    	}
+
+    	let current_block_type = select_block_type_13(ctx);
+    	let if_block = current_block_type && current_block_type(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (current_block_type !== (current_block_type = select_block_type_13(ctx))) {
+    				if (if_block) if_block.d(1);
+    				if_block = current_block_type && current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) {
+    				if_block.d(detaching);
+    			}
+
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_15.name,
+    		type: "each",
+    		source: "(727:8) {#each linhas as elementos}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (725:8) {#each mapa3 as linhas}
+    function create_each_block_14(ctx) {
+    	let tr;
+    	let t;
+    	let each_value_15 = /*linhas*/ ctx[35];
+    	validate_each_argument(each_value_15);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_15.length; i += 1) {
+    		each_blocks[i] = create_each_block_15(get_each_context_15(ctx, each_value_15, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			tr = element("tr");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			t = space();
+    			attr_dev(tr, "class", "minimapa");
+    			add_location(tr, file$1, 725, 8, 48554);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, tr, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(tr, null);
+    			}
+
+    			append_dev(tr, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*mapa3*/ 32) {
+    				each_value_15 = /*linhas*/ ctx[35];
+    				validate_each_argument(each_value_15);
+    				let i;
+
+    				for (i = 0; i < each_value_15.length; i += 1) {
+    					const child_ctx = get_each_context_15(ctx, each_value_15, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_15(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(tr, t);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_15.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(tr);
+    			destroy_each(each_blocks, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_14.name,
+    		type: "each",
+    		source: "(725:8) {#each mapa3 as linhas}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (695:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+    function create_if_block_44(ctx) {
+    	let tr;
+    	let t;
+    	let each_value_13 = /*linhas*/ ctx[35];
+    	validate_each_argument(each_value_13);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_13.length; i += 1) {
+    		each_blocks[i] = create_each_block_13(get_each_context_13(ctx, each_value_13, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			tr = element("tr");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			t = space();
+    			add_location(tr, file$1, 695, 12, 46797);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, tr, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(tr, null);
+    			}
+
+    			append_dev(tr, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*mapa3, LimiteX, Dimensionamento*/ 32928) {
+    				each_value_13 = /*linhas*/ ctx[35];
+    				validate_each_argument(each_value_13);
+    				let i;
+
+    				for (i = 0; i < each_value_13.length; i += 1) {
+    					const child_ctx = get_each_context_13(ctx, each_value_13, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_13(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(tr, t);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_13.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(tr);
+    			destroy_each(each_blocks, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_44.name,
+    		type: "if",
+    		source: "(695:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (698:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+    function create_if_block_45(ctx) {
+    	let if_block_anchor;
+
+    	function select_block_type_12(ctx, dirty) {
+    		if (/*elementos*/ ctx[38] == 0) return create_if_block_46;
+    		if (/*elementos*/ ctx[38] == 1) return create_if_block_47;
+    		if (/*elementos*/ ctx[38] == "V") return create_if_block_48;
+    		if (/*elementos*/ ctx[38] == "DANTE") return create_if_block_49;
+    		if (/*elementos*/ ctx[38] == "falsa") return create_if_block_50;
+    		if (/*elementos*/ ctx[38] == 7) return create_if_block_51;
+    	}
+
+    	let current_block_type = select_block_type_12(ctx);
+    	let if_block = current_block_type && current_block_type(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (current_block_type !== (current_block_type = select_block_type_12(ctx))) {
+    				if (if_block) if_block.d(1);
+    				if_block = current_block_type && current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) {
+    				if_block.d(detaching);
+    			}
+
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_45.name,
+    		type: "if",
+    		source: "(698:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (709:45) 
+    function create_if_block_51(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredefalsanivel2.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "paredefalsa");
+    			add_location(img, file$1, 709, 28, 47689);
+    			add_location(th, file$1, 709, 24, 47685);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_51.name,
+    		type: "if",
+    		source: "(709:45) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (707:51) 
+    function create_if_block_50(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "falsa");
+    			add_location(img, file$1, 707, 28, 47561);
+    			add_location(th, file$1, 707, 24, 47557);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_50.name,
+    		type: "if",
+    		source: "(707:51) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (705:51) 
+    function create_if_block_49(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "personagem");
+    			add_location(img, file$1, 705, 43, 47422);
+    			attr_dev(th, "class", "Dante3");
+    			add_location(th, file$1, 705, 24, 47403);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_49.name,
+    		type: "if",
+    		source: "(705:51) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (703:47) 
+    function create_if_block_48(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saidanivel3.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "saida");
+    			add_location(img, file$1, 703, 28, 47267);
+    			add_location(th, file$1, 703, 24, 47263);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_48.name,
+    		type: "if",
+    		source: "(703:47) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (701:45) 
+    function create_if_block_47(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel3.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "parede");
+    			add_location(img, file$1, 701, 28, 47129);
+    			add_location(th, file$1, 701, 24, 47125);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_47.name,
+    		type: "if",
+    		source: "(701:45) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (699:20) {#if elementos == 0}
+    function create_if_block_46(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel3.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "chao");
+    			add_location(img, file$1, 699, 29, 46997);
+    			add_location(th, file$1, 699, 24, 46992);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_46.name,
+    		type: "if",
+    		source: "(699:20) {#if elementos == 0}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (697:16) {#each linhas as elementos,j}
+    function create_each_block_13(ctx) {
+    	let if_block_anchor;
+    	let if_block = /*LimiteX*/ ctx[7] <= /*j*/ ctx[40] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[40] && create_if_block_45(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (/*LimiteX*/ ctx[7] <= /*j*/ ctx[40] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[40]) {
+    				if (if_block) {
+    					if_block.p(ctx, dirty);
+    				} else {
+    					if_block = create_if_block_45(ctx);
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			} else if (if_block) {
+    				if_block.d(1);
+    				if_block = null;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_13.name,
+    		type: "each",
+    		source: "(697:16) {#each linhas as elementos,j}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (694:8) {#each mapa3 as linhas,i}
+    function create_each_block_12(ctx) {
+    	let if_block_anchor;
+    	let if_block = /*LimiteY*/ ctx[8] <= /*i*/ ctx[37] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[37] && create_if_block_44(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (/*LimiteY*/ ctx[8] <= /*i*/ ctx[37] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[37]) {
+    				if (if_block) {
+    					if_block.p(ctx, dirty);
+    				} else {
+    					if_block = create_if_block_44(ctx);
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			} else if (if_block) {
+    				if_block.d(1);
+    				if_block = null;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_12.name,
+    		type: "each",
+    		source: "(694:8) {#each mapa3 as linhas,i}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (652:8) {:else}
+    function create_else_block_2(ctx) {
+    	let p0;
+    	let t2;
+    	let p1;
+    	let t4;
+    	let p2;
+    	let t6;
+    	let p3;
+    	let t8;
+    	let p4;
+    	let t10;
+    	let p5;
+    	let t12;
+    	let p6;
+    	let t13;
+    	let t14;
+    	let t15;
+    	let input;
+    	let t16;
+    	let each_1_anchor;
+    	let mounted;
+    	let dispose;
+    	let each_value_10 = /*mapa2*/ ctx[4];
+    	validate_each_argument(each_value_10);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_10.length; i += 1) {
+    		each_blocks[i] = create_each_block_10(get_each_context_10(ctx, each_value_10, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			p0 = element("p");
+    			p0.textContent = `${/*TempoEnigma*/ ctx[20]()}${/*ResertarContador*/ ctx[21]()}`;
+    			t2 = space();
+    			p1 = element("p");
+    			p1.textContent = "Gostei de você, jovem.";
+    			t4 = space();
+    			p2 = element("p");
+    			p2.textContent = "Como pôde perceber, nem tudo é o que parece.";
+    			t6 = space();
+    			p3 = element("p");
+    			p3.textContent = "Espero não acostuma-lo mal, mas por enquanto vou aconselha-lo a não confiar tanto no que seus olhos vêem.";
+    			t8 = space();
+    			p4 = element("p");
+    			p4.textContent = "Paredes falsas podem parecer algo impensável para humanos, mas não me compare com seres como vocês.";
+    			t10 = space();
+    			p5 = element("p");
+    			p5.textContent = "Poder suficiente para esmagar navios e quebrar telhados mas mesmo assim tenho medo do sol. O que eu sou?";
+    			t12 = space();
+    			p6 = element("p");
+    			t13 = text(/*contador*/ ctx[13]);
+    			t14 = text("s");
+    			t15 = space();
+    			input = element("input");
+    			t16 = space();
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			each_1_anchor = empty();
+    			attr_dev(p0, "class", "textofutil");
+    			add_location(p0, file$1, 652, 8, 44608);
+    			attr_dev(p1, "class", "Enigma");
+    			add_location(p1, file$1, 653, 8, 44679);
+    			attr_dev(p2, "class", "Enigma");
+    			add_location(p2, file$1, 654, 8, 44733);
+    			attr_dev(p3, "class", "Enigma");
+    			add_location(p3, file$1, 655, 8, 44809);
+    			attr_dev(p4, "class", "Enigma");
+    			add_location(p4, file$1, 656, 8, 44946);
+    			attr_dev(p5, "class", "Enigma");
+    			add_location(p5, file$1, 657, 8, 45077);
+    			attr_dev(p6, "class", "Contador");
+    			add_location(p6, file$1, 658, 8, 45213);
+    			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
+    			attr_dev(input, "class", "RespostaEnigma");
+    			add_location(input, file$1, 659, 8, 45258);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p0, anchor);
+    			insert_dev(target, t2, anchor);
+    			insert_dev(target, p1, anchor);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, p2, anchor);
+    			insert_dev(target, t6, anchor);
+    			insert_dev(target, p3, anchor);
+    			insert_dev(target, t8, anchor);
+    			insert_dev(target, p4, anchor);
+    			insert_dev(target, t10, anchor);
+    			insert_dev(target, p5, anchor);
+    			insert_dev(target, t12, anchor);
+    			insert_dev(target, p6, anchor);
+    			append_dev(p6, t13);
+    			append_dev(p6, t14);
+    			insert_dev(target, t15, anchor);
+    			insert_dev(target, input, anchor);
+    			set_input_value(input, /*PalavraChave*/ ctx[11]);
+    			insert_dev(target, t16, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(target, anchor);
+    			}
+
+    			insert_dev(target, each_1_anchor, anchor);
+
+    			if (!mounted) {
+    				dispose = [
+    					listen_dev(input, "input", /*input_input_handler_2*/ ctx[24]),
+    					listen_dev(
+    						input,
+    						"keydown",
+    						function () {
+    							if (is_function(/*Alterando*/ ctx[19](/*PalavraChave*/ ctx[11] == "GELO", /*MudandoDeFase*/ ctx[9]))) /*Alterando*/ ctx[19](/*PalavraChave*/ ctx[11] == "GELO", /*MudandoDeFase*/ ctx[9]).apply(this, arguments);
+    						},
+    						false,
+    						false,
+    						false
+    					)
+    				];
+
+    				mounted = true;
+    			}
+    		},
+    		p: function update(new_ctx, dirty) {
+    			ctx = new_ctx;
+    			if (dirty[0] & /*contador*/ 8192) set_data_dev(t13, /*contador*/ ctx[13]);
+
+    			if (dirty[0] & /*PalavraChave*/ 2048 && input.value !== /*PalavraChave*/ ctx[11]) {
+    				set_input_value(input, /*PalavraChave*/ ctx[11]);
+    			}
+
+    			if (dirty[0] & /*mapa2*/ 16) {
+    				each_value_10 = /*mapa2*/ ctx[4];
+    				validate_each_argument(each_value_10);
+    				let i;
+
+    				for (i = 0; i < each_value_10.length; i += 1) {
+    					const child_ctx = get_each_context_10(ctx, each_value_10, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_10(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_10.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p0);
+    			if (detaching) detach_dev(t2);
+    			if (detaching) detach_dev(p1);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(p2);
+    			if (detaching) detach_dev(t6);
+    			if (detaching) detach_dev(p3);
+    			if (detaching) detach_dev(t8);
+    			if (detaching) detach_dev(p4);
+    			if (detaching) detach_dev(t10);
+    			if (detaching) detach_dev(p5);
+    			if (detaching) detach_dev(t12);
+    			if (detaching) detach_dev(p6);
+    			if (detaching) detach_dev(t15);
+    			if (detaching) detach_dev(input);
+    			if (detaching) detach_dev(t16);
+    			destroy_each(each_blocks, detaching);
+    			if (detaching) detach_dev(each_1_anchor);
+    			mounted = false;
+    			run_all(dispose);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block_2.name,
+    		type: "else",
+    		source: "(652:8) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (620:4) {#if !enigma}
+    function create_if_block_27(ctx) {
+    	let p;
+    	let t0_value = clearInterval(/*Tempo*/ ctx[12]) + "";
+    	let t0;
+    	let t1;
+    	let t2_value = /*RenderizandoMapa*/ ctx[16]() + "";
+    	let t2;
+    	let t3;
+    	let t4_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[9]) + "";
+    	let t4;
+    	let t5;
+    	let table;
+    	let each_value_8 = /*mapa2*/ ctx[4];
+    	validate_each_argument(each_value_8);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_8.length; i += 1) {
+    		each_blocks[i] = create_each_block_8(get_each_context_8(ctx, each_value_8, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			t0 = text(t0_value);
+    			t1 = space();
+    			t2 = text(t2_value);
+    			t3 = space();
+    			t4 = text(t4_value);
+    			t5 = space();
+    			table = element("table");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			attr_dev(p, "class", "textofutil");
+    			add_location(p, file$1, 621, 4, 43183);
+    			attr_dev(table, "class", "mapa");
+    			attr_dev(table, "align", "center");
+    			attr_dev(table, "id", "mapanivel2");
+    			add_location(table, file$1, 626, 4, 43315);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    			append_dev(p, t0);
+    			append_dev(p, t1);
+    			append_dev(p, t2);
+    			append_dev(p, t3);
+    			append_dev(p, t4);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, table, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(table, null);
+    			}
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*Tempo*/ 4096 && t0_value !== (t0_value = clearInterval(/*Tempo*/ ctx[12]) + "")) set_data_dev(t0, t0_value);
+    			if (dirty[0] & /*MudandoDeFase*/ 512 && t4_value !== (t4_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[9]) + "")) set_data_dev(t4, t4_value);
+
+    			if (dirty[0] & /*mapa2, LimiteX, Dimensionamento, LimiteY*/ 33168) {
+    				each_value_8 = /*mapa2*/ ctx[4];
+    				validate_each_argument(each_value_8);
+    				let i;
+
+    				for (i = 0; i < each_value_8.length; i += 1) {
+    					const child_ctx = get_each_context_8(ctx, each_value_8, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_8(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(table, null);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_8.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(table);
+    			destroy_each(each_blocks, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_27.name,
+    		type: "if",
+    		source: "(620:4) {#if !enigma}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (674:33) 
+    function create_if_block_41(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredefalsanivel2.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "paredefalsa");
+    			add_location(img, file$1, 674, 16, 46221);
+    			add_location(th, file$1, 674, 12, 46217);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_41.name,
+    		type: "if",
+    		source: "(674:33) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (672:39) 
+    function create_if_block_40(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "falsa");
+    			add_location(img, file$1, 672, 16, 46101);
+    			add_location(th, file$1, 672, 12, 46097);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_40.name,
+    		type: "if",
+    		source: "(672:39) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (670:39) 
+    function create_if_block_39(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			attr_dev(img, "id", "chao1");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel2.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "personagem");
+    			add_location(img, file$1, 670, 16, 45954);
+    			add_location(th, file$1, 670, 12, 45950);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_39.name,
+    		type: "if",
+    		source: "(670:39) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (668:35) 
+    function create_if_block_38(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "saida");
+    			add_location(img, file$1, 668, 16, 45828);
+    			add_location(th, file$1, 668, 12, 45824);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_38.name,
+    		type: "if",
+    		source: "(668:35) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (666:33) 
+    function create_if_block_37(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel2.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "parede");
+    			add_location(img, file$1, 666, 16, 45698);
+    			add_location(th, file$1, 666, 12, 45694);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_37.name,
+    		type: "if",
+    		source: "(666:33) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (664:8) {#if elementos == 0}
+    function create_if_block_36(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			attr_dev(img, "id", "chao1");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel2.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "chao");
+    			add_location(img, file$1, 664, 16, 45563);
+    			add_location(th, file$1, 664, 12, 45559);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_36.name,
+    		type: "if",
+    		source: "(664:8) {#if elementos == 0}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (663:8) {#each linhas as elementos}
+    function create_each_block_11(ctx) {
+    	let if_block_anchor;
+
+    	function select_block_type_10(ctx, dirty) {
+    		if (/*elementos*/ ctx[38] == 0) return create_if_block_36;
+    		if (/*elementos*/ ctx[38] == 1) return create_if_block_37;
+    		if (/*elementos*/ ctx[38] == "Z") return create_if_block_38;
+    		if (/*elementos*/ ctx[38] == "DANTE") return create_if_block_39;
+    		if (/*elementos*/ ctx[38] == "falsa") return create_if_block_40;
+    		if (/*elementos*/ ctx[38] == 7) return create_if_block_41;
+    	}
+
+    	let current_block_type = select_block_type_10(ctx);
+    	let if_block = current_block_type && current_block_type(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (current_block_type !== (current_block_type = select_block_type_10(ctx))) {
+    				if (if_block) if_block.d(1);
+    				if_block = current_block_type && current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) {
+    				if_block.d(detaching);
+    			}
+
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_11.name,
+    		type: "each",
+    		source: "(663:8) {#each linhas as elementos}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (661:8) {#each mapa2 as linhas}
+    function create_each_block_10(ctx) {
+    	let tr;
+    	let t;
+    	let each_value_11 = /*linhas*/ ctx[35];
+    	validate_each_argument(each_value_11);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_11.length; i += 1) {
+    		each_blocks[i] = create_each_block_11(get_each_context_11(ctx, each_value_11, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			tr = element("tr");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			t = space();
+    			attr_dev(tr, "class", "minimapa");
+    			add_location(tr, file$1, 661, 8, 45457);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, tr, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(tr, null);
+    			}
+
+    			append_dev(tr, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*mapa2*/ 16) {
+    				each_value_11 = /*linhas*/ ctx[35];
+    				validate_each_argument(each_value_11);
+    				let i;
+
+    				for (i = 0; i < each_value_11.length; i += 1) {
+    					const child_ctx = get_each_context_11(ctx, each_value_11, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_11(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(tr, t);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_11.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(tr);
+    			destroy_each(each_blocks, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_10.name,
+    		type: "each",
+    		source: "(661:8) {#each mapa2 as linhas}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (629:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+    function create_if_block_28(ctx) {
+    	let tr;
+    	let t;
+    	let each_value_9 = /*linhas*/ ctx[35];
+    	validate_each_argument(each_value_9);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_9.length; i += 1) {
+    		each_blocks[i] = create_each_block_9(get_each_context_9(ctx, each_value_9, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			tr = element("tr");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			t = space();
+    			add_location(tr, file$1, 629, 12, 43483);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, tr, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(tr, null);
+    			}
+
+    			append_dev(tr, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*mapa2, LimiteX, Dimensionamento*/ 32912) {
+    				each_value_9 = /*linhas*/ ctx[35];
+    				validate_each_argument(each_value_9);
+    				let i;
+
+    				for (i = 0; i < each_value_9.length; i += 1) {
+    					const child_ctx = get_each_context_9(ctx, each_value_9, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_9(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(tr, t);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_9.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(tr);
+    			destroy_each(each_blocks, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_28.name,
+    		type: "if",
+    		source: "(629:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (632:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+    function create_if_block_29(ctx) {
+    	let if_block_anchor;
+
+    	function select_block_type_9(ctx, dirty) {
+    		if (/*elementos*/ ctx[38] == 0) return create_if_block_30;
+    		if (/*elementos*/ ctx[38] == 1) return create_if_block_31;
+    		if (/*elementos*/ ctx[38] == "Z") return create_if_block_32;
+    		if (/*elementos*/ ctx[38] == "DANTE") return create_if_block_33;
+    		if (/*elementos*/ ctx[38] == "falsa") return create_if_block_34;
+    		if (/*elementos*/ ctx[38] == 7) return create_if_block_35;
+    	}
+
+    	let current_block_type = select_block_type_9(ctx);
+    	let if_block = current_block_type && current_block_type(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (current_block_type !== (current_block_type = select_block_type_9(ctx))) {
+    				if (if_block) if_block.d(1);
+    				if_block = current_block_type && current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) {
+    				if_block.d(detaching);
+    			}
+
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_29.name,
+    		type: "if",
+    		source: "(632:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (643:45) 
+    function create_if_block_35(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredefalsanivel2.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "paredefalsa");
+    			add_location(img, file$1, 643, 28, 44368);
+    			add_location(th, file$1, 643, 24, 44364);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_35.name,
+    		type: "if",
+    		source: "(643:45) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (641:51) 
+    function create_if_block_34(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "falsa");
+    			add_location(img, file$1, 641, 28, 44240);
+    			add_location(th, file$1, 641, 24, 44236);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_34.name,
+    		type: "if",
+    		source: "(641:51) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (639:51) 
+    function create_if_block_33(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "personagem");
+    			add_location(img, file$1, 639, 43, 44101);
+    			attr_dev(th, "class", "Dante2");
+    			add_location(th, file$1, 639, 24, 44082);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_33.name,
+    		type: "if",
+    		source: "(639:51) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (637:47) 
+    function create_if_block_32(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "saida");
+    			add_location(img, file$1, 637, 28, 43952);
+    			add_location(th, file$1, 637, 24, 43948);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_32.name,
+    		type: "if",
+    		source: "(637:47) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (635:45) 
+    function create_if_block_31(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel2.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "parede");
+    			add_location(img, file$1, 635, 28, 43814);
+    			add_location(th, file$1, 635, 24, 43810);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_31.name,
+    		type: "if",
+    		source: "(635:45) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (633:20) {#if elementos == 0}
+    function create_if_block_30(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel2.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "chao");
+    			add_location(img, file$1, 633, 28, 43682);
+    			add_location(th, file$1, 633, 24, 43678);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_30.name,
+    		type: "if",
+    		source: "(633:20) {#if elementos == 0}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (631:16) {#each linhas as elementos,j}
+    function create_each_block_9(ctx) {
+    	let if_block_anchor;
+    	let if_block = /*LimiteX*/ ctx[7] <= /*j*/ ctx[40] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[40] && create_if_block_29(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (/*LimiteX*/ ctx[7] <= /*j*/ ctx[40] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[40]) {
+    				if (if_block) {
+    					if_block.p(ctx, dirty);
+    				} else {
+    					if_block = create_if_block_29(ctx);
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			} else if (if_block) {
+    				if_block.d(1);
+    				if_block = null;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_9.name,
+    		type: "each",
+    		source: "(631:16) {#each linhas as elementos,j}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (628:8) {#each mapa2 as linhas,i}
+    function create_each_block_8(ctx) {
+    	let if_block_anchor;
+    	let if_block = /*LimiteY*/ ctx[8] <= /*i*/ ctx[37] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[37] && create_if_block_28(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (/*LimiteY*/ ctx[8] <= /*i*/ ctx[37] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[37]) {
+    				if (if_block) {
+    					if_block.p(ctx, dirty);
+    				} else {
+    					if_block = create_if_block_28(ctx);
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			} else if (if_block) {
+    				if_block.d(1);
+    				if_block = null;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_8.name,
+    		type: "each",
+    		source: "(628:8) {#each mapa2 as linhas,i}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (589:8) {:else}
+    function create_else_block_1(ctx) {
+    	let p0;
+    	let t2;
+    	let p1;
+    	let t4;
+    	let p2;
+    	let t6;
+    	let p3;
+    	let t8;
+    	let p4;
+    	let t10;
+    	let p5;
+    	let t11;
+    	let t12;
+    	let t13;
+    	let input;
+    	let t14;
+    	let each_1_anchor;
+    	let mounted;
+    	let dispose;
+    	let each_value_6 = /*mapa1*/ ctx[3];
+    	validate_each_argument(each_value_6);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_6.length; i += 1) {
+    		each_blocks[i] = create_each_block_6(get_each_context_6(ctx, each_value_6, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			p0 = element("p");
+    			p0.textContent = `${/*TempoEnigma*/ ctx[20]()}${/*ResertarContador*/ ctx[21]()}`;
+    			t2 = space();
+    			p1 = element("p");
+    			p1.textContent = "O que achou das provações resultantes de sua ações precipitadas?";
+    			t4 = space();
+    			p2 = element("p");
+    			p2.textContent = "Deveria tomar cuidado, este não é um labirinto comum e os guardiões deste lugar não gostam de visitantes inesperados.";
+    			t6 = space();
+    			p3 = element("p");
+    			p3.textContent = "Responda-me cautelosamente, deuses não costumam ser piedosos como tanto propagam.";
+    			t8 = space();
+    			p4 = element("p");
+    			p4.textContent = "Fui levado para um quarto escuro e incendiado. Eu chorei e então minha cabeça foi cortada. Quem sou?";
+    			t10 = space();
+    			p5 = element("p");
+    			t11 = text(/*contador*/ ctx[13]);
+    			t12 = text("s");
+    			t13 = space();
+    			input = element("input");
+    			t14 = space();
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			each_1_anchor = empty();
+    			attr_dev(p0, "class", "textofutil");
+    			add_location(p0, file$1, 589, 8, 41489);
+    			attr_dev(p1, "class", "Enigma");
+    			add_location(p1, file$1, 590, 8, 41560);
+    			attr_dev(p2, "class", "Enigma");
+    			add_location(p2, file$1, 591, 8, 41656);
+    			attr_dev(p3, "class", "Enigma");
+    			add_location(p3, file$1, 592, 8, 41805);
+    			attr_dev(p4, "class", "Enigma");
+    			add_location(p4, file$1, 593, 8, 41918);
+    			attr_dev(p5, "class", "Contador");
+    			add_location(p5, file$1, 594, 8, 42050);
+    			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
+    			attr_dev(input, "class", "RespostaEnigma");
+    			add_location(input, file$1, 595, 4, 42091);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p0, anchor);
+    			insert_dev(target, t2, anchor);
+    			insert_dev(target, p1, anchor);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, p2, anchor);
+    			insert_dev(target, t6, anchor);
+    			insert_dev(target, p3, anchor);
+    			insert_dev(target, t8, anchor);
+    			insert_dev(target, p4, anchor);
+    			insert_dev(target, t10, anchor);
+    			insert_dev(target, p5, anchor);
+    			append_dev(p5, t11);
+    			append_dev(p5, t12);
+    			insert_dev(target, t13, anchor);
+    			insert_dev(target, input, anchor);
+    			set_input_value(input, /*PalavraChave*/ ctx[11]);
+    			insert_dev(target, t14, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(target, anchor);
+    			}
+
+    			insert_dev(target, each_1_anchor, anchor);
+
+    			if (!mounted) {
+    				dispose = [
+    					listen_dev(input, "input", /*input_input_handler_1*/ ctx[23]),
+    					listen_dev(
+    						input,
+    						"keydown",
+    						function () {
+    							if (is_function(/*Alterando*/ ctx[19](/*PalavraChave*/ ctx[11] == "VELA", /*MudandoDeFase*/ ctx[9]))) /*Alterando*/ ctx[19](/*PalavraChave*/ ctx[11] == "VELA", /*MudandoDeFase*/ ctx[9]).apply(this, arguments);
+    						},
+    						false,
+    						false,
+    						false
+    					)
+    				];
+
+    				mounted = true;
+    			}
+    		},
+    		p: function update(new_ctx, dirty) {
+    			ctx = new_ctx;
+    			if (dirty[0] & /*contador*/ 8192) set_data_dev(t11, /*contador*/ ctx[13]);
+
+    			if (dirty[0] & /*PalavraChave*/ 2048 && input.value !== /*PalavraChave*/ ctx[11]) {
+    				set_input_value(input, /*PalavraChave*/ ctx[11]);
+    			}
+
+    			if (dirty[0] & /*mapa1*/ 8) {
+    				each_value_6 = /*mapa1*/ ctx[3];
+    				validate_each_argument(each_value_6);
+    				let i;
+
+    				for (i = 0; i < each_value_6.length; i += 1) {
+    					const child_ctx = get_each_context_6(ctx, each_value_6, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_6(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_6.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p0);
+    			if (detaching) detach_dev(t2);
+    			if (detaching) detach_dev(p1);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(p2);
+    			if (detaching) detach_dev(t6);
+    			if (detaching) detach_dev(p3);
+    			if (detaching) detach_dev(t8);
+    			if (detaching) detach_dev(p4);
+    			if (detaching) detach_dev(t10);
+    			if (detaching) detach_dev(p5);
+    			if (detaching) detach_dev(t13);
+    			if (detaching) detach_dev(input);
+    			if (detaching) detach_dev(t14);
+    			destroy_each(each_blocks, detaching);
+    			if (detaching) detach_dev(each_1_anchor);
+    			mounted = false;
+    			run_all(dispose);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block_1.name,
+    		type: "else",
+    		source: "(589:8) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (559:4) {#if !enigma}
+    function create_if_block_13(ctx) {
+    	let p;
+    	let t0_value = clearInterval(/*Tempo*/ ctx[12]) + "";
+    	let t0;
+    	let t1;
+    	let t2_value = /*RenderizandoMapa*/ ctx[16]() + "";
+    	let t2;
+    	let t3;
+    	let t4_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[9]) + "";
+    	let t4;
+    	let t5;
+    	let table;
+    	let each_value_4 = /*mapa1*/ ctx[3];
+    	validate_each_argument(each_value_4);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_4.length; i += 1) {
+    		each_blocks[i] = create_each_block_4(get_each_context_4(ctx, each_value_4, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			t0 = text(t0_value);
+    			t1 = space();
+    			t2 = text(t2_value);
+    			t3 = space();
+    			t4 = text(t4_value);
+    			t5 = space();
+    			table = element("table");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			attr_dev(p, "class", "textofutil");
+    			add_location(p, file$1, 560, 4, 40205);
+    			attr_dev(table, "class", "mapa");
+    			attr_dev(table, "align", "center");
+    			attr_dev(table, "id", "mapanivel1");
+    			add_location(table, file$1, 565, 4, 40337);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    			append_dev(p, t0);
+    			append_dev(p, t1);
+    			append_dev(p, t2);
+    			append_dev(p, t3);
+    			append_dev(p, t4);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, table, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(table, null);
+    			}
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*Tempo*/ 4096 && t0_value !== (t0_value = clearInterval(/*Tempo*/ ctx[12]) + "")) set_data_dev(t0, t0_value);
+    			if (dirty[0] & /*MudandoDeFase*/ 512 && t4_value !== (t4_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[9]) + "")) set_data_dev(t4, t4_value);
+
+    			if (dirty[0] & /*mapa1, LimiteX, Dimensionamento, LimiteY*/ 33160) {
+    				each_value_4 = /*mapa1*/ ctx[3];
+    				validate_each_argument(each_value_4);
+    				let i;
+
+    				for (i = 0; i < each_value_4.length; i += 1) {
+    					const child_ctx = get_each_context_4(ctx, each_value_4, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_4(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(table, null);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_4.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(table);
+    			destroy_each(each_blocks, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_13.name,
+    		type: "if",
+    		source: "(559:4) {#if !enigma}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (608:39) 
+    function create_if_block_25(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "falsa");
+    			add_location(img, file$1, 608, 16, 42925);
+    			add_location(th, file$1, 608, 12, 42921);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_25.name,
+    		type: "if",
+    		source: "(608:39) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (606:39) 
+    function create_if_block_24(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			attr_dev(img, "id", "chao1");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel1.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "personagem");
+    			add_location(img, file$1, 606, 16, 42779);
+    			add_location(th, file$1, 606, 12, 42775);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_24.name,
+    		type: "if",
+    		source: "(606:39) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (604:35) 
+    function create_if_block_23(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "saida");
+    			add_location(img, file$1, 604, 16, 42653);
+    			add_location(th, file$1, 604, 12, 42649);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_23.name,
+    		type: "if",
+    		source: "(604:35) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (602:33) 
+    function create_if_block_22(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel1.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "parede");
+    			add_location(img, file$1, 602, 16, 42523);
+    			add_location(th, file$1, 602, 12, 42519);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_22.name,
+    		type: "if",
+    		source: "(602:33) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (600:8) {#if elementos == 0}
+    function create_if_block_21(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			attr_dev(img, "id", "chao1");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel1.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "chao");
+    			add_location(img, file$1, 600, 16, 42388);
+    			add_location(th, file$1, 600, 12, 42384);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_21.name,
+    		type: "if",
+    		source: "(600:8) {#if elementos == 0}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (599:8) {#each linhas as elementos}
+    function create_each_block_7(ctx) {
+    	let if_block_anchor;
+
+    	function select_block_type_7(ctx, dirty) {
+    		if (/*elementos*/ ctx[38] == 0) return create_if_block_21;
+    		if (/*elementos*/ ctx[38] == 1) return create_if_block_22;
+    		if (/*elementos*/ ctx[38] == "Y") return create_if_block_23;
+    		if (/*elementos*/ ctx[38] == "DANTE") return create_if_block_24;
+    		if (/*elementos*/ ctx[38] == "falsa") return create_if_block_25;
+    	}
+
+    	let current_block_type = select_block_type_7(ctx);
+    	let if_block = current_block_type && current_block_type(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (current_block_type !== (current_block_type = select_block_type_7(ctx))) {
+    				if (if_block) if_block.d(1);
+    				if_block = current_block_type && current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) {
+    				if_block.d(detaching);
+    			}
+
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_7.name,
+    		type: "each",
+    		source: "(599:8) {#each linhas as elementos}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (597:4) {#each mapa1 as linhas}
+    function create_each_block_6(ctx) {
+    	let tr;
+    	let t;
+    	let each_value_7 = /*linhas*/ ctx[35];
+    	validate_each_argument(each_value_7);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_7.length; i += 1) {
+    		each_blocks[i] = create_each_block_7(get_each_context_7(ctx, each_value_7, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			tr = element("tr");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			t = space();
+    			attr_dev(tr, "class", "minimapa");
+    			add_location(tr, file$1, 597, 4, 42282);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, tr, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(tr, null);
+    			}
+
+    			append_dev(tr, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*mapa1*/ 8) {
+    				each_value_7 = /*linhas*/ ctx[35];
+    				validate_each_argument(each_value_7);
+    				let i;
+
+    				for (i = 0; i < each_value_7.length; i += 1) {
+    					const child_ctx = get_each_context_7(ctx, each_value_7, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_7(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(tr, t);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_7.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(tr);
+    			destroy_each(each_blocks, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_6.name,
+    		type: "each",
+    		source: "(597:4) {#each mapa1 as linhas}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (568:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+    function create_if_block_14(ctx) {
+    	let tr;
+    	let t;
+    	let each_value_5 = /*linhas*/ ctx[35];
+    	validate_each_argument(each_value_5);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_5.length; i += 1) {
+    		each_blocks[i] = create_each_block_5(get_each_context_5(ctx, each_value_5, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			tr = element("tr");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			t = space();
+    			add_location(tr, file$1, 568, 12, 40505);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, tr, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(tr, null);
+    			}
+
+    			append_dev(tr, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*mapa1, LimiteX, Dimensionamento*/ 32904) {
+    				each_value_5 = /*linhas*/ ctx[35];
+    				validate_each_argument(each_value_5);
+    				let i;
+
+    				for (i = 0; i < each_value_5.length; i += 1) {
+    					const child_ctx = get_each_context_5(ctx, each_value_5, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_5(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(tr, t);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_5.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(tr);
+    			destroy_each(each_blocks, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_14.name,
+    		type: "if",
+    		source: "(568:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (571:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+    function create_if_block_15(ctx) {
+    	let if_block_anchor;
+
+    	function select_block_type_6(ctx, dirty) {
+    		if (/*elementos*/ ctx[38] == 0) return create_if_block_16;
+    		if (/*elementos*/ ctx[38] == 1) return create_if_block_17;
+    		if (/*elementos*/ ctx[38] == "Y") return create_if_block_18;
+    		if (/*elementos*/ ctx[38] == "DANTE") return create_if_block_19;
+    		if (/*elementos*/ ctx[38] == "falsa") return create_if_block_20;
+    	}
+
+    	let current_block_type = select_block_type_6(ctx);
+    	let if_block = current_block_type && current_block_type(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (current_block_type !== (current_block_type = select_block_type_6(ctx))) {
+    				if (if_block) if_block.d(1);
+    				if_block = current_block_type && current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) {
+    				if_block.d(detaching);
+    			}
+
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_15.name,
+    		type: "if",
+    		source: "(571:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (580:51) 
+    function create_if_block_20(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "falsa");
+    			add_location(img, file$1, 580, 28, 41263);
+    			add_location(th, file$1, 580, 24, 41259);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_20.name,
+    		type: "if",
+    		source: "(580:51) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (578:51) 
+    function create_if_block_19(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "personagem");
+    			add_location(img, file$1, 578, 43, 41124);
+    			attr_dev(th, "class", "Dante1");
+    			add_location(th, file$1, 578, 24, 41105);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_19.name,
+    		type: "if",
+    		source: "(578:51) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (576:47) 
+    function create_if_block_18(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "saida");
+    			add_location(img, file$1, 576, 28, 40975);
+    			add_location(th, file$1, 576, 24, 40971);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_18.name,
+    		type: "if",
+    		source: "(576:47) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (574:45) 
+    function create_if_block_17(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredenivel1.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "parede");
+    			add_location(img, file$1, 574, 28, 40837);
+    			add_location(th, file$1, 574, 24, 40833);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_17.name,
+    		type: "if",
+    		source: "(574:45) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (572:20) {#if elementos == 0}
+    function create_if_block_16(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaonivel1.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "chao");
+    			add_location(img, file$1, 572, 29, 40705);
+    			add_location(th, file$1, 572, 24, 40700);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_16.name,
+    		type: "if",
+    		source: "(572:20) {#if elementos == 0}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (570:16) {#each linhas as elementos,j}
+    function create_each_block_5(ctx) {
+    	let if_block_anchor;
+    	let if_block = /*LimiteX*/ ctx[7] <= /*j*/ ctx[40] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[40] && create_if_block_15(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (/*LimiteX*/ ctx[7] <= /*j*/ ctx[40] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[40]) {
+    				if (if_block) {
+    					if_block.p(ctx, dirty);
+    				} else {
+    					if_block = create_if_block_15(ctx);
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			} else if (if_block) {
+    				if_block.d(1);
+    				if_block = null;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_5.name,
+    		type: "each",
+    		source: "(570:16) {#each linhas as elementos,j}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (567:8) {#each mapa1 as linhas,i}
+    function create_each_block_4(ctx) {
+    	let if_block_anchor;
+    	let if_block = /*LimiteY*/ ctx[8] <= /*i*/ ctx[37] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[37] && create_if_block_14(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (/*LimiteY*/ ctx[8] <= /*i*/ ctx[37] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[37]) {
+    				if (if_block) {
+    					if_block.p(ctx, dirty);
+    				} else {
+    					if_block = create_if_block_14(ctx);
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			} else if (if_block) {
+    				if_block.d(1);
+    				if_block = null;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_4.name,
+    		type: "each",
+    		source: "(567:8) {#each mapa1 as linhas,i}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (529:8) {:else}
+    function create_else_block(ctx) {
+    	let p0;
+    	let t1;
+    	let p1;
+    	let t3;
+    	let p2;
+    	let t5;
+    	let p3;
+    	let t7;
+    	let p4;
+    	let t9;
+    	let p5;
+    	let t11;
+    	let input;
+    	let t12;
+    	let each_1_anchor;
+    	let mounted;
+    	let dispose;
+    	let each_value_2 = /*mapa0*/ ctx[2];
+    	validate_each_argument(each_value_2);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_2.length; i += 1) {
+    		each_blocks[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			p0 = element("p");
+    			p0.textContent = "Sempre que passar de fase, haverá um enigma a ser solucionado.";
+    			t1 = space();
+    			p1 = element("p");
+    			p1.textContent = "Lembre-se: Existe um limite de tempo para resolver os enigmas.";
+    			t3 = space();
+    			p2 = element("p");
+    			p2.textContent = "Ao atingir o limite de tempo para resolver o enigma em qualquer nível você voltará para o primeiro.";
+    			t5 = space();
+    			p3 = element("p");
+    			p3.textContent = "OBS: Só serão aceitas letras maiúsculas nas respostas de todos os enigmas.";
+    			t7 = space();
+    			p4 = element("p");
+    			p4.textContent = "Nenhuma das palavras-chave contém qualquer acento.";
+    			t9 = space();
+    			p5 = element("p");
+    			p5.textContent = "Após compreender o funcionamento do Minos Labyrinth, digite: \"OK\" e poderá prosseguir para a primeira fase.";
+    			t11 = space();
+    			input = element("input");
+    			t12 = space();
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			each_1_anchor = empty();
+    			attr_dev(p0, "class", "Enigma");
+    			add_location(p0, file$1, 530, 8, 38555);
+    			attr_dev(p1, "class", "Enigma");
+    			add_location(p1, file$1, 531, 8, 38650);
+    			attr_dev(p2, "class", "Enigma");
+    			add_location(p2, file$1, 532, 8, 38745);
+    			attr_dev(p3, "class", "Enigma");
+    			add_location(p3, file$1, 533, 8, 38876);
+    			attr_dev(p4, "class", "Enigma");
+    			add_location(p4, file$1, 534, 8, 38982);
+    			attr_dev(p5, "class", "Enigma");
+    			add_location(p5, file$1, 535, 8, 39064);
+    			attr_dev(input, "placeholder", "APENAS LETRAS MAIUSCULAS");
+    			attr_dev(input, "class", "RespostaEnigma");
+    			add_location(input, file$1, 536, 8, 39203);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p0, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, p1, anchor);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, p2, anchor);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, p3, anchor);
+    			insert_dev(target, t7, anchor);
+    			insert_dev(target, p4, anchor);
+    			insert_dev(target, t9, anchor);
+    			insert_dev(target, p5, anchor);
+    			insert_dev(target, t11, anchor);
+    			insert_dev(target, input, anchor);
+    			set_input_value(input, /*PalavraChave*/ ctx[11]);
+    			insert_dev(target, t12, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(target, anchor);
+    			}
+
+    			insert_dev(target, each_1_anchor, anchor);
+
+    			if (!mounted) {
+    				dispose = [
+    					listen_dev(input, "input", /*input_input_handler*/ ctx[22]),
+    					listen_dev(
+    						input,
+    						"keydown",
+    						function () {
+    							if (is_function(/*Alterando*/ ctx[19](/*PalavraChave*/ ctx[11] == "OK", /*MudandoDeFase*/ ctx[9]))) /*Alterando*/ ctx[19](/*PalavraChave*/ ctx[11] == "OK", /*MudandoDeFase*/ ctx[9]).apply(this, arguments);
+    						},
+    						false,
+    						false,
+    						false
+    					)
+    				];
+
+    				mounted = true;
+    			}
+    		},
+    		p: function update(new_ctx, dirty) {
+    			ctx = new_ctx;
+
+    			if (dirty[0] & /*PalavraChave*/ 2048 && input.value !== /*PalavraChave*/ ctx[11]) {
+    				set_input_value(input, /*PalavraChave*/ ctx[11]);
+    			}
+
+    			if (dirty[0] & /*mapa0*/ 4) {
+    				each_value_2 = /*mapa0*/ ctx[2];
+    				validate_each_argument(each_value_2);
+    				let i;
+
+    				for (i = 0; i < each_value_2.length; i += 1) {
+    					const child_ctx = get_each_context_2(ctx, each_value_2, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_2(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_2.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p0);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(p1);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(p2);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(p3);
+    			if (detaching) detach_dev(t7);
+    			if (detaching) detach_dev(p4);
+    			if (detaching) detach_dev(t9);
+    			if (detaching) detach_dev(p5);
+    			if (detaching) detach_dev(t11);
+    			if (detaching) detach_dev(input);
+    			if (detaching) detach_dev(t12);
+    			destroy_each(each_blocks, detaching);
+    			if (detaching) detach_dev(each_1_anchor);
+    			mounted = false;
+    			run_all(dispose);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block.name,
+    		type: "else",
+    		source: "(529:8) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (495:4) {#if !enigma}
+    function create_if_block_1$1(ctx) {
+    	let p;
+    	let t0_value = /*RenderizandoMapa*/ ctx[16]() + "";
+    	let t0;
+    	let t1;
+    	let t2_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[9]) + "";
+    	let t2;
+    	let t3;
+    	let div;
+    	let ul0;
+    	let h2;
+    	let t5;
+    	let ul1;
+    	let t7;
+    	let ul2;
+    	let t9;
+    	let ul3;
+    	let t11;
+    	let ul4;
+    	let t13;
+    	let table;
+    	let each_value = /*mapa0*/ ctx[2];
+    	validate_each_argument(each_value);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value.length; i += 1) {
+    		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			t0 = text(t0_value);
+    			t1 = space();
+    			t2 = text(t2_value);
+    			t3 = space();
+    			div = element("div");
+    			ul0 = element("ul");
+    			h2 = element("h2");
+    			h2.textContent = "Como jogar?";
+    			t5 = space();
+    			ul1 = element("ul");
+    			ul1.textContent = "↟ ou W para Cima";
+    			t7 = space();
+    			ul2 = element("ul");
+    			ul2.textContent = "↡ ou S para Baixo";
+    			t9 = space();
+    			ul3 = element("ul");
+    			ul3.textContent = "↠ ou D para a Direita";
+    			t11 = space();
+    			ul4 = element("ul");
+    			ul4.textContent = "↞ ou A para a Esquerda";
+    			t13 = space();
+    			table = element("table");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			attr_dev(p, "class", "textofutil");
+    			add_location(p, file$1, 496, 4, 37104);
+    			attr_dev(h2, "class", "h2");
+    			add_location(h2, file$1, 501, 12, 37259);
+    			add_location(ul0, file$1, 501, 8, 37255);
+    			attr_dev(ul1, "class", "info");
+    			add_location(ul1, file$1, 502, 8, 37305);
+    			attr_dev(ul2, "class", "info");
+    			add_location(ul2, file$1, 503, 8, 37353);
+    			attr_dev(ul3, "class", "info");
+    			add_location(ul3, file$1, 504, 8, 37402);
+    			attr_dev(ul4, "class", "info");
+    			add_location(ul4, file$1, 505, 8, 37455);
+    			attr_dev(div, "id", "DicaTutorial");
+    			attr_dev(div, "class", "aimds");
+    			add_location(div, file$1, 500, 4, 37208);
+    			attr_dev(table, "class", "mapa");
+    			attr_dev(table, "align", "center");
+    			attr_dev(table, "id", "mapatutorial");
+    			add_location(table, file$1, 507, 4, 37517);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    			append_dev(p, t0);
+    			append_dev(p, t1);
+    			append_dev(p, t2);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, div, anchor);
+    			append_dev(div, ul0);
+    			append_dev(ul0, h2);
+    			append_dev(div, t5);
+    			append_dev(div, ul1);
+    			append_dev(div, t7);
+    			append_dev(div, ul2);
+    			append_dev(div, t9);
+    			append_dev(div, ul3);
+    			append_dev(div, t11);
+    			append_dev(div, ul4);
+    			insert_dev(target, t13, anchor);
+    			insert_dev(target, table, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(table, null);
+    			}
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*MudandoDeFase*/ 512 && t2_value !== (t2_value = /*DeterminandoEixos*/ ctx[17](/*MudandoDeFase*/ ctx[9]) + "")) set_data_dev(t2, t2_value);
+
+    			if (dirty[0] & /*mapa0, LimiteX, Dimensionamento, LimiteY*/ 33156) {
+    				each_value = /*mapa0*/ ctx[2];
+    				validate_each_argument(each_value);
+    				let i;
+
+    				for (i = 0; i < each_value.length; i += 1) {
+    					const child_ctx = get_each_context(ctx, each_value, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(table, null);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(div);
+    			if (detaching) detach_dev(t13);
+    			if (detaching) detach_dev(table);
+    			destroy_each(each_blocks, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_1$1.name,
+    		type: "if",
+    		source: "(495:4) {#if !enigma}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (547:39) 
+    function create_if_block_11(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			attr_dev(img, "id", "chao0");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaotutorial.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "personagem");
+    			add_location(img, file$1, 547, 16, 39913);
+    			add_location(th, file$1, 547, 12, 39909);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_11.name,
+    		type: "if",
+    		source: "(547:39) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (545:35) 
+    function create_if_block_10(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "saida");
+    			add_location(img, file$1, 545, 16, 39787);
+    			add_location(th, file$1, 545, 12, 39783);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_10.name,
+    		type: "if",
+    		source: "(545:35) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (543:33) 
+    function create_if_block_9(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredetutorial.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "parede");
+    			add_location(img, file$1, 543, 16, 39655);
+    			add_location(th, file$1, 543, 12, 39651);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_9.name,
+    		type: "if",
+    		source: "(543:33) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (541:12) {#if elementos == 0}
+    function create_if_block_8(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			attr_dev(img, "class", "imgmini");
+    			attr_dev(img, "id", "chao0");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaotutorial.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "chao");
+    			add_location(img, file$1, 541, 16, 39518);
+    			add_location(th, file$1, 541, 12, 39514);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_8.name,
+    		type: "if",
+    		source: "(541:12) {#if elementos == 0}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (540:12) {#each linhas as elementos}
+    function create_each_block_3(ctx) {
+    	let if_block_anchor;
+
+    	function select_block_type_4(ctx, dirty) {
+    		if (/*elementos*/ ctx[38] == 0) return create_if_block_8;
+    		if (/*elementos*/ ctx[38] == 1) return create_if_block_9;
+    		if (/*elementos*/ ctx[38] == "X") return create_if_block_10;
+    		if (/*elementos*/ ctx[38] == "DANTE") return create_if_block_11;
+    	}
+
+    	let current_block_type = select_block_type_4(ctx);
+    	let if_block = current_block_type && current_block_type(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (current_block_type !== (current_block_type = select_block_type_4(ctx))) {
+    				if (if_block) if_block.d(1);
+    				if_block = current_block_type && current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) {
+    				if_block.d(detaching);
+    			}
+
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_3.name,
+    		type: "each",
+    		source: "(540:12) {#each linhas as elementos}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (538:8) {#each mapa0 as linhas}
+    function create_each_block_2(ctx) {
+    	let tr;
+    	let t;
+    	let each_value_3 = /*linhas*/ ctx[35];
+    	validate_each_argument(each_value_3);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_3.length; i += 1) {
+    		each_blocks[i] = create_each_block_3(get_each_context_3(ctx, each_value_3, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			tr = element("tr");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			t = space();
+    			attr_dev(tr, "class", "minimapa");
+    			add_location(tr, file$1, 538, 12, 39404);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, tr, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(tr, null);
+    			}
+
+    			append_dev(tr, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*mapa0*/ 4) {
+    				each_value_3 = /*linhas*/ ctx[35];
+    				validate_each_argument(each_value_3);
+    				let i;
+
+    				for (i = 0; i < each_value_3.length; i += 1) {
+    					const child_ctx = get_each_context_3(ctx, each_value_3, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_3(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(tr, t);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_3.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(tr);
+    			destroy_each(each_blocks, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_2.name,
+    		type: "each",
+    		source: "(538:8) {#each mapa0 as linhas}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (510:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
+    function create_if_block_2$1(ctx) {
+    	let tr;
+    	let t;
+    	let each_value_1 = /*linhas*/ ctx[35];
+    	validate_each_argument(each_value_1);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_1.length; i += 1) {
+    		each_blocks[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			tr = element("tr");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			t = space();
+    			add_location(tr, file$1, 510, 12, 37687);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, tr, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(tr, null);
+    			}
+
+    			append_dev(tr, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*mapa0, LimiteX, Dimensionamento*/ 32900) {
+    				each_value_1 = /*linhas*/ ctx[35];
+    				validate_each_argument(each_value_1);
+    				let i;
+
+    				for (i = 0; i < each_value_1.length; i += 1) {
+    					const child_ctx = get_each_context_1(ctx, each_value_1, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_1(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(tr, t);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_1.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(tr);
+    			destroy_each(each_blocks, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_2$1.name,
+    		type: "if",
+    		source: "(510:8) {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (513:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}
+    function create_if_block_3$1(ctx) {
+    	let if_block_anchor;
+
+    	function select_block_type_3(ctx, dirty) {
+    		if (/*elementos*/ ctx[38] == 0) return create_if_block_4$1;
+    		if (/*elementos*/ ctx[38] == 1) return create_if_block_5;
+    		if (/*elementos*/ ctx[38] == "X") return create_if_block_6;
+    		if (/*elementos*/ ctx[38] == "DANTE") return create_if_block_7;
+    	}
+
+    	let current_block_type = select_block_type_3(ctx);
+    	let if_block = current_block_type && current_block_type(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (current_block_type !== (current_block_type = select_block_type_3(ctx))) {
+    				if (if_block) if_block.d(1);
+    				if_block = current_block_type && current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) {
+    				if_block.d(detaching);
+    			}
+
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_3$1.name,
+    		type: "if",
+    		source: "(513:16) {#if LimiteX <= j && LimiteX + (Dimensionamento * 2) >= j}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (520:51) 
+    function create_if_block_7(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/Dante.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "personagem");
+    			add_location(img, file$1, 520, 43, 38330);
+    			attr_dev(th, "class", "Dante0");
+    			add_location(th, file$1, 520, 24, 38311);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_7.name,
+    		type: "if",
+    		source: "(520:51) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (518:47) 
+    function create_if_block_6(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/saida.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "saida");
+    			add_location(img, file$1, 518, 28, 38181);
+    			add_location(th, file$1, 518, 24, 38177);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_6.name,
+    		type: "if",
+    		source: "(518:47) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (516:45) 
+    function create_if_block_5(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/paredetutorial.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "parede");
+    			add_location(img, file$1, 516, 28, 38041);
+    			add_location(th, file$1, 516, 24, 38037);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_5.name,
+    		type: "if",
+    		source: "(516:45) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (514:20) {#if elementos == 0}
+    function create_if_block_4$1(ctx) {
+    	let th;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			th = element("th");
+    			img = element("img");
+    			if (!src_url_equal(img.src, img_src_value = "/css/imagens/chaotutorial.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "chao");
+    			add_location(img, file$1, 514, 49, 37907);
+    			attr_dev(th, "class", "chaoturorial");
+    			add_location(th, file$1, 514, 24, 37882);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, th, anchor);
+    			append_dev(th, img);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(th);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_4$1.name,
+    		type: "if",
+    		source: "(514:20) {#if elementos == 0}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (512:16) {#each linhas as elementos,j}
+    function create_each_block_1(ctx) {
+    	let if_block_anchor;
+    	let if_block = /*LimiteX*/ ctx[7] <= /*j*/ ctx[40] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[40] && create_if_block_3$1(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (/*LimiteX*/ ctx[7] <= /*j*/ ctx[40] && /*LimiteX*/ ctx[7] + /*Dimensionamento*/ ctx[15] * 2 >= /*j*/ ctx[40]) {
+    				if (if_block) {
+    					if_block.p(ctx, dirty);
+    				} else {
+    					if_block = create_if_block_3$1(ctx);
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			} else if (if_block) {
+    				if_block.d(1);
+    				if_block = null;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_1.name,
+    		type: "each",
+    		source: "(512:16) {#each linhas as elementos,j}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (509:8) {#each mapa0 as linhas,i}
+    function create_each_block(ctx) {
+    	let if_block_anchor;
+    	let if_block = /*LimiteY*/ ctx[8] <= /*i*/ ctx[37] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[37] && create_if_block_2$1(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (/*LimiteY*/ ctx[8] <= /*i*/ ctx[37] && /*LimiteY*/ ctx[8] + /*Dimensionamento*/ ctx[15] * 2 >= /*i*/ ctx[37]) {
+    				if (if_block) {
+    					if_block.p(ctx, dirty);
+    				} else {
+    					if_block = create_if_block_2$1(ctx);
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			} else if (if_block) {
+    				if_block.d(1);
+    				if_block = null;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block.name,
+    		type: "each",
+    		source: "(509:8) {#each mapa0 as linhas,i}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$1(ctx) {
+    	let head;
+    	let link0;
+    	let t0;
+    	let link1;
+    	let t1;
+    	let link2;
+    	let t2;
+    	let t3;
+    	let voltarmenu;
+    	let t4;
+    	let current_block_type_index;
+    	let if_block1;
+    	let if_block1_anchor;
+    	let current;
+    	let mounted;
+    	let dispose;
+    	let if_block0 = /*key*/ ctx[0] && create_if_block_64(ctx);
+    	voltarmenu = new VoltarMenu({ $$inline: true });
+
+    	const if_block_creators = [
+    		create_if_block$1,
+    		create_if_block_12,
+    		create_if_block_26,
+    		create_if_block_42,
+    		create_if_block_58
+    	];
+
+    	const if_blocks = [];
+
+    	function select_block_type_1(ctx, dirty) {
+    		if (/*MudandoDeFase*/ ctx[9] == "tutorial") return 0;
+    		if (/*MudandoDeFase*/ ctx[9] == "nivel1") return 1;
+    		if (/*MudandoDeFase*/ ctx[9] == "nivel2") return 2;
+    		if (/*MudandoDeFase*/ ctx[9] == "nivel3") return 3;
+    		if (/*MudandoDeFase*/ ctx[9] == "vitoria") return 4;
+    		return -1;
+    	}
+
+    	if (~(current_block_type_index = select_block_type_1(ctx))) {
+    		if_block1 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+    	}
+
+    	const block = {
+    		c: function create() {
+    			head = element("head");
+    			link0 = element("link");
+    			t0 = space();
+    			link1 = element("link");
+    			t1 = space();
+    			link2 = element("link");
+    			t2 = space();
+    			if (if_block0) if_block0.c();
+    			t3 = space();
+    			create_component(voltarmenu.$$.fragment);
+    			t4 = space();
+    			if (if_block1) if_block1.c();
+    			if_block1_anchor = empty();
+    			attr_dev(link0, "rel", "stylesheet");
+    			attr_dev(link0, "href", "/css/jogo.css");
+    			add_location(link0, file$1, 461, 4, 36199);
+    			attr_dev(link1, "rel", "stylesheet");
+    			attr_dev(link1, "href", "/css/newjogo.css");
+    			add_location(link1, file$1, 462, 4, 36249);
+    			attr_dev(link2, "rel", "stylesheet");
+    			attr_dev(link2, "href", "/css/ajuda.css");
+    			add_location(link2, file$1, 463, 4, 36302);
+    			add_location(head, file$1, 460, 0, 36187);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, head, anchor);
+    			append_dev(head, link0);
+    			append_dev(head, t0);
+    			append_dev(head, link1);
+    			append_dev(head, t1);
+    			append_dev(head, link2);
+    			insert_dev(target, t2, anchor);
+    			if (if_block0) if_block0.m(target, anchor);
+    			insert_dev(target, t3, anchor);
+    			mount_component(voltarmenu, target, anchor);
+    			insert_dev(target, t4, anchor);
+
+    			if (~current_block_type_index) {
+    				if_blocks[current_block_type_index].m(target, anchor);
+    			}
+
+    			insert_dev(target, if_block1_anchor, anchor);
+    			current = true;
+
+    			if (!mounted) {
+    				dispose = listen_dev(window, "keydown", /*handleKeydown*/ ctx[14], false, false, false);
+    				mounted = true;
+    			}
+    		},
+    		p: function update(ctx, dirty) {
+    			if (/*key*/ ctx[0]) {
+    				if (if_block0) {
+    					if_block0.p(ctx, dirty);
+    				} else {
+    					if_block0 = create_if_block_64(ctx);
+    					if_block0.c();
+    					if_block0.m(t3.parentNode, t3);
+    				}
+    			} else if (if_block0) {
+    				if_block0.d(1);
+    				if_block0 = null;
+    			}
+
+    			let previous_block_index = current_block_type_index;
+    			current_block_type_index = select_block_type_1(ctx);
+
+    			if (current_block_type_index === previous_block_index) {
+    				if (~current_block_type_index) {
+    					if_blocks[current_block_type_index].p(ctx, dirty);
+    				}
+    			} else {
+    				if (if_block1) {
+    					group_outros();
+
+    					transition_out(if_blocks[previous_block_index], 1, 1, () => {
+    						if_blocks[previous_block_index] = null;
+    					});
+
+    					check_outros();
+    				}
+
+    				if (~current_block_type_index) {
+    					if_block1 = if_blocks[current_block_type_index];
+
+    					if (!if_block1) {
+    						if_block1 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+    						if_block1.c();
+    					} else {
+    						if_block1.p(ctx, dirty);
+    					}
+
+    					transition_in(if_block1, 1);
+    					if_block1.m(if_block1_anchor.parentNode, if_block1_anchor);
+    				} else {
+    					if_block1 = null;
+    				}
+    			}
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(voltarmenu.$$.fragment, local);
+    			transition_in(if_block1);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(voltarmenu.$$.fragment, local);
+    			transition_out(if_block1);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(head);
+    			if (detaching) detach_dev(t2);
+    			if (if_block0) if_block0.d(detaching);
+    			if (detaching) detach_dev(t3);
+    			destroy_component(voltarmenu, detaching);
+    			if (detaching) detach_dev(t4);
+
+    			if (~current_block_type_index) {
+    				if_blocks[current_block_type_index].d(detaching);
+    			}
+
+    			if (detaching) detach_dev(if_block1_anchor);
+    			mounted = false;
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$1.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function instance$1($$self, $$props, $$invalidate) {
+    	let { $$slots: slots = {}, $$scope } = $$props;
+    	validate_slots('Newjogo', slots, []);
+    	let key;
+    	let code;
+
+    	function handleKeydown(event) {
+    		$$invalidate(0, key = event.key);
+    		$$invalidate(1, code = event.code);
+    	}
+
+    	//Mapas do jogo:
+    	let mapa0 = [
+    		[
+    			2,
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		],
+    		[
+    			2,
+    			2,
+    			"DANTE",
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		],
+    		[
+    			2,
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		],
+    		[
+    			2,
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			"X"
+    		],
+    		[
+    			2,
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		]
+    	];
+
+    	let mapa1 = [
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			"DANTE",
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			"falsa",
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			"falsa",
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			"Y",
+    			1,
+    			1,
+    			1,
+    			1,
+    			"falsa",
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2
+    		]
+    	];
+
+    	let mapa2 = [
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			7,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			7,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			7,
+    			7,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			"falsa",
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			7,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			7,
+    			7,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			7,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			7,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			"falsa",
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			"DANTE",
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			7,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			"falsa",
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			"falsa",
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			"falsa",
+    			7,
+    			"falsa",
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			"Z",
+    			1,
+    			1,
+    			"falsa",
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			"falsa",
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			2
+    		],
+    		[
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2,
+    			2
+    		]
+    	];
+
+    	let mapa3 = [
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			"falsa",
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1
+    		],
+    		[
+    			2,
+    			"DANTE",
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			"falsa",
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			"V",
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			7,
+    			7,
+    			0,
+    			0,
+    			7,
+    			7,
+    			0,
+    			0,
+    			7,
+    			7,
+    			0,
+    			0,
+    			7,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			"falsa"
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			"falsa",
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1
+    		],
+    		[
+    			2,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			0,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			1,
+    			1,
+    			0,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			0,
+    			0,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			1,
+    			7,
     			1,
     			1,
     			1,
@@ -46113,6 +58657,7 @@ var app = (function () {
     	let PontoDeSave = [0, 0];
 
     	function DeterminandoEixos(fase) {
+    		//Ponto zero onde o jogador começa a jogar
     		if (fase == "tutorial") {
     			for (let i in mapa0) {
     				for (let j in mapa0[i]) {
@@ -46169,7 +58714,9 @@ var app = (function () {
     	}
 
     	function RetornaAoSave() {
+    		//Voltar para o nivel 1, para onde deveria voltar
     		$$invalidate(3, mapa1[EixoY][EixoX] = 0, mapa1);
+
     		EixoX = PontoDeSave[0];
     		EixoY = PontoDeSave[1];
     		$$invalidate(3, mapa1[EixoY][EixoX] = "DANTE", mapa1);
@@ -46177,108 +58724,32 @@ var app = (function () {
     	}
 
     	function ResertarPosicao() {
+    		//Caso tente passar por onde nao deveria
     		EixoX = SaveX;
+
     		EixoY = SaveY;
     		RenderizandoMapa();
     	}
 
-    	function IncremetarX() {
+    	//toda movimentação segue a msm logica, mudando apenas qual Eixo vai ser alterado de valor
+    	function MovimentaçãoPeloMapa(move) {
     		SaveX = EixoX;
     		SaveY = EixoY;
-    		EixoX++;
-    		$$invalidate(1, code = "d");
 
-    		if (MudandoDeFase == "tutorial") {
-    			MudarDeFase(mapa0[EixoY][EixoX]);
-
-    			if (mapa0[EixoY][EixoX] != 0) {
-    				ResertarPosicao();
-    				return;
-    			}
-
-    			$$invalidate(2, mapa0[SaveY][SaveX] = 0, mapa0);
-    			$$invalidate(2, mapa0[EixoY][EixoX] = "DANTE", mapa0);
-    		} else if (MudandoDeFase == "nivel1") {
-    			MudarDeFase(mapa1[EixoY][EixoX]);
-
-    			if (mapa1[EixoY][EixoX] != 0) {
-    				if (mapa1[EixoY][EixoX] == "falsa") {
-    					alert('Nem tudo é o que parece pequeno Dante!');
-    				}
-
-    				ResertarPosicao();
-    				return;
-    			}
-
-    			$$invalidate(3, mapa1[EixoY][EixoX] = "DANTE", mapa1);
-    			$$invalidate(3, mapa1[SaveY][SaveX] = 0, mapa1);
-    		} else if (MudandoDeFase == "nivel2") {
-    			MudarDeFase(mapa2[EixoY][EixoX]);
-
-    			if (mapa2[EixoY][EixoX] == 7) {
-    				if (mapa2[SaveY][SaveX] == 7) {
-    					return;
-    				}
-
-    				$$invalidate(4, mapa2[SaveY][SaveX] = 0, mapa2);
-    				return;
-    			} else if (mapa2[EixoY][EixoX] != 0) {
-    				if (mapa2[EixoY][EixoX] == "falsa") ; // alert('Nem tudo é o que parece jovem Dante!')
-
-    				ResertarPosicao();
-    				return;
-    			}
-
-    			$$invalidate(4, mapa2[EixoY][EixoX] = "DANTE", mapa2);
-
-    			if (mapa2[SaveY][SaveX] != 7) {
-    				$$invalidate(4, mapa2[SaveY][SaveX] = 0, mapa2);
-    			}
-    		} else if (MudandoDeFase == "nivel3") {
-    			MudarDeFase(mapa3[EixoY][EixoX]);
-
-    			if (mapa3[EixoY][EixoX] == 7) {
-    				if (mapa3[SaveY][SaveX] == 7) {
-    					return;
-    				}
-
-    				$$invalidate(5, mapa3[SaveY][SaveX] = 0, mapa3);
-    				return;
-    			} else if (mapa3[EixoY][EixoX] != 0) {
-    				if (mapa3[EixoY][EixoX] == "falsa") {
-    					alert('Nem tudo é o que parece jovem Dante!');
-    				}
-
-    				ResertarPosicao();
-    				return;
-    			}
-
-    			$$invalidate(5, mapa3[EixoY][EixoX] = "DANTE", mapa3);
-
-    			if (mapa3[SaveY][SaveX] != 7) {
-    				$$invalidate(5, mapa3[SaveY][SaveX] = 0, mapa3);
-    			}
-    		} else if (MudandoDeFase == "vitoria") {
-    			MudarDeFase(mapa4[EixoY][EixoX]);
-
-    			if (mapa4[EixoY][EixoX] != 0) {
-    				ResertarPosicao();
-    				return;
-    			}
-
-    			$$invalidate(6, mapa4[EixoY][EixoX] = "DANTE", mapa4);
-    			$$invalidate(6, mapa4[SaveY][SaveX] = 0, mapa4);
+    		if (move == "DIREITA") {
+    			EixoX++;
+    			$$invalidate(1, code = "d");
+    		} else if (move == "ESQUERDA") {
+    			EixoX--;
+    			$$invalidate(1, code = "a");
+    		} else if (move == "CIMA") {
+    			EixoY--;
+    			$$invalidate(1, code = "w");
+    		} else if (move == "BAIXO") {
+    			EixoY++;
+    			$$invalidate(1, code = "s");
     		}
 
-    		RenderizandoMapa();
-    	}
-
-    	function DecrementarX() {
-    		SaveX = EixoX;
-    		SaveY = EixoY;
-    		EixoX--;
-    		$$invalidate(1, code = "a");
-
     		if (MudandoDeFase == "tutorial") {
     			MudarDeFase(mapa0[EixoY][EixoX]);
 
@@ -46294,7 +58765,8 @@ var app = (function () {
 
     			if (mapa1[EixoY][EixoX] != 0) {
     				if (mapa1[EixoY][EixoX] == "falsa") {
-    					alert('Nem tudo é o que parece jovem Dante!');
+    					//para Saidas falsas
+    					alert('Não foi dessa vez!');
     				}
 
     				ResertarPosicao();
@@ -46307,7 +58779,9 @@ var app = (function () {
     			MudarDeFase(mapa2[EixoY][EixoX]);
 
     			if (mapa2[EixoY][EixoX] == 7) {
+    				//paredes falsas
     				if (mapa2[SaveY][SaveX] == 7) {
+    					//não transforma paredes falsas em estrada
     					return;
     				}
 
@@ -46315,7 +58789,8 @@ var app = (function () {
     				return;
     			} else if (mapa2[EixoY][EixoX] != 0) {
     				if (mapa2[EixoY][EixoX] == "falsa") {
-    					alert('Talvez devesse tentar outra saída...');
+    					//saida falsa
+    					alert('Nem tudo é o que parece jovem Dante!');
     				}
 
     				ResertarPosicao();
@@ -46340,192 +58815,6 @@ var app = (function () {
     			} else if (mapa3[EixoY][EixoX] != 0) {
     				if (mapa3[EixoY][EixoX] == "falsa") {
     					alert('Não consegue, não é?');
-    				}
-
-    				ResertarPosicao();
-    				return;
-    			}
-
-    			$$invalidate(5, mapa3[EixoY][EixoX] = "DANTE", mapa3);
-
-    			if (mapa3[SaveY][SaveX] != 7) {
-    				$$invalidate(5, mapa3[SaveY][SaveX] = 0, mapa3);
-    			}
-    		} else if (MudandoDeFase == "vitoria") {
-    			MudarDeFase(mapa4[EixoY][EixoX]);
-
-    			if (mapa4[EixoY][EixoX] != 0) {
-    				ResertarPosicao();
-    				return;
-    			}
-
-    			$$invalidate(6, mapa4[EixoY][EixoX] = "DANTE", mapa4);
-    			$$invalidate(6, mapa4[SaveY][SaveX] = 0, mapa4);
-    		}
-
-    		RenderizandoMapa();
-    	}
-
-    	function IncremetarY() {
-    		SaveX = EixoX;
-    		SaveY = EixoY;
-    		EixoY++;
-    		$$invalidate(1, code = "w");
-
-    		if (MudandoDeFase == "tutorial") {
-    			MudarDeFase(mapa0[EixoY][EixoX]);
-
-    			if (mapa0[EixoY][EixoX] != 0) {
-    				ResertarPosicao();
-    				return;
-    			}
-
-    			$$invalidate(2, mapa0[SaveY][SaveX] = 0, mapa0);
-    			$$invalidate(2, mapa0[EixoY][EixoX] = "DANTE", mapa0);
-    		} else if (MudandoDeFase == "nivel1") {
-    			MudarDeFase(mapa1[EixoY][EixoX]);
-
-    			if (mapa1[EixoY][EixoX] != 0) {
-    				if (mapa1[EixoY][EixoX] == "falsa") {
-    					alert('Essa é mesmo a saída?');
-    				}
-
-    				ResertarPosicao();
-    				return;
-    			}
-
-    			$$invalidate(3, mapa1[EixoY][EixoX] = "DANTE", mapa1);
-    			$$invalidate(3, mapa1[SaveY][SaveX] = 0, mapa1);
-    		} else if (MudandoDeFase == "nivel2") {
-    			if (mapa2[EixoY][EixoX] == "falsa") {
-    				alert('Talvez devesse tentar outra saída...');
-    			}
-
-    			MudarDeFase(mapa2[EixoY][EixoX]);
-
-    			if (mapa2[EixoY][EixoX] == 7) {
-    				if (mapa2[SaveY][SaveX] == 7) {
-    					return;
-    				}
-
-    				$$invalidate(4, mapa2[SaveY][SaveX] = 0, mapa2);
-    				return;
-    			} else if (mapa2[EixoY][EixoX] != 0) {
-    				ResertarPosicao();
-    				return;
-    			}
-
-    			$$invalidate(4, mapa2[EixoY][EixoX] = "DANTE", mapa2);
-
-    			if (mapa2[SaveY][SaveX] != 7) {
-    				$$invalidate(4, mapa2[SaveY][SaveX] = 0, mapa2);
-    			}
-    		} else if (MudandoDeFase == "nivel3") {
-    			MudarDeFase(mapa3[EixoY][EixoX]);
-
-    			if (mapa3[EixoY][EixoX] == 7) {
-    				if (mapa3[SaveY][SaveX] == 7) {
-    					return;
-    				}
-
-    				$$invalidate(5, mapa3[SaveY][SaveX] = 0, mapa3);
-    				return;
-    			} else if (mapa3[EixoY][EixoX] != 0) {
-    				if (mapa3[EixoY][EixoX] == "falsa") {
-    					alert('Tem certeza que essa é a saída?');
-    				}
-
-    				ResertarPosicao();
-    				return;
-    			}
-
-    			$$invalidate(5, mapa3[EixoY][EixoX] = "DANTE", mapa3);
-
-    			if (mapa3[SaveY][SaveX] != 7) {
-    				$$invalidate(5, mapa3[SaveY][SaveX] = 0, mapa3);
-    			}
-    		} else if (MudandoDeFase == "vitoria") {
-    			MudarDeFase(mapa4[EixoY][EixoX]);
-
-    			if (mapa4[EixoY][EixoX] != 0) {
-    				ResertarPosicao();
-    				return;
-    			}
-
-    			$$invalidate(6, mapa4[EixoY][EixoX] = "DANTE", mapa4);
-    			$$invalidate(6, mapa4[SaveY][SaveX] = 0, mapa4);
-    		}
-
-    		RenderizandoMapa();
-    	}
-
-    	function DecrementarY() {
-    		SaveX = EixoX;
-    		SaveY = EixoY;
-    		EixoY--;
-    		$$invalidate(1, code = "s");
-
-    		if (MudandoDeFase == "tutorial") {
-    			MudarDeFase(mapa0[EixoY][EixoX]);
-
-    			if (mapa0[EixoY][EixoX] != 0) {
-    				ResertarPosicao();
-    				return;
-    			}
-
-    			$$invalidate(2, mapa0[SaveY][SaveX] = 0, mapa0);
-    			$$invalidate(2, mapa0[EixoY][EixoX] = "DANTE", mapa0);
-    		} else if (MudandoDeFase == "nivel1") {
-    			MudarDeFase(mapa1[EixoY][EixoX]);
-
-    			if (mapa1[EixoY][EixoX] != 0) {
-    				if (mapa1[EixoY][EixoX] == "falsa") {
-    					alert('Não consegue, não é?');
-    				}
-
-    				ResertarPosicao();
-    				return;
-    			}
-
-    			$$invalidate(3, mapa1[EixoY][EixoX] = "DANTE", mapa1);
-    			$$invalidate(3, mapa1[SaveY][SaveX] = 0, mapa1);
-    		} else if (MudandoDeFase == "nivel2") {
-    			MudarDeFase(mapa2[EixoY][EixoX]);
-
-    			if (mapa2[EixoY][EixoX] == 7) {
-    				if (mapa2[SaveY][SaveX] == 7) {
-    					return;
-    				}
-
-    				$$invalidate(4, mapa2[SaveY][SaveX] = 0, mapa2);
-    				return;
-    			} else if (mapa2[EixoY][EixoX] != 0) {
-    				if (mapa2[EixoY][EixoX] == "falsa") {
-    					alert('Nem tudo é o que parece jovem criança');
-    				}
-
-    				ResertarPosicao();
-    				return;
-    			}
-
-    			$$invalidate(4, mapa2[EixoY][EixoX] = "DANTE", mapa2);
-
-    			if (mapa2[SaveY][SaveX] != 7) {
-    				$$invalidate(4, mapa2[SaveY][SaveX] = 0, mapa2);
-    			}
-    		} else if (MudandoDeFase == "nivel3") {
-    			MudarDeFase(mapa3[EixoY][EixoX]);
-
-    			if (mapa3[EixoY][EixoX] == 7) {
-    				if (mapa3[SaveY][SaveX] == 7) {
-    					return;
-    				}
-
-    				$$invalidate(5, mapa3[SaveY][SaveX] = 0, mapa3);
-    				return;
-    			} else if (mapa3[EixoY][EixoX] != 0) {
-    				if (mapa3[EixoY][EixoX] == "falsa") {
-    					alert('Tem certeza que é essa a saída?');
     				}
 
     				ResertarPosicao();
@@ -46553,7 +58842,7 @@ var app = (function () {
     	}
 
     	//Referente a mudança de fases:
-    	let MudandoDeFase = "tutorial";
+    	let MudandoDeFase = "tutorial"; // fase inicial do jogo
 
     	function MudarDeFase(FaseAtual) {
     		if (FaseAtual == "X") {
@@ -46575,6 +58864,7 @@ var app = (function () {
     	let PalavraChave = '';
 
     	function Alterando(teste, fase) {
+    		// mudança de fase ao acerta o enigma
     		if (teste) {
     			$$invalidate(10, enigma = teste);
     			$$invalidate(11, PalavraChave = '');
@@ -46594,7 +58884,8 @@ var app = (function () {
     	}
 
     	let Tempo;
-    	let contador = 300;
+    	let temporizador = 300;
+    	let contador = temporizador; // Contador geral para resolver todos os enigmas 
 
     	function TempoEnigma() {
     		$$invalidate(12, Tempo = setInterval(
@@ -46607,12 +58898,15 @@ var app = (function () {
     					$$invalidate(9, MudandoDeFase = "nivel1");
     					$$invalidate(10, enigma = false);
     					clearInterval(Tempo);
-    					$$invalidate(13, contador = 90);
     					return;
     				}
     			},
     			1000
     		));
+    	}
+
+    	function ResertarContador() {
+    		$$invalidate(13, contador = temporizador);
     	}
 
     	const writable_props = [];
@@ -46665,18 +58959,17 @@ var app = (function () {
     		DeterminandoEixos,
     		RetornaAoSave,
     		ResertarPosicao,
-    		IncremetarX,
-    		DecrementarX,
-    		IncremetarY,
-    		DecrementarY,
+    		MovimentaçãoPeloMapa,
     		MudandoDeFase,
     		MudarDeFase,
     		enigma,
     		PalavraChave,
     		Alterando,
     		Tempo,
+    		temporizador,
     		contador,
-    		TempoEnigma
+    		TempoEnigma,
+    		ResertarContador
     	});
 
     	$$self.$inject_state = $$props => {
@@ -46699,6 +58992,7 @@ var app = (function () {
     		if ('enigma' in $$props) $$invalidate(10, enigma = $$props.enigma);
     		if ('PalavraChave' in $$props) $$invalidate(11, PalavraChave = $$props.PalavraChave);
     		if ('Tempo' in $$props) $$invalidate(12, Tempo = $$props.Tempo);
+    		if ('temporizador' in $$props) temporizador = $$props.temporizador;
     		if ('contador' in $$props) $$invalidate(13, contador = $$props.contador);
     	};
 
@@ -46725,12 +59019,10 @@ var app = (function () {
     		Dimensionamento,
     		RenderizandoMapa,
     		DeterminandoEixos,
-    		IncremetarX,
-    		DecrementarX,
-    		IncremetarY,
-    		DecrementarY,
+    		MovimentaçãoPeloMapa,
     		Alterando,
     		TempoEnigma,
+    		ResertarContador,
     		input_input_handler,
     		input_input_handler_1,
     		input_input_handler_2,
@@ -46741,7 +59033,7 @@ var app = (function () {
     class Newjogo extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$1, create_fragment$1, safe_not_equal, {}, null, [-1, -1]);
+    		init(this, options, instance$1, create_fragment$1, safe_not_equal, {}, null, [-1, -1, -1]);
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
@@ -46874,29 +59166,29 @@ var app = (function () {
 
     // (20:30) 
     function create_if_block_1(ctx) {
-    	let newjogo;
+    	let teste;
     	let current;
-    	newjogo = new Newjogo({ $$inline: true });
+    	teste = new Teste({ $$inline: true });
 
     	const block = {
     		c: function create() {
-    			create_component(newjogo.$$.fragment);
+    			create_component(teste.$$.fragment);
     		},
     		m: function mount(target, anchor) {
-    			mount_component(newjogo, target, anchor);
+    			mount_component(teste, target, anchor);
     			current = true;
     		},
     		i: function intro(local) {
     			if (current) return;
-    			transition_in(newjogo.$$.fragment, local);
+    			transition_in(teste.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
-    			transition_out(newjogo.$$.fragment, local);
+    			transition_out(teste.$$.fragment, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
-    			destroy_component(newjogo, detaching);
+    			destroy_component(teste, detaching);
     		}
     	};
 
@@ -46953,19 +59245,10 @@ var app = (function () {
     function create_fragment(ctx) {
     	let head;
     	let link;
-    	let t0;
+    	let t;
     	let current_block_type_index;
     	let if_block;
-    	let t1;
-    	let audio0;
-    	let audio0_src_value;
-    	let t2;
-    	let div;
-    	let audio1;
-    	let source0;
-    	let source0_src_value;
-    	let source1;
-    	let source1_src_value;
+    	let if_block_anchor;
     	let current;
 
     	const if_block_creators = [
@@ -46995,34 +59278,13 @@ var app = (function () {
     		c: function create() {
     			head = element("head");
     			link = element("link");
-    			t0 = space();
+    			t = space();
     			if (if_block) if_block.c();
-    			t1 = space();
-    			audio0 = element("audio");
-    			t2 = space();
-    			div = element("div");
-    			audio1 = element("audio");
-    			source0 = element("source");
-    			source1 = element("source");
+    			if_block_anchor = empty();
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "/css/appsvelte.css");
-    			add_location(link, file, 14, 1, 400);
-    			add_location(head, file, 13, 0, 391);
-    			if (!src_url_equal(audio0.src, audio0_src_value = "/css/audio.mp3")) attr_dev(audio0, "src", audio0_src_value);
-    			audio0.autoplay = true;
-    			attr_dev(audio0, "preload", "auto");
-    			add_location(audio0, file, 31, 0, 691);
-    			if (!src_url_equal(source0.src, source0_src_value = "/css/audio3.wav")) attr_dev(source0, "src", source0_src_value);
-    			attr_dev(source0, "type", "audio/wav");
-    			add_location(source0, file, 35, 2, 799);
-    			if (!src_url_equal(source1.src, source1_src_value = "/css/audio2.ogg")) attr_dev(source1, "src", source1_src_value);
-    			attr_dev(source1, "type", "audio/ogg");
-    			add_location(source1, file, 36, 2, 850);
-    			attr_dev(audio1, "id", "audio");
-    			audio1.autoplay = true;
-    			audio1.loop = true;
-    			add_location(audio1, file, 34, 1, 763);
-    			add_location(div, file, 33, 0, 755);
+    			add_location(link, file, 14, 1, 407);
+    			add_location(head, file, 13, 0, 398);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -47030,19 +59292,13 @@ var app = (function () {
     		m: function mount(target, anchor) {
     			insert_dev(target, head, anchor);
     			append_dev(head, link);
-    			insert_dev(target, t0, anchor);
+    			insert_dev(target, t, anchor);
 
     			if (~current_block_type_index) {
     				if_blocks[current_block_type_index].m(target, anchor);
     			}
 
-    			insert_dev(target, t1, anchor);
-    			insert_dev(target, audio0, anchor);
-    			insert_dev(target, t2, anchor);
-    			insert_dev(target, div, anchor);
-    			append_dev(div, audio1);
-    			append_dev(audio1, source0);
-    			append_dev(audio1, source1);
+    			insert_dev(target, if_block_anchor, anchor);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
@@ -47069,7 +59325,7 @@ var app = (function () {
     					}
 
     					transition_in(if_block, 1);
-    					if_block.m(t1.parentNode, t1);
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
     				} else {
     					if_block = null;
     				}
@@ -47086,16 +59342,13 @@ var app = (function () {
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(head);
-    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(t);
 
     			if (~current_block_type_index) {
     				if_blocks[current_block_type_index].d(detaching);
     			}
 
-    			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(audio0);
-    			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(div);
+    			if (detaching) detach_dev(if_block_anchor);
     		}
     	};
 
@@ -47129,7 +59382,7 @@ var app = (function () {
     		Ajuda,
     		Menu,
     		Sobre,
-    		Jogar: Jogo,
+    		Jogar: Jogo_futil,
     		estado,
     		Teste,
     		Newjogo,
