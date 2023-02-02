@@ -659,10 +659,20 @@ let mapa3 = [
 
 <VoltarMenu/>
 
+
+
+<div>
+	<audio id="audio" autoplay loop>
+		<source src="/css/sons/PlayMusicGame.wav" type="audio/wav">
+		<source src="/css/sons/PlayMusicGame.ogg" type="audio/ogg">
+	</audio>
+</div> 
+
+
 {#if MudandoDeFase == "tutorial"}
     
     <p class='FasesDoJogo'>Tutorial</p>
-
+    <p class="Enigma">Recomendamos utilizar fones de ouvidos</p>
     {#if !enigma}
         
     <p class="textofutil">
