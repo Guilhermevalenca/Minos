@@ -176,7 +176,7 @@ let mapa3 = [
     let Mapa2Save = [];
     let Mapa3Save = [];
     //limite de renderização:
-    let Dimensionamento = 6;
+    let Dimensionamento = 4;
     let LimiteX = 0;
     let LimiteY = 0;
     function RenderizandoMapa(){
@@ -487,7 +487,7 @@ let mapa3 = [
         contador = temporizador;
     }
     let Movimentar;
-    let Ritmo = 3000;
+    let Ritmo = 4000;
     let Indice = 0;
     let PosicaoMonstroX = 0;
     let PosicaoMonstroY = 0;
@@ -539,6 +539,20 @@ let mapa3 = [
             }Indice++
     },Ritmo)
     }
+    let Caçar;
+    let Cronometro;
+    let HoraDaCaçada = 60;
+    function Cronometrar(){
+        Cronometro = setInterval(() => {
+            HoraDaCaçada--
+        },1000)
+    }
+    function IniciarACaçada(){
+        Ritmo = 3000;
+        Caçar = setInterval( () => {
+            Perseguição(MudandoDeFase)
+        },60000)
+    }
     function acelerar(teste){
         if(teste){
             clearInterval(Movimentar)
@@ -552,6 +566,8 @@ let mapa3 = [
     }
     function Tudodnv(){
         clearInterval(Movimentar)
+        clearInterval(Cronometro)
+        HoraDaCaçada = 60;
         Ritmo = 3000;
         if(MudandoDeFase == "nivel1"){
             for(let i in mapa1){
@@ -592,6 +608,7 @@ let mapa3 = [
         Mapa1Save = [];
         Mapa2Save = [];
         Mapa3Save = [];
+        MudarEnigma()
         return
     }
     let contagem = 0;
@@ -605,6 +622,12 @@ let mapa3 = [
     "GELO",
     "SEGREDO"
     ];
+    function MudarEnigma(){
+        contagem++
+        if(contagem > 2){
+            contagem = 0;
+        }
+    }
 </script>
 <head>
     <link rel="stylesheet" href="/css/jogo.css">
@@ -708,13 +731,24 @@ let mapa3 = [
     {#if !enigma}
         
     <p class="textofutil">
-    {Perseguição(MudandoDeFase)}
-    {acelerar(Indice == SaveIndice)}
-    {clearInterval(Tempo)}
-    {RenderizandoMapa()}
-    {DeterminandoEixos(MudandoDeFase)}
+        {IniciarACaçada()}
+        {Cronometrar()}
+        {acelerar(Indice == SaveIndice)}
+        {clearInterval(Tempo)}
+        {RenderizandoMapa()}
+        {DeterminandoEixos(MudandoDeFase)}
     </p>
-    <p class='Enigma'>{Indice},{Ritmo},{SaveIndice}</p>
+    {#if HoraDaCaçada > 0}
+        <p class="Enigma">O Minotauro ira surgir em: {HoraDaCaçada}</p>
+    {:else if Ritmo == 3000}
+        <p class="Enigma">O Minotauro começou a perseguição</p>
+    {:else if Ritmo == 2000}
+        <p class="Enigma">O Minotauro acelerou o passo</p>
+    {:else if Ritmo == 1000}
+        <p class="Enigma">O Minotauro começou a correr</p>
+    {:else if Ritmo < 1000}
+        <p class="Enigma">O Minotauro estar enfurecido</p>
+    {/if}
     <table class="mapa" align="center" id="mapanivel1">
         {#each mapa1 as linhas,i}
         {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
@@ -732,7 +766,7 @@ let mapa3 = [
                     {:else if elementos == "falsa"}
                         <th><img src="/css/imagens/saida.png" alt="falsa"></th>
                     {:else if elementos == "MINOS"}
-                        <th><img src="/css/imagens/saidanivel3.png" alt="monstro"></th>
+                        <th><img src="/css/imagens/minotauro.png" alt="monstro"></th>
                     {/if}
                     {/if}
                 {/each}
@@ -740,6 +774,9 @@ let mapa3 = [
             {/if}
         {/each}
     </table>
+    <div id="DicaTutorial" class="aimds">
+        <ul class="info">OLA TUDO BEM?</ul>
+    </div>
         {:else}
         <p class="textofutil">{TempoEnigma()}{ResertarContador()}{clearInterval(Movimentar)}</p>
         <p class="Enigma">O que achou das provações resultantes de sua ações precipitadas?</p>
@@ -774,12 +811,24 @@ let mapa3 = [
     {#if !enigma}
      
     <p class="textofutil">
-    {Perseguição(MudandoDeFase)}
-    {acelerar(Indice == SaveIndice)}
-    {clearInterval(Tempo)}
-    {RenderizandoMapa()}
-    {DeterminandoEixos(MudandoDeFase)}
+        {IniciarACaçada()}
+        {Cronometrar()}
+        {acelerar(Indice == SaveIndice)}
+        {clearInterval(Tempo)}
+        {RenderizandoMapa()}
+        {DeterminandoEixos(MudandoDeFase)}
     </p>
+    {#if HoraDaCaçada > 0}
+        <p class="Enigma">O Minotauro ira surgir em: {HoraDaCaçada}</p>
+    {:else if Ritmo == 3000}
+        <p class="Enigma">O Minotauro começou a perseguição</p>
+    {:else if Ritmo == 2000}
+        <p class="Enigma">O Minotauro acelerou o passo</p>
+    {:else if Ritmo == 1000}
+        <p class="Enigma">O Minotauro começou a correr</p>
+    {:else if Ritmo < 1000}
+        <p class="Enigma">O Minotauro estar enfurecido</p>
+    {/if}
     <table class="mapa" align="center" id="mapanivel2">
         {#each mapa2 as linhas,i}
         {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
@@ -799,7 +848,7 @@ let mapa3 = [
                     {:else if elementos == 7}
                         <th><img src="/css/imagens/paredefalsanivel2.png" alt="paredefalsa"></th>
                     {:else if elementos == "MINOS"}
-                        <th><img src="/css/imagens/saidanivel3.png" alt="monstro"></th>
+                        <th><img src="/css/imagens/minotauro.png" alt="monstro"></th>
                     {/if}
                     {/if}
                 {/each}
@@ -807,6 +856,9 @@ let mapa3 = [
         {/if}
         {/each}
     </table>
+    <div id="DicaTutorial" class="aimds">
+        <ul class="info"></ul>
+    </div>
         {:else}
         <p class="textofutil">{TempoEnigma()}{ResertarContador()}{clearInterval(Movimentar)}</p>
         <p class="Enigma">Gostei de você, jovem.</p>
@@ -844,12 +896,24 @@ let mapa3 = [
     {#if !enigma}
      
     <p class="textofutil">
-    {Perseguição(MudandoDeFase)}
-    {acelerar(Indice == SaveIndice)}
-    {clearInterval(Tempo)}
-    {RenderizandoMapa()}
-    {DeterminandoEixos(MudandoDeFase)}
+        {IniciarACaçada()}
+        {Cronometrar()}
+        {acelerar(Indice == SaveIndice)}
+        {clearInterval(Tempo)}
+        {RenderizandoMapa()}
+        {DeterminandoEixos(MudandoDeFase)}
     </p>
+    {#if HoraDaCaçada > 0}
+        <p class="Enigma">O Minotauro ira surgir em: {HoraDaCaçada}</p>
+    {:else if Ritmo == 3000}
+        <p class="Enigma">O Minotauro começou a perseguição</p>
+    {:else if Ritmo == 2000}
+        <p class="Enigma">O Minotauro acelerou o passo</p>
+    {:else if Ritmo == 1000}
+        <p class="Enigma">O Minotauro começou a correr</p>
+    {:else if Ritmo < 1000}
+        <p class="Enigma">O Minotauro estar enfurecido</p>
+    {/if}
     <table class="mapa" align="center" id="mapanivel3">
         {#each mapa3 as linhas,i}
         {#if LimiteY <= i && LimiteY + (Dimensionamento * 2) >= i}
@@ -869,7 +933,7 @@ let mapa3 = [
                     {:else if elementos == 7}
                         <th><img src="/css/imagens/paredefalsanivel2.png" alt="paredefalsa"></th>
                     {:else if elementos == "MINOS"}
-                        <th><img src="/css/imagens/saidanivel3.png" alt="monstro"></th>
+                        <th><img src="/css/imagens/minotauro.png" alt="monstro"></th>
                     {/if}
                     {/if}
                 {/each}
@@ -877,6 +941,9 @@ let mapa3 = [
             {/if}
         {/each}
     </table>
+    <div id="DicaTutorial" class="aimds">
+        <ul class="info"></ul>
+    </div>
         {:else}
         <p class="textofutil">{TempoEnigma()}{ResertarContador()}{clearInterval(Movimentar)}</p>
         <p class="Enigma">Se saiu bem, Dante. Conseguiu sobreviver até aqui, mas será que realmente acabou?</p>
