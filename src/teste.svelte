@@ -3,6 +3,7 @@
     import Vitoria from "./Vitoria.svelte";
     import VoltarMenu from "./VoltarMenu.svelte";
     import Creditos from "./creditos.svelte";
+  import { trocarEstadoDoJogo } from "./Estado";
     //Referente ao uso do teclado no jogo:
     let key;
     let code;
@@ -419,6 +420,7 @@ let mapa3 = [
         if(FaseAtual == "X"){
             
             enigma = true;
+            Tudodnv()
         
         }else if(FaseAtual == "Y"){
             
@@ -495,7 +497,6 @@ let mapa3 = [
     let PosicaoMonstroY = 0;
     let SaveIndice = 10;
     function Perseguição(mapa){
-        clearInterval(Caçar)
         Movimentar = setInterval(() => {
             if(mapa == "nivel1"){
                 PosicaoMonstroX = Mapa1Save[Indice][0];
@@ -568,7 +569,6 @@ let mapa3 = [
         }
     }
     function Tudodnv(){
-        clearInterval(Movimentar)
         clearInterval(Cronometro)
         HoraDaCaçada = 60;
         Ritmo = 3000;
@@ -741,7 +741,6 @@ let mapa3 = [
     {#if !enigma}
         
     <p class="textofutil">
-        {IniciarACaçada()}
         {Cronometrar()}
         {acelerar(Indice == SaveIndice)}
         {clearInterval(Tempo)}
@@ -791,7 +790,8 @@ let mapa3 = [
         <p class="textofutil">
             {TempoEnigma()}
             {ResertarContador()}
-            {clearInterval(Movimentar)}
+            
+        
         </p>
         <p class="Enigma">O que achou das provações resultantes de sua ações precipitadas?</p>
         <p class="Enigma">Deveria tomar cuidado, este não é um labirinto comum e os guardiões deste lugar não gostam de visitantes inesperados.</p>
@@ -871,10 +871,9 @@ let mapa3 = [
         {/each}
     </table>
     <div id="DicaTutorial" class="aimds">
-        <ul class="fic">Os deuses acataram a ira e súplicas do rei, mas não iriam contra Poseidon por um mero mortal. Então, com uma idéia de Atena, decidiram aprisionar o monstro em um labirinto. Desde então Minotauro vive de suas caçadas, e posso afirmar que ele sabe bem como tratar visitantes.</ul>
-    </div>
+        <ul class="info">Os deuses acataram a ira e súplicas do rei, mas não iriam contra Poseidon por um mero mortal. Então, com uma idéia de Atena, decidiram aprisionar o monstro em um labirinto. Desde então Minotauro vive de suas caçadas, e posso afirmar que ele sabe bem como tratar seus visitantes.</ul>
         {:else}
-        <p class="textofutil">{TempoEnigma()}{ResertarContador()}{clearInterval(Movimentar)}</p>
+        <p class="textofutil">{TempoEnigma()}{ResertarContador()}</p>
         <p class="Enigma">Gostei de você, jovem.</p>
         <p class="Enigma">Como pôde perceber, nem tudo é o que parece.</p>
         <p class="Enigma">Espero não acostuma-lo mal, mas por enquanto vou aconselha-lo a não confiar tanto no que seus olhos vêem.</p>
@@ -956,10 +955,10 @@ let mapa3 = [
         {/each}
     </table>
     <div id="DicaTutorial" class="aimds">
-        <ul class="info"></ul>
+        <ul class="info">Cuidado, os passos estão mais próximos a cada segundo. Consegue ouvir seu coração? Corra se quiser viver.</ul>
     </div>
         {:else}
-        <p class="textofutil">{TempoEnigma()}{ResertarContador()}{clearInterval(Movimentar)}</p>
+        <p class="textofutil">{TempoEnigma()}{ResertarContador()}</p>
         <p class="Enigma">Se saiu bem, Dante. Conseguiu sobreviver até aqui, mas será que realmente acabou?</p>
         <p class="Enigma">Seja rápido se deseja sobreviver.</p>
         <p class='Enigma'>{Perguntas[contagem]}</p>
@@ -992,7 +991,7 @@ let mapa3 = [
     <Vitoria/>
 
     <p class="textofutil">
-    {clearInterval(Movimentar)}
+    
     {clearInterval(Tempo)}
     {RenderizandoMapa()}
     {DeterminandoEixos(MudandoDeFase)}
