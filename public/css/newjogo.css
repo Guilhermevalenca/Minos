@@ -96,6 +96,9 @@ th.minimapa{
 
 .AjusteUnico{
     margin: -4px;
+    height: 60px;
+    width: 60px;
+    padding: 0px;
 }
 .voltar{
     font-family: 'Goudy Old Style';
@@ -127,6 +130,7 @@ th.minimapa{
     
 }
 
-.VoltarDiv{
-    
+#ContoDoMinotauro{
+    margin-top: -22.5%;
+    width: 32%;
 }

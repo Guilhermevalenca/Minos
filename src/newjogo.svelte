@@ -504,7 +504,7 @@ let mapa3 = [
     let Indice = 0;
     let PosicaoMonstroX = 0;
     let PosicaoMonstroY = 0;
-    let SaveIndice = 10;
+    let SaveIndice = 60;
     function Perseguição(){
         clearInterval(Caçar)
         Movimentar = setInterval(() => {
@@ -570,9 +570,13 @@ let mapa3 = [
     function acelerar(teste){
         if(teste){
             clearInterval(Movimentar)
-            Ritmo -= 1000
-            if(Ritmo < 1000){
-                Ritmo = 10;
+            if(Ritmo >= 1000){
+                Ritmo -= 1000
+            }else if(Ritmo < 1000){
+                Ritmo -= 100;
+                if(Ritmo < 100){
+                    Ritmo = 90;
+                }
             }
             SaveIndice += 60;
             Perseguição(MudandoDeFase);
@@ -583,7 +587,7 @@ let mapa3 = [
         clearInterval(Caçar)
         clearInterval(Movimentar)
         clearInterval(Tempo)
-        HoraDaCaçada = 6;
+        HoraDaCaçada = 60;
         Ritmo = 3000;
         if(MudandoDeFase == "nivel1"){
             for(let i in mapa1){
@@ -620,7 +624,7 @@ let mapa3 = [
         mapa3[EixoY][EixoX] = "DANTE";
         }
         Indice = 0;
-        SaveIndice = 30;
+        SaveIndice = 60;
         Mapa1Save = [];
         Mapa2Save = [];
         Mapa3Save = [];
@@ -814,8 +818,11 @@ let mapa3 = [
             {/if}
         {/each}
     </table>
-    <div id="DicaTutorial" class="aimds">
-        <ul class="fic">Há muito tempo atrás, mais tempo do que todas as suas gerações podem ter passado na terra, Minotauro nasceu da relação da rainha de Creta com um touro dado por Poseidon. O rei tomado pela raiva tentou matar o animal, mas Poseidon interviu todas as vezes pela vida de sua criação.</ul>
+    <div id="ContoDoMinotauro" class="aimds">
+        <ul class="info">Há muito tempo atrás, mais tempo do que todas as suas gerações podem ter passado na terra,
+        Minotauro nasceu da relação da rainha de Creta com um touro dado por Poseidon.
+        O rei tomado pela raiva tentou matar o animal,
+        mas Poseidon interviu todas as vezes pela vida de sua criação.</ul>
     </div>
         {:else}
         <p class="textofutil">
@@ -900,7 +907,7 @@ let mapa3 = [
         {/if}
         {/each}
     </table>
-    <div id="DicaTutorial" class="aimds">
+    <div id="ContoDoMinotauro" class="aimds">
         <ul class="info">Os deuses acataram a ira e súplicas do rei, mas não iriam contra Poseidon por um mero mortal. Então, com uma idéia de Atena, decidiram aprisionar o monstro em um labirinto. Desde então Minotauro vive de suas caçadas, e posso afirmar que ele sabe bem como tratar seus visitantes.</ul>
     </div>
         {:else}
@@ -990,7 +997,8 @@ let mapa3 = [
             {/if}
         {/each}
     </table>
-    <div id="DicaTutorial" class="aimds">
+    
+    <div id="ContoDoMinotauro" class="aimds">
         <ul class="info">Cuidado, os passos estão mais próximos a cada segundo. Consegue ouvir seu coração? Corra se quiser viver.</ul>
     </div>
         {:else}
