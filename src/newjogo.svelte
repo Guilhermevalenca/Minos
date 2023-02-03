@@ -236,6 +236,7 @@ let mapa3 = [
         }
     }
     //Logica de movimentação do jogo:
+
     let EixoX = 0;
     let EixoY = 0;
     let SaveX = 0;
@@ -310,12 +311,14 @@ let mapa3 = [
         Tudodnv()
         return
     }
-    function ResertarPosicao(){//Caso tente passar por onde nao deveria
+    function ResertarPosicao(){//Caso tente passar por onde não deveria.
         EixoX = SaveX;
         EixoY = SaveY;
         RenderizandoMapa()
     }
-    //toda movimentação segue a msm logica, mudando apenas qual Eixo vai ser alterado de valor
+
+    //Toda movimentação segue a mesma lógica, mudando apenas qual Eixo vai ser alterado de valor.
+
     function MovimentaçãoPeloMapa(move){
         SaveX = EixoX;
         SaveY = EixoY;
@@ -453,7 +456,7 @@ let mapa3 = [
     //Referente aos enigmas:
     let enigma = false;
     let PalavraChave = '';
-    function Alterando(teste, fase){ // mudança de fase ao acerta o enigma
+    function Alterando(teste, fase){ // mudança de fase ao acertar o enigma.
         if(teste){
             enigma = teste;
             PalavraChave = '';
@@ -624,10 +627,10 @@ let mapa3 = [
     }
     let NumeroEscolhido = 0;
     let Perguntas = [
-    "Fui levado para um quarto escuro e incendiado. Eu chorei e então minha cabeça foi cortada. Quem sou?",
-    "Poder suficiente para esmagar navios e quebrar telhados mas mesmo assim tenho medo do sol. O que eu sou?",
-    "Se você me tem, quer me compartilhar; se você não me compartilha, você me manteve. O que sou?",
-    "Imagine que você em uma sala escura ao lado de sherlock. Nela há um fósforo, uma lampada de querosene, uma vela e uma lareira. O que você acenderia primeiro?"
+    "Eis o Enigma: Fui levado para um quarto escuro e incendiado. Eu chorei e então minha cabeça foi cortada. Quem sou?",
+    "Eis o Enigma: Poder suficiente para esmagar navios e quebrar telhados mas mesmo assim tenho medo do sol. O que eu sou?",
+    "Eis o Enigma: Se você me tem, quer me compartilhar; se você não me compartilha, você me manteve. O que sou?",
+    "Eis o Enigma: Imagine que você está em uma sala escura ao lado de Sherlock. Nela há um fósforo, uma lampada de querosene, uma vela e uma lareira. O que você acenderia primeiro?"
 ];
     let respostas = [
     "VELA",
@@ -685,7 +688,7 @@ let mapa3 = [
 {#if MudandoDeFase == "tutorial"}
     
     <p class='FasesDoJogo'>Tutorial</p>
-    <p class="Enigma">Recomendamos utilizar fones de ouvidos</p>
+    <p class="Enigma">Para uma melhor experiência recomendamos utilizar fones de ouvidos</p>
     {#if !enigma}
         
     <p class="textofutil">
