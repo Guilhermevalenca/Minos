@@ -10,11 +10,11 @@
 
 <h3> Para baixar do projeto use o comando : npm install </h3>
 <h3> Para executar o codigo: npm run dev </h3>
-<h3> Caso aja erro nos comandos tente: 'npx yarn dev' para instalar as dependências e depois 'npx yarn dev' para executar. Caso nenhuma das opções funcione, recomendo atualizar ou baixar o nodejs. </h3>
+<h3> Caso haja erro nos comandos tente: 'npx yarn dev' para instalar as dependências e depois 'npx yarn dev' para executar. Caso nenhuma das opções funcione, recomendo atualizar ou baixar o nodejs. </h3>
 
 <h1> Sobre o jogo: </h1>
-<h5> Minos tem o intuito deo jogador tomar decisões sob a pressão de um tempo limite, você deve ajudar Dante a passar cada etapa para conseguir sair do labirinto. Mas lembre-se, os monstros estão a sua espreita. </h5>
-<h5> Enigmas e cháradas em cada fase serão essenciais para sua sobrevivência. </h5>
+<h5> Minos tem o intuito de o jogador tomar decisões sob a pressão de um tempo limite, você deve ajudar Dante a passar cada etapa para conseguir sair do labirinto. Mas lembre-se, os monstros estão a sua espreita. </h5>
+<h5> Enigmas e charadas em cada fase serão essenciais para sua sobrevivência. </h5>
 
 <h2> Alice Manguinho </h2>
 
