@@ -1,0 +1,28 @@
+.geral {
+    animation-duration: 60s;
+    animation-name: mymove;
+    position: relative;
+  }
+  
+  @keyframes mymove {
+    from {bottom: 0px;}
+    to {bottom: 3000px;}
+  }
+  .agradeca{  
+    color: rgb(184, 184, 6);
+   background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+    font-size: 100px;
+    margin-top: 500px;
+    animation-duration: 60s;
+    animation-name: mymove;
+    position: relative;
+  }
+  
+  @keyframes mymove {
+    from {bottom: 0px;}
+    to {bottom: 3000px;}
+
+  }

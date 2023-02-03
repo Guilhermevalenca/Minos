@@ -4,6 +4,7 @@
     import VoltarMenu from "./VoltarMenu.svelte";
     import Creditos from "./creditos.svelte";
   import { trocarEstadoDoJogo } from "./Estado";
+    import { link } from "svelte-navigator";
     //Referente ao uso do teclado no jogo:
     let key;
     let code;
@@ -581,6 +582,7 @@ let mapa3 = [
         clearInterval(Cronometro)
         clearInterval(Caçar)
         clearInterval(Movimentar)
+        clearInterval(Tempo)
         HoraDaCaçada = 6;
         Ritmo = 3000;
         if(MudandoDeFase == "nivel1"){
@@ -686,8 +688,6 @@ let mapa3 = [
 {/if}
 
 <VoltarMenu/>
-
-
 
 <div>
 	<audio id="audio" autoplay loop>
@@ -1038,19 +1038,22 @@ let mapa3 = [
     <tr>
         {#each linhas as elementos}
             {#if elementos == 0}
-                <th><img src="/css/imagens/chaotunel.png" alt="chao"></th>
+                <th><img class="AjusteUnico" src="/css/imagens/chaotunel.png" alt="chao"></th>
             {:else if elementos == 1}
-                <th><img src="/css/imagens/paredetunel.png" alt="parede"></th>
+                <th><img class="AjusteUnico" src="/css/imagens/paredetunel.png" alt="parede"></th>
             {:else if elementos == "DANTE"}
-                <th class="Dante4"><img src="/css/imagens/Dante.png" alt="personagem"></th>
+                <th class="Dante4"><img class="AjusteUnico" src="/css/imagens/Dante.png" alt="personagem"></th>
             {:else if elementos == "C"}
-                <th><img src="/css/imagens/saida.png" alt="saida"></th>
+                <th><img class="AjusteUnico" src="/css/imagens/saida.png" alt="saida"></th>
             {/if}
         {/each}
     </tr>
     {/each}
     </table>
     {:else}
+    <head>
+        <link rel="stylesheet" href="/css/AnimaçãoCreditos.css">
+    </head>
     <Creditos/>
     {/if}
 {/if}
