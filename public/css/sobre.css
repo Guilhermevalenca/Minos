@@ -50,3 +50,17 @@ p{
    margin-left: 150px;
    margin-right:150px;
 }
+.geral{
+    font-family:'Felix Titling';
+    font-size: 200%;
+    border-style:hidden;
+   text-align: center;
+   color: rgb(184, 184, 6);
+   background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+   margin: 0%;
+   margin-top: 100px;
+   margin-bottom: 50px;;
+}
