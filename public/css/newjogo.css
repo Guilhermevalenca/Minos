@@ -79,4 +79,17 @@ th.minimapa{
     background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
     background-clip: text;
     -webkit-background-clip: text;
-  }
+}
+
+.EnigmaPergunta{
+    color: rgb(184, 184, 6);
+    background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 0;
+    font-weight: bolder;
+    position: relative;
+    margin-top: 40px;
+    text-align: center;
+}

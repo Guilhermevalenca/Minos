@@ -638,6 +638,12 @@ let mapa3 = [
     "SEGREDO",
     "FOSFORO"
 ];
+    function PrimeiroNumero(minimo, maximo) {
+        minimo = Math.ceil(minimo);
+        maximo = Math.floor(maximo);
+    return Math.floor(Math.random() * (maximo - minimo) + minimo);
+    }
+    NumeroEscolhido = PrimeiroNumero(0,Perguntas.length);
     function ProximoEnigma(){
         NumeroEscolhido++
         if(NumeroEscolhido == Perguntas.length){
@@ -811,7 +817,7 @@ let mapa3 = [
         <p class="Enigma">O que achou das provações resultantes de sua ações precipitadas?</p>
         <p class="Enigma">Deveria tomar cuidado, este não é um labirinto comum e os guardiões deste lugar não gostam de visitantes inesperados.</p>
         <p class="Enigma">Responda-me cautelosamente, deuses não costumam ser piedosos como tanto propagam.</p>
-        <p class='Enigma'>{Perguntas[NumeroEscolhido] }</p>
+        <p class="EnigmaPergunta">{Perguntas[NumeroEscolhido] }</p>
         <p class="Contador">{contador}s</p>
     <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == respostas[NumeroEscolhido] ,MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
     {#each mapa1 as linhas}
@@ -899,7 +905,7 @@ let mapa3 = [
         <p class="Enigma">Como pôde perceber, nem tudo é o que parece.</p>
         <p class="Enigma">Espero não acostuma-lo mal, mas por enquanto vou aconselha-lo a não confiar tanto no que seus olhos vêem.</p>
         <p class='Enigma'>Paredes falsas podem parecer algo impensável para humanos, mas não me compare com seres como vocês.</p>
-        <p class='Enigma'>{Perguntas[NumeroEscolhido] }</p>
+        <p class="EnigmaPergunta">{Perguntas[NumeroEscolhido] }</p>
         <p class="Contador">{contador}</p>
         <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == respostas[NumeroEscolhido] ,MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
         {#each mapa2 as linhas}
@@ -987,7 +993,7 @@ let mapa3 = [
         </p>
         <p class="Enigma">Se saiu bem, Dante. Conseguiu sobreviver até aqui, mas será que realmente acabou?</p>
         <p class="Enigma">Seja rápido se deseja sobreviver.</p>
-        <p class='Enigma'>{Perguntas[NumeroEscolhido] }</p>
+        <p class="EnigmaPergunta">{Perguntas[NumeroEscolhido] }</p>
         <p class="Contador">{contador}s</p>
         <input bind:value={PalavraChave} on:keydown={Alterando(PalavraChave == respostas[NumeroEscolhido] ,MudandoDeFase)} placeholder="APENAS LETRAS MAIUSCULAS" class='RespostaEnigma'>
         {#each mapa3 as linhas}

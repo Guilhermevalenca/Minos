@@ -46,7 +46,9 @@
     color: transparent;
     margin: 0;
     font-weight: bolder;
+    position: relative;
 }
+
 .FasesDoJogo{
     color: rgb(184, 184, 51);
     background: linear-gradient(to bottom, #996600 0%, #ffff00 80%);
