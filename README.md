@@ -38,4 +38,4 @@
 
 <h2> Guilherme Valença </h2>
 
-
+<h5>Gostei bastante da experiencia, de ter participado da crição desse jogo, tive diversos aprendizados, vi alguns dos meus pontos fortes e fracos, houve grandes complicações no caminho, também houve grande descobertas, ver o jogo ainda sem forma ganhando vida ao longo dos dias foi simplesmente sensacional, e mesmo com tantas dores de cabeça, foi uma otima experencia para minha pessoa na area da programação, com todos os altos e baixos espero que possam se divertir com nosso tão sonhado Minos, pode nao estar perfeito, mas com certeza foi uma das melhores coisas mais dificeis que ja tive que fazer e agradeço a todo meu grupo por estarem empenhados a fazer acontecer, espero que gostem e aproveitem ao maximo, todas as mecanicas e desafios que nosso jogo tem a oferecer.</h5>
