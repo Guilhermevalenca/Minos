@@ -481,17 +481,16 @@ let mapa3 = [
         }
     }
     let Tempo;
-    let temporizador = 300;
+    let temporizador = 30;
     let contador = temporizador; // Contador geral para resolver todos os enigmas 
     function TempoEnigma(){
         Tempo = setInterval( () => {
             contador--
             if(contador == 0){
                 alert('Tempo Esgotado')
-                RetornaAoSave()
                 MudandoDeFase = "nivel1"
                 enigma = false;
-                clearInterval(Tempo)
+                RetornaAoSave()
                 return
         }
         },1000)
@@ -630,20 +629,26 @@ let mapa3 = [
     "Eis o Enigma: Fui levado para um quarto escuro e incendiado. Eu chorei e então minha cabeça foi cortada. Quem sou?",
     "Eis o Enigma: Poder suficiente para esmagar navios e quebrar telhados mas mesmo assim tenho medo do sol. O que eu sou?",
     "Eis o Enigma: Se você me tem, quer me compartilhar; se você não me compartilha, você me manteve. O que sou?",
-    "Eis o Enigma: Imagine que você está em uma sala escura ao lado de Sherlock. Nela há um fósforo, uma lampada de querosene, uma vela e uma lareira. O que você acenderia primeiro?"
+    "Eis o Enigma: Imagine que você está em uma sala escura ao lado de Sherlock. Nela há um fósforo, uma lampada de querosene, uma vela e uma lareira. O que você acenderia primeiro?",
+    "Eis o Enigma: Eu tenho uma coroa, mas não a uso na cabeça. Eu tenho cara, mas não tenho um corpo. Ter muitos de mim é sempre um bom negócio. o que eu sou?",
+    "Eis o Enigma: Eu vivo no céu, mas não tenho asas. Posso chorar, mas não tenho olhos. Onde quer que eu vá, a escuridão me segue. o que eu sou?",
+    "Eis o Enigma: Eu posso ser um deus, um planeta, e medir o calor. O que eu sou?"
 ];
     let respostas = [
     "VELA",
     "GELO",
     "SEGREDO",
-    "FOSFORO"
+    "FOSFORO",
+    "MOEDA",
+    "NUVEM",
+    "MERCURIO"
 ];
     function PrimeiroNumero(minimo, maximo) {
         minimo = Math.ceil(minimo);
         maximo = Math.floor(maximo);
     return Math.floor(Math.random() * (maximo - minimo) + minimo);
     }
-    NumeroEscolhido = PrimeiroNumero(0,Perguntas.length);
+    NumeroEscolhido = PrimeiroNumero(0,Perguntas.length); 
     function ProximoEnigma(){
         NumeroEscolhido++
         if(NumeroEscolhido == Perguntas.length){
