@@ -97,3 +97,32 @@ th.minimapa{
 .AjusteUnico{
     margin: -4px;
 }
+.voltar{
+    font-family: 'Goudy Old Style';
+    font-size: 200%;
+    text-align: center;
+    background: linear-gradient(to bottom, #cc9900 0%, #ffff00 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+    margin: 0%;
+}
+.ButtonVoltar{
+    font-size: 200%;
+    text-decoration-color:#996600;
+    position: relative;
+    background-image: url(./imagens/button2.0.jpg);
+    background-size: cover;
+    font-size: 15px;
+    border-style: solid;
+    border-radius: 10px;
+    border-image: linear-gradient(to bottom, #cc9900 0%, #ffff00 100%) space;
+    border-image-slice: 3;
+    border-width: 1px;
+    width: 15%;
+    position: relative;
+    right: 0px;
+    top: 70px;
+    
+}

@@ -687,7 +687,11 @@ let mapa3 = [
         {/if}
 {/if}
 
-<VoltarMenu/>
+{#if MudandoDeFase !== "vitoria"}
+
+<button class="ButtonVoltar" on:click={() => trocarEstadoDoJogo('menu')}><p class="Voltar">Voltar</p></button>
+
+{/if}
 
 <div>
 	<audio id="audio" autoplay loop>
