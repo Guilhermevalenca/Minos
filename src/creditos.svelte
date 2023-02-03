@@ -33,12 +33,6 @@
 <p class="geral">@mevyness</p>
 
 
-<h1 class="geral"> Experiência do Grupo </h1>
-
-<p class="geral"> Pela convivência do semestre letivo tinhamos um bom entrosamento que contribuiu para um bom desempenho em equipe, </p>
-<p class="geral"> sempre tentando ouvir uns aos outros e ajudar nas dificuldades individuais de cada um. </p>
-<p class="geral"> Apesar de diversas complicações durante o processo de criação, conseguimos lidar com os problemas e entregar nosso projeto do jeito que desejávamos. </p>
-
 <h1 class="geral"> Criadores </h1>
 
 <h4 class="geral"> Alice Manguinho </h4>
