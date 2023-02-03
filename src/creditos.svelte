@@ -37,23 +37,23 @@
 
 <h4 class="geral"> Alice Manguinho </h4>
 
-<p class="geral"> 17 anos <br> 1° período de IPI <br> asms1@discente.ifpe.edu.br </p>
+<p class="geral"> 17 anos <br> 1° período de IPI <br> asms1@discente.ifpe.edu.br <br><a href="https://github.com/AliceManguinho" target="_blank">github</a></p>
 
 <h4 class="geral"> Assíria Renara </h4>
 
-<p class="geral"> 22 anos <br> 1° período de IPI <br> aross@discente.ifpe.edu.br </p>
+<p class="geral"> 22 anos <br> 1° período de IPI <br> aross@discente.ifpe.edu.br <br><a href="https://github.com/assiriaS2" target="_blank">github</a>   </p>
 
 <h4 class="geral"> Claudiane Rodrigues </h4>
 
-<p class="geral"> 21 anos <br> 1° período de IPI <br> cra@discente.ifpe.edu.br </p>
+<p class="geral"> 21 anos <br> 1° período de IPI <br> cra@discente.ifpe.edu.br <br> <a href="https://github.com/Cl4udiAnn3" target="_blank">github</a>  </p>
 
 <h4 class="geral"> Emmily Kathylen </h4>
 
-<p class="geral"> 20 anos <br> 1° período de IPI <br> emmilysouzakathylen@gmail.com </p>
+<p class="geral"> 20 anos <br> 1° período de IPI <br> emmilysouzakathylen@gmail.com <br><a href="https://github.com/EmmilyKathylen" target="_blank">github</a>   </p>
 
 <h4 class="geral"> Guilherme Valença </h4>
 
-<p class="geral"> 21 anos <br> 1° período de IPI <br> gvrp@discente.ifpe.edu.br </p>
+<p class="geral"> 21 anos <br> 1° período de IPI <br> gvrp@discente.ifpe.edu.br <br><a href="https://github.com/Guilhermevalenca" target="_blank">github</a>  </p>
 
 <p class="agradeca"> Obrigado por Jogar!</p>
 

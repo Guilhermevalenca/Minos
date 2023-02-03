@@ -1,6 +1,6 @@
     img{
-        height: 60px;
-        width: 60px;
+        height: 100px;
+        width: 100px;
         padding: 0px;
         margin: -2px;
     }
@@ -28,7 +28,7 @@
     }
 .mapa{
     margin-top: 2%;
-    margin-left: 35%;
+    margin-left: 32.5%;
     background-size: 60px;
     
 }
@@ -124,5 +124,9 @@ th.minimapa{
     position: relative;
     right: 0px;
     top: 70px;
+    
+}
+
+.VoltarDiv{
     
 }

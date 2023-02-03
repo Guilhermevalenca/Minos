@@ -13,6 +13,7 @@
 
 <head>
 	<link rel="stylesheet" href="/css/appsvelte.css">
+	<link rel='icon'  href='/css/imagens/icone.png'>
 </head>
 
 {#if $estado === 'menu'}

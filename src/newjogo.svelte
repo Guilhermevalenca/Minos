@@ -180,7 +180,7 @@ let mapa3 = [
     let Mapa2Save = [];
     let Mapa3Save = [];
     //limite de renderização:
-    let Dimensionamento = 4;
+    let Dimensionamento = 3;
     let LimiteX = 0;
     let LimiteY = 0;
     function RenderizandoMapa(){
@@ -482,7 +482,7 @@ let mapa3 = [
         }
     }
     let Tempo;
-    let temporizador = 30;
+    let temporizador = 300;
     let contador = temporizador; // Contador geral para resolver todos os enigmas 
     function TempoEnigma(){
         Tempo = setInterval( () => {
@@ -555,7 +555,7 @@ let mapa3 = [
     }
     let Caçar;
     let Cronometro;
-    let HoraDaCaçada = 6;
+    let HoraDaCaçada = 60;
     function Cronometrar(){
         Cronometro = setInterval(() => {
             HoraDaCaçada--
@@ -565,7 +565,7 @@ let mapa3 = [
         Caçar = setInterval( () => {
             Ritmo = 3000;
             Perseguição()
-        },6000)
+        },60000)
     }
     function acelerar(teste){
         if(teste){
