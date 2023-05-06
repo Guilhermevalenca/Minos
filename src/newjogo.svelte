@@ -3,7 +3,7 @@
     import Vitoria from "./Vitoria.svelte";
     import VoltarMenu from "./VoltarMenu.svelte";
     import Creditos from "./creditos.svelte";
-  import { trocarEstadoDoJogo } from "./Estado";
+    import { trocarEstadoDoJogo } from "./Estado";
     import { link } from "svelte-navigator";
     //Referente ao uso do teclado no jogo:
     let key;

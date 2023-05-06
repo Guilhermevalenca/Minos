@@ -1,12 +1,9 @@
  <script>
-	import {Router, Route, Link} from 'svelte-navigator'
-	import Ajuda from './ajuda.svelte'
-	import Menu from './menu.svelte'
-	import Sobre from './sobre.svelte'
-	import Jogar from './jogo(futil).svelte'
-	import {estado} from './Estado.js'
-	import NewJogo from './NewJogo.svelte'
-  	import OldJogo from './OldJogo.svelte';
+	import Ajuda from './ajuda.svelte';
+	import Menu from './menu.svelte';
+	import Sobre from './sobre.svelte';
+	import {estado} from './Estado.js';
+	import NewJogo from './newjogo.svelte';
     import Creditos from './creditos.svelte';
 </script>
 
